@@ -1,4 +1,4 @@
-# Cétaumotorix
+# Cétautomatix
 
 ## 📡 Station au sol
 - **Nom** : Station au sol (Ground Station)  
