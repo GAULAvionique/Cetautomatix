@@ -1,0 +1,40 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "b623f4b4-f308-447f-ae18-20875668a26a")
+	(paper "A4")
+	(lib_symbols)
+	(rectangle
+		(start 46.99 53.34)
+		(end 107.95 115.57)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f28eeb8d-21ac-4829-837c-edc821945cd7)
+	)
+	(text "Switching power supplies"
+		(exclude_from_sim no)
+		(at 65.532 50.038 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "18b5b563-1682-4855-abe5-3a70b62d4f24")
+	)
+	(text "Connecteur batterie\n"
+		(exclude_from_sim no)
+		(at 30.226 49.784 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ecd80ac4-03d5-458f-9cbd-d0a10e22cd98")
+	)
+)

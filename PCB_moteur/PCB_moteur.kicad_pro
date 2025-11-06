@@ -613,6 +613,23 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "b0d87684-7b1c-41d8-8358-755aa327573e",
+      "Root"
+    ],
+    [
+      "92d1df5d-a307-4eea-a65c-ade4cb0ad548",
+      "Supply"
+    ],
+    [
+      "753d1783-c2f5-4012-bbb8-3f4eadf066f6",
+      "STM32"
+    ],
+    [
+      "a8ed0c04-b51e-4eec-84d1-0b2303d57d27",
+      "Interfaces"
+    ]
+  ],
   "text_variables": {}
 }

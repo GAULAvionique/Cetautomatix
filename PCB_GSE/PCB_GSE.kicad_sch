@@ -2,9 +2,135 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid fb1e7f9a-1970-407a-9a24-5aea0f0ce853)
+	(uuid "fb1e7f9a-1970-407a-9a24-5aea0f0ce853")
 	(paper "A4")
 	(lib_symbols)
+	(sheet
+		(at 19.05 19.05)
+		(size 76.2 73.66)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7531e390-5518-4ac3-948e-91f285c05afd")
+		(property "Sheetname" "Supply"
+			(at 19.05 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "supply.kicad_sch"
+			(at 19.05 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/fb1e7f9a-1970-407a-9a24-5aea0f0ce853"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 198.12 19.05)
+		(size 80.01 73.66)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "acbc6a68-d495-4895-8b3a-52b5d583832d")
+		(property "Sheetname" "Interface"
+			(at 198.12 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Interface.kicad_sch"
+			(at 198.12 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/fb1e7f9a-1970-407a-9a24-5aea0f0ce853"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 104.14 19.05)
+		(size 83.82 73.66)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e76dc829-8d8a-4f4e-b982-d009906b2cec")
+		(property "Sheetname" "STM32"
+			(at 104.14 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "STM32.kicad_sch"
+			(at 104.14 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/fb1e7f9a-1970-407a-9a24-5aea0f0ce853"
+					(page "3")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

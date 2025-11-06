@@ -204,6 +204,7 @@
       "bus_entry_needed": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
@@ -255,7 +256,7 @@
   },
   "meta": {
     "filename": "PCB_GSE.kicad_pro",
-    "version": 3
+    "version": 1
   },
   "net_settings": {
     "classes": [
@@ -270,7 +271,6 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -279,7 +279,7 @@
       }
     ],
     "meta": {
-      "version": 4
+      "version": 3
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -412,6 +412,23 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "fb1e7f9a-1970-407a-9a24-5aea0f0ce853",
+      "Root"
+    ],
+    [
+      "7531e390-5518-4ac3-948e-91f285c05afd",
+      "Supply"
+    ],
+    [
+      "e76dc829-8d8a-4f4e-b982-d009906b2cec",
+      "STM32"
+    ],
+    [
+      "acbc6a68-d495-4895-8b3a-52b5d583832d",
+      "Interface"
+    ]
+  ],
   "text_variables": {}
 }

@@ -2,9 +2,135 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid b0d87684-7b1c-41d8-8358-755aa327573e)
+	(uuid "b0d87684-7b1c-41d8-8358-755aa327573e")
 	(paper "A4")
 	(lib_symbols)
+	(sheet
+		(at 99.06 16.51)
+		(size 77.47 67.31)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "753d1783-c2f5-4012-bbb8-3f4eadf066f6")
+		(property "Sheetname" "STM32"
+			(at 99.06 15.7984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "STM32_moteur.kicad_sch"
+			(at 99.06 84.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 16.51 16.51)
+		(size 73.66 67.31)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "92d1df5d-a307-4eea-a65c-ade4cb0ad548")
+		(property "Sheetname" "Supply"
+			(at 16.51 15.7984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Supply_moteur.kicad_sch"
+			(at 16.51 84.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 186.69 17.78)
+		(size 77.47 66.04)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a8ed0c04-b51e-4eec-84d1-0b2303d57d27")
+		(property "Sheetname" "Interfaces"
+			(at 186.69 17.0684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Interfaces_moteur.kicad_sch"
+			(at 186.69 84.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e"
+					(page "4")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
