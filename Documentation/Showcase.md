@@ -1,3 +1,3 @@
 <div align="center"; style="display: flex; justify-content: space-around;">
-  <img src="./Documentation/NautilPCB.png" alt="ODB2" width="60%">
+  <img src="./Documentation/Diagram_Cetautomatix.png" alt="Cetaumatix" width="60%">
 </div>
