@@ -6,6 +6,48 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
+		(at 26.67 101.6)
+		(size 74.93 72.39)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1c3f73a9-ace7-4654-9081-04f4c5cd0c08")
+		(property "Sheetname" "Pyros"
+			(at 26.67 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Pyros.kicad_sch"
+			(at 26.67 174.5746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 99.06 16.51)
 		(size 77.47 67.31)
 		(exclude_from_sim no)
