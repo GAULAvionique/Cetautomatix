@@ -3677,7 +3677,7 @@
 	)
 	(text "VALVE_CONTROL\n"
 		(exclude_from_sim no)
-		(at 34.036 37.592 0)
+		(at 28.956 37.084 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3728,7 +3728,7 @@
 	)
 	(text "PRESSURE_SENSOR"
 		(exclude_from_sim no)
-		(at 29.718 135.636 0)
+		(at 26.416 135.382 0)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 26.67 101.6)
-		(size 74.93 72.39)
+		(at 16.51 89.535)
+		(size 73.025 69.85)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -22,7 +22,7 @@
 		)
 		(uuid "1c3f73a9-ace7-4654-9081-04f4c5cd0c08")
 		(property "Sheetname" "Pyros"
-			(at 26.67 100.8884 0)
+			(at 16.51 88.8234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31,7 +31,7 @@
 			)
 		)
 		(property "Sheetfile" "Pyros.kicad_sch"
-			(at 26.67 174.5746 0)
+			(at 16.51 159.9696 0)
 			(effects
 				(font
 					(size 1.27 1.27)
