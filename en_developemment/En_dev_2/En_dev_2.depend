@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1767829326 source:c:\programation\ulaval\gaul\cetautomatix\en_developemment\en_dev_2\valvepaire.c
+	"ValvePaire.h"
+	<stdlib.h>
+	<stdint.h>
+	<stdbool.h>
+	<stdio.h>
+	<limits.h>
+
+1767829312 c:\programation\ulaval\gaul\cetautomatix\en_developemment\en_dev_2\valvepaire.h
+	<stdint.h>
+
