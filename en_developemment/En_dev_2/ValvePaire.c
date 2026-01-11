@@ -52,6 +52,13 @@ struct Vp{
 
 // constructor
 Vp* vp_create(){
+    /********************************************//**
+         * \brief création d'une instance Vp.
+     *
+     * \return pointeur vers une instance Vp.
+     *
+     ***********************************************/
+
     Vp* v = (Vp*)malloc(sizeof(struct Vp));
     if (v != NULL){
         int8_t v1, v2;
@@ -65,6 +72,15 @@ Vp* vp_create(){
 void vp_destroy(Vp* v){free(v);};
 
 int8_t vp_get(Vp* v, int n){
+    /********************************************//**
+         * \brief obtenir l'une valeurs.
+     *
+     * \param v: 'instance' de Vp
+     * \param n = 1 ou 2    le numéro de la valve. (chaque instance en comprend 2)
+     * \return la valeurs à cette instance (il ne s'agit pas du pointeur vers la valeurs.)
+     *
+     ***********************************************/
+
     if(n==1 || n==2){
     if(n==1){return *(v->v1);}
     else{return *(v->v2);}
@@ -80,10 +96,26 @@ void vp_update_v2(Vp* v, int8_t* val){int8_t masque = *val & 0xF; v->v2 = &masqu
 //void vp_update_v2(Vp* v, int8_t* val){v->v2 = val;}
 
 void vp_set_v(Vp* v, int8_t val, int n){
+    /********************************************//**
+         * \brief définir une valeurs en copien la valeurs passé en segond argument.
+     *
+     * \param val: la valeurs à placer
+     * \param n = 1 ou 2.
+     *
+     ***********************************************/
+
     if(n == 0){vp_update_v1(v, &val);}
     else{vp_update_v2(v, &val);}
 }
 int8_t vp_get_combinaison(Vp* v){
+    /********************************************//**
+         * \brief traduire la combinaison d'état de valve en une seul valeurs int8_t.
+     *
+     * \param
+     * \return
+     *
+     ***********************************************/
+
     afficher_binaire(v->v1);
     int8_t v9 = (*(v->v2)<<4) | *(v->v1);
     afficher_binaire(&v9);
