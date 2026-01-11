@@ -36,6 +36,10 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</UnitsGlob>
+		<Unit filename="../../../../../test/comm_can/ValvePaire.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../../../test/comm_can/ValvePaire.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 			<Option glob="3097721370" />

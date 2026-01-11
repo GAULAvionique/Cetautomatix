@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1767829326 source:c:\programation\ulaval\gaul\cetautomatix\en_developemment\en_dev_2\valvepaire.c
+1767932315 source:c:\programation\ulaval\gaul\cetautomatix\en_developemment\en_dev_2\valvepaire.c
 	"ValvePaire.h"
 	<stdlib.h>
 	<stdint.h>
@@ -7,6 +7,24 @@
 	<stdio.h>
 	<limits.h>
 
-1767829312 c:\programation\ulaval\gaul\cetautomatix\en_developemment\en_dev_2\valvepaire.h
+1768100766 c:\programation\ulaval\gaul\cetautomatix\en_developemment\en_dev_2\valvepaire.h
 	<stdint.h>
+
+1768100912 source:c:\programation\ulaval\gaul\cetautomatix\en_developemment\en_dev_2\main.c
+	"ValvePaire.h"
+	<stdio.h>
+	"data1133.h"
+	<stdbool.h>
+
+1767930082 c:\programation\ulaval\gaul\cetautomatix\en_developemment\en_dev_2\data1133.h
+	<stdint.h>
+	<stdbool.h>
+
+1768098664 source:c:\programation\ulaval\gaul\cetautomatix\en_developemment\en_dev_2\data1133.c
+	"data1133.h"
+	<stdlib.h>
+	<stdint.h>
+	<stdbool.h>
+	<stdio.h>
+	<limits.h>
 

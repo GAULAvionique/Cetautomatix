@@ -1,3 +1,4 @@
+
 #include "ValvePaire.h"
 #include <stdlib.h> // for malloc/free
 #include <stdint.h>
@@ -9,6 +10,18 @@ bool conforme_nb_bit_4(int8_t val){
     if((val&0xF0) == 0){return true;}
     else{return false;}
 }
+int8_t vp_trad(int8_t* combinaison, int n){
+    if(n == 1){
+        return *combinaison & 0xF;
+    }
+    else{
+        if(n == 2){
+            return (*combinaison &0xF0)<<4;
+        }
+    }
+};
+
+
 void afficher_binaire(int8_t* n_) {
     int i;
     int8_t n = *n_;
@@ -51,6 +64,13 @@ Vp* vp_create(){
 };
 void vp_destroy(Vp* v){free(v);};
 
+int8_t vp_get(Vp* v, int n){
+    if(n==1 || n==2){
+    if(n==1){return *(v->v1);}
+    else{return *(v->v2);}
+}};
+
+
 void vp_set_v1(Vp* v, int8_t val){vp_update_v1(v, &val);};
 void vp_set_v2(Vp* v, int8_t val){vp_update_v2(v, &val);};
 
@@ -70,4 +90,5 @@ int8_t vp_get_combinaison(Vp* v){
     int8_t result = *(v->v2)<<4 | *(v->v1);
     return result;
 }
+
 
