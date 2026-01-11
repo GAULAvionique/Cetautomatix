@@ -4,8 +4,11 @@
 // CRC-16/CCITT-FALSE (poly 0x1021, init 0xFFFF)
 uint16_t comm_crc16_ccitt(const void* data, uint16_t len);
 
-// COBS encode: in[0..len-1] -> out (taille >= len + len/254 + 1); retourne taille encodée
-uint16_t comm_cobs_encode(const uint8_t* in, uint16_t len, uint8_t* out);
+uint8_t comm_crc8_atm(const void* data, uint16_t len);
 
-// Sequence (1 octet modulo 256)
-static inline uint8_t comm_seq_next(uint8_t cur) { return (uint8_t)(cur + 1); }
+static void uart_push_escaped_byte(uint8_t byte, uint8_t* out, uint16_t* idx, uint16_t out_max);
+
+uint16_t comm_uart_build_sas_frame(uint8_t cmd_byte, uint8_t* out, uint16_t out_max);
+
+// Sequence (modulo 8)
+uint8_t comm_seq_next(void);

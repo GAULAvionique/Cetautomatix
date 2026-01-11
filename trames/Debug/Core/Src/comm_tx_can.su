@@ -1,0 +1,6 @@
+../Core/Src/comm_tx_can.c:3:5:comm_tx_can_send_estop	56	static
+../Core/Src/comm_tx_can.c:19:5:comm_tx_can_send_cmd_short	64	static
+../Core/Src/comm_tx_can.c:53:5:comm_tx_can_purge_start	24	static
+../Core/Src/comm_tx_can.c:57:5:comm_tx_can_purge_stop	24	static
+../Core/Src/comm_tx_can.c:61:5:comm_tx_can_fill_start	24	static
+../Core/Src/comm_tx_can.c:65:5:comm_tx_can_fill_stop	24	static

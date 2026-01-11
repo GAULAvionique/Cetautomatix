@@ -1,0 +1,2 @@
+../Core/Src/comm_utils.c:11:10:comm_crc16_ccitt	32	static
+../Core/Src/comm_utils.c:42:10:comm_cobs_encode	48	static

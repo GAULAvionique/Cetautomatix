@@ -1,4 +1,5 @@
 #include "comm_utils.h"
+#include "protocol_defs.h"
 
 /* =========================================================
  * CRC-16/CCITT-FALSE
@@ -13,7 +14,7 @@ uint16_t comm_crc16_ccitt(const void* data, uint16_t len) {
     uint16_t crc = 0xFFFF;
 
     for (uint16_t i = 0; i < len; i++) {
-        crc ^= ((uint16_t)p[i] << 8);
+        crc ^= (uint16_t)p[i] << 8;
         for (uint8_t b = 0; b < 8; b++) {
             if (crc & 0x8000) {
                 crc = (uint16_t)((crc << 1) ^ 0x1021);
@@ -26,47 +27,75 @@ uint16_t comm_crc16_ccitt(const void* data, uint16_t len) {
 }
 
 /* =========================================================
- * COBS (Consistent Overhead Byte Stuffing) - Encode
- *
- * Transforme un flux binaire arbitraire en un flux SANS octet 0x00.
- * On peut ainsi utiliser 0x00 comme dÈlimiteur de fin de trame sur UART.
- *
- * EntrÈe :
- *   - in[0..len-1]
- * Sortie :
- *   - out : buffer de taille >= len + len/254 + 1
- * Retour :
- *   - nombre d'octets Ècrits dans 'out' (sans le dÈlimiteur 0x00 final)
- *
+ * CRC-8/ATM (poly=0x07, init=0x00)
+ * Utilis√© pour la trame SAS -> GSE (UART) sur 1 octet de data.
  * ========================================================= */
-uint16_t comm_cobs_encode(const uint8_t* in, uint16_t len, uint8_t* out) {
-    const uint8_t*  src = in;
-    const uint8_t*  end = in + len;
-    uint8_t*        code_ptr = out;      /* Adresse du code en cours */
-    uint8_t*        dst = out + 1;       /* L‡ o˘ on Ècrit les donnÈes */
-    uint8_t         code = 1;            /* Valeur du code courant (>=1, <=255) */
+uint8_t comm_crc8_atm(const void* data, uint16_t len) {
+    const uint8_t* p = (const uint8_t*)data;
+    uint8_t crc = 0x00;
 
-    while (src < end) {
-        if (*src == 0x00) {
-            /* On termine le bloc courant */
-            *code_ptr = code;
-            code_ptr  = dst++;           /* Nouveau code ‡ Ècrire plus tard */
-            code      = 1;
-            src++;                       /* On saute le zero */
-        } else {
-            *dst++ = *src++;
-            code++;
-            if (code == 0xFF) {
-                /* Bloc plein (254 octets non-nuls) : on flush */
-                *code_ptr = code;
-                code_ptr  = dst++;
-                code      = 1;
-            }
+    for (uint16_t i = 0; i < len; i++) {
+        crc ^= p[i];
+        for (uint8_t b = 0; b < 8; b++) {
+            if (crc & 0x80) crc = (uint8_t)((crc << 1) ^ 0x07);
+            else            crc = (uint8_t)(crc << 1);
         }
     }
+    return crc;
+}
 
-    /* Flush final */
-    *code_ptr = code;
+/* =========================================================
+ * UART byte-stuffing (SAS -> GSE)
+ * Trame sur la ligne:
+ *   '$' + (DATA/CRC √©chapp√©s si besoin) + '$'
+ *
+ * - '$' est le d√©limiteur (start/end) sur 8 bits
+ * - '\\' est l'octet d'√©chappement
+ * - un byte sp√©cial est envoy√© comme: '\\' suivi de (byte ^ 0x20)
+ * ========================================================= */
+static void uart_push_escaped_byte(uint8_t byte, uint8_t* out, uint16_t* idx, uint16_t out_max) {
+    if (*idx >= out_max) return;
 
-    return (uint16_t)(dst - out);
+    if (byte == SAS_UART_FLAG || byte == SAS_UART_ESC) {
+        if ((*idx + 2u) > out_max) return;
+        out[(*idx)++] = SAS_UART_ESC;
+        out[(*idx)++] = (uint8_t)(byte ^ SAS_UART_ESC_XOR);
+    } else {
+        out[(*idx)++] = byte;
+    }
+}
+
+/**
+ * Construit la trame SAS->GSE (UART):
+ *   Start  : '$' (8 bits)
+ *   Data   : 1 byte (cmd_byte_t.byte)
+ *   CRC8   : 1 byte (sur Data)
+ *   End    : '$' (8 bits)
+ *
+ * Avec √©chappement (byte-stuffing) appliqu√© uniquement √† Data et CRC.
+ *
+ * Retourne le nombre d'octets √©crits dans out (0 si erreur).
+ */
+uint16_t comm_uart_build_sas_frame(uint8_t cmd_byte, uint8_t* out, uint16_t out_max) {
+    if (!out || out_max < 4u) return 0;
+
+    uint8_t crc = comm_crc8_atm(&cmd_byte, 1);
+
+    uint16_t idx = 0;
+    out[idx++] = SAS_UART_FLAG;
+
+    uart_push_escaped_byte(cmd_byte, out, &idx, out_max);
+    uart_push_escaped_byte(crc,      out, &idx, out_max);
+
+    if (idx >= out_max) return 0;
+    out[idx++] = SAS_UART_FLAG;
+
+    return idx;
+}
+
+uint8_t comm_seq_next(void) {
+    static uint8_t seq = 0;
+    uint8_t ret = seq & 0x07;
+    seq = (uint8_t)((seq + 1) & 0x07);
+    return ret;
 }
