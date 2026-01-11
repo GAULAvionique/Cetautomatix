@@ -22,7 +22,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "protocol_defs.h"
+#include "comm_utils.h"
+#include "comm_tx_can.h"
+#include "comm_tx_rf.h"
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -95,6 +99,8 @@ int main(void)
   MX_CAN1_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
+
+  /* ---- CAN Filter: accept all ---- */
   CAN_FilterTypeDef f = {0};
   f.FilterMode = CAN_FILTERMODE_IDMASK;
   f.FilterScale = CAN_FILTERSCALE_32BIT;
@@ -102,59 +108,22 @@ int main(void)
   f.FilterMaskIdHigh = 0;  f.FilterMaskIdLow = 0;
   f.FilterFIFOAssignment = CAN_FILTER_FIFO0;
   f.FilterActivation = ENABLE;
+  f.FilterBank = 0;
   HAL_CAN_ConfigFilter(&hcan1, &f);
-
-  HAL_CAN_Start(&hcan1);
-
-  /* ===== Tests UART4 & CAN1 ===== */
-
-  /* 1) UART4 : envoi d’une ligne + test loopback optionnel (PA0 -> PA1) */
-
-    const char *msg = "UART4 PING\r\n";
-    HAL_UART_Transmit(&huart4, (uint8_t*)msg, strlen(msg), 100);
-
-    /* Si PA0 (TX) est relié physiquement à PA1 (RX), on doit relire 0x55 */
-    uint8_t uart_tx_byte = 0x55;
-    uint8_t uart_rx_byte = 0x00;
-    HAL_UART_Transmit(&huart4, &uart_tx_byte, 1, 10);
-    (void)HAL_UART_Receive(&huart4, &uart_rx_byte, 1, 20);
-    /* uart_rx_byte devrait valoir 0x55 si jumper TX->RX présent */
-
 
   if (HAL_CAN_Start(&hcan1) != HAL_OK) {
     Error_Handler();
   }
 
+  /* ===== Tests UART4 & CAN1 ===== */
 
+  /* Petit message texte (facultatif) */
+  const char *msg = "PROTO TEST: UART($..$) + CAN(DLC=1)\r\n";
+  HAL_UART_Transmit(&huart4, (uint8_t*)msg, strlen(msg), 100);
 
-    CAN_TxHeaderTypeDef canTxHdr = {0};
-    CAN_RxHeaderTypeDef canRxHdr = {0};
-    uint8_t  can_txd[8] = {0x20, 0x01, 0x03, 0x01, 0,0,0,0}; // ex: OP_SET_VALVE
-    uint8_t  can_rxd[8] = {0};
-    uint32_t txMailbox;
-
-    canTxHdr.StdId = 0x200;              // ID test
-    canTxHdr.IDE   = CAN_ID_STD;
-    canTxHdr.RTR   = CAN_RTR_DATA;
-    canTxHdr.DLC   = 8;
-
-    if (HAL_CAN_AddTxMessage(&hcan1, &canTxHdr, can_txd, &txMailbox) != HAL_OK) {
-      Error_Handler();
-    }
-
-    /* Attendre une trame en FIFO0 (en loopback tu recevras ta propre trame) */
-    uint32_t t0 = HAL_GetTick();
-    while (HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0) == 0U) {
-      if ((HAL_GetTick() - t0) > 50U) {
-        break;  // pas bloquant si tu n'es PAS en loopback (bus réel)
-      }
-    }
-    if (HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0) > 0U) {
-      if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &canRxHdr, can_rxd) != HAL_OK) {
-        Error_Handler();
-      }
-      // Ici: canRxHdr.StdId == 0x200 et can_rxd == can_txd (en loopback)
-    }
+  /* Prépare RX CAN (en loopback on recevras ce que on envoies) */
+  CAN_RxHeaderTypeDef canRxHdr = {0};
+  uint8_t can_rxd[8] = {0};
 
   /* ===== Fin tests ===== */
 
@@ -167,6 +136,54 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	    static uint8_t hb = 0;
+	    hb ^= 1u;
+
+	    /* ---- Construire une commande "Startup" ---- */
+	    uint8_t seq = comm_seq_next(); // 0..7 (mod 8)
+	    cmd_byte_t cmd = cmd_make(seq, hb,
+	                              true,   // C1: Startup
+	                              false,  // C2: N2O Fill
+	                              false,  // C3: Igniter Start
+	                              false); // C4: Engine Start
+
+	    /* 1) SAS->GSE via UART4 : trame $ DATA CRC $ (escape si besoin) */
+	    (void)comm_tx_rf_send_sas_cmd(&huart4, 50, cmd.byte);
+
+	    /* 2) GSE->Moteur via CAN1 : DLC=1 */
+	    (void)comm_tx_can_send_moteur_cmd(&hcan1, cmd.byte);
+
+
+	    /* 3) Vérifier RX CAN en LOOPBACK */
+	    uint32_t t0 = HAL_GetTick();
+	    while (HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0) == 0U) {
+	      if ((HAL_GetTick() - t0) > 50U) break;
+	    }
+
+	    if (HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0) > 0U) {
+	      if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &canRxHdr, can_rxd) == HAL_OK) {
+	        /* mettre un breakpoint :
+	           - canRxHdr.DLC doit être 1
+	           - can_rxd[0] doit == cmd.byte
+	        */
+	        __NOP();
+	      }
+	    }
+
+	    HAL_Delay(500);
+
+	    /* ---- Exemple: envoyer N2O Fill ---- */
+	    seq = comm_seq_next();
+	    cmd = cmd_make(seq, hb,
+	                   false, true, false, false);
+	    (void)comm_tx_rf_send_sas_cmd(&huart4, 50, cmd.byte);
+	    (void)comm_tx_can_send_moteur_cmd(&hcan1, cmd.byte);
+	    HAL_Delay(500);
+
+	    /* ---- Exemple: E-STOP ---- */
+	    (void)comm_tx_can_send_estop(&hcan1, 0x01);
+	    HAL_Delay(1500);
+
   }
   /* USER CODE END 3 */
 }
