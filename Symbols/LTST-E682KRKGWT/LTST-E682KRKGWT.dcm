@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTST-E682KRKGWT
+D Red/Yell-Green LED SMD PLCC4 637/569nm
+K
+F https://optoelectronics.liteon.com/upload/download/DS22-2011-0354/LTST-E682KRKGWT.pdf
+$ENDCMP
+#
+#End Doc Library
