@@ -6447,7 +6447,7 @@
 		(dnp no)
 		(uuid "db807b03-27d9-4318-ba3e-eb4891ee6ac6")
 		(property "Reference" "3V3_C3"
-			(at 30.48 88.392 0)
+			(at 31.242 88.392 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6455,8 +6455,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 33.782 92.202 0)
+		(property "Value" "100nF"
+			(at 32.512 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
