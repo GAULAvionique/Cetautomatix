@@ -9164,7 +9164,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c173b6bb-86d4-4abf-bb7c-f700bcf03a21")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR0103"
 			(at 59.69 101.6 0)
 			(effects
 				(font
@@ -9214,7 +9214,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/1c3f73a9-ace7-4654-9081-04f4c5cd0c08"
-					(reference "#PWR08")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
