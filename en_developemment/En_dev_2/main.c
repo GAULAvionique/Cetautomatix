@@ -69,6 +69,45 @@ int test_vp_bad_val(){
 // la gestion des ordres de msg se fait via une chaine de caractère, la rendent ainci très modulable.
 // cette chaine de cactère fait ensuite référence a des variable interne d'un sturc.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 int main() {
     test_vp();
     test_vp_bad_val();

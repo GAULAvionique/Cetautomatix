@@ -31,6 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="V6.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="ValvePaire.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -39,9 +42,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="data1133.h" />
+		<Unit filename="group8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="group8.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="v6.h" />
 		<Unit filename="version.h" />
 		<Extensions>
 			<AutoVersioning>
