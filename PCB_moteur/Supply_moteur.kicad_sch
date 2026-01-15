@@ -4689,7 +4689,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5227720c-aa03-4ed5-a53e-1b20afd3b856")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR0101"
 			(at 265.43 39.37 0)
 			(effects
 				(font
@@ -4740,7 +4740,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
-					(reference "#PWR032")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
