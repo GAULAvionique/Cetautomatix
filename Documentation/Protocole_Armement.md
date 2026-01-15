@@ -21,7 +21,7 @@ Ce document décrit la séquence d’armement et les états associés des diffé
 ### #1 – Startup  
 Mettre tous les systèmes dans leur état initial sécurisé.  
 
-| Device                          | State        |
+| Device                          | State       |
 |---------------------------------|-------------|
 | CO2 Purge Valve                 | CLOSED      |
 | Spark Plug                      | UNPOWERED   |
