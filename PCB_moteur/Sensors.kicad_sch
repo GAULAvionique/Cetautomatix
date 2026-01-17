@@ -1884,7 +1884,7 @@
 		)
 	)
 	(rectangle
-		(start 201.93 15.24)
+		(start 215.9 15.24)
 		(end 281.94 69.85)
 		(stroke
 			(width 0)
@@ -1921,7 +1921,7 @@
 	)
 	(text "TEMPERATURE SENSOR"
 		(exclude_from_sim no)
-		(at 204.724 19.812 0)
+		(at 216.662 18.542 0)
 		(effects
 			(font
 				(size 1.27 1.27)
