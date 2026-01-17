@@ -1,0 +1,38 @@
+# === STM32CubeIDE ===
+**/.settings/
+**/.metadata/
+**/.externalToolBuilders/
+**/.vscode/
+**/.idea/
+**/*.launch
+**/*.log
+**/Debug/
+**/Release/
+
+# === KiCad ===
+# Fichiers générés automatiquement
+**/*.bak
+**/*.kicad_prl
+**/*.kicad_sch-bak
+**/*.tmp
+**/*.net
+**/*.xml
+**/*.lck
+
+# Sauvegardes automatiques KiCad
+**/*-backups/
+**/*-cache.lib
+
+# === Fichiers temporaires ===
+**/Backup/*.bak
+**/*.swp
+**/*.swo
+**/*~
+
+# === Versions ===
+ODB_V1/
+ODB_V2/
+
+# === Branch ===
+Documentation/
+README.md
