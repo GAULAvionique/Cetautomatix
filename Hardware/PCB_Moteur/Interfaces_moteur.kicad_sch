@@ -1212,6 +1212,180 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -3291,6 +3465,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 59.69) (xy 123.19 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54398bd8-8d9c-44b7-822f-ae0194729e4f")
+	)
+	(wire
+		(pts
 			(xy 60.96 69.85) (xy 60.96 71.12)
 		)
 		(stroke
@@ -3418,6 +3602,16 @@
 			(type default)
 		)
 		(uuid "6cb0b331-9d5a-4821-a90f-5cde26c1fd0d")
+	)
+	(wire
+		(pts
+			(xy 111.76 58.42) (xy 111.76 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cbab241-454d-44d7-b675-41cd41050bdc")
 	)
 	(wire
 		(pts
@@ -3628,6 +3822,16 @@
 			(type default)
 		)
 		(uuid "a5f966ef-5ab8-4e76-8ca5-80f3cd48d0e4")
+	)
+	(wire
+		(pts
+			(xy 111.76 59.69) (xy 114.3 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6a147e2-c7d0-42d3-b47d-a0ceb759e6d1")
 	)
 	(wire
 		(pts
@@ -3861,6 +4065,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 60.96) (xy 132.08 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e591cc11-7891-4019-b382-a1fb9fde6cee")
+	)
+	(wire
+		(pts
 			(xy 226.06 69.85) (xy 224.79 69.85)
 		)
 		(stroke
@@ -3888,6 +4102,16 @@
 			(type default)
 		)
 		(uuid "f0285d5a-ddfd-40c2-825f-dcdc8cbc2033")
+	)
+	(wire
+		(pts
+			(xy 132.08 59.69) (xy 130.81 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f16d657e-ae32-44f4-91af-d375738a2eeb")
 	)
 	(wire
 		(pts
@@ -3959,7 +4183,7 @@
 		)
 		(uuid "fffd26e2-fc37-40ae-842e-5c61574d444b")
 	)
-	(global_label "Stepup_servo3"
+	(global_label "Servo3_Stepup"
 		(shape input)
 		(at 130.81 96.52 0)
 		(fields_autoplaced yes)
@@ -3971,7 +4195,7 @@
 		)
 		(uuid "3237ac37-a02f-4408-932a-29015a702013")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.4626 96.52 0)
+			(at 147.644 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3981,7 +4205,7 @@
 			)
 		)
 	)
-	(global_label "CAN_USART1_RX"
+	(global_label "ISO_CAN_RXD"
 		(shape input)
 		(at 190.5 74.93 180)
 		(fields_autoplaced yes)
@@ -3993,7 +4217,7 @@
 		)
 		(uuid "37ad5604-4497-4b5e-a5ed-ecb0eb92e223")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.3353 74.93 0)
+			(at 174.9962 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4003,29 +4227,7 @@
 			)
 		)
 	)
-	(global_label "Stepup_servo2"
-		(shape input)
-		(at 76.2 132.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4c5b1fa9-c017-4cbe-a806-4065868744dc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.5474 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Stepup_servo1"
+	(global_label "Servo1_Stepup"
 		(shape input)
 		(at 76.2 119.38 180)
 		(fields_autoplaced yes)
@@ -4035,9 +4237,9 @@
 			)
 			(justify right)
 		)
-		(uuid "67b49095-5916-40d7-bd5d-a69390e3682f")
+		(uuid "39b48c66-9f77-40f1-86ca-f572876f95b2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.5474 119.38 0)
+			(at 59.366 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4047,7 +4249,7 @@
 			)
 		)
 	)
-	(global_label "PWM_SERVO4"
+	(global_label "Servo4_PWM"
 		(shape input)
 		(at 102.87 91.44 0)
 		(fields_autoplaced yes)
@@ -4059,7 +4261,7 @@
 		)
 		(uuid "76e36e42-24c0-43b1-8825-1bd821726337")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.2527 91.44 0)
+			(at 117.406 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4069,7 +4271,7 @@
 			)
 		)
 	)
-	(global_label "PWM_SERVO1"
+	(global_label "Servo1_PWM"
 		(shape input)
 		(at 64.77 86.36 180)
 		(fields_autoplaced yes)
@@ -4081,7 +4283,7 @@
 		)
 		(uuid "77b1e43a-470f-4f6b-a86e-8a3134e1bdd4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 49.3873 86.36 0)
+			(at 50.234 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4091,7 +4293,7 @@
 			)
 		)
 	)
-	(global_label "PWM_SERVO3"
+	(global_label "Servo3_PWM"
 		(shape input)
 		(at 102.87 88.9 0)
 		(fields_autoplaced yes)
@@ -4103,7 +4305,7 @@
 		)
 		(uuid "7b9c066c-75d9-48fc-be7a-a7fe5462c0dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.2527 88.9 0)
+			(at 117.406 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4113,7 +4315,7 @@
 			)
 		)
 	)
-	(global_label "PWM_SERVO2"
+	(global_label "Servo2_PWM"
 		(shape input)
 		(at 64.77 88.9 180)
 		(fields_autoplaced yes)
@@ -4125,7 +4327,7 @@
 		)
 		(uuid "82553076-77cf-4c34-8cef-95c296b5c52c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 49.3873 88.9 0)
+			(at 50.234 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4135,7 +4337,7 @@
 			)
 		)
 	)
-	(global_label "I_GPIO_iso"
+	(global_label "ISO_State"
 		(shape input)
 		(at 190.5 82.55 180)
 		(fields_autoplaced yes)
@@ -4147,7 +4349,7 @@
 		)
 		(uuid "91847808-1b4f-46cc-a4a1-661b0f7acf69")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 177.7176 82.55 0)
+			(at 178.5039 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4157,7 +4359,7 @@
 			)
 		)
 	)
-	(global_label "Stepup_servo1"
+	(global_label "Servo1_Stepup"
 		(shape input)
 		(at 34.29 93.98 180)
 		(fields_autoplaced yes)
@@ -4169,7 +4371,7 @@
 		)
 		(uuid "9ed09b48-17ec-4cdf-9e66-2c69b6e27b81")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 17.6374 93.98 0)
+			(at 17.456 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4179,29 +4381,7 @@
 			)
 		)
 	)
-	(global_label "O_GPIO_iso"
-		(shape input)
-		(at 226.06 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ac6840cc-e6b6-46d1-97a8-2e818f45855d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 239.5681 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Stepup_servo2"
+	(global_label "Servo2_Stepup"
 		(shape input)
 		(at 34.29 96.52 180)
 		(fields_autoplaced yes)
@@ -4213,7 +4393,7 @@
 		)
 		(uuid "bc0eb9c8-febb-43c9-b287-0e6f92aabff6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 17.6374 96.52 0)
+			(at 17.456 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4223,29 +4403,7 @@
 			)
 		)
 	)
-	(global_label "Stepup_servo3"
-		(shape input)
-		(at 91.44 119.38 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d4bbd271-add3-4c3b-968c-ed6e4a699941")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.0926 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Stepup_servo4"
+	(global_label "Servo4_Stepup"
 		(shape input)
 		(at 130.81 99.06 0)
 		(fields_autoplaced yes)
@@ -4257,7 +4415,7 @@
 		)
 		(uuid "d6eaab9b-87ae-4293-8fee-216d4f888cb5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.4626 99.06 0)
+			(at 147.644 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4267,7 +4425,7 @@
 			)
 		)
 	)
-	(global_label "SERVO_EN"
+	(global_label "Servo_En"
 		(shape input)
 		(at 64.77 76.2 180)
 		(fields_autoplaced yes)
@@ -4279,7 +4437,7 @@
 		)
 		(uuid "e573c145-f8fa-43a7-9a1b-52a1d0560e04")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.2901 76.2 0)
+			(at 53.3183 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4289,7 +4447,7 @@
 			)
 		)
 	)
-	(global_label "Stepup_servo4"
+	(global_label "Servo4_Stepup"
 		(shape input)
 		(at 91.44 132.08 0)
 		(fields_autoplaced yes)
@@ -4299,9 +4457,9 @@
 			)
 			(justify left)
 		)
-		(uuid "eff057fe-757e-4b56-bb33-61e3d6ee7064")
+		(uuid "ec64d539-c63a-4a8c-9f22-d3bed7650d2e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.0926 132.08 0)
+			(at 108.274 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4311,7 +4469,51 @@
 			)
 		)
 	)
-	(global_label "CAN_USART1_TX"
+	(global_label "Servo3_Stepup"
+		(shape input)
+		(at 91.44 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f345f150-b6f3-42ae-b973-0ce558f36ba8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 108.274 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Servo2_Stepup"
+		(shape input)
+		(at 76.2 132.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fac016eb-aff4-4ac4-8559-aee5530feb11")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 59.366 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ISO_CAN_TXD"
 		(shape input)
 		(at 190.5 77.47 180)
 		(fields_autoplaced yes)
@@ -4323,7 +4525,7 @@
 		)
 		(uuid "fec550fd-a980-4dab-b039-4e7dc7eb3a98")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.6377 77.47 0)
+			(at 175.2986 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4467,6 +4669,73 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
 					(reference "CAN_R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 127 59.69 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0d844b23-0124-46ac-a374-5bedee1552ad")
+		(property "Reference" "L3"
+			(at 127 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 127 62.738 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 127 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 127 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d8964da-231b-4b2d-8c6e-d7a1b304f33e")
+		)
+		(pin "2"
+			(uuid "59bf10e8-6837-472e-a7fa-65d9ed49d33b")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "L3")
 					(unit 1)
 				)
 			)
@@ -4668,6 +4937,71 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 111.76 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2842dfab-738f-4377-b122-0b2c4cc0cf79")
+		(property "Reference" "#PWR088"
+			(at 111.76 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 111.76 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 111.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4856313c-2df9-469c-b957-b90bdf9a30a4")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -6173,7 +6507,7 @@
 			)
 		)
 		(property "Value" "ISOW1044"
-			(at 214.2333 102.87 0)
+			(at 221.742 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7144,6 +7478,74 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 132.08 60.96 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8af3907-f302-4fdd-8e4a-fe1b7e86b8a5")
+		(property "Reference" "#PWR090"
+			(at 132.08 67.31 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 60.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 60.96 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c029881-c175-4437-91c5-8c5d6951991a")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 191.77 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7291,7 +7693,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "dc144a07-6948-453c-8315-ad06869b3ee5")
 		(property "Reference" "#PWR013"
 			(at 212.09 106.68 0)
@@ -7303,7 +7704,7 @@
 			)
 		)
 		(property "Value" "GND_iso"
-			(at 212.09 105.41 0)
+			(at 212.344 104.394 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7799,6 +8200,76 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 118.11 59.69 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ed3b6c69-7653-40dc-9b06-79b85b0c21a5")
+		(property "Reference" "R45"
+			(at 119.38 57.404 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 119.634 62.23 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 118.11 61.468 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 59.69 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62ba576c-18eb-4eae-9a80-5e4f82e2590f")
+		)
+		(pin "2"
+			(uuid "3c081397-41b5-4ee3-a0a7-dce9231ab69b")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "R45")
 					(unit 1)
 				)
 			)
