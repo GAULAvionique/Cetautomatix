@@ -492,34 +492,16 @@ static void MX_GPIO_Init(void)
   /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(ISO_CAN_IN_GPIO_Port, ISO_CAN_IN_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOD, Pressure_Sleep_Pin|LCell_Sleep_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, Fire_2_Pin|Fire_1_Pin|Pyros_Arm_Pin|CriticalLED_R_Pin
-                          |CriticalLED_G_Pin|Servo4_Stepup_Pin|Servo3_Stepup_Pin|Servo2_Stepup_Pin
-                          |Servo1_Stepup_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin : ISO_CAN_IN_Pin */
-  GPIO_InitStruct.Pin = ISO_CAN_IN_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(ISO_CAN_IN_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : Servo4_Open_Pin Servo4_Close_Pin */
-  GPIO_InitStruct.Pin = Servo4_Open_Pin|Servo4_Close_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+                          |CriticalLED_G_Pin|ISO_CAN_IN_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : Pressure_Sleep_Pin LCell_Sleep_Pin */
   GPIO_InitStruct.Pin = Pressure_Sleep_Pin|LCell_Sleep_Pin;
@@ -529,14 +511,20 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Fire_2_Pin Fire_1_Pin Pyros_Arm_Pin CriticalLED_R_Pin
-                           CriticalLED_G_Pin Servo4_Stepup_Pin Servo3_Stepup_Pin Servo2_Stepup_Pin
-                           Servo1_Stepup_Pin */
+                           CriticalLED_G_Pin ISO_CAN_IN_Pin */
   GPIO_InitStruct.Pin = Fire_2_Pin|Fire_1_Pin|Pyros_Arm_Pin|CriticalLED_R_Pin
-                          |CriticalLED_G_Pin|Servo4_Stepup_Pin|Servo3_Stepup_Pin|Servo2_Stepup_Pin
-                          |Servo1_Stepup_Pin;
+                          |CriticalLED_G_Pin|ISO_CAN_IN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : Servo4_Close_Pin Servo4_Open_Pin Servo3_Close_Pin Servo3_Open_Pin
+                           Servo2_Open_Pin Servo2_Close_Pin */
+  GPIO_InitStruct.Pin = Servo4_Close_Pin|Servo4_Open_Pin|Servo3_Close_Pin|Servo3_Open_Pin
+                          |Servo2_Open_Pin|Servo2_Close_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Servo1_Open_Pin Servo1_Close_Pin */
@@ -544,12 +532,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : Servo2_Open_Pin Servo2_Close_Pin Servo3_Open_Pin Servo3_Close_Pin */
-  GPIO_InitStruct.Pin = Servo2_Open_Pin|Servo2_Close_Pin|Servo3_Open_Pin|Servo3_Close_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure peripheral I/O remapping */
   __HAL_AFIO_REMAP_PD01_ENABLE();
