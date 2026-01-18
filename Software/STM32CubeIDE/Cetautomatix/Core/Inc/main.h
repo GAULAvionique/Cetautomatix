@@ -59,6 +59,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define EXTEND_IO2_Pin GPIO_PIN_13
+#define EXTEND_IO2_GPIO_Port GPIOC
+#define EXTEND_IO3_Pin GPIO_PIN_14
+#define EXTEND_IO3_GPIO_Port GPIOC
+#define EXTEND_IO4_Pin GPIO_PIN_15
+#define EXTEND_IO4_GPIO_Port GPIOC
 #define Pressure_Sleep_Pin GPIO_PIN_0
 #define Pressure_Sleep_GPIO_Port GPIOD
 #define LCell_Sleep_Pin GPIO_PIN_1
@@ -119,6 +125,8 @@ void Error_Handler(void);
 #define Servo2_Open_GPIO_Port GPIOB
 #define Servo2_Close_Pin GPIO_PIN_5
 #define Servo2_Close_GPIO_Port GPIOB
+#define EXTEND_IO1_Pin GPIO_PIN_6
+#define EXTEND_IO1_GPIO_Port GPIOB
 #define ISO_CAN_IN_Pin GPIO_PIN_7
 #define ISO_CAN_IN_GPIO_Port GPIOB
 #define ISO_CAN_RXD_Pin GPIO_PIN_8
