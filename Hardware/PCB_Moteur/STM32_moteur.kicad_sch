@@ -2994,8 +2994,8 @@
 		)
 	)
 	(rectangle
-		(start 13.97 31.75)
-		(end 58.42 58.42)
+		(start 13.97 100.33)
+		(end 58.42 127)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3054,8 +3054,8 @@
 		(uuid 608e00ab-9625-4451-b8c2-098b6891d409)
 	)
 	(rectangle
-		(start 13.97 59.69)
-		(end 87.63 82.55)
+		(start 13.97 128.27)
+		(end 87.63 151.13)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3099,6 +3099,18 @@
 		)
 		(uuid "1964249d-f4f3-4dcc-af22-60d6417f6403")
 	)
+	(text "Main"
+		(exclude_from_sim no)
+		(at 21.082 17.018 0)
+		(effects
+			(font
+				(size 4.064 4.064)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "417f4e6b-96dc-4a7b-87d0-c58da2ad0902")
+	)
 	(text "BOOT OPTION"
 		(exclude_from_sim no)
 		(at 242.57 16.51 0)
@@ -3127,7 +3139,7 @@
 	)
 	(text "SYS_SW Connector"
 		(exclude_from_sim no)
-		(at 32.004 34.544 0)
+		(at 32.004 103.124 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3152,7 +3164,7 @@
 	)
 	(text "CriticalLED"
 		(exclude_from_sim no)
-		(at 24.892 62.484 0)
+		(at 24.892 131.064 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3164,7 +3176,7 @@
 	)
 	(text "I = (3.3 - 2.0)V / 100R = 0.013A"
 		(exclude_from_sim no)
-		(at 14.986 81.28 0)
+		(at 14.986 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3314,7 +3326,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 71.12) (xy 69.85 71.12)
+			(xy 71.12 139.7) (xy 69.85 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3324,7 +3336,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 69.85) (xy 80.01 71.12)
+			(xy 80.01 138.43) (xy 80.01 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3444,6 +3456,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 97.79) (xy 127 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fabf4c7-aaae-49d9-ab35-d0fed0e29b33")
+	)
+	(wire
+		(pts
 			(xy 243.84 62.23) (xy 243.84 64.77)
 		)
 		(stroke
@@ -3474,7 +3496,7 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 46.99) (xy 17.78 41.91)
+			(xy 17.78 115.57) (xy 17.78 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3684,7 +3706,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 52.07) (xy 17.78 52.07)
+			(xy 40.64 120.65) (xy 17.78 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3814,7 +3836,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 41.91) (xy 40.64 41.91)
+			(xy 34.29 110.49) (xy 40.64 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3824,7 +3846,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 71.12) (xy 36.83 71.12)
+			(xy 35.56 139.7) (xy 36.83 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3894,7 +3916,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 44.45) (xy 40.64 44.45)
+			(xy 34.29 113.03) (xy 40.64 113.03)
 		)
 		(stroke
 			(width 0)
@@ -4104,7 +4126,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 73.66) (xy 71.12 73.66)
+			(xy 69.85 142.24) (xy 71.12 142.24)
 		)
 		(stroke
 			(width 0)
@@ -4131,6 +4153,16 @@
 			(type default)
 		)
 		(uuid "88dcdd98-09d6-4700-9b96-e0b0166d3b43")
+	)
+	(wire
+		(pts
+			(xy 132.08 97.79) (xy 133.35 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c372110-8b30-4352-b14f-45ec1e313046")
 	)
 	(wire
 		(pts
@@ -4214,7 +4246,7 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 72.39) (xy 17.78 73.66)
+			(xy 17.78 140.97) (xy 17.78 142.24)
 		)
 		(stroke
 			(width 0)
@@ -4284,7 +4316,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 46.99) (xy 17.78 46.99)
+			(xy 40.64 115.57) (xy 17.78 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4304,16 +4336,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 97.79) (xy 133.35 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b225679b-056e-4ab5-a336-49a82d1c8237")
-	)
-	(wire
-		(pts
 			(xy 125.73 95.25) (xy 133.35 95.25)
 		)
 		(stroke
@@ -4324,7 +4346,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 73.66) (xy 36.83 73.66)
+			(xy 35.56 142.24) (xy 36.83 142.24)
 		)
 		(stroke
 			(width 0)
@@ -4344,7 +4366,7 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 52.07) (xy 17.78 54.61)
+			(xy 17.78 120.65) (xy 17.78 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4374,7 +4396,7 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 73.66) (xy 27.94 73.66)
+			(xy 17.78 142.24) (xy 27.94 142.24)
 		)
 		(stroke
 			(width 0)
@@ -4404,7 +4426,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 49.53) (xy 40.64 49.53)
+			(xy 34.29 118.11) (xy 40.64 118.11)
 		)
 		(stroke
 			(width 0)
@@ -4544,7 +4566,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 54.61) (xy 40.64 54.61)
+			(xy 34.29 123.19) (xy 40.64 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4594,7 +4616,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 71.12) (xy 80.01 71.12)
+			(xy 78.74 139.7) (xy 80.01 139.7)
 		)
 		(stroke
 			(width 0)
@@ -4862,7 +4884,7 @@
 	)
 	(global_label "CriticalLED_R"
 		(shape input)
-		(at 35.56 71.12 180)
+		(at 35.56 139.7 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4872,7 +4894,7 @@
 		)
 		(uuid "0c073cc8-22d9-4521-a6e6-ab90651ac1f1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.9958 71.12 0)
+			(at 19.9958 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4950,7 +4972,7 @@
 	)
 	(global_label "SYS_NRST"
 		(shape input)
-		(at 34.29 54.61 180)
+		(at 34.29 123.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4961,7 +4983,7 @@
 		)
 		(uuid "2b053739-8fdf-4a0f-a0d5-60339754c599")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 22.052 54.61 0)
+			(at 22.052 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4995,7 +5017,7 @@
 	)
 	(global_label "SYS_SWCLK"
 		(shape input)
-		(at 34.29 44.45 180)
+		(at 34.29 113.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5006,7 +5028,7 @@
 		)
 		(uuid "383c794a-2e0b-4f84-b64b-656d29dab10f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.6006 44.45 0)
+			(at 20.6006 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5084,7 +5106,7 @@
 	)
 	(global_label "SYS_SWO"
 		(shape input)
-		(at 34.29 49.53 180)
+		(at 34.29 118.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5095,7 +5117,7 @@
 		)
 		(uuid "443900cd-e4b5-41ef-8d49-e3b27f2a9f02")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 22.8382 49.53 0)
+			(at 22.8382 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5349,7 +5371,7 @@
 	)
 	(global_label "CriticalLED_G"
 		(shape input)
-		(at 71.12 73.66 0)
+		(at 71.12 142.24 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5359,7 +5381,7 @@
 		)
 		(uuid "627aa7e5-13d0-436b-af5d-79fd05488bc5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.6842 73.66 0)
+			(at 86.6842 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5658,7 +5680,7 @@
 	)
 	(global_label "SYS_SWDIO"
 		(shape input)
-		(at 34.29 41.91 180)
+		(at 34.29 110.49 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5669,7 +5691,7 @@
 		)
 		(uuid "89994138-f4c0-4ee0-8980-19af38779df9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.9634 41.91 0)
+			(at 20.9634 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6480,7 +6502,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "048322c7-d2aa-4ac7-8b47-69033aa9a9d1")
-		(property "Reference" "R41"
+		(property "Reference" "R15"
 			(at 192.786 74.93 90)
 			(effects
 				(font
@@ -6534,7 +6556,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R41")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -6542,15 +6564,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 74.93 71.12 90)
+		(at 74.93 139.7 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "06427c44-b559-40de-b128-89dd46d270bb")
-		(property "Reference" "R56"
-			(at 73.152 67.818 90)
+		(property "Reference" "R7"
+			(at 73.152 136.398 90)
 			(effects
 				(font
 					(size 1 1)
@@ -6559,7 +6581,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 72.898 69.342 90)
+			(at 72.898 137.922 90)
 			(effects
 				(font
 					(size 1 1)
@@ -6568,7 +6590,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 74.93 72.898 90)
+			(at 74.93 141.478 90)
 			(effects
 				(font
 					(size 1 1)
@@ -6577,7 +6599,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 71.12 0)
+			(at 74.93 139.7 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6586,7 +6608,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 71.12 0)
+			(at 74.93 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6595,7 +6617,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" ""
-			(at 74.93 71.12 90)
+			(at 74.93 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6604,7 +6626,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 74.93 71.12 90)
+			(at 74.93 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6613,7 +6635,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 74.93 71.12 90)
+			(at 74.93 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6622,7 +6644,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 74.93 71.12 90)
+			(at 74.93 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6631,7 +6653,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 74.93 71.12 90)
+			(at 74.93 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6648,7 +6670,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R56")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -6663,8 +6685,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "076cc2a4-1a38-4e8c-983e-97e8f355560e")
-		(property "Reference" "STM_C3"
-			(at 262.89 55.88 0)
+		(property "Reference" "C17"
+			(at 261.62 56.134 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6672,7 +6694,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 259.08 60.96 0)
+			(at 259.334 60.96 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6715,7 +6737,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "STM_C3")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -6860,8 +6882,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1500e01d-f344-48a7-8636-f6268b145416")
-		(property "Reference" "STM_C7"
-			(at 255.27 81.28 0)
+		(property "Reference" "C21"
+			(at 253.746 81.534 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6869,7 +6891,7 @@
 			)
 		)
 		(property "Value" "10nf"
-			(at 251.46 86.36 0)
+			(at 251.714 86.36 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6912,7 +6934,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "STM_C7")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -6991,8 +7013,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1ba0f085-ef6d-4c57-b6e1-e58d4e91a9a7")
-		(property "Reference" "R44"
-			(at 116.586 80.01 90)
+		(property "Reference" "R10"
+			(at 110.236 80.01 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -7001,7 +7023,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 113.03 80.01 90)
+			(at 106.68 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7045,7 +7067,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R44")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -7053,7 +7075,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x06_Pin")
-		(at 45.72 46.99 0)
+		(at 45.72 115.57 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7062,7 +7084,7 @@
 		(dnp no)
 		(uuid "1d42ba72-f365-4cfe-a608-fa8a97af6bfd")
 		(property "Reference" "J2"
-			(at 48.006 38.862 0)
+			(at 48.006 107.442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7070,7 +7092,7 @@
 			)
 		)
 		(property "Value" "Conn_01x06_Pin"
-			(at 38.354 38.862 0)
+			(at 38.354 107.442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7078,7 +7100,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 46.99 0)
+			(at 45.72 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7087,7 +7109,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 45.72 46.99 0)
+			(at 45.72 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7096,7 +7118,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
-			(at 45.72 46.99 0)
+			(at 45.72 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7271,7 +7293,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23bb11df-9194-4ff2-a9a0-e523d3186fc3")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 161.29 48.26 0)
 			(effects
 				(font
@@ -7463,7 +7485,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "U1")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -8055,7 +8077,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 17.78 41.91 0)
+		(at 17.78 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8063,7 +8085,7 @@
 		(dnp no)
 		(uuid "485f6f19-0cbd-4b8c-aacc-e9eb5dc8137e")
 		(property "Reference" "#PWR046"
-			(at 17.78 45.72 0)
+			(at 17.78 114.3 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8072,7 +8094,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 17.78 38.1 0)
+			(at 17.78 106.68 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8080,7 +8102,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 17.78 41.91 0)
+			(at 17.78 110.49 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8089,7 +8111,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 17.78 41.91 0)
+			(at 17.78 110.49 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8098,7 +8120,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 17.78 41.91 0)
+			(at 17.78 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8119,6 +8141,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 129.54 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49b754d7-bf19-4afb-b9ae-5630e2a4fbee")
+		(property "Reference" "R33"
+			(at 110.236 97.79 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22R"
+			(at 106.934 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 129.54 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 129.54 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e4a2a0fb-bf63-4beb-9672-8db8e7bc9e25")
+		)
+		(pin "2"
+			(uuid "5c7c58c7-ffdb-4ab2-a01c-16c3b54c39f4")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 261.62 25.4 270)
 		(unit 1)
@@ -8126,10 +8217,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4da3db1b-8f53-4df7-9c2e-d458feaaaf48")
-		(property "Reference" "STM_R2"
-			(at 261.62 19.05 90)
+		(property "Reference" "R8"
+			(at 261.62 21.59 90)
 			(effects
 				(font
 					(size 1 1)
@@ -8137,7 +8227,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 261.62 21.59 90)
+			(at 261.62 23.114 90)
 			(effects
 				(font
 					(size 1 1)
@@ -8179,7 +8269,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "STM_R2")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -8260,8 +8350,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "573ff3ef-5da3-4ae2-9047-d03776b98901")
-		(property "Reference" "STM_C8"
-			(at 269.24 81.28 0)
+		(property "Reference" "C22"
+			(at 267.462 81.788 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8269,7 +8359,7 @@
 			)
 		)
 		(property "Value" "10nf"
-			(at 265.43 86.36 0)
+			(at 265.684 86.36 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8312,7 +8402,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "STM_C8")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -8327,8 +8417,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5bf84e6f-7eda-4dfa-a9bd-6a643a3ea710")
-		(property "Reference" "STM_C4"
-			(at 270.51 55.88 0)
+		(property "Reference" "C18"
+			(at 269.24 56.134 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8336,7 +8426,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 266.7 60.96 0)
+			(at 267.208 60.96 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8379,7 +8469,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "STM_C4")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -8722,8 +8812,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6b0b03f7-75be-47f6-98d2-c92aae7100fe")
-		(property "Reference" "STM_C9"
-			(at 97.282 55.372 0)
+		(property "Reference" "C23"
+			(at 100.838 55.372 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8776,7 +8866,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "STM_C9")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -8854,10 +8944,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6f19a11f-6d50-468c-899d-8e8aabf9779b")
-		(property "Reference" "FB3"
-			(at 259.0419 71.12 90)
+		(property "Reference" "FB2"
+			(at 259.08 72.644 90)
 			(effects
 				(font
 					(size 1 1)
@@ -8865,7 +8954,7 @@
 			)
 		)
 		(property "Value" "120R"
-			(at 259.0419 73.66 90)
+			(at 259.08 74.422 90)
 			(effects
 				(font
 					(size 1 1)
@@ -8907,7 +8996,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "FB3")
+					(reference "FB2")
 					(unit 1)
 				)
 			)
@@ -9053,8 +9142,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "756f485f-6265-45cd-8d68-44725d5df9d0")
-		(property "Reference" "STM_C5"
-			(at 278.13 55.88 0)
+		(property "Reference" "C19"
+			(at 276.352 56.388 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9062,7 +9151,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 274.32 60.96 0)
+			(at 274.574 60.96 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9105,7 +9194,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "STM_C5")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -9512,7 +9601,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8b7c04de-2cf2-42e7-a10b-005387b0eb2e")
-		(property "Reference" "R40"
+		(property "Reference" "R14"
 			(at 192.786 72.39 90)
 			(effects
 				(font
@@ -9566,7 +9655,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R40")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -9581,7 +9670,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "92135a38-c810-4f5f-969c-9b432323cca4")
-		(property "Reference" "R42"
+		(property "Reference" "R16"
 			(at 192.786 77.47 90)
 			(effects
 				(font
@@ -9635,7 +9724,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R42")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -9781,8 +9870,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "97034fad-4d25-444d-9b19-ffd9deb9c426")
-		(property "Reference" "R6"
-			(at 112.776 85.09 90)
+		(property "Reference" "R12"
+			(at 109.728 85.09 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -9791,7 +9880,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 109.474 85.09 90)
+			(at 106.426 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9835,7 +9924,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R6")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -9910,7 +9999,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 17.78 72.39 0)
+		(at 17.78 140.97 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9919,7 +10008,7 @@
 		(dnp no)
 		(uuid "98c30ea6-31a3-4f0a-8c03-ab81c73f56dc")
 		(property "Reference" "#PWR024"
-			(at 17.78 76.2 0)
+			(at 17.78 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9928,7 +10017,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 17.78 68.58 0)
+			(at 17.78 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9936,7 +10025,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 17.78 72.39 0)
+			(at 17.78 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9945,7 +10034,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 17.78 72.39 0)
+			(at 17.78 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9954,7 +10043,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 17.78 72.39 0)
+			(at 17.78 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9976,7 +10065,7 @@
 	)
 	(symbol
 		(lib_id "pcb_moteur:LTST-E682KRKGWT")
-		(at 69.85 71.12 0)
+		(at 69.85 139.7 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9984,8 +10073,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "99958663-dd73-467a-af5a-4310c1a30a1e")
-		(property "Reference" "LED1"
-			(at 53.34 63.5 0)
+		(property "Reference" "LED2"
+			(at 53.34 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9993,7 +10082,7 @@
 			)
 		)
 		(property "Value" "LTST-E682KRKGWT"
-			(at 53.34 66.04 0)
+			(at 53.34 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10001,7 +10090,7 @@
 			)
 		)
 		(property "Footprint" "LTSTE683RGBW"
-			(at 40.64 166.04 0)
+			(at 40.64 234.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10011,7 +10100,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2011-0354/LTST-E682KRKGWT.pdf"
-			(at 40.64 266.04 0)
+			(at 40.64 334.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10021,7 +10110,7 @@
 			)
 		)
 		(property "Description" "Red/Yell-Green LED SMD PLCC4 637/569nm"
-			(at 69.85 71.12 0)
+			(at 69.85 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10030,7 +10119,7 @@
 			)
 		)
 		(property "Height" "2"
-			(at 40.64 466.04 0)
+			(at 40.64 534.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10040,7 +10129,7 @@
 			)
 		)
 		(property "Mouser Part Number" "859-LTST-E682KRKGWT"
-			(at 40.64 566.04 0)
+			(at 40.64 634.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10050,7 +10139,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lite-On/LTST-E682KRKGWT?qs=xb8aMrBSZRL4Mm2v%2F2Q1nw%3D%3D"
-			(at 40.64 666.04 0)
+			(at 40.64 734.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10060,7 +10149,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lite-On"
-			(at 40.64 766.04 0)
+			(at 40.64 834.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10070,7 +10159,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LTST-E682KRKGWT"
-			(at 40.64 866.04 0)
+			(at 40.64 934.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10094,7 +10183,7 @@
 		(instances
 			(project ""
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "LED1")
+					(reference "LED2")
 					(unit 1)
 				)
 			)
@@ -10109,7 +10198,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9aa680f2-6525-417a-8d4c-754eb748cbea")
-		(property "Reference" "R43"
+		(property "Reference" "R17"
 			(at 192.786 80.01 90)
 			(effects
 				(font
@@ -10163,7 +10252,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R43")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -10178,8 +10267,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a21fde78-fdbc-467a-9b22-357da4f153c2")
-		(property "Reference" "STM_C1"
-			(at 247.65 55.88 0)
+		(property "Reference" "C15"
+			(at 246.126 56.134 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10187,7 +10276,7 @@
 			)
 		)
 		(property "Value" "10uf"
-			(at 243.84 60.96 0)
+			(at 244.094 60.96 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10230,7 +10319,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "STM_C1")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -10311,8 +10400,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad5efebe-a701-4a06-9b0b-94a21db28df6")
-		(property "Reference" "STM_C6"
-			(at 247.65 81.28 0)
+		(property "Reference" "C20"
+			(at 245.872 81.534 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10320,7 +10409,7 @@
 			)
 		)
 		(property "Value" "10uf"
-			(at 243.84 86.36 0)
+			(at 244.094 86.36 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10363,7 +10452,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "STM_C6")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -10371,7 +10460,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 17.78 54.61 0)
+		(at 17.78 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10380,7 +10469,7 @@
 		(fields_autoplaced yes)
 		(uuid "ad959965-8bae-4fe8-b8c8-63c03bc75ed9")
 		(property "Reference" "#PWR027"
-			(at 17.78 60.96 0)
+			(at 17.78 129.54 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10389,7 +10478,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 17.78 59.69 0)
+			(at 17.78 128.27 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10398,7 +10487,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 17.78 54.61 0)
+			(at 17.78 123.19 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10407,7 +10496,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 17.78 54.61 0)
+			(at 17.78 123.19 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10416,7 +10505,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 17.78 54.61 0)
+			(at 17.78 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10509,8 +10598,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3a65987-f659-48f2-9c04-3fbb23192715")
-		(property "Reference" "R45"
-			(at 116.586 82.55 90)
+		(property "Reference" "R11"
+			(at 109.982 82.55 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -10519,7 +10608,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 113.284 82.55 90)
+			(at 106.68 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10563,7 +10652,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R45")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -10767,7 +10856,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 80.01 69.85 0)
+		(at 80.01 138.43 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10776,7 +10865,7 @@
 		(dnp no)
 		(uuid "c0a5abcb-eb00-4111-a4ef-7f48caf73570")
 		(property "Reference" "#PWR028"
-			(at 80.01 73.66 0)
+			(at 80.01 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10785,7 +10874,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 80.01 66.04 0)
+			(at 80.01 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10793,7 +10882,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 69.85 0)
+			(at 80.01 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10802,7 +10891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 69.85 0)
+			(at 80.01 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10811,7 +10900,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 80.01 69.85 0)
+			(at 80.01 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11029,15 +11118,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 31.75 73.66 90)
+		(at 31.75 142.24 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d4b7ba00-455f-4d43-967f-9b0cbd8303a5")
-		(property "Reference" "R53"
-			(at 30.226 75.692 90)
+		(property "Reference" "R6"
+			(at 30.226 144.272 90)
 			(effects
 				(font
 					(size 1 1)
@@ -11046,7 +11135,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 29.718 77.216 90)
+			(at 29.718 145.796 90)
 			(effects
 				(font
 					(size 1 1)
@@ -11055,7 +11144,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 75.438 90)
+			(at 31.75 144.018 90)
 			(effects
 				(font
 					(size 1 1)
@@ -11064,7 +11153,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 73.66 0)
+			(at 31.75 142.24 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11073,7 +11162,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 31.75 73.66 0)
+			(at 31.75 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11082,7 +11171,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" ""
-			(at 31.75 73.66 90)
+			(at 31.75 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11091,7 +11180,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 31.75 73.66 90)
+			(at 31.75 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11100,7 +11189,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 31.75 73.66 90)
+			(at 31.75 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11109,7 +11198,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 31.75 73.66 90)
+			(at 31.75 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11118,7 +11207,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 31.75 73.66 90)
+			(at 31.75 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11135,7 +11224,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R53")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -11280,8 +11369,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e11fa2a3-4c86-44a4-9b78-00b6d64e3dd7")
-		(property "Reference" "STM_C2"
-			(at 255.27 55.88 0)
+		(property "Reference" "C16"
+			(at 253.746 56.134 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11289,7 +11378,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 251.46 60.96 0)
+			(at 251.714 60.96 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11332,7 +11421,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "STM_C2")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -11347,7 +11436,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e355d50b-a02f-435a-8d17-8043a4a8c2cc")
-		(property "Reference" "R7"
+		(property "Reference" "R13"
 			(at 110.236 102.87 90)
 			(effects
 				(font
@@ -11401,7 +11490,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R7")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -11481,10 +11570,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f12800ca-862a-4aa7-a6a5-881e67208b29")
-		(property "Reference" "STM_R3"
-			(at 270.51 29.21 0)
+		(property "Reference" "R9"
+			(at 269.748 29.718 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11493,7 +11581,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 270.51 31.75 0)
+			(at 269.748 31.496 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11536,7 +11624,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "STM_R3")
+					(reference "R9")
 					(unit 1)
 				)
 			)
