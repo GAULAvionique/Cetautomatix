@@ -59,6 +59,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define ISO_CAN_IN_Pin GPIO_PIN_13
+#define ISO_CAN_IN_GPIO_Port GPIOC
+#define Servo4_Open_Pin GPIO_PIN_14
+#define Servo4_Open_GPIO_Port GPIOC
+#define Servo4_Close_Pin GPIO_PIN_15
+#define Servo4_Close_GPIO_Port GPIOC
 #define Pressure_Sleep_Pin GPIO_PIN_0
 #define Pressure_Sleep_GPIO_Port GPIOD
 #define LCell_Sleep_Pin GPIO_PIN_1
@@ -105,18 +111,24 @@ void Error_Handler(void);
 #define Servo2_PWM_GPIO_Port GPIOA
 #define Servo1_PWM_Pin GPIO_PIN_11
 #define Servo1_PWM_GPIO_Port GPIOA
-#define Servo_En_Pin GPIO_PIN_12
-#define Servo_En_GPIO_Port GPIOA
+#define Servo1_Open_Pin GPIO_PIN_12
+#define Servo1_Open_GPIO_Port GPIOA
 #define SYS_SWDIO_Pin GPIO_PIN_13
 #define SYS_SWDIO_GPIO_Port GPIOA
 #define SYS_SWCLK_Pin GPIO_PIN_14
 #define SYS_SWCLK_GPIO_Port GPIOA
-#define WDG_Feed_Pin GPIO_PIN_15
-#define WDG_Feed_GPIO_Port GPIOA
+#define Servo1_Close_Pin GPIO_PIN_15
+#define Servo1_Close_GPIO_Port GPIOA
 #define SYS_SWO_Pin GPIO_PIN_3
 #define SYS_SWO_GPIO_Port GPIOB
-#define ISO_State_Pin GPIO_PIN_7
-#define ISO_State_GPIO_Port GPIOB
+#define Servo2_Open_Pin GPIO_PIN_4
+#define Servo2_Open_GPIO_Port GPIOB
+#define Servo2_Close_Pin GPIO_PIN_5
+#define Servo2_Close_GPIO_Port GPIOB
+#define Servo3_Open_Pin GPIO_PIN_6
+#define Servo3_Open_GPIO_Port GPIOB
+#define Servo3_Close_Pin GPIO_PIN_7
+#define Servo3_Close_GPIO_Port GPIOB
 #define ISO_CAN_RXD_Pin GPIO_PIN_8
 #define ISO_CAN_RXD_GPIO_Port GPIOB
 #define ISO_CAN_TXD_Pin GPIO_PIN_9

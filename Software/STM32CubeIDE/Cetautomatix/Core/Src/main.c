@@ -50,8 +50,6 @@ CRC_HandleTypeDef hcrc;
 
 TIM_HandleTypeDef htim1;
 
-WWDG_HandleTypeDef hwwdg;
-
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -65,7 +63,6 @@ static void MX_ADC2_Init(void);
 static void MX_CAN_Init(void);
 static void MX_CRC_Init(void);
 static void MX_TIM1_Init(void);
-static void MX_WWDG_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -110,7 +107,6 @@ int main(void)
   MX_CAN_Init();
   MX_CRC_Init();
   MX_TIM1_Init();
-  MX_WWDG_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -468,36 +464,6 @@ static void MX_TIM1_Init(void)
 }
 
 /**
-  * @brief WWDG Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_WWDG_Init(void)
-{
-
-  /* USER CODE BEGIN WWDG_Init 0 */
-
-  /* USER CODE END WWDG_Init 0 */
-
-  /* USER CODE BEGIN WWDG_Init 1 */
-
-  /* USER CODE END WWDG_Init 1 */
-  hwwdg.Instance = WWDG;
-  hwwdg.Init.Prescaler = WWDG_PRESCALER_1;
-  hwwdg.Init.Window = 64;
-  hwwdg.Init.Counter = 64;
-  hwwdg.Init.EWIMode = WWDG_EWI_DISABLE;
-  if (HAL_WWDG_Init(&hwwdg) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN WWDG_Init 2 */
-
-  /* USER CODE END WWDG_Init 2 */
-
-}
-
-/**
   * Enable DMA controller clock
   */
 static void MX_DMA_Init(void)
@@ -526,9 +492,13 @@ static void MX_GPIO_Init(void)
   /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(ISO_CAN_IN_GPIO_Port, ISO_CAN_IN_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOD, Pressure_Sleep_Pin|LCell_Sleep_Pin, GPIO_PIN_RESET);
@@ -536,10 +506,20 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, Fire_2_Pin|Fire_1_Pin|Pyros_Arm_Pin|CriticalLED_R_Pin
                           |CriticalLED_G_Pin|Servo4_Stepup_Pin|Servo3_Stepup_Pin|Servo2_Stepup_Pin
-                          |Servo1_Stepup_Pin|ISO_State_Pin, GPIO_PIN_RESET);
+                          |Servo1_Stepup_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(Servo_En_GPIO_Port, Servo_En_Pin, GPIO_PIN_RESET);
+  /*Configure GPIO pin : ISO_CAN_IN_Pin */
+  GPIO_InitStruct.Pin = ISO_CAN_IN_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(ISO_CAN_IN_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : Servo4_Open_Pin Servo4_Close_Pin */
+  GPIO_InitStruct.Pin = Servo4_Open_Pin|Servo4_Close_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Pressure_Sleep_Pin LCell_Sleep_Pin */
   GPIO_InitStruct.Pin = Pressure_Sleep_Pin|LCell_Sleep_Pin;
@@ -550,27 +530,26 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pins : Fire_2_Pin Fire_1_Pin Pyros_Arm_Pin CriticalLED_R_Pin
                            CriticalLED_G_Pin Servo4_Stepup_Pin Servo3_Stepup_Pin Servo2_Stepup_Pin
-                           Servo1_Stepup_Pin ISO_State_Pin */
+                           Servo1_Stepup_Pin */
   GPIO_InitStruct.Pin = Fire_2_Pin|Fire_1_Pin|Pyros_Arm_Pin|CriticalLED_R_Pin
                           |CriticalLED_G_Pin|Servo4_Stepup_Pin|Servo3_Stepup_Pin|Servo2_Stepup_Pin
-                          |Servo1_Stepup_Pin|ISO_State_Pin;
+                          |Servo1_Stepup_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : Servo_En_Pin */
-  GPIO_InitStruct.Pin = Servo_En_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(Servo_En_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : WDG_Feed_Pin */
-  GPIO_InitStruct.Pin = WDG_Feed_Pin;
+  /*Configure GPIO pins : Servo1_Open_Pin Servo1_Close_Pin */
+  GPIO_InitStruct.Pin = Servo1_Open_Pin|Servo1_Close_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(WDG_Feed_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : Servo2_Open_Pin Servo2_Close_Pin Servo3_Open_Pin Servo3_Close_Pin */
+  GPIO_InitStruct.Pin = Servo2_Open_Pin|Servo2_Close_Pin|Servo3_Open_Pin|Servo3_Close_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure peripheral I/O remapping */
   __HAL_AFIO_REMAP_PD01_ENABLE();
