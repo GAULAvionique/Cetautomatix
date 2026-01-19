@@ -130,226 +130,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "2026-01-14_15-06-07:MCP1802T-5002I_OT"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 30.48 10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "MCP1802T-5002I/OT"
-				(at 30.48 7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "SOT-23-5_MC_MCH"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "MCP1802T-5002I/OT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "MCP1802T-5002I/OT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT-23-5_MC_MCH SOT-23-5_MC_MCH-M SOT-23-5_MC_MCH-L"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MCP1802T-5002I_OT_0_1"
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -10.16) (xy 53.34 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 53.34 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 53.34 -10.16) (xy 53.34 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 7.62)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 60.96 0 180)
-					(length 7.62)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 60.96 -2.54 180)
-					(length 7.62)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 60.96 -5.08 180)
-					(length 7.62)
-					(name "*SHDN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:Conn_01x03_Socket"
 			(pin_names
 				(offset 1.016)
@@ -2486,6 +2266,226 @@
 						(effects
 							(font
 								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "pcb_moteur:MCP1802T-5002I_OT"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 30.48 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "MCP1802T-5002I/OT"
+				(at 30.48 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "SOT-23-5_MC_MCH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "MCP1802T-5002I/OT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "MCP1802T-5002I/OT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT-23-5_MC_MCH SOT-23-5_MC_MCH-M SOT-23-5_MC_MCH-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MCP1802T-5002I_OT_0_1"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -10.16) (xy 53.34 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 53.34 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 53.34 -10.16) (xy 53.34 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 7.62)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 60.96 0 180)
+					(length 7.62)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 60.96 -2.54 180)
+					(length 7.62)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 60.96 -5.08 180)
+					(length 7.62)
+					(name "*SHDN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -6558,7 +6558,7 @@
 		(dnp no)
 		(uuid "17036dee-311d-413c-b344-6f0006e335d9")
 		(property "Reference" "R30"
-			(at 70.104 177.8 90)
+			(at 67.818 173.228 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6567,7 +6567,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 74.422 176.53 90)
+			(at 67.818 175.006 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7208,7 +7208,7 @@
 		(dnp no)
 		(uuid "31e10251-5b37-4898-a5e3-c41cefbd3be0")
 		(property "Reference" "R31"
-			(at 100.584 177.8 90)
+			(at 98.298 173.482 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7217,7 +7217,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 104.902 176.53 90)
+			(at 98.298 175.26 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8196,6 +8196,85 @@
 		)
 	)
 	(symbol
+		(lib_id "pcb_moteur:MCP1802T-5002I_OT")
+		(at 49.53 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "596c7a60-5373-4189-a3a9-0c449cca13b7")
+		(property "Reference" "U3"
+			(at 80.01 35.56 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "MCP1802T-5002I/OT"
+			(at 80.01 38.1 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "SOT-23-5_MC_MCH"
+			(at 49.53 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "MCP1802T-5002I/OT"
+			(at 49.53 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "63e330e6-e589-42d1-bb3f-0fabd2ae33c8")
+		)
+		(pin "2"
+			(uuid "fe6ecba1-2f87-49e5-8944-49a1fedf1a48")
+		)
+		(pin "5"
+			(uuid "4908fb9e-3459-443b-8051-042636d62b7e")
+		)
+		(pin "1"
+			(uuid "df5dc2cd-d986-4784-8672-40206c8e4ae0")
+		)
+		(pin "4"
+			(uuid "6ce9bf48-8de8-4188-b1b7-1902ca1a6426")
+		)
+		(instances
+			(project ""
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
 		(at 78.74 125.73 0)
 		(unit 1)
@@ -9094,7 +9173,7 @@
 		(dnp no)
 		(uuid "7d56b787-6d8a-4ab9-a48d-f165921e1508")
 		(property "Reference" "R29"
-			(at 38.354 177.8 90)
+			(at 35.814 173.482 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9103,7 +9182,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 42.672 176.53 90)
+			(at 36.068 175.26 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10169,7 +10248,7 @@
 		(dnp no)
 		(uuid "aa390154-89a0-4a2d-afb8-4bebd69a44df")
 		(property "Reference" "R28"
-			(at 131.064 153.67 90)
+			(at 128.524 149.606 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10178,7 +10257,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 135.382 152.4 90)
+			(at 128.778 151.13 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10835,102 +10914,6 @@
 		)
 	)
 	(symbol
-		(lib_id "2026-01-14_15-06-07:MCP1802T-5002I_OT")
-		(at 49.53 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bf52b983-2733-4e35-ae9b-1cbe16eb29e3")
-		(property "Reference" "U3"
-			(at 80.01 35.306 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MCP1802T-5002I/OT"
-			(at 80.01 37.846 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 49.53 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "MCP1802T-5002I/OT"
-			(at 49.53 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "https://www.digikey.ca/en/products/detail/microchip-technology/MCP1802T-5002I-OT/1679145"
-			(at 49.53 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "MCP1802T-5002I/OTCT-ND"
-			(at 49.53 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "MCP1802T-5002I/OT"
-			(at 49.53 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "b8fd5d0a-55f4-4fb4-b608-5154df263d6d")
-		)
-		(pin "4"
-			(uuid "588ba077-26e8-4571-98d1-3635ef4d267e")
-		)
-		(pin "2"
-			(uuid "99de4ea7-c4a8-48be-9718-4ff9e6ff91d3")
-		)
-		(pin "3"
-			(uuid "e3d0cff1-6c19-4cf7-bbb8-ace62120ea09")
-		)
-		(pin "1"
-			(uuid "587f9630-422a-4a65-b554-2263eabfd927")
-		)
-		(instances
-			(project "PCB_moteur"
-				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 133.35 175.26 180)
 		(unit 1)
@@ -10940,7 +10923,7 @@
 		(dnp no)
 		(uuid "c21f36fe-9092-477a-a197-cb0fe2495823")
 		(property "Reference" "R32"
-			(at 131.064 177.8 90)
+			(at 128.778 173.482 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10949,7 +10932,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 135.382 176.53 90)
+			(at 128.778 175.006 0)
 			(effects
 				(font
 					(size 1 1)
