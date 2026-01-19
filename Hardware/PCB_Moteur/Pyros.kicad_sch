@@ -5701,7 +5701,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 218.948 34.29 90)
 			(effects
 				(font
@@ -5770,7 +5770,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 206.248 57.15 90)
 			(effects
 				(font
@@ -6312,7 +6312,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SON_8DU-T1-GE3_VIS"
+		(property "Footprint" "pcb_moteur:SI5442DU_T1_G3"
 			(at 113.03 133.096 0)
 			(effects
 				(font
@@ -6741,7 +6741,7 @@
 				)
 			)
 		)
-		(property "Footprint" "POWERPAK_1212-8_VIS"
+		(property "Footprint" "pcb_moteur:SI7617DN-T1-GE3"
 			(at 224.79 33.02 0)
 			(effects
 				(font
@@ -7049,7 +7049,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SON_8DU-T1-GE3_VIS"
+		(property "Footprint" "pcb_moteur:SI5442DU_T1_G3"
 			(at 44.45 133.096 0)
 			(effects
 				(font
@@ -7329,7 +7329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:CONN_OSTVN04A150_OST"
 			(at 180.34 100.33 0)
 			(effects
 				(font
@@ -7338,7 +7338,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/on-shore-technology-inc/OSTVN04A150/1588864"
 			(at 180.34 100.33 0)
 			(effects
 				(font

@@ -3194,7 +3194,7 @@
 	)
 	(text "Limit switch circuit. Connect on COM and NC or NO."
 		(exclude_from_sim no)
-		(at 50.038 137.414 0)
+		(at 50.8 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3232,6 +3232,12 @@
 		(uuid "0a8d7956-5ce8-4001-81b1-1cd10394658c")
 	)
 	(junction
+		(at 133.35 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c039ce1-1a63-424f-a772-8ff4e5003c7a")
+	)
+	(junction
 		(at 203.2 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3254,6 +3260,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "33962e30-be6a-4c62-89a5-e919c242a4e8")
+	)
+	(junction
+		(at 72.39 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ee12110-6bdc-4cd0-924f-2601e08365fe")
 	)
 	(junction
 		(at 40.64 180.34)
@@ -3388,6 +3400,12 @@
 		(uuid "af95371c-57e8-4f7d-939e-2969f7eea15d")
 	)
 	(junction
+		(at 102.87 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3345d18-9fb5-403e-9675-c81a6aafde6a")
+	)
+	(junction
 		(at 237.49 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3428,6 +3446,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ccdc3973-1644-4725-9894-fe06f0fd917a")
+	)
+	(junction
+		(at 40.64 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dacd34e5-4d2e-45e1-897e-02059ae64f3e")
 	)
 	(junction
 		(at 120.65 45.72)
@@ -3517,6 +3541,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 134.62) (xy 63.5 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0665e656-ffda-4286-81c0-40a61f007477")
+	)
+	(wire
+		(pts
 			(xy 175.26 49.53) (xy 184.15 49.53)
 		)
 		(stroke
@@ -3524,6 +3558,16 @@
 			(type default)
 		)
 		(uuid "066f86f0-699e-42ed-83e5-d011fa733afb")
+	)
+	(wire
+		(pts
+			(xy 93.98 134.62) (xy 93.98 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07fdf918-fb28-4582-a75f-b7fb334406df")
 	)
 	(wire
 		(pts
@@ -3737,6 +3781,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 125.73) (xy 72.39 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "237c320a-5f21-4291-8df8-e1a5a71827bf")
+	)
+	(wire
+		(pts
 			(xy 191.77 68.58) (xy 195.58 68.58)
 		)
 		(stroke
@@ -3857,7 +3911,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 128.27) (xy 102.87 129.54)
+			(xy 102.87 128.27) (xy 102.87 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4197,7 +4251,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 128.27) (xy 133.35 129.54)
+			(xy 133.35 128.27) (xy 133.35 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4337,7 +4391,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 128.27) (xy 72.39 129.54)
+			(xy 72.39 128.27) (xy 72.39 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4557,7 +4611,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 128.27) (xy 40.64 129.54)
+			(xy 40.64 128.27) (xy 40.64 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4854,6 +4908,16 @@
 			(type default)
 		)
 		(uuid "b4287494-b88c-4733-bd54-c33a623fcf53")
+	)
+	(wire
+		(pts
+			(xy 31.75 125.73) (xy 40.64 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6c7ef9d-3b55-46f7-bb07-a271a72d0386")
 	)
 	(wire
 		(pts
@@ -5167,6 +5231,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 125.73) (xy 102.87 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0860a6b-4348-4dd0-9806-7be7c7f1cfea")
+	)
+	(wire
+		(pts
 			(xy 237.49 54.61) (xy 237.49 53.34)
 		)
 		(stroke
@@ -5214,6 +5288,16 @@
 			(type default)
 		)
 		(uuid "eaecb565-c368-43c2-9ee9-e3f46a1317c5")
+	)
+	(wire
+		(pts
+			(xy 124.46 125.73) (xy 133.35 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebd4066f-232e-48aa-b135-a52676353c2a")
 	)
 	(wire
 		(pts
@@ -5294,6 +5378,26 @@
 			(type default)
 		)
 		(uuid "f420d83d-3a20-4825-8ae2-f66b13c3e066")
+	)
+	(wire
+		(pts
+			(xy 124.46 134.62) (xy 124.46 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8b631d6-30c7-44ad-82b0-ca56c5c2c877")
+	)
+	(wire
+		(pts
+			(xy 31.75 134.62) (xy 31.75 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa449544-c05c-4430-b49e-799e4e53870f")
 	)
 	(wire
 		(pts
@@ -6202,6 +6306,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 31.75 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07890c49-68cf-4700-9977-3beb916b1c5b")
+		(property "Reference" "C?"
+			(at 32.512 127.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 32.512 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 32.7152 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 31.75 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3db92f3-54cf-4571-add6-8e342f37d9c1")
+		)
+		(pin "2"
+			(uuid "5931f907-3eff-4ba9-b921-95caeb1b16d9")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 114.3 54.61 0)
 		(unit 1)
@@ -6346,7 +6519,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 133.35 129.54 0)
+		(at 133.35 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6355,7 +6528,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d994f71-1589-48ff-b8b0-eecda1d8a8f5")
 		(property "Reference" "#PWR099"
-			(at 133.35 135.89 0)
+			(at 133.35 140.97 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6364,7 +6537,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 133.35 134.62 0)
+			(at 133.35 139.7 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6373,7 +6546,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 129.54 0)
+			(at 133.35 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6382,7 +6555,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 129.54 0)
+			(at 133.35 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6391,7 +6564,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 133.35 129.54 0)
+			(at 133.35 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6506,7 +6679,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:TE_640454-2"
 			(at 139.7 180.34 0)
 			(effects
 				(font
@@ -6973,7 +7146,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:TE_640454-2"
 			(at 78.74 156.21 0)
 			(effects
 				(font
@@ -7199,6 +7372,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 31.75 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2fe14914-fd4f-46ae-a691-368a6abdf649")
+		(property "Reference" "#PWR0143"
+			(at 31.75 140.97 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 139.7 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 134.62 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 134.62 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 31.75 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ce72dd3-e1e1-42db-8911-408c483c4d70")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "#PWR0143")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 102.87 175.26 180)
 		(unit 1)
@@ -7412,6 +7651,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 63.5 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "33fc2a03-15d1-402b-98cb-be057ce96317")
+		(property "Reference" "C?"
+			(at 64.262 127.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 64.262 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 64.4652 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 63.5 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38234d6b-832e-4ecf-bf1a-1b2104694e1c")
+		)
+		(pin "2"
+			(uuid "b9b64e46-249c-4750-a47e-b7323b04e12d")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 130.81 69.85 180)
 		(unit 1)
@@ -7436,7 +7744,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ODB:LED_QBLP601-AG15"
+		(property "Footprint" "pcb_moteur:LED_QBLP601-AG15"
 			(at 130.81 69.85 0)
 			(effects
 				(font
@@ -8068,6 +8376,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 124.46 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c8ea215-1a2b-4811-873e-46d54764a8ad")
+		(property "Reference" "C?"
+			(at 125.222 127.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 125.222 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 125.4252 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 124.46 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6543b2f-b6e3-4e2b-a08f-e69bf53e7a67")
+		)
+		(pin "2"
+			(uuid "9fda4eec-3491-485e-84ae-bed88b2e6237")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 166.37 49.53 0)
 		(unit 1)
@@ -8221,7 +8598,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT-23-5_MC_MCH"
+		(property "Footprint" "pcb_moteur:MCP1802T-5002IOT"
 			(at 49.53 45.72 0)
 			(effects
 				(font
@@ -8231,7 +8608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "MCP1802T-5002I/OT"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/microchip-technology/MCP1802T-5002I-OT/1679145"
 			(at 49.53 45.72 0)
 			(effects
 				(font
@@ -8714,7 +9091,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:TE_640454-2"
 			(at 46.99 156.21 0)
 			(effects
 				(font
@@ -9025,7 +9402,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 72.39 129.54 0)
+		(at 72.39 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9034,7 +9411,7 @@
 		(fields_autoplaced yes)
 		(uuid "753e9551-8724-48fc-b59f-326624b22391")
 		(property "Reference" "#PWR094"
-			(at 72.39 135.89 0)
+			(at 72.39 140.97 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9043,7 +9420,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 72.39 134.62 0)
+			(at 72.39 139.7 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9052,7 +9429,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 129.54 0)
+			(at 72.39 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9061,7 +9438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 129.54 0)
+			(at 72.39 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9070,7 +9447,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 72.39 129.54 0)
+			(at 72.39 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9232,6 +9609,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 63.5 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ffe944e-9440-4fa2-b334-ee936d9fe70f")
+		(property "Reference" "#PWR0142"
+			(at 63.5 140.97 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 139.7 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 134.62 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 134.62 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc25d783-b7a8-4895-860c-703a59e8efd7")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "#PWR0142")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 109.22 156.21 0)
 		(unit 1)
@@ -9258,7 +9701,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:TE_640454-2"
 			(at 109.22 156.21 0)
 			(effects
 				(font
@@ -9590,7 +10033,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:CONN_2189890010-SD_02_MOL"
 			(at 269.24 72.39 0)
 			(effects
 				(font
@@ -9599,7 +10042,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/molex/2189890210/17627773?s=N4IgTCBcDa4IwA4CcyAMY6pAXQL5A"
 			(at 269.24 72.39 0)
 			(effects
 				(font
@@ -9608,7 +10051,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Molex connector, mates with : https://www.digikey.ca/en/products/detail/molex/2157591002/14668563"
 			(at 269.24 72.39 0)
 			(effects
 				(font
@@ -9896,6 +10339,72 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
 					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 124.46 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a00b2ab5-e88d-47f8-9072-3987abb95b68")
+		(property "Reference" "#PWR0140"
+			(at 124.46 140.97 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 139.7 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 134.62 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 134.62 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5aab809f-c6da-49db-9a4a-cca132de374a")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "#PWR0140")
 					(unit 1)
 				)
 			)
@@ -10648,7 +11157,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 40.64 129.54 0)
+		(at 40.64 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10657,7 +11166,7 @@
 		(fields_autoplaced yes)
 		(uuid "b71e8f27-9b07-444c-a684-ce0edb432bf6")
 		(property "Reference" "#PWR092"
-			(at 40.64 135.89 0)
+			(at 40.64 140.97 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10666,7 +11175,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.64 134.62 0)
+			(at 40.64 139.7 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10675,7 +11184,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 129.54 0)
+			(at 40.64 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10684,7 +11193,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 129.54 0)
+			(at 40.64 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10693,7 +11202,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 40.64 129.54 0)
+			(at 40.64 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10849,7 +11358,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 102.87 129.54 0)
+		(at 102.87 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10858,7 +11367,7 @@
 		(fields_autoplaced yes)
 		(uuid "bc9d4fa2-8bc2-4ac6-9f8b-edab7be30595")
 		(property "Reference" "#PWR097"
-			(at 102.87 135.89 0)
+			(at 102.87 140.97 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10867,7 +11376,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.87 134.62 0)
+			(at 102.87 139.7 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10876,7 +11385,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 129.54 0)
+			(at 102.87 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10885,7 +11394,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 129.54 0)
+			(at 102.87 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10894,7 +11403,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 102.87 129.54 0)
+			(at 102.87 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11122,6 +11631,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 93.98 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6462872-3579-4e8d-8a37-ad2e7ef43234")
+		(property "Reference" "#PWR0141"
+			(at 93.98 140.97 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.98 139.7 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 134.62 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 134.62 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c816c50b-611c-43e4-a002-6f68217e5db4")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "#PWR0141")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 46.99 180.34 0)
 		(unit 1)
@@ -11148,7 +11723,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:TE_640454-2"
 			(at 46.99 180.34 0)
 			(effects
 				(font
@@ -11422,7 +11997,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:TE_640454-2"
 			(at 78.74 180.34 0)
 			(effects
 				(font
@@ -12188,7 +12763,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:TE_640454-2"
 			(at 109.22 180.34 0)
 			(effects
 				(font
@@ -12293,6 +12868,75 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
 					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 93.98 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eccd880f-6cc9-4cbe-a20d-15d0200bd55e")
+		(property "Reference" "C?"
+			(at 94.742 127.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 94.742 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 94.9452 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 93.98 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6645b2d-1092-4fbb-ae45-621a7735c965")
+		)
+		(pin "2"
+			(uuid "8412be2a-968c-4271-b7f6-dc8618e1462d")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -12600,7 +13244,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:TE_640454-2"
 			(at 139.7 156.21 0)
 			(effects
 				(font
@@ -12935,7 +13579,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical"
 			(at 278.13 149.86 0)
 			(effects
 				(font

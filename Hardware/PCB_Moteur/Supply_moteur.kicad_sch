@@ -4356,7 +4356,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ODB:LED_QBLP601-AG15"
+		(property "Footprint" "pcb_moteur:LED_QBLP601-AG15"
 			(at 123.19 109.22 0)
 			(effects
 				(font
@@ -5431,7 +5431,7 @@
 				)
 			)
 		)
-		(property "Footprint" "XT30PW-F:AMASS_XT30PW-F"
+		(property "Footprint" "pcb_moteur:XT30PW-F"
 			(at 271.78 27.94 0)
 			(effects
 				(font
@@ -5622,7 +5622,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100uF"
 			(at 21.844 48.26 90)
 			(effects
 				(font
@@ -5631,7 +5631,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "WCAP-PSHP_8X8.7:WCAP-PSHP_8X8.7_DXL_"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 20.32 46.99 0)
 			(effects
 				(font
@@ -6658,7 +6658,7 @@
 				)
 			)
 		)
-		(property "Footprint" "L6981N33DR:SOIC127P600X175-8N"
+		(property "Footprint" "pcb_moteur:L6981N33DR"
 			(at 69.85 81.28 0)
 			(effects
 				(font

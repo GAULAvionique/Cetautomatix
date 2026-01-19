@@ -6693,7 +6693,7 @@
 				)
 			)
 		)
-		(property "Value" "100nf"
+		(property "Value" "100nF"
 			(at 259.334 60.96 0)
 			(effects
 				(font
@@ -6890,7 +6890,7 @@
 				)
 			)
 		)
-		(property "Value" "10nf"
+		(property "Value" "10nF"
 			(at 251.714 86.36 0)
 			(effects
 				(font
@@ -7099,7 +7099,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 45.72 115.57 0)
 			(effects
 				(font
@@ -8358,7 +8358,7 @@
 				)
 			)
 		)
-		(property "Value" "10nf"
+		(property "Value" "10nF"
 			(at 265.684 86.36 0)
 			(effects
 				(font
@@ -8425,7 +8425,7 @@
 				)
 			)
 		)
-		(property "Value" "100nf"
+		(property "Value" "100nF"
 			(at 267.208 60.96 0)
 			(effects
 				(font
@@ -9150,7 +9150,7 @@
 				)
 			)
 		)
-		(property "Value" "100nf"
+		(property "Value" "100nF"
 			(at 274.574 60.96 0)
 			(effects
 				(font
@@ -10158,7 +10158,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LTSTE683RGBW"
+		(property "Footprint" "pcb_moteur:LTSTE683RGBW"
 			(at 66.04 234.62 0)
 			(effects
 				(font
@@ -10275,7 +10275,7 @@
 				)
 			)
 		)
-		(property "Value" "10uf"
+		(property "Value" "10uF"
 			(at 244.094 60.96 0)
 			(effects
 				(font
@@ -10408,7 +10408,7 @@
 				)
 			)
 		)
-		(property "Value" "10uf"
+		(property "Value" "10uF"
 			(at 244.094 86.36 0)
 			(effects
 				(font
@@ -11377,7 +11377,7 @@
 				)
 			)
 		)
-		(property "Value" "100nf"
+		(property "Value" "100nF"
 			(at 251.714 60.96 0)
 			(effects
 				(font
