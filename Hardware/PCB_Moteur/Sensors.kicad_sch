@@ -5612,7 +5612,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ba061c5b-0ff2-422d-b360-6b8f44198eb7")
-		(property "Reference" "J?"
+		(property "Reference" "J18"
 			(at 128.27 111.252 0)
 			(effects
 				(font
@@ -5672,7 +5672,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "J?")
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -6487,7 +6487,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f564c8ed-0a22-40f8-9c95-4858a0750577")
-		(property "Reference" "J?"
+		(property "Reference" "J19"
 			(at 128.778 35.814 0)
 			(effects
 				(font
@@ -6547,7 +6547,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "J?")
+					(reference "J19")
 					(unit 1)
 				)
 			)
