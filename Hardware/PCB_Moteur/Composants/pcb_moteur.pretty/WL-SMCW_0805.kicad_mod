@@ -1,0 +1,223 @@
+(footprint "WL-SMCW_0805"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "<B>WL-SMCW SMT Mono-color Chip LED Waterclear<Br><Br></B>Size: 0805, SMT, 2pins<Br>2x1.25x0.7mm(LXWXH)")
+	(property "Reference" "REF**"
+		(at 0 -1.6064 0)
+		(layer "F.SilkS")
+		(uuid "5812ddb6-3eb4-413d-99b8-1b00b09d08f3")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WL-SMCW_0805"
+		(at 0 1.5936 0)
+		(layer "F.Fab")
+		(uuid "feb0c0ec-e2a5-4e94-abcd-890c96664502")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0361ff58-e342-4cd6-9865-bae460ab55fe")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c71a2005-0c98-40b5-bce3-23ee1fbba159")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.213 -0.725)
+		(end 0.219 -0.725)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "06d07d90-a9c3-4efa-be15-2ae05d25077b")
+	)
+	(fp_line
+		(start -0.206 0.725)
+		(end 0.212 0.725)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c6b6a968-f283-4aa9-9087-94e7a3f77bf6")
+	)
+	(fp_line
+		(start -0.13 0)
+		(end 0.11 -0.14)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3df7fc3c-65b4-464c-a900-6fecd721ccc3")
+	)
+	(fp_line
+		(start 0.11 -0.14)
+		(end 0.11 0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "73e69a4e-7488-4fb6-988d-c6e206867370")
+	)
+	(fp_line
+		(start 0.11 0.15)
+		(end -0.13 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "59293119-c34d-4fa0-a600-347027eab513")
+	)
+	(fp_poly
+		(pts
+			(xy -1.8 -0.925) (xy 1.8 -0.925) (xy 1.8 0.925) (xy -1.8 0.925)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.CrtYd")
+		(uuid "e6ae5335-0e72-4e39-b8ae-afbd6fbfecf3")
+	)
+	(fp_line
+		(start -1 -0.625)
+		(end 1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f6890fda-bceb-4670-839e-7c666b55166e")
+	)
+	(fp_line
+		(start -1 0.625)
+		(end -1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "01796a32-bce0-4a16-b0b9-0aea3628fa94")
+	)
+	(fp_line
+		(start -1 0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0bb50c21-9ec9-48cf-81d4-da39223bf283")
+	)
+	(fp_line
+		(start -0.13 0)
+		(end 0.11 -0.14)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "52049122-97fe-4a97-b837-804487fd5330")
+	)
+	(fp_line
+		(start 0.11 -0.14)
+		(end 0.11 0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "27e99db4-1a75-4a16-baac-440e8699c7b1")
+	)
+	(fp_line
+		(start 0.11 0.15)
+		(end -0.13 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dbb4f2e1-5c9a-43e0-8ed2-2b07b460d72c")
+	)
+	(fp_line
+		(start 1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2a222a96-0697-49b3-ac26-c01a88604253")
+	)
+	(fp_text user "+"
+		(at 1.9 0.3 0)
+		(layer "F.SilkS")
+		(uuid "53c08c88-3f88-432b-bd7e-40ce11415207")
+		(effects
+			(font
+				(size 0.48 0.48)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "+"
+		(at 1.9 0.3 0)
+		(layer "F.Fab")
+		(uuid "9d4c06af-668d-42a9-840b-6bf9756e153e")
+		(effects
+			(font
+				(size 0.48 0.48)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.05 0)
+		(size 1.1 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "8d5818c0-4224-47a1-a011-84e5e133720e")
+	)
+	(pad "2" smd rect
+		(at 1.05 0)
+		(size 1.1 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "ee7345ce-dfb0-49e9-a81b-72b7a7a4632b")
+	)
+	(embedded_fonts no)
+)
