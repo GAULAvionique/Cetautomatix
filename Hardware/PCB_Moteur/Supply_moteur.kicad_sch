@@ -5528,7 +5528,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/stmicroelectronics/L6981N33DR/16841571"
 			(at 69.85 81.28 0)
 			(effects
 				(font
