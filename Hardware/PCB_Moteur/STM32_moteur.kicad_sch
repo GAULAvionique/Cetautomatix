@@ -6771,7 +6771,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
 			(at 139.7 186.69 0)
 			(effects
 				(font
@@ -8830,7 +8830,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 105.41 57.15 0)
 			(effects
 				(font
@@ -8900,7 +8900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
 			(at 158.75 186.69 0)
 			(effects
 				(font
@@ -9425,7 +9425,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
 			(at 158.75 191.77 0)
 			(effects
 				(font
@@ -10089,7 +10089,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LTSTE683RGBW"
+		(property "Footprint" "pcb_moteur:LTSTE683RGBW"
 			(at 40.64 234.62 0)
 			(effects
 				(font
@@ -10553,7 +10553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
 			(at 139.7 191.77 0)
 			(effects
 				(font

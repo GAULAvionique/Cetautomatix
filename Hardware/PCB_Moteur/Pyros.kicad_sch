@@ -1219,550 +1219,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ODB2:SI5442DU-T1-GE3"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 11.43 4.445 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "SI5442DU-T1-GE3"
-				(at 22.098 1.778 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "SON_8DU-T1-GE3_VIS"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/doc?63233"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "SI5442DU-T1-GE3"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SON_8DU-T1-GE3_VIS"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SI5442DU-T1-GE3_0_1"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 4.445 0)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.445 0) (xy 4.445 5.08)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 4.445) (xy 6.985 4.445)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 3.81) (xy 5.08 5.08)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 1.905) (xy 5.08 3.175)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0.635) (xy 6.985 0.635)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 5.08 1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 3.175) (xy 5.08 2.54) (xy 6.35 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 2.54) (xy 6.985 2.54)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 6.35 2.54)
-					(radius 3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.985 5.08) (xy 8.255 5.08)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.985 4.445) (xy 6.985 5.08)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 6.985 0.635)
-					(radius 0.0254)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.985 0) (xy 6.985 2.54)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.985 0) (xy 8.255 0)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 7.62) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 7.62 5.08)
-					(radius 0.0254)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 7.62 0)
-					(radius 0.0254)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 7.62 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.255 3.175) (xy 8.255 5.08)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.255 0) (xy 8.255 1.905)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.89 3.175) (xy 7.62 3.175)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.89 1.905) (xy 7.62 1.905) (xy 8.255 3.175)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 7.62 10.16 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 7.62 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "SI5442DU-T1-GE3_1_1"
-				(pin unspecified line
-					(at 7.62 10.16 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 7.62 10.16 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 7.62 10.16 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 7.62 10.16 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 7.62 10.16 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 7.62 10.16 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 7.62 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "ODB2:SI7617DN-T1-GE3"
 			(pin_names
 				(offset 0.254)
@@ -6096,101 +5552,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ODB2:SI5442DU-T1-GE3")
-		(at 107.95 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "101a75cf-c0a8-4a6b-a050-39091940983e")
-		(property "Reference" "Q2"
-			(at 111.506 107.696 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SI5442DU-T1-GE3"
-			(at 102.362 118.618 0)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SON_8DU-T1-GE3_VIS"
-			(at 107.95 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/doc?63233"
-			(at 107.95 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 107.95 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "c32fddf7-721b-449b-b40a-793e820119f5")
-		)
-		(pin "2"
-			(uuid "ccd86fa1-f1fe-4b22-8b81-984c68412320")
-		)
-		(pin "3"
-			(uuid "e2a55d9a-562c-4a02-baf6-939c60e92215")
-		)
-		(pin "5"
-			(uuid "e1586b17-be58-4653-ae0a-ee76715198cc")
-		)
-		(pin "1"
-			(uuid "83662b20-0520-4105-8c21-c0b435bf3256")
-		)
-		(pin "8"
-			(uuid "2ba4a7bb-6c10-42bb-aac7-7fe41aa0b4f2")
-		)
-		(pin "7"
-			(uuid "2a53e76f-92a5-4737-acf4-c15dd9aaaf38")
-		)
-		(pin "9"
-			(uuid "4de64117-aa77-4cb1-9bb6-bf2e632ee197")
-		)
-		(pin "6"
-			(uuid "1a5c5e00-21e1-4053-8bdb-264f6b9b129c")
-		)
-		(pin "10"
-			(uuid "3cdb0ae1-8b94-468f-b6ea-75c755552c3a")
-		)
-		(instances
-			(project "PCB_moteur"
-				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/1c3f73a9-ace7-4654-9081-04f4c5cd0c08"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 85.09 55.88 0)
 		(unit 1)
@@ -6627,7 +5988,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 59.69 91.44 0)
 			(effects
 				(font
@@ -6832,7 +6193,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 133.35 109.22 0)
 			(effects
 				(font
@@ -7167,7 +6528,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 57.15 50.8 0)
 			(effects
 				(font
@@ -7176,7 +6537,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/texas-instruments/LM393DR/276659"
 			(at 57.15 50.8 0)
 			(effects
 				(font
@@ -7521,7 +6882,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 248.92 66.04 0)
 			(effects
 				(font
@@ -7588,7 +6949,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 57.15 39.37 0)
 			(effects
 				(font
@@ -7597,7 +6958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/texas-instruments/LM393DR/276659"
 			(at 57.15 39.37 0)
 			(effects
 				(font
@@ -8154,7 +7515,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ODB:POWERPAK_1212-8_VIS"
+		(property "Footprint" "pcb_moteur:POWERPAK_1212-8_VIS"
 			(at 224.79 33.02 0)
 			(effects
 				(font
@@ -8451,7 +7812,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 64.77 109.22 0)
 			(effects
 				(font
@@ -8521,7 +7882,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 87.63 45.72 0)
 			(effects
 				(font
@@ -8530,7 +7891,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/texas-instruments/LM393DR/276659"
 			(at 87.63 45.72 0)
 			(effects
 				(font
@@ -8947,7 +8308,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 128.27 91.44 0)
 			(effects
 				(font
@@ -9061,6 +8422,156 @@
 	(symbol
 		(lib_name "SI5442DU-T1-GE3_3")
 		(lib_id "ODB2:SI5442DU-T1-GE3")
+		(at 107.95 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf70eea3-0959-4695-8500-188fa6bf026e")
+		(property "Reference" "Q?"
+			(at 111.506 107.696 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SI5442DU-T1-GE3"
+			(at 102.362 118.618 0)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "pcb_moteur:SON_8DU-T1-GE3_VIS"
+			(at 107.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-siliconix/SI5442DU-T1-GE3/4142130"
+			(at 107.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 107.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "SI5442DU-T1-GE3CT-ND"
+			(at 107.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 107.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 107.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 107.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 107.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI5442DU-T1-GE3"
+			(at 107.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "75298689-07e4-40d4-8bf5-e0c0d4068aed")
+		)
+		(pin "2"
+			(uuid "c8527e70-c462-47a0-91b7-244065546912")
+		)
+		(pin "3"
+			(uuid "84b9786e-1a2f-46e1-974c-612588aa2ab4")
+		)
+		(pin "5"
+			(uuid "0b9bccf9-af90-4e60-a349-2b0d5c105ff5")
+		)
+		(pin "1"
+			(uuid "eef9f16d-1732-454f-966c-5bcb29629805")
+		)
+		(pin "8"
+			(uuid "aa8ab507-f6d9-49e3-9be8-7b723cd4eb5b")
+		)
+		(pin "7"
+			(uuid "0731f84e-1cda-43e5-b42a-490f4d5e4770")
+		)
+		(pin "9"
+			(uuid "76cfd70f-ea13-47d7-b3b3-15a70add331e")
+		)
+		(pin "6"
+			(uuid "19e4ed76-8c5a-4ed9-b8e4-f65906382611")
+		)
+		(pin "10"
+			(uuid "b8461f66-2b0c-4e58-86b4-cb0687f34ddc")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/1c3f73a9-ace7-4654-9081-04f4c5cd0c08"
+					(reference "Q?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "SI5442DU-T1-GE3_3")
+		(lib_id "ODB2:SI5442DU-T1-GE3")
 		(at 39.37 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9068,7 +8579,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bfe9abe9-05d2-4457-a188-2f9016d58d14")
-		(property "Reference" "Q1"
+		(property "Reference" "Q?"
 			(at 42.926 107.696 0)
 			(effects
 				(font
@@ -9086,7 +8597,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SON_8DU-T1-GE3_VIS"
+		(property "Footprint" "pcb_moteur:SON_8DU-T1-GE3_VIS"
 			(at 39.37 115.57 0)
 			(effects
 				(font
@@ -9096,7 +8607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?63233"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-siliconix/SI5442DU-T1-GE3/4142130"
 			(at 39.37 115.57 0)
 			(effects
 				(font
@@ -9107,6 +8618,60 @@
 			)
 		)
 		(property "Description" ""
+			(at 39.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "SI5442DU-T1-GE3CT-ND"
+			(at 39.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 39.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 39.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 39.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 39.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI5442DU-T1-GE3"
 			(at 39.37 115.57 0)
 			(effects
 				(font
@@ -9148,7 +8713,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/1c3f73a9-ace7-4654-9081-04f4c5cd0c08"
-					(reference "Q1")
+					(reference "Q?")
 					(unit 1)
 				)
 			)
@@ -9856,7 +9421,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 95.25 45.72 0)
 			(effects
 				(font

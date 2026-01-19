@@ -2087,7 +2087,7 @@
 		)
 		(uuid "7f459823-f0e1-451c-a9d6-af2aa1046320")
 	)
-	(text "Load cell Output Output R.O. : 2+/-10% mV/V => 2.2mV/V\nA 5V on a 11mV max  => 3.3V/50mV = 300 V/V\n\nSelon datasheet INA125: G = 4+60kOhms/Rg => Rg = 60k/(300-4) = 202.7\nRg = 200 Ohms"
+	(text "Load cell Output Output R.O. : 2+/-10% mV/V => 2.2mV/V\nA 5V on a 11mV max  => 3.3V/11mV = 300 V/V\n\nSelon datasheet INA125: G = 4+60kOhms/Rg => Rg = 60k/(300-4) = 202.7\nRg = 200 Ohms"
 		(exclude_from_sim no)
 		(at 81.788 165.354 0)
 		(effects
@@ -4072,7 +4072,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 140.6652 73.66 0)
 			(effects
 				(font
@@ -4141,7 +4141,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 266.7 33.3248 0)
 			(effects
 				(font
@@ -4538,7 +4538,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 258.7752 48.26 0)
 			(effects
 				(font
@@ -4606,7 +4606,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MAX6612MXK:SOT65P210X110-5N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
 			(at 240.03 44.45 0)
 			(effects
 				(font
@@ -4835,7 +4835,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 143.2052 148.59 0)
 			(effects
 				(font
@@ -5443,7 +5443,7 @@
 				)
 			)
 		)
-		(property "Footprint" "D16"
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 41.91 125.73 0)
 			(effects
 				(font
@@ -5887,7 +5887,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 34.29 45.4152 0)
 			(effects
 				(font
@@ -6021,7 +6021,7 @@
 				)
 			)
 		)
-		(property "Footprint" "D16"
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 43.18 50.8 0)
 			(effects
 				(font
@@ -6533,7 +6533,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 33.02 120.3452 0)
 			(effects
 				(font

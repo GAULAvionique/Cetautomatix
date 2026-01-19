@@ -6228,7 +6228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 114.3 54.61 0)
 			(effects
 				(font
@@ -6345,73 +6345,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 130.81 69.85 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0d844b23-0124-46ac-a374-5bedee1552ad")
-		(property "Reference" "LED3"
-			(at 130.81 66.548 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GREEN"
-			(at 130.81 72.898 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 130.81 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 130.81 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2d8964da-231b-4b2d-8c6e-d7a1b304f33e")
-		)
-		(pin "2"
-			(uuid "59bf10e8-6837-472e-a7fa-65d9ed49d33b")
-		)
-		(instances
-			(project "PCB_moteur"
-				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
-					(reference "LED3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 133.35 129.54 0)
 		(unit 1)
@@ -6504,7 +6437,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 268.9352 53.34 0)
 			(effects
 				(font
@@ -7108,7 +7041,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LSF0204PWR:SOP65P640X120-14N"
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 83.82 91.44 0)
 			(effects
 				(font
@@ -7430,7 +7363,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 194.0052 57.15 0)
 			(effects
 				(font
@@ -7473,6 +7406,127 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
 					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 130.81 69.85 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3da9c402-88f0-4828-8443-2b49941202b5")
+		(property "Reference" "D13"
+			(at 130.81 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 130.81 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ODB:LED_QBLP601-AG15"
+			(at 130.81 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/qt-brightek-qtb/QBLP601-AG15/16499667"
+			(at 130.81 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 130.81 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1516-QBLP601-AG15CT-ND"
+			(at 130.81 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 130.81 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 130.81 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 130.81 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 130.81 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "QBLP601-AG15"
+			(at 130.81 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "399fef07-61e0-461d-b151-9f37693a9509")
+		)
+		(pin "2"
+			(uuid "98f8e43f-3351-4ecd-8770-db623ea02e16")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -7835,7 +7889,7 @@
 				)
 			)
 		)
-		(property "Value" "FerriteBead"
+		(property "Value" "120R"
 			(at 245.618 39.116 90)
 			(effects
 				(font
@@ -7843,7 +7897,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 242.57 44.958 90)
 			(effects
 				(font
@@ -8848,7 +8902,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 42.8752 53.34 0)
 			(effects
 				(font
@@ -9928,7 +9982,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 121.6152 54.61 0)
 			(effects
 				(font
@@ -9997,7 +10051,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 249.8852 53.34 0)
 			(effects
 				(font
@@ -10406,7 +10460,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 258.7752 53.34 0)
 			(effects
 				(font
@@ -10606,7 +10660,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 238.4552 53.34 0)
 			(effects
 				(font
@@ -10805,7 +10859,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT-23-5_MC_MCH"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 49.53 45.72 0)
 			(effects
 				(font
@@ -10971,7 +11025,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 167.3352 57.15 0)
 			(effects
 				(font
@@ -11454,7 +11508,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 39.37 68.2752 0)
 			(effects
 				(font
@@ -11668,7 +11722,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 176.2252 57.15 0)
 			(effects
 				(font
@@ -12005,13 +12059,12 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
+					(thickness 0.1588)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 185.1152 57.15 0)
 			(effects
 				(font
@@ -13174,7 +13227,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 59.69 66.3448 0)
 			(effects
 				(font
