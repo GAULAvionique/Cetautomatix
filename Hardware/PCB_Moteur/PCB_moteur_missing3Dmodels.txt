@@ -1,0 +1,12 @@
+### Missing 3D models - created on 2026-01-19 15:05
+### Printed by checking_3D_models plugin
+Board file: C:/programation/ulaval/GAUL/Cetautomatix/Hardware/PCB_Moteur/PCB_moteur.kicad_pcb
+3D missing models written to:
+C:\programation\ulaval\GAUL\Cetautomatix\Hardware\PCB_Moteur\PCB_moteur_missing3Dmodels.txt
+-------
+('LED2', 'C:\\programation\\ulaval\\GAUL\\Cetautomatix\\Hardware\\PCB_Moteur\\LTST-E682KRKGWT.stp')
+('F1', 'C:\\Program Files\\KiCad\\9.0\\share\\kicad\\3dmodels\\Fuse.3dshapes\\Fuse_2920_7451Metric.step')
+('L2', 'E:/Github/Ordinateur-de-bord/ODB_V3/Hardware/Kicad/Symbols/7447715330/WE-PD_1245.step')
+-------
+NUM of 3D missing models:3
+checked extensions ['.stp', '.step', '.stpZ']
