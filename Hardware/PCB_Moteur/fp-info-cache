@@ -1,4 +1,4 @@
-26786140823531791
+26787909850246893
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106371,6 +106371,13 @@ CONN_2189890010-SD_02_MOL
 0
 4
 4
+pcb_moteur
+CONN_BM03B-GHS-TBT_JST
+
+BM03B-GHS-TBT 
+0
+5
+5
 pcb_moteur
 CONN_OSTVN04A150_OST
 
