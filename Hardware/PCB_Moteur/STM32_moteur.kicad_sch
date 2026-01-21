@@ -4993,6 +4993,28 @@
 			)
 		)
 	)
+	(global_label "Servo2_Open"
+		(shape input)
+		(at 173.99 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2db919d9-bc31-4594-9f8a-3cb83b00052e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.0703 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SYS_TRACESWO"
 		(shape input)
 		(at 125.73 87.63 180)
@@ -5228,6 +5250,28 @@
 		(uuid "4a2619dc-0053-439f-b341-968032d549f7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 217.6924 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Servo1_Open"
+		(shape input)
+		(at 125.73 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4f0032e4-254d-4068-ba1a-de653b2d1563")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 110.6497 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5701,28 +5745,6 @@
 			)
 		)
 	)
-	(global_label "Servo1_Close"
-		(shape input)
-		(at 173.99 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8d0c6724-5b5c-40ea-8ec3-2cc71613e81a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 189.5541 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "BARO_SPI1_CLK"
 		(shape input)
 		(at 236.22 139.7 180)
@@ -5780,28 +5802,6 @@
 		(uuid "96cc9708-40a3-492d-b7f3-a6ba16050631")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 220.1115 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Servo2_Close"
-		(shape input)
-		(at 125.73 92.71 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "99f2dd43-e8cf-4359-af39-ade76587b653")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.1659 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5965,28 +5965,6 @@
 			)
 		)
 	)
-	(global_label "Servo2_Open"
-		(shape input)
-		(at 125.73 90.17 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b65712a5-e41b-4ac2-90d5-2fc4c3523180")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.6497 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Servo2_PWM"
 		(shape input)
 		(at 173.99 77.47 0)
@@ -6022,28 +6000,6 @@
 		(uuid "bbb12746-3c7d-4225-b1e5-3a6aa8bf5f31")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 184.7161 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Servo1_Open"
-		(shape input)
-		(at 173.99 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bc56dcb6-eae7-4219-8a49-1522470f62bb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 189.0703 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6220,6 +6176,28 @@
 		(uuid "e7ddd985-e6e0-4f01-9a6b-1fd7204f6dbc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 111.5568 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Servo1_Close"
+		(shape input)
+		(at 125.73 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e9824586-2439-4d10-9a3c-395b835b4652")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 110.1659 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6423,6 +6401,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Servo2_Close"
+		(shape input)
+		(at 173.99 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fce8a129-8cdf-4a9b-92f0-a320234fcd42")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.5541 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
