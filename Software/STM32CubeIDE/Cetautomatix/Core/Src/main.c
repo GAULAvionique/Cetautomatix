@@ -527,15 +527,15 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Servo4_Close_Pin Servo4_Open_Pin Servo3_Close_Pin Servo3_Open_Pin
-                           Servo2_Open_Pin Servo2_Close_Pin EXTEND_IO1_Pin */
+                           Servo1_Open_Pin Servo1_Close_Pin EXTEND_IO1_Pin */
   GPIO_InitStruct.Pin = Servo4_Close_Pin|Servo4_Open_Pin|Servo3_Close_Pin|Servo3_Open_Pin
-                          |Servo2_Open_Pin|Servo2_Close_Pin|EXTEND_IO1_Pin;
+                          |Servo1_Open_Pin|Servo1_Close_Pin|EXTEND_IO1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : Servo1_Open_Pin Servo1_Close_Pin */
-  GPIO_InitStruct.Pin = Servo1_Open_Pin|Servo1_Close_Pin;
+  /*Configure GPIO pins : Servo2_Open_Pin Servo2_Close_Pin */
+  GPIO_InitStruct.Pin = Servo2_Open_Pin|Servo2_Close_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
