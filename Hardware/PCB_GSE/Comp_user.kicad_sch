@@ -1,0 +1,92 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "a0e22808-5441-41f8-acb1-3fe6926466a3")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 85.09 62.23)
+		(size 50.8 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7293dcc4-1473-4740-89fd-71ac8c545ff1")
+		(property "Sheetname" "TransceiverCAN"
+			(at 85.09 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TransceiverCAN.kicad_sch"
+			(at 85.09 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/5d0affca-363c-4c9d-bb85-abad2de26874"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 151.13 62.23)
+		(size 50.8 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d836d6ab-f333-4f92-a5d1-759c220f057b")
+		(property "Sheetname" "Radio"
+			(at 151.13 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Radio.kicad_sch"
+			(at 151.13 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/5d0affca-363c-4c9d-bb85-abad2de26874"
+					(page "14")
+				)
+			)
+		)
+	)
+)

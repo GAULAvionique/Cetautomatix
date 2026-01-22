@@ -2,12 +2,22 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "fb1e7f9a-1970-407a-9a24-5aea0f0ce853")
+	(uuid "a63f9ed4-21e4-42d0-8bfc-f96143f84d4d")
 	(paper "A4")
 	(lib_symbols)
+	(text "élément manquant:\n- Débogueur\n- US Solénoide ?"
+		(exclude_from_sim no)
+		(at 140.462 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ebae2987-0352-4ae3-a691-0e60f78c6908")
+	)
 	(sheet
-		(at 19.05 19.05)
-		(size 76.2 73.66)
+		(at 40.64 41.91)
+		(size 38.1 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -20,9 +30,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "7531e390-5518-4ac3-948e-91f285c05afd")
-		(property "Sheetname" "Supply"
-			(at 19.05 18.3384 0)
+		(uuid "0a0c5a30-f84e-4bf3-b9ff-653375453caf")
+		(property "Sheetname" "Alimentation"
+			(at 40.64 41.1984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30,8 +40,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "supply.kicad_sch"
-			(at 19.05 93.2946 0)
+		(property "Sheetfile" "Alimentation.kicad_sch"
+			(at 40.64 56.4646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41,15 +51,15 @@
 		)
 		(instances
 			(project "PCB_GSE"
-				(path "/fb1e7f9a-1970-407a-9a24-5aea0f0ce853"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
 					(page "2")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 198.12 19.05)
-		(size 80.01 73.66)
+		(at 73.66 104.14)
+		(size 38.1 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -62,9 +72,135 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "acbc6a68-d495-4895-8b3a-52b5d583832d")
+		(uuid "231f72f7-39b9-41a9-94b2-a6574311d3e5")
+		(property "Sheetname" "Extension"
+			(at 73.66 103.4284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Extension.kicad_sch"
+			(at 73.66 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 19.05 102.87)
+		(size 38.1 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "28a78b8b-e5a8-4a24-b203-36221eb768f9")
+		(property "Sheetname" "Capteurs"
+			(at 19.05 102.1584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Capteurs.kicad_sch"
+			(at 19.05 117.4246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 100.33 62.23)
+		(size 38.1 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5d0affca-363c-4c9d-bb85-abad2de26874")
+		(property "Sheetname" "Composants utilisateurs"
+			(at 100.33 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Comp_user.kicad_sch"
+			(at 100.33 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 40.64 67.31)
+		(size 41.91 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "83476ec4-da5d-4ae9-94db-5f98ece4d104")
 		(property "Sheetname" "Interface"
-			(at 198.12 18.3384 0)
+			(at 40.64 66.5984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73,7 +209,7 @@
 			)
 		)
 		(property "Sheetfile" "Interface.kicad_sch"
-			(at 198.12 93.2946 0)
+			(at 40.64 88.2146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -83,50 +219,8 @@
 		)
 		(instances
 			(project "PCB_GSE"
-				(path "/fb1e7f9a-1970-407a-9a24-5aea0f0ce853"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 104.14 19.05)
-		(size 83.82 73.66)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "e76dc829-8d8a-4f4e-b982-d009906b2cec")
-		(property "Sheetname" "STM32"
-			(at 104.14 18.3384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "STM32.kicad_sch"
-			(at 104.14 93.2946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/fb1e7f9a-1970-407a-9a24-5aea0f0ce853"
-					(page "3")
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
+					(page "6")
 				)
 			)
 		)

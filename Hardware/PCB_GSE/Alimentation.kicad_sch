@@ -1,0 +1,92 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "dcc4de04-1490-4135-bae6-b695093678d5")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 81.28 92.71)
+		(size 38.1 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a91e7e84-a9ab-4b3e-83dc-64035e5bbcb8")
+		(property "Sheetname" "Buck5V"
+			(at 81.28 91.9984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Buck5V.kicad_sch"
+			(at 81.28 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/0a0c5a30-f84e-4bf3-b9ff-653375453caf"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 144.78 92.71)
+		(size 36.83 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f91e4b39-979e-4a08-a106-ace73727ac15")
+		(property "Sheetname" "Buck3V3"
+			(at 144.78 91.9984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Buck3V3.kicad_sch"
+			(at 144.78 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/0a0c5a30-f84e-4bf3-b9ff-653375453caf"
+					(page "8")
+				)
+			)
+		)
+	)
+)
