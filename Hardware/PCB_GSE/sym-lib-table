@@ -1,4 +1,6 @@
 (sym_lib_table
   (version 7)
   (lib (name "PCB_GSE")(type "KiCad")(uri "${KIPRJMOD}/PCB_GSE.kicad_sym")(options "")(descr ""))
+  (lib (name "pcb_moteur2")(type "KiCad")(uri "${KIPRJMOD}/pcb_moteur.kicad_sym")(options "")(descr ""))
+  (lib (name "pcb_moteur")(type "KiCad")(uri "${KIPRJMOD}/Composants/pcb_moteur.kicad_sym")(options "")(descr ""))
 )
