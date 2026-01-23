@@ -2,11 +2,158 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "727159f9-d018-4134-94a6-784933323ea0")
+	(uuid "b2b336c5-37fd-42c9-9c4d-0d347dc48289")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 107.95 92.71) (xy 114.3 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1520ea14-72d0-495b-ac31-b53b75f66a68")
+	)
+	(wire
+		(pts
+			(xy 107.95 99.06) (xy 114.3 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78361835-5cb7-4843-b039-cc4a9ce8ec3e")
+	)
+	(wire
+		(pts
+			(xy 107.95 74.93) (xy 114.3 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb0ea673-356a-4489-ac96-a812881e2e75")
+	)
+	(wire
+		(pts
+			(xy 107.95 77.47) (xy 114.3 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb48b2c7-ccde-42df-a15c-8e415a60025b")
+	)
+	(wire
+		(pts
+			(xy 107.95 95.25) (xy 114.3 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8064959-55d0-46f7-b117-275c292eeedd")
+	)
+	(wire
+		(pts
+			(xy 107.95 88.9) (xy 114.3 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e384af71-4d25-401a-8b33-d62a4f41a1f1")
+	)
+	(wire
+		(pts
+			(xy 107.95 101.6) (xy 114.3 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eec1dce0-5aad-458b-9ec4-f51af453f7b9")
+	)
+	(hierarchical_label "LCell_An"
+		(shape output)
+		(at 107.95 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1aab1be1-3325-4ed6-a3c6-b1e48c0f79a3")
+	)
+	(hierarchical_label "LCell_sleep"
+		(shape input)
+		(at 107.95 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "35dab525-5e43-4a4f-b70d-86f37e409205")
+	)
+	(hierarchical_label "P_sleep"
+		(shape input)
+		(at 107.95 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "847d32c4-c665-40e2-bf86-c466015a61e1")
+	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 107.95 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9a15f3b5-5bdc-4e5a-b0dc-f8223ca30020")
+	)
+	(hierarchical_label "Vin"
+		(shape input)
+		(at 107.95 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b0ecffa2-bc6f-441b-8342-5d7fdacb4f8c")
+	)
+	(hierarchical_label "Temp_An"
+		(shape output)
+		(at 107.95 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d773581f-421c-4d44-85c9-f564d068f708")
+	)
+	(hierarchical_label "P_An"
+		(shape output)
+		(at 107.95 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dcb06ada-5484-43b0-8738-c0f132871a76")
+	)
 	(sheet
-		(at 68.58 88.9)
+		(at 114.3 87.63)
 		(size 34.29 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21,8 +168,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "09f92f65-d9a0-419a-bd60-b582cdba10b2")
-		(property "Sheetname" "Amplificateur instrumental"
-			(at 68.58 88.1884 0)
+		(property "Sheetname" "Capteur"
+			(at 114.3 86.9184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31,12 +178,62 @@
 			)
 		)
 		(property "Sheetfile" "Amp_int.kicad_sch"
-			(at 68.58 107.2646 0)
+			(at 114.3 105.9946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "LCell_An" output
+			(at 114.3 99.06 180)
+			(uuid "78f5917a-94e6-4b1f-880e-641be8aae9bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LCell_Sleep" input
+			(at 114.3 101.6 180)
+			(uuid "7776e375-bec7-4efc-aced-332e26f0d6c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vin" input
+			(at 114.3 88.9 180)
+			(uuid "3f6eefb5-391c-4f9f-8eae-fbc46428f06c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "P_An" output
+			(at 114.3 92.71 180)
+			(uuid "90ac1c7d-423e-4df4-8b56-ee54b5233802")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "P_sleep" output
+			(at 114.3 95.25 180)
+			(uuid "611d48bd-335a-4287-a0be-8a023813d481")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -48,50 +245,8 @@
 		)
 	)
 	(sheet
-		(at 68.58 62.23)
-		(size 31.75 16.51)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "e2a11f2c-ef8a-468c-9464-3a053c43685b")
-		(property "Sheetname" "Camp3V3"
-			(at 68.58 61.5184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Camp3V3.kicad_sch"
-			(at 68.58 79.3246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/28a78b8b-e5a8-4a24-b203-36221eb768f9"
-					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 116.84 114.3)
-		(size 40.64 20.32)
+		(at 114.3 72.39)
+		(size 22.86 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -106,7 +261,7 @@
 		)
 		(uuid "f942d43c-804f-4af2-913b-e91749a33fdb")
 		(property "Sheetname" "Temprature"
-			(at 116.84 113.5884 0)
+			(at 114.3 71.6784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -115,60 +270,38 @@
 			)
 		)
 		(property "Sheetfile" "Temprature.kicad_sch"
-			(at 116.84 135.2046 0)
+			(at 114.3 80.5946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Temp_An" output
+			(at 114.3 77.47 180)
+			(uuid "c140cdda-2a10-4b4e-ad51-f5741e5dc7f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VCC_3V3" bidirectional
+			(at 114.3 74.93 180)
+			(uuid "03864fe6-a0d7-40e1-8821-2146a7ae947d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/28a78b8b-e5a8-4a24-b203-36221eb768f9"
 					(page "12")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 68.58 114.3)
-		(size 34.29 19.05)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "faa92703-f681-40b0-9168-c79d5654186b")
-		(property "Sheetname" "PressionN20"
-			(at 68.58 113.5884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "PressionN20.kicad_sch"
-			(at 68.58 133.9346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/28a78b8b-e5a8-4a24-b203-36221eb768f9"
-					(page "11")
 				)
 			)
 		)

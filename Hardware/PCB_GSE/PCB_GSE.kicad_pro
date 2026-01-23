@@ -625,7 +625,7 @@
     ],
     [
       "28a78b8b-e5a8-4a24-b203-36221eb768f9",
-      "Capteurs"
+      "Capteur"
     ],
     [
       "5d0affca-363c-4c9d-bb85-abad2de26874",
@@ -637,7 +637,7 @@
     ],
     [
       "83476ec4-da5d-4ae9-94db-5f98ece4d104",
-      "Interface"
+      "STM32"
     ],
     [
       "a91e7e84-a9ab-4b3e-83dc-64035e5bbcb8",
@@ -648,16 +648,8 @@
       "Buck3V3"
     ],
     [
-      "e2a11f2c-ef8a-468c-9464-3a053c43685b",
-      "Camp3V3"
-    ],
-    [
       "09f92f65-d9a0-419a-bd60-b582cdba10b2",
-      "Amplificateur instrumental"
-    ],
-    [
-      "faa92703-f681-40b0-9168-c79d5654186b",
-      "PressionN20"
+      "Capteur"
     ],
     [
       "f942d43c-804f-4af2-913b-e91749a33fdb",

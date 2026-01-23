@@ -7,7 +7,7 @@
 	(lib_symbols)
 	(text "élément manquant:\n- Débogueur\n- US Solénoide ?"
 		(exclude_from_sim no)
-		(at 140.462 111.76 0)
+		(at 160.782 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -58,7 +58,7 @@
 		)
 	)
 	(sheet
-		(at 73.66 104.14)
+		(at 93.98 106.68)
 		(size 38.1 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -74,7 +74,7 @@
 		)
 		(uuid "231f72f7-39b9-41a9-94b2-a6574311d3e5")
 		(property "Sheetname" "Extension"
-			(at 73.66 103.4284 0)
+			(at 93.98 105.9684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -83,7 +83,7 @@
 			)
 		)
 		(property "Sheetfile" "Extension.kicad_sch"
-			(at 73.66 118.6946 0)
+			(at 93.98 121.2346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -100,8 +100,8 @@
 		)
 	)
 	(sheet
-		(at 19.05 102.87)
-		(size 38.1 13.97)
+		(at 39.37 105.41)
+		(size 38.1 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -115,8 +115,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "28a78b8b-e5a8-4a24-b203-36221eb768f9")
-		(property "Sheetname" "Capteurs"
-			(at 19.05 102.1584 0)
+		(property "Sheetname" "Capteur"
+			(at 39.37 104.6984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -125,12 +125,82 @@
 			)
 		)
 		(property "Sheetfile" "Capteurs.kicad_sch"
-			(at 19.05 117.4246 0)
+			(at 39.37 123.7746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "LCell_An" output
+			(at 77.47 110.49 0)
+			(uuid "5c02dd9b-c67c-4807-bbb9-4cb3f1dc40d2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LCell_sleep" input
+			(at 77.47 113.03 0)
+			(uuid "dfc5309d-cb9c-4cf7-a3bd-1eeb5343f753")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "P_An" output
+			(at 77.47 118.11 0)
+			(uuid "d76a512f-5d08-43af-b788-5cb73aeeb869")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "P_sleep" input
+			(at 77.47 120.65 0)
+			(uuid "629dfdb9-75a8-47d8-8544-2ab34fd5dfe8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Temp_An" output
+			(at 77.47 107.95 0)
+			(uuid "bea82202-5b3f-42b0-9309-3a1018786379")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Vin" input
+			(at 39.37 110.49 180)
+			(uuid "4acd38dc-1e79-451d-9c26-4be0497b2879")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3" input
+			(at 39.37 107.95 180)
+			(uuid "7daa0101-d49b-442b-9498-cdb2f3caa70c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -143,7 +213,7 @@
 	)
 	(sheet
 		(at 100.33 62.23)
-		(size 38.1 26.67)
+		(size 29.21 26.67)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -175,6 +245,46 @@
 				(justify left top)
 			)
 		)
+		(pin "ISO_CAN_IN" input
+			(at 100.33 66.04 180)
+			(uuid "ba6d4cfe-f439-4a17-907d-f85b5fce279a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ISO_CAN_RXD" output
+			(at 100.33 68.58 180)
+			(uuid "513c71c9-f72a-47aa-9416-e81bbe8635fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ISO_CAN_TXD" input
+			(at 100.33 71.12 180)
+			(uuid "06c2ccac-c894-46e8-ad26-e2ea29228902")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3" input
+			(at 129.54 66.04 0)
+			(uuid "2687e3f9-eaeb-4f27-8747-79f73d829724")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
@@ -199,7 +309,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "83476ec4-da5d-4ae9-94db-5f98ece4d104")
-		(property "Sheetname" "Interface"
+		(property "Sheetname" "STM32"
 			(at 40.64 66.5984 0)
 			(effects
 				(font
