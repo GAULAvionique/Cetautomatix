@@ -3546,16 +3546,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 62.23) (xy 133.35 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2902cce4-e2c5-4436-8db4-69d505338254")
-	)
-	(wire
-		(pts
 			(xy 166.37 87.63) (xy 173.99 87.63)
 		)
 		(stroke
@@ -3856,13 +3846,13 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 64.77) (xy 133.35 64.77)
+			(xy 125.73 62.23) (xy 127 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "547f3944-3249-465f-ada3-cb96f68b66b0")
+		(uuid "53e2c160-659a-494b-b4f6-fa30fd9f3358")
 	)
 	(wire
 		(pts
@@ -4586,6 +4576,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 64.77) (xy 127 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e00b4568-f406-4201-8789-e25bb0e9972f")
+	)
+	(wire
+		(pts
 			(xy 105.41 43.18) (xy 105.41 52.07)
 		)
 		(stroke
@@ -4643,6 +4643,26 @@
 			(type default)
 		)
 		(uuid "e3cda618-a9ea-4bff-b20a-01615bd34e5c")
+	)
+	(wire
+		(pts
+			(xy 132.08 62.23) (xy 133.35 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e41231ca-a05c-457c-a1d7-d675f039d738")
+	)
+	(wire
+		(pts
+			(xy 132.08 64.77) (xy 133.35 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5df40e1-eeff-4b26-97c7-87d37daaba86")
 	)
 	(wire
 		(pts
@@ -8476,6 +8496,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 129.54 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e187176-835a-4f37-a01f-cdfcee5c0cb8")
+		(property "Reference" "R60"
+			(at 102.616 64.77 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22R"
+			(at 99.314 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 129.54 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 129.54 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20283b46-f07f-45cb-bb82-ab52e891d7da")
+		)
+		(pin "2"
+			(uuid "00cdab61-7dfb-46a8-a22a-f2bc05aab05c")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
+					(reference "R60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 238.76 160.02 270)
 		(mirror x)
@@ -11754,6 +11843,75 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 129.54 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fbb4034b-87c7-47d4-a0dc-4ea9686fb8d5")
+		(property "Reference" "R59"
+			(at 102.87 62.23 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22R"
+			(at 99.314 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 129.54 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 129.54 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5eb125a-ff1b-40c4-a1b8-0c82969f9aaf")
+		)
+		(pin "2"
+			(uuid "26319147-2cf6-46e5-ac1a-f30f134e2763")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
+					(reference "R59")
 					(unit 1)
 				)
 			)

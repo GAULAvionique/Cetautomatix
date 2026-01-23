@@ -620,48 +620,16 @@
       "Root"
     ],
     [
-      "0a0c5a30-f84e-4bf3-b9ff-653375453caf",
-      "Alimentation"
+      "8a1a8d24-b3b8-4669-940a-297f990b7d99",
+      "PowerSupply"
     ],
     [
-      "28a78b8b-e5a8-4a24-b203-36221eb768f9",
-      "Capteur"
+      "3c37fe83-9ec5-4bf7-b24c-730d18a48e1f",
+      "Interfaces"
     ],
     [
-      "5d0affca-363c-4c9d-bb85-abad2de26874",
-      "Composants utilisateurs"
-    ],
-    [
-      "231f72f7-39b9-41a9-94b2-a6574311d3e5",
-      "Extension"
-    ],
-    [
-      "83476ec4-da5d-4ae9-94db-5f98ece4d104",
-      "STM32"
-    ],
-    [
-      "a91e7e84-a9ab-4b3e-83dc-64035e5bbcb8",
-      "Buck5V"
-    ],
-    [
-      "f91e4b39-979e-4a08-a106-ace73727ac15",
-      "Buck3V3"
-    ],
-    [
-      "09f92f65-d9a0-419a-bd60-b582cdba10b2",
-      "Capteur"
-    ],
-    [
-      "f942d43c-804f-4af2-913b-e91749a33fdb",
-      "Temprature"
-    ],
-    [
-      "7293dcc4-1473-4740-89fd-71ac8c545ff1",
-      "TransceiverCAN"
-    ],
-    [
-      "d836d6ab-f333-4f92-a5d1-759c220f057b",
-      "Radio"
+      "03aa44f0-76dc-422b-9f36-66afc2e68b3b",
+      "Sensors"
     ]
   ],
   "text_variables": {}
