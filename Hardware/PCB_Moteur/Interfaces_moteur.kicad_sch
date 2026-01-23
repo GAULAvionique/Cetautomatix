@@ -5746,6 +5746,26 @@
 		)
 		(uuid "fffd26e2-fc37-40ae-842e-5c61574d444b")
 	)
+	(label "CAN-"
+		(at 246.38 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "78bb2a78-9371-4930-8585-237e7ae1b731")
+	)
+	(label "CAN+"
+		(at 246.38 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d39fe99d-2a52-4ada-90ac-12ea3dfd3cd4")
+	)
 	(global_label "EXTEND_IO4"
 		(shape input)
 		(at 269.24 154.94 180)
