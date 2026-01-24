@@ -2617,7 +2617,7 @@
 		)
 		(uuid "2b89da76-ed97-4253-8e0d-f73fc69670ef")
 	)
-	(text "NPN + zener + res"
+	(text "NPN + Schottky + resistor"
 		(exclude_from_sim no)
 		(at 79.248 68.834 0)
 		(effects
