@@ -5035,7 +5035,7 @@
 			)
 		)
 	)
-	(global_label "SYS_TRACESWO"
+	(global_label "SYS_SWO"
 		(shape input)
 		(at 125.73 87.63 180)
 		(fields_autoplaced yes)
@@ -5047,7 +5047,7 @@
 		)
 		(uuid "2f7bcb49-658c-42c2-900f-9799bd71b50c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.533 87.63 0)
+			(at 114.2782 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
