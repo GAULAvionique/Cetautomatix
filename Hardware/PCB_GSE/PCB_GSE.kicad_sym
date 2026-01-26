@@ -4567,7 +4567,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 11.43 4.445 0)
+			(at 3.556 7.366 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4575,7 +4575,7 @@
 			)
 		)
 		(property "Value" "SI5442DU-T1-GE3"
-			(at 11.43 0 0)
+			(at -5.588 -2.794 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4583,7 +4583,7 @@
 			)
 		)
 		(property "Footprint" "SON_8DU-T1-GE3_VIS"
-			(at 0 0 0)
+			(at -9.398 3.302 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4593,7 +4593,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/doc?63233"
-			(at 0 0 0)
+			(at -16.002 5.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4638,18 +4638,6 @@
 			)
 		)
 		(symbol "SI5442DU-T1-GE3_0_1"
-			(polyline
-				(pts
-					(xy 0 7.62) (xy 12.7 7.62)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy 2.54 0) (xy 4.445 0)
@@ -4876,18 +4864,6 @@
 			)
 			(polyline
 				(pts
-					(xy 7.62 -2.54) (xy 10.16 -2.54)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 8.255 3.175) (xy 8.255 5.08)
 				)
 				(stroke
@@ -4935,24 +4911,6 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 10.16 270)
-				(length 2.54)
-				(name "D"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
 				(at 0 0 0)
 				(length 2.54)
 				(name "G"
@@ -4971,8 +4929,27 @@
 				)
 			)
 			(pin unspecified line
-				(at 2.54 10.16 270)
+				(at 7.62 10.16 270)
 				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 7.62 10.16 270)
+				(length 2.54)
+				(hide yes)
 				(name "D"
 					(effects
 						(font
@@ -4989,8 +4966,9 @@
 				)
 			)
 			(pin unspecified line
-				(at 5.08 10.16 270)
+				(at 7.62 10.16 270)
 				(length 2.54)
+				(hide yes)
 				(name "D"
 					(effects
 						(font
@@ -5009,6 +4987,7 @@
 			(pin unspecified line
 				(at 7.62 10.16 270)
 				(length 2.54)
+				(hide yes)
 				(name "D"
 					(effects
 						(font
@@ -5017,6 +4996,44 @@
 					)
 				)
 				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 7.62 10.16 270)
+				(length 2.54)
+				(hide yes)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 7.62 10.16 270)
+				(length 2.54)
+				(hide yes)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5043,26 +5060,9 @@
 				)
 			)
 			(pin unspecified line
-				(at 10.16 10.16 270)
+				(at 7.62 -5.08 90)
 				(length 2.54)
-				(name "D"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 10.16 -5.08 90)
-				(length 2.54)
+				(hide yes)
 				(name "S"
 					(effects
 						(font
@@ -5071,24 +5071,6 @@
 					)
 				)
 				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 12.7 10.16 270)
-				(length 2.54)
-				(name "D"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
