@@ -2619,7 +2619,7 @@
 	)
 	(text "NPN + Schottky + resistor"
 		(exclude_from_sim no)
-		(at 79.248 68.834 0)
+		(at 42.926 30.734 0)
 		(effects
 			(font
 				(size 1.27 1.27)
