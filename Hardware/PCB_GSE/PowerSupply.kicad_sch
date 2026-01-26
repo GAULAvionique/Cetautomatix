@@ -4392,12 +4392,6 @@
 		(uuid "5129fff9-53d8-4e92-8ae4-d3818b9f8c52")
 	)
 	(junction
-		(at 153.67 250.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5cf18c66-ddbf-4520-b68c-d37fdb50fc81")
-	)
-	(junction
 		(at 46.99 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4500,22 +4494,10 @@
 		(uuid "95aa26c5-c665-44c3-bc3c-7151aa383c4d")
 	)
 	(junction
-		(at 168.91 250.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "98dc9ed8-b439-4cd3-a4a7-fe14d837d1f9")
-	)
-	(junction
 		(at 52.07 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c7a0ccf-0447-4745-921d-fd5edeae0049")
-	)
-	(junction
-		(at 137.16 250.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a3c60232-cee9-4a74-94f7-1661b612599c")
 	)
 	(junction
 		(at 67.31 104.14)
@@ -4542,22 +4524,10 @@
 		(uuid "a9e62ad8-393a-4656-b2a1-b60b94d5615e")
 	)
 	(junction
-		(at 168.91 255.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "af50b249-0d4c-4614-9f82-46c3e1ec8a6f")
-	)
-	(junction
 		(at 46.99 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b338b326-b6b3-4700-b964-2663fed43427")
-	)
-	(junction
-		(at 146.05 250.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b43fb2b0-4beb-4c10-a06e-b91c88c4b1e9")
 	)
 	(junction
 		(at 85.09 109.22)
@@ -4674,12 +4644,6 @@
 		(uuid "f8173357-5ed0-43f5-a1e4-20530cf3b308")
 	)
 	(junction
-		(at 137.16 259.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f9f55bbe-7282-4304-bedf-21e2922319cd")
-	)
-	(junction
 		(at 219.71 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4778,16 +4742,6 @@
 			(type default)
 		)
 		(uuid "03c8be19-149d-42f0-a99e-508739bdc152")
-	)
-	(wire
-		(pts
-			(xy 134.62 250.19) (xy 137.16 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04e1e05f-3966-41a3-805b-cf4ece4a6693")
 	)
 	(wire
 		(pts
@@ -4951,16 +4905,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 257.81) (xy 146.05 259.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b32767e-f001-4f2a-9e82-0a7de1369a5f")
-	)
-	(wire
-		(pts
 			(xy 237.49 107.95) (xy 238.76 107.95)
 		)
 		(stroke
@@ -4968,16 +4912,6 @@
 			(type default)
 		)
 		(uuid "1bcc64dc-91db-4505-9ab8-08bce1ffef58")
-	)
-	(wire
-		(pts
-			(xy 168.91 250.19) (xy 166.37 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c0423f3-167f-4651-af50-2039a884b4da")
 	)
 	(wire
 		(pts
@@ -5001,16 +4935,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 250.19) (xy 153.67 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d54793b-7cc0-41d8-ad03-03d0381bd840")
-	)
-	(wire
-		(pts
 			(xy 130.81 157.48) (xy 143.51 157.48)
 		)
 		(stroke
@@ -5018,16 +4942,6 @@
 			(type default)
 		)
 		(uuid "20228143-4f42-4934-a779-b63478e655cb")
-	)
-	(wire
-		(pts
-			(xy 184.15 251.46) (xy 184.15 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21cd192f-3d23-4a7e-a09b-70473760dad8")
 	)
 	(wire
 		(pts
@@ -5221,16 +5135,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 250.19) (xy 137.16 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3469eb24-d1b6-41cd-82aa-9943fa8b7107")
-	)
-	(wire
-		(pts
 			(xy 40.64 177.8) (xy 43.18 177.8)
 		)
 		(stroke
@@ -5258,16 +5162,6 @@
 			(type default)
 		)
 		(uuid "37d62806-48bc-4eb8-b0a8-4c3a20e988ac")
-	)
-	(wire
-		(pts
-			(xy 173.99 250.19) (xy 168.91 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38277443-e45e-4cde-a6c0-4bb70dd19073")
 	)
 	(wire
 		(pts
@@ -5561,16 +5455,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 257.81) (xy 137.16 259.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5820ae7f-198a-48c7-a681-9da8883b8a58")
-	)
-	(wire
-		(pts
 			(xy 265.43 30.48) (xy 266.7 30.48)
 		)
 		(stroke
@@ -5598,16 +5482,6 @@
 			(type default)
 		)
 		(uuid "5a096dea-d2fb-42c1-adcf-603546c20453")
-	)
-	(wire
-		(pts
-			(xy 137.16 250.19) (xy 146.05 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a8c149a-f729-4c58-9488-562372a78d55")
 	)
 	(wire
 		(pts
@@ -5698,16 +5572,6 @@
 			(type default)
 		)
 		(uuid "652a94a5-1f81-4ebb-a50a-4af0c7936e1f")
-	)
-	(wire
-		(pts
-			(xy 146.05 250.19) (xy 146.05 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "685d0d80-c261-4a75-aed6-29ddf19ed7ed")
 	)
 	(wire
 		(pts
@@ -5858,16 +5722,6 @@
 			(type default)
 		)
 		(uuid "75887c30-fb16-4d42-b573-413ff5b58033")
-	)
-	(wire
-		(pts
-			(xy 168.91 256.54) (xy 168.91 255.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75f73abd-fe4e-4f27-8079-cd73d8b70a1d")
 	)
 	(wire
 		(pts
@@ -6211,16 +6065,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 248.92) (xy 153.67 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96fd444e-fbfb-4206-bff4-e33d55006cb3")
-	)
-	(wire
-		(pts
 			(xy 227.33 36.83) (xy 227.33 35.56)
 		)
 		(stroke
@@ -6338,16 +6182,6 @@
 			(type default)
 		)
 		(uuid "a3922017-39cb-4aa2-adfa-c903185632c2")
-	)
-	(wire
-		(pts
-			(xy 168.91 255.27) (xy 168.91 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a61573d6-95f1-4e9d-b274-3865b9d3a340")
 	)
 	(wire
 		(pts
@@ -6548,16 +6382,6 @@
 			(type default)
 		)
 		(uuid "ba32a4a3-b343-40f3-9bf4-835e90ad27e3")
-	)
-	(wire
-		(pts
-			(xy 146.05 259.08) (xy 137.16 259.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba35984f-751c-4da8-9c3e-0536ee4b25ec")
 	)
 	(wire
 		(pts
@@ -6781,16 +6605,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 255.27) (xy 171.45 255.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfdbc39f-94e3-44f1-a26a-68f3db1d9a42")
-	)
-	(wire
-		(pts
 			(xy 100.33 64.77) (xy 100.33 66.04)
 		)
 		(stroke
@@ -6848,16 +6662,6 @@
 			(type default)
 		)
 		(uuid "d4d29b54-095c-4dfd-a55f-41f18de78a35")
-	)
-	(wire
-		(pts
-			(xy 153.67 250.19) (xy 158.75 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7306078-3e73-4942-a5a0-bc4766aa4b06")
 	)
 	(wire
 		(pts
@@ -6991,16 +6795,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 262.89) (xy 168.91 261.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5ebec71-7ad9-49e4-ad13-a34246b8acc8")
-	)
-	(wire
-		(pts
 			(xy 227.33 107.95) (xy 229.87 107.95)
 		)
 		(stroke
@@ -7008,16 +6802,6 @@
 			(type default)
 		)
 		(uuid "e5efc242-9603-4cc4-af30-b3104acc180b")
-	)
-	(wire
-		(pts
-			(xy 184.15 250.19) (xy 181.61 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e78f8477-20de-479a-bd35-5a30c44d3f4b")
 	)
 	(wire
 		(pts
@@ -7148,16 +6932,6 @@
 			(type default)
 		)
 		(uuid "f4c8a596-44fd-4872-b89f-e2a4106fb42d")
-	)
-	(wire
-		(pts
-			(xy 137.16 259.08) (xy 137.16 260.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f51076dd-00cf-4231-b8e0-52dd9371b174")
 	)
 	(wire
 		(pts
@@ -7451,29 +7225,6 @@
 			)
 		)
 	)
-	(global_label "5V_Main"
-		(shape input)
-		(at 134.62 250.19 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify right)
-		)
-		(uuid "71a72e9b-f4bb-4a76-9cf6-bd7613715a58")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.0149 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "12V_Main"
 		(shape input)
 		(at 168.91 102.87 180)
@@ -7510,28 +7261,6 @@
 		(uuid "9dc19770-0b13-41ed-b015-33d571a1f651")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 154.1757 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "5V_An"
-		(shape input)
-		(at 171.45 255.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "aa3cfae2-013a-4f57-93d3-1f110666f5b7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 179.9385 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8005,6 +7734,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 158.75 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0af2ea68-588f-42ec-94b0-29c9b52cfed0")
+		(property "Reference" "FB5"
+			(at 158.75 65.278 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FBMH3225HM601NT"
+			(at 158.75 67.818 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_1210_3225Metric"
+			(at 158.75 72.898 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 158.75 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4573a0c3-ef33-4873-a3da-fed2bee4fac3")
+		)
+		(pin "1"
+			(uuid "5b0db704-47d5-4848-a93c-183cd78f2d10")
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
+					(reference "FB5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 227.33 43.18 0)
 		(unit 1)
@@ -8338,71 +8134,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
 					(reference "C27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 153.67 248.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "139e2ae9-f2d9-4af6-933c-8720ff698d29")
-		(property "Reference" "#PWR059"
-			(at 153.67 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 153.162 244.856 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 153.67 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 153.67 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56819bda-fdb6-4e24-85b3-379a11893031")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -9081,127 +8812,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 158.75 71.12 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1ec405d9-5ba5-4ffa-bc19-e46e8dbdc101")
-		(property "Reference" "FB5"
-			(at 158.75 65.786 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "600R"
-			(at 158.75 68.326 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_1210_3225Metric"
-			(at 158.75 72.898 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/taiyo-yuden/FBMH3225HM601NT/957843"
-			(at 158.75 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "600 Ohms @ 100 MHz 1 Power Line Ferrite Bead 1210 (3225 Metric) 3A 42mOhm"
-			(at 158.75 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "587-1755-1-ND"
-			(at 158.75 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 158.75 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 158.75 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 158.75 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 158.75 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "FBMH3225HM601NT"
-			(at 158.75 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "50dc051c-1065-4994-ad87-f5880d3cf12b")
-		)
-		(pin "1"
-			(uuid "caf87f19-7312-4166-9e41-a0e560a061fb")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "FB5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 124.46 142.24 90)
 		(unit 1)
@@ -9831,73 +9441,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
 					(reference "C28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 137.16 260.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "33fb7de4-acfb-4db4-b0bc-b6c7c09983ea")
-		(property "Reference" "#PWR049"
-			(at 137.16 266.7 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 137.16 265.43 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 260.35 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 260.35 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 137.16 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9ac23cda-cfbe-475a-974e-963086a2be9a")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -10858,130 +10401,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 177.8 250.19 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "49b29b8f-f1f1-4d4b-b263-568fb7333990")
-		(property "Reference" "R17"
-			(at 180.086 247.65 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "180k 1%"
-			(at 180.848 252.73 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 177.8 251.968 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB184V/1465908"
-			(at 177.8 250.19 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "P180KDBCT-ND"
-			(at 177.8 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 177.8 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 177.8 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 177.8 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 177.8 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "ERA-3AEB184V"
-			(at 177.8 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c83dffe-237d-4660-8d2f-52b635cd0a5c")
-		)
-		(pin "2"
-			(uuid "7ae1f240-270a-4841-a5b4-c4fa371991b6")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCB_GSE:WE-PD_1245")
 		(at 228.6 76.2 0)
 		(unit 1)
@@ -11570,129 +10989,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
 					(reference "#PWR0111")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 146.05 255.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "57c21b91-e6f5-4279-a19b-b3d32430378e")
-		(property "Reference" "C41"
-			(at 146.558 253.492 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF"
-			(at 146.558 257.048 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 146.05 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
-			(at 146.05 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 146.05 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "445-14428-1-ND"
-			(at 146.05 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 146.05 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 146.05 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 146.05 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 146.05 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
-			(at 146.05 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0f55a6a4-6a09-4785-ab81-c0cd50c2a7a5")
-		)
-		(pin "1"
-			(uuid "e0ab87b9-bc65-4c9a-9dcc-8122181d8a9f")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -13042,74 +12338,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 168.91 262.89 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7874b9bf-762e-435e-9fba-99f4d286f5b8")
-		(property "Reference" "#PWR060"
-			(at 168.91 269.24 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 168.91 267.97 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 262.89 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 262.89 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 168.91 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4e9934f5-f674-484f-9406-aa9ad50eb011")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 176.53 81.28 180)
 		(unit 1)
@@ -13635,74 +12863,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 184.15 251.46 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "841a6872-a25d-4a5e-a8a6-0f2432fe1a11")
-		(property "Reference" "#PWR061"
-			(at 184.15 257.81 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 184.15 256.54 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 184.15 251.46 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 251.46 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 184.15 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7622d132-6234-4fd5-b7c5-abb23d2913f8")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "#PWR061")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDD")
 		(at 133.35 165.1 0)
 		(unit 1)
@@ -13896,130 +13056,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 162.56 250.19 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8963199d-4ed3-4d91-92e4-68b3750fc184")
-		(property "Reference" "R16"
-			(at 165.1 247.65 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "135k 1%"
-			(at 165.354 252.73 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 162.56 251.968 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RT0603BRD07135KL/5927893"
-			(at 162.56 250.19 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 162.56 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "13-RT0603BRD07135KLCT-ND"
-			(at 162.56 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 162.56 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 162.56 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 162.56 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 162.56 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "RT0603BRD07135KL"
-			(at 162.56 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f2484221-96ad-40e0-9807-56a838bd8aa6")
-		)
-		(pin "2"
-			(uuid "c56ef723-c2a6-4bae-99b5-fa1f04a39d8a")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 74.93 186.69 0)
 		(mirror y)
@@ -14206,129 +13242,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
 					(reference "#PWR063")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 137.16 255.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8e8c0e2d-284d-4e53-914e-64f23b601ad2")
-		(property "Reference" "C40"
-			(at 137.668 253.492 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF"
-			(at 137.668 257.048 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 137.16 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
-			(at 137.16 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 137.16 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "445-14428-1-ND"
-			(at 137.16 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 137.16 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 137.16 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 137.16 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 137.16 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
-			(at 137.16 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3d4d5805-a569-431b-97ba-dab519251d9d")
-		)
-		(pin "1"
-			(uuid "6600a558-435c-41c1-a970-ca0b22358cfc")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -17842,130 +16755,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 168.91 259.08 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f71347da-5946-4019-8f5d-a9547b07a2de")
-		(property "Reference" "C42"
-			(at 168.656 257.302 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 168.656 260.858 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "ODB:C_0402_1005Metric"
-			(at 168.91 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/CC0402KRX5R9BB104/5883338"
-			(at 168.91 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 168.91 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "311-3342-1-ND"
-			(at 168.91 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 168.91 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 168.91 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 168.91 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 168.91 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "CC0402KRX5R9BB104"
-			(at 168.91 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56508d71-ea10-46fa-9a4f-61180033a01c")
-		)
-		(pin "2"
-			(uuid "3d34935d-da8d-437d-bccb-1d5d81f64350")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C42")
 					(unit 1)
 				)
 			)
