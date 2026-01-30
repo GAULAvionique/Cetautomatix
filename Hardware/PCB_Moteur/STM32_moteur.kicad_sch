@@ -4946,28 +4946,6 @@
 			)
 		)
 	)
-	(global_label "3V3_An"
-		(shape input)
-		(at 173.99 67.31 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "143f7924-eaba-4745-8c73-73c3c997b1a6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.688 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CriticalLED_R"
 		(shape input)
 		(at 125.73 107.95 180)
@@ -5367,6 +5345,28 @@
 			)
 		)
 	)
+	(global_label "3V3_An"
+		(shape input)
+		(at 173.99 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "504abb32-a015-4b9f-a1f9-45ffd17374f6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 183.688 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GPS_USART6_RX"
 		(shape input)
 		(at 260.35 137.16 0)
@@ -5521,28 +5521,6 @@
 			)
 		)
 	)
-	(global_label "Vin_An"
-		(shape input)
-		(at 173.99 69.85 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "683e5260-8008-4436-9339-894905ddcf14")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.0228 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Pyros_Arm"
 		(shape input)
 		(at 125.73 85.09 180)
@@ -5606,6 +5584,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Vin_An"
+		(shape input)
+		(at 173.99 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "74b461e4-de4c-415b-bf62-5eaf155f5321")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 183.0228 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
