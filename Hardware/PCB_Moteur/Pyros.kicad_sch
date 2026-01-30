@@ -6293,7 +6293,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "507c299f-0204-44fc-820a-86f4a6477ffe")
+		(uuid "577b84a2-d898-4a88-91d2-69863b7980a3")
 		(property "Reference" "Q2"
 			(at 109.22 108.204 0)
 			(effects
@@ -6342,13 +6342,13 @@
 			)
 		)
 		(pin "5"
-			(uuid "d8a2fc74-75f9-4f49-b8be-d3fa68f7b1de")
+			(uuid "42b25184-fd65-4511-aaec-dfae5cba41c7")
 		)
 		(pin "1"
-			(uuid "a5325220-71e8-40b8-a7bd-7071115ac9ee")
+			(uuid "eef74bb5-47e0-4702-90c8-cd3297a7ec17")
 		)
 		(pin "4"
-			(uuid "f7ba09c4-e2ff-4f75-8e26-a62e164081f3")
+			(uuid "29638ea4-91ca-41c8-9822-1d15de5da841")
 		)
 		(instances
 			(project "PCB_moteur"
@@ -7088,7 +7088,7 @@
 			(uuid "308a566e-980c-4463-81db-dfabda4b96dd")
 		)
 		(instances
-			(project ""
+			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/1c3f73a9-ace7-4654-9081-04f4c5cd0c08"
 					(reference "Q1")
 					(unit 1)
