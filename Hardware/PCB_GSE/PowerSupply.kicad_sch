@@ -15670,7 +15670,7 @@
 		(dnp no)
 		(uuid "f8ca0b4d-fcd1-44c8-90b0-aa570c1e584b")
 		(property "Reference" "C34"
-			(at 158.75 103.632 0)
+			(at 159.766 103.886 0)
 			(effects
 				(font
 					(size 1 1)
