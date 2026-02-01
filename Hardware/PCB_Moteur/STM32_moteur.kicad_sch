@@ -3376,6 +3376,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 43.18) (xy 105.41 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bcff63b-6ba9-46f9-aed6-df110723e249")
+	)
+	(wire
+		(pts
 			(xy 257.81 152.4) (xy 260.35 152.4)
 		)
 		(stroke
@@ -4076,6 +4086,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 49.53) (xy 105.41 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82d1b09a-e455-494c-9e1b-ab3bc8917fbb")
+	)
+	(wire
+		(pts
 			(xy 166.37 54.61) (xy 173.99 54.61)
 		)
 		(stroke
@@ -4583,16 +4603,6 @@
 			(type default)
 		)
 		(uuid "e00b4568-f406-4201-8789-e25bb0e9972f")
-	)
-	(wire
-		(pts
-			(xy 105.41 43.18) (xy 105.41 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e04a6fa1-c985-427a-9c3f-637abac54b22")
 	)
 	(wire
 		(pts
@@ -6511,6 +6521,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6577,6 +6593,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -6694,6 +6716,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6761,6 +6789,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6822,6 +6856,12 @@
 			(project ""
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "H1")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "H?")
 					(unit 1)
 				)
 			)
@@ -6888,6 +6928,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP9")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -6958,6 +7004,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7019,6 +7071,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -7088,6 +7146,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -7171,6 +7235,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7233,6 +7303,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP26")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -7299,6 +7375,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP10")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -7509,6 +7591,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7574,6 +7662,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7635,6 +7729,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -7703,6 +7803,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7764,6 +7870,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -7832,6 +7944,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7894,6 +8012,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP25")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -7963,6 +8087,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8024,6 +8154,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -8093,6 +8229,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8155,6 +8297,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -8227,6 +8375,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8293,6 +8447,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8356,6 +8516,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP6")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -8426,6 +8592,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8490,6 +8662,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -8562,6 +8740,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8625,6 +8809,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP15")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -8694,6 +8884,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8757,6 +8953,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP5")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -8824,6 +9026,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8887,6 +9095,87 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 105.41 46.99 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "66023b4e-3187-4a45-af99-387cd162b407")
+		(property "Reference" "R61"
+			(at 103.378 45.974 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 107.696 45.466 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 105.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 105.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d943ffd-8238-4f55-8343-aadb45596690")
+		)
+		(pin "2"
+			(uuid "b2f9eea2-cb27-4c20-aeaf-ae2be2fa4448")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
+					(reference "R61")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -8959,6 +9248,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9020,6 +9315,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "H?")
 					(unit 1)
 				)
 			)
@@ -9089,6 +9390,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "FB?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9151,6 +9458,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP23")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -9217,6 +9530,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP12")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -9287,6 +9606,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9349,6 +9674,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP22")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -9418,6 +9749,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9484,6 +9821,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9545,6 +9888,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "H4")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "H?")
 					(unit 1)
 				)
 			)
@@ -9613,6 +9962,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9676,6 +10031,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP8")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -9748,6 +10109,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9817,6 +10184,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9879,6 +10252,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP17")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -9945,6 +10324,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -10017,6 +10402,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10081,6 +10472,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "JP1")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "JP?")
 					(unit 1)
 				)
 			)
@@ -10150,6 +10547,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10216,6 +10619,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "R17")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -10345,6 +10754,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "LED?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10412,6 +10827,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10475,6 +10896,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP14")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -10545,6 +10972,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10612,6 +11045,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10673,6 +11112,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "H?")
 					(unit 1)
 				)
 			)
@@ -10745,6 +11190,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10810,6 +11261,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10872,6 +11329,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP29")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -10941,6 +11404,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11004,6 +11473,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -11073,6 +11548,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11138,6 +11619,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11200,6 +11687,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP20")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -11317,6 +11810,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11378,6 +11877,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -11447,6 +11952,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11511,6 +12022,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -11583,6 +12100,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11646,6 +12169,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -11717,6 +12246,12 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11778,6 +12313,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -11843,6 +12384,12 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
 					(reference "TP27")
+					(unit 1)
+				)
+			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -11915,6 +12462,18 @@
 					(unit 1)
 				)
 			)
+			(project "STM32_moteur"
+				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
