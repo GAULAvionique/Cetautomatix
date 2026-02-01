@@ -7446,8 +7446,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "27k 1%"
-			(at 22.86 111.252 0)
+		(property "Value" "10k"
+			(at 26.416 111.252 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7455,7 +7455,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 31.75 110.49 0)
 			(effects
 				(font
@@ -7464,7 +7464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/susumu/RG1608P-273-B-T5/1240540"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 31.75 110.49 0)
 			(effects
 				(font
@@ -7482,7 +7482,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "RG16P27.0KBCT-ND"
+		(property "DigiKey_Part_Number" "311-10.0KHRCT-ND"
 			(at 31.75 110.49 0)
 			(effects
 				(font
@@ -7527,7 +7527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RG1608P-273-B-T5"
+		(property "Manufacturer_Part_Number" "RC0603FR-0710KL"
 			(at 31.75 110.49 0)
 			(effects
 				(font
@@ -7587,7 +7587,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 248.92 77.47 0)
 			(effects
 				(font
@@ -7711,7 +7711,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:SI5442DU_T1_G3"
 			(at 33.782 103.378 0)
 			(effects
 				(font
@@ -7721,7 +7721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?63233"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-siliconix/SI5442DU-T1-GE3/4142130?s=N4IgTCBcDaIMoEkCsAWFYAiBVAtAFQEYcBxAUQGYQBdAXyA"
 			(at 27.178 101.346 0)
 			(effects
 				(font
@@ -7732,6 +7732,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 43.18 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "SI5442DU-T1-GE3CT-ND"
+			(at 43.18 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI5442DU-T1-GE3"
 			(at 43.18 106.68 0)
 			(effects
 				(font
@@ -7803,7 +7821,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:CONN_1725698_PXC"
 			(at 109.22 88.9 0)
 			(effects
 				(font
@@ -7812,7 +7830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/phoenix-contact/1725698/267466?gclsrc=aw.ds&gad_source=1&gad_campaignid=20539025167&gbraid=0AAAAADrbLlhWtEsrGO8JwuE1-harb6U92&gclid=Cj0KCQiAkPzLBhD4ARIsAGfah8ipaI4JjvlTSU8C3dyxCwNYJ2pkDEMAI4KXLvkwMdTP8Cvxk6HoTEoaAoeeEALw_wcB"
 			(at 109.22 88.9 0)
 			(effects
 				(font
@@ -7822,6 +7840,24 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 109.22 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "277-1277-ND"
+			(at 109.22 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1725698"
 			(at 109.22 88.9 0)
 			(effects
 				(font
@@ -7884,7 +7920,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 268.9352 53.34 0)
 			(effects
 				(font
@@ -7893,7 +7929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B103KAANNNC/3888092"
 			(at 267.97 49.53 0)
 			(effects
 				(font
@@ -7903,6 +7939,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 267.97 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2434-1-ND"
+			(at 267.97 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21B103KAANNNC"
 			(at 267.97 49.53 0)
 			(effects
 				(font
@@ -7944,8 +7998,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "27k 1%"
-			(at 22.86 62.992 0)
+		(property "Value" "10k"
+			(at 26.416 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7953,7 +8007,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 31.75 62.23 0)
 			(effects
 				(font
@@ -7962,7 +8016,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/susumu/RG1608P-273-B-T5/1240540"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 31.75 62.23 0)
 			(effects
 				(font
@@ -7980,7 +8034,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "RG16P27.0KBCT-ND"
+		(property "DigiKey_Part_Number" "311-10.0KHRCT-ND"
 			(at 31.75 62.23 0)
 			(effects
 				(font
@@ -8025,7 +8079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RG1608P-273-B-T5"
+		(property "Manufacturer_Part_Number" "RC0603FR-0710KL"
 			(at 31.75 62.23 0)
 			(effects
 				(font
@@ -8341,7 +8395,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 45.72 38.1 0)
 			(effects
 				(font
@@ -8350,7 +8404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188R6YA106MA73D/5877411"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 45.72 38.1 0)
 			(effects
 				(font
@@ -8368,7 +8422,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "490-13248-1-ND"
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
 			(at 45.72 38.1 0)
 			(effects
 				(font
@@ -8413,7 +8467,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM188R6YA106MA73D"
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 45.72 38.1 0)
 			(effects
 				(font
@@ -8663,7 +8717,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 194.0052 57.15 0)
 			(effects
 				(font
@@ -8672,7 +8726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B103KAANNNC/3888092"
 			(at 193.04 53.34 0)
 			(effects
 				(font
@@ -8682,6 +8736,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2434-1-ND"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21B103KAANNNC"
 			(at 193.04 53.34 0)
 			(effects
 				(font
@@ -8799,7 +8871,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MBRS540T3G:DIOM7959X261N"
+		(property "Footprint" "pcb_moteur:DIODE_SMB_2L_ONS"
 			(at 124.968 25.908 0)
 			(effects
 				(font
@@ -8809,7 +8881,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/MBRS130LT3G/918636?gclsrc=aw.ds&gad_source=1&gad_campaignid=207527465&gbraid=0AAAAADrbLlgg4iCmifwnCP5a1uC-ou_qj&gclid=Cj0KCQiAkPzLBhD4ARIsAGfah8hM2stc1-55Q_NMvJFw4VP75SzXVYh5moA5Mwzkyy24emjxTCEO328aAolCEALw_wcB"
 			(at 130.81 39.37 0)
 			(effects
 				(font
@@ -8827,7 +8899,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "MBRS540T3GOSCT-ND"
+		(property "DigiKey_Part_Number" "MBRS130LT3GOSCT-ND"
 			(at 125.476 28.956 0)
 			(effects
 				(font
@@ -8934,6 +9006,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MBRS130LT3G"
+			(at 130.81 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -9117,7 +9198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/fair-rite-products-corp/2508051217Y6/8594305"
 			(at 242.57 43.18 0)
 			(effects
 				(font
@@ -9128,6 +9209,24 @@
 		)
 		(property "Description" "Ferrite bead"
 			(at 242.57 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1934-1472-1-ND"
+			(at 242.57 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2508051217Y6"
+			(at 242.57 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9186,7 +9285,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 248.92 69.85 0)
 			(effects
 				(font
@@ -9245,7 +9344,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MBRS540T3G:DIOM7959X261N"
+		(property "Footprint" "pcb_moteur:DIODE_SMB_2L_ONS"
 			(at 58.928 25.908 0)
 			(effects
 				(font
@@ -9255,7 +9354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/MBRS130LT3G/918636?gclsrc=aw.ds&gad_source=1&gad_campaignid=207527465&gbraid=0AAAAADrbLlgg4iCmifwnCP5a1uC-ou_qj&gclid=Cj0KCQiAkPzLBhD4ARIsAGfah8hM2stc1-55Q_NMvJFw4VP75SzXVYh5moA5Mwzkyy24emjxTCEO328aAolCEALw_wcB"
 			(at 64.77 39.37 0)
 			(effects
 				(font
@@ -9273,7 +9372,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "MBRS540T3GOSCT-ND"
+		(property "DigiKey_Part_Number" "MBRS130LT3GOSCT-ND"
 			(at 59.436 28.956 0)
 			(effects
 				(font
@@ -9383,6 +9482,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "MBRS130LT3G"
+			(at 64.77 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "adbfdc3b-ca59-446f-9329-c137334e4c63")
 		)
@@ -9483,7 +9591,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470R"
+		(property "Value" "200R"
 			(at 106.68 56.388 90)
 			(effects
 				(font
@@ -9492,7 +9600,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 104.14 58.42 0)
 			(effects
 				(font
@@ -9501,7 +9609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/susumu/URG1608L-152-L-T05/4552646"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/AC0805FR-07200RL/5896662"
 			(at 104.14 58.42 0)
 			(effects
 				(font
@@ -9519,7 +9627,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "408-1766-1-ND"
+		(property "DigiKey_Part_Number" "YAG3707CT-ND"
 			(at 104.14 58.42 90)
 			(effects
 				(font
@@ -9564,7 +9672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "URG1608L-152-L-T05"
+		(property "Manufacturer_Part_Number" "AC0805FR-07200RL"
 			(at 104.14 58.42 90)
 			(effects
 				(font
@@ -9615,7 +9723,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:SI5442DU_T1_G3"
 			(at 99.822 55.118 0)
 			(effects
 				(font
@@ -9625,7 +9733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?63233"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-siliconix/SI5442DU-T1-GE3/4142130?s=N4IgTCBcDaIMoEkCsAWFYAiBVAtAFQEYcBxAUQGYQBdAXyA"
 			(at 93.218 53.086 0)
 			(effects
 				(font
@@ -9636,6 +9744,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 109.22 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "SI5442DU-T1-GE3CT-ND"
+			(at 109.22 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI5442DU-T1-GE3"
 			(at 109.22 58.42 0)
 			(effects
 				(font
@@ -9707,7 +9833,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "pcb_moteur:SI5442DU_T1_G3"
 			(at 33.782 55.118 0)
 			(effects
 				(font
@@ -9717,7 +9843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?63233"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-siliconix/SI5442DU-T1-GE3/4142130?s=N4IgTCBcDaIMoEkCsAWFYAiBVAtAFQEYcBxAUQGYQBdAXyA"
 			(at 27.178 53.086 0)
 			(effects
 				(font
@@ -9728,6 +9854,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 43.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "SI5442DU-T1-GE3CT-ND"
+			(at 43.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI5442DU-T1-GE3"
 			(at 43.18 58.42 0)
 			(effects
 				(font
@@ -9891,6 +10035,24 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey_Part_Number" "900-2189890210CT-ND"
+			(at 271.78 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2189890210"
+			(at 271.78 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "afae0e4b-f560-495b-b554-12c36a2202fc")
 		)
@@ -9924,8 +10086,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "27k 1%"
-			(at 88.9 62.992 0)
+		(property "Value" "10k"
+			(at 92.456 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9933,7 +10095,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 97.79 62.23 0)
 			(effects
 				(font
@@ -9942,7 +10104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/susumu/RG1608P-273-B-T5/1240540"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 97.79 62.23 0)
 			(effects
 				(font
@@ -9960,7 +10122,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "RG16P27.0KBCT-ND"
+		(property "DigiKey_Part_Number" "311-10.0KHRCT-ND"
 			(at 97.79 62.23 0)
 			(effects
 				(font
@@ -10005,7 +10167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RG1608P-273-B-T5"
+		(property "Manufacturer_Part_Number" "RC0603FR-0710KL"
 			(at 97.79 62.23 0)
 			(effects
 				(font
@@ -10056,7 +10218,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 111.76 38.1 0)
 			(effects
 				(font
@@ -10065,7 +10227,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188R6YA106MA73D/5877411"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 111.76 38.1 0)
 			(effects
 				(font
@@ -10083,7 +10245,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "490-13248-1-ND"
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
 			(at 111.76 38.1 0)
 			(effects
 				(font
@@ -10128,7 +10290,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM188R6YA106MA73D"
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 111.76 38.1 0)
 			(effects
 				(font
@@ -10188,7 +10350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/isow1044.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/texas-instruments/ISOW1044BDFMR/18159254"
 			(at 210.82 43.18 0)
 			(effects
 				(font
@@ -10198,6 +10360,24 @@
 			)
 		)
 		(property "Description" "Isolated CAN FD Transceiver, Integrated DC-DC Converter, 5Mbps, Reinforced Isolation,  SOIC-20W"
+			(at 210.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "296-ISOW1044BDFMRCT-ND"
+			(at 210.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ISOW1044BDFMR"
 			(at 210.82 73.66 0)
 			(effects
 				(font
@@ -10302,7 +10482,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 259.08 72.6948 0)
 			(effects
 				(font
@@ -10311,7 +10491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
 			(at 255.27 73.66 0)
 			(effects
 				(font
@@ -10326,6 +10506,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
+			(at 255.27 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
+			(at 255.27 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10713,7 +10911,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 248.92 49.53 0)
 			(effects
 				(font
@@ -10723,6 +10921,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 248.92 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 248.92 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 248.92 49.53 0)
 			(effects
 				(font
@@ -10773,7 +10989,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MBRS540T3G:DIOM7959X261N"
+		(property "Footprint" "pcb_moteur:DIODE_SMB_2L_ONS"
 			(at 58.928 74.168 0)
 			(effects
 				(font
@@ -10783,7 +10999,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/MBRS130LT3G/918636?gclsrc=aw.ds&gad_source=1&gad_campaignid=207527465&gbraid=0AAAAADrbLlgg4iCmifwnCP5a1uC-ou_qj&gclid=Cj0KCQiAkPzLBhD4ARIsAGfah8hM2stc1-55Q_NMvJFw4VP75SzXVYh5moA5Mwzkyy24emjxTCEO328aAolCEALw_wcB"
 			(at 64.77 87.63 0)
 			(effects
 				(font
@@ -10801,7 +11017,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "MBRS540T3GOSCT-ND"
+		(property "DigiKey_Part_Number" "MBRS130LT3GOSCT-ND"
 			(at 59.436 77.216 0)
 			(effects
 				(font
@@ -10908,6 +11124,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MBRS130LT3G"
+			(at 64.77 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -11144,7 +11369,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GT17HN-4DP-2HA56"
+		(property "Value" "GT17HN-4DP-2H(D)(56)"
 			(at 194.056 144.78 0)
 			(effects
 				(font
@@ -11153,7 +11378,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN4_GT17HN_HIR"
+		(property "Footprint" "pcb_moteur:CONN4_GT17HN_HIR"
 			(at 204.216 139.954 0)
 			(effects
 				(font
@@ -11163,7 +11388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "GT17HN-4DP-2HA56"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/hirose-electric-co-ltd/GT17HN-4DP-2H-D-56/13626343"
 			(at 204.978 138.176 0)
 			(effects
 				(font
@@ -11174,6 +11399,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 205.74 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "26-GT17HN-4DP-2H(D)(56)-ND"
+			(at 205.74 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GT17HN-4DP-2H(D)(56)"
 			(at 205.74 148.59 0)
 			(effects
 				(font
@@ -11242,7 +11485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C105K4RACTU/2199788"
 			(at 257.81 49.53 0)
 			(effects
 				(font
@@ -11252,6 +11495,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 257.81 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C105K4RACTUCT-ND"
+			(at 257.81 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C105K4RACTU"
 			(at 257.81 49.53 0)
 			(effects
 				(font
@@ -11302,7 +11563,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 238.4552 53.34 0)
 			(effects
 				(font
@@ -11311,7 +11572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
 			(at 237.49 49.53 0)
 			(effects
 				(font
@@ -11321,6 +11582,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 237.49 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
+			(at 237.49 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
 			(at 237.49 49.53 0)
 			(effects
 				(font
@@ -11380,7 +11659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 166.37 53.34 0)
 			(effects
 				(font
@@ -11390,6 +11669,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 166.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 166.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 166.37 53.34 0)
 			(effects
 				(font
@@ -11447,7 +11744,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/amphenol-cs-fci/67996-420HLF/1878553"
 			(at 255.27 144.78 0)
 			(effects
 				(font
@@ -11457,6 +11754,24 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x10, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 255.27 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "609-3221-ND"
+			(at 255.27 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "67996-420HLF"
 			(at 255.27 144.78 0)
 			(effects
 				(font
@@ -11552,7 +11867,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470R"
+		(property "Value" "200R"
 			(at 40.64 104.648 90)
 			(effects
 				(font
@@ -11561,7 +11876,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 38.1 106.68 0)
 			(effects
 				(font
@@ -11570,7 +11885,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/susumu/URG1608L-152-L-T05/4552646"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/AC0805FR-07200RL/5896662"
 			(at 38.1 106.68 0)
 			(effects
 				(font
@@ -11588,7 +11903,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "408-1766-1-ND"
+		(property "DigiKey_Part_Number" "YAG3707CT-ND"
 			(at 38.1 106.68 90)
 			(effects
 				(font
@@ -11633,7 +11948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "URG1608L-152-L-T05"
+		(property "Manufacturer_Part_Number" "AC0805FR-07200RL"
 			(at 38.1 106.68 90)
 			(effects
 				(font
@@ -12087,7 +12402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C105K4RACTU/2199788"
 			(at 175.26 53.34 0)
 			(effects
 				(font
@@ -12097,6 +12412,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 175.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C105K4RACTUCT-ND"
+			(at 175.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C105K4RACTU"
 			(at 175.26 53.34 0)
 			(effects
 				(font
@@ -12148,7 +12481,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 185.1152 57.15 0)
 			(effects
 				(font
@@ -12157,7 +12490,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
 			(at 184.15 53.34 0)
 			(effects
 				(font
@@ -12167,6 +12500,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 184.15 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
+			(at 184.15 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
 			(at 184.15 53.34 0)
 			(effects
 				(font
@@ -12274,7 +12625,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470R"
+		(property "Value" "200R"
 			(at 40.64 56.388 90)
 			(effects
 				(font
@@ -12283,7 +12634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 38.1 58.42 0)
 			(effects
 				(font
@@ -12292,7 +12643,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/susumu/URG1608L-152-L-T05/4552646"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/AC0805FR-07200RL/5896662"
 			(at 38.1 58.42 0)
 			(effects
 				(font
@@ -12310,7 +12661,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "408-1766-1-ND"
+		(property "DigiKey_Part_Number" "YAG3707CT-ND"
 			(at 38.1 58.42 90)
 			(effects
 				(font
@@ -12355,7 +12706,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "URG1608L-152-L-T05"
+		(property "Manufacturer_Part_Number" "AC0805FR-07200RL"
 			(at 38.1 58.42 90)
 			(effects
 				(font
@@ -12604,7 +12955,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 45.72 86.36 0)
 			(effects
 				(font
@@ -12613,7 +12964,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188R6YA106MA73D/5877411"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 45.72 86.36 0)
 			(effects
 				(font
@@ -12631,7 +12982,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "490-13248-1-ND"
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
 			(at 45.72 86.36 0)
 			(effects
 				(font
@@ -12676,7 +13027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM188R6YA106MA73D"
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 45.72 86.36 0)
 			(effects
 				(font

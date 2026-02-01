@@ -6071,7 +6071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW0805100RFKEA/1175523"
 			(at 69.85 142.24 0)
 			(effects
 				(font
@@ -6089,7 +6089,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-100CCT-ND"
 			(at 69.85 142.24 90)
 			(effects
 				(font
@@ -6126,6 +6126,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 69.85 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW0805100RFKEA"
 			(at 69.85 142.24 90)
 			(effects
 				(font
@@ -6185,7 +6194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 129.54 62.23 0)
 			(effects
 				(font
@@ -6196,6 +6205,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 129.54 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 129.54 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 129.54 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6244,7 +6271,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 258.1148 55.88 0)
 			(effects
 				(font
@@ -6253,7 +6280,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
 			(at 259.08 59.69 0)
 			(effects
 				(font
@@ -6268,6 +6295,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
+			(at 259.08 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
+			(at 259.08 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6322,7 +6367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 139.7 186.69 0)
 			(effects
 				(font
@@ -6332,6 +6377,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 139.7 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
 			(at 139.7 186.69 0)
 			(effects
 				(font
@@ -6375,7 +6429,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 250.4948 80.01 0)
 			(effects
 				(font
@@ -6384,7 +6438,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B103KAANNNC/3888092"
 			(at 251.46 83.82 0)
 			(effects
 				(font
@@ -6399,6 +6453,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2434-1-ND"
+			(at 251.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21B103KAANNNC"
+			(at 251.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6517,7 +6589,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/61300611121/4846833"
 			(at 45.72 115.57 0)
 			(effects
 				(font
@@ -6527,6 +6599,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
+			(at 45.72 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "732-5319-ND"
+			(at 45.72 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "61300611121"
 			(at 45.72 115.57 0)
 			(effects
 				(font
@@ -6599,7 +6689,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/STM32F103CBT6/1754420?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336435733&gbraid=0AAAAADrbLljcYg2gwf1f_Fyo7fUQ3uGMm&gclid=Cj0KCQiAkPzLBhD4ARIsAGfah8go_uWTCUB79PqSYGl5hnoswDPGbiMqwFdCMtGpeScegVF_Y82zF54aAlJtEALw_wcB"
 			(at 148.59 87.63 0)
 			(effects
 				(font
@@ -6614,6 +6704,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "497-6288-ND"
+			(at 148.59 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "STM32F103CBT6"
+			(at 148.59 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6805,7 +6913,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 129.54 95.25 0)
 			(effects
 				(font
@@ -6816,6 +6924,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 129.54 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 129.54 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 129.54 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6874,7 +7000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 238.76 121.92 0)
 			(effects
 				(font
@@ -6885,6 +7011,15 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6929,7 +7064,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 261.62 23.622 90)
 			(effects
 				(font
@@ -6938,7 +7073,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
 			(at 261.62 25.4 0)
 			(effects
 				(font
@@ -6953,6 +7088,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 261.62 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 261.62 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7129,7 +7282,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 264.4648 80.01 0)
 			(effects
 				(font
@@ -7138,7 +7291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B103KAANNNC/3888092"
 			(at 265.43 83.82 0)
 			(effects
 				(font
@@ -7153,6 +7306,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2434-1-ND"
+			(at 265.43 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21B103KAANNNC"
+			(at 265.43 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7196,7 +7367,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 265.7348 55.88 0)
 			(effects
 				(font
@@ -7205,7 +7376,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
 			(at 266.7 59.69 0)
 			(effects
 				(font
@@ -7220,6 +7391,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
+			(at 266.7 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
+			(at 266.7 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7396,7 +7585,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 105.41 57.15 0)
 			(effects
 				(font
@@ -7405,7 +7594,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
 			(at 105.41 57.15 0)
 			(effects
 				(font
@@ -7415,6 +7604,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 105.41 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
+			(at 105.41 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
 			(at 105.41 57.15 0)
 			(effects
 				(font
@@ -7542,7 +7749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 158.75 186.69 0)
 			(effects
 				(font
@@ -7552,6 +7759,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 158.75 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
 			(at 158.75 186.69 0)
 			(effects
 				(font
@@ -7603,7 +7819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/fair-rite-products-corp/2508051217Y6/8594305"
 			(at 259.08 77.47 0)
 			(effects
 				(font
@@ -7618,6 +7834,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "1934-1472-1-ND"
+			(at 259.08 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2508051217Y6"
+			(at 259.08 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7661,7 +7895,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 273.3548 55.88 0)
 			(effects
 				(font
@@ -7670,7 +7904,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
 			(at 274.32 59.69 0)
 			(effects
 				(font
@@ -7685,6 +7919,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
+			(at 274.32 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
+			(at 274.32 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7805,7 +8057,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 158.75 191.77 0)
 			(effects
 				(font
@@ -7815,6 +8067,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 158.75 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
 			(at 158.75 191.77 0)
 			(effects
 				(font
@@ -7868,7 +8129,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 129.54 64.77 0)
 			(effects
 				(font
@@ -7879,6 +8140,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 129.54 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 129.54 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 129.54 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8003,7 +8282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 257.81 124.46 0)
 			(effects
 				(font
@@ -8014,6 +8293,15 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8134,7 +8422,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 251.46 25.4 0)
 			(effects
 				(font
@@ -8149,6 +8437,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 251.46 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8201,7 +8498,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 243.84 59.69 0)
 			(effects
 				(font
@@ -8216,6 +8513,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 243.84 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
+			(at 243.84 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8260,7 +8575,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 105.41 48.26 0)
 			(effects
 				(font
@@ -8269,7 +8584,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 105.41 48.26 0)
 			(effects
 				(font
@@ -8279,6 +8594,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 105.41 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-10.0KHRCT-ND"
+			(at 105.41 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-0710KL"
 			(at 105.41 48.26 0)
 			(effects
 				(font
@@ -8337,7 +8670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 243.84 83.82 0)
 			(effects
 				(font
@@ -8352,6 +8685,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 243.84 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
+			(at 243.84 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8473,7 +8824,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 139.7 191.77 0)
 			(effects
 				(font
@@ -8483,6 +8834,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 139.7 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
 			(at 139.7 191.77 0)
 			(effects
 				(font
@@ -8526,7 +8886,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LTSTE683RGBW"
+		(property "Footprint" "pcb_moteur:LTSTE683RGBW"
 			(at 60.96 234.62 0)
 			(effects
 				(font
@@ -8536,7 +8896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2011-0354/LTST-E682KRKGWT.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/liteon/LTST-E682KRKGWT/3198737?s=N4IgTCBcDaIDIBUDKCC0BRAbADjAaQCU8BxAdQRAF0BfIA"
 			(at 60.96 334.62 0)
 			(effects
 				(font
@@ -8602,6 +8962,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "160-2215-1-ND"
+			(at 31.75 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -8728,7 +9097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 238.76 124.46 0)
 			(effects
 				(font
@@ -8739,6 +9108,15 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8793,7 +9171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 257.81 121.92 0)
 			(effects
 				(font
@@ -8804,6 +9182,15 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8859,7 +9246,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW0805100RFKEA/1175523"
 			(at 26.67 139.7 0)
 			(effects
 				(font
@@ -8877,7 +9264,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-100CCT-ND"
 			(at 26.67 139.7 90)
 			(effects
 				(font
@@ -8914,6 +9301,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 26.67 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW0805100RFKEA"
 			(at 26.67 139.7 90)
 			(effects
 				(font
@@ -9162,7 +9558,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 250.4948 55.88 0)
 			(effects
 				(font
@@ -9171,7 +9567,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
 			(at 251.46 59.69 0)
 			(effects
 				(font
@@ -9186,6 +9582,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
+			(at 251.46 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
+			(at 251.46 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9239,7 +9653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 129.54 102.87 0)
 			(effects
 				(font
@@ -9250,6 +9664,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 129.54 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 129.54 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9430,7 +9862,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 269.748 30.48 90)
 			(effects
 				(font
@@ -9439,7 +9871,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 267.97 30.48 0)
 			(effects
 				(font
@@ -9454,6 +9886,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-10.0KHRCT-ND"
+			(at 267.97 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-0710KL"
+			(at 267.97 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
