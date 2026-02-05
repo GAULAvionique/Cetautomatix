@@ -326,17 +326,41 @@
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "f4e641bf-ac89-4676-8e77-75ae6bbff18f")
 	)
-	(pad "2" smd rect
+	(pad "1" smd rect
 		(at -0.86361 -0.368995)
 		(size 0.254 0.3556)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "fb641216-088f-4c9b-9eda-552222c61b8b")
 	)
-	(pad "3" smd rect
+	(pad "1" smd rect
 		(at -0.86361 0.280991)
 		(size 0.254 0.3556)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "b5a84399-1ba7-4958-9b8e-ba16eb505592")
+	)
+	(pad "1" smd rect
+		(at 0 -0.5)
+		(size 1.473226 2.006596)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7bf30c74-b367-47e9-b784-ba51e4eca14a")
+	)
+	(pad "1" smd rect
+		(at 0.861461 -0.368995)
+		(size 0.262922 0.3556)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a37a718b-cce7-4d6b-8296-e8c3a7c6949d")
+	)
+	(pad "1" smd rect
+		(at 0.861461 0.280991)
+		(size 0.262922 0.3556)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d9bc21ae-067d-440d-b05a-caefead92351")
+	)
+	(pad "1" smd rect
+		(at 0.86361 -1.018981)
+		(size 0.254 0.3556)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f84cae7f-bd12-44c1-a4cc-b96ee1b95379")
 	)
 	(pad "4" smd rect
 		(at -0.790001 0.930977)
@@ -345,40 +369,16 @@
 		(uuid "c6c607c3-b73b-4942-a234-03a08d79e86e")
 	)
 	(pad "5" smd rect
-		(at 0.790001 0.930977)
-		(size 0.4064 0.3556)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "3d1478c4-5ca6-4c67-8be0-14a92a5289f2")
-	)
-	(pad "6" smd rect
-		(at 0.861461 0.280991)
-		(size 0.262922 0.3556)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "d9bc21ae-067d-440d-b05a-caefead92351")
-	)
-	(pad "7" smd rect
-		(at 0.861461 -0.368995)
-		(size 0.262922 0.3556)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "a37a718b-cce7-4d6b-8296-e8c3a7c6949d")
-	)
-	(pad "8" smd rect
-		(at 0.86361 -1.018981)
-		(size 0.254 0.3556)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "f84cae7f-bd12-44c1-a4cc-b96ee1b95379")
-	)
-	(pad "9" smd rect
 		(at 0 1.082998)
 		(size 0.5588 0.3048)
 		(layers "F.Cu" "F.Mask")
 		(uuid "113f6545-66c0-44c8-a4f6-035549f6a0bb")
 	)
-	(pad "10" smd rect
-		(at 0 -0.5)
-		(size 1.473226 2.006596)
+	(pad "5" smd rect
+		(at 0.790001 0.930977)
+		(size 0.4064 0.3556)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "7bf30c74-b367-47e9-b784-ba51e4eca14a")
+		(uuid "3d1478c4-5ca6-4c67-8be0-14a92a5289f2")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/Composants/Snapeda.3dshapes/SI5442DU-T1-GE3.stp"
