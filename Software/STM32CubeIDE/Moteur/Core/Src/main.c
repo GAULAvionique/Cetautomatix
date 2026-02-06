@@ -498,38 +498,32 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, Pressure_Sleep_Pin|LCell_Sleep_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, Pressure_Sleep_Pin|LCell_Sleep_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, Fire_2_Pin|Fire_1_Pin|Pyros_Arm_Pin|CriticalLED_R_Pin
-                          |CriticalLED_G_Pin|ISO_CAN_IN_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pins : EXTEND_IO2_Pin EXTEND_IO3_Pin EXTEND_IO4_Pin */
-  GPIO_InitStruct.Pin = EXTEND_IO2_Pin|EXTEND_IO3_Pin|EXTEND_IO4_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+  HAL_GPIO_WritePin(GPIOB, Fire_1_Pin|Fire_2_Pin|Pyros_Arm_Pin|CriticalLED_G_Pin
+                          |CriticalLED_R_Pin|ISO_CAN_IN_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : Pressure_Sleep_Pin LCell_Sleep_Pin */
   GPIO_InitStruct.Pin = Pressure_Sleep_Pin|LCell_Sleep_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : Fire_2_Pin Fire_1_Pin Pyros_Arm_Pin CriticalLED_R_Pin
-                           CriticalLED_G_Pin ISO_CAN_IN_Pin */
-  GPIO_InitStruct.Pin = Fire_2_Pin|Fire_1_Pin|Pyros_Arm_Pin|CriticalLED_R_Pin
-                          |CriticalLED_G_Pin|ISO_CAN_IN_Pin;
+  /*Configure GPIO pins : Fire_1_Pin Fire_2_Pin Pyros_Arm_Pin CriticalLED_G_Pin
+                           CriticalLED_R_Pin ISO_CAN_IN_Pin */
+  GPIO_InitStruct.Pin = Fire_1_Pin|Fire_2_Pin|Pyros_Arm_Pin|CriticalLED_G_Pin
+                          |CriticalLED_R_Pin|ISO_CAN_IN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Servo4_Close_Pin Servo4_Open_Pin Servo3_Close_Pin Servo3_Open_Pin
-                           Servo1_Open_Pin Servo1_Close_Pin EXTEND_IO1_Pin */
+                           Servo1_Open_Pin Servo1_Close_Pin */
   GPIO_InitStruct.Pin = Servo4_Close_Pin|Servo4_Open_Pin|Servo3_Close_Pin|Servo3_Open_Pin
-                          |Servo1_Open_Pin|Servo1_Close_Pin|EXTEND_IO1_Pin;
+                          |Servo1_Open_Pin|Servo1_Close_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
@@ -539,9 +533,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure peripheral I/O remapping */
-  __HAL_AFIO_REMAP_PD01_ENABLE();
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
