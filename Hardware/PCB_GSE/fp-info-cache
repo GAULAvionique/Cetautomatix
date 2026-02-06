@@ -1,4 +1,4 @@
-27094191269777946
+27111926397526031
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -75537,12 +75537,40 @@ DIL DIP PDIP 2.54mm 7.62mm 300mil
 4
 4
 PCB_GSE
+830050510
+
+830050510 
+0
+2
+2
+PCB_GSE
 LM2673SX-12_NOPB
 
 
 0
 8
 8
+PCB_GSE
+U2-K_NCH
+
+UCL1E101MCL1GS 
+0
+2
+2
+PCB_GSE
+U2-K_NCH-L
+
+UCL1E101MCL1GS 
+0
+2
+2
+PCB_GSE
+U2-K_NCH-M
+
+UCL1E101MCL1GS 
+0
+2
+2
 Package_BGA
 Alliance_TFBGA-36_6x8mm_Layout6x8_P0.75mm
 Alliance TFBGA-36, NSMD, 6.0x8.0mm, 36 Ball, 6x8 Layout, 0.75mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.alliancememory.com/wp-content/uploads/pdf/AS6C1008_Mar_2023V1.2.pdf#page=13
@@ -107408,12 +107436,26 @@ pcb_moteur
 2
 2
 pcb_moteur
+CONN4_GT17HN_HIR
+
+GT17HN-4DP-2HA56 
+0
+8
+8
+pcb_moteur
 CONN_2189890010-SD_02_MOL
 
 2189890210 
 0
 4
 4
+pcb_moteur
+CONN_1725698_PXC
+
+1725698 
+0
+6
+6
 pcb_moteur
 CONN_BM03B-GHS-TBT_JST
 
@@ -107442,6 +107484,27 @@ INA333AIDGKR
 0
 8
 8
+pcb_moteur
+DIODE_SMB_2L_ONS
+
+MBRS130LT3G 
+0
+2
+2
+pcb_moteur
+DIODE_SMB_2L_ONS-L
+
+MBRS130LT3G 
+0
+2
+2
+pcb_moteur
+DIODE_SMB_2L_ONS-M
+
+MBRS130LT3G 
+0
+2
+2
 pcb_moteur
 INA125UA_2K5
 
@@ -107491,6 +107554,13 @@ INA333AIDGKR
 0
 8
 8
+pcb_moteur
+IND_PA4342_PUL
+
+PA4342.472NLT 
+0
+2
+2
 pcb_moteur
 ISOW1044BDFMR
 
