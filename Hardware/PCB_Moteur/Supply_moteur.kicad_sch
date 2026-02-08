@@ -2298,7 +2298,7 @@
 		)
 		(uuid f68cd2cb-c50c-4ae8-b9bf-5df593476da4)
 	)
-	(text "Vin_AN = Vin x 33k / (33k + 47k) <= 3.3V\n2.0625V <= Vin_AN <= 3.0113V"
+	(text "Vin_AN = Vin x 11k / (11k + 100k) <= 3.3V\n0.4955V <= Vin_AN <= 2.3784V"
 		(exclude_from_sim no)
 		(at 208.026 51.054 0)
 		(effects
@@ -2369,7 +2369,7 @@
 		)
 		(uuid "b54f84f9-589d-4253-8fe8-124c2a408813")
 	)
-	(text "min 5.0V\ntypique 6.4V\nmax 7.3V"
+	(text "min 5.0V\nmax 24.0V"
 		(exclude_from_sim no)
 		(at 208.28 19.05 0)
 		(effects
@@ -4332,6 +4332,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 227.33 27.94 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2b3c8d02-09bb-4be1-afd1-b91a322d3db0")
+		(property "Reference" "R2"
+			(at 228.346 25.654 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "11k 1%"
+			(at 230.124 30.48 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 227.33 29.718 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.33 27.94 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 227.33 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9a22838-d8bd-4b72-b78e-642d461c0214")
+		)
+		(pin "2"
+			(uuid "fd5fffc7-ee8e-44eb-93e3-5af249326563")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 123.19 109.22 180)
 		(unit 1)
@@ -5141,75 +5211,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 227.33 27.94 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6ebce91b-ca54-454d-8509-1fd3ba338ef4")
-		(property "Reference" "R1"
-			(at 226.314 25.908 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "33K 1%"
-			(at 224.79 30.48 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 227.33 29.718 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 227.33 27.94 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 227.33 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c0b1874f-b73d-4793-b22a-650dc34f8ec6")
-		)
-		(pin "2"
-			(uuid "b92f24a6-6df0-4c0f-b755-a668a5c45e99")
-		)
-		(instances
-			(project "PCB_moteur"
-				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 40.64 115.57 0)
 		(unit 1)
@@ -5746,75 +5747,6 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
 					(reference "#PWR0125")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 240.03 27.94 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "988f0509-7636-4f9b-9ec9-1e0a70444762")
-		(property "Reference" "R2"
-			(at 238.76 25.908 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "47k 1%"
-			(at 237.49 30.48 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 240.03 29.718 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 240.03 27.94 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 240.03 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "55383822-cdc5-4ea2-ac6b-4338f592bc6a")
-		)
-		(pin "2"
-			(uuid "f7239670-c283-4770-b756-738aafaad0a7")
-		)
-		(instances
-			(project "PCB_moteur"
-				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6763,6 +6695,76 @@
 			(project ""
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 240.03 27.94 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee822c85-2465-4a66-8da4-db7206eea12c")
+		(property "Reference" "R1"
+			(at 241.046 25.908 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k 1%"
+			(at 242.824 30.48 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 240.03 29.718 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 27.94 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 240.03 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b49c8444-5ab1-4404-a9fb-1580110d0a16")
+		)
+		(pin "2"
+			(uuid "2751a996-52cd-4a38-ae03-240d362e9353")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "R1")
 					(unit 1)
 				)
 			)
