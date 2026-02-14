@@ -431,7 +431,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -483,7 +483,12 @@
     "meta": {
       "version": 4
     },
-    "net_colors": null,
+    "net_colors": {
+      "3V_Main": "rgb(255, 0, 0)",
+      "5V_Main": "rgb(0, 255, 0)",
+      "GND": "rgb(74, 67, 206)",
+      "Vin_Valve": "rgb(255, 255, 0)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": []
   },
@@ -729,7 +734,7 @@
           "show": false
         }
       ],
-      "filter_string": "",
+      "filter_string": "R",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
