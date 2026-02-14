@@ -4269,6 +4269,12 @@
 		(uuid "63d0c0c4-76f3-4cb6-a05a-fd6a50c29097")
 	)
 	(junction
+		(at 118.11 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67161b17-4add-4f9d-b67e-6e360003591e")
+	)
+	(junction
 		(at 67.31 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4359,6 +4365,12 @@
 		(uuid "9233eed1-a0e9-4e19-ab55-5284c0cc15ef")
 	)
 	(junction
+		(at 132.08 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94794a0f-31e2-434d-8679-95a0612aac46")
+	)
+	(junction
 		(at 74.93 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4419,12 +4431,6 @@
 		(uuid "c4384f76-66bd-4d1f-8ba5-34f8b75469a9")
 	)
 	(junction
-		(at 137.16 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c54231c5-25a7-4941-b482-3cedabdf1fe9")
-	)
-	(junction
 		(at 156.21 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4447,12 +4453,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cbe4be2a-e361-4dd0-b3a1-fa67dd47fdee")
-	)
-	(junction
-		(at 125.73 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d158f33b-4717-4292-9249-290a34b259ff")
 	)
 	(junction
 		(at 129.54 168.91)
@@ -4714,16 +4714,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 74.93) (xy 129.54 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e3d12ae-5fcc-417c-8cf4-af94d20e5b11")
-	)
-	(wire
-		(pts
 			(xy 148.59 93.98) (xy 156.21 93.98)
 		)
 		(stroke
@@ -4754,7 +4744,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 60.96) (xy 125.73 60.96)
+			(xy 114.3 60.96) (xy 118.11 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4954,7 +4944,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 80.01) (xy 137.16 74.93)
+			(xy 132.08 80.01) (xy 132.08 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4994,6 +4984,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 107.95) (xy 92.71 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d2a1c71-0960-419a-a586-7cf9d3055f48")
+	)
+	(wire
+		(pts
 			(xy 29.21 41.91) (xy 29.21 43.18)
 		)
 		(stroke
@@ -5004,7 +5004,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 60.96) (xy 106.68 60.96)
+			(xy 105.41 60.96) (xy 109.22 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5124,7 +5124,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 69.85) (xy 125.73 69.85)
+			(xy 115.57 69.85) (xy 118.11 69.85)
 		)
 		(stroke
 			(width 0)
@@ -5344,7 +5344,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 60.96) (xy 125.73 69.85)
+			(xy 118.11 60.96) (xy 118.11 69.85)
 		)
 		(stroke
 			(width 0)
@@ -5354,7 +5354,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 80.01) (xy 137.16 80.01)
+			(xy 115.57 80.01) (xy 132.08 80.01)
 		)
 		(stroke
 			(width 0)
@@ -5694,7 +5694,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 69.85) (xy 137.16 69.85)
+			(xy 129.54 69.85) (xy 132.08 69.85)
 		)
 		(stroke
 			(width 0)
@@ -5804,6 +5804,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 69.85) (xy 121.92 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "853bdef7-82cc-4a9a-9338-3f21aab8d5ea")
+	)
+	(wire
+		(pts
 			(xy 20.32 35.56) (xy 29.21 35.56)
 		)
 		(stroke
@@ -5881,16 +5891,6 @@
 			(type default)
 		)
 		(uuid "8ea8f11a-a40e-47c2-8354-1c2de4cfec57")
-	)
-	(wire
-		(pts
-			(xy 125.73 69.85) (xy 128.27 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8fc0cf83-ed35-4eab-8e6e-03db7c630d26")
 	)
 	(wire
 		(pts
@@ -6024,6 +6024,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 74.93) (xy 128.27 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97d7a52d-910e-41ce-b3a9-14e69d7ca577")
+	)
+	(wire
+		(pts
 			(xy 133.35 158.75) (xy 133.35 152.4)
 		)
 		(stroke
@@ -6051,16 +6061,6 @@
 			(type default)
 		)
 		(uuid "9caf07c3-f7b9-44c1-b9f0-6c0fb8cc44e5")
-	)
-	(wire
-		(pts
-			(xy 137.16 74.93) (xy 134.62 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f463f19-e025-4cdd-9097-a07ab79c5172")
 	)
 	(wire
 		(pts
@@ -6554,17 +6554,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 60.96) (xy 116.84 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7b6f57d-c69b-4bd9-846e-9e93f567cfc8")
-	)
-	(wire
-		(pts
-			(xy 115.57 74.93) (xy 119.38 74.93)
+			(xy 115.57 74.93) (xy 123.19 74.93)
 		)
 		(stroke
 			(width 0)
@@ -6854,7 +6844,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 69.85) (xy 137.16 74.93)
+			(xy 132.08 69.85) (xy 132.08 74.93)
 		)
 		(stroke
 			(width 0)
@@ -7548,7 +7538,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0854db0f-75ec-49ab-9c18-db601763cb6f")
-		(property "Reference" "C?"
+		(property "Reference" "C20"
 			(at 56.388 73.152 0)
 			(effects
 				(font
@@ -7656,7 +7646,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -8004,7 +7994,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0decea59-5095-4474-98d9-5b5bf6d526c0")
-		(property "Reference" "C?"
+		(property "Reference" "C61"
 			(at 156.718 88.392 0)
 			(effects
 				(font
@@ -8112,7 +8102,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C61")
 					(unit 1)
 				)
 			)
@@ -9320,7 +9310,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3783167d-159b-47f5-83f8-5cf8c6ebb46c")
-		(property "Reference" "C?"
+		(property "Reference" "C16"
 			(at 46.228 73.152 0)
 			(effects
 				(font
@@ -9428,7 +9418,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -9686,7 +9676,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e5ebe5e-62d2-4b04-b87c-18a80ae8102a")
-		(property "Reference" "R?"
+		(property "Reference" "R44"
 			(at 103.124 109.982 90)
 			(effects
 				(font
@@ -9713,7 +9703,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080521K5FKEA/1175786"
 			(at 105.41 111.76 0)
 			(effects
 				(font
@@ -9731,7 +9721,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-21.5KCCT-ND"
 			(at 105.41 111.76 90)
 			(effects
 				(font
@@ -9776,7 +9766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "CRCW080521K5FKEA"
 			(at 105.41 111.76 90)
 			(effects
 				(font
@@ -9794,7 +9784,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "R?")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -10257,7 +10247,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "51a2fb49-9c52-41de-b2c1-c01bcbd8734d")
-		(property "Reference" "R?"
+		(property "Reference" "R46"
 			(at 118.872 94.234 90)
 			(effects
 				(font
@@ -10284,7 +10274,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07806KL/728163"
 			(at 120.65 96.52 0)
 			(effects
 				(font
@@ -10302,7 +10292,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "311-806KCRCT-ND"
 			(at 120.65 96.52 90)
 			(effects
 				(font
@@ -10347,7 +10337,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RC0805FR-07806KL"
 			(at 120.65 96.52 90)
 			(effects
 				(font
@@ -10365,7 +10355,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "R?")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -10557,129 +10547,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
 					(reference "C25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 110.49 60.96 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "54fbbb0b-c712-4fc4-a96d-b0108c116f07")
-		(property "Reference" "R?"
-			(at 107.696 58.674 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0R"
-			(at 107.696 63.5 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 110.49 62.738 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 60.96 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 110.49 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
-			(at 110.49 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 110.49 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 110.49 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 110.49 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 110.49 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 110.49 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ac88aa6-933a-46fe-a527-34bedac0ee21")
-		)
-		(pin "2"
-			(uuid "25fccae5-3b0f-4f4a-80b1-7846e38ced1b")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -11176,7 +11043,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "612c86e2-c28c-446d-9b22-487614d95269")
-		(property "Reference" "R?"
+		(property "Reference" "R48"
 			(at 122.174 88.392 90)
 			(effects
 				(font
@@ -11203,7 +11070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07402KL/727943"
 			(at 124.46 90.17 0)
 			(effects
 				(font
@@ -11221,7 +11088,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "311-402KCRCT-ND"
 			(at 124.46 90.17 90)
 			(effects
 				(font
@@ -11266,7 +11133,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RC0805FR-07402KL"
 			(at 124.46 90.17 90)
 			(effects
 				(font
@@ -11284,7 +11151,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "R?")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -11359,7 +11226,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Iron")
-		(at 132.08 69.85 90)
+		(at 125.73 69.85 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11367,8 +11234,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63882c47-1685-4c6d-a1be-3a4add1a6c2b")
-		(property "Reference" "L?"
-			(at 132.08 63.5 90)
+		(property "Reference" "L1"
+			(at 125.73 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11376,7 +11243,7 @@
 			)
 		)
 		(property "Value" "3.3uH"
-			(at 132.08 66.04 90)
+			(at 125.73 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11384,7 +11251,7 @@
 			)
 		)
 		(property "Footprint" "PCB_GSE:MPL-AL6050-3R3"
-			(at 132.08 69.85 0)
+			(at 125.73 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11393,7 +11260,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/monolithic-power-systems-inc/MPL-AL6050-3R3/12418177?s=N4IgTCBcDaILIAUAyBaAgkgbABgKzZQGYAlQkAXQF8g"
-			(at 132.08 69.85 0)
+			(at 125.73 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11402,7 +11269,7 @@
 			)
 		)
 		(property "Description" "Inductor with iron core"
-			(at 132.08 69.85 0)
+			(at 125.73 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11411,7 +11278,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "1589-MPL-AL6050-3R3CT-ND"
-			(at 132.08 69.85 90)
+			(at 125.73 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11420,7 +11287,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MPL-AL6050-3R3"
-			(at 132.08 69.85 90)
+			(at 125.73 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11437,7 +11304,7 @@
 		(instances
 			(project ""
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "L?")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -12217,7 +12084,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 119.38 60.96 90)
+		(at 111.76 60.96 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12225,8 +12092,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "72da618c-5442-48fc-b804-e365d0ef95bb")
-		(property "Reference" "C?"
-			(at 117.602 58.166 90)
+		(property "Reference" "C58"
+			(at 109.982 58.166 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12235,7 +12102,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 116.84 63.754 90)
+			(at 109.22 63.754 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12244,7 +12111,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 119.38 60.96 0)
+			(at 111.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12253,7 +12120,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
-			(at 119.38 60.96 0)
+			(at 111.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12262,7 +12129,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 119.38 60.96 0)
+			(at 111.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12271,7 +12138,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
-			(at 119.38 60.96 0)
+			(at 111.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12280,7 +12147,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 119.38 60.96 0)
+			(at 111.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12289,7 +12156,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 119.38 60.96 0)
+			(at 111.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12298,7 +12165,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 119.38 60.96 0)
+			(at 111.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12307,7 +12174,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 119.38 60.96 0)
+			(at 111.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12316,7 +12183,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
-			(at 119.38 60.96 0)
+			(at 111.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12333,7 +12200,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C58")
 					(unit 1)
 				)
 			)
@@ -12666,7 +12533,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7f713cb6-2e48-4079-aef5-ac957b46bb40")
-		(property "Reference" "C?"
+		(property "Reference" "C62"
 			(at 168.148 88.392 0)
 			(effects
 				(font
@@ -12774,7 +12641,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C62")
 					(unit 1)
 				)
 			)
@@ -12910,7 +12777,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8295c821-fd4c-4e09-925d-19785f0d33a6")
-		(property "Reference" "C?"
+		(property "Reference" "C27"
 			(at 72.898 82.042 0)
 			(effects
 				(font
@@ -13018,7 +12885,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -13158,7 +13025,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "870444ea-5ee2-4065-b557-66464177d70f")
-		(property "Reference" "R?"
+		(property "Reference" "R43"
 			(at 74.93 72.39 90)
 			(effects
 				(font
@@ -13266,7 +13133,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "R?")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -13281,7 +13148,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8793dbf5-6f38-4160-8975-585d9e045131")
-		(property "Reference" "U?"
+		(property "Reference" "U2"
 			(at 84.836 63.246 0)
 			(effects
 				(font
@@ -13318,6 +13185,24 @@
 			)
 		)
 		(property "Description" "Adjustable 3A buck-boost"
+			(at 99.06 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1589-MP28167GQ-B-PCT-ND"
+			(at 99.06 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MP28167GQ-B-P"
 			(at 99.06 83.82 0)
 			(effects
 				(font
@@ -13377,7 +13262,7 @@
 		(instances
 			(project ""
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "U?")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -13583,7 +13468,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8b435d00-1f56-484c-b39c-b67436109e1d")
-		(property "Reference" "C?"
+		(property "Reference" "C26"
 			(at 65.532 73.152 0)
 			(effects
 				(font
@@ -13691,7 +13576,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -13706,7 +13591,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8da611b3-36fd-4efa-a095-ce2a2f6f5dc0")
-		(property "Reference" "C?"
+		(property "Reference" "C60"
 			(at 149.098 88.392 0)
 			(effects
 				(font
@@ -13814,7 +13699,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C60")
 					(unit 1)
 				)
 			)
@@ -14608,7 +14493,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9aa76c5d-63da-42a6-b062-3e1cf37bb179")
-		(property "Reference" "C?"
+		(property "Reference" "C57"
 			(at 114.046 109.474 0)
 			(effects
 				(font
@@ -14678,7 +14563,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C57")
 					(unit 1)
 				)
 			)
@@ -14694,7 +14579,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c5afe9e-a788-4110-b5ae-f9368e3d4cee")
-		(property "Reference" "R?"
+		(property "Reference" "R49"
 			(at 122.174 101.092 90)
 			(effects
 				(font
@@ -14721,7 +14606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0805FT18K7/1712757"
 			(at 124.46 102.87 0)
 			(effects
 				(font
@@ -14739,7 +14624,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "RMCF0805FT18K7CT-ND"
 			(at 124.46 102.87 90)
 			(effects
 				(font
@@ -14784,7 +14669,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RMCF0805FT18K7"
 			(at 124.46 102.87 90)
 			(effects
 				(font
@@ -14802,7 +14687,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "R?")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -15743,7 +15628,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd1f3b74-94e0-452e-8527-a5103a68ef53")
-		(property "Reference" "R?"
+		(property "Reference" "R27"
 			(at 64.262 85.598 90)
 			(effects
 				(font
@@ -15849,7 +15734,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "R?")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -16661,7 +16546,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 132.08 74.93 90)
+		(at 125.73 74.93 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16669,8 +16554,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ca96c6ff-d73f-40a5-b891-f6bc971082ab")
-		(property "Reference" "C?"
-			(at 130.302 72.136 90)
+		(property "Reference" "C59"
+			(at 123.952 72.136 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16679,7 +16564,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 129.54 77.724 90)
+			(at 123.19 77.724 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16688,7 +16573,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 132.08 74.93 0)
+			(at 125.73 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16697,7 +16582,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
-			(at 132.08 74.93 0)
+			(at 125.73 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16706,7 +16591,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 132.08 74.93 0)
+			(at 125.73 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16715,7 +16600,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
-			(at 132.08 74.93 0)
+			(at 125.73 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16724,7 +16609,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 132.08 74.93 0)
+			(at 125.73 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16733,7 +16618,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 132.08 74.93 0)
+			(at 125.73 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16742,7 +16627,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 132.08 74.93 0)
+			(at 125.73 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16751,7 +16636,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 132.08 74.93 0)
+			(at 125.73 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16760,7 +16645,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
-			(at 132.08 74.93 0)
+			(at 125.73 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16777,7 +16662,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C59")
 					(unit 1)
 				)
 			)
@@ -17298,7 +17183,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "da791693-f9e7-4d5e-b426-48d3d22a0e2d")
-		(property "Reference" "C?"
+		(property "Reference" "C56"
 			(at 80.518 105.156 0)
 			(effects
 				(font
@@ -17406,7 +17291,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C56")
 					(unit 1)
 				)
 			)
@@ -17544,7 +17429,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dff32b08-9098-47c9-8095-030319e71dbc")
-		(property "Reference" "C?"
+		(property "Reference" "C13"
 			(at 37.592 73.152 0)
 			(effects
 				(font
@@ -17652,7 +17537,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "C?")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -18196,129 +18081,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 123.19 74.93 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f0eb2bb2-7297-4f13-a8ea-c89d00a3d031")
-		(property "Reference" "R?"
-			(at 120.396 72.644 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0R"
-			(at 120.396 77.47 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 123.19 76.708 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 74.93 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 123.19 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
-			(at 123.19 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 123.19 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 123.19 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 123.19 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 123.19 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 123.19 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0ebb848a-1e11-4908-9a49-2a884babbc92")
-		)
-		(pin "2"
-			(uuid "38aa09a4-821e-4de2-951e-ce77b04f781b")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 24.13 118.11 0)
 		(mirror y)
@@ -18636,6 +18398,73 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
 					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92.71 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f916b242-8d7a-4d73-b299-8468c333d504")
+		(property "Reference" "#PWR083"
+			(at 92.71 114.3 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 113.03 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 107.95 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 107.95 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33d4445e-580f-475d-ac14-6f428b0eb1ca")
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/8a1a8d24-b3b8-4669-940a-297f990b7d99"
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
