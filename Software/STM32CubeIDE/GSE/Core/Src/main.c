@@ -48,6 +48,8 @@ CAN_HandleTypeDef hcan;
 
 CRC_HandleTypeDef hcrc;
 
+I2C_HandleTypeDef hi2c2;
+
 TIM_HandleTypeDef htim1;
 
 UART_HandleTypeDef huart1;
@@ -66,6 +68,7 @@ static void MX_CRC_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_USART1_UART_Init(void);
+static void MX_I2C2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -111,6 +114,7 @@ int main(void)
   MX_TIM1_Init();
   MX_ADC1_Init();
   MX_USART1_UART_Init();
+  MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -372,6 +376,40 @@ static void MX_CRC_Init(void)
 }
 
 /**
+  * @brief I2C2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C2_Init(void)
+{
+
+  /* USER CODE BEGIN I2C2_Init 0 */
+
+  /* USER CODE END I2C2_Init 0 */
+
+  /* USER CODE BEGIN I2C2_Init 1 */
+
+  /* USER CODE END I2C2_Init 1 */
+  hi2c2.Instance = I2C2;
+  hi2c2.Init.ClockSpeed = 100000;
+  hi2c2.Init.DutyCycle = I2C_DUTYCYCLE_2;
+  hi2c2.Init.OwnAddress1 = 0;
+  hi2c2.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c2.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c2.Init.OwnAddress2 = 0;
+  hi2c2.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c2.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C2_Init 2 */
+
+  /* USER CODE END I2C2_Init 2 */
+
+}
+
+/**
   * @brief TIM1 Initialization Function
   * @param None
   * @retval None
@@ -488,9 +526,6 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOC, Pressure_Sleep_Pin|LCell_Sleep_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, CriticalLED_G_Pin|CriticalLED_R_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, Valve3_Open_Pin|Valve2_Open_Pin|Valve1_Open_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : ISO_CAN_OUT_Pin */
@@ -506,27 +541,16 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : Power_Good_Pin EXTEND_IO8_Pin EXTEND_IO9_Pin EXTEND_IO10_Pin */
-  GPIO_InitStruct.Pin = Power_Good_Pin|EXTEND_IO8_Pin|EXTEND_IO9_Pin|EXTEND_IO10_Pin;
+  /*Configure GPIO pin : Power_Good_5V_Pin */
+  GPIO_InitStruct.Pin = Power_Good_5V_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(Power_Good_5V_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : EXTEND_IO1_Pin EXTEND_IO2_Pin EXTEND_IO3_Pin EXTEND_IO4_Pin
-                           EXTEND_IO5_Pin EXTEND_IO6_Pin EXTEND_IO7_Pin EXTEND_IO11_Pin
-                           EXTEND_IO12_Pin */
-  GPIO_InitStruct.Pin = EXTEND_IO1_Pin|EXTEND_IO2_Pin|EXTEND_IO3_Pin|EXTEND_IO4_Pin
-                          |EXTEND_IO5_Pin|EXTEND_IO6_Pin|EXTEND_IO7_Pin|EXTEND_IO11_Pin
-                          |EXTEND_IO12_Pin;
+  /*Configure GPIO pins : CriticalLED_G_Pin CriticalLED_R_Pin Power_Good_12V_Pin */
+  GPIO_InitStruct.Pin = CriticalLED_G_Pin|CriticalLED_R_Pin|Power_Good_12V_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : CriticalLED_G_Pin CriticalLED_R_Pin */
-  GPIO_InitStruct.Pin = CriticalLED_G_Pin|CriticalLED_R_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Valve3_Open_Pin Valve2_Open_Pin Valve1_Open_Pin */
