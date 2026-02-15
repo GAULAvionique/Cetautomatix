@@ -100,15 +100,20 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
     __HAL_RCC_ADC1_CLK_ENABLE();
 
     __HAL_RCC_GPIOA_CLK_ENABLE();
+    __HAL_RCC_GPIOB_CLK_ENABLE();
     /**ADC1 GPIO Configuration
     PA3     ------> ADC1_IN3
     PA4     ------> ADC1_IN4
-    PA5     ------> ADC1_IN5
-    PA6     ------> ADC1_IN6
+    PA7     ------> ADC1_IN7
+    PB1     ------> ADC1_IN9
     */
-    GPIO_InitStruct.Pin = V12_An_Pin|V5_An_Pin|V3_An_Pin|Vin_An_Pin;
+    GPIO_InitStruct.Pin = Vin_An_Pin|V12_An_Pin|V5_An_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+    GPIO_InitStruct.Pin = V3_An_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+    HAL_GPIO_Init(V3_An_GPIO_Port, &GPIO_InitStruct);
 
     /* ADC1 DMA Init */
     /* ADC1 Init */
@@ -181,10 +186,12 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
     /**ADC1 GPIO Configuration
     PA3     ------> ADC1_IN3
     PA4     ------> ADC1_IN4
-    PA5     ------> ADC1_IN5
-    PA6     ------> ADC1_IN6
+    PA7     ------> ADC1_IN7
+    PB1     ------> ADC1_IN9
     */
-    HAL_GPIO_DeInit(GPIOA, V12_An_Pin|V5_An_Pin|V3_An_Pin|Vin_An_Pin);
+    HAL_GPIO_DeInit(GPIOA, Vin_An_Pin|V12_An_Pin|V5_An_Pin);
+
+    HAL_GPIO_DeInit(V3_An_GPIO_Port, V3_An_Pin);
 
     /* ADC1 DMA DeInit */
     HAL_DMA_DeInit(hadc->DMA_Handle);
@@ -369,7 +376,7 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* hi2c)
     PB10     ------> I2C2_SCL
     PB11     ------> I2C2_SDA
     */
-    GPIO_InitStruct.Pin = BuckBoost12V_I2C2_SCL_Pin|BuckBoost12V_I2C2_SDA_Pin;
+    GPIO_InitStruct.Pin = V12_I2C2_SCL_Pin|V12_I2C2_SDA_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
@@ -404,9 +411,9 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* hi2c)
     PB10     ------> I2C2_SCL
     PB11     ------> I2C2_SDA
     */
-    HAL_GPIO_DeInit(BuckBoost12V_I2C2_SCL_GPIO_Port, BuckBoost12V_I2C2_SCL_Pin);
+    HAL_GPIO_DeInit(V12_I2C2_SCL_GPIO_Port, V12_I2C2_SCL_Pin);
 
-    HAL_GPIO_DeInit(BuckBoost12V_I2C2_SDA_GPIO_Port, BuckBoost12V_I2C2_SDA_Pin);
+    HAL_GPIO_DeInit(V12_I2C2_SDA_GPIO_Port, V12_I2C2_SDA_Pin);
 
     /* USER CODE BEGIN I2C2_MspDeInit 1 */
 

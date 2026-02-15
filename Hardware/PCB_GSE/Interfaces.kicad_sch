@@ -5057,11 +5057,11 @@
 	)
 	(no_connect
 		(at 195.58 73.66)
-		(uuid "31ecc3b5-cc7d-4c1b-b8f7-676e0e25e638")
+		(uuid "6458f029-d8fc-4395-88ca-4f03cfb85881")
 	)
 	(no_connect
 		(at 226.06 73.66)
-		(uuid "321ad867-e36e-4518-b0ef-ddd2d828bda6")
+		(uuid "7c42a6a1-0735-423e-abf2-ecc936e3b5e6")
 	)
 	(no_connect
 		(at 195.58 81.28)
@@ -11160,8 +11160,8 @@
 		(at 256.54 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(dnp no)
 		(uuid "bc9856e0-d7ba-4067-b236-48805ea8e4f9")
 		(property "Reference" "J5"

@@ -57,8 +57,6 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define ISO_CAN_OUT_Pin GPIO_PIN_13
-#define ISO_CAN_OUT_GPIO_Port GPIOC
 #define Pressure_Sleep_Pin GPIO_PIN_14
 #define Pressure_Sleep_GPIO_Port GPIOC
 #define LCell_Sleep_Pin GPIO_PIN_15
@@ -73,26 +71,26 @@ void Error_Handler(void);
 #define LCell_An_GPIO_Port GPIOA
 #define Temp_An_Pin GPIO_PIN_2
 #define Temp_An_GPIO_Port GPIOA
-#define V12_An_Pin GPIO_PIN_3
-#define V12_An_GPIO_Port GPIOA
-#define V5_An_Pin GPIO_PIN_4
-#define V5_An_GPIO_Port GPIOA
-#define V3_An_Pin GPIO_PIN_5
-#define V3_An_GPIO_Port GPIOA
-#define Vin_An_Pin GPIO_PIN_6
+#define Vin_An_Pin GPIO_PIN_3
 #define Vin_An_GPIO_Port GPIOA
-#define Power_Good_5V_Pin GPIO_PIN_7
-#define Power_Good_5V_GPIO_Port GPIOA
-#define CriticalLED_G_Pin GPIO_PIN_0
-#define CriticalLED_G_GPIO_Port GPIOB
-#define CriticalLED_R_Pin GPIO_PIN_1
+#define V12_An_Pin GPIO_PIN_4
+#define V12_An_GPIO_Port GPIOA
+#define Power_Good_12V_Pin GPIO_PIN_5
+#define Power_Good_12V_GPIO_Port GPIOA
+#define V5_An_Pin GPIO_PIN_7
+#define V5_An_GPIO_Port GPIOA
+#define Power_Good_5V_Pin GPIO_PIN_0
+#define Power_Good_5V_GPIO_Port GPIOB
+#define V3_An_Pin GPIO_PIN_1
+#define V3_An_GPIO_Port GPIOB
+#define V12_I2C2_SCL_Pin GPIO_PIN_10
+#define V12_I2C2_SCL_GPIO_Port GPIOB
+#define V12_I2C2_SDA_Pin GPIO_PIN_11
+#define V12_I2C2_SDA_GPIO_Port GPIOB
+#define CriticalLED_R_Pin GPIO_PIN_12
 #define CriticalLED_R_GPIO_Port GPIOB
-#define BuckBoost12V_I2C2_SCL_Pin GPIO_PIN_10
-#define BuckBoost12V_I2C2_SCL_GPIO_Port GPIOB
-#define BuckBoost12V_I2C2_SDA_Pin GPIO_PIN_11
-#define BuckBoost12V_I2C2_SDA_GPIO_Port GPIOB
-#define Power_Good_12V_Pin GPIO_PIN_12
-#define Power_Good_12V_GPIO_Port GPIOB
+#define CriticalLED_G_Pin GPIO_PIN_13
+#define CriticalLED_G_GPIO_Port GPIOB
 #define Valve3_Open_Pin GPIO_PIN_10
 #define Valve3_Open_GPIO_Port GPIOA
 #define Valve2_Open_Pin GPIO_PIN_11

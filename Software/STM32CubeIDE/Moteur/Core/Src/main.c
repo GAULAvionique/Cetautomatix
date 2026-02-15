@@ -502,7 +502,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, Fire_1_Pin|Fire_2_Pin|Pyros_Arm_Pin|CriticalLED_G_Pin
-                          |CriticalLED_R_Pin|ISO_CAN_IN_Pin, GPIO_PIN_RESET);
+                          |CriticalLED_R_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : Pressure_Sleep_Pin LCell_Sleep_Pin */
   GPIO_InitStruct.Pin = Pressure_Sleep_Pin|LCell_Sleep_Pin;
@@ -512,9 +512,9 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Fire_1_Pin Fire_2_Pin Pyros_Arm_Pin CriticalLED_G_Pin
-                           CriticalLED_R_Pin ISO_CAN_IN_Pin */
+                           CriticalLED_R_Pin */
   GPIO_InitStruct.Pin = Fire_1_Pin|Fire_2_Pin|Pyros_Arm_Pin|CriticalLED_G_Pin
-                          |CriticalLED_R_Pin|ISO_CAN_IN_Pin;
+                          |CriticalLED_R_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

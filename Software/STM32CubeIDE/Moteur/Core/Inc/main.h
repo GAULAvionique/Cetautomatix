@@ -123,8 +123,6 @@ void Error_Handler(void);
 #define Servo1_Open_GPIO_Port GPIOB
 #define Servo1_Close_Pin GPIO_PIN_5
 #define Servo1_Close_GPIO_Port GPIOB
-#define ISO_CAN_IN_Pin GPIO_PIN_7
-#define ISO_CAN_IN_GPIO_Port GPIOB
 #define ISO_CAN_RXD_Pin GPIO_PIN_8
 #define ISO_CAN_RXD_GPIO_Port GPIOB
 #define ISO_CAN_TXD_Pin GPIO_PIN_9
