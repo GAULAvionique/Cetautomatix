@@ -3973,6 +3973,10 @@
 		(color 0 0 0 0)
 		(uuid "f9c2d51b-ac6b-4373-83c1-fa1397a22885")
 	)
+	(no_connect
+		(at 130.81 68.58)
+		(uuid "d51a7cfa-1b62-4fef-bab2-32376ee2f109")
+	)
 	(wire
 		(pts
 			(xy 123.19 81.28) (xy 130.81 81.28)
@@ -4222,16 +4226,6 @@
 			(type default)
 		)
 		(uuid "3f7e3307-d7ba-423a-8055-279274bee39a")
-	)
-	(wire
-		(pts
-			(xy 123.19 68.58) (xy 124.46 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f96bf42-8ca1-46cd-99d8-1c07964cbe99")
 	)
 	(wire
 		(pts
@@ -5125,16 +5119,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 68.58) (xy 130.81 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5cca07c-ca9f-4bd5-9288-aaa8edbe0dd1")
-	)
-	(wire
-		(pts
 			(xy 148.59 43.18) (xy 146.05 43.18)
 		)
 		(stroke
@@ -5361,28 +5345,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ISO_CAN_OUT"
-		(shape input)
-		(at 123.19 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "01cd00aa-ea33-4451-8d82-bae82502275b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.8071 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -9497,93 +9459,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
 					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 127 68.58 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "99318b2a-3adc-4e6d-a8ab-903bf2c708d4")
-		(property "Reference" "R6"
-			(at 105.918 68.58 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22R"
-			(at 102.616 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 127 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
-			(at 127 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 127 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "RHM22DCT-ND"
-			(at 127 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
-			(at 127 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b2e72b42-16fa-462c-ab4f-929583f38dd3")
-		)
-		(pin "2"
-			(uuid "d5404fa6-14a8-4922-8e02-3098131fc420")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
-					(reference "R6")
 					(unit 1)
 				)
 			)
