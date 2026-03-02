@@ -6022,7 +6022,7 @@
 			)
 		)
 	)
-	(global_label "Valve3_Open"
+	(global_label "Servo_ctrl_3V3"
 		(shape input)
 		(at 171.45 81.28 0)
 		(fields_autoplaced yes)
@@ -6035,7 +6035,7 @@
 		)
 		(uuid "b70b27b0-8a5a-471e-8560-373d8623cc16")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.2884 81.28 0)
+			(at 188.3446 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
