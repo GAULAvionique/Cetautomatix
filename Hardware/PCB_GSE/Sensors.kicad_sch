@@ -3719,7 +3719,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2feaed83-41b3-40af-8e46-a7611f107636")
-		(property "Reference" "R?"
+		(property "Reference" "R45"
 			(at 60.96 57.1499 0)
 			(effects
 				(font
@@ -3827,7 +3827,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
-					(reference "R?")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -4198,7 +4198,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "483f300b-2fc7-445b-955a-22a2b377f08e")
-		(property "Reference" "R?"
+		(property "Reference" "R37"
 			(at 50.292 56.388 0)
 			(effects
 				(font
@@ -4269,7 +4269,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
-					(reference "R?")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -4352,7 +4352,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4ee6c7a7-6e0f-4873-a992-ae229c02f5e5")
-		(property "Reference" "R?"
+		(property "Reference" "R39"
 			(at 59.69 49.022 90)
 			(effects
 				(font
@@ -4460,7 +4460,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
-					(reference "R?")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -5586,7 +5586,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bcfdeb95-4427-45f3-9133-a58c101ee5fb")
-		(property "Reference" "C?"
+		(property "Reference" "C58"
 			(at 40.132 36.068 90)
 			(effects
 				(font
@@ -5658,7 +5658,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
-					(reference "C?")
+					(reference "C58")
 					(unit 1)
 				)
 			)
@@ -5957,7 +5957,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "caac9135-e939-4978-9d76-4895cf83e0ba")
-		(property "Reference" "C?"
+		(property "Reference" "C59"
 			(at 82.296 54.864 0)
 			(effects
 				(font
@@ -6029,7 +6029,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
-					(reference "C?")
+					(reference "C59")
 					(unit 1)
 				)
 			)

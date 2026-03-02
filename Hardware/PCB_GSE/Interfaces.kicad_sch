@@ -8688,7 +8688,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "40e8d002-ae2f-4ab5-8316-79bd90831d21")
-		(property "Reference" "R?"
+		(property "Reference" "R7"
 			(at 62.23 92.964 0)
 			(effects
 				(font
@@ -8796,7 +8796,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/3c37fe83-9ec5-4bf7-b24c-730d18a48e1f"
-					(reference "R?")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -9558,7 +9558,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "806ada1b-86fb-4e1c-b209-00ef305c7e87")
-		(property "Reference" "R?"
+		(property "Reference" "R6"
 			(at 29.972 92.71 0)
 			(effects
 				(font
@@ -9666,7 +9666,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/3c37fe83-9ec5-4bf7-b24c-730d18a48e1f"
-					(reference "R?")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -12201,7 +12201,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e4d397cf-1133-468d-b857-48c614f592ff")
-		(property "Reference" "J?"
+		(property "Reference" "J3"
 			(at 130.556 90.17 0)
 			(effects
 				(font
@@ -12279,7 +12279,7 @@
 		(instances
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/3c37fe83-9ec5-4bf7-b24c-730d18a48e1f"
-					(reference "J?")
+					(reference "J3")
 					(unit 1)
 				)
 			)
