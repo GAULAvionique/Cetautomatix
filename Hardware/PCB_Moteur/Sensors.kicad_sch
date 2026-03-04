@@ -3164,7 +3164,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e9a48e8-2031-4eb9-b489-e7201e2aee08")
-		(property "Reference" "D6"
+		(property "Reference" "D8"
 			(at 124.46 139.6999 90)
 			(effects
 				(font
@@ -3240,7 +3240,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "D6")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -3255,7 +3255,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1f729a57-5dfc-4700-a537-d3b8b2704034")
-		(property "Reference" "R57"
+		(property "Reference" "R54"
 			(at 137.668 137.414 90)
 			(effects
 				(font
@@ -3327,7 +3327,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "R57")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -3474,7 +3474,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4206fd8e-277e-4f5b-88b4-09f8420e4258")
-		(property "Reference" "C47"
+		(property "Reference" "C36"
 			(at 267.97 31.242 90)
 			(effects
 				(font
@@ -3546,7 +3546,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "C47")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -3628,7 +3628,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "43dcbf01-a95f-4f87-b218-33a15e866661")
-		(property "Reference" "C56"
+		(property "Reference" "C52"
 			(at 60.452 43.688 90)
 			(effects
 				(font
@@ -3700,7 +3700,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "C56")
+					(reference "C52")
 					(unit 1)
 				)
 			)
@@ -3915,7 +3915,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e4a2726-19ce-4eb2-996f-3aa60b915bc7")
-		(property "Reference" "U8"
+		(property "Reference" "U7"
 			(at 77.47 115.57 0)
 			(effects
 				(font
@@ -3985,6 +3985,15 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey_Part_Number " "296-50343-1-ND"
+			(at 41.91 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "5ee41982-52f1-4f3c-add8-aaafafa8033b")
 		)
@@ -4036,7 +4045,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "U8")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -4184,7 +4193,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6278fb6b-5f1f-4281-834a-3f71e661614a")
-		(property "Reference" "C46"
+		(property "Reference" "C40"
 			(at 258.826 42.164 0)
 			(effects
 				(font
@@ -4256,7 +4265,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "C46")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -4272,7 +4281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66e127e8-ba1a-42f8-96a8-8399b6227e66")
-		(property "Reference" "U9"
+		(property "Reference" "U6"
 			(at 240.03 26.67 0)
 			(effects
 				(font
@@ -4352,7 +4361,7 @@
 		(instances
 			(project ""
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "U9")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -4368,7 +4377,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6d009bd1-6953-4c51-8ef2-fa2215dc42ee")
-		(property "Reference" "J3"
+		(property "Reference" "J18"
 			(at 58.166 66.802 0)
 			(effects
 				(font
@@ -4446,7 +4455,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "J3")
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -4527,7 +4536,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "76c12318-0d9e-420b-95fa-1348a589973f")
-		(property "Reference" "C48"
+		(property "Reference" "C42"
 			(at 137.922 142.494 0)
 			(effects
 				(font
@@ -4599,7 +4608,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "C48")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -4747,7 +4756,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8e37cacf-0b8c-4c64-a52d-5b611b8c8080")
-		(property "Reference" "D7"
+		(property "Reference" "D9"
 			(at 89.916 73.66 90)
 			(effects
 				(font
@@ -4823,7 +4832,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "D7")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -4838,7 +4847,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a035805f-7464-41fb-b79f-f0f805bea10d")
-		(property "Reference" "R56"
+		(property "Reference" "R50"
 			(at 79.756 150.368 90)
 			(effects
 				(font
@@ -4909,7 +4918,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "R56")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -5057,7 +5066,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad0e2b4f-4778-4a59-ab2a-2047452ede4d")
-		(property "Reference" "R65"
+		(property "Reference" "R59"
 			(at 81.28 64.7699 0)
 			(effects
 				(font
@@ -5165,7 +5174,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "R65")
+					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -5246,7 +5255,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b65a758e-b5fb-4ae8-9d2c-34661a4314a0")
-		(property "Reference" "C57"
+		(property "Reference" "C45"
 			(at 102.616 62.484 0)
 			(effects
 				(font
@@ -5318,7 +5327,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "C57")
+					(reference "C45")
 					(unit 1)
 				)
 			)
@@ -5400,7 +5409,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ba061c5b-0ff2-422d-b360-6b8f44198eb7")
-		(property "Reference" "J18"
+		(property "Reference" "J11"
 			(at 128.27 111.252 0)
 			(effects
 				(font
@@ -5478,7 +5487,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "J18")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -5558,7 +5567,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c54e7a48-0133-45ad-9a01-51244b9ffa70")
-		(property "Reference" "R55"
+		(property "Reference" "R57"
 			(at 38.862 145.288 0)
 			(effects
 				(font
@@ -5629,7 +5638,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "R55")
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -5909,7 +5918,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f68dbfd5-e5cd-45fb-8dee-598959307567")
-		(property "Reference" "R64"
+		(property "Reference" "R60"
 			(at 80.01 56.642 90)
 			(effects
 				(font
@@ -6017,7 +6026,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "R64")
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -6032,7 +6041,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f93d29b8-6a57-4c6c-a42b-72a9d5b89db2")
-		(property "Reference" "R63"
+		(property "Reference" "R58"
 			(at 70.612 64.008 0)
 			(effects
 				(font
@@ -6139,7 +6148,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "R63")
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -6219,7 +6228,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd00e44f-cb84-43b0-bc6c-bd188a887d4c")
-		(property "Reference" "C45"
+		(property "Reference" "C44"
 			(at 34.798 116.078 90)
 			(effects
 				(font
@@ -6291,7 +6300,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/f31687d3-ca84-4d71-914a-32b6c2b363a9"
-					(reference "C45")
+					(reference "C44")
 					(unit 1)
 				)
 			)

@@ -752,6 +752,12 @@
           "label": "Doc",
           "name": "Doc",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey_Part_Number ",
+          "name": "DigiKey_Part_Number ",
+          "show": false
         }
       ],
       "filter_string": "",

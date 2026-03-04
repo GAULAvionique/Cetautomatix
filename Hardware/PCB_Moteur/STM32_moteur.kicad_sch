@@ -6753,7 +6753,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0039901f-3aa5-458c-92c0-417655605ceb")
-		(property "Reference" "TP7"
+		(property "Reference" "TP21"
 			(at 245.618 140.97 90)
 			(effects
 				(font
@@ -6821,7 +6821,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP7")
+					(reference "TP21")
 					(unit 1)
 				)
 			)
@@ -6842,7 +6842,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "048322c7-d2aa-4ac7-8b47-69033aa9a9d1")
-		(property "Reference" "R15"
+		(property "Reference" "R25"
 			(at 192.786 74.93 90)
 			(effects
 				(font
@@ -6914,7 +6914,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R15")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -6935,7 +6935,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "06427c44-b559-40de-b128-89dd46d270bb")
-		(property "Reference" "R7"
+		(property "Reference" "R8"
 			(at 73.152 136.398 90)
 			(effects
 				(font
@@ -7043,7 +7043,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R7")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -7064,7 +7064,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "076cc2a4-1a38-4e8c-983e-97e8f355560e")
-		(property "Reference" "C17"
+		(property "Reference" "C19"
 			(at 261.62 26.924 0)
 			(effects
 				(font
@@ -7134,7 +7134,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "C17")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -7244,7 +7244,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "143f856a-1e5e-4f55-b3e9-4060d18074f4")
-		(property "Reference" "TP9"
+		(property "Reference" "TP2"
 			(at 245.618 146.05 90)
 			(effects
 				(font
@@ -7312,7 +7312,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP9")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -7333,7 +7333,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1500e01d-f344-48a7-8636-f6268b145416")
-		(property "Reference" "C21"
+		(property "Reference" "C34"
 			(at 253.746 52.324 0)
 			(effects
 				(font
@@ -7403,7 +7403,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "C21")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -7494,7 +7494,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1ba0f085-ef6d-4c57-b6e1-e58d4e91a9a7")
-		(property "Reference" "R10"
+		(property "Reference" "R38"
 			(at 110.236 80.01 90)
 			(effects
 				(font
@@ -7566,7 +7566,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R10")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -7588,7 +7588,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1d42ba72-f365-4cfe-a608-fa8a97af6bfd")
-		(property "Reference" "J2"
+		(property "Reference" "J7"
 			(at 48.006 107.442 0)
 			(effects
 				(font
@@ -7670,7 +7670,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "J2")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -7691,7 +7691,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1ec0d190-bc9e-4208-9d20-bb4ad35a1766")
-		(property "Reference" "TP26"
+		(property "Reference" "TP16"
 			(at 250.952 153.67 90)
 			(effects
 				(font
@@ -7759,7 +7759,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP26")
+					(reference "TP16")
 					(unit 1)
 				)
 			)
@@ -7781,7 +7781,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "225bd523-4f0c-4c9a-9d7f-137a2def8b09")
-		(property "Reference" "TP10"
+		(property "Reference" "TP6"
 			(at 245.618 148.59 90)
 			(effects
 				(font
@@ -7849,7 +7849,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP10")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -7958,7 +7958,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23bb11df-9194-4ff2-a9a0-e523d3186fc3")
-		(property "Reference" "U2"
+		(property "Reference" "U5"
 			(at 161.29 48.26 0)
 			(effects
 				(font
@@ -8168,7 +8168,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "U2")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -8189,7 +8189,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2472420e-9067-419e-8abc-4a6220014e1d")
-		(property "Reference" "TP18"
+		(property "Reference" "TP11"
 			(at 250.952 133.35 90)
 			(effects
 				(font
@@ -8257,7 +8257,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP18")
+					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -8348,7 +8348,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "271a1196-df07-430e-82cd-120d78032bfe")
-		(property "Reference" "TP28"
+		(property "Reference" "TP24"
 			(at 250.952 158.75 90)
 			(effects
 				(font
@@ -8416,7 +8416,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP28")
+					(reference "TP24")
 					(unit 1)
 				)
 			)
@@ -8507,7 +8507,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3f5b7af7-0274-498c-9559-bf4ac8635b60")
-		(property "Reference" "TP19"
+		(property "Reference" "TP15"
 			(at 250.952 135.89 90)
 			(effects
 				(font
@@ -8575,7 +8575,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP19")
+					(reference "TP15")
 					(unit 1)
 				)
 			)
@@ -8596,7 +8596,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "417f6364-b24e-47c8-897d-b127b487d65e")
-		(property "Reference" "TP25"
+		(property "Reference" "TP12"
 			(at 250.952 151.13 90)
 			(effects
 				(font
@@ -8664,7 +8664,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP25")
+					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -8686,7 +8686,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "44f11911-c7e3-445e-ac6e-ae34c7e31dc3")
-		(property "Reference" "TP11"
+		(property "Reference" "TP10"
 			(at 245.618 151.13 90)
 			(effects
 				(font
@@ -8754,7 +8754,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP11")
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -8845,7 +8845,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "468d3404-6e0b-4b7e-bf77-6135f394f34b")
-		(property "Reference" "C55"
+		(property "Reference" "C35"
 			(at 244.602 99.314 0)
 			(effects
 				(font
@@ -8915,7 +8915,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "C55")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -8931,7 +8931,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4788786e-8c6f-40ba-8794-60768cd3007f")
-		(property "Reference" "TP2"
+		(property "Reference" "TP1"
 			(at 245.618 128.27 90)
 			(effects
 				(font
@@ -8999,7 +8999,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP2")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -9091,7 +9091,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "49b754d7-bf19-4afb-b9ae-5630e2a4fbee")
-		(property "Reference" "R33"
+		(property "Reference" "R37"
 			(at 110.236 97.79 90)
 			(effects
 				(font
@@ -9163,7 +9163,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R33")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -9184,7 +9184,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4da3db1b-8f53-4df7-9c2e-d458feaaaf48")
-		(property "Reference" "R8"
+		(property "Reference" "R45"
 			(at 212.09 21.59 90)
 			(effects
 				(font
@@ -9253,7 +9253,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R8")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -9275,7 +9275,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "555a7b6e-2b1d-4525-b0c1-3fa9c51dc4a6")
-		(property "Reference" "TP6"
+		(property "Reference" "TP17"
 			(at 245.618 138.43 90)
 			(effects
 				(font
@@ -9343,7 +9343,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP6")
+					(reference "TP17")
 					(unit 1)
 				)
 			)
@@ -9364,7 +9364,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "573ff3ef-5da3-4ae2-9047-d03776b98901")
-		(property "Reference" "C22"
+		(property "Reference" "C25"
 			(at 267.462 52.578 0)
 			(effects
 				(font
@@ -9434,7 +9434,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "C22")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -9455,7 +9455,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5bf84e6f-7eda-4dfa-a9bd-6a643a3ea710")
-		(property "Reference" "C18"
+		(property "Reference" "C39"
 			(at 269.24 26.924 0)
 			(effects
 				(font
@@ -9525,7 +9525,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "C18")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -9546,7 +9546,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5e187176-835a-4f37-a01f-cdfcee5c0cb8")
-		(property "Reference" "R60"
+		(property "Reference" "R44"
 			(at 102.616 74.93 90)
 			(effects
 				(font
@@ -9618,7 +9618,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R60")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -9640,7 +9640,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f247d48-b2e2-4f11-8c1d-f7b7d3cd59f9")
-		(property "Reference" "TP15"
+		(property "Reference" "TP26"
 			(at 245.618 161.29 90)
 			(effects
 				(font
@@ -9708,7 +9708,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP15")
+					(reference "TP26")
 					(unit 1)
 				)
 			)
@@ -9802,7 +9802,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6330bff9-09fa-4548-805e-3e7c1f665433")
-		(property "Reference" "TP5"
+		(property "Reference" "TP13"
 			(at 245.618 135.89 90)
 			(effects
 				(font
@@ -9870,7 +9870,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP5")
+					(reference "TP13")
 					(unit 1)
 				)
 			)
@@ -10033,7 +10033,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "66023b4e-3187-4a45-af99-387cd162b407")
-		(property "Reference" "R61"
+		(property "Reference" "R21"
 			(at 109.728 45.974 90)
 			(effects
 				(font
@@ -10105,7 +10105,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R61")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -10126,7 +10126,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6b0b03f7-75be-47f6-98d2-c92aae7100fe")
-		(property "Reference" "C23"
+		(property "Reference" "C22"
 			(at 107.188 55.372 0)
 			(effects
 				(font
@@ -10198,7 +10198,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "C23")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -10397,7 +10397,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "71ef0cc3-5e2b-4e83-9404-ce580c95f343")
-		(property "Reference" "TP23"
+		(property "Reference" "TP4"
 			(at 250.952 146.05 90)
 			(effects
 				(font
@@ -10465,7 +10465,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP23")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -10487,7 +10487,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "736aa386-8306-4766-a9b8-620b4db81693")
-		(property "Reference" "TP12"
+		(property "Reference" "TP14"
 			(at 245.618 153.67 90)
 			(effects
 				(font
@@ -10555,7 +10555,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP12")
+					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -10576,7 +10576,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "756f485f-6265-45cd-8d68-44725d5df9d0")
-		(property "Reference" "C19"
+		(property "Reference" "C26"
 			(at 276.352 27.178 0)
 			(effects
 				(font
@@ -10646,7 +10646,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "C19")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -10667,7 +10667,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a600b5f-38c2-470e-8a1b-57ee79a3a655")
-		(property "Reference" "TP22"
+		(property "Reference" "TP27"
 			(at 250.952 143.51 90)
 			(effects
 				(font
@@ -10735,7 +10735,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP22")
+					(reference "TP27")
 					(unit 1)
 				)
 			)
@@ -10895,7 +10895,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "804fdb1f-c683-4442-b345-04fb77609d0f")
-		(property "Reference" "TP13"
+		(property "Reference" "TP18"
 			(at 245.618 156.21 90)
 			(effects
 				(font
@@ -10963,7 +10963,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP13")
+					(reference "TP18")
 					(unit 1)
 				)
 			)
@@ -11072,7 +11072,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "84bdb872-e286-41f5-9890-2792c5d4f5bf")
-		(property "Reference" "TP24"
+		(property "Reference" "TP8"
 			(at 250.952 148.59 90)
 			(effects
 				(font
@@ -11140,7 +11140,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP24")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -11162,7 +11162,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "88932bb0-6601-4100-8241-c7d3b647fa46")
-		(property "Reference" "TP8"
+		(property "Reference" "TP25"
 			(at 245.618 143.51 90)
 			(effects
 				(font
@@ -11230,7 +11230,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP8")
+					(reference "TP25")
 					(unit 1)
 				)
 			)
@@ -11251,7 +11251,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8b7c04de-2cf2-42e7-a10b-005387b0eb2e")
-		(property "Reference" "R14"
+		(property "Reference" "R23"
 			(at 192.786 72.39 90)
 			(effects
 				(font
@@ -11323,7 +11323,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R14")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -11344,7 +11344,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "92135a38-c810-4f5f-969c-9b432323cca4")
-		(property "Reference" "R16"
+		(property "Reference" "R26"
 			(at 192.786 77.47 90)
 			(effects
 				(font
@@ -11416,7 +11416,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R16")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -11437,7 +11437,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "93693148-f871-4792-9de8-43bb9ab4aa82")
-		(property "Reference" "TP17"
+		(property "Reference" "TP7"
 			(at 250.952 130.81 90)
 			(effects
 				(font
@@ -11505,7 +11505,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP17")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -11598,7 +11598,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "97034fad-4d25-444d-9b19-ffd9deb9c426")
-		(property "Reference" "R12"
+		(property "Reference" "R34"
 			(at 109.728 85.09 90)
 			(effects
 				(font
@@ -11670,7 +11670,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R12")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -11854,7 +11854,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9aa680f2-6525-417a-8d4c-754eb748cbea")
-		(property "Reference" "R17"
+		(property "Reference" "R28"
 			(at 192.786 80.01 90)
 			(effects
 				(font
@@ -11926,7 +11926,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R17")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -11948,7 +11948,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9bce1548-0a88-4612-aba6-a87cb94e7a15")
-		(property "Reference" "D8"
+		(property "Reference" "D3"
 			(at 53.34 132.08 0)
 			(effects
 				(font
@@ -12067,7 +12067,7 @@
 		(instances
 			(project ""
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "D8")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -12088,7 +12088,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a21fde78-fdbc-467a-9b22-357da4f153c2")
-		(property "Reference" "C15"
+		(property "Reference" "C18"
 			(at 246.126 26.924 0)
 			(effects
 				(font
@@ -12158,7 +12158,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "C15")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -12180,7 +12180,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a3686575-4791-41a8-a9db-c6a4dd76d1fc")
-		(property "Reference" "TP14"
+		(property "Reference" "TP22"
 			(at 245.618 158.75 90)
 			(effects
 				(font
@@ -12248,7 +12248,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP14")
+					(reference "TP22")
 					(unit 1)
 				)
 			)
@@ -12269,7 +12269,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad5efebe-a701-4a06-9b0b-94a21db28df6")
-		(property "Reference" "C20"
+		(property "Reference" "C38"
 			(at 245.872 52.324 0)
 			(effects
 				(font
@@ -12339,7 +12339,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "C20")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -12521,7 +12521,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3a65987-f659-48f2-9c04-3fbb23192715")
-		(property "Reference" "R11"
+		(property "Reference" "R36"
 			(at 109.982 82.55 90)
 			(effects
 				(font
@@ -12593,7 +12593,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R11")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -12614,7 +12614,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b7177d61-5477-4349-a767-a6b451ef81f2")
-		(property "Reference" "TP21"
+		(property "Reference" "TP23"
 			(at 250.952 140.97 90)
 			(effects
 				(font
@@ -12682,7 +12682,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP21")
+					(reference "TP23")
 					(unit 1)
 				)
 			)
@@ -12703,7 +12703,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b98ee561-0be3-4410-b18b-b431a86450d0")
-		(property "Reference" "TP29"
+		(property "Reference" "TP28"
 			(at 250.952 161.29 90)
 			(effects
 				(font
@@ -12771,7 +12771,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP29")
+					(reference "TP28")
 					(unit 1)
 				)
 			)
@@ -12859,7 +12859,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be667655-4506-4b32-a146-6cf3f7df2eb1")
-		(property "Reference" "TP3"
+		(property "Reference" "TP5"
 			(at 245.618 130.81 90)
 			(effects
 				(font
@@ -12927,7 +12927,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP3")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -13021,7 +13021,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c181bacd-f8c1-43ec-858a-0f913e4e7533")
-		(property "Reference" "TP4"
+		(property "Reference" "TP9"
 			(at 245.618 133.35 90)
 			(effects
 				(font
@@ -13089,7 +13089,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP4")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -13110,7 +13110,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c83f58c0-bfab-488a-a2e9-b3b85534a558")
-		(property "Reference" "TP16"
+		(property "Reference" "TP3"
 			(at 250.952 128.27 90)
 			(effects
 				(font
@@ -13178,7 +13178,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP16")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -13199,7 +13199,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ce2b5316-658b-4074-8509-1aeee2b21dc9")
-		(property "Reference" "TP20"
+		(property "Reference" "TP19"
 			(at 250.952 138.43 90)
 			(effects
 				(font
@@ -13267,7 +13267,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP20")
+					(reference "TP19")
 					(unit 1)
 				)
 			)
@@ -13288,7 +13288,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d4b7ba00-455f-4d43-967f-9b0cbd8303a5")
-		(property "Reference" "R6"
+		(property "Reference" "R9"
 			(at 30.226 144.272 90)
 			(effects
 				(font
@@ -13396,7 +13396,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R6")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -13559,7 +13559,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e11fa2a3-4c86-44a4-9b78-00b6d64e3dd7")
-		(property "Reference" "C16"
+		(property "Reference" "C28"
 			(at 253.746 26.924 0)
 			(effects
 				(font
@@ -13629,7 +13629,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "C16")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -13650,7 +13650,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e355d50b-a02f-435a-8d17-8043a4a8c2cc")
-		(property "Reference" "R13"
+		(property "Reference" "R41"
 			(at 110.236 102.87 90)
 			(effects
 				(font
@@ -13722,7 +13722,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R13")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -13743,7 +13743,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ec169e1d-d428-4aaa-a6f9-a903e5dce3b4")
-		(property "Reference" "R62"
+		(property "Reference" "R53"
 			(at 268.478 90.678 0)
 			(effects
 				(font
@@ -13814,7 +13814,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R62")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -13901,7 +13901,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef5e49f4-bbfc-4952-bb1d-c3eb2db22233")
-		(property "Reference" "C54"
+		(property "Reference" "C43"
 			(at 268.732 99.314 0)
 			(effects
 				(font
@@ -13971,7 +13971,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "C54")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -13986,7 +13986,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f12800ca-862a-4aa7-a6a5-881e67208b29")
-		(property "Reference" "R9"
+		(property "Reference" "R42"
 			(at 220.218 29.718 0)
 			(effects
 				(font
@@ -14057,7 +14057,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R9")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -14148,7 +14148,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fb579b76-c030-44bd-bd0c-bbfb41be13ba")
-		(property "Reference" "TP27"
+		(property "Reference" "TP20"
 			(at 250.952 156.21 90)
 			(effects
 				(font
@@ -14216,7 +14216,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "TP27")
+					(reference "TP20")
 					(unit 1)
 				)
 			)
