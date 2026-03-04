@@ -3555,6 +3555,10 @@
 		(uuid "8f383a12-2491-4a97-8927-08f4f1088023")
 	)
 	(no_connect
+		(at 133.35 72.39)
+		(uuid "c0998ed3-1af4-4886-9661-7471c88314cc")
+	)
+	(no_connect
 		(at 133.35 95.25)
 		(uuid "c0b13484-f5f7-4477-aa8e-2d5d6e3030d0")
 	)
@@ -4147,16 +4151,6 @@
 			(type default)
 		)
 		(uuid "51476650-a034-4234-992a-092c8fcc0f05")
-	)
-	(wire
-		(pts
-			(xy 125.73 72.39) (xy 127 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53e2c160-659a-494b-b4f6-fa30fd9f3358")
 	)
 	(wire
 		(pts
@@ -5107,16 +5101,6 @@
 			(type default)
 		)
 		(uuid "f5f12e03-e1b6-4477-9175-05e582ed97fe")
-	)
-	(wire
-		(pts
-			(xy 132.08 72.39) (xy 133.35 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7fe9805-19c0-48a0-b107-a99c0c6212bb")
 	)
 	(wire
 		(pts
@@ -6579,28 +6563,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pressure_Sleep"
-		(shape input)
-		(at 125.73 72.39 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ef3d478f-78bf-485f-92a6-ef7f16ff8b6f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.3515 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -13172,81 +13134,6 @@
 			(project "STM32_moteur"
 				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
 					(reference "TP?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 129.54 72.39 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fbb4034b-87c7-47d4-a0dc-4ea9686fb8d5")
-		(property "Reference" "R59"
-			(at 102.87 72.39 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22R"
-			(at 99.314 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 129.54 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 129.54 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b5eb125a-ff1b-40c4-a1b8-0c82969f9aaf")
-		)
-		(pin "2"
-			(uuid "26319147-2cf6-46e5-ac1a-f30f134e2763")
-		)
-		(instances
-			(project "PCB_moteur"
-				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R59")
-					(unit 1)
-				)
-			)
-			(project "STM32_moteur"
-				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
-					(reference "R?")
 					(unit 1)
 				)
 			)
