@@ -5895,7 +5895,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 56.896 74.168 90)
 			(effects
 				(font
@@ -5913,7 +5913,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 58.42 76.2 0)
 			(effects
 				(font
@@ -5928,6 +5928,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 58.42 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 58.42 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6110,7 +6128,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 26.67 129.54 0)
 			(effects
 				(font
@@ -6120,6 +6138,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 26.67 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 26.67 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 26.67 129.54 0)
 			(effects
 				(font
@@ -6179,7 +6215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C105K4RACTU/2199788"
 			(at 114.3 54.61 0)
 			(effects
 				(font
@@ -6189,6 +6225,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 114.3 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C105K4RACTUCT-ND"
+			(at 114.3 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C105K4RACTU"
 			(at 114.3 54.61 0)
 			(effects
 				(font
@@ -6230,7 +6284,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "60R"
+		(property "Value" "59R"
 			(at 250.952 77.724 0)
 			(effects
 				(font
@@ -6248,7 +6302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-0759RL/728044"
 			(at 246.38 77.47 0)
 			(effects
 				(font
@@ -6263,6 +6317,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-59.0CRCT-ND"
+			(at 246.38 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-0759RL"
+			(at 246.38 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6388,7 +6460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "399-C0603C103K5RACTUCT-ND"
 			(at 267.97 49.53 0)
 			(effects
 				(font
@@ -6398,6 +6470,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 267.97 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C103K5RACTUCT-ND"
+			(at 267.97 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C103K5RACTU"
 			(at 267.97 49.53 0)
 			(effects
 				(font
@@ -6457,7 +6547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/te-connectivity-amp-connectors/640454-2/258984"
 			(at 139.7 180.34 0)
 			(effects
 				(font
@@ -6467,6 +6557,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 139.7 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "A19423-ND"
+			(at 139.7 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "640454-2"
 			(at 139.7 180.34 0)
 			(effects
 				(font
@@ -6508,7 +6616,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 67.818 175.006 0)
 			(effects
 				(font
@@ -6526,7 +6634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 72.39 175.26 0)
 			(effects
 				(font
@@ -6541,6 +6649,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6924,7 +7050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/te-connectivity-amp-connectors/640454-2/258984"
 			(at 78.74 156.21 0)
 			(effects
 				(font
@@ -6934,6 +7060,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 78.74 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "A19423-ND"
+			(at 78.74 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "640454-2"
 			(at 78.74 156.21 0)
 			(effects
 				(font
@@ -7224,7 +7368,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 98.298 175.26 0)
 			(effects
 				(font
@@ -7242,7 +7386,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 102.87 175.26 0)
 			(effects
 				(font
@@ -7257,6 +7401,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 102.87 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 102.87 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7380,7 +7542,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "399-C0603C103K5RACTUCT-ND"
 			(at 193.04 53.34 0)
 			(effects
 				(font
@@ -7390,6 +7552,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C103K5RACTUCT-ND"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C103K5RACTU"
 			(at 193.04 53.34 0)
 			(effects
 				(font
@@ -7455,7 +7635,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 60.96 129.54 0)
 			(effects
 				(font
@@ -7465,6 +7645,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 60.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 60.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 60.96 129.54 0)
 			(effects
 				(font
@@ -7526,7 +7724,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "BM03B-GHS-TBT"
+		(property "Datasheet" "-"
 			(at 104.14 123.19 0)
 			(effects
 				(font
@@ -7537,6 +7735,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 104.14 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 104.14 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
 			(at 104.14 123.19 0)
 			(effects
 				(font
@@ -7720,7 +7936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
 			(at 127 90.17 0)
 			(effects
 				(font
@@ -7735,6 +7951,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 127 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 127 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8058,7 +8292,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/fair-rite-products-corp/2508051217Y6/8594305"
 			(at 242.57 43.18 0)
 			(effects
 				(font
@@ -8069,6 +8303,24 @@
 		)
 		(property "Description" "Ferrite bead"
 			(at 242.57 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1934-1472-1-ND"
+			(at 242.57 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2508051217Y6"
+			(at 242.57 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8257,7 +8509,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "BM03B-GHS-TBT"
+		(property "Datasheet" "-"
 			(at 36.83 123.19 0)
 			(effects
 				(font
@@ -8268,6 +8520,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 36.83 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 36.83 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
 			(at 36.83 123.19 0)
 			(effects
 				(font
@@ -8330,7 +8600,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 127 129.54 0)
 			(effects
 				(font
@@ -8340,6 +8610,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 127 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 127 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 127 129.54 0)
 			(effects
 				(font
@@ -8465,7 +8753,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "BM03B-GHS-TBT"
+		(property "Datasheet" "-"
 			(at 137.16 123.19 0)
 			(effects
 				(font
@@ -8476,6 +8764,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 137.16 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 137.16 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
 			(at 137.16 123.19 0)
 			(effects
 				(font
@@ -8621,6 +8927,24 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey_Part_Number" "MCP1802T-5002I/OTCT-ND"
+			(at 49.53 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCP1802T-5002I/OT"
+			(at 49.53 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "63e330e6-e589-42d1-bb3f-0fabd2ae33c8")
 		)
@@ -8663,7 +8987,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "100k 1%"
 			(at 66.294 101.854 0)
 			(effects
 				(font
@@ -8681,7 +9005,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07100KL/727544"
 			(at 64.77 101.6 0)
 			(effects
 				(font
@@ -8696,6 +9020,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-100KCRCT-ND"
+			(at 64.77 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-07100KL"
+			(at 64.77 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8731,7 +9073,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "60R"
+		(property "Value" "59R"
 			(at 247.904 70.358 0)
 			(effects
 				(font
@@ -8749,7 +9091,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-0759RL/728044"
 			(at 246.38 69.85 0)
 			(effects
 				(font
@@ -8764,6 +9106,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-59.0CRCT-ND"
+			(at 246.38 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-0759RL"
+			(at 246.38 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9020,7 +9380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/te-connectivity-amp-connectors/640454-2/258984"
 			(at 46.99 156.21 0)
 			(effects
 				(font
@@ -9030,6 +9390,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 46.99 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "A19423-ND"
+			(at 46.99 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "640454-2"
 			(at 46.99 156.21 0)
 			(effects
 				(font
@@ -9219,7 +9597,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
 			(at 40.64 88.9 0)
 			(effects
 				(font
@@ -9234,6 +9612,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 40.64 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 40.64 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9287,7 +9683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 41.91 49.53 0)
 			(effects
 				(font
@@ -9297,6 +9693,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 41.91 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 41.91 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 41.91 49.53 0)
 			(effects
 				(font
@@ -9404,7 +9818,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 36.068 175.26 0)
 			(effects
 				(font
@@ -9422,7 +9836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 40.64 175.26 0)
 			(effects
 				(font
@@ -9437,6 +9851,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 40.64 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 40.64 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9556,7 +9988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/te-connectivity-amp-connectors/640454-2/258984"
 			(at 109.22 156.21 0)
 			(effects
 				(font
@@ -9566,6 +9998,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 109.22 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "A19423-ND"
+			(at 109.22 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "640454-2"
 			(at 109.22 156.21 0)
 			(effects
 				(font
@@ -9842,6 +10292,24 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey_Part_Number" "900-2189890210CT-ND"
+			(at 269.24 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2189890210"
+			(at 269.24 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "afae0e4b-f560-495b-b554-12c36a2202fc")
 		)
@@ -9893,7 +10361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/isow1044.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/texas-instruments/ISOW1044BDFMR/18159254"
 			(at 210.82 43.18 0)
 			(effects
 				(font
@@ -9903,6 +10371,24 @@
 			)
 		)
 		(property "Description" "Isolated CAN FD Transceiver, Integrated DC-DC Converter, 5Mbps, Reinforced Isolation,  SOIC-20W"
+			(at 210.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "296-ISOW1044BDFMRCT-ND"
+			(at 210.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ISOW1044BDFMR"
 			(at 210.82 73.66 0)
 			(effects
 				(font
@@ -10022,7 +10508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 252.73 73.66 0)
 			(effects
 				(font
@@ -10037,6 +10523,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 252.73 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
+			(at 252.73 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10361,7 +10865,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C105K4RACTU/2199788"
 			(at 120.65 50.8 0)
 			(effects
 				(font
@@ -10371,6 +10875,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 120.65 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C105K4RACTUCT-ND"
+			(at 120.65 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C105K4RACTU"
 			(at 120.65 50.8 0)
 			(effects
 				(font
@@ -10430,7 +10952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 248.92 49.53 0)
 			(effects
 				(font
@@ -10440,6 +10962,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 248.92 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 248.92 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 248.92 49.53 0)
 			(effects
 				(font
@@ -10547,7 +11087,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 128.778 151.13 0)
 			(effects
 				(font
@@ -10565,7 +11105,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 133.35 151.13 0)
 			(effects
 				(font
@@ -10580,6 +11120,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 133.35 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 133.35 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10687,7 +11245,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 98.298 151.384 0)
 			(effects
 				(font
@@ -10705,7 +11263,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 102.87 151.13 0)
 			(effects
 				(font
@@ -10720,6 +11278,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 102.87 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 102.87 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10775,7 +11351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "BM03B-GHS-TBT"
+		(property "Datasheet" "-"
 			(at 71.12 123.19 0)
 			(effects
 				(font
@@ -10786,6 +11362,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 71.12 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 71.12 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
 			(at 71.12 123.19 0)
 			(effects
 				(font
@@ -10914,7 +11508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C105K4RACTU/2199788"
 			(at 257.81 49.53 0)
 			(effects
 				(font
@@ -10924,6 +11518,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 257.81 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C105K4RACTUCT-ND"
+			(at 257.81 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C105K4RACTU"
 			(at 257.81 49.53 0)
 			(effects
 				(font
@@ -11114,7 +11726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 237.49 49.53 0)
 			(effects
 				(font
@@ -11124,6 +11736,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 237.49 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 237.49 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 237.49 49.53 0)
 			(effects
 				(font
@@ -11297,7 +11927,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 128.778 175.006 0)
 			(effects
 				(font
@@ -11315,7 +11945,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 133.35 175.26 0)
 			(effects
 				(font
@@ -11330,6 +11960,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 133.35 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 133.35 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11383,7 +12031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 166.37 53.34 0)
 			(effects
 				(font
@@ -11393,6 +12041,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 166.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 166.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 166.37 53.34 0)
 			(effects
 				(font
@@ -11589,7 +12255,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/te-connectivity-amp-connectors/640454-2/258984"
 			(at 46.99 180.34 0)
 			(effects
 				(font
@@ -11599,6 +12265,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 46.99 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "A19423-ND"
+			(at 46.99 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "640454-2"
 			(at 46.99 180.34 0)
 			(effects
 				(font
@@ -11863,7 +12547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/te-connectivity-amp-connectors/640454-2/258984"
 			(at 78.74 180.34 0)
 			(effects
 				(font
@@ -11873,6 +12557,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 78.74 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "A19423-ND"
+			(at 78.74 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "640454-2"
 			(at 78.74 180.34 0)
 			(effects
 				(font
@@ -11932,7 +12634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 43.18 67.31 0)
 			(effects
 				(font
@@ -11943,6 +12645,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 43.18 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 43.18 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
+			(at 43.18 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12072,7 +12792,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C105K4RACTU/2199788"
 			(at 175.26 53.34 0)
 			(effects
 				(font
@@ -12082,6 +12802,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 175.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C105K4RACTUCT-ND"
+			(at 175.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C105K4RACTU"
 			(at 175.26 53.34 0)
 			(effects
 				(font
@@ -12147,7 +12885,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
 			(at 36.83 88.9 0)
 			(effects
 				(font
@@ -12162,6 +12900,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 36.83 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 36.83 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12348,7 +13104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 184.15 53.34 0)
 			(effects
 				(font
@@ -12358,6 +13114,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 184.15 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 184.15 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 184.15 53.34 0)
 			(effects
 				(font
@@ -12489,7 +13263,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/te-connectivity-amp-connectors/640454-2/258984"
 			(at 109.22 180.34 0)
 			(effects
 				(font
@@ -12499,6 +13273,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 109.22 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "A19423-ND"
+			(at 109.22 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "640454-2"
 			(at 109.22 180.34 0)
 			(effects
 				(font
@@ -12540,7 +13332,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 67.818 151.384 0)
 			(effects
 				(font
@@ -12558,7 +13350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 72.39 151.13 0)
 			(effects
 				(font
@@ -12573,6 +13365,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 72.39 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 72.39 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12626,7 +13436,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 93.98 129.54 0)
 			(effects
 				(font
@@ -12636,6 +13446,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 93.98 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 93.98 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 93.98 129.54 0)
 			(effects
 				(font
@@ -12696,7 +13524,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
 			(at 121.92 69.85 0)
 			(effects
 				(font
@@ -12707,6 +13535,24 @@
 		)
 		(property "Description" ""
 			(at 121.92 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 121.92 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 121.92 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12896,7 +13742,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/te-connectivity-amp-connectors/640454-2/258984"
 			(at 139.7 156.21 0)
 			(effects
 				(font
@@ -12906,6 +13752,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 139.7 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "A19423-ND"
+			(at 139.7 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "640454-2"
 			(at 139.7 156.21 0)
 			(effects
 				(font
@@ -13012,7 +13876,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 36.322 151.384 0)
 			(effects
 				(font
@@ -13030,7 +13894,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 40.64 151.13 0)
 			(effects
 				(font
@@ -13045,6 +13909,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 40.64 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 40.64 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13098,7 +13980,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
 			(at 123.19 90.17 0)
 			(effects
 				(font
@@ -13113,6 +13995,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13426,7 +14326,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 55.88 67.31 0)
 			(effects
 				(font
@@ -13437,6 +14337,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 55.88 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 55.88 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
+			(at 55.88 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)

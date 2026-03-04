@@ -2433,6 +2433,12 @@
 		(uuid "10aef848-012a-4863-b382-d4a62e9147a1")
 	)
 	(junction
+		(at 118.11 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c63b73b-5cc6-49e1-9063-c9213dca1531")
+	)
+	(junction
 		(at 29.21 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2557,6 +2563,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "edc28f3d-fed7-4b3f-a879-3d7d4f300c80")
+	)
+	(junction
+		(at 110.49 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee0da175-44bf-4404-ab4b-1ddb874a6bb5")
 	)
 	(junction
 		(at 58.42 110.49)
@@ -2876,6 +2888,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 105.41) (xy 110.49 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46d9febd-b4ba-4cd6-8f9b-9b6c706e51b8")
+	)
+	(wire
+		(pts
 			(xy 128.27 109.22) (xy 127 109.22)
 		)
 		(stroke
@@ -2903,6 +2925,26 @@
 			(type default)
 		)
 		(uuid "50f57655-3a5b-4718-8f9f-6787c66128f3")
+	)
+	(wire
+		(pts
+			(xy 118.11 109.22) (xy 118.11 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "537ddaa9-d290-402d-ba15-f2f2bcd603fe")
+	)
+	(wire
+		(pts
+			(xy 110.49 109.22) (xy 110.49 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53e33b43-3932-4aa5-877a-d99f7f2ca382")
 	)
 	(wire
 		(pts
@@ -3213,6 +3255,16 @@
 			(type default)
 		)
 		(uuid "acb2cdca-2281-4f97-a78d-63c4c82a4df8")
+	)
+	(wire
+		(pts
+			(xy 118.11 105.41) (xy 118.11 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad4ed3cf-f94a-4668-92af-a8c359e069e0")
 	)
 	(wire
 		(pts
@@ -3687,7 +3739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07100KL/727544"
 			(at 93.98 110.49 0)
 			(effects
 				(font
@@ -3698,6 +3750,24 @@
 		)
 		(property "Description" ""
 			(at 93.98 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-100KCRCT-ND"
+			(at 93.98 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-07100KL"
+			(at 93.98 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3892,7 +3962,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 111.76 115.57 0)
 			(effects
 				(font
@@ -3902,6 +3972,24 @@
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
+			(at 111.76 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 111.76 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
 			(at 111.76 115.57 0)
 			(effects
 				(font
@@ -3961,7 +4049,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
 			(at 49.53 115.57 0)
 			(effects
 				(font
@@ -3971,6 +4059,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 49.53 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "445-14428-1-ND"
+			(at 49.53 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
 			(at 49.53 115.57 0)
 			(effects
 				(font
@@ -4146,7 +4252,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "11k 1%"
+		(property "Value" "10k 1%"
 			(at 81.534 113.03 90)
 			(effects
 				(font
@@ -4164,7 +4270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 78.74 110.49 0)
 			(effects
 				(font
@@ -4175,6 +4281,24 @@
 		)
 		(property "Description" ""
 			(at 78.74 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 78.74 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 78.74 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4350,7 +4474,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "11k 1%"
+		(property "Value" "10k 1%"
 			(at 230.124 30.48 90)
 			(effects
 				(font
@@ -4368,7 +4492,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 227.33 27.94 0)
 			(effects
 				(font
@@ -4379,6 +4503,24 @@
 		)
 		(property "Description" ""
 			(at 227.33 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 227.33 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 227.33 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4410,7 +4552,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2d6dfeca-8bb4-470a-81d9-2d3a7f7a7aa4")
-		(property "Reference" "LED1"
+		(property "Reference" "D5"
 			(at 123.19 105.918 0)
 			(effects
 				(font
@@ -4516,7 +4658,7 @@
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
-					(reference "LED1")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -4558,7 +4700,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 46.99 90.17 0)
 			(effects
 				(font
@@ -4568,6 +4710,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 46.99 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 46.99 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 46.99 90.17 0)
 			(effects
 				(font
@@ -4627,7 +4787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C105K4RACTU/2199788"
 			(at 93.98 71.12 0)
 			(effects
 				(font
@@ -4638,6 +4798,24 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 93.98 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C105K4RACTUCT-ND"
+			(at 93.98 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C105K4RACTU"
+			(at 93.98 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4677,7 +4855,7 @@
 				)
 			)
 		)
-		(property "Value" "7447715330"
+		(property "Value" "33uH"
 			(at 106.934 85.344 0)
 			(effects
 				(font
@@ -4695,7 +4873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/7447715330.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/7447715330/2175612?s=N4IgTCBcDaIOwGYwFowEYCcA2ZbkDkAREAXQF8g"
 			(at 106.68 81.28 0)
 			(effects
 				(font
@@ -4722,6 +4900,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "7447715330"
+			(at 106.68 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "62d0e536-844c-4a8b-a15a-77bfcd7f7792")
 		)
@@ -4732,76 +4919,6 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
 					(reference "L2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 114.3 109.22 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4998a777-de91-405c-ba7d-e17344d1eaaa")
-		(property "Reference" "R5"
-			(at 115.316 106.934 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "620R"
-			(at 116.332 111.76 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 114.3 110.998 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 109.22 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 114.3 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fad32477-a309-4d47-bae5-489c93d13cbb")
-		)
-		(pin "2"
-			(uuid "3bddd931-f18d-4ba9-9477-bc2a4577c560")
-		)
-		(instances
-			(project "PCB_moteur"
-				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
-					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5246,7 +5363,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
 			(at 40.64 115.57 0)
 			(effects
 				(font
@@ -5256,6 +5373,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 40.64 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "445-14428-1-ND"
+			(at 40.64 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
 			(at 40.64 115.57 0)
 			(effects
 				(font
@@ -5382,7 +5517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "2920L700/24SLER"
+		(property "Datasheet" ""
 			(at 259.08 27.94 0)
 			(effects
 				(font
@@ -5451,7 +5586,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "-"
 			(at 271.78 27.94 0)
 			(effects
 				(font
@@ -5599,6 +5734,24 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey_Part_Number" "-"
+			(at 271.78 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 271.78 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "P"
 			(uuid "5542105a-7207-46fa-910c-3f17737e6b46")
 		)
@@ -5651,7 +5804,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/860040573004/5727450"
 			(at 20.32 46.99 0)
 			(effects
 				(font
@@ -5662,6 +5815,24 @@
 		)
 		(property "Description" ""
 			(at 20.32 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "732-9215-1-ND"
+			(at 20.32 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "860040573004"
+			(at 20.32 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5856,7 +6027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 85.09 119.38 0)
 			(effects
 				(font
@@ -5866,6 +6037,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 85.09 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 85.09 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 85.09 119.38 0)
 			(effects
 				(font
@@ -5925,7 +6114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 227.33 39.37 0)
 			(effects
 				(font
@@ -5935,6 +6124,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 227.33 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 227.33 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 227.33 39.37 0)
 			(effects
 				(font
@@ -5994,7 +6201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 118.11 88.9 0)
 			(effects
 				(font
@@ -6004,6 +6211,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 118.11 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 118.11 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 118.11 88.9 0)
 			(effects
 				(font
@@ -6129,7 +6354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 29.21 45.72 0)
 			(effects
 				(font
@@ -6139,6 +6364,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 29.21 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 29.21 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
 			(at 29.21 45.72 0)
 			(effects
 				(font
@@ -6163,6 +6406,174 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 114.3 111.76 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9baa5bb-47d1-4e5d-b91b-d5f4d295e271")
+		(property "Reference" "R53"
+			(at 114.3 107.95 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 114.3 109.474 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 114.3 109.982 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
+			(at 114.3 111.76 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 114.3 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 114.3 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b0aad6b-f5c2-40fa-8e1f-d4ed27195c83")
+		)
+		(pin "2"
+			(uuid "49f011e8-be6b-4f7a-a67f-9f0df90639c7")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 114.3 105.41 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c238e7d7-7ea6-4a8d-bdaa-a05bfd9f67c6")
+		(property "Reference" "R5"
+			(at 114.3 101.6 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 114.3 103.124 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 114.3 103.632 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
+			(at 114.3 105.41 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 114.3 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 114.3 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7145c781-e8b5-4ae0-bb9c-68c507730ec5")
+		)
+		(pin "2"
+			(uuid "205f3a1d-a2b0-49fa-af14-0d198c58529f")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:FerriteBead_Small")
 		(at 35.56 76.2 90)
 		(unit 1)
@@ -6180,7 +6591,7 @@
 				)
 			)
 		)
-		(property "Value" "FBMH3225HM601NT"
+		(property "Value" "600R"
 			(at 35.5219 72.39 90)
 			(effects
 				(font
@@ -6197,7 +6608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/taiyo-yuden/FBMH3225HM601NT/957843"
 			(at 35.56 76.2 0)
 			(effects
 				(font
@@ -6208,6 +6619,24 @@
 		)
 		(property "Description" "Ferrite bead, small symbol"
 			(at 35.56 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "587-1755-1-ND"
+			(at 35.56 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FBMH3225HM601NT"
+			(at 35.56 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6266,7 +6695,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 71.12 96.52 0)
 			(effects
 				(font
@@ -6277,6 +6706,24 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 71.12 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 71.12 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
+			(at 71.12 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6335,7 +6782,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 39.37 90.17 0)
 			(effects
 				(font
@@ -6345,6 +6792,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 39.37 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 39.37 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 39.37 90.17 0)
 			(effects
 				(font
@@ -6404,7 +6869,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 38.1 45.72 0)
 			(effects
 				(font
@@ -6414,6 +6879,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 38.1 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 38.1 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 38.1 45.72 0)
 			(effects
 				(font
@@ -6473,7 +6956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
 			(at 58.42 115.57 0)
 			(effects
 				(font
@@ -6483,6 +6966,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 58.42 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "445-14428-1-ND"
+			(at 58.42 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
 			(at 58.42 115.57 0)
 			(effects
 				(font
@@ -6609,7 +7110,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/stmicroelectronics/L6981N33DR/16841571"
 			(at 69.85 81.28 0)
 			(effects
 				(font
@@ -6664,6 +7165,24 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "497-L6981N33DRCT-ND"
+			(at 69.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L6981N33DR"
+			(at 69.85 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -6737,7 +7256,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07100KL/727544"
 			(at 240.03 27.94 0)
 			(effects
 				(font
@@ -6748,6 +7267,24 @@
 		)
 		(property "Description" ""
 			(at 240.03 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-100KCRCT-ND"
+			(at 240.03 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-07100KL"
+			(at 240.03 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6938,7 +7475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
 			(at 67.31 115.57 0)
 			(effects
 				(font
@@ -6948,6 +7485,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 67.31 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "445-14428-1-ND"
+			(at 67.31 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
 			(at 67.31 115.57 0)
 			(effects
 				(font

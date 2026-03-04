@@ -3192,7 +3192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11005.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/diotec-semiconductor/BAT54S/13164121"
 			(at 127 144.018 0)
 			(effects
 				(font
@@ -3203,6 +3203,24 @@
 		)
 		(property "Description" "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323"
 			(at 127 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "4878-BAT54SCT-ND"
+			(at 127 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "BAT54S"
+			(at 127 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3264,7 +3282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
 			(at 135.89 140.97 0)
 			(effects
 				(font
@@ -3275,6 +3293,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 135.89 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 135.89 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 135.89 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3465,7 +3501,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 262.89 34.29 0)
 			(effects
 				(font
@@ -3476,6 +3512,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 262.89 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 262.89 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
+			(at 262.89 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3592,7 +3646,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 62.23 47.9552 0)
 			(effects
 				(font
@@ -3601,7 +3655,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 58.42 46.99 0)
 			(effects
 				(font
@@ -3619,7 +3673,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
 			(at 58.42 46.99 90)
 			(effects
 				(font
@@ -3628,7 +3682,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 58.42 46.99 90)
 			(effects
 				(font
@@ -3913,7 +3967,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number " "296-50343-1-ND"
+		(property "Manufacturer_Part_Number" "INA125UA/2K5"
 			(at 41.91 125.73 0)
 			(effects
 				(font
@@ -3922,7 +3976,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "INA125UA/2K5"
+		(property "DigiKey_Part_Number" "296-50343-1-ND"
 			(at 41.91 125.73 0)
 			(effects
 				(font
@@ -4157,7 +4211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "399-C0603C103K5RACTUCT-ND"
 			(at 257.81 44.45 0)
 			(effects
 				(font
@@ -4167,6 +4221,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 257.81 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C103K5RACTUCT-ND"
+			(at 257.81 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C103K5RACTU"
 			(at 257.81 44.45 0)
 			(effects
 				(font
@@ -4482,7 +4554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 142.24 144.78 0)
 			(effects
 				(font
@@ -4492,6 +4564,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 142.24 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 142.24 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 142.24 144.78 0)
 			(effects
 				(font
@@ -4775,7 +4865,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/AC0805FR-07200RL/5896662"
 			(at 78.74 152.4 0)
 			(effects
 				(font
@@ -4790,6 +4880,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "YAG3707CT-ND"
+			(at 78.74 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AC0805FR-07200RL"
+			(at 78.74 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5156,7 +5264,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 102.5652 68.58 0)
 			(effects
 				(font
@@ -5165,7 +5273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B103KAANNNC/3888092"
+		(property "Datasheet" "399-C0603C103K5RACTUCT-ND"
 			(at 101.6 64.77 0)
 			(effects
 				(font
@@ -5183,7 +5291,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "1276-2434-1-ND"
+		(property "DigiKey_Part_Number" "399-C0603C103K5RACTUCT-ND"
 			(at 101.6 64.77 0)
 			(effects
 				(font
@@ -5192,7 +5300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CL21B103KAANNNC"
+		(property "Manufacturer_Part_Number" "C0603C103K5RACTU"
 			(at 101.6 64.77 0)
 			(effects
 				(font
@@ -5337,6 +5445,24 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey_Part_Number" "ED10563-ND"
+			(at 132.08 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "OSTVN04A150"
+			(at 132.08 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8bece8be-e437-4df7-9d92-c06b9a0b35e4")
 		)
@@ -5441,7 +5567,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 38.608 147.066 0)
 			(effects
 				(font
@@ -5459,7 +5585,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 34.29 146.05 0)
 			(effects
 				(font
@@ -5474,6 +5600,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 34.29 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 34.29 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5897,7 +6041,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 70.358 65.786 0)
 			(effects
 				(font
@@ -5915,7 +6059,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 66.04 64.77 0)
 			(effects
 				(font
@@ -5932,7 +6076,7 @@
 				)
 			)
 		)
-		(property "DigiKey_Part_Number" "311-10.0KHRCT-ND"
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
 			(at 66.04 64.77 0)
 			(effects
 				(font
@@ -5941,7 +6085,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0603FR-0710KL"
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
 			(at 66.04 64.77 0)
 			(effects
 				(font
@@ -6102,7 +6246,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 36.83 119.38 0)
 			(effects
 				(font
@@ -6113,6 +6257,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 36.83 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 36.83 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
+			(at 36.83 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)

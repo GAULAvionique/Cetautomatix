@@ -5543,7 +5543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 31.75 58.42 0)
 			(effects
 				(font
@@ -5553,6 +5553,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 31.75 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 31.75 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
 			(at 31.75 58.42 0)
 			(effects
 				(font
@@ -5603,7 +5621,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-923"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 61.595 96.52 0)
 			(effects
 				(font
@@ -5612,7 +5630,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/bourns-inc/CD0603-B0340R/7796828"
 			(at 66.04 96.52 0)
 			(effects
 				(font
@@ -5623,6 +5641,24 @@
 		)
 		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 66.04 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "CD0603-B0340RCT-ND"
+			(at 66.04 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CD0603-B0340R"
+			(at 66.04 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5681,7 +5717,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080540K0FKEA/5075239?s=N4IgjCBcoMxaBjKAzAhgGwM4FMA0IB7KAbXDBggF18AHAFyhAGU6AnASwDsBzEAX3xgAbPBBJIaLHkIkQMAJwwATPJDUQ9Riw49%2B%2BJQAYAHAFZR4yTnxFIpACwGABAGsA8gAsAtpjW0GkEABVTnY6V2QAWWxUTABXVmx%2BARAlWQTMdkw6AlY1PiA"
 			(at 31.75 40.64 0)
 			(effects
 				(font
@@ -5691,6 +5727,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 31.75 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-CRCW080540K0FKEACT-ND"
+			(at 31.75 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080540K0FKEA"
 			(at 31.75 40.64 0)
 			(effects
 				(font
@@ -5818,7 +5872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07100KL/727544"
 			(at 53.34 101.6 0)
 			(effects
 				(font
@@ -5829,6 +5883,24 @@
 		)
 		(property "Description" ""
 			(at 53.34 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-100KCRCT-ND"
+			(at 53.34 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-07100KL"
+			(at 53.34 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5936,7 +6008,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 212.598 34.29 0)
 			(effects
 				(font
@@ -5954,7 +6026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 217.17 34.29 0)
 			(effects
 				(font
@@ -5964,6 +6036,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 217.17 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 217.17 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
 			(at 217.17 34.29 0)
 			(effects
 				(font
@@ -6024,7 +6114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07100KL/727544"
 			(at 123.19 101.6 0)
 			(effects
 				(font
@@ -6035,6 +6125,24 @@
 		)
 		(property "Description" ""
 			(at 123.19 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-100KCRCT-ND"
+			(at 123.19 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-07100KL"
+			(at 123.19 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6075,7 +6183,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 206.502 57.15 0)
 			(effects
 				(font
@@ -6093,7 +6201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 204.47 57.15 0)
 			(effects
 				(font
@@ -6103,6 +6211,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 204.47 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 204.47 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
 			(at 204.47 57.15 0)
 			(effects
 				(font
@@ -6162,7 +6288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
 			(at 59.69 91.44 0)
 			(effects
 				(font
@@ -6172,6 +6298,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 59.69 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "445-14428-1-ND"
+			(at 59.69 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
 			(at 59.69 91.44 0)
 			(effects
 				(font
@@ -6298,7 +6442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 133.35 109.22 0)
 			(effects
 				(font
@@ -6308,6 +6452,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 133.35 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 133.35 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 133.35 109.22 0)
 			(effects
 				(font
@@ -6417,7 +6579,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "11k 1%"
+		(property "Value" "10k 1%"
 			(at 251.714 57.15 90)
 			(effects
 				(font
@@ -6435,7 +6597,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 248.92 54.61 0)
 			(effects
 				(font
@@ -6446,6 +6608,24 @@
 		)
 		(property "Description" ""
 			(at 248.92 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 248.92 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 248.92 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6637,7 +6817,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?63233"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-siliconix/SI5442DU-T1-GE3/4142130"
 			(at 113.284 135.382 0)
 			(effects
 				(font
@@ -6648,6 +6828,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 107.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "SI5442DU-T1-GE3CT-ND"
+			(at 107.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI5442DU-T1-GE3"
 			(at 107.95 115.57 0)
 			(effects
 				(font
@@ -6711,7 +6909,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "11k 1%"
+		(property "Value" "10k 1%"
 			(at 57.15 110.744 90)
 			(effects
 				(font
@@ -6729,7 +6927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 59.69 107.95 0)
 			(effects
 				(font
@@ -6740,6 +6938,24 @@
 		)
 		(property "Description" ""
 			(at 59.69 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 59.69 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 59.69 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6798,7 +7014,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0805FT68K0/1760455"
 			(at 26.67 40.64 0)
 			(effects
 				(font
@@ -6808,6 +7024,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 26.67 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RMCF0805FT68K0CT-ND"
+			(at 26.67 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RMCF0805FT68K0"
 			(at 26.67 40.64 0)
 			(effects
 				(font
@@ -6875,6 +7109,24 @@
 			)
 		)
 		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
+			(at 57.15 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "296-1015-1-ND"
+			(at 57.15 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LM393DR"
 			(at 57.15 50.8 0)
 			(effects
 				(font
@@ -7010,7 +7262,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-923"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 33.655 104.14 0)
 			(effects
 				(font
@@ -7019,7 +7271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/bourns-inc/CD0603-B0340R/7796828"
 			(at 38.1 104.14 0)
 			(effects
 				(font
@@ -7030,6 +7282,24 @@
 		)
 		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 38.1 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "CD0603-B0340RCT-ND"
+			(at 38.1 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CD0603-B0340R"
+			(at 38.1 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7137,7 +7407,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "11k 1%"
+		(property "Value" "10k 1%"
 			(at 125.73 110.744 90)
 			(effects
 				(font
@@ -7155,7 +7425,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 128.27 107.95 0)
 			(effects
 				(font
@@ -7166,6 +7436,24 @@
 		)
 		(property "Description" ""
 			(at 128.27 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 128.27 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 128.27 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7225,7 +7513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07100KL/727544"
 			(at 261.62 54.61 0)
 			(effects
 				(font
@@ -7236,6 +7524,24 @@
 		)
 		(property "Description" ""
 			(at 261.62 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-100KCRCT-ND"
+			(at 261.62 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-07100KL"
+			(at 261.62 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7294,7 +7600,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?65164"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-siliconix/SI7617DN-T1-GE3/2441735"
 			(at 224.79 33.02 0)
 			(effects
 				(font
@@ -7305,6 +7611,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 224.79 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "SI7617DN-T1-GE3CT-ND"
+			(at 224.79 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI7617DN-T1-GE3"
 			(at 224.79 33.02 0)
 			(effects
 				(font
@@ -7447,7 +7771,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 248.92 66.04 0)
 			(effects
 				(font
@@ -7457,6 +7781,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 248.92 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 248.92 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 248.92 66.04 0)
 			(effects
 				(font
@@ -7524,6 +7866,24 @@
 			)
 		)
 		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
+			(at 57.15 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "296-1015-1-ND"
+			(at 57.15 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LM393DR"
 			(at 57.15 39.37 0)
 			(effects
 				(font
@@ -7602,7 +7962,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?63233"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-siliconix/SI5442DU-T1-GE3/4142130"
 			(at 44.704 135.382 0)
 			(effects
 				(font
@@ -7613,6 +7973,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 39.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "SI5442DU-T1-GE3CT-ND"
+			(at 39.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI5442DU-T1-GE3"
 			(at 39.37 115.57 0)
 			(effects
 				(font
@@ -7696,7 +8074,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/MMBT3904LT1G/1139813"
 			(at 214.63 49.53 0)
 			(effects
 				(font
@@ -7707,6 +8085,24 @@
 			)
 		)
 		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
+			(at 214.63 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "MMBT3904LT1GOSCT-ND"
+			(at 214.63 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MMBT3904LT1G"
 			(at 214.63 49.53 0)
 			(effects
 				(font
@@ -7917,6 +8313,24 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey_Part_Number" "ED10563-ND"
+			(at 180.34 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "OSTVN04A150"
+			(at 180.34 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a784b520-01da-48a5-a497-982663dda98f")
 		)
@@ -8104,7 +8518,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
 			(at 101.6 115.57 0)
 			(effects
 				(font
@@ -8115,6 +8529,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 101.6 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 101.6 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 101.6 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8240,7 +8672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 26.67 58.42 0)
 			(effects
 				(font
@@ -8250,6 +8682,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 26.67 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 26.67 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
 			(at 26.67 58.42 0)
 			(effects
 				(font
@@ -8309,7 +8759,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 64.77 109.22 0)
 			(effects
 				(font
@@ -8319,6 +8769,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 64.77 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 64.77 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 64.77 109.22 0)
 			(effects
 				(font
@@ -8389,6 +8857,24 @@
 			)
 		)
 		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
+			(at 87.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "296-1015-1-ND"
+			(at 87.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LM393DR"
 			(at 87.63 45.72 0)
 			(effects
 				(font
@@ -8513,7 +8999,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "27k"
+		(property "Value" "10k 1%"
 			(at 22.606 120.142 0)
 			(effects
 				(font
@@ -8531,7 +9017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 27.94 119.38 0)
 			(effects
 				(font
@@ -8541,6 +9027,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 27.94 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 27.94 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
 			(at 27.94 119.38 0)
 			(effects
 				(font
@@ -8667,7 +9171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
 			(at 128.27 91.44 0)
 			(effects
 				(font
@@ -8677,6 +9181,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "445-14428-1-ND"
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
 			(at 128.27 91.44 0)
 			(effects
 				(font
@@ -8718,7 +9240,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "27k"
+		(property "Value" "10k 1%"
 			(at 91.186 120.142 0)
 			(effects
 				(font
@@ -8736,7 +9258,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 96.52 119.38 0)
 			(effects
 				(font
@@ -8746,6 +9268,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 96.52 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 96.52 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
 			(at 96.52 119.38 0)
 			(effects
 				(font
@@ -8938,7 +9478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
 			(at 198.12 49.53 0)
 			(effects
 				(font
@@ -8949,6 +9489,24 @@
 		)
 		(property "Description" ""
 			(at 198.12 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 198.12 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 198.12 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9065,7 +9623,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-923"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 102.235 104.14 0)
 			(effects
 				(font
@@ -9074,7 +9632,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/bourns-inc/CD0603-B0340R/7796828"
 			(at 106.68 104.14 0)
 			(effects
 				(font
@@ -9085,6 +9643,24 @@
 		)
 		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 106.68 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "CD0603-B0340RCT-ND"
+			(at 106.68 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CD0603-B0340R"
+			(at 106.68 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9134,7 +9710,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-923"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 130.175 96.52 0)
 			(effects
 				(font
@@ -9143,7 +9719,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/bourns-inc/CD0603-B0340R/7796828"
 			(at 134.62 96.52 0)
 			(effects
 				(font
@@ -9154,6 +9730,24 @@
 		)
 		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 134.62 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "CD0603-B0340RCT-ND"
+			(at 134.62 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CD0603-B0340R"
+			(at 134.62 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9212,7 +9806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
 			(at 33.02 115.57 0)
 			(effects
 				(font
@@ -9223,6 +9817,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 33.02 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 33.02 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 33.02 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9480,7 +10092,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 95.25 45.72 0)
 			(effects
 				(font
@@ -9490,6 +10102,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 95.25 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 95.25 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 95.25 45.72 0)
 			(effects
 				(font

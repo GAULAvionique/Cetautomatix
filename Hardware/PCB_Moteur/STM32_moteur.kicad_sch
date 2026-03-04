@@ -6779,7 +6779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 135.89 0)
 			(effects
 				(font
@@ -6790,6 +6790,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6851,7 +6869,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 170.18 74.93 0)
 			(effects
 				(font
@@ -6862,6 +6880,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 170.18 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 170.18 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 170.18 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6926,7 +6962,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW0805100RFKEA/1175523"
 			(at 74.93 139.7 0)
 			(effects
 				(font
@@ -6944,7 +6980,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-100CCT-ND"
 			(at 74.93 139.7 90)
 			(effects
 				(font
@@ -6981,6 +7017,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 74.93 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW0805100RFKEA"
 			(at 74.93 139.7 90)
 			(effects
 				(font
@@ -7045,7 +7090,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 259.08 29.21 0)
 			(effects
 				(font
@@ -7060,6 +7105,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 259.08 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
+			(at 259.08 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7120,7 +7183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 139.7 186.69 0)
 			(effects
 				(font
@@ -7130,6 +7193,24 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 139.7 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 139.7 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
 			(at 139.7 186.69 0)
 			(effects
 				(font
@@ -7189,7 +7270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 140.97 0)
 			(effects
 				(font
@@ -7200,6 +7281,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7260,7 +7359,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "399-C0603C103K5RACTUCT-ND"
 			(at 251.46 54.61 0)
 			(effects
 				(font
@@ -7275,6 +7374,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C103K5RACTUCT-ND"
+			(at 251.46 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C103K5RACTU"
+			(at 251.46 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7404,7 +7521,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 129.54 80.01 0)
 			(effects
 				(font
@@ -7415,6 +7532,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 129.54 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 129.54 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 129.54 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7478,7 +7613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/61300611121/4846833"
 			(at 45.72 115.57 0)
 			(effects
 				(font
@@ -7488,6 +7623,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
+			(at 45.72 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "732-5319-ND"
+			(at 45.72 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "61300611121"
 			(at 45.72 115.57 0)
 			(effects
 				(font
@@ -7564,7 +7717,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 148.59 0)
 			(effects
 				(font
@@ -7575,6 +7728,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7636,7 +7807,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 143.51 0)
 			(effects
 				(font
@@ -7647,6 +7818,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7682,7 +7871,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "226e067b-ab42-4ef7-b709-b68fe7d95153")
-		(property "Reference" "XTAL1"
+		(property "Reference" "Y1"
 			(at 255.27 88.9 0)
 			(effects
 				(font
@@ -7708,7 +7897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/830050510.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/830050510/13900454?s=N4IgTCBcDaIBwGYAMSCsaCMSQF0C%2BQA"
 			(at 250.19 96.52 0)
 			(effects
 				(font
@@ -7727,6 +7916,24 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey_Part_Number" "1923-830050510CT-ND"
+			(at 250.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "830050510"
+			(at 250.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "89b3f858-6c84-4b56-bca1-8e801c1e58e2")
 		)
@@ -7736,7 +7943,7 @@
 		(instances
 			(project ""
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "XTAL1")
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -7794,6 +8001,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "497-6288-ND"
+			(at 148.59 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "STM32F103CBT6"
+			(at 148.59 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7990,7 +8215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 128.27 0)
 			(effects
 				(font
@@ -8001,6 +8226,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8131,7 +8374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 153.67 0)
 			(effects
 				(font
@@ -8142,6 +8385,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8272,7 +8533,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 130.81 0)
 			(effects
 				(font
@@ -8283,6 +8544,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8343,7 +8622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 146.05 0)
 			(effects
 				(font
@@ -8354,6 +8633,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8415,7 +8712,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 146.05 0)
 			(effects
 				(font
@@ -8426,6 +8723,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8642,7 +8957,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 123.19 0)
 			(effects
 				(font
@@ -8653,6 +8968,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8785,7 +9118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 129.54 97.79 0)
 			(effects
 				(font
@@ -8796,6 +9129,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 129.54 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 129.54 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 129.54 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8849,7 +9200,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 212.09 23.622 90)
 			(effects
 				(font
@@ -8858,7 +9209,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
 			(at 212.09 25.4 0)
 			(effects
 				(font
@@ -8873,6 +9224,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 212.09 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 212.09 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8932,7 +9301,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 133.35 0)
 			(effects
 				(font
@@ -8943,6 +9312,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9003,7 +9390,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "399-C0603C103K5RACTUCT-ND"
 			(at 265.43 54.61 0)
 			(effects
 				(font
@@ -9018,6 +9405,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0603C103K5RACTUCT-ND"
+			(at 265.43 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C103K5RACTU"
+			(at 265.43 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9076,7 +9481,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 266.7 29.21 0)
 			(effects
 				(font
@@ -9091,6 +9496,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 266.7 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
+			(at 266.7 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9150,7 +9573,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 129.54 74.93 0)
 			(effects
 				(font
@@ -9161,6 +9584,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 129.54 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 129.54 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 129.54 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9225,7 +9666,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 156.21 0)
 			(effects
 				(font
@@ -9236,6 +9677,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 161.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9369,7 +9828,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 130.81 0)
 			(effects
 				(font
@@ -9380,6 +9839,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9565,7 +10042,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 114.046 45.466 90)
 			(effects
 				(font
@@ -9583,7 +10060,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 111.76 46.99 0)
 			(effects
 				(font
@@ -9594,6 +10071,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 111.76 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 111.76 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 111.76 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9658,7 +10153,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 111.76 57.15 0)
 			(effects
 				(font
@@ -9668,6 +10163,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 111.76 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 111.76 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
 			(at 111.76 57.15 0)
 			(effects
 				(font
@@ -9734,7 +10247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 158.75 186.69 0)
 			(effects
 				(font
@@ -9744,6 +10257,24 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 158.75 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 158.75 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
 			(at 158.75 186.69 0)
 			(effects
 				(font
@@ -9801,7 +10332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/fair-rite-products-corp/2508051217Y6/8594305"
 			(at 259.08 48.26 0)
 			(effects
 				(font
@@ -9816,6 +10347,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "1934-1472-1-ND"
+			(at 259.08 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2508051217Y6"
+			(at 259.08 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9874,7 +10423,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 140.97 0)
 			(effects
 				(font
@@ -9885,6 +10434,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9946,7 +10513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 148.59 0)
 			(effects
 				(font
@@ -9957,6 +10524,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10017,7 +10602,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 274.32 29.21 0)
 			(effects
 				(font
@@ -10032,6 +10617,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 274.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
+			(at 274.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10090,7 +10693,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 138.43 0)
 			(effects
 				(font
@@ -10101,6 +10704,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10300,7 +10921,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 151.13 0)
 			(effects
 				(font
@@ -10311,6 +10932,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10373,7 +11012,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 158.75 191.77 0)
 			(effects
 				(font
@@ -10383,6 +11022,24 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 158.75 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 158.75 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
 			(at 158.75 191.77 0)
 			(effects
 				(font
@@ -10441,7 +11098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 143.51 0)
 			(effects
 				(font
@@ -10452,6 +11109,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10513,7 +11188,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 138.43 0)
 			(effects
 				(font
@@ -10524,6 +11199,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10585,7 +11278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 170.18 72.39 0)
 			(effects
 				(font
@@ -10596,6 +11289,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 170.18 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 170.18 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 170.18 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10660,7 +11371,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 170.18 77.47 0)
 			(effects
 				(font
@@ -10671,6 +11382,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 170.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 170.18 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 170.18 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10734,7 +11463,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 125.73 0)
 			(effects
 				(font
@@ -10745,6 +11474,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10878,7 +11625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 129.54 85.09 0)
 			(effects
 				(font
@@ -10889,6 +11636,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 129.54 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 129.54 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 129.54 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10952,7 +11717,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 201.93 25.4 0)
 			(effects
 				(font
@@ -10967,6 +11732,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 201.93 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 201.93 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11098,7 +11881,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 170.18 80.01 0)
 			(effects
 				(font
@@ -11109,6 +11892,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 170.18 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 170.18 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 170.18 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11147,7 +11948,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9bce1548-0a88-4612-aba6-a87cb94e7a15")
-		(property "Reference" "LED2"
+		(property "Reference" "D8"
 			(at 53.34 132.08 0)
 			(effects
 				(font
@@ -11173,7 +11974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2011-0354/LTST-E682KRKGWT.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/liteon/LTST-E682KRKGWT/3198737"
 			(at 66.04 334.62 0)
 			(effects
 				(font
@@ -11242,6 +12043,15 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey_Part_Number" "160-2215-1-ND"
+			(at 36.83 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "be4065ff-bf18-487c-9600-b578765090b0")
 		)
@@ -11257,7 +12067,7 @@
 		(instances
 			(project ""
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "LED2")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -11304,7 +12114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 243.84 29.21 0)
 			(effects
 				(font
@@ -11319,6 +12129,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 243.84 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
+			(at 243.84 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11378,7 +12206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 153.67 0)
 			(effects
 				(font
@@ -11389,6 +12217,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11449,7 +12295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
 			(at 243.84 54.61 0)
 			(effects
 				(font
@@ -11464,6 +12310,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 243.84 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
+			(at 243.84 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11597,7 +12461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 139.7 191.77 0)
 			(effects
 				(font
@@ -11607,6 +12471,24 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 139.7 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 139.7 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
 			(at 139.7 191.77 0)
 			(effects
 				(font
@@ -11666,7 +12548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 129.54 82.55 0)
 			(effects
 				(font
@@ -11677,6 +12559,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 129.54 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 129.54 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 129.54 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11740,7 +12640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 135.89 0)
 			(effects
 				(font
@@ -11751,6 +12651,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11811,7 +12729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 156.21 0)
 			(effects
 				(font
@@ -11822,6 +12740,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 161.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11949,7 +12885,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 125.73 0)
 			(effects
 				(font
@@ -11960,6 +12896,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12093,7 +13047,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 238.76 128.27 0)
 			(effects
 				(font
@@ -12104,6 +13058,24 @@
 		)
 		(property "Description" "test point"
 			(at 238.76 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 238.76 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 238.76 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12164,7 +13136,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 123.19 0)
 			(effects
 				(font
@@ -12175,6 +13147,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12235,7 +13225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 133.35 0)
 			(effects
 				(font
@@ -12246,6 +13236,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12307,7 +13315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW0805100RFKEA/1175523"
 			(at 31.75 142.24 0)
 			(effects
 				(font
@@ -12325,7 +13333,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-100CCT-ND"
 			(at 31.75 142.24 90)
 			(effects
 				(font
@@ -12362,6 +13370,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 31.75 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW0805100RFKEA"
 			(at 31.75 142.24 90)
 			(effects
 				(font
@@ -12568,7 +13585,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
 			(at 251.46 29.21 0)
 			(effects
 				(font
@@ -12583,6 +13600,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 251.46 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
+			(at 251.46 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12642,7 +13677,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
 			(at 129.54 102.87 0)
 			(effects
 				(font
@@ -12653,6 +13688,24 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "RHM22DCT-ND"
+			(at 129.54 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
+			(at 129.54 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12717,7 +13770,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-0710RL/727534"
 			(at 266.7 91.44 0)
 			(effects
 				(font
@@ -12734,7 +13787,7 @@
 				)
 			)
 		)
-		(property "DigiKey_Part_Number" "311-10.0KHRCT-ND"
+		(property "DigiKey_Part_Number" "311-10.0CRCT-ND"
 			(at 266.7 91.44 0)
 			(effects
 				(font
@@ -12743,7 +13796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0603FR-0710KL"
+		(property "Manufacturer_Part_Number" "RC0805FR-0710RL"
 			(at 266.7 91.44 0)
 			(effects
 				(font
@@ -12942,7 +13995,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 220.218 31.496 0)
 			(effects
 				(font
@@ -12951,7 +14004,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 220.218 30.48 90)
 			(effects
 				(font
@@ -12960,7 +14013,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 218.44 30.48 0)
 			(effects
 				(font
@@ -12975,6 +14028,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 218.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 218.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13103,7 +14174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "-"
 			(at 257.81 151.13 0)
 			(effects
 				(font
@@ -13114,6 +14185,24 @@
 		)
 		(property "Description" "test point"
 			(at 257.81 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 257.81 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 257.81 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
