@@ -59,8 +59,6 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define Pressure_Sleep_Pin GPIO_PIN_14
-#define Pressure_Sleep_GPIO_Port GPIOC
 #define LCell_Sleep_Pin GPIO_PIN_15
 #define LCell_Sleep_GPIO_Port GPIOC
 #define OSC_IN_Pin GPIO_PIN_0
