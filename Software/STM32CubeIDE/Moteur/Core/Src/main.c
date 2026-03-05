@@ -191,7 +191,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.DiscontinuousConvMode = DISABLE;
   hadc1.Init.ExternalTrigConv = ADC_EXTERNALTRIGCONV_T3_TRGO;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  hadc1.Init.NbrOfConversion = 5;
+  hadc1.Init.NbrOfConversion = 6;
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
   {
     Error_Handler();
@@ -238,6 +238,15 @@ static void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_7;
   sConfig.Rank = ADC_REGULAR_RANK_5;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_8;
+  sConfig.Rank = ADC_REGULAR_RANK_6;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -501,8 +510,8 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOC, Pressure_Sleep_Pin|LCell_Sleep_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, Fire_1_Pin|Fire_2_Pin|Pyros_Arm_Pin|CriticalLED_G_Pin
-                          |CriticalLED_R_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, Fire_1_Pin|Fire_2_Pin|Pyros_Arm_Pin|CriticalLED_R_Pin
+                          |CriticalLED_G_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : Pressure_Sleep_Pin LCell_Sleep_Pin */
   GPIO_InitStruct.Pin = Pressure_Sleep_Pin|LCell_Sleep_Pin;
@@ -511,10 +520,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : Fire_1_Pin Fire_2_Pin Pyros_Arm_Pin CriticalLED_G_Pin
-                           CriticalLED_R_Pin */
-  GPIO_InitStruct.Pin = Fire_1_Pin|Fire_2_Pin|Pyros_Arm_Pin|CriticalLED_G_Pin
-                          |CriticalLED_R_Pin;
+  /*Configure GPIO pins : Fire_1_Pin Fire_2_Pin Pyros_Arm_Pin CriticalLED_R_Pin
+                           CriticalLED_G_Pin */
+  GPIO_InitStruct.Pin = Fire_1_Pin|Fire_2_Pin|Pyros_Arm_Pin|CriticalLED_R_Pin
+                          |CriticalLED_G_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

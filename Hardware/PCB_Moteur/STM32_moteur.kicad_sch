@@ -3559,8 +3559,8 @@
 		(uuid "c0998ed3-1af4-4886-9661-7471c88314cc")
 	)
 	(no_connect
-		(at 133.35 95.25)
-		(uuid "c0b13484-f5f7-4477-aa8e-2d5d6e3030d0")
+		(at 133.35 107.95)
+		(uuid "ecc0cdf3-3ece-4893-ac04-857ef70dcabf")
 	)
 	(wire
 		(pts
@@ -3704,6 +3704,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 105.41) (xy 133.35 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "189bec6e-48ae-4683-a277-78b7310b30f0")
+	)
+	(wire
+		(pts
 			(xy 257.81 143.51) (xy 260.35 143.51)
 		)
 		(stroke
@@ -3741,16 +3751,6 @@
 			(type default)
 		)
 		(uuid "1dc5ce90-3743-44a8-9f3f-393568d0c9ff")
-	)
-	(wire
-		(pts
-			(xy 125.73 97.79) (xy 127 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fabf4c7-aaae-49d9-ab35-d0fed0e29b33")
 	)
 	(wire
 		(pts
@@ -3824,16 +3824,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 80.01) (xy 133.35 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26d02dc3-6ecb-4dd2-8a71-5a8c310769f2")
-	)
-	(wire
-		(pts
 			(xy 166.37 87.63) (xy 173.99 87.63)
 		)
 		(stroke
@@ -3884,6 +3874,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 69.85) (xy 173.99 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33377d8f-5fe4-4ed0-83cf-cf39b2523fdb")
+	)
+	(wire
+		(pts
 			(xy 125.73 113.03) (xy 133.35 113.03)
 		)
 		(stroke
@@ -3931,6 +3931,16 @@
 			(type default)
 		)
 		(uuid "393d5ccf-7e59-4ce9-8762-3224fdde1234")
+	)
+	(wire
+		(pts
+			(xy 125.73 97.79) (xy 133.35 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "396a35e0-3a08-42cf-b381-74ba8fe2a529")
 	)
 	(wire
 		(pts
@@ -4094,16 +4104,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 85.09) (xy 133.35 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49bacfed-f589-49eb-9d33-c9d2e7f848af")
-	)
-	(wire
-		(pts
 			(xy 166.37 90.17) (xy 173.99 90.17)
 		)
 		(stroke
@@ -4181,6 +4181,16 @@
 			(type default)
 		)
 		(uuid "5af37551-3a92-482f-b207-01e4f055933e")
+	)
+	(wire
+		(pts
+			(xy 125.73 80.01) (xy 133.35 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b6a19a5-c375-446b-8571-bf571635cd35")
 	)
 	(wire
 		(pts
@@ -4324,7 +4334,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 85.09) (xy 127 85.09)
+			(xy 125.73 105.41) (xy 127 105.41)
 		)
 		(stroke
 			(width 0)
@@ -4404,7 +4414,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 80.01) (xy 127 80.01)
+			(xy 125.73 82.55) (xy 127 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4434,7 +4444,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 82.55) (xy 127 82.55)
+			(xy 125.73 85.09) (xy 127 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4451,16 +4461,6 @@
 			(type default)
 		)
 		(uuid "88dcdd98-09d6-4700-9b96-e0b0166d3b43")
-	)
-	(wire
-		(pts
-			(xy 132.08 97.79) (xy 133.35 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c372110-8b30-4352-b14f-45ec1e313046")
 	)
 	(wire
 		(pts
@@ -4554,6 +4554,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 85.09) (xy 133.35 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99dff921-ee28-4bd6-b701-8687a426f97f")
+	)
+	(wire
+		(pts
 			(xy 148.59 44.45) (xy 148.59 46.99)
 		)
 		(stroke
@@ -4571,16 +4581,6 @@
 			(type default)
 		)
 		(uuid "9fc9b711-c0bd-4cc2-8fc4-a3cc9755cb31")
-	)
-	(wire
-		(pts
-			(xy 132.08 82.55) (xy 133.35 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a05ec7be-d8f4-4ae7-9995-9797c0e1ba96")
 	)
 	(wire
 		(pts
@@ -4641,16 +4641,6 @@
 			(type default)
 		)
 		(uuid "b30b32fd-043a-466d-be93-cfccc5277753")
-	)
-	(wire
-		(pts
-			(xy 125.73 107.95) (xy 133.35 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b43e050d-827f-44df-b9d4-9ec4fb296e14")
 	)
 	(wire
 		(pts
@@ -4784,16 +4774,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 69.85) (xy 173.99 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb838224-6431-47c4-8f77-f997e6a0fa7a")
-	)
-	(wire
-		(pts
 			(xy 238.76 140.97) (xy 236.22 140.97)
 		)
 		(stroke
@@ -4801,16 +4781,6 @@
 			(type default)
 		)
 		(uuid "cdb2a4f3-227c-4f5a-b7ac-57093fe80a02")
-	)
-	(wire
-		(pts
-			(xy 125.73 105.41) (xy 133.35 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d23c515b-945f-425a-acbf-28e9bc655117")
 	)
 	(wire
 		(pts
@@ -5044,6 +5014,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 95.25) (xy 133.35 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f105915c-a99e-4652-94df-ce20b2e26162")
+	)
+	(wire
+		(pts
 			(xy 196.85 25.4) (xy 196.85 24.13)
 		)
 		(stroke
@@ -5111,6 +5091,16 @@
 			(type default)
 		)
 		(uuid "fbf6e4c3-1d19-4560-84d7-bb74ab1fcb94")
+	)
+	(wire
+		(pts
+			(xy 132.08 82.55) (xy 133.35 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcf7c8f9-b6cd-4ade-9de4-b48e8d83cfea")
 	)
 	(wire
 		(pts
@@ -5264,9 +5254,31 @@
 			)
 		)
 	)
+	(global_label "Vswagelok_An"
+		(shape input)
+		(at 173.99 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "22abb49e-d88d-4f0d-9e0f-2b3aa677325f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.8565 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "CriticalLED_R"
 		(shape input)
-		(at 125.73 107.95 180)
+		(at 125.73 95.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5276,7 +5288,7 @@
 		)
 		(uuid "26e0639f-58c8-4ef9-bd7d-a39601f83db0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.1658 107.95 0)
+			(at 110.1658 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5399,7 +5411,7 @@
 	)
 	(global_label "CriticalLED_G"
 		(shape input)
-		(at 125.73 105.41 180)
+		(at 125.73 97.79 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5409,7 +5421,7 @@
 		)
 		(uuid "36fdc10a-41d2-4bee-810d-60d349898a43")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.1658 105.41 0)
+			(at 110.1658 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5665,22 +5677,22 @@
 	)
 	(global_label "3V3_An"
 		(shape input)
-		(at 173.99 69.85 0)
+		(at 125.73 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "504abb32-a015-4b9f-a1f9-45ffd17374f6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.688 69.85 0)
+			(at 116.032 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5863,7 +5875,7 @@
 	)
 	(global_label "Pyros_Arm"
 		(shape input)
-		(at 125.73 85.09 180)
+		(at 125.73 105.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5873,7 +5885,7 @@
 		)
 		(uuid "6de2aa99-2976-429d-8f62-b42be76fe72a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.0082 85.09 0)
+			(at 113.0082 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6084,7 +6096,7 @@
 	)
 	(global_label "Fire_2"
 		(shape input)
-		(at 125.73 82.55 180)
+		(at 125.73 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6094,7 +6106,7 @@
 		)
 		(uuid "84f5a78c-bf3c-42a5-b14e-f8d3c98e6153")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 116.9995 82.55 0)
+			(at 116.9995 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6349,7 +6361,7 @@
 	)
 	(global_label "Fire_1"
 		(shape input)
-		(at 125.73 80.01 180)
+		(at 125.73 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6359,7 +6371,7 @@
 		)
 		(uuid "ba7381ee-0508-4aee-abf3-e71e55fe97c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 116.9995 80.01 0)
+			(at 116.9995 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6416,7 +6428,6 @@
 	(global_label "ISO_CAN_RXD"
 		(shape input)
 		(at 125.73 100.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6425,7 +6436,7 @@
 		)
 		(uuid "d77ef21e-aa84-4d0d-b9c5-3e28a388e46f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.2262 100.33 0)
+			(at 87.3662 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6514,28 +6525,6 @@
 		(uuid "e9824586-2439-4d10-9a3c-395b835b4652")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 110.1659 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ISO_CAN_IN"
-		(shape input)
-		(at 125.73 97.79 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ebe2fb7f-0a52-4ec8-bb45-70ed38a2d37d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.0404 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7487,7 +7476,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 129.54 80.01 90)
+		(at 129.54 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7495,7 +7484,7 @@
 		(dnp no)
 		(uuid "1ba0f085-ef6d-4c57-b6e1-e58d4e91a9a7")
 		(property "Reference" "R38"
-			(at 110.236 80.01 90)
+			(at 110.236 82.55 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -7504,7 +7493,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 106.68 80.01 90)
+			(at 106.68 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7513,7 +7502,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 129.54 80.01 0)
+			(at 129.54 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7522,7 +7511,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
-			(at 129.54 80.01 0)
+			(at 129.54 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7531,7 +7520,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 129.54 80.01 0)
+			(at 129.54 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7540,7 +7529,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "RHM22DCT-ND"
-			(at 129.54 80.01 90)
+			(at 129.54 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7549,7 +7538,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
-			(at 129.54 80.01 90)
+			(at 129.54 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9083,99 +9072,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 129.54 97.79 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "49b754d7-bf19-4afb-b9ae-5630e2a4fbee")
-		(property "Reference" "R37"
-			(at 110.236 97.79 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22R"
-			(at 106.934 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 129.54 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
-			(at 129.54 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 129.54 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "RHM22DCT-ND"
-			(at 129.54 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
-			(at 129.54 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e4a2a0fb-bf63-4beb-9672-8db8e7bc9e25")
-		)
-		(pin "2"
-			(uuid "5c7c58c7-ffdb-4ab2-a01c-16c3b54c39f4")
-		)
-		(instances
-			(project "PCB_moteur"
-				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/753d1783-c2f5-4012-bbb8-3f4eadf066f6"
-					(reference "R37")
-					(unit 1)
-				)
-			)
-			(project "STM32_moteur"
-				(path "/da6e3e70-7434-4a0f-acc5-62316b7258e2"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 212.09 25.4 270)
 		(unit 1)
@@ -10034,7 +9930,7 @@
 		(dnp no)
 		(uuid "66023b4e-3187-4a45-af99-387cd162b407")
 		(property "Reference" "R21"
-			(at 109.728 45.974 90)
+			(at 116.078 46.228 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -10043,7 +9939,7 @@
 			)
 		)
 		(property "Value" "10k 1%"
-			(at 114.046 45.466 90)
+			(at 120.142 48.006 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11591,7 +11487,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 129.54 85.09 90)
+		(at 129.54 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11599,7 +11495,7 @@
 		(dnp no)
 		(uuid "97034fad-4d25-444d-9b19-ffd9deb9c426")
 		(property "Reference" "R34"
-			(at 109.728 85.09 90)
+			(at 109.728 105.41 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -11608,7 +11504,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 106.426 85.09 90)
+			(at 106.426 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11617,7 +11513,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 129.54 85.09 0)
+			(at 129.54 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11626,7 +11522,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
-			(at 129.54 85.09 0)
+			(at 129.54 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11635,7 +11531,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 129.54 85.09 0)
+			(at 129.54 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11644,7 +11540,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "RHM22DCT-ND"
-			(at 129.54 85.09 90)
+			(at 129.54 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11653,7 +11549,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
-			(at 129.54 85.09 90)
+			(at 129.54 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12514,7 +12410,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 129.54 82.55 90)
+		(at 129.54 85.09 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12522,7 +12418,7 @@
 		(dnp no)
 		(uuid "b3a65987-f659-48f2-9c04-3fbb23192715")
 		(property "Reference" "R36"
-			(at 109.982 82.55 90)
+			(at 109.982 85.09 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -12531,7 +12427,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 106.68 82.55 90)
+			(at 106.68 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12540,7 +12436,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 129.54 82.55 0)
+			(at 129.54 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12549,7 +12445,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rohm-semiconductor/ESR03EZPJ220/1983463"
-			(at 129.54 82.55 0)
+			(at 129.54 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12558,7 +12454,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 129.54 82.55 0)
+			(at 129.54 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12567,7 +12463,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "RHM22DCT-ND"
-			(at 129.54 82.55 90)
+			(at 129.54 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12576,7 +12472,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ESR03EZPJ220"
-			(at 129.54 82.55 90)
+			(at 129.54 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)

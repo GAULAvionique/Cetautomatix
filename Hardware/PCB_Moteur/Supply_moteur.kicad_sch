@@ -2275,6 +2275,18 @@
 		(uuid 40d462c9-8be9-4182-8bfc-3602788288f4)
 	)
 	(rectangle
+		(start 200.66 54.61)
+		(end 284.48 95.25)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 61d6f84b-201a-4dd5-9ba0-b54f783835f2)
+	)
+	(rectangle
 		(start 13.97 57.785)
 		(end 132.715 131.445)
 		(stroke
@@ -2298,7 +2310,7 @@
 		)
 		(uuid f68cd2cb-c50c-4ae8-b9bf-5df593476da4)
 	)
-	(text "Vin_AN = Vin x 11k / (11k + 100k) <= 3.3V\n0.4955V <= Vin_AN <= 2.3784V"
+	(text "Vin_AN = Vin x 10k / (10k + 100k) <= 3.3V\n0.4545V <= Vin_AN <= 2.1818V"
 		(exclude_from_sim no)
 		(at 208.026 51.054 0)
 		(effects
@@ -2308,6 +2320,19 @@
 			(justify left)
 		)
 		(uuid "01ed16f8-fc51-4d16-8dbe-e4510e258a13")
+	)
+	(text "Vin - Swagelok\n\n"
+		(exclude_from_sim no)
+		(at 201.93 55.88 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "0f3ccd65-9bbe-4df9-b66a-661c9edeb269")
 	)
 	(text "Input 5v-38v\nFreq = 400kHz\nL = 33uH"
 		(exclude_from_sim no)
@@ -2319,6 +2344,17 @@
 			(justify left bottom)
 		)
 		(uuid "38a49f41-cfd6-400b-b7a5-6a7d961b4056")
+	)
+	(text "Vin_AN = Vin x 10k / (10k + 100k) <= 3.3V\n0.9091V <= Vin_AN <= 2.7273V"
+		(exclude_from_sim no)
+		(at 201.422 93.218 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4444988a-648e-4fea-b598-22ff66af889d")
 	)
 	(text "R = (3.3-2.1)/0.002 = 600R\nI = (3.3-2.1)/620±10% -> 1.75mA < I <= 2.15mA"
 		(exclude_from_sim no)
@@ -2369,9 +2405,9 @@
 		)
 		(uuid "b54f84f9-589d-4253-8fe8-124c2a408813")
 	)
-	(text "min 5.0V\nmax 24.0V"
+	(text "2S - LiFePO4 (5V, 7.3V)\nmin 5V\nmax 24V"
 		(exclude_from_sim no)
-		(at 208.28 19.05 0)
+		(at 208.28 18.034 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2389,6 +2425,17 @@
 			)
 		)
 		(uuid "b88a19e5-e717-4aba-8ccc-002559a48dfd")
+	)
+	(text "4S - LiFePO4 (10V, 14.6V)\nmin 10V\nmax 30V"
+		(exclude_from_sim no)
+		(at 201.93 60.198 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c3637ec9-129a-404b-886b-683c25e5eb33")
 	)
 	(text "3V3_AN = 3.3±5% x 100k / (100k + 11k) <= 3.3V\n2.8243V <= 3V3_AN <= 3.1217V"
 		(exclude_from_sim no)
@@ -2421,6 +2468,12 @@
 		(uuid "03d8764e-0d3f-41e4-8143-579953405cba")
 	)
 	(junction
+		(at 246.38 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a9ab5d2-b949-47ba-acf2-527f19ba9d0e")
+	)
+	(junction
 		(at 85.09 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2443,6 +2496,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30898e64-885f-4b9d-aca2-f6b5e950a4d2")
+	)
+	(junction
+		(at 233.68 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31b6732f-864b-46e9-8953-1008c88ca5dd")
 	)
 	(junction
 		(at 233.68 27.94)
@@ -2535,6 +2594,12 @@
 		(uuid "bd767a0a-87dd-44e8-91b2-70e884ffcad8")
 	)
 	(junction
+		(at 227.33 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e044e2fe-ecd4-46b4-bafc-5cb67e56b78c")
+	)
+	(junction
 		(at 96.52 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2595,6 +2660,16 @@
 			(type default)
 		)
 		(uuid "017ff55a-be66-44d4-8f40-9ffbdefd3fb8")
+	)
+	(wire
+		(pts
+			(xy 227.33 78.74) (xy 227.33 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "025c696d-68a6-42d0-aa36-a737be5954bc")
 	)
 	(wire
 		(pts
@@ -2765,6 +2840,16 @@
 			(type default)
 		)
 		(uuid "296a8d38-4142-4a82-b80c-9cab03e67b0d")
+	)
+	(wire
+		(pts
+			(xy 231.14 69.85) (xy 233.68 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a604501-edcd-49a4-b435-6176a727d854")
 	)
 	(wire
 		(pts
@@ -2958,6 +3043,26 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 85.09) (xy 227.33 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55a37756-46be-4d9c-a8cd-1a06f1ba1caf")
+	)
+	(wire
+		(pts
+			(xy 265.43 72.39) (xy 266.7 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5631775b-ca0d-4610-b037-8befed348539")
+	)
+	(wire
+		(pts
 			(xy 96.52 81.28) (xy 99.06 81.28)
 		)
 		(stroke
@@ -2975,6 +3080,16 @@
 			(type default)
 		)
 		(uuid "5be6d747-ec87-4890-a8a7-1f798631ee89")
+	)
+	(wire
+		(pts
+			(xy 223.52 69.85) (xy 220.98 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d1926d0-7cf8-4186-8cb5-a303ff9854ab")
 	)
 	(wire
 		(pts
@@ -3068,6 +3183,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 69.85) (xy 220.98 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dc3d5e7-38f1-4d8b-a699-d5ea3a4700be")
+	)
+	(wire
+		(pts
 			(xy 220.98 27.94) (xy 220.98 30.48)
 		)
 		(stroke
@@ -3088,6 +3213,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 77.47) (xy 233.68 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72774bb3-d8f3-48ae-afc7-118d677c2c57")
+	)
+	(wire
+		(pts
 			(xy 227.33 35.56) (xy 233.68 35.56)
 		)
 		(stroke
@@ -3095,6 +3230,26 @@
 			(type default)
 		)
 		(uuid "744852e6-7f06-4e0f-991e-738055970458")
+	)
+	(wire
+		(pts
+			(xy 233.68 69.85) (xy 236.22 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76414259-6884-4743-a2af-0fdb72caf738")
+	)
+	(wire
+		(pts
+			(xy 246.38 66.04) (xy 246.38 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "797e6c53-4610-45ce-bb6c-0b1a255a315d")
 	)
 	(wire
 		(pts
@@ -3158,6 +3313,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 72.39) (xy 265.43 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f78b265-b594-4958-a91d-5277c252b2d7")
+	)
+	(wire
+		(pts
 			(xy 118.11 81.28) (xy 118.11 86.36)
 		)
 		(stroke
@@ -3165,6 +3330,16 @@
 			(type default)
 		)
 		(uuid "92761744-9fc2-4a8a-a3ab-96af606ceabc")
+	)
+	(wire
+		(pts
+			(xy 243.84 69.85) (xy 246.38 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95aba90c-45cc-4f73-8506-25561c721bc1")
 	)
 	(wire
 		(pts
@@ -3288,6 +3463,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 69.85) (xy 255.27 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5debb64-2e99-4831-a131-a3fa1c403caa")
+	)
+	(wire
+		(pts
 			(xy 227.33 43.18) (xy 227.33 41.91)
 		)
 		(stroke
@@ -3318,6 +3503,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 77.47) (xy 233.68 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cce373b6-6737-4ddb-9d30-57bcfc7b44d7")
+	)
+	(wire
+		(pts
 			(xy 71.12 109.22) (xy 71.12 110.49)
 		)
 		(stroke
@@ -3335,6 +3530,16 @@
 			(type default)
 		)
 		(uuid "ceb0f8ae-d185-4ccb-b7ed-d11ecf7266a8")
+	)
+	(wire
+		(pts
+			(xy 262.89 69.85) (xy 266.7 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cec465ba-03ba-433b-aa54-0db37705ca14")
 	)
 	(wire
 		(pts
@@ -3508,6 +3713,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 77.47) (xy 227.33 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9850937-e836-42ff-80fd-af55a6dd48e4")
+	)
+	(wire
+		(pts
 			(xy 31.75 76.2) (xy 33.02 76.2)
 		)
 		(stroke
@@ -3608,6 +3823,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Vswagelok_An"
+		(shape input)
+		(at 218.44 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1fb5d06a-3ff6-4337-b261-9d6d4662b94b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 202.5735 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3785,6 +4022,73 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.98 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02608aea-1732-4d12-afe6-9916472a5863")
+		(property "Reference" "#PWR039"
+			(at 220.98 78.74 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 220.98 77.47 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 72.39 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 72.39 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11394995-a74b-4708-8498-20218301d42b")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -4925,6 +5229,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 227.33 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ce5d257-be10-41dc-ad88-14f9a5f444ea")
+		(property "Reference" "#PWR050"
+			(at 227.33 91.44 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 227.33 90.17 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 85.09 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 85.09 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 227.33 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e1c79c5-1735-48ac-bf1c-bf1e343074e6")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDD")
 		(at 92.71 92.71 0)
 		(unit 1)
@@ -5188,6 +5559,161 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
 					(reference "#PWR0124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 265.43 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "590ba5b7-2be5-4e70-a418-6696f21b367f")
+		(property "Reference" "#PWR069"
+			(at 265.43 81.28 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 265.43 80.01 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 74.93 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 74.93 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 265.43 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc5788bc-6a63-45f4-86a9-5a41b4beede1")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 227.33 69.85 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c5a6624-b5d6-49f0-a4bc-84e8cb386bf5")
+		(property "Reference" "R63"
+			(at 228.346 67.564 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k 1%"
+			(at 230.124 72.39 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 227.33 71.628 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
+			(at 227.33 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 227.33 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+			(at 227.33 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+			(at 227.33 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "648e3eb8-6b1e-4b62-99a4-a8ebdbf90e7b")
+		)
+		(pin "2"
+			(uuid "0b2abe41-117f-430a-996c-e1afbc3e277a")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "R63")
 					(unit 1)
 				)
 			)
@@ -5552,6 +6078,223 @@
 	)
 	(symbol
 		(lib_id "pcb_moteur:XT30PW-F")
+		(at 271.78 69.85 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8268bbaf-af35-456b-9e5d-11374fe040fb")
+		(property "Reference" "J19"
+			(at 275.59 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XT30PW-F"
+			(at 275.59 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pcb_moteur:XT30PW-F"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "-"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "amass"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "5 mm"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/XT30PW-F/AMASS/view-part/?ref=eda"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1.2"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/XT30PW-F/AMASS/view-part/?ref=snap"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "XT30PW-F"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Socket; DC supply; XT30; female; PIN: 2; on PCBs; THT; yellow; 15A"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Amass"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" "XT30PW-F"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "-"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "-"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "P"
+			(uuid "7a618ed4-8deb-42b5-9459-a5d8fd0c0daf")
+		)
+		(pin "N"
+			(uuid "4d638603-5aa2-4b99-94a5-e6cd18c92a0d")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "J19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pcb_moteur:XT30PW-F")
 		(at 271.78 27.94 0)
 		(mirror y)
 		(unit 1)
@@ -5762,6 +6505,94 @@
 			(project ""
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 240.03 69.85 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90d4f397-3838-4554-bdd9-f95a13fed988")
+		(property "Reference" "R64"
+			(at 241.046 67.818 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k 1%"
+			(at 242.824 72.39 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 240.03 71.628 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07100KL/727544"
+			(at 240.03 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 240.03 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-100KCRCT-ND"
+			(at 240.03 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-07100KL"
+			(at 240.03 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69f45d39-4f46-4e81-bb32-7acaa126a0c2")
+		)
+		(pin "2"
+			(uuid "46d7c598-db43-486d-b177-6d505caa34d2")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "R64")
 					(unit 1)
 				)
 			)
@@ -7375,6 +8206,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 259.08 69.85 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f1d073fa-4bf9-412b-bde6-226a59247a11")
+		(property "Reference" "F2"
+			(at 257.81 65.278 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2920L700/24SLER"
+			(at 250.444 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_2920_7451Metric"
+			(at 264.16 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resettable fuse"
+			(at 259.08 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "25bbbc14-cfe8-4a79-9512-c155c388f1c6")
+		)
+		(pin "1"
+			(uuid "47d03d79-8968-4468-bad6-f7c02e2c45bd")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 246.38 24.13 0)
 		(unit 1)
@@ -7434,6 +8336,158 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
 					(reference "#PWR0127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 227.33 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f9e7f221-7e03-4f2e-ab64-d4041dd31bdb")
+		(property "Reference" "C56"
+			(at 227.584 79.502 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 227.584 83.058 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 227.33 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
+			(at 227.33 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 227.33 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
+			(at 227.33 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
+			(at 227.33 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "404aa9e3-0f71-4cec-bdca-99585234065c")
+		)
+		(pin "2"
+			(uuid "c7289df3-57ff-4dfe-a8a9-776fdadcc952")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "C56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 246.38 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa139501-4fb6-4741-8266-72aa81a8f49e")
+		(property "Reference" "#PWR068"
+			(at 246.38 69.85 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Vswagelok"
+			(at 246.38 62.23 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 66.04 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 66.04 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27cd92d9-112e-40c5-940d-1edacbc689b3")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)

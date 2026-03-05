@@ -2359,6 +2359,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 48.26) (xy 48.26 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "103f172e-bc4b-4d8d-a260-1c28600b063e")
+	)
+	(wire
+		(pts
 			(xy 114.3 133.35) (xy 114.3 124.46)
 		)
 		(stroke
@@ -3574,7 +3584,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 33.02 39.37 270)
+		(at 48.26 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3583,7 +3593,7 @@
 		(fields_autoplaced yes)
 		(uuid "2015c0ec-35a7-479a-8e32-03f0239e7737")
 		(property "Reference" "#PWR011"
-			(at 26.67 39.37 0)
+			(at 48.26 55.88 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3592,7 +3602,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 27.94 39.37 0)
+			(at 48.26 54.61 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3601,7 +3611,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 39.37 0)
+			(at 48.26 49.53 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3610,7 +3620,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 39.37 0)
+			(at 48.26 49.53 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3619,7 +3629,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 33.02 39.37 0)
+			(at 48.26 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
