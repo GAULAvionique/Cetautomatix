@@ -7026,7 +7026,7 @@
 			)
 		)
 	)
-	(global_label "I2C2_SDA"
+	(global_label "12V_I2C2_SDA"
 		(shape input)
 		(at 69.85 96.52 180)
 		(fields_autoplaced yes)
@@ -7038,7 +7038,7 @@
 		)
 		(uuid "66de4f80-4ec1-432e-a8d1-37c7bebb4f7c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.0353 96.52 0)
+			(at 53.5601 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7048,7 +7048,7 @@
 			)
 		)
 	)
-	(global_label "I2C2_SCL"
+	(global_label "12V_I2C2_SCL"
 		(shape input)
 		(at 69.85 99.06 180)
 		(fields_autoplaced yes)
@@ -7060,7 +7060,7 @@
 		)
 		(uuid "7390016f-3c3a-4177-a4ba-1ad4ec6ed81e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.0958 99.06 0)
+			(at 53.6206 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)

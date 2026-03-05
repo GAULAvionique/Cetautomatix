@@ -17,7 +17,6 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 /* USER CODE BEGIN Includes */
@@ -58,7 +57,9 @@ extern DMA_HandleTypeDef hdma_adc1;
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
-/**
+
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+                    /**
   * Initializes the Global MSP.
   */
 void HAL_MspInit(void)
@@ -107,7 +108,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
     PA7     ------> ADC1_IN7
     PB1     ------> ADC1_IN9
     */
-    GPIO_InitStruct.Pin = Vin_An_Pin|V12_An_Pin|V5_An_Pin;
+    GPIO_InitStruct.Pin = Temp_An_Pin|Power_Good_12V_Pin|V12_An_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
@@ -153,7 +154,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
     PA1     ------> ADC2_IN1
     PA2     ------> ADC2_IN2
     */
-    GPIO_InitStruct.Pin = Pressure_An_Pin|LCell_An_Pin|Temp_An_Pin;
+    GPIO_InitStruct.Pin = LCell_An_Pin|Pressure_An_Pin|Vin_An_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
@@ -189,7 +190,7 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
     PA7     ------> ADC1_IN7
     PB1     ------> ADC1_IN9
     */
-    HAL_GPIO_DeInit(GPIOA, Vin_An_Pin|V12_An_Pin|V5_An_Pin);
+    HAL_GPIO_DeInit(GPIOA, Temp_An_Pin|Power_Good_12V_Pin|V12_An_Pin);
 
     HAL_GPIO_DeInit(V3_An_GPIO_Port, V3_An_Pin);
 
@@ -222,7 +223,7 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
     PA1     ------> ADC2_IN1
     PA2     ------> ADC2_IN2
     */
-    HAL_GPIO_DeInit(GPIOA, Pressure_An_Pin|LCell_An_Pin|Temp_An_Pin);
+    HAL_GPIO_DeInit(GPIOA, LCell_An_Pin|Pressure_An_Pin|Vin_An_Pin);
 
     /* ADC2 interrupt DeInit */
     /* USER CODE BEGIN ADC2:ADC1_2_IRQn disable */
@@ -445,6 +446,30 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* htim_base)
 
 }
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef* htim)
+{
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+  if(htim->Instance==TIM1)
+  {
+    /* USER CODE BEGIN TIM1_MspPostInit 0 */
+
+    /* USER CODE END TIM1_MspPostInit 0 */
+
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    /**TIM1 GPIO Configuration
+    PA11     ------> TIM1_CH4
+    */
+    GPIO_InitStruct.Pin = Servo3_PWM_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(Servo3_PWM_GPIO_Port, &GPIO_InitStruct);
+
+    /* USER CODE BEGIN TIM1_MspPostInit 1 */
+
+    /* USER CODE END TIM1_MspPostInit 1 */
+  }
+
+}
 /**
   * @brief TIM_Base MSP De-Initialization
   * This function freeze the hardware resources used in this example

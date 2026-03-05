@@ -423,6 +423,8 @@ static void MX_TIM1_Init(void)
 
   TIM_ClockConfigTypeDef sClockSourceConfig = {0};
   TIM_MasterConfigTypeDef sMasterConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
+  TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
 
   /* USER CODE BEGIN TIM1_Init 1 */
 
@@ -443,15 +445,41 @@ static void MX_TIM1_Init(void)
   {
     Error_Handler();
   }
+  if (HAL_TIM_PWM_Init(&htim1) != HAL_OK)
+  {
+    Error_Handler();
+  }
   sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
   if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
   {
     Error_Handler();
   }
+  sConfigOC.OCMode = TIM_OCMODE_PWM1;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
+  sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_4) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
+  sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
+  sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
+  sBreakDeadTimeConfig.DeadTime = 0;
+  sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
+  sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
+  sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
+  if (HAL_TIMEx_ConfigBreakDeadTime(&htim1, &sBreakDeadTimeConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
   /* USER CODE BEGIN TIM1_Init 2 */
 
   /* USER CODE END TIM1_Init 2 */
+  HAL_TIM_MspPostInit(&htim1);
 
 }
 
@@ -523,32 +551,32 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, Pressure_Sleep_Pin|LCell_Sleep_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LCell_Sleep_GPIO_Port, LCell_Sleep_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, CriticalLED_R_Pin|CriticalLED_G_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, Valve3_Open_Pin|Valve2_Open_Pin|Valve1_Open_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, Valve1_Open_Pin|Valve2_Open_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : Pressure_Sleep_Pin LCell_Sleep_Pin */
-  GPIO_InitStruct.Pin = Pressure_Sleep_Pin|LCell_Sleep_Pin;
+  /*Configure GPIO pin : LCell_Sleep_Pin */
+  GPIO_InitStruct.Pin = LCell_Sleep_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : Power_Good_12V_Pin */
-  GPIO_InitStruct.Pin = Power_Good_12V_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(Power_Good_12V_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(LCell_Sleep_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : Power_Good_5V_Pin */
   GPIO_InitStruct.Pin = Power_Good_5V_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(Power_Good_5V_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : V5_An_Pin */
+  GPIO_InitStruct.Pin = V5_An_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(V5_An_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : CriticalLED_R_Pin CriticalLED_G_Pin */
   GPIO_InitStruct.Pin = CriticalLED_R_Pin|CriticalLED_G_Pin;
@@ -557,8 +585,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : Valve3_Open_Pin Valve2_Open_Pin Valve1_Open_Pin */
-  GPIO_InitStruct.Pin = Valve3_Open_Pin|Valve2_Open_Pin|Valve1_Open_Pin;
+  /*Configure GPIO pins : Valve1_Open_Pin Valve2_Open_Pin */
+  GPIO_InitStruct.Pin = Valve1_Open_Pin|Valve2_Open_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
