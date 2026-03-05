@@ -1,26 +1,31 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2026 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.c
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2026 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+// ajout des fihcier de configuration TAG-CAN
+#include "../Inc/tag_can_system/config_value.h"
+#include "../Inc/tag_can_system/gestion_tag.h"
+#include "../Inc/tag_can_system/sub_include/data_container.h"
+#include "../Inc/tag_can_system/sub_include/tag_manager.h"
 
 /* USER CODE END Includes */
 
@@ -56,6 +61,15 @@ UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 
+// Header CAN (les info send/receave)
+CAN_TxHeaderTypeDef TxHeader_GSE;
+CAN_RxHeaderTypeDef RxHeader_GSE;
+int datacheck = 0;
+// conteneur de donnée (les 8 bytes de payload)
+extern uint8_t TxData[8]; // juste par principe, pour qu'on voi bien qu'il est déclarer.
+
+uint8_t RxData[8];
+uint32_t TxMailbox;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -70,7 +84,7 @@ static void MX_ADC1_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_I2C2_Init(void);
 /* USER CODE BEGIN PFP */
-
+//void CANTagInit(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -86,7 +100,6 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -117,16 +130,28 @@ int main(void)
   MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
 
+	// INIT DES DIFFÉRENT SYSTÈME CAN
+	CAN_TxInitHeader(&TxHeader_GSE);
+	if (HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING) != HAL_OK)
+	{
+		Error_Handler();    // Erreur lors de la réception du msg.
+	}
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+	while (1) {
+		/*RÉCEPTION CAN*/
+		/*ENABLE THE 'CAN_IT_RX_FIFO0_MSG_PENDING' INTERRUPT. (qui s'active quand un nouveau message est dans RXFIFO0)*/
+
+		if(datacheck == 1){
+			datacheck = 0;
+			// si jamais il y a besoins que l'update soit signaler.
+		}
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+	}
   /* USER CODE END 3 */
 }
 
@@ -344,6 +369,17 @@ static void MX_CAN_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN CAN_Init 2 */
+	// AutoRetransmission = ENABLE; pourrais être une bonne idée côté GSE.
+	// comme il est préférable d'être certain que la commande soit passé.
+	/*## Configuration du filter (s'il y a) ici.*/
+
+	//start du CAN
+	if (HAL_CAN_Start(&hcan) != HAL_OK) {
+		/*start error*/
+		Error_Handler();
+	}
+
+	// Activation des notification
 
   /* USER CODE END CAN_Init 2 */
 
@@ -571,6 +607,45 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan_)
+{
+	if(HAL_CAN_GetRxMessage(hcan_, CAN_RX_FIFO0, &RxHeader_GSE, TagData) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	// comme un seul appareille sur la ligne, peux être juste évité de loop avec ça
+	if(RxHeader_GSE.StdId != 0x446)
+	{
+		datacheck = 1;
+	}
+}
+
+// Configuration du CAN RX
+void CAN_TxInitHeader(void) {
+	TxHeader_GSE.IDE = CAN_ID_STD;		// signal qu'on utilise Standard ID (pas extended)
+	TxHeader_GSE.StdId = 0x446;			/**<L'ID du transmetter  */
+	TxHeader_GSE.RTR = CAN_RTR_DATA;	// indication qu'on envoie
+	TxHeader_GSE.DLC = 8;				// le nombre de bits
+}
+
+void CAN_TGinit(void)
+{
+	init_data_container();
+	init_tag_manager();
+
+}
+
+void CAN_TagSetup(void)
+{
+	CAN_TGinit();
+	set_tag("ma val", 2);
+}
+
+void CAN_ALL_INIT(void){
+	CAN_TxInitHeader();
+
+}
+
 /* USER CODE END 4 */
 
 /**
@@ -580,11 +655,10 @@ static void MX_GPIO_Init(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
-  while (1)
-  {
-  }
+	/* User can add his own implementation to report the HAL error return state */
+	__disable_irq();
+	while (1) {
+	}
   /* USER CODE END Error_Handler_Debug */
 }
 #ifdef USE_FULL_ASSERT

@@ -11,3 +11,4 @@ static inline cmd_byte_t cmd_make(uint8_t seq, bool hb, bool c1, bool c2, bool c
   c.bits.c4  = c4 ? 1u : 0u;
   return c;
 }
+*/

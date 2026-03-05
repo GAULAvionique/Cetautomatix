@@ -21,6 +21,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+// ajout des fihcier de configuration TAG-CAN
+#include "../Inc/tag_can_system/config_value.h"
+#include "../Inc/tag_can_system/gestion_tag.h"
+#include "../Inc/tag_can_system/sub_include/data_container.h"
+#include "../Inc/tag_can_system/sub_include/tag_manager.h"
 
 /* USER CODE END Includes */
 
@@ -51,7 +56,11 @@ CRC_HandleTypeDef hcrc;
 TIM_HandleTypeDef htim1;
 
 /* USER CODE BEGIN PV */
-
+CAN_TxHeaderTypeDef TxHeader_moteur;
+CAN_RxHeaderTypeDef RxHeader_moteur;
+uint8_t RxData[8];
+extern uint8_t TxData[8];
+int32_t TxMailbox;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -89,7 +98,8 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  // setup CAN tag
+  setup_TCANS();
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -116,6 +126,14 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+
+	  // ### ------ update des valeur------
+
+	  // start the trensmission
+	  if(HAL_CAN_AddTxMessage(&hcan, &TxHeader_moteur, TxData, &TxMailbox) != HAL_OK){
+		  /*trensmission de l'erreur*/
+		  Error_Handler();
+	  }
 
     /* USER CODE BEGIN 3 */
   }
@@ -540,6 +558,54 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+static void CAN_Config_Filter(void){
+	/*suposed to be the second init of CAN*/
+	/*## - 2- configure the CAN Filter ####################*/
+	CAN_FilterTypeDef sFilterConfig;
+	// no filter configured for now
+}
+
+
+/**
+  * @brief  Rx Fifo 0 message pending callback
+  * @param  hcan: pointer to a CAN_HandleTypeDef structure that contains
+  *         the configuration information for the specified CAN.
+  * @retval None
+  */
+
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan_){
+	/*Obtenir le message RX*/
+	if(HAL_CAN_GetRxMessage(hcan_, CAN_RX_FIFO0, &RxHeader_moteur, RxData) != HAL_OK){
+		/*erreur de reception*/
+		Error_Handler();
+	}
+
+}
+
+void setup_TCANS(void){
+	// reset the container and the tags
+	init_data_container();
+	init_tag_manager();
+
+	// ------------------------ définisser ici les tags -----------------------
+	// exemple:
+	set_tag("SEQ", 3);
+	set_tag("HB", 1);
+	set_tag("CI", 2);
+	set_tag("ALIM_BATERIE", 7);
+	set_tag("EDC", 4);
+	set_tag("N20PS", 16);
+	set_tag("TLC", 12);
+	set_tag("N20DVS",1);
+	set_tag("N20IV",1);
+	set_tag("N20MV",1);
+	set_tag("Timestamp", 16);
+
+}
+
+
+
 
 /* USER CODE END 4 */
 

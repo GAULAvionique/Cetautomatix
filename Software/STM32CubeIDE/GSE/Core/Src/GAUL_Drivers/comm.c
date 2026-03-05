@@ -7,7 +7,7 @@ status_t COMM_Init(CAN_HandleTypeDef *dev, CAN_FilterTypeDef *filter) {
 
 	HAL_CAN_ConfigFilter(&dev, &filter);
 
-	if(HAL_CAN_Start(&dev) |= HAL_OK) return STATUS_FAIL;
+	if(HAL_CAN_Start(&dev) != HAL_OK) return STATUS_FAIL;
 
 	return STATUS_OK;
 }

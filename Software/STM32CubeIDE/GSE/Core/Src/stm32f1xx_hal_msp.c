@@ -264,7 +264,7 @@ void HAL_CAN_MspInit(CAN_HandleTypeDef* hcan)
     */
     GPIO_InitStruct.Pin = ISO_CAN_RXD_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
     HAL_GPIO_Init(ISO_CAN_RXD_GPIO_Port, &GPIO_InitStruct);
 
     GPIO_InitStruct.Pin = ISO_CAN_TXD_Pin;
