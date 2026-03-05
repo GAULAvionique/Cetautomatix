@@ -4105,9 +4105,9 @@
 		)
 		(uuid "956699fb-7e08-4128-90ab-fe02d5c33834")
 	)
-	(text "min 5V\nmax 24V"
+	(text "2S - LiFePO4 (5V, 7.3V)\nmin 5V\nmax 24V"
 		(exclude_from_sim no)
-		(at 208.28 18.288 0)
+		(at 208.28 18.034 0)
 		(effects
 			(font
 				(size 1.27 1.27)

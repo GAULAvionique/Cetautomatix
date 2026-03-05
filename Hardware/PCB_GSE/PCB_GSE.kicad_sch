@@ -832,113 +832,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -4229,16 +4122,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 139.7) (xy 237.49 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48440dc6-6cf9-43fa-a376-19e9e49c4c6e")
-	)
-	(wire
-		(pts
 			(xy 251.46 60.96) (xy 251.46 62.23)
 		)
 		(stroke
@@ -4296,16 +4179,6 @@
 			(type default)
 		)
 		(uuid "542c0948-ad91-462d-8628-2fa85ffc7642")
-	)
-	(wire
-		(pts
-			(xy 259.08 142.24) (xy 261.62 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54431407-b4fd-41aa-85cb-5d8b551a8dbc")
 	)
 	(wire
 		(pts
@@ -4396,16 +4269,6 @@
 			(type default)
 		)
 		(uuid "64fdb028-5407-47dd-a1b5-ded6e18d6a0c")
-	)
-	(wire
-		(pts
-			(xy 240.03 142.24) (xy 237.49 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b127de4-6462-4cf9-9e98-f2fb4cd1d182")
 	)
 	(wire
 		(pts
@@ -5029,16 +4892,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 139.7) (xy 261.62 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1c88c33-48ad-4ad1-a51f-22564ad31128")
-	)
-	(wire
-		(pts
 			(xy 148.59 43.18) (xy 146.05 43.18)
 		)
 		(stroke
@@ -5317,6 +5170,29 @@
 			)
 		)
 	)
+	(global_label "Servo3_PWM"
+		(shape input)
+		(at 171.45 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "13d21e34-2861-4a1e-bba4-2e8bfe676984")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.986 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Temp_An"
 		(shape input)
 		(at 171.45 58.42 0)
@@ -5428,28 +5304,6 @@
 			)
 		)
 	)
-	(global_label "SD_SPI5_CS"
-		(shape input)
-		(at 261.62 139.7 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "31f6c0da-7375-4eb6-ab98-9d04082364c1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 275.7932 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "I2C2_SCL"
 		(shape input)
 		(at 83.82 104.14 180)
@@ -5468,28 +5322,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LCell_An"
-		(shape input)
-		(at 228.6 147.32 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3393be0c-8c85-403a-88e2-44f71f11071a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 239.5075 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5604,28 +5436,6 @@
 			)
 		)
 	)
-	(global_label "BT_USART2_RX"
-		(shape input)
-		(at 237.49 142.24 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4e532d8a-e6f4-4d8d-8f71-01fd14d97ca6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 220.7768 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RFD_USART1_RX"
 		(shape input)
 		(at 123.19 96.52 180)
@@ -5644,51 +5454,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Servo_ctrl_3V3"
-		(shape input)
-		(at 260.35 160.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "5024ad47-3e95-4f96-8947-c35001133bc9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 277.2446 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pressure_An"
-		(shape input)
-		(at 228.6 149.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "570124df-dee9-4cd6-8939-00ff3940bbd0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 243.0152 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5712,28 +5477,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SD_SPI5_CLK"
-		(shape input)
-		(at 261.62 142.24 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5b7e2f1a-f022-4f00-a4b7-a285162d7f64")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 276.8818 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5864,28 +5607,6 @@
 		(uuid "7839a823-bf4e-441a-b0bc-9539a2b5d803")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 20.6006 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "I2C2_SCL"
-		(shape input)
-		(at 243.84 156.21 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "808f6ade-bd07-413e-a776-5224cacd08f2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.0858 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6064,119 +5785,6 @@
 		(uuid "ada70fb8-4896-4a5d-80b7-4babbf3bd76b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 113.4919 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Valve2_Open"
-		(shape input)
-		(at 260.35 157.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "b26e9214-22df-4dcb-a69a-9fa17f7a5991")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 275.1884 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Valve1_Open"
-		(shape input)
-		(at 260.35 154.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "b590d4cf-da16-43bf-81b6-5b270e8fb6b3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 275.1884 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Servo_ctrl_3V3"
-		(shape input)
-		(at 171.45 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "b70b27b0-8a5a-471e-8560-373d8623cc16")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 188.3446 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "BT_USART2_TX"
-		(shape input)
-		(at 237.49 139.7 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d2f0ded8-4fac-496d-8679-9262c36604b4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 221.0792 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "I2C2_SDA"
-		(shape input)
-		(at 243.84 158.75 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d64d2166-7437-491e-81cf-5a05257b9ce5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.0253 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7427,81 +7035,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
 					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 240.03 139.7 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4788786e-8c6f-40ba-8794-60768cd3007f")
-		(property "Reference" "TP1"
-			(at 246.888 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 243.332 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 240.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 240.03 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 240.03 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "-"
-			(at 240.03 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "21ededd2-a5d3-41f7-a56a-c28eed4a56d7")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -8933,80 +8466,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 259.08 142.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "93693148-f871-4792-9de8-43bb9ab4aa82")
-		(property "Reference" "TP4"
-			(at 252.222 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 255.778 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 259.08 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 259.08 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 259.08 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "-"
-			(at 259.08 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b03c9230-64a8-4690-8fa8-1e01b79256cc")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 274.32 38.1 0)
 		(unit 1)
@@ -9813,81 +9272,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 240.03 142.24 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "be667655-4506-4b32-a146-6cf3f7df2eb1")
-		(property "Reference" "TP2"
-			(at 246.888 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 243.332 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 240.03 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 240.03 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 240.03 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "-"
-			(at 240.03 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0e38cfcb-eadd-4c8f-9567-2c4b648149c1")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 242.57 106.68 0)
 		(unit 1)
@@ -9948,80 +9332,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
 					(reference "#PWR0120")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 259.08 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c83f58c0-bfab-488a-a2e9-b3b85534a558")
-		(property "Reference" "TP3"
-			(at 252.222 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 255.778 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 259.08 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 259.08 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 259.08 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "-"
-			(at 259.08 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f299085a-6431-4b03-b3a6-9c21b14399d0")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
-					(reference "TP3")
 					(unit 1)
 				)
 			)
