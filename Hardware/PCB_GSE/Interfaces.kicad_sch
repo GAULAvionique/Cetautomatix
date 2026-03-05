@@ -11900,7 +11900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "PCB_GSE:U2-K_NCH"
 			(at 74.93 106.68 0)
 			(effects
 				(font
@@ -11909,7 +11909,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/nichicon/UCL1E101MCL1GS/2300286"
 			(at 74.93 106.68 0)
 			(effects
 				(font
@@ -11927,7 +11927,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+		(property "DigiKey_Part_Number" "493-3937-1-ND"
 			(at 74.93 106.68 0)
 			(effects
 				(font
@@ -11972,7 +11972,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
+		(property "Manufacturer_Part_Number" "UCL1E101MCL1GS"
 			(at 74.93 106.68 0)
 			(effects
 				(font
