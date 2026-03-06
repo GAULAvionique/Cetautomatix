@@ -1,4 +1,4 @@
-26791455120959066
+26800357692234545
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106393,6 +106393,13 @@ OSTVN04A150
 4
 4
 pcb_moteur
+Cetautomatix_logo
+
+
+0
+0
+0
+pcb_moteur
 D16-L
 
 INA125UA/2K5 
@@ -106519,6 +106526,27 @@ LED
 4
 4
 pcb_moteur
+Logo-Canada
+
+
+0
+0
+0
+pcb_moteur
+Logo-GAUL
+
+
+0
+0
+0
+pcb_moteur
+Logo-QC
+
+
+0
+0
+0
+pcb_moteur
 MAX6612MXK_T
 
 MAX6612MXK+T 
@@ -106630,6 +106658,13 @@ TE_640454-2
 0
 2
 2
+pcb_moteur
+ULaval
+
+
+0
+0
+0
 pcb_moteur
 WE-PD_1245
 

@@ -103,28 +103,6 @@
 		(layer "F.SilkS")
 		(uuid "81424166-f8e5-44a8-bd72-11e3145f6199")
 	)
-	(fp_circle
-		(center -5.4102 -1.9765)
-		(end -5.0292 -1.9765)
-		(stroke
-			(width 0.508)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.SilkS")
-		(uuid "e50ede67-9e46-402c-b9da-ede94dbca35d")
-	)
-	(fp_circle
-		(center -5.4102 -1.9765)
-		(end -5.0292 -1.9765)
-		(stroke
-			(width 0.508)
-			(type solid)
-		)
-		(fill no)
-		(layer "B.SilkS")
-		(uuid "04aed02a-d16b-4fa2-bfb8-5d595536e7c4")
-	)
 	(fp_line
 		(start -3.849301 -3.0814)
 		(end -3.849301 3.024501)
@@ -259,4 +237,15 @@
 		(uuid "b27527db-21e2-4ab8-b1ed-ba6dc6849c8f")
 	)
 	(embedded_fonts no)
+	(model "../Composants/BM03B/BM03B-GHS-TBT.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )
