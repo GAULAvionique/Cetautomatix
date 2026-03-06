@@ -39,7 +39,7 @@ typedef union {
   uint8_t    byte;
 } cmd_byte_t;
 
-static inline cmd_byte_t cmd_make(uint8_t seq, bool hb, bool c1, bool c2, bool c3, bool c4);
+cmd_byte_t cmd_make(uint8_t seq, bool hb, bool c1, bool c2, bool c3, bool c4);
 
 /* =====================================================================
  * SAS -> GSE (UART) framing

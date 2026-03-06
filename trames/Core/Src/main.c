@@ -17,6 +17,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <comm_tx.h>
 #include "main.h"
 #include <string.h>
 
@@ -24,9 +25,8 @@
 /* USER CODE BEGIN Includes */
 #include "protocol_defs.h"
 #include "comm_utils.h"
-#include "comm_tx_can.h"
-#include "comm_tx_rf.h"
 #include <stdbool.h>
+#include "test_runner.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -131,61 +131,67 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+#ifdef UNIT_TEST
+  run_all_tests();
+  while (1) {
+  }
+#else
   while (1)
   {
     /* USER CODE END WHILE */
+	static uint8_t hb = 0;
+	hb ^= 1u;
 
+	/* ---- Construire une commande "Startup" ---- */
+	uint8_t seq = comm_seq_next(); // 0..7 (mod 8)
+	cmd_byte_t cmd = cmd_make(seq, hb,
+							  true,   // C1: Startup
+							  false,  // C2: N2O Fill
+							  false,  // C3: Igniter Start
+							  false); // C4: Engine Start
+
+	/* 1) SAS->GSE via UART4 : trame $ DATA CRC $ (escape si besoin) */
+	(void)comm_tx_rf_send_sas_cmd(&huart4, 50, cmd.byte);
+
+	/* 2) GSE->Moteur via CAN1 : DLC=1 */
+	(void)comm_tx_can_send_moteur_cmd(&hcan1, cmd.byte);
+
+
+	/* 3) Vérifier RX CAN en LOOPBACK */
+	uint32_t t0 = HAL_GetTick();
+	while (HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0) == 0U) {
+	  if ((HAL_GetTick() - t0) > 50U) break;
+	}
+
+	if (HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0) > 0U) {
+	  if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &canRxHdr, can_rxd) == HAL_OK) {
+		/* mettre un breakpoint :
+		   - canRxHdr.DLC doit être 1
+		   - can_rxd[0] doit == cmd.byte
+		*/
+		__NOP();
+	  }
+	}
+
+	HAL_Delay(500);
+
+	/* ---- Exemple: envoyer N2O Fill ---- */
+	seq = comm_seq_next();
+	cmd = cmd_make(seq, hb,
+				   false, true, false, false);
+	(void)comm_tx_rf_send_sas_cmd(&huart4, 50, cmd.byte);
+	(void)comm_tx_can_send_moteur_cmd(&hcan1, cmd.byte);
+	HAL_Delay(500);
+
+	/* ---- Exemple: E-STOP ---- */
+	(void)comm_tx_can_send_estop(&hcan1, 0x01);
+	HAL_Delay(1500);
     /* USER CODE BEGIN 3 */
-	    static uint8_t hb = 0;
-	    hb ^= 1u;
 
-	    /* ---- Construire une commande "Startup" ---- */
-	    uint8_t seq = comm_seq_next(); // 0..7 (mod 8)
-	    cmd_byte_t cmd = cmd_make(seq, hb,
-	                              true,   // C1: Startup
-	                              false,  // C2: N2O Fill
-	                              false,  // C3: Igniter Start
-	                              false); // C4: Engine Start
-
-	    /* 1) SAS->GSE via UART4 : trame $ DATA CRC $ (escape si besoin) */
-	    (void)comm_tx_rf_send_sas_cmd(&huart4, 50, cmd.byte);
-
-	    /* 2) GSE->Moteur via CAN1 : DLC=1 */
-	    (void)comm_tx_can_send_moteur_cmd(&hcan1, cmd.byte);
-
-
-	    /* 3) Vérifier RX CAN en LOOPBACK */
-	    uint32_t t0 = HAL_GetTick();
-	    while (HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0) == 0U) {
-	      if ((HAL_GetTick() - t0) > 50U) break;
-	    }
-
-	    if (HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0) > 0U) {
-	      if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &canRxHdr, can_rxd) == HAL_OK) {
-	        /* mettre un breakpoint :
-	           - canRxHdr.DLC doit être 1
-	           - can_rxd[0] doit == cmd.byte
-	        */
-	        __NOP();
-	      }
-	    }
-
-	    HAL_Delay(500);
-
-	    /* ---- Exemple: envoyer N2O Fill ---- */
-	    seq = comm_seq_next();
-	    cmd = cmd_make(seq, hb,
-	                   false, true, false, false);
-	    (void)comm_tx_rf_send_sas_cmd(&huart4, 50, cmd.byte);
-	    (void)comm_tx_can_send_moteur_cmd(&hcan1, cmd.byte);
-	    HAL_Delay(500);
-
-	    /* ---- Exemple: E-STOP ---- */
-	    (void)comm_tx_can_send_estop(&hcan1, 0x01);
-	    HAL_Delay(1500);
 
   }
   /* USER CODE END 3 */
+#endif
 }
 
 /**
