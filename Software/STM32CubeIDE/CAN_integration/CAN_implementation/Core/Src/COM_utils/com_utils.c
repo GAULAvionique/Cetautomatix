@@ -5,13 +5,29 @@
  *      Author: Samuel
  */
 #include "com_utils.h"
-
+#include "../../TAGCAN/include/sub_include/data_container.h"
 CAN_TxHeaderTypeDef TxHeader;
 CAN_RxHeaderTypeDef RxHeader;
 
 CAN_RxHeaderTypeDef RxHeader;
+uint8_t             RxData[8];
 
-int datacheck;
+// valeurs
+int8_t val_SEQ = 0;
+int8_t val_HB = 0;
+int8_t val_CI = 0;
+int8_t val_AB = 0;
+int8_t val_EDC = 0;
+int16_t val_N2OPS = 0;
+int16_t val_TLC = 0;
+int8_t val_N2ODVS = 0;
+int8_t val_N2OIV = 0;
+int8_t val_N2OMV = 0;
+int16_t val_TIME = 0;
+int8_t out_Rx[8] = {0,0,0,0,0,0,0,0};
+
+
+int datacheck = 0;    // permet d'update les valeurs uniquement lors de la reception de valeurs
 // module pour CAN
 
 #ifndef INC_COM_UTILS_H_
@@ -28,7 +44,10 @@ void init_com(void){
 	CAN_setup_DF();
 
 	// init msg
-	if(HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING)!=HAL_OK){Error_Handler();}
+	if(HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING)!=HAL_OK)
+	{
+		Error_Handler();
+	}
 }
 
 
@@ -95,10 +114,20 @@ void main_loop(void){
 	CAN_send_msg();
 }
 
+void update_TagData(void){
+	if(datacheck == 1){
+		change_val_to_TagData(&out_Rx);
+	}
+}
+
 void CAN_send_msg(void){
 	if(HAL_CAN_AddTxMessage(&hcan, &TxHeader, TxData, &TxMailbox)!=HAL_OK){
 		Error_Handler();
 	}
+}
+
+void CAN_change_val(void){
+
 }
 
 void update_val(const char* nom_du_tag, int32_t val){
@@ -136,10 +165,11 @@ void update_all_val_receve(void){
 // événementielle
 ///////////////////////////////////////////////////////
 
-uint8_t               RxData[8];
+
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
+
   if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK)
   {
     Error_Handler();
@@ -147,8 +177,12 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
   if ((RxHeader.StdId == 0x103))    // suposé être l'id de l'autre CAN
   {
 	  datacheck = 1;
+	  for (int i = 0; i < N_BYTES; i++){
+		  out_Rx[i] = RxData[i];
+	  }
+
 	  // update du conteneur de donnée.
-	  for (int i = 0; i < N_BYTES; i++){TagData[i]=RxData[i];}
+	  //change_val_to_TagData(&RxData);
   }
 }
 
