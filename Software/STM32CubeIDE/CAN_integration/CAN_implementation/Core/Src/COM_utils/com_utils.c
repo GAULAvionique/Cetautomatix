@@ -54,12 +54,12 @@ void init_com(void){
 void CAN_init_TAGCAN(void){
 	init_data_container();
 	init_tag_manager();
-
 }
 
-void CAN_setup_DF(void){
+void CAN_setup_DF(const int32_t std_id){
+	std_id &= 0x7FFU;
 	TxHeader.IDE = CAN_ID_STD;		// Standard ID (11 bits)
-	TxHeader.StdId = 0x500;			// id
+	TxHeader.StdId = std_id;			// id
 	TxHeader.RTR = CAN_RTR_DATA;	// sending data
 	TxHeader.DLC = 8;				// nb of bytes
 }
@@ -147,7 +147,6 @@ void update_all_val_send(void){	//TODO: changer toute les constantes ici par la 
 	set_value("N2OMV", 1);		//*>N2O Main Valve 			*/
 	set_value("TIME", 16);		//*>Timestamp (ms) 			*/
 }
-
 
 
 void update_all_val_receve(void){
