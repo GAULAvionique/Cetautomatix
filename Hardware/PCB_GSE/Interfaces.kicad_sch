@@ -5327,6 +5327,17 @@
 		)
 		(uuid "9caae304-434c-44ea-aa8c-12548216b10f")
 	)
+	(text "*max 7.4V"
+		(exclude_from_sim no)
+		(at 99.568 76.708 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a42915f4-3193-4bf8-b0a0-3ae87c2767e4")
+	)
 	(text "STB -> GND : Normal mode\nEN/FLT floating : DC-DC enabled \n		(internal pull-up)"
 		(exclude_from_sim no)
 		(at 159.258 83.82 0)
