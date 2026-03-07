@@ -10180,7 +10180,7 @@
 		(dnp no)
 		(uuid "8dfae173-b401-4b3f-a4c9-413449000f9e")
 		(property "Reference" "R3"
-			(at 38.608 92.964 0)
+			(at 39.37 92.964 0)
 			(effects
 				(font
 					(size 1.016 1.016)
