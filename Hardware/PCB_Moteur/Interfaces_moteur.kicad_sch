@@ -1820,7 +1820,7 @@
 			(symbol "BM03B-GHS-TBT_1_1"
 				(polyline
 					(pts
-						(xy 5.08 2.54) (xy 5.08 -7.62)
+						(xy 5.08 2.54) (xy 5.08 -10.16)
 					)
 					(stroke
 						(width 0.127)
@@ -1832,7 +1832,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -7.62) (xy 12.7 -7.62)
+						(xy 5.08 -10.16) (xy 12.7 -10.16)
 					)
 					(stroke
 						(width 0.127)
@@ -1964,7 +1964,7 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 -7.62) (xy 12.7 2.54)
+						(xy 12.7 -10.16) (xy 12.7 2.54)
 					)
 					(stroke
 						(width 0.127)
@@ -2021,6 +2021,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 2.54 -7.62 0)
+					(length 2.54)
+					(name "Case"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3821,6 +3839,10 @@
 		(at 110.49 48.26)
 		(uuid "e31e2d49-341e-48a7-a88e-be18349a46cb")
 	)
+	(no_connect
+		(at 191.77 140.97)
+		(uuid "fd1e0869-1ea6-4afc-9cfe-c6567d427b8f")
+	)
 	(wire
 		(pts
 			(xy 72.39 180.34) (xy 72.39 179.07)
@@ -4563,6 +4585,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 130.81) (xy 73.66 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5acee15d-e28b-46ec-afdb-25fcda5864d3")
+	)
+	(wire
+		(pts
 			(xy 52.07 67.31) (xy 50.8 67.31)
 		)
 		(stroke
@@ -4570,6 +4602,16 @@
 			(type default)
 		)
 		(uuid "5b1acb36-fc78-4834-875e-114145b1b196")
+	)
+	(wire
+		(pts
+			(xy 39.37 132.08) (xy 39.37 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c4a8a78-9613-4396-aa4d-56a584adb16b")
 	)
 	(wire
 		(pts
@@ -5650,6 +5692,16 @@
 			(type default)
 		)
 		(uuid "f420d83d-3a20-4825-8ae2-f66b13c3e066")
+	)
+	(wire
+		(pts
+			(xy 106.68 130.81) (xy 106.68 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f58da523-8c4a-4680-b00a-3f6ed7bc1fea")
 	)
 	(wire
 		(pts
@@ -6781,7 +6833,7 @@
 		(dnp no)
 		(uuid "0c33125d-3357-4c49-b3a5-017412834881")
 		(property "Reference" "J20"
-			(at 198.882 127.508 0)
+			(at 198.374 127.254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8287,7 +8339,7 @@
 		(dnp no)
 		(uuid "36ab1615-b60b-4874-a4a8-ea4c03a95e74")
 		(property "Reference" "J9"
-			(at 110.998 132.588 0)
+			(at 111.506 119.634 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8305,7 +8357,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "pcb_moteur:CONN_BM03B-GHS-TBT_JST"
+		(property "Footprint" "CONN_BM03B-GHS-TBT_JST"
 			(at 104.14 123.19 0)
 			(effects
 				(font
@@ -8315,7 +8367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "-"
+		(property "Datasheet" "BM03B-GHS-TBT"
 			(at 104.14 123.19 0)
 			(effects
 				(font
@@ -8334,7 +8386,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "-"
+		(property "DigiKey_Part_Number" "455-SM03B-GHS-TBCT-ND"
 			(at 104.14 123.19 0)
 			(effects
 				(font
@@ -8343,7 +8395,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "-"
+		(property "Manufacturer_Part_Number" "SM03B-GHS-TB"
 			(at 104.14 123.19 0)
 			(effects
 				(font
@@ -8360,6 +8412,9 @@
 		)
 		(pin "2"
 			(uuid "4c6d5c95-16f0-444d-8b9c-afefe76b612f")
+		)
+		(pin "4"
+			(uuid "9c6e3e16-1973-49bb-8892-1bea31300b42")
 		)
 		(instances
 			(project "PCB_moteur"
@@ -9072,7 +9127,7 @@
 		(dnp no)
 		(uuid "4bd7db01-8959-4543-9d39-f41e9c10487f")
 		(property "Reference" "J12"
-			(at 43.942 132.334 0)
+			(at 44.45 119.38 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9090,7 +9145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "pcb_moteur:CONN_BM03B-GHS-TBT_JST"
+		(property "Footprint" "CONN_BM03B-GHS-TBT_JST"
 			(at 36.83 123.19 0)
 			(effects
 				(font
@@ -9100,7 +9155,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "-"
+		(property "Datasheet" "BM03B-GHS-TBT"
 			(at 36.83 123.19 0)
 			(effects
 				(font
@@ -9119,7 +9174,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "-"
+		(property "DigiKey_Part_Number" "455-SM03B-GHS-TBCT-ND"
 			(at 36.83 123.19 0)
 			(effects
 				(font
@@ -9128,7 +9183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "-"
+		(property "Manufacturer_Part_Number" "SM03B-GHS-TB"
 			(at 36.83 123.19 0)
 			(effects
 				(font
@@ -9145,6 +9200,9 @@
 		)
 		(pin "2"
 			(uuid "fd6cbbf4-c2cd-4c67-a344-a81767a77489")
+		)
+		(pin "4"
+			(uuid "a7794a5c-a666-46e9-8cb7-0397b4629f82")
 		)
 		(instances
 			(project ""
@@ -9316,7 +9374,7 @@
 		(dnp no)
 		(uuid "4d1b8d40-1c9e-480f-8bfe-895aa0f1b188")
 		(property "Reference" "J6"
-			(at 195.834 142.748 0)
+			(at 196.85 129.54 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9334,7 +9392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "pcb_moteur:CONN_BM03B-GHS-TBT_JST"
+		(property "Footprint" "CONN_BM03B-GHS-TBT_JST"
 			(at 189.23 133.35 0)
 			(effects
 				(font
@@ -9344,7 +9402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "-"
+		(property "Datasheet" "BM03B-GHS-TBT"
 			(at 189.23 133.35 0)
 			(effects
 				(font
@@ -9363,7 +9421,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "-"
+		(property "DigiKey_Part_Number" "455-SM03B-GHS-TBCT-ND"
 			(at 189.23 133.35 0)
 			(effects
 				(font
@@ -9372,7 +9430,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "-"
+		(property "Manufacturer_Part_Number" "SM03B-GHS-TB"
 			(at 189.23 133.35 0)
 			(effects
 				(font
@@ -9389,6 +9447,9 @@
 		)
 		(pin "2"
 			(uuid "d5a40b8e-1bbc-48ae-837a-d41da6760309")
+		)
+		(pin "4"
+			(uuid "1dac2b33-5b2c-46b3-b2c2-9648fd4f8817")
 		)
 		(instances
 			(project "PCB_moteur"
@@ -11979,7 +12040,7 @@
 		(dnp no)
 		(uuid "acfff151-812c-4e6f-ac5b-8997def672be")
 		(property "Reference" "J10"
-			(at 77.216 132.08 0)
+			(at 77.724 119.126 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11997,7 +12058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "pcb_moteur:CONN_BM03B-GHS-TBT_JST"
+		(property "Footprint" "CONN_BM03B-GHS-TBT_JST"
 			(at 71.12 123.19 0)
 			(effects
 				(font
@@ -12007,7 +12068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "-"
+		(property "Datasheet" "BM03B-GHS-TBT"
 			(at 71.12 123.19 0)
 			(effects
 				(font
@@ -12026,7 +12087,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "-"
+		(property "DigiKey_Part_Number" "455-SM03B-GHS-TBCT-ND"
 			(at 71.12 123.19 0)
 			(effects
 				(font
@@ -12035,7 +12096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "-"
+		(property "Manufacturer_Part_Number" "SM03B-GHS-TB"
 			(at 71.12 123.19 0)
 			(effects
 				(font
@@ -12052,6 +12113,9 @@
 		)
 		(pin "2"
 			(uuid "13a2aa23-72ae-4e1a-b893-35e98e9daf05")
+		)
+		(pin "4"
+			(uuid "f54404aa-3153-4b44-beb2-2b7443be9d5c")
 		)
 		(instances
 			(project "PCB_moteur"
@@ -12739,6 +12803,71 @@
 			(project ""
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
 					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 39.37 132.08 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c54f007c-ee68-4062-8b49-5194b33d42c1")
+		(property "Reference" "#PWR0101"
+			(at 39.37 128.27 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Vin"
+			(at 39.37 135.89 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 39.37 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22812097-f00c-4c88-a210-62c0c57034e2")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -13435,6 +13564,71 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
 					(reference "C48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 106.68 132.08 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e01ddd07-3ffb-4f00-a6e2-b3dc5815746c")
+		(property "Reference" "#PWR0134"
+			(at 106.68 128.27 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Vin"
+			(at 106.68 135.89 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90014cfb-ebf9-47dc-a7fa-9ea3fa61a0c5")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
@@ -14963,6 +15157,71 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
 					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 73.66 132.08 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ffed129b-3b1d-4b3f-9b8a-dccfcdb894a0")
+		(property "Reference" "#PWR0111"
+			(at 73.66 128.27 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Vin"
+			(at 73.66 135.89 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee0a9259-6920-4f42-9470-e746fc72edf0")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
