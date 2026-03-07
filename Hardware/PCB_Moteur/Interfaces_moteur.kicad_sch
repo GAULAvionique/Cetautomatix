@@ -998,6 +998,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:BAT54J"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BAT54J"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-323F"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "30V 200mA Schottky diode, SOD-323F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?323F*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BAT54J_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BAT54J_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Interface_CAN_LIN:ISOW1044"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2463,6 +2613,353 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "pcb_moteur:PJ-037BH"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -7.62 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "PJ-037BH"
+				(at -7.62 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "PJ-037BH:SAMESKY_PJ-037BH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "DigiKey_Part_Number" "CP-037BH-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/PJ-037BH/Same+Sky/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "10.9mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/PJ-037BH/Same+Sky/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "1.08"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MF" "Same Sky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "PJ-037BH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "2.5 x 6.5 mm, 5.0 A, Horizontal, Through Hole, Dc Power Jack Connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Same Sky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "PJ-037BH_0_0"
+				(polyline
+					(pts
+						(xy -8.255 3.81) (xy -1.27 3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -8.255 1.27)
+					(mid -9.5194 2.54)
+					(end -8.255 3.81)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -1.27) (xy -6.985 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.715 -2.54) (xy -6.35 -1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 4.445) (xy -1.27 3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.81) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -8.255 1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 0.635)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0.635) (xy 0 0.635)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 4.445) (xy -1.27 4.445)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.635) (xy 0 4.445)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -5.715 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+12V"
 			(power)
 			(pin_names
@@ -3056,6 +3553,18 @@
 		)
 		(uuid 5f6331a8-1e9f-40fb-8d58-81a416d9e01c)
 	)
+	(rectangle
+		(start 158.75 105.41)
+		(end 205.74 148.59)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e3e4bd39-f6b6-43b7-8a0e-80031fd19449)
+	)
 	(text "Valves Control"
 		(exclude_from_sim no)
 		(at 16.256 31.242 0)
@@ -3126,6 +3635,19 @@
 		)
 		(uuid "7ab7d7b1-6d67-4951-8320-3fe7c86d3ed8")
 	)
+	(text "Dump Valve Control"
+		(exclude_from_sim no)
+		(at 159.512 109.982 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "8694124f-00bb-4be0-999a-fd97704b41f4")
+	)
 	(text "Standard servomotor header connector\n(maybe should think of something more secure)"
 		(exclude_from_sim no)
 		(at 41.402 113.792 0)
@@ -3186,12 +3708,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a8d7956-5ce8-4001-81b1-1cd10394658c")
-	)
-	(junction
-		(at 135.89 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0c039ce1-1a63-424f-a772-8ff4e5003c7a")
 	)
 	(junction
 		(at 203.2 55.88)
@@ -3336,6 +3852,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99404369-2c4e-4e4a-8ffd-a016e8f7248a")
+	)
+	(junction
+		(at 187.96 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b719b74-122f-4571-baff-fdb9dccc1d95")
 	)
 	(junction
 		(at 72.39 180.34)
@@ -3521,16 +4043,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 120.65) (xy 135.89 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08137c9f-fb67-46bb-bd08-42757e3a94dd")
-	)
-	(wire
-		(pts
 			(xy 38.1 180.34) (xy 40.64 180.34)
 		)
 		(stroke
@@ -3578,16 +4090,6 @@
 			(type default)
 		)
 		(uuid "0db963b7-6401-4935-93b1-1dc4b989113d")
-	)
-	(wire
-		(pts
-			(xy 134.62 123.19) (xy 137.16 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10ca736a-f855-4369-9639-7a3a4858380d")
 	)
 	(wire
 		(pts
@@ -3781,7 +4283,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 128.27) (xy 135.89 128.27)
+			(xy 187.96 138.43) (xy 189.23 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4181,7 +4683,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 128.27) (xy 135.89 134.62)
+			(xy 187.96 138.43) (xy 187.96 144.78)
 		)
 		(stroke
 			(width 0)
@@ -4481,6 +4983,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 124.46) (xy 187.96 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89805625-c8dc-435d-ac95-22951c2c917a")
+	)
+	(wire
+		(pts
 			(xy 203.2 92.71) (xy 203.2 91.44)
 		)
 		(stroke
@@ -4558,6 +5070,16 @@
 			(type default)
 		)
 		(uuid "90e4875f-c902-4786-8db6-cf2c373179d1")
+	)
+	(wire
+		(pts
+			(xy 189.23 124.46) (xy 187.96 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91907d84-28f3-42bf-9b69-32169738cbd0")
 	)
 	(wire
 		(pts
@@ -4781,6 +5303,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 118.11) (xy 187.96 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0b43b8d-7f24-4643-8781-9073028ccc8d")
+	)
+	(wire
+		(pts
 			(xy 102.87 180.34) (xy 102.87 179.07)
 		)
 		(stroke
@@ -4871,13 +5403,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 39.37) (xy 41.91 39.37)
+			(xy 176.53 133.35) (xy 177.8 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bd087a73-8389-461c-b5a9-6278c5f3b019")
+		(uuid "bdc96691-74f7-43bb-8904-51db720dc6dd")
 	)
 	(wire
 		(pts
@@ -4981,16 +5513,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 125.73) (xy 135.89 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "caf817de-1248-42a9-931c-04d4636b20d7")
-	)
-	(wire
-		(pts
 			(xy 41.91 38.1) (xy 41.91 39.37)
 		)
 		(stroke
@@ -5061,6 +5583,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 135.89) (xy 189.23 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da36d11d-a1ef-441d-8627-213547e6988d")
+	)
+	(wire
+		(pts
 			(xy 102.87 158.75) (xy 102.87 160.02)
 		)
 		(stroke
@@ -5088,6 +5620,16 @@
 			(type default)
 		)
 		(uuid "defacb1a-c0b2-4d7d-8b83-c03fc87e1647")
+	)
+	(wire
+		(pts
+			(xy 187.96 119.38) (xy 189.23 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfb07807-5567-4848-96a7-7b16a43d7f19")
 	)
 	(wire
 		(pts
@@ -5151,6 +5693,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 39.37) (xy 114.3 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e73c98be-dc87-4e86-bec4-14b0c0507df4")
+	)
+	(wire
+		(pts
 			(xy 227.33 60.96) (xy 226.06 60.96)
 		)
 		(stroke
@@ -5161,7 +5713,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 125.73) (xy 135.89 125.73)
+			(xy 180.34 135.89) (xy 187.96 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5221,6 +5773,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 133.35) (xy 189.23 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1d7f66b-ab1c-49d4-af51-187159aa46eb")
+	)
+	(wire
+		(pts
 			(xy 102.87 156.21) (xy 102.87 154.94)
 		)
 		(stroke
@@ -5251,7 +5813,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 134.62) (xy 127 133.35)
+			(xy 180.34 144.78) (xy 180.34 143.51)
 		)
 		(stroke
 			(width 0)
@@ -5715,7 +6277,7 @@
 	)
 	(global_label "Servo4_Stepup"
 		(shape input)
-		(at 134.62 123.19 180)
+		(at 176.53 133.35 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5725,7 +6287,7 @@
 		)
 		(uuid "ec64d539-c63a-4a8c-9f22-d3bed7650d2e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.786 123.19 0)
+			(at 159.696 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6370,8 +6932,187 @@
 		)
 	)
 	(symbol
+		(lib_id "pcb_moteur:PJ-037BH")
+		(at 194.31 121.92 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c33125d-3357-4c49-b3a5-017412834881")
+		(property "Reference" "J20"
+			(at 199.0697 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ-037BH"
+			(at 199.0697 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pcb_moteur:SAMESKY_PJ-037BH"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/same-sky-formerly-cui-devices/PJ-037BH/1644548"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "CP-037BH-ND"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PJ-037BH/Same+Sky/view-part/?ref=snap"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "10.9mm"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/PJ-037BH/Same+Sky/view-part/?ref=eda"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1.08"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "Same Sky"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "PJ-037BH"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "2.5 x 6.5 mm, 5.0 A, Horizontal, Through Hole, Dc Power Jack Connector"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Same Sky"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1859938d-f147-4d6c-82a1-39d2b5be20cf")
+		)
+		(pin "1"
+			(uuid "4119943c-4ae8-491e-815e-f24e043a9b23")
+		)
+		(instances
+			(project ""
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "J20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 135.89 134.62 0)
+		(at 187.96 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6380,7 +7121,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d994f71-1589-48ff-b8b0-eecda1d8a8f5")
 		(property "Reference" "#PWR099"
-			(at 135.89 140.97 0)
+			(at 187.96 151.13 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6389,7 +7130,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 135.89 139.7 0)
+			(at 187.96 149.86 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6398,7 +7139,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 134.62 0)
+			(at 187.96 144.78 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6407,7 +7148,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 134.62 0)
+			(at 187.96 144.78 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6416,7 +7157,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 135.89 134.62 0)
+			(at 187.96 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8577,7 +9318,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 127 129.54 0)
+		(at 180.34 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8585,7 +9326,7 @@
 		(dnp no)
 		(uuid "4c8ea215-1a2b-4811-873e-46d54764a8ad")
 		(property "Reference" "C23"
-			(at 127.762 127.254 0)
+			(at 181.102 137.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8594,7 +9335,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 127.762 132.08 0)
+			(at 181.102 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8603,7 +9344,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 127.9652 133.35 0)
+			(at 181.3052 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8612,7 +9353,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
-			(at 127 129.54 0)
+			(at 180.34 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8621,7 +9362,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 127 129.54 0)
+			(at 180.34 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8630,7 +9371,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "1276-2891-1-ND"
-			(at 127 129.54 0)
+			(at 180.34 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8639,7 +9380,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
-			(at 127 129.54 0)
+			(at 180.34 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8728,7 +9469,7 @@
 	)
 	(symbol
 		(lib_id "pcb_moteur:BM03B-GHS-TBT")
-		(at 137.16 123.19 0)
+		(at 189.23 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8736,7 +9477,7 @@
 		(dnp no)
 		(uuid "4d1b8d40-1c9e-480f-8bfe-895aa0f1b188")
 		(property "Reference" "J6"
-			(at 143.764 132.588 0)
+			(at 195.834 142.748 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8745,7 +9486,7 @@
 			)
 		)
 		(property "Value" "BM03B-GHS-TBT"
-			(at 151.13 126.9999 0)
+			(at 203.2 137.1599 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8755,7 +9496,7 @@
 			)
 		)
 		(property "Footprint" "pcb_moteur:CONN_BM03B-GHS-TBT_JST"
-			(at 137.16 123.19 0)
+			(at 189.23 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8765,7 +9506,7 @@
 			)
 		)
 		(property "Datasheet" "-"
-			(at 137.16 123.19 0)
+			(at 189.23 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8775,7 +9516,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.16 123.19 0)
+			(at 189.23 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8784,7 +9525,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "-"
-			(at 137.16 123.19 0)
+			(at 189.23 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8793,7 +9534,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "-"
-			(at 137.16 123.19 0)
+			(at 189.23 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9964,6 +10705,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:BAT54J")
+		(at 181.61 133.35 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "847357e9-14f5-4daa-842f-b1b648579085")
+		(property "Reference" "D10"
+			(at 182.88 128.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CDBQR0230R"
+			(at 187.706 130.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 181.61 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/bourns-inc/CD0603-B0340R/7796828"
+			(at 181.61 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
+			(at 181.61 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "CD0603-B0340RCT-ND"
+			(at 181.61 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CD0603-B0340R"
+			(at 181.61 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f8dfb42d-d372-44bf-b626-d8d98b25876b")
+		)
+		(pin "1"
+			(uuid "9c6a6ad2-6c52-417d-8a2f-523a979ae9da")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 109.22 156.21 0)
 		(unit 1)
@@ -10110,6 +10938,71 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 187.96 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d659345-a562-4968-9b15-8eeef50ab6af")
+		(property "Reference" "#PWR098"
+			(at 187.96 121.92 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Vin"
+			(at 187.96 114.3 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 118.11 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 118.11 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f4adfbf-63c4-4cd2-95cc-afb1890d38e9")
+		)
+		(instances
+			(project "PCB_moteur"
+				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -10643,7 +11536,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 134.62 0)
+		(at 180.34 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10652,7 +11545,7 @@
 		(fields_autoplaced yes)
 		(uuid "a00b2ab5-e88d-47f8-9072-3987abb95b68")
 		(property "Reference" "#PWR0140"
-			(at 127 140.97 0)
+			(at 180.34 151.13 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10661,7 +11554,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127 139.7 0)
+			(at 180.34 149.86 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10670,7 +11563,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 134.62 0)
+			(at 180.34 144.78 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10679,7 +11572,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 134.62 0)
+			(at 180.34 144.78 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10688,7 +11581,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 134.62 0)
+			(at 180.34 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11565,71 +12458,6 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
 					(reference "C47")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 135.89 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b71a899a-1841-42a9-b923-db4d87b1fd40")
-		(property "Reference" "#PWR098"
-			(at 135.89 124.46 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Vin"
-			(at 135.89 116.84 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 120.65 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 120.65 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d8117c02-38a1-4a3d-b632-6c1172451e12")
-		)
-		(instances
-			(project "PCB_moteur"
-				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/a8ed0c04-b51e-4eec-84d1-0b2303d57d27"
-					(reference "#PWR098")
 					(unit 1)
 				)
 			)
