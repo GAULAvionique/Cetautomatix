@@ -3095,6 +3095,17 @@
 		)
 		(uuid "3812bf01-caca-4abb-ba5d-b73b7a3f99b6")
 	)
+	(text "*Max Vin <=10V\n*Max current delivered = 300mA"
+		(exclude_from_sim no)
+		(at 150.114 29.718 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3fb067a0-251c-47e3-a900-10a6381a7160")
+	)
 	(text "5V LDO for servo PWM control"
 		(exclude_from_sim no)
 		(at 81.026 58.928 0)
@@ -3147,7 +3158,7 @@
 		)
 		(uuid "b8b0648b-11c9-42c3-9152-0ede378e1d36")
 	)
-	(text "Enable when VREF_A is stable\notherwise muste be disable"
+	(text "Enable when VREF_A is stable\notherwise must be disable"
 		(exclude_from_sim no)
 		(at 75.184 76.454 0)
 		(effects
@@ -8979,7 +8990,7 @@
 		(dnp no)
 		(uuid "5a7ba944-3de2-4985-b5c2-dad25b8752d2")
 		(property "Reference" "R32"
-			(at 66.294 99.822 0)
+			(at 60.198 101.092 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8988,7 +8999,7 @@
 			)
 		)
 		(property "Value" "100k 1%"
-			(at 66.294 101.854 0)
+			(at 56.642 102.616 0)
 			(effects
 				(font
 					(size 1 1)

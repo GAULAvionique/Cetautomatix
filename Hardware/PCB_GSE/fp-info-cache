@@ -1,4 +1,4 @@
-27119072562034070
+27129712948176132
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -75544,6 +75544,20 @@ PCB_GSE
 2
 2
 PCB_GSE
+CONN_BM03B-GHS-TBT_JST
+
+BM03B-GHS-TBT 
+0
+5
+5
+PCB_GSE
+Cetautomatix_logo
+
+
+0
+0
+0
+PCB_GSE
 IND_BOURNS_SRR1208
 
 SRR1208-150ML 
@@ -75564,6 +75578,27 @@ LM2673SX-12_NOPB
 0
 8
 8
+PCB_GSE
+Logo-Canada
+
+
+0
+0
+0
+PCB_GSE
+Logo-GAUL
+
+
+0
+0
+0
+PCB_GSE
+Logo-QC
+
+
+0
+0
+0
 PCB_GSE
 MPL-AL6050-3R3
 Neosid, Power Inductor, SMS-ME3015, Fixed inductor, SMD, magnetically shielded, https://neosid.de/import-data/product-pdf/neoFestind_SMSME3015.pdf
@@ -75599,6 +75634,13 @@ UCL1E101MCL1GS
 0
 2
 2
+PCB_GSE
+ULaval
+
+
+0
+0
+0
 Package_BGA
 Alliance_TFBGA-36_6x8mm_Layout6x8_P0.75mm
 Alliance TFBGA-36, NSMD, 6.0x8.0mm, 36 Ball, 6x8 Layout, 0.75mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.alliancememory.com/wp-content/uploads/pdf/AS6C1008_Mar_2023V1.2.pdf#page=13
@@ -107469,7 +107511,7 @@ CONN4_GT17HN_HIR
 GT17HN-4DP-2HA56 
 0
 8
-8
+5
 pcb_moteur
 CONN_2189890010-SD_02_MOL
 

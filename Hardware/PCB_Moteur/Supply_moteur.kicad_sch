@@ -2310,9 +2310,9 @@
 		)
 		(uuid f68cd2cb-c50c-4ae8-b9bf-5df593476da4)
 	)
-	(text "Vin_AN = Vin x 10k / (10k + 100k) <= 3.3V\n0.4545V <= Vin_AN <= 2.1818V"
+	(text "Vin_AN = Vin x 10k / (10k + 100k) <= 3.3V\n0.4545V <= Vin_AN <= 2.1818V\n2159 ADC steps"
 		(exclude_from_sim no)
-		(at 208.026 51.054 0)
+		(at 207.518 50.292 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2336,7 +2336,7 @@
 	)
 	(text "Input 5v-38v\nFreq = 400kHz\nL = 33uH"
 		(exclude_from_sim no)
-		(at 14.986 125.476 0)
+		(at 14.732 124.206 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2345,9 +2345,9 @@
 		)
 		(uuid "38a49f41-cfd6-400b-b7a5-6a7d961b4056")
 	)
-	(text "Vin_AN = Vin x 10k / (10k + 100k) <= 3.3V\n0.9091V <= Vin_AN <= 2.7273V"
+	(text "Vin_AN = Vin x 10k / (10k + 100k) <= 3.3V\n0.9091V <= Vin_AN <= 2.7273V\n1454 ADC steps"
 		(exclude_from_sim no)
-		(at 201.422 93.218 0)
+		(at 201.422 92.202 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2437,9 +2437,9 @@
 		)
 		(uuid "c3637ec9-129a-404b-886b-683c25e5eb33")
 	)
-	(text "3V3_AN = 3.3±5% x 100k / (100k + 11k) <= 3.3V\n2.8243V <= 3V3_AN <= 3.1217V"
+	(text "3V3_AN = 3.3±5% x 100k / (100k + 11k) <= 3.3V\n2.8243V <= 3V3_AN <= 3.1217V\n371 ADC steps"
 		(exclude_from_sim no)
-		(at 14.986 129.032 0)
+		(at 14.732 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2474,7 +2474,7 @@
 		(uuid "0a9ab5d2-b949-47ba-acf2-527f19ba9d0e")
 	)
 	(junction
-		(at 85.09 110.49)
+		(at 85.09 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0fff38de-4769-4f39-a7ea-6c7152d727bb")
@@ -2510,13 +2510,13 @@
 		(uuid "3266e330-5844-49b5-8df3-31c6c8da0713")
 	)
 	(junction
-		(at 40.64 119.38)
+		(at 40.64 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "32f777a4-bac0-4529-b3ba-6520e34a2f45")
 	)
 	(junction
-		(at 71.12 110.49)
+		(at 71.12 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "393ab08c-aac7-4cc2-9f33-ab33f7104689")
@@ -2528,7 +2528,7 @@
 		(uuid "39f77340-281c-410f-9b70-8808e8327af0")
 	)
 	(junction
-		(at 49.53 119.38)
+		(at 49.53 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c7b8014-c34b-4e0c-833d-514f4f1c1555")
@@ -2546,19 +2546,19 @@
 		(uuid "473805e7-4ca5-4cf9-988c-22efd07290a8")
 	)
 	(junction
-		(at 40.64 110.49)
+		(at 40.64 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49a5dfd0-6610-409c-9585-f8137bf221fb")
 	)
 	(junction
-		(at 85.09 115.57)
+		(at 85.09 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "610b562a-1557-4d9e-8fa7-16ae623e1712")
 	)
 	(junction
-		(at 67.31 110.49)
+		(at 67.31 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "757165d1-b34a-4853-96e8-b80882a7466e")
@@ -2576,7 +2576,7 @@
 		(uuid "7be19da9-05a6-459f-91f1-de37044bfb81")
 	)
 	(junction
-		(at 58.42 119.38)
+		(at 58.42 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7c0bd0a5-a7ad-4c09-a248-e67aabae31af")
@@ -2630,7 +2630,7 @@
 		(uuid "ed11dd4c-c52f-4ab2-95f7-313ad0738820")
 	)
 	(junction
-		(at 49.53 110.49)
+		(at 49.53 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "edc28f3d-fed7-4b3f-a879-3d7d4f300c80")
@@ -2642,14 +2642,14 @@
 		(uuid "ee0da175-44bf-4404-ab4b-1ddb874a6bb5")
 	)
 	(junction
-		(at 58.42 110.49)
+		(at 58.42 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f1132362-38f5-4f44-a36b-ba01d5b28929")
 	)
 	(wire
 		(pts
-			(xy 85.09 115.57) (xy 87.63 115.57)
+			(xy 85.09 114.3) (xy 87.63 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2689,7 +2689,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 118.11) (xy 40.64 119.38)
+			(xy 40.64 116.84) (xy 40.64 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2719,7 +2719,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 111.76) (xy 100.33 110.49)
+			(xy 100.33 109.22) (xy 100.33 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2819,7 +2819,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 115.57) (xy 85.09 110.49)
+			(xy 85.09 114.3) (xy 85.09 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2829,7 +2829,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 119.38) (xy 40.64 119.38)
+			(xy 49.53 118.11) (xy 40.64 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2899,7 +2899,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 110.49) (xy 40.64 113.03)
+			(xy 40.64 109.22) (xy 40.64 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2909,7 +2909,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 119.38) (xy 58.42 119.38)
+			(xy 67.31 118.11) (xy 58.42 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2929,7 +2929,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 110.49) (xy 85.09 110.49)
+			(xy 90.17 109.22) (xy 85.09 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2939,7 +2939,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 119.38) (xy 40.64 120.65)
+			(xy 40.64 118.11) (xy 40.64 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2959,7 +2959,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 116.84) (xy 85.09 115.57)
+			(xy 85.09 115.57) (xy 85.09 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2999,7 +2999,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 118.11) (xy 49.53 119.38)
+			(xy 49.53 116.84) (xy 49.53 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3079,7 +3079,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 110.49) (xy 74.93 110.49)
+			(xy 71.12 109.22) (xy 74.93 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3099,7 +3099,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 110.49) (xy 58.42 113.03)
+			(xy 58.42 109.22) (xy 58.42 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3209,7 +3209,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 110.49) (xy 58.42 110.49)
+			(xy 67.31 109.22) (xy 58.42 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3259,7 +3259,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 113.03) (xy 67.31 110.49)
+			(xy 67.31 111.76) (xy 67.31 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3289,7 +3289,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 110.49) (xy 82.55 110.49)
+			(xy 85.09 109.22) (xy 82.55 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3379,7 +3379,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 110.49) (xy 49.53 110.49)
+			(xy 40.64 109.22) (xy 49.53 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3409,7 +3409,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 118.11) (xy 67.31 119.38)
+			(xy 67.31 116.84) (xy 67.31 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3419,7 +3419,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 110.49) (xy 40.64 110.49)
+			(xy 38.1 109.22) (xy 40.64 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3449,7 +3449,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 119.38) (xy 49.53 119.38)
+			(xy 58.42 118.11) (xy 49.53 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3499,7 +3499,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 110.49) (xy 49.53 113.03)
+			(xy 49.53 109.22) (xy 49.53 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3519,7 +3519,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 109.22) (xy 71.12 110.49)
+			(xy 71.12 107.95) (xy 71.12 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3549,7 +3549,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 110.49) (xy 67.31 110.49)
+			(xy 71.12 109.22) (xy 67.31 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3569,7 +3569,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 110.49) (xy 49.53 110.49)
+			(xy 58.42 109.22) (xy 49.53 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3609,7 +3609,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 110.49) (xy 97.79 110.49)
+			(xy 100.33 109.22) (xy 97.79 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3669,7 +3669,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 118.11) (xy 58.42 119.38)
+			(xy 58.42 116.84) (xy 58.42 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3759,7 +3759,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 123.19) (xy 85.09 121.92)
+			(xy 85.09 121.92) (xy 85.09 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3879,7 +3879,7 @@
 	)
 	(global_label "3V3_An"
 		(shape input)
-		(at 87.63 115.57 0)
+		(at 87.63 114.3 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3889,7 +3889,7 @@
 		)
 		(uuid "ae34d911-c0dc-4798-b454-833c33101373")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.328 115.57 0)
+			(at 97.328 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3924,7 +3924,7 @@
 	)
 	(global_label "3V3_Main"
 		(shape input)
-		(at 38.1 110.49 180)
+		(at 38.1 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3935,7 +3935,7 @@
 		)
 		(uuid "d142264a-b376-4df9-a91c-82dcecfe01fa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.2854 110.49 0)
+			(at 26.2854 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3947,7 +3947,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 93.98 110.49 270)
+		(at 93.98 109.22 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3956,7 +3956,7 @@
 		(dnp no)
 		(uuid "006811ba-1b18-46c6-9f8d-132ca92db218")
 		(property "Reference" "R11"
-			(at 94.996 108.458 90)
+			(at 94.996 107.188 90)
 			(effects
 				(font
 					(size 1 1)
@@ -3965,7 +3965,7 @@
 			)
 		)
 		(property "Value" "100k 1%"
-			(at 96.774 113.03 90)
+			(at 96.774 111.76 90)
 			(effects
 				(font
 					(size 1 1)
@@ -3974,7 +3974,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 93.98 112.268 90)
+			(at 93.98 110.998 90)
 			(effects
 				(font
 					(size 1 1)
@@ -3983,7 +3983,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07100KL/727544"
-			(at 93.98 110.49 0)
+			(at 93.98 109.22 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3992,7 +3992,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 110.49 0)
+			(at 93.98 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4001,7 +4001,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "311-100KCRCT-ND"
-			(at 93.98 110.49 90)
+			(at 93.98 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4010,7 +4010,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "RC0805FR-07100KL"
-			(at 93.98 110.49 90)
+			(at 93.98 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4325,7 +4325,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 49.53 115.57 0)
+		(at 49.53 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4333,7 +4333,7 @@
 		(dnp no)
 		(uuid "14a0738d-af0a-4fd7-bc82-f368c5bf7cc8")
 		(property "Reference" "C15"
-			(at 50.038 113.792 0)
+			(at 50.038 112.522 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4342,7 +4342,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 50.038 117.348 0)
+			(at 50.038 116.078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4351,7 +4351,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 49.53 115.57 0)
+			(at 49.53 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4360,7 +4360,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
-			(at 49.53 115.57 0)
+			(at 49.53 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4369,7 +4369,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 49.53 115.57 0)
+			(at 49.53 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4378,7 +4378,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "445-14428-1-ND"
-			(at 49.53 115.57 0)
+			(at 49.53 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4387,7 +4387,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
-			(at 49.53 115.57 0)
+			(at 49.53 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4480,7 +4480,7 @@
 	(symbol
 		(lib_name "+3V3_1")
 		(lib_id "power:+3V3")
-		(at 71.12 109.22 0)
+		(at 71.12 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4488,7 +4488,7 @@
 		(dnp no)
 		(uuid "1b924699-4a3e-408c-9d72-8e03609d14a2")
 		(property "Reference" "#PWR0116"
-			(at 71.12 113.03 0)
+			(at 71.12 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4497,7 +4497,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 71.12 105.156 0)
+			(at 71.12 103.886 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4505,7 +4505,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 109.22 0)
+			(at 71.12 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4514,7 +4514,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 109.22 0)
+			(at 71.12 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4523,7 +4523,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 71.12 109.22 0)
+			(at 71.12 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4545,7 +4545,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 78.74 110.49 270)
+		(at 78.74 109.22 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4554,7 +4554,7 @@
 		(dnp no)
 		(uuid "1dfd20d2-ebde-476d-8ed9-91df2b3c0ad3")
 		(property "Reference" "R7"
-			(at 79.756 108.204 90)
+			(at 79.756 106.934 90)
 			(effects
 				(font
 					(size 1 1)
@@ -4563,7 +4563,7 @@
 			)
 		)
 		(property "Value" "10k 1%"
-			(at 81.534 113.03 90)
+			(at 81.534 111.76 90)
 			(effects
 				(font
 					(size 1 1)
@@ -4572,7 +4572,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 78.74 112.268 90)
+			(at 78.74 110.998 90)
 			(effects
 				(font
 					(size 1 1)
@@ -4581,7 +4581,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
-			(at 78.74 110.49 0)
+			(at 78.74 109.22 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4590,7 +4590,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 110.49 0)
+			(at 78.74 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4599,7 +4599,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
-			(at 78.74 110.49 90)
+			(at 78.74 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4608,7 +4608,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
-			(at 78.74 110.49 90)
+			(at 78.74 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4633,7 +4633,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 40.64 120.65 0)
+		(at 40.64 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4642,15 +4642,6 @@
 		(fields_autoplaced yes)
 		(uuid "1eba364c-620a-46b4-9e4b-0e2db5df6ea3")
 		(property "Reference" "#PWR0115"
-			(at 40.64 127 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
 			(at 40.64 125.73 0)
 			(effects
 				(font
@@ -4659,8 +4650,17 @@
 				(hide yes)
 			)
 		)
+		(property "Value" "GND"
+			(at 40.64 124.46 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 		(property "Footprint" ""
-			(at 40.64 120.65 0)
+			(at 40.64 119.38 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4669,7 +4669,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 120.65 0)
+			(at 40.64 119.38 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4678,7 +4678,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 40.64 120.65 0)
+			(at 40.64 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5051,7 +5051,7 @@
 		(dnp no)
 		(uuid "3734fa03-6885-442a-9935-875342058e0e")
 		(property "Reference" "C13"
-			(at 43.688 88.392 0)
+			(at 42.418 88.392 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5504,7 +5504,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 85.09 123.19 0)
+		(at 85.09 121.92 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5514,15 +5514,6 @@
 		(fields_autoplaced yes)
 		(uuid "5847db8e-4096-402e-8186-1c3badc7ab88")
 		(property "Reference" "#PWR0124"
-			(at 85.09 129.54 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
 			(at 85.09 128.27 0)
 			(effects
 				(font
@@ -5531,8 +5522,17 @@
 				(hide yes)
 			)
 		)
+		(property "Value" "GND"
+			(at 85.09 127 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 		(property "Footprint" ""
-			(at 85.09 123.19 0)
+			(at 85.09 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5541,7 +5541,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 123.19 0)
+			(at 85.09 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5550,7 +5550,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.09 123.19 0)
+			(at 85.09 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5794,7 +5794,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 40.64 115.57 0)
+		(at 40.64 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5802,7 +5802,7 @@
 		(dnp no)
 		(uuid "722c60ff-1006-4904-b44c-bacea3cb26c9")
 		(property "Reference" "C8"
-			(at 41.148 113.792 0)
+			(at 41.148 112.522 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5811,7 +5811,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 41.148 117.348 0)
+			(at 41.148 116.078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5820,7 +5820,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 40.64 115.57 0)
+			(at 40.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5829,7 +5829,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
-			(at 40.64 115.57 0)
+			(at 40.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5838,7 +5838,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 40.64 115.57 0)
+			(at 40.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5847,7 +5847,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "445-14428-1-ND"
-			(at 40.64 115.57 0)
+			(at 40.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5856,7 +5856,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
-			(at 40.64 115.57 0)
+			(at 40.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6762,7 +6762,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 85.09 119.38 0)
+		(at 85.09 118.11 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6771,7 +6771,7 @@
 		(dnp no)
 		(uuid "a0458945-3931-447d-b16e-c346be86a342")
 		(property "Reference" "C17"
-			(at 84.836 117.602 0)
+			(at 84.836 116.332 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6780,7 +6780,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 84.836 121.158 0)
+			(at 84.836 119.888 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6789,7 +6789,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 85.09 119.38 0)
+			(at 85.09 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6798,7 +6798,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0805C104K5RACTU/411169"
-			(at 85.09 119.38 0)
+			(at 85.09 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6807,7 +6807,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 85.09 119.38 0)
+			(at 85.09 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6816,7 +6816,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "399-C0805C104K5RACTUCT-ND"
-			(at 85.09 119.38 0)
+			(at 85.09 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6825,7 +6825,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "C0805C104K5RACTU"
-			(at 85.09 119.38 0)
+			(at 85.09 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7526,7 +7526,7 @@
 		(dnp no)
 		(uuid "db807b03-27d9-4318-ba3e-eb4891ee6ac6")
 		(property "Reference" "C12"
-			(at 35.814 88.392 0)
+			(at 34.798 88.392 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7759,7 +7759,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 58.42 115.57 0)
+		(at 58.42 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7767,7 +7767,7 @@
 		(dnp no)
 		(uuid "e697b922-4faf-4554-b511-9f042f448c99")
 		(property "Reference" "C14"
-			(at 58.928 113.792 0)
+			(at 58.928 112.522 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7776,7 +7776,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 58.928 117.348 0)
+			(at 58.928 116.078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7785,7 +7785,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 58.42 115.57 0)
+			(at 58.42 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7794,7 +7794,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
-			(at 58.42 115.57 0)
+			(at 58.42 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7803,7 +7803,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 58.42 115.57 0)
+			(at 58.42 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7812,7 +7812,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "445-14428-1-ND"
-			(at 58.42 115.57 0)
+			(at 58.42 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7821,7 +7821,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
-			(at 58.42 115.57 0)
+			(at 58.42 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8434,7 +8434,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 67.31 115.57 0)
+		(at 67.31 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8442,7 +8442,7 @@
 		(dnp no)
 		(uuid "fe3224f2-cd7f-4544-bc47-d4f12cd39a3c")
 		(property "Reference" "C9"
-			(at 67.818 113.792 0)
+			(at 67.818 112.522 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8451,7 +8451,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 67.818 117.348 0)
+			(at 67.818 116.078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8460,7 +8460,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 67.31 115.57 0)
+			(at 67.31 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8469,7 +8469,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664"
-			(at 67.31 115.57 0)
+			(at 67.31 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8478,7 +8478,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 67.31 115.57 0)
+			(at 67.31 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8487,7 +8487,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "445-14428-1-ND"
-			(at 67.31 115.57 0)
+			(at 67.31 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8496,7 +8496,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "C2012X5R1V226M125AC"
-			(at 67.31 115.57 0)
+			(at 67.31 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
