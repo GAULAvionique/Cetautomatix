@@ -1,4 +1,4 @@
-27104920343090245
+27106693201089963
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -107631,6 +107631,13 @@ MPQ9843GLE-5-AEC1-Z
 0
 16
 16
+pcb_moteur
+POWERPAK_1212-8_VIS
+
+SI7617DN-T1-GE3 
+0
+8
+8
 pcb_moteur
 PW0014A_L
 
