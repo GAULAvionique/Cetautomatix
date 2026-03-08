@@ -8357,7 +8357,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "CONN_BM03B-GHS-TBT_JST"
+		(property "Footprint" "pcb_moteur:JST_SM03B-GHS-TB"
 			(at 104.14 123.19 0)
 			(effects
 				(font
@@ -9145,7 +9145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "CONN_BM03B-GHS-TBT_JST"
+		(property "Footprint" "pcb_moteur:JST_SM03B-GHS-TB"
 			(at 36.83 123.19 0)
 			(effects
 				(font
@@ -9392,7 +9392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "CONN_BM03B-GHS-TBT_JST"
+		(property "Footprint" "pcb_moteur:JST_SM03B-GHS-TB"
 			(at 189.23 133.35 0)
 			(effects
 				(font
@@ -12058,7 +12058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "CONN_BM03B-GHS-TBT_JST"
+		(property "Footprint" "pcb_moteur:JST_SM03B-GHS-TB"
 			(at 71.12 123.19 0)
 			(effects
 				(font

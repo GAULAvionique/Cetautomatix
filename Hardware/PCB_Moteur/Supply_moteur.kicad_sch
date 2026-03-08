@@ -5963,7 +5963,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2920L700/24SLER"
+		(property "Value" "8A"
 			(at 250.444 25.4 90)
 			(effects
 				(font
@@ -5982,7 +5982,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/littelfuse-inc/2920L400-15MR/6234817"
 			(at 259.08 27.94 0)
 			(effects
 				(font
@@ -5993,6 +5993,24 @@
 		)
 		(property "Description" "Resettable fuse"
 			(at 259.08 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "F8136CT-ND"
+			(at 259.08 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2920L400/15MR"
+			(at 259.08 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8163,7 +8181,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2920L700/24SLER"
+		(property "Value" "500mA"
 			(at 250.444 67.31 90)
 			(effects
 				(font
@@ -8172,7 +8190,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_2920_7451Metric"
+		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
 			(at 264.16 71.12 0)
 			(effects
 				(font
@@ -8182,7 +8200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/littelfuse-inc/0805L020-24YR/21801844"
 			(at 259.08 69.85 0)
 			(effects
 				(font
@@ -8193,6 +8211,24 @@
 		)
 		(property "Description" "Resettable fuse"
 			(at 259.08 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "18-0805L020/24YRCT-ND"
+			(at 259.08 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "0805L020/24YR"
+			(at 259.08 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)

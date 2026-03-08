@@ -12450,7 +12450,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2920L700/24SLER"
+		(property "Value" "10A trip 5A hold"
 			(at 250.444 25.4 90)
 			(effects
 				(font
@@ -12469,7 +12469,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/littelfuse-inc/2920L700-24SLER/12807015"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/littelfuse-inc/2920L500-24SLDR/12807024"
 			(at 259.08 27.94 0)
 			(effects
 				(font
@@ -12487,7 +12487,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "18-2920L700/24SLERCT-ND"
+		(property "DigiKey_Part_Number" "18-2920L500/24SLDRCT-ND"
 			(at 259.08 27.94 90)
 			(effects
 				(font
@@ -12532,7 +12532,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "2920L700/24SLER"
+		(property "Manufacturer_Part_Number" "2920L500/24SLDR"
 			(at 259.08 27.94 90)
 			(effects
 				(font
