@@ -2086,7 +2086,7 @@
 	)
 	(rectangle
 		(start 13.97 88.9)
-		(end 158.75 156.21)
+		(end 165.1 157.48)
 		(stroke
 			(width 0)
 			(type dash)
@@ -2158,7 +2158,17 @@
 		)
 		(uuid "3338a66e-a377-4025-9e2d-728772318e71")
 	)
-	(text "Swagelok S Model - 3 wires 0 to 5V\nRload = 10k || (100k + 191k) = 9.68k\nPressure_An = 5±5% x 100k / (100k + 191k) <= 3.3V\n0V <= Pressure_An <= 3.2818V\n4073 ADC steps\nFcutoff = 1/2piRC = 1 / (2 * pi * ((100k + 10k) || 191k * 10n)) = 228 Hz\n*Manual calibration for zero (R potentiometer)\n*Manual calibration for span(range 0-5V) (S potentiometer)"
+	(text "Pour échantillonner à 200 Hz :\nShort R54 ou R37 pour avoir\nfc = 106 Hz"
+		(exclude_from_sim no)
+		(at 140.462 152.146 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3a514088-721b-41c9-a31c-7fbdc864bc5e")
+	)
+	(text "Swagelok S Model - 3 wires 0 to 5V\nRload = 10k || (100k + 191k) = 9.68k\nPressure_An = 5±5% x 100k / (100k + 191k) <= 3.3V\n0V <= Pressure_An <= 3.2818V\n4073 ADC steps\nFcutoff = 1/2piRC = 1 / (2 * pi * (100k || 191k * 100n)) = 24.2 Hz\n*Manual calibration for zero (R potentiometer)\n*Manual calibration for span(range 0-5V) (S potentiometer)"
 		(exclude_from_sim no)
 		(at 14.478 78.994 0)
 		(effects
@@ -2203,6 +2213,16 @@
 		)
 		(uuid "80c0e975-055f-4c04-a422-67ee8bb85b99")
 	)
+	(text "Cutoff :\nfc = 1 / (2*pi* 3k * 1u) = 53 Hz\nPour un échantillonnage à 100 Hz"
+		(exclude_from_sim no)
+		(at 140.208 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9084a3cf-4f72-4be9-836f-8c4e48a00685")
+	)
 	(text "Grey\nBrown\nWhite\nGreen"
 		(exclude_from_sim no)
 		(at 35.052 52.324 0)
@@ -2234,6 +2254,12 @@
 			)
 		)
 		(uuid "d24cab86-1f37-4282-bca7-7e1497cdfac2")
+	)
+	(junction
+		(at 148.59 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16bef7fd-7739-40dc-b142-f968a85b0779")
 	)
 	(junction
 		(at 34.29 115.57)
@@ -2312,12 +2338,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eda81c47-51b9-4ab2-b900-b8cdaa26261f")
-	)
-	(junction
-		(at 142.24 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ffc03a28-da85-428d-b551-ec4c707601f7")
 	)
 	(no_connect
 		(at 113.03 118.11)
@@ -2413,6 +2433,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 128.27) (xy 153.67 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f9e6ae0-f71c-4437-a71c-ed03b7eebc0b")
+	)
+	(wire
+		(pts
 			(xy 82.55 139.7) (xy 114.3 139.7)
 		)
 		(stroke
@@ -2500,26 +2530,6 @@
 			(type default)
 		)
 		(uuid "2f0c1c65-5df7-4ccd-a25e-f6c8cffb2d13")
-	)
-	(wire
-		(pts
-			(xy 138.43 128.27) (xy 142.24 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3228ecf7-f7b2-44a7-8854-e4845d4646c4")
-	)
-	(wire
-		(pts
-			(xy 142.24 128.27) (xy 147.32 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "387f090e-0d50-4d04-9065-0b8be86916d2")
 	)
 	(wire
 		(pts
@@ -2670,6 +2680,16 @@
 			(type default)
 		)
 		(uuid "75b49340-33a4-4ed6-9a67-0c73fdbd80cb")
+	)
+	(wire
+		(pts
+			(xy 138.43 128.27) (xy 139.7 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79791234-2550-4b38-a4f6-64594755915a")
 	)
 	(wire
 		(pts
@@ -2991,9 +3011,19 @@
 		)
 		(uuid "f8c9543c-bc95-44b0-bf4f-b608343772f5")
 	)
+	(wire
+		(pts
+			(xy 144.78 128.27) (xy 148.59 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd2ebe04-57b2-4571-b5ca-d88c1fe823c8")
+	)
 	(global_label "LCell_An"
 		(shape input)
-		(at 147.32 128.27 0)
+		(at 153.67 128.27 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3003,7 +3033,7 @@
 		)
 		(uuid "27793579-c43d-4e40-9ca4-7d30026d94db")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 158.2275 128.27 0)
+			(at 164.5775 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4029,6 +4059,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 142.24 128.27 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "38f6be06-d236-4219-873e-509a0a73ddb9")
+		(property "Reference" "R49"
+			(at 144.018 124.714 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 144.272 126.492 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 142.24 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
+			(at 142.24 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 142.24 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+			(at 142.24 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+			(at 142.24 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a646da1-db57-4ef7-a0b8-854a076779ff")
+		)
+		(pin "2"
+			(uuid "158fe005-1a68-4588-b5dd-1e445a94c9b1")
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 262.89 34.29 90)
 		(unit 1)
@@ -5009,7 +5126,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 142.24 132.08 0)
+		(at 148.59 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5017,7 +5134,7 @@
 		(dnp no)
 		(uuid "76c12318-0d9e-420b-95fa-1348a589973f")
 		(property "Reference" "C29"
-			(at 137.922 129.794 0)
+			(at 144.272 129.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5025,8 +5142,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 137.16 134.366 0)
+		(property "Value" "1uF"
+			(at 143.51 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5034,8 +5151,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 143.2052 135.89 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 149.5552 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5043,8 +5160,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
-			(at 142.24 132.08 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C105K4RACTU/2199788"
+			(at 148.59 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5053,7 +5170,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 142.24 132.08 0)
+			(at 148.59 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5061,8 +5178,8 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
-			(at 142.24 132.08 0)
+		(property "DigiKey_Part_Number" "399-C0603C105K4RACTUCT-ND"
+			(at 148.59 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5070,8 +5187,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
-			(at 142.24 132.08 0)
+		(property "Manufacturer_Part_Number" "C0603C105K4RACTU"
+			(at 148.59 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6127,7 +6244,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "100nF"
 			(at 83.82 58.42 0)
 			(effects
 				(font
@@ -6136,7 +6253,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 82.2452 60.96 0)
 			(effects
 				(font
@@ -6145,7 +6262,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B103KAANNNC/3888092"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
 			(at 81.28 57.15 0)
 			(effects
 				(font
@@ -6163,7 +6280,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "1276-2434-1-ND"
+		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
 			(at 81.28 57.15 0)
 			(effects
 				(font
@@ -6172,7 +6289,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CL21B103KAANNNC"
+		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
 			(at 81.28 57.15 0)
 			(effects
 				(font
@@ -6264,7 +6381,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 135.89 0)
+		(at 148.59 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6273,7 +6390,7 @@
 		(fields_autoplaced yes)
 		(uuid "f2f117eb-0e27-4916-826a-a52bcf596ec1")
 		(property "Reference" "#PWR0224"
-			(at 142.24 142.24 0)
+			(at 148.59 142.24 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6282,7 +6399,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 140.97 0)
+			(at 148.59 140.97 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6291,7 +6408,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 135.89 0)
+			(at 148.59 135.89 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6300,7 +6417,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 135.89 0)
+			(at 148.59 135.89 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6309,7 +6426,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 135.89 0)
+			(at 148.59 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)

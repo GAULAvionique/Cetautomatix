@@ -8332,7 +8332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?65164"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-siliconix/SI7617DN-T1-GE3/2441735?s=N4IgTCBcDaIMoEkDsA2AjEgIgOQLQBU1cBxAUQGYBhfXbTEAXQF8g"
 			(at 224.79 33.02 0)
 			(effects
 				(font
@@ -9256,7 +9256,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-071K5L/727496"
 			(at 101.6 115.57 0)
 			(effects
 				(font
@@ -9274,7 +9274,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+		(property "DigiKey_Part_Number" "311-1.50KCRCT-ND"
 			(at 101.6 115.57 90)
 			(effects
 				(font
@@ -9283,7 +9283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+		(property "Manufacturer_Part_Number" "RC0805FR-071K5L"
 			(at 101.6 115.57 90)
 			(effects
 				(font
@@ -10216,7 +10216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-071K5L/727496"
 			(at 198.12 49.53 0)
 			(effects
 				(font
@@ -10234,7 +10234,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+		(property "DigiKey_Part_Number" "311-1.50KCRCT-ND"
 			(at 198.12 49.53 90)
 			(effects
 				(font
@@ -10243,7 +10243,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+		(property "Manufacturer_Part_Number" "RC0805FR-071K5L"
 			(at 198.12 49.53 90)
 			(effects
 				(font
@@ -10544,7 +10544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-071K5L/727496"
 			(at 33.02 115.57 0)
 			(effects
 				(font
@@ -10562,7 +10562,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+		(property "DigiKey_Part_Number" "311-1.50KCRCT-ND"
 			(at 33.02 115.57 90)
 			(effects
 				(font
@@ -10571,7 +10571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+		(property "Manufacturer_Part_Number" "RC0805FR-071K5L"
 			(at 33.02 115.57 90)
 			(effects
 				(font

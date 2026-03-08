@@ -6165,7 +6165,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "399-C0603C103K5RACTUCT-ND"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C103K5RACTU/411090?s=N4IgTCBcDaIMwE4EFoDCAGAbOuqCMOA0gKwBKAgqgCoCq1yAcgCIgC6AvkA"
 			(at 251.46 54.61 0)
 			(effects
 				(font
@@ -6613,7 +6613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/STM32F103CBT6/1754420?s=N4IgTCBcDaICwE4DsBaAbGAHJlA5AIiALoC%2BQA"
 			(at 148.59 87.63 0)
 			(effects
 				(font
@@ -7052,7 +7052,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/johanson-technology-inc/QSCT251Q220F1GV001E/1919484"
 			(at 242.57 101.6 0)
 			(effects
 				(font
@@ -7069,7 +7069,7 @@
 				)
 			)
 		)
-		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+		(property "DigiKey_Part_Number" "712-QSCT251Q220F1GV001ECT-ND"
 			(at 242.57 101.6 0)
 			(effects
 				(font
@@ -7078,7 +7078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
+		(property "Manufacturer_Part_Number" "QSCT251Q220F1GV001E"
 			(at 242.57 101.6 0)
 			(effects
 				(font
@@ -7207,7 +7207,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-071K5L/727496"
 			(at 212.09 25.4 0)
 			(effects
 				(font
@@ -7224,7 +7224,7 @@
 				)
 			)
 		)
-		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+		(property "DigiKey_Part_Number" "311-1.50KCRCT-ND"
 			(at 212.09 25.4 90)
 			(effects
 				(font
@@ -7233,7 +7233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+		(property "Manufacturer_Part_Number" "RC0805FR-071K5L"
 			(at 212.09 25.4 90)
 			(effects
 				(font
@@ -7298,7 +7298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "399-C0603C103K5RACTUCT-ND"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C103K5RACTU/411090?s=N4IgTCBcDaIMwE4EFoDCAGAbOuqCMOA0gKwBKAgqgCoCq1yAcgCIgC6AvkA"
 			(at 265.43 54.61 0)
 			(effects
 				(font
@@ -10403,7 +10403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/johanson-technology-inc/QSCT251Q220F1GV001E/1919484"
 			(at 266.7 101.6 0)
 			(effects
 				(font
@@ -10420,7 +10420,7 @@
 				)
 			)
 		)
-		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+		(property "DigiKey_Part_Number" "712-QSCT251Q220F1GV001ECT-ND"
 			(at 266.7 101.6 0)
 			(effects
 				(font
@@ -10429,7 +10429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
+		(property "Manufacturer_Part_Number" "QSCT251Q220F1GV001E"
 			(at 266.7 101.6 0)
 			(effects
 				(font
