@@ -66,3 +66,5 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 
     # Add user defined libraries
 )
+
+include(${CMAKE_CURRENT_LIST_DIR}/cmake/user_sources.cmake)

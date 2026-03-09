@@ -30,6 +30,7 @@
 #include "comm_tx.h"
 #include <string.h>
 #include <stdbool.h>
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -119,118 +120,11 @@ int main(void)
   const char *msg = "PROTO TEST: UART($..$) + CAN(DLC=1)\r\n";
   HAL_UART_Transmit(&huart4, (uint8_t*)msg, strlen(msg), 100);
 
-
-
-
-
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    static uint8_t hb = 0;
-	uint32_t t0;
-
-	CAN_RxHeaderTypeDef  canRxHdr = {0};
-	uint8_t can_rxd[8] = {0};
-
-	hb ^= 1u;
-
-	/* ---- Construire une commande "Startup" ---- */
-	uint8_t seq = comm_seq_next();
-	cmd_byte_t cmd = cmd_make(seq, hb,
-							  true,   /* C1: Startup */
-							  false,  /* C2: N2O Fill */
-							  false,  /* C3: Igniter Start */
-							  false); /* C4: Engine Start */
-
-	/* 1) SAS->GSE via UART4 */
-	if (comm_tx_rf_send_sas_cmd(&huart4, 50, cmd.byte) != HAL_OK) {
-	  Error_Handler();
-	}
-	char buf[32];
-	sprintf(buf, "CMD = 0x%02X\r\n", cmd.byte);
-	HAL_UART_Transmit(&huart4, (uint8_t*)buf, strlen(buf), 100);
-
-	/* 2) GSE->Moteur via CAN1 */
-	if (comm_tx_can_send_moteur_cmd(&hcan1, cmd.byte) != HAL_OK) {
-	  Error_Handler();
-	}
-
-	/* 3) Vérifier RX CAN en LOOPBACK */
-	t0 = HAL_GetTick();
-	while (HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0) == 0U) {
-	  if ((HAL_GetTick() - t0) > 50U) {
-		Error_Handler();   /* timeout RX */
-	  }
-	}
-
-	if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &canRxHdr, can_rxd) != HAL_OK) {
-	  Error_Handler();
-	}
-
-	/* Vérifications attendues */
-	if ((canRxHdr.DLC != 1U) || (can_rxd[0] != cmd.byte)) {
-	  Error_Handler();
-	}
-
-	HAL_Delay(500);
-
-	/* ---- Exemple : envoyer N2O Fill ---- */
-	seq = comm_seq_next();
-	cmd = cmd_make(seq, hb,
-				   false,
-				   true,
-				   false,
-				   false);
-
-	if (comm_tx_rf_send_sas_cmd(&huart4, 50, cmd.byte) != HAL_OK) {
-	  Error_Handler();
-	}
-
-	if (comm_tx_can_send_moteur_cmd(&hcan1, cmd.byte) != HAL_OK) {
-	  Error_Handler();
-	}
-
-	t0 = HAL_GetTick();
-	while (HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0) == 0U) {
-	  if ((HAL_GetTick() - t0) > 50U) {
-		Error_Handler();
-	  }
-	}
-
-	if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &canRxHdr, can_rxd) != HAL_OK) {
-	  Error_Handler();
-	}
-
-	if ((canRxHdr.DLC != 1U) || (can_rxd[0] != cmd.byte)) {
-	  Error_Handler();
-	}
-
-	HAL_Delay(500);
-
-	/* ---- Exemple : E-STOP ---- */
-	if (comm_tx_can_send_estop(&hcan1, 0x01) != HAL_OK) {
-	  Error_Handler();
-	}
-
-	t0 = HAL_GetTick();
-	while (HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0) == 0U) {
-	  if ((HAL_GetTick() - t0) > 50U) {
-		Error_Handler();
-	  }
-	}
-
-	if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &canRxHdr, can_rxd) != HAL_OK) {
-	  Error_Handler();
-	}
-
-	/* Ici on vérifie juste DLC=1 et data=0x01 */
-	if ((canRxHdr.DLC != 1U) || (can_rxd[0] != 0x01U)) {
-	  Error_Handler();
-	}
-
-	HAL_Delay(1500);
 
   }
 #endif
