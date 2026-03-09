@@ -513,7 +513,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Fab/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -741,7 +741,7 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,

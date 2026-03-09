@@ -3291,7 +3291,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 75.565 51.435 0)
 			(effects
 				(font
@@ -3515,7 +3515,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 123.825 126.365 0)
 			(effects
 				(font
@@ -3615,7 +3615,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-071K5L/727496"
 			(at 135.89 128.27 0)
 			(effects
 				(font
@@ -3633,7 +3633,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+		(property "DigiKey_Part_Number" "311-1.50KCRCT-ND"
 			(at 135.89 128.27 90)
 			(effects
 				(font
@@ -3642,7 +3642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+		(property "Manufacturer_Part_Number" "RC0805FR-071K5L"
 			(at 135.89 128.27 90)
 			(effects
 				(font
@@ -3834,7 +3834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB1913V/2026952"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07191KL/727660"
 			(at 63.5 58.42 0)
 			(effects
 				(font
@@ -3852,7 +3852,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "P191KDBCT-ND"
+		(property "DigiKey_Part_Number" "311-191KCRCT-ND"
 			(at 63.5 58.42 90)
 			(effects
 				(font
@@ -3897,7 +3897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERA-3AEB1913V"
+		(property "Manufacturer_Part_Number" "RC0805FR-07191KL"
 			(at 63.5 58.42 90)
 			(effects
 				(font
@@ -4094,7 +4094,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERA-3AEB152V/1465858"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-071K5L/727496"
 			(at 142.24 128.27 0)
 			(effects
 				(font
@@ -4112,7 +4112,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "P1.5KDBCT-ND"
+		(property "DigiKey_Part_Number" "311-1.50KCRCT-ND"
 			(at 142.24 128.27 90)
 			(effects
 				(font
@@ -4121,7 +4121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERA-3AEB152V"
+		(property "Manufacturer_Part_Number" "RC0805FR-071K5L"
 			(at 142.24 128.27 90)
 			(effects
 				(font
@@ -4400,7 +4400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 46.99 58.42 0)
 			(effects
 				(font
@@ -4417,7 +4417,7 @@
 				)
 			)
 		)
-		(property "DigiKey_Part_Number" "311-10.0KHRCT-ND"
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
 			(at 46.99 58.42 0)
 			(effects
 				(font
@@ -4426,7 +4426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0603FR-0710KL"
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
 			(at 46.99 58.42 0)
 			(effects
 				(font
@@ -5160,7 +5160,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C105K4RACTU/2199788"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
 			(at 148.59 132.08 0)
 			(effects
 				(font
@@ -5178,7 +5178,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey_Part_Number" "399-C0603C105K4RACTUCT-ND"
+		(property "DigiKey_Part_Number" "1276-1029-1-ND"
 			(at 148.59 132.08 0)
 			(effects
 				(font
@@ -5187,7 +5187,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "C0603C105K4RACTU"
+		(property "Manufacturer_Part_Number" "CL21B105KBFNNNE"
 			(at 148.59 132.08 0)
 			(effects
 				(font
@@ -5978,7 +5978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
 			(at 34.29 133.35 0)
 			(effects
 				(font
@@ -5995,7 +5995,7 @@
 				)
 			)
 		)
-		(property "DigiKey_Part_Number" "311-10.0KHRCT-ND"
+		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
 			(at 34.29 133.35 0)
 			(effects
 				(font
@@ -6004,7 +6004,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0603FR-0710KL"
+		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
 			(at 34.29 133.35 0)
 			(effects
 				(font

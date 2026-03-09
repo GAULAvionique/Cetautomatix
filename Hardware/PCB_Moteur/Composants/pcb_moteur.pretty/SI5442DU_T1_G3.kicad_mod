@@ -371,7 +371,7 @@
 	(pad "5" smd rect
 		(at 0 1.082998)
 		(size 0.5588 0.3048)
-		(layers "F.Cu" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "113f6545-66c0-44c8-a4f6-035549f6a0bb")
 	)
 	(pad "5" smd rect

@@ -136,6 +136,17 @@
 		(layer "F.SilkS")
 		(uuid "bb3ba2fe-9d6a-4812-90e9-bdb876b996a8")
 	)
+	(fp_rect
+		(start 0 -0.9)
+		(end 0.7 0.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "eca0fd8a-fe38-40f6-af35-95e495f3ae4b")
+	)
 	(fp_poly
 		(pts
 			(xy -1.98755 -1.178199) (xy -1.98755 -0.771799) (xy -0.99695 -0.771799) (xy -0.99695 -1.178199)
@@ -469,16 +480,16 @@
 		(uuid "40dc7613-b034-40dd-bfc8-cb83d07f73c1")
 	)
 	(pad "8" smd rect
+		(at 0.631888 0.005637)
+		(size 1.728776 2.251274)
+		(layers "F.Cu" "F.Mask")
+		(uuid "30140e43-485e-428d-bd33-8bbc2f391b66")
+	)
+	(pad "8" smd rect
 		(at 1.49225 -0.974999)
 		(size 0.9906 0.4064)
 		(layers "F.Cu" "F.Mask")
 		(uuid "00476ece-4b7a-4905-9a31-0dc20e3e6233")
-	)
-	(pad "9" smd rect
-		(at 0.631888 0.005637)
-		(size 1.728776 2.251274)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "30140e43-485e-428d-bd33-8bbc2f391b66")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/Composants/Snapeda.3dshapes/SI7617DN-T1-GE3.STEP"

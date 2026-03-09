@@ -595,132 +595,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:NetTie_2"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "NT"
-				(at 0 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "NetTie_2"
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Net tie, 2 pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "net tie short"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Net*Tie*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NetTie_2_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NetTie_2_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:Polyfuse"
 			(pin_numbers
 				(hide yes)
@@ -2789,7 +2663,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 115.57) (xy 115.57 116.84)
+			(xy 115.57 118.11) (xy 115.57 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2879,16 +2753,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 115.57) (xy 115.57 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2decd4eb-8799-46ea-b8ba-5456660414f8")
-	)
-	(wire
-		(pts
 			(xy 107.95 109.22) (xy 110.49 109.22)
 		)
 		(stroke
@@ -2969,7 +2833,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 115.57) (xy 107.95 116.84)
+			(xy 107.95 118.11) (xy 107.95 119.38)
 		)
 		(stroke
 			(width 0)
@@ -3119,7 +2983,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 115.57) (xy 107.95 115.57)
+			(xy 107.95 118.11) (xy 115.57 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3855,6 +3719,28 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape input)
+		(at 115.57 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "33405694-c4b0-4d97-b617-28b63b1ced7e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.4257 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Vin_An"
 		(shape input)
 		(at 218.44 35.56 180)
@@ -4230,94 +4116,6 @@
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
 					(reference "#PWR0102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:NetTie_2")
-		(at 111.76 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ef71fc4-112d-4c78-82e6-c6a544048ed8")
-		(property "Reference" "NT0"
-			(at 111.76 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "NetTie_2"
-			(at 111.76 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "NetTie:NetTie-4_SMD_Pad0.5mm"
-			(at 111.76 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "-"
-			(at 111.76 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 111.76 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "-"
-			(at 111.76 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "-"
-			(at 111.76 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7599c751-74ab-4863-895c-f1049508193d")
-		)
-		(pin "1"
-			(uuid "a6e0d0bc-53cb-47ec-9b32-a4bb357276e8")
-		)
-		(instances
-			(project "PCB_moteur"
-				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/92d1df5d-a307-4eea-a65c-ade4cb0ad548"
-					(reference "NT0")
 					(unit 1)
 				)
 			)
@@ -4767,7 +4565,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 115.57 116.84 0)
+		(at 115.57 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4776,7 +4574,7 @@
 		(fields_autoplaced yes)
 		(uuid "290a3c99-1c17-4807-9bcb-f15249625186")
 		(property "Reference" "#PWR0109"
-			(at 115.57 123.19 0)
+			(at 115.57 125.73 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4785,7 +4583,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 121.92 0)
+			(at 115.57 124.46 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4794,7 +4592,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 116.84 0)
+			(at 115.57 119.38 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4803,7 +4601,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 116.84 0)
+			(at 115.57 119.38 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4812,7 +4610,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 116.84 0)
+			(at 115.57 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5727,7 +5525,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 107.95 116.84 0)
+		(at 107.95 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5736,7 +5534,7 @@
 		(fields_autoplaced yes)
 		(uuid "6658e0af-1c68-4388-b453-61383d7b86e1")
 		(property "Reference" "#PWR0107"
-			(at 107.95 123.19 0)
+			(at 107.95 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5745,7 +5543,7 @@
 			)
 		)
 		(property "Value" "AGND3V3"
-			(at 107.95 120.65 0)
+			(at 107.95 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5754,7 +5552,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 116.84 0)
+			(at 107.95 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5763,7 +5561,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 116.84 0)
+			(at 107.95 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5772,7 +5570,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 107.95 116.84 0)
+			(at 107.95 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)

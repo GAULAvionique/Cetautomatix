@@ -8356,7 +8356,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BM03B-GHS-TBT"
+		(property "Value" "SM03B-GHS-TB"
 			(at 118.11 126.9999 0)
 			(effects
 				(font
@@ -9144,7 +9144,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BM03B-GHS-TBT"
+		(property "Value" "SM03B-GHS-TB"
 			(at 50.8 126.9999 0)
 			(effects
 				(font
@@ -9391,7 +9391,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BM03B-GHS-TBT"
+		(property "Value" "SM03B-GHS-TB"
 			(at 203.2 137.1599 0)
 			(effects
 				(font
@@ -12057,7 +12057,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BM03B-GHS-TBT"
+		(property "Value" "SM03B-GHS-TB"
 			(at 85.09 126.9999 0)
 			(effects
 				(font
