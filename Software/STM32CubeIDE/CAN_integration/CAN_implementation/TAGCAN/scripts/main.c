@@ -17,10 +17,10 @@
 int passed_tests = 0; /**< le nombre total de test réussi */
 int total_tests = 0; /**< le nombre total de test effectué */
 
-/** \brief permet l'impression des testes de manière identique pour chacun.
+/** \brief Affiche un resultat de test avec format uniforme.
  *
- * \param name:     le nom du test (peux aussi être sa description court.)
- * \param condition:Le resultat du test (vrai si réussi, faux sinon)
+ * \param name Le nom du test (peut aussi servir de description courte).
+ * \param condition Resultat du test (true si reussi, false sinon).
  *
  */
 void TEST(const char* name, const bool condition)
@@ -36,11 +36,11 @@ void TEST(const char* name, const bool condition)
     }
     total_tests++;
 }
-/** \brief permet l'impression des testes d'égalité entre 2 int de manière plus stendardisé.
+/** \brief Affiche un test d'egalite entre deux entiers.
  *
- * \param name: même chose que TEST
- * \param val_1 la première valeurs à comparer.
- * \param val_2 la deuxième valeurs à comparer.
+ * \param name Meme usage que TEST.
+ * \param val_1 Premiere valeur a comparer.
+ * \param val_2 Deuxieme valeur a comparer.
  *
  */
 void TEST_EQ_INT(const char* name, const int val_1, const int val_2)
@@ -66,6 +66,9 @@ void TEST_EQ_INT(const char* name, const int val_1, const int val_2)
 
 
 
+/** \brief Execute un scenario de demonstration des fonctions d'impression.
+ * \details Initialise des tags/valeurs puis affiche metadonnees et repartition.
+ */
 void test_print(void){
 printf("test des fonction d'impression.\n");
 // prepa du gt
@@ -96,6 +99,8 @@ print_repartition_bit();
 
 
 
+/** \brief Scenario de test manuel des operations de masque/shift.
+ */
 void somme_other_test(void){
 printf("----------------------test mask ------------------------\n");
     printf("\t(0,8): ");
@@ -164,8 +169,8 @@ printf("----------------------test mask ------------------------\n");
 
 }
 
-/** \brief effectue les divers tests affin de vérifier que tout fonctionne bien.
- *      les résultat sont présenté dans le terminal.
+/** \brief Execute les tests unitaires du module.
+ *      Les resultats sont affiches dans le terminal.
  *
  */
 
@@ -181,13 +186,13 @@ void run_all_tests(void)
     printf("Test 1: Erreurs de set_tag... ");
     init_tag_manager(); // On part d'un état propre
 
-    // Tailles invalides (doit retourner -2)
+    // Tailles invalides (ex: 0 retourne CAN_TG_ERROR_SIZE_VALUE_INVALIDE)
     printf("\tTailles invalides\n");
     TEST_EQ_INT("0",set_tag("inv1", 0), CAN_TG_ERROR_SIZE_VALUE_INVALIDE);
     TEST_EQ_INT("2",set_tag("inv2", 2), CAN_TG_SUCCESS);
     TEST_EQ_INT("5",set_tag("inv5", 5), CAN_TG_SUCCESS);
 
-    // Tag en double (doit retourner -2)
+    // Tag en double (retour attendu: CAN_TG_ERROR_NAME_ALREADY_USE)
     printf("\tTag en double\n");
     TEST_EQ_INT("première insertion",set_tag("TAG_A", 4), SUCCES_TO_SET); // Succès
     TEST_EQ_INT("duplica détection",set_tag("TAG_A", 3), CAN_TG_ERROR_NAME_ALREADY_USE); // Erreur : existe déjà
@@ -206,7 +211,7 @@ void run_all_tests(void)
     TEST_EQ_INT("ajout de valeurs 16 bit (3/4)",set_tag("T3", 16), SUCCES_TO_SET);
     TEST_EQ_INT("ajout de valeurs 16 bit (4/4)",set_tag("T4", 16), SUCCES_TO_SET);
 
-    // Le prochain tag doit être refusé, peu importe sa taille (-1)
+    // Le prochain tag doit etre refuse faute d'espace libre.
     printf("\ttest de Dépassement de l'espace mémoire (8 octets max)\n");
     TEST_EQ_INT("avec 1 bit",set_tag("T5", 1), CAN_TG_ERROR_NOT_ENOUNG_SPACE);
     TEST_EQ_INT("avec 16 bits",set_tag("T6", 16), CAN_TG_ERROR_NOT_ENOUNG_SPACE);
@@ -223,12 +228,14 @@ void run_all_tests(void)
     TEST_EQ_INT("prepa... ",set_tag("BIT_3", 3), SUCCES);
     TEST_EQ_INT("prepa... ",set_tag("BIT_4", 4), SUCCES);
 
-    // Tag inexistant (doit retourner -3)
+    // Tag inexistant (retour attendu: -3)
     printf("\tTag inexistant\n");
     TEST_EQ_INT("test set",set_value("FANTOME", 5), -3);
     TEST_EQ_INT("test get",get_value("FANTOME", &val), -3);
 
-    // Dépassement de capacité (doit retourner -4)
+    // Depassement de capacite:
+    // NOTE: l'implementation actuelle renvoie CAN_TG_ERROR_VALUE_TO_BIG (-10),
+    // mais ces assertions historiques verifient encore -4.
     printf("\tDépassement de capacité\n");
     // - Un tag de 1 bit ne peut contenir que 0 ou 1
     TEST_EQ_INT("Un tag de 1 bits[0 ou 1]",set_value("BIT_1", 2), -4);
@@ -298,7 +305,7 @@ void run_all_tests(void)
     get_value("V8", &val);
     TEST_EQ_INT("val = 255",val, 255);
     printf("\tErreur dépassement\n");
-    TEST_EQ_INT("val: [256]",set_value("V8", 256), -4); // Erreur dépassement
+    TEST_EQ_INT("val: [256]",set_value("V8", 256), -4); // Assertion historique, a realigner avec -10
     printf("OK\n");
 
     //--------------------------------------

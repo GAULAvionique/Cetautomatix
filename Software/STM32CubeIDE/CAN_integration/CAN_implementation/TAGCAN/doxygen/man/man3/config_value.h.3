@@ -22,15 +22,17 @@ config_value.h
 .RI "#define \fBMAX_N_GT\fP   3"
 .br
 .in -1c
-.SS "Énumérations"
+.SS "Enumerations"
 
 .in +1c
 .ti -1c
 .RI "enum \fBCAN_TG_STATUE\fP { \fBCAN_TG_ERROR_NOT_ENOUNG_SPACE_\fP = -2, \fBCAN_TG_SUCCESS\fP = 1, \fBCAN_TG_ERROR_TAG_NOT_FOUND_\fP = -3, \fBCAN_TG_ERROR_TAG_NAME_TO_BIGS_\fP = -4, \fBCAN_TG_ERROR_TOO_MAY_TAGS_\fP = -5, \fBCAN_TG_ERROR_SIZE_VALUE_INVALIDE_\fP = -6, \fBCAN_TG_ERROR_NAME_ALREADY_USE_\fP = -7, \fBCAN_TG_ERROR_SUBDIVISION_FAIL_\fP = -8, \fBCAN_TG_ERROR_TAG_NAME_INVALIDE_\fP =-9, \fBCAN_TG_ERROR_NULL_POINTOR_\fP = -2, \fBCAN_TG_ERROR_TRY_TO_FIND_END_CARACTER_\fP = -21, \fBCAN_TG_ERROR_INTERNAL_CORUPTION_\fP = -30, \fBCAN_TG_ERROR_VALUE_TO_BIG\fP = -10 }"
 .br
+.RI "Codes de retour du module TAGCAN\&. "
 .ti -1c
 .RI "enum \fBCAN_MODE\fP { \fBRECEVE_ONLY\fP, \fBSEND_ONLY\fP, \fBSEND_AND_RECEVE\fP }"
 .br
+.RI "Modes d'utilisation CAN (envoi/reception)\&. "
 .in -1c
 .SS "Variables"
 
@@ -75,36 +77,50 @@ config_value.h
 .RI "const int \fBSUCCES\fP"
 .br
 .in -1c
-.SH "Documentation des macros"
+.SH "Macro Definition Documentation"
 .PP 
 .SS "#define MAX_N_GT   3"
-
+Nombre maximal de gestionnaires (reserve/extension)\&. 
+.PP
+Definition at line \fB11\fP of file \fBconfig_value\&.h\fP\&.
 .SS "#define MAX_TAG_NAME_LEN   16"
-
+Longueur maximale d'un nom de tag (incluant le '\\0')\&. 
+.PP
+Definition at line \fB7\fP of file \fBconfig_value\&.h\fP\&.
 .SS "#define MAX_TAGS   32"
-
+Nombre maximal de tags geres simultanement\&. 
+.PP
+Definition at line \fB5\fP of file \fBconfig_value\&.h\fP\&.
 .SS "#define N_BYTES   8"
-
-.SH "Documentation du type de l'énumération"
+Taille du payload CAN en octets\&. 
+.PP
+Definition at line \fB9\fP of file \fBconfig_value\&.h\fP\&.
+.SH "Enumeration Type Documentation"
 .PP 
 .SS "enum \fBCAN_MODE\fP"
 
 .PP
-\fBValeurs énumérées\fP
+Modes d'utilisation CAN (envoi/reception)\&. 
+.PP
+\fBEnumerator\fP
 .in +1c
 .TP
 \f(BIRECEVE_ONLY \fP
-In this mode, the 'packet' cannot be wrinten to from 'set_value', but the value (assuming it's the correct id) while be updated if the id match\&. 
+Reception seule: les updates entrantes peuvent modifier la valeur; l'ecriture locale est bloquee\&. 
 .TP
 \f(BISEND_ONLY \fP
-In this mode, the 'packet' linked with can only send data\&. In other words, if an other CAN perif send a 'paquet' with the same ID, it's while not modifie he value\&. 
+Emission seule: la valeur locale est emise, les updates entrantes ne la modifient pas\&. 
 .TP
 \f(BISEND_AND_RECEVE \fP
-In this mode, you can modifie the value, send the value and receve an update form the CAN line\&. (In other word, it's the less free of contrainte, but also the most suceptible to have unwished change of value\&.) 
+Emission + reception: ecriture locale et updates entrantes toutes deux autorisees\&. 
+.PP
+Definition at line \fB58\fP of file \fBconfig_value\&.h\fP\&.
 .SS "enum \fBCAN_TG_STATUE\fP"
 
 .PP
-\fBValeurs énumérées\fP
+Codes de retour du module TAGCAN\&. 
+.PP
+\fBEnumerator\fP
 .in +1c
 .TP
 \f(BICAN_TG_ERROR_NOT_ENOUNG_SPACE_ \fP
@@ -132,34 +148,62 @@ In this mode, you can modifie the value, send the value and receve an update for
 \f(BICAN_TG_ERROR_INTERNAL_CORUPTION_ \fP
 .TP
 \f(BICAN_TG_ERROR_VALUE_TO_BIG \fP
-.SH "Documentation des variables"
+.PP
+Definition at line \fB41\fP of file \fBconfig_value\&.h\fP\&.
+.SH "Variable Documentation"
 .PP 
 .SS "const int CAN_TG_ERROR_INTERNAL_CORUPTION\fR [extern]\fP"
-
+Code d'erreur: corruption interne detectee\&. 
+.PP
+Definition at line \fB15\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int CAN_TG_ERROR_NAME_ALREADY_USE\fR [extern]\fP"
-
+Code d'erreur: nom de tag deja utilise\&. 
+.PP
+Definition at line \fB10\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int CAN_TG_ERROR_NOT_ENOUNG_SPACE\fR [extern]\fP"
-
+Code d'erreur: espace memoire insuffisant\&. 
+.PP
+Definition at line \fB5\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int CAN_TG_ERROR_NULL_POINTOR\fR [extern]\fP"
-
+Code d'erreur: pointeur NULL recu\&. 
+.PP
+Definition at line \fB13\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int CAN_TG_ERROR_SIZE_VALUE_INVALIDE\fR [extern]\fP"
-
+Code d'erreur: taille de valeur invalide\&. 
+.PP
+Definition at line \fB9\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int CAN_TG_ERROR_SUBDIVISION_FAIL\fR [extern]\fP"
-
+Code d'erreur: echec de subdivision/allocation\&. 
+.PP
+Definition at line \fB11\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int CAN_TG_ERROR_TAG_NAME_INVALIDE\fR [extern]\fP"
-
+Code d'erreur: nom de tag invalide\&. 
+.PP
+Definition at line \fB12\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int CAN_TG_ERROR_TAG_NAME_TO_BIGS\fR [extern]\fP"
-
+Code d'erreur: nom de tag trop long\&. 
+.PP
+Definition at line \fB7\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int CAN_TG_ERROR_TAG_NOT_FOUND\fR [extern]\fP"
-
+Code d'erreur: tag introuvable\&. 
+.PP
+Definition at line \fB6\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int CAN_TG_ERROR_TOO_MAY_TAGS\fR [extern]\fP"
-
+Code d'erreur: trop de tags declares\&. 
+.PP
+Definition at line \fB8\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER\fR [extern]\fP"
-
+Code d'erreur: fin de chaine non trouvee\&. 
+.PP
+Definition at line \fB14\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int SUCCES\fR [extern]\fP"
-
+Code de succes generique historique\&. 
+.PP
+Definition at line \fB17\fP of file \fBconfig_value\&.c\fP\&.
 .SS "const int SUCCES_TO_SET\fR [extern]\fP"
-
-.SH "Auteur"
+Code de succes historique pour set_tag/set_value\&. 
+.PP
+Definition at line \fB16\fP of file \fBconfig_value\&.c\fP\&.
+.SH "Author"
 .PP 
-Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.
+Generated automatically by Doxygen for TAGCAN from the source code\&.

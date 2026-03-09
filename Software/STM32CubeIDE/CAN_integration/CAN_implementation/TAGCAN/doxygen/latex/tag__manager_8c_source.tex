@@ -1,0 +1,259 @@
+\doxysection{tag\+\_\+manager.\+c}
+\hypertarget{tag__manager_8c_source}{}\label{tag__manager_8c_source}\index{tag\_manager.c@{tag\_manager.c}}
+\doxymbox{\hyperlink{tag__manager_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{tag__manager_8h}{../../include/sub\_include/tag\_manager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00003}00003\ \textcolor{preprocessor}{\#ifndef\ CONFIG\_VALUE\_H}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{config__value_8h}{../../include/config\_value.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00005}00005\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONFIG\_VALUE\_H}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00006}00006\ \textcolor{preprocessor}{\#ifndef\ GESTION\_TAG\_H}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{gestion__tag_8h}{../../include/gestion\_tag.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00008}00008\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GESTION\_TAG\_H}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ PRINT\_VAL\_H}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{print__val_8h}{../../include/sub\_include/print\_val.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00011}00011\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PRINT\_VAL\_H}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00016}00016\ \textcolor{comment}{//\ Etat\ global\ du\ gestionnaire\ de\ tags}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00017}\doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{00017}}\ \doxymbox{\hyperlink{struct_tag_def}{TagDef}}\ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[\doxymbox{\hyperlink{config__value_8h_aa653c0eca99802a09fd9560f28a9b1c1}{MAX\_TAGS}}];}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00018}\doxymbox{\hyperlink{tag__manager_8h_ab7cad863197c93abe397155a1946c0d0}{00018}}\ uint8\_t\ \doxymbox{\hyperlink{tag__manager_8h_ab7cad863197c93abe397155a1946c0d0}{g\_tag\_count}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00019}\doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{00019}}\ uint8\_t\ \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}[\doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\_BYTES}}]\ =\ \{0\};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00021}\doxymbox{\hyperlink{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}{00021}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{tag__manager_8c_aab50a8f567be72e656120fd71f3fb435}{init\_tag\_manager}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00022}00022\ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00023}00023\ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ab7cad863197c93abe397155a1946c0d0}{g\_tag\_count}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00024}00024\ \ \ \ \ \textcolor{comment}{//\ Remise\ a\ zero\ de\ l'occupation\ des\ bytes.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00025}00025\ \ \ \ \ memset(\doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}},\ 0,\ \textcolor{keyword}{sizeof}(\doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}));}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00026}00026\ \ \ \ \ \textcolor{comment}{//\ Reinitialisation\ complete\ de\ tous\ les\ slots\ de\ tags.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{config__value_8h_aa653c0eca99802a09fd9560f28a9b1c1}{MAX\_TAGS}};\ i++)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00028}00028\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00029}00029\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[i].name[0]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};\ \ \ \textcolor{comment}{//\ Slot\ considere\ vide\ quand\ name[0]\ ==\ '\(\backslash\)0'.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00030}00030\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[i].n\_bits\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00031}00031\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[i].byte\_idx\_a\ =\ -\/1;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00032}00032\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[i].byte\_idx\_b\ =\ -\/1;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00033}00033\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[i].bit\_pos\_a\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00034}00034\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[i].bit\_pos\_b\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00035}00035\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00042}\doxymbox{\hyperlink{tag__manager_8c_a7b7413adbae2eabbe7fcd13e9f91f151}{00042}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{tag__manager_8c_a7b7413adbae2eabbe7fcd13e9f91f151}{get\_first\_tags\_vide}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00043}00043\ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00044}00044\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{config__value_8h_aa653c0eca99802a09fd9560f28a9b1c1}{MAX\_TAGS}};\ i++)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00045}00045\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00046}00046\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Cas\ defensif:\ un\ nom\ NULL\ est\ traite\ comme\ slot\ libre.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[i].name\ ==\ NULL)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00048}00048\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ i;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00051}00051\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Premier\ slot\ libre:\ nom\ vide.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[i].name[0]\ ==\ \textcolor{charliteral}{'\(\backslash\)0'})}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00053}00053\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ i;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00055}00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00056}00056\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00057}00057\ \ \ \ \ \textcolor{comment}{//\ Cas\ de\ garde:\ aucun\ slot\ libre\ detecte.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00058}00058\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_a1e77443066dccbc42ef0acdd0f597c07}{CAN\_TG\_ERROR\_TOO\_MAY\_TAGS}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00059}00059\ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00068}\doxymbox{\hyperlink{tag__manager_8c_a9963af2c23a14e289a3ff39769ea4eeb}{00068}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{tag__manager_8c_a9963af2c23a14e289a3ff39769ea4eeb}{set\_name\_tag}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ n\_tag,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tag\_name)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00069}00069\ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00070}00070\ \ \ \ \ \textcolor{comment}{//\ Nettoie\ le\ buffer\ avant\ copie\ du\ nom.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00071}00071\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{config__value_8h_ada71b9f258860d58a86ab220bfce6bf4}{MAX\_TAG\_NAME\_LEN}}\ -\/\ 2;\ i++)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00072}00072\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00073}00073\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[n\_tag].name[i]=\textcolor{charliteral}{'\ '};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00074}00074\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00075}00075\ \ \ \ \ \textcolor{comment}{//\ Copie\ du\ nom\ dans\ la\ structure.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00076}00076\ \ \ \ \ strncpy(\doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[n\_tag].name,\ tag\_name,\ \doxymbox{\hyperlink{config__value_8h_ada71b9f258860d58a86ab220bfce6bf4}{MAX\_TAG\_NAME\_LEN}}\ -\/\ 1);}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00077}00077\ \ \ \ \ \textcolor{comment}{//\ Termine\ explicitement\ la\ chaine.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00078}00078\ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[n\_tag].name[\doxymbox{\hyperlink{config__value_8h_ada71b9f258860d58a86ab220bfce6bf4}{MAX\_TAG\_NAME\_LEN}}\ -\/\ 1]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00079}00079\ \ \ \ \ \textcolor{comment}{//\ Debug\ optionnel:}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00080}00080\ \ \ \ \ \textcolor{comment}{//printf("{}le\ nom\ du\ tag\ est:\ [\%s]\(\backslash\)n"{},\ g\_tags[n\_tag].name);}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00081}00081\ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00083}00083\ \textcolor{comment}{//\ Initialise\ les\ champs\ communs\ d'un\ tag\ et\ met\ a\ jour\ l'occupation\ memoire.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00090}\doxymbox{\hyperlink{tag__manager_8c_ac5f7362c0af4f03bd98573151458442d}{00090}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{tag__manager_8c_ac5f7362c0af4f03bd98573151458442d}{general\_set\_tag}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ n\_tag,\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tag\_name,}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ n\_bits,\ int8\_t\ byte\_idx\_a)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00092}00092\ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00093}00093\ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8c_a9963af2c23a14e289a3ff39769ea4eeb}{set\_name\_tag}}(n\_tag,\ tag\_name);}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00094}00094\ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[n\_tag].n\_bits\ =\ n\_bits;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00096}00096\ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[n\_tag].byte\_idx\_a\ =\ byte\_idx\_a;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00097}00097\ \ \ \ \ \textcolor{comment}{//\ Le\ tag\ est\ desormais\ actif.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00098}00098\ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ab7cad863197c93abe397155a1946c0d0}{g\_tag\_count}}++;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00100}00100\ \ \ \ \ \textcolor{comment}{//\ Mise\ a\ jour\ de\ l'occupation\ des\ bits\ dans\ le\ byte\ principal.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00101}00101\ \ \ \ \ \textcolor{keywordflow}{if}(n\_bits\ >=\ 8)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00102}00102\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00103}00103\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}[byte\_idx\_a]\ =\ 8;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00104}00104\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00105}00105\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00106}00106\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00107}00107\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}[byte\_idx\_a]\ +=\ n\_bits;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00108}00108\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00109}00109\ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00111}00111\ \textcolor{comment}{//\ [INTERNE]\ Creation\ d'un\ tag\ sur\ 9..16\ bits\ (2\ bytes\ potentiels).}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00112}00112\ \textcolor{comment}{//\ n\_bits\_total:\ taille\ totale\ de\ la\ valeur\ (8..16).}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00119}\doxymbox{\hyperlink{tag__manager_8c_a30325d29d4baf058d75e6f3c269341af}{00119}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{tag__manager_8c_a30325d29d4baf058d75e6f3c269341af}{set\_new\_tag\_9\_to\_16}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tag\_name,\ \textcolor{keyword}{const}\ int8\_t\ byte\_idx\_a,\ \textcolor{keyword}{const}\ int8\_t\ byte\_idx\_b,\ uint8\_t\ n\_bits\_total)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00120}00120\ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00121}00121\ \ \ \ \ \textcolor{comment}{//\ Recherche\ d'un\ slot\ libre.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00122}00122\ \ \ \ \ \textcolor{keywordtype}{int}\ n\_tag\ =\ \doxymbox{\hyperlink{tag__manager_8c_a7b7413adbae2eabbe7fcd13e9f91f151}{get\_first\_tags\_vide}}();}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00123}00123\ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8c_ac5f7362c0af4f03bd98573151458442d}{general\_set\_tag}}(n\_tag,\ tag\_name,\ n\_bits\_total,\ byte\_idx\_a);\ \ \ \ \textcolor{comment}{//\ Initialisation\ commune.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00124}00124\ \ \ \ \ \textcolor{comment}{//\ Pour\ >\ 8\ bits,\ une\ partie\ B\ est\ utilisee.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00125}00125\ \ \ \ \ \textcolor{keywordflow}{if}(n\_bits\_total\ >\ 8)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00126}00126\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00128}00128\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[n\_tag].byte\_idx\_b\ =\ byte\_idx\_b;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00129}00129\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[n\_tag].bit\_pos\_b\ =\ \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}[byte\_idx\_b];}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00130}00130\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}[byte\_idx\_b]\ +=\ n\_bits\_total\ -\/\ 8;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00131}00131\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[n\_tag].bit\_pos\_a\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00132}00132\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ A\ ce\ stade,\ la\ repartition\ est\ validee:\ on\ peut\ finaliser}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00133}00133\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ l'occupation\ et\ les\ positions\ des\ bits\ pour\ A\ et\ B.\ */}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00134}00134\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00135}00135\ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00144}\doxymbox{\hyperlink{tag__manager_8c_a5f1ce2cac9791e6b46be230dcce3f804}{00144}}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947f}{CAN\_TG\_STATUE}}\ \doxymbox{\hyperlink{tag__manager_8c_a5f1ce2cac9791e6b46be230dcce3f804}{find\_byte\_with\_enoung\_space}}(uint8\_t\ siz,\ int8\_t*\ retur\_var)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00145}00145\ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00146}00146\ \ \ \ \ \textcolor{comment}{//\ Pour\ >\ 8\ bits,\ la\ 1re\ recherche\ se\ limite\ a\ un\ bloc\ de\ 8\ bits.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00147}00147\ \ \ \ \ \textcolor{keywordflow}{if}(siz\ >\ 8)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00148}00148\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00149}00149\ \ \ \ \ \ \ \ \ siz\ =\ 8;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00150}00150\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00151}00151\ \ \ \ \ \textcolor{comment}{//\ Pour\ les\ tailles\ impaires:\ priorite\ aux\ bytes\ a\ place\ impaire\ restante.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00152}00152\ \ \ \ \ \textcolor{keywordflow}{if}(siz\%2\ >\ 0)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00153}00153\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00154}00154\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Heuristique\ de\ placement.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00155}00155\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (int8\_t\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\_BYTES}};\ i++)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00156}00156\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00157}00157\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00158}00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(((8\ -\/\ \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}[i])\%2\ >\ 0)\ \&\&\ ((8\ -\/\ \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}[i])\ >=\ siz))}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00159}00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00160}00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *retur\_var=i;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00163}00163\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00164}00164\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00165}00165\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00166}00166\ \ \ \ \ \textcolor{comment}{//\ Sinon,\ recherche\ sequentielle\ standard.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00167}00167\ \ \ \ \ \textcolor{keywordflow}{for}\ (int8\_t\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\_BYTES}};\ i++)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00168}00168\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00169}00169\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}((8\ -\/\ \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}[i])\ >=\ siz)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00170}00170\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00171}00171\ \ \ \ \ \ \ \ \ \ \ \ \ *retur\_var=i;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00172}00172\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00173}00173\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00174}00174\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00175}00175\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa4add2030061ed8081fd69bbc7961b88e}{CAN\_TG\_ERROR\_NOT\_ENOUNG\_SPACE\_}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00176}00176\ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00177}00177\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00178}00178\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00187}00187\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00188}\doxymbox{\hyperlink{tag__manager_8c_ad5772dac2622697b5f563da0dbfaede3}{00188}}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947f}{CAN\_TG\_STATUE}}\ \doxymbox{\hyperlink{tag__manager_8c_ad5772dac2622697b5f563da0dbfaede3}{find\_byte2\_with\_enoung\_space}}(uint8\_t\ siz\_total,\ int8\_t\ posi\_premier\_bit,int8\_t*\ retur\_var)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00189}00189\ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00190}00190\ \ \ \ \ uint8\_t\ siz\ =\ siz\_total\ -\/\ 8;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00191}00191\ \ \ \ \ \textcolor{comment}{//\ Meme\ heuristique\ que\ find\_byte\_with\_enoung\_space.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00192}00192\ \ \ \ \ \textcolor{keywordflow}{if}(siz\%2\ >\ 0)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00193}00193\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00194}00194\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Priorite\ aux\ bytes\ dont\ l'espace\ restant\ est\ impair.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00195}00195\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (int8\_t\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\_BYTES}};\ i++)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00196}00196\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00197}00197\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(posi\_premier\_bit\ ==\ i)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00198}00198\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00199}00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00200}00200\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00201}00201\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(((8\ -\/\ \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}[i])\%2\ >\ 0)\ \&\&\ ((8\ -\/\ \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}[i])\ >=\ siz))}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00202}00202\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00203}00203\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *retur\_var=i;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00204}00204\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00205}00205\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00206}00206\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00207}00207\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00208}00208\ \ \ \ \ \textcolor{comment}{//\ Sinon,\ recherche\ sequentielle\ standard.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00209}00209\ \ \ \ \ \textcolor{keywordflow}{for}\ (uint8\_t\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\_BYTES}};\ i++)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00210}00210\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00211}00211\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(posi\_premier\_bit\ ==\ i)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00212}00212\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00213}00213\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00214}00214\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00215}00215\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}((8\ -\/\ \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\_bytes\_used}}[i])\ >=\ siz)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00216}00216\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00217}00217\ \ \ \ \ \ \ \ \ \ \ \ \ *retur\_var=i;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00218}00218\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00219}00219\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00220}00220\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00221}00221\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa4add2030061ed8081fd69bbc7961b88e}{CAN\_TG\_ERROR\_NOT\_ENOUNG\_SPACE\_}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00222}00222\ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00223}00223\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00224}00224\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00225}00225\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00226}00226\ \textcolor{comment}{//\ API\ publique:\ declaration\ de\ tag.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00232}\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{00232}}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947f}{CAN\_TG\_STATUE}}\ \doxymbox{\hyperlink{tag__manager_8c_a7dd7e8cfc97d378d44e7c63bd9f49931}{set\_tag}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tag\_name,\ uint8\_t\ siz)\{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00233}00233\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947f}{CAN\_TG\_STATUE}}\ statue\_actuel;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00234}00234\ \ \ \ \ \textcolor{comment}{//\ Limite\ du\ nombre\ de\ tags.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00235}00235\ \ \ \ \ \textcolor{keywordflow}{if}(\doxymbox{\hyperlink{tag__manager_8h_ab7cad863197c93abe397155a1946c0d0}{g\_tag\_count}}\ >=\ \doxymbox{\hyperlink{config__value_8h_aa653c0eca99802a09fd9560f28a9b1c1}{MAX\_TAGS}})\{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00236}00236\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_a1e77443066dccbc42ef0acdd0f597c07}{CAN\_TG\_ERROR\_TOO\_MAY\_TAGS}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00237}00237\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00238}00238\ \ \ \ \ \textcolor{comment}{//\ Validation\ longueur\ nom\ (implementation\ actuelle\ basee\ sur\ sizeof(pointer)).}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00239}00239\ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keyword}{sizeof}(tag\_name)\ >=\ \doxymbox{\hyperlink{config__value_8h_ada71b9f258860d58a86ab220bfce6bf4}{MAX\_TAG\_NAME\_LEN}})\{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00240}00240\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af68b72a5b65a0168415d1363dc09a0a6}{CAN\_TG\_ERROR\_TAG\_NAME\_TO\_BIGS}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00241}00241\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00242}00242\ \ \ \ \ \textcolor{comment}{//\ Interdit\ les\ doublons\ de\ nom.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00243}00243\ \ \ \ \ \textcolor{keywordflow}{if}(\doxymbox{\hyperlink{tag__manager_8c_a5737e741608851f8e3822cf07261da44}{get\_tag\_def}}(tag\_name)\ !=\ NULL)\{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00244}00244\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_a18061c1ca5fc2e5ab20fa7bc8dbe81d6}{CAN\_TG\_ERROR\_NAME\_ALREADY\_USE}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00245}00245\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00246}00246\ \ \ \ \ \textcolor{comment}{//\ Nom\ vide\ invalide.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00247}00247\ \ \ \ \ \textcolor{keywordflow}{if}(tag\_name[0]==\textcolor{charliteral}{'\(\backslash\)0'})\{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00248}00248\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_a49d547279f99d23ff36998f3874d3c5a}{CAN\_TG\_ERROR\_TAG\_NAME\_INVALIDE}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00249}00249\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00250}00250\ \ \ \ \ \textcolor{comment}{//\ Tailles\ acceptees:\ 1..16.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00251}00251\ \ \ \ \ \textcolor{keywordflow}{if}(siz\ <=\ 0\ ||\ siz\ >\ 16)\{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_a73337c3ada0009e763ea5af164e25d70}{CAN\_TG\_ERROR\_SIZE\_VALUE\_INVALIDE}};\}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00252}00252\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00253}00253\ \ \ \ \ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ algo\ de\ placement\ memoire.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00254}00254\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00255}00255\ \ \ \ \ \textcolor{keywordflow}{if}(siz>8)\{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00256}00256\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Garde\ defensive\ (deja\ couverte\ plus\ haut).}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00257}00257\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(siz>16)\{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00258}00258\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa1f64facc77e1738f2ed16fae7f38140f}{CAN\_TG\_ERROR\_SIZE\_VALUE\_INVALIDE\_}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00259}00259\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00260}00260\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00261}00261\ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ bytea,\ byteb;\ \ \ \ \textcolor{comment}{//\ Index\ des\ bytes\ reserves.}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00262}00262\ \ \ \ \ \ \ \ \ \ \ \ \ statue\_actuel\ =\ \doxymbox{\hyperlink{tag__manager_8c_a5f1ce2cac9791e6b46be230dcce3f804}{find\_byte\_with\_enoung\_space}}(siz,\ \&bytea);}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00263}00263\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(statue\_actuel\ !=\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}})\{\textcolor{keywordflow}{return}\ statue\_actuel;\}\textcolor{comment}{//\ propagation\ du\ statut}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00264}00264\ \ \ \ \ \ \ \ \ \ \ \ \ statue\_actuel\ =\ \doxymbox{\hyperlink{tag__manager_8c_ad5772dac2622697b5f563da0dbfaede3}{find\_byte2\_with\_enoung\_space}}(siz,\ bytea,\ \&byteb);}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00265}00265\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(statue\_actuel\ !=\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}})\{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00266}00266\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ statue\_actuel;\ \ \ \textcolor{comment}{//\ propagation\ du\ statut}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00267}00267\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00268}00268\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8c_a30325d29d4baf058d75e6f3c269341af}{set\_new\_tag\_9\_to\_16}}(tag\_name,\ bytea,\ byteb,\ siz);}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00269}00269\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00270}00270\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00271}00271\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00272}00272\ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00273}00273\ \ \ \ \ \ \ \ \ uint8\_t\ bytea;}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00274}00274\ \ \ \ \ \ \ \ \ statue\_actuel\ =\ \doxymbox{\hyperlink{tag__manager_8c_a5f1ce2cac9791e6b46be230dcce3f804}{find\_byte\_with\_enoung\_space}}(siz,\ \&bytea);}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00275}00275\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(statue\_actuel\ !=\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}})\{\textcolor{keywordflow}{return}\ statue\_actuel;\}\textcolor{comment}{//\ propagation\ du\ statut}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00276}00276\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ n\_tag\ =\ \doxymbox{\hyperlink{tag__manager_8c_a7b7413adbae2eabbe7fcd13e9f91f151}{get\_first\_tags\_vide}}();}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00277}00277\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{tag__manager_8c_ac5f7362c0af4f03bd98573151458442d}{general\_set\_tag}}(n\_tag,\ tag\_name,\ siz,\ bytea);}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00278}00278\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00279}00279\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00280}00280\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00281}00281\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00282}00282\ \};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00283}00283\ }
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00288}\doxymbox{\hyperlink{tag__manager_8h_a5737e741608851f8e3822cf07261da44}{00288}}\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{struct_tag_def}{TagDef}}*\ \doxymbox{\hyperlink{tag__manager_8c_a5737e741608851f8e3822cf07261da44}{get\_tag\_def}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tag\_name)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00289}00289\ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00290}00290\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{tag__manager_8h_ab7cad863197c93abe397155a1946c0d0}{g\_tag\_count}};\ i++)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00291}00291\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00292}00292\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (strncmp(\doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[i].name,\ tag\_name,\ \doxymbox{\hyperlink{config__value_8h_ada71b9f258860d58a86ab220bfce6bf4}{MAX\_TAG\_NAME\_LEN}})\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00293}00293\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00294}00294\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&\doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\_tags}}[i];}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00295}00295\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00296}00296\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00297}00297\ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;\ \textcolor{comment}{//\ Tag\ non\ trouve}}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00298}00298\ \};}
+\DoxyCodeLine{\Hypertarget{tag__manager_8c_source_l00299}00299\ }
+
+\end{DoxyCode}

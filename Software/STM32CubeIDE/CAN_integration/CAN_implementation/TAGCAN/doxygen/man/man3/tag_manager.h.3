@@ -13,21 +13,21 @@ tag_manager.h
 \fR#include <stdbool\&.h>\fP
 .br
 
-.SS "Structures de données"
+.SS "Data Structures"
 
 .in +1c
 .ti -1c
 .RI "struct \fBTagDef\fP"
 .br
-.RI "structure représentent un tag\&. "
+.RI "Structure de definition d'un tag\&. "
 .in -1c
-.SS "Fonctions"
+.SS "Functions"
 
 .in +1c
 .ti -1c
 .RI "const \fBTagDef\fP * \fBget_tag_def\fP (const char *tag_name)"
 .br
-.RI "recherche le tag et retourne la référence de la structure du tags corespondent au nom\&. "
+.RI "Recherche un tag et retourne sa definition\&. "
 .in -1c
 .SS "Variables"
 
@@ -42,37 +42,58 @@ tag_manager.h
 .RI "uint8_t \fBg_bytes_used\fP [\fBN_BYTES\fP]"
 .br
 .in -1c
-.SH "Documentation des fonctions"
+.SH "Function Documentation"
 .PP 
 .SS "const \fBTagDef\fP * get_tag_def (const char * tag_name)"
 
 .PP
-recherche le tag et retourne la référence de la structure du tags corespondent au nom\&. 
+Recherche un tag et retourne sa definition\&. 
 .PP
-\fBAvertissement\fP
+\fBWarning\fP
 .RS 4
-pas suposé être utilisé à l'externe\&. 
+API surtout utilisee en interne par le module de valeurs\&. 
 .RE
 .PP
-\fBParamètres\fP
+\fBParameters\fP
 .RS 4
-\fItag_name\fP le nom du tag à chercher\&. 
+\fItag_name\fP Nom du tag a chercher\&. 
 .RE
 .PP
-\fBRenvoie\fP
+\fBReturns\fP
 .RS 4
-la référence de la structure du tags\&. 
+Pointeur vers le tag si trouve, sinon NULL\&.
+.RE
+.PP
+Recherche un tag et retourne sa definition\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fItag_name\fP Nom du tag recherche\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Pointeur sur \fBTagDef\fP si trouve, sinon NULL\&. 
 .RE
 .PP
 
-.SH "Documentation des variables"
+.PP
+Definition at line \fB288\fP of file \fBtag_manager\&.c\fP\&.
+.SH "Variable Documentation"
 .PP 
 .SS "uint8_t g_bytes_used[\fBN_BYTES\fP]\fR [extern]\fP"
-Allocation des bits dans chaque byte (0 à 7)\&. (il représente le nombre de bits actuellement assigner à une valeurs dans chacun des bytes) 
+Occupation courante en bits pour chaque byte du payload\&. 
+.PP
+Definition at line \fB19\fP of file \fBtag_manager\&.c\fP\&.
 .SS "uint8_t g_tag_count\fR [extern]\fP"
-le nombre de tags actuel (à chaque création réussi d'un nouveau, celui-ci augmente de 1) max: MAX_TAGS 
+Nombre de tags actifs (max: MAX_TAGS)\&. 
+.PP
+Definition at line \fB18\fP of file \fBtag_manager\&.c\fP\&.
 .SS "\fBTagDef\fP g_tags[\fBMAX_TAGS\fP]\fR [extern]\fP"
-Gestionnaire global de tags\&. contient l'ensemble des tags (actif et inactif) du gestionnaire de tag 
-.SH "Auteur"
+Table des tags (actifs et inactifs)\&. 
+.PP
+Definition at line \fB17\fP of file \fBtag_manager\&.c\fP\&.
+.SH "Author"
 .PP 
-Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.
+Generated automatically by Doxygen for TAGCAN from the source code\&.

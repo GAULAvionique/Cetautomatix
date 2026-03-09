@@ -1,0 +1,18 @@
+<map id="TAGCAN.h" name="TAGCAN.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="156,5,243,31"/>
+<area shape="rect" id="Node000002" href="$config__value_8h.html" title=" " alt="" coords="5,240,153,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,28,131,34,105,45,80,60,62,80,53,98,48,116,49,156,58,195,70,226,65,228,53,196,44,157,43,116,48,96,57,77,77,56,102,40,129,29,155,22"/>
+<area shape="rect" id="Node000003" href="$gestion__tag_8h.html" title=" " alt="" coords="72,86,217,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,32,163,76,158,73,189,29"/>
+<area shape="rect" id="Node000004" href="$data__container_8h.html" title=" " alt="" coords="293,79,429,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,28,311,70,308,75,222,33"/>
+<area shape="rect" id="Node000006" href="$tag__manager_8h.html" title=" " alt="" coords="204,167,312,192"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="208,30,231,78,254,152,249,154,226,80,203,32"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="325,240,391,265"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="363,119,361,226,356,226,358,119"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="337,121,286,160,282,156,334,117"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="230,195,122,237,120,232,228,190"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="276,190,332,230,329,234,273,194"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="221,240,295,265"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="261,192,261,226,255,226,255,192"/>
+</map>

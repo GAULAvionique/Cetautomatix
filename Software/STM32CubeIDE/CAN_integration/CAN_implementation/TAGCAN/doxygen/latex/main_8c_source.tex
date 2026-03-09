@@ -1,0 +1,326 @@
+\doxysection{main.\+c}
+\hypertarget{main_8c_source}{}\label{main_8c_source}\index{main.c@{main.c}}
+\doxymbox{\hyperlink{main_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <assert.h>}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00004}00004\ \textcolor{preprocessor}{\#ifndef\ CONFIG\_VALUE\_H}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{config__value_8h}{../include/config\_value.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00006}00006\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONFIG\_VALUE\_H}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00007}00007\ \textcolor{preprocessor}{\#ifndef\ DATA\_CONTAINER\_H}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{data__container_8h}{../include/sub\_include/data\_container.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00009}00009\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DATA\_CONTAINER\_H}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00010}00010\ \textcolor{preprocessor}{\#ifndef\ GESTION\_TAG\_H}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{gestion__tag_8h}{../include/gestion\_tag.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00012}00012\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GESTION\_TAG\_H}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00013}00013\ \textcolor{preprocessor}{\#ifndef\ PRINT\_VAL\_H}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{print__val_8h}{../include/sub\_include/print\_val.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00015}00015\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PRINT\_VAL\_H}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00017}\doxymbox{\hyperlink{main_8c_a51c2b99b66f63ee9064347f9151e99ba}{00017}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{main_8c_a51c2b99b66f63ee9064347f9151e99ba}{passed\_tests}}\ =\ 0;\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00018}\doxymbox{\hyperlink{main_8c_ab7324491948254cde8946b74d8bca3bc}{00018}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{main_8c_ab7324491948254cde8946b74d8bca3bc}{total\_tests}}\ =\ 0;\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00026}\doxymbox{\hyperlink{main_8c_aa193df92133f441f2a0efd722c3962f9}{00026}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{main_8c_aa193df92133f441f2a0efd722c3962f9}{TEST}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ condition)}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00027}00027\ \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00028}00028\ \ \ \ \ \textcolor{keywordflow}{if}(condition)}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00029}00029\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00030}00030\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}success\(\backslash\)t\(\backslash\)t\(\backslash\)t\%s\(\backslash\)n"{}},\ name);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00031}00031\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{main_8c_a51c2b99b66f63ee9064347f9151e99ba}{passed\_tests}}++;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00034}00034\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00035}00035\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}fail\(\backslash\)t\(\backslash\)t\(\backslash\)t\%s\(\backslash\)n"{}},\ name);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00036}00036\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00037}00037\ \ \ \ \ \doxymbox{\hyperlink{main_8c_ab7324491948254cde8946b74d8bca3bc}{total\_tests}}++;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00038}00038\ \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00046}\doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{00046}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ val\_1,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ val\_2)}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00047}00047\ \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ condition\ =\ val\_1\ ==\ val\_2;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00049}00049\ \ \ \ \ \textcolor{keywordflow}{if}(condition)}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00050}00050\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00051}00051\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}success\(\backslash\)t\(\backslash\)t\(\backslash\)t\%s\(\backslash\)n"{}},\ name);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00052}00052\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{main_8c_a51c2b99b66f63ee9064347f9151e99ba}{passed\_tests}}++;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00053}00053\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00054}00054\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00055}00055\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00056}00056\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}fail\(\backslash\)t\(\backslash\)t\(\backslash\)t\%s"{}},\ name);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00057}00057\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)t\%d\ !=\ "{}},\ val\_1);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00058}00058\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%d\(\backslash\)n"{}},\ val\_2);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00059}00059\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00060}00060\ \ \ \ \ \doxymbox{\hyperlink{main_8c_ab7324491948254cde8946b74d8bca3bc}{total\_tests}}++;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00061}00061\ \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00072}\doxymbox{\hyperlink{main_8c_a9c4bb6f6d00e76eae45e966a4c628178}{00072}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{main_8c_a9c4bb6f6d00e76eae45e966a4c628178}{test\_print}}(\textcolor{keywordtype}{void})\{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00073}00073\ printf(\textcolor{stringliteral}{"{}test\ des\ fonction\ d'impression.\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00074}00074\ \textcolor{comment}{//\ prepa\ du\ gt}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00075}00075\ \doxymbox{\hyperlink{data__container_8h_a129f017feb0712be1dcf7932e6035aa0}{init\_data\_container}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00076}00076\ \doxymbox{\hyperlink{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}{init\_tag\_manager}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00078}00078\ \textcolor{comment}{//\ set\ the\ tags}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00079}00079\ \doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}a1"{}},2);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00080}00080\ \doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}agh5"{}},5);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00081}00081\ \doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}patap"{}},16);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00082}00082\ \doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}patat"{}},12);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00083}00083\ \doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}uni1"{}},1);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00084}00084\ \doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}triot"{}},\ 3);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00086}00086\ \textcolor{comment}{//\ set\ the\ value}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00087}00087\ \doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}a1"{}},3);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00088}00088\ \doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}agh5"{}},42);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00089}00089\ \doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}patap"{}},45);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00090}00090\ \doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}patat"{}},12);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00091}00091\ \doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}uni1"{}},1);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00092}00092\ \doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}triot"{}},\ 3);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00094}00094\ \doxymbox{\hyperlink{print__val_8h_a2b276a5dd504a1eb4d6f216b8f9d7fdb}{print\_all\_tag\_set}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00095}00095\ \doxymbox{\hyperlink{print__val_8h_a6904e40665dc664fc6611bfe2d913773}{print\_all\_data}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00096}00096\ \doxymbox{\hyperlink{print__val_8h_a8ee4bb928c2cca54d191cf23edea60ec}{print\_repartition\_bit}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00097}00097\ \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00104}\doxymbox{\hyperlink{main_8c_a4f26f5b24d899127d66338ba3bfd7f1b}{00104}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{main_8c_a4f26f5b24d899127d66338ba3bfd7f1b}{somme\_other\_test}}(\textcolor{keywordtype}{void})\{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00105}00105\ printf(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/test\ mask\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00106}00106\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)t(0,8):\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00107}00107\ \ \ \ \ \doxymbox{\hyperlink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\_bin\_8}}(\doxymbox{\hyperlink{data__container_8h_a66768c162c3a8352b7d5397e90206085}{prep\_mask}}(0,\ 8));}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00108}00108\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00109}00109\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)t(4,4):\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00110}00110\ \ \ \ \ \doxymbox{\hyperlink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\_bin\_8}}(\doxymbox{\hyperlink{data__container_8h_a66768c162c3a8352b7d5397e90206085}{prep\_mask}}(4,\ 4));}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00111}00111\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00112}00112\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)t(4,3):\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00113}00113\ \ \ \ \ \doxymbox{\hyperlink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\_bin\_8}}(\doxymbox{\hyperlink{data__container_8h_a66768c162c3a8352b7d5397e90206085}{prep\_mask}}(4,\ 3));}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00114}00114\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00115}00115\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)t(1,4):\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00116}00116\ \ \ \ \ \doxymbox{\hyperlink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\_bin\_8}}(\doxymbox{\hyperlink{data__container_8h_a66768c162c3a8352b7d5397e90206085}{prep\_mask}}(1,\ 4));}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00117}00117\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00118}00118\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)t(5,1):\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00119}00119\ \ \ \ \ \doxymbox{\hyperlink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\_bin\_8}}(\doxymbox{\hyperlink{data__container_8h_a66768c162c3a8352b7d5397e90206085}{prep\_mask}}(5,\ 1));}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00120}00120\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00121}00121\ \ \ \ \ printf(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/test\ shift-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00122}00122\ \ \ \ \ uint8\_t\ val1\ =\ 0b01110000;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00123}00123\ \ \ \ \ uint8\_t\ bi\ =\ 0b01110100;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00124}00124\ \ \ \ \ printf(\textcolor{stringliteral}{"{}val1:\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00125}00125\ \ \ \ \ \doxymbox{\hyperlink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\_bin\_8}}(val1);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00126}00126\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00127}00127\ \ \ \ \ \textcolor{keywordtype}{int}\ p\_bit\ =\ 4;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00128}00128\ \ \ \ \ \textcolor{keywordtype}{int}\ n\_bit\ =\ 4;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00129}00129\ \ \ \ \ \textcolor{comment}{//\ eq\ logic\ pour\ la\ prise\ de\ la\ valeur}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00130}00130\ \ \ \ \ uint8\_t\ vrai\_val\ =\ val1\ >>\ (8\ -\/\ p\_bit\ -\/\ n\_bit);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00131}00131\ \ \ \ \ \textcolor{comment}{//\ prepa\ du\ mask}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00132}00132\ \ \ \ \ uint8\_t\ mask\_val\ =\ 0b1;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00133}00133\ \ \ \ \ uint8\_t\ mask\_temp\ =\ 0b1;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00134}00134\ \ \ \ \ \textcolor{comment}{//\ mask\ des\ bits\ de\ la\ valeurs}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00135}00135\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ (n\_bit\ -\/\ 1);\ i++)}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00136}00136\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00137}00137\ \ \ \ \ \ \ \ \ mask\_val\ =\ mask\_val\ <<\ 1;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00138}00138\ \ \ \ \ \ \ \ \ mask\_val\ |=\ mask\_temp;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00139}00139\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00140}00140\ \ \ \ \ \textcolor{comment}{//\ mask\ pour\ conserver\ uniquement\ la\ valeurs\ dans\ le\ bytes}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00141}00141\ \ \ \ \ uint8\_t\ mask\_val\_p\ =\ mask\_val\ <<\ (8\ -\/\ p\_bit\ -\/\ n\_bit);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00142}00142\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00143}00143\ \ \ \ \ uint8\_t\ byte\_sans\_val\ =\ bi;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00144}00144\ \ \ \ \ byte\_sans\_val\ \&=\ \string~mask\_val\_p;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00147}00147\ \ \ \ \ \textcolor{comment}{//mask\_val\ =\ mask\_val\ >>\ (8\ -\/\ n\_bit);}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00148}00148\ \ \ \ \ printf(\textcolor{stringliteral}{"{}vrai\_val:\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00149}00149\ \ \ \ \ \doxymbox{\hyperlink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\_bin\_8}}(vrai\_val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00150}00150\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00151}00151\ \ \ \ \ printf(\textcolor{stringliteral}{"{}mask:\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00152}00152\ \ \ \ \ \doxymbox{\hyperlink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\_bin\_8}}(mask\_val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00153}00153\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00154}00154\ \ \ \ \ printf(\textcolor{stringliteral}{"{}mask2:\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00155}00155\ \ \ \ \ \doxymbox{\hyperlink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\_bin\_8}}(mask\_val\_p);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00156}00156\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00157}00157\ \ \ \ \ printf(\textcolor{stringliteral}{"{}byte\ avant:\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00158}00158\ \ \ \ \ \doxymbox{\hyperlink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\_bin\_8}}(bi);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00159}00159\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00160}00160\ \ \ \ \ printf(\textcolor{stringliteral}{"{}byte\ sans\ val:\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00161}00161\ \ \ \ \ \doxymbox{\hyperlink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\_bin\_8}}(byte\_sans\_val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00162}00162\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00164}00164\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00165}00165\ \ \ \ \ printf(\textcolor{stringliteral}{"{}test\ final\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00167}00167\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a129f017feb0712be1dcf7932e6035aa0}{init\_data\_container}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00168}00168\ \ \ \ \ \doxymbox{\hyperlink{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}{init\_tag\_manager}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00169}00169\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00170}00170\ \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00176}00176\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00177}\doxymbox{\hyperlink{main_8c_ae9bbb2f5bb69f73e92c761f83223285a}{00177}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{main_8c_ae9bbb2f5bb69f73e92c761f83223285a}{run\_all\_tests}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00178}00178\ \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00179}00179\ \ \ \ \ uint32\_t\ val\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00180}00180\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00181}00181\ \ \ \ \ printf(\textcolor{stringliteral}{"{}===\ Lancement\ des\ tests\ unitaires\ ===\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00182}00182\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00183}00183\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00184}00184\ \ \ \ \ \textcolor{comment}{//\ TEST\ 1\ :\ Cas\ d'erreurs\ de\ set\_tag}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00185}00185\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00186}00186\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Test\ 1:\ Erreurs\ de\ set\_tag...\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00187}00187\ \ \ \ \ \doxymbox{\hyperlink{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}{init\_tag\_manager}}();\ \textcolor{comment}{//\ On\ part\ d'un\ état\ propre}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00188}00188\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00189}00189\ \ \ \ \ \textcolor{comment}{//\ Tailles\ invalides\ (ex:\ 0\ retourne\ CAN\_TG\_ERROR\_SIZE\_VALUE\_INVALIDE)}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00190}00190\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tTailles\ invalides\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00191}00191\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}0"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}inv1"{}},\ 0),\ \doxymbox{\hyperlink{config__value_8h_a73337c3ada0009e763ea5af164e25d70}{CAN\_TG\_ERROR\_SIZE\_VALUE\_INVALIDE}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00192}00192\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}2"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}inv2"{}},\ 2),\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00193}00193\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}5"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}inv5"{}},\ 5),\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00194}00194\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00195}00195\ \ \ \ \ \textcolor{comment}{//\ Tag\ en\ double\ (retour\ attendu:\ CAN\_TG\_ERROR\_NAME\_ALREADY\_USE)}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00196}00196\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tTag\ en\ double\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00197}00197\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}première\ insertion"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}TAG\_A"{}},\ 4),\ \doxymbox{\hyperlink{config__value_8h_af9a28b199e843773aefbb1e1bcf50559}{SUCCES\_TO\_SET}});\ \textcolor{comment}{//\ Succès}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00198}00198\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}duplica\ détection"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}TAG\_A"{}},\ 3),\ \doxymbox{\hyperlink{config__value_8h_a18061c1ca5fc2e5ab20fa7bc8dbe81d6}{CAN\_TG\_ERROR\_NAME\_ALREADY\_USE}});\ \textcolor{comment}{//\ Erreur\ :\ existe\ déjà}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00199}00199\ \ \ \ \ printf(\textcolor{stringliteral}{"{}OK\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00200}00200\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00201}00201\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00202}00202\ \ \ \ \ \textcolor{comment}{//\ TEST\ 2\ :\ Dépassement\ de\ l'espace\ mémoire\ (8\ octets\ max)}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00203}00203\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00204}00204\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Test\ 2:\ Remplissage\ memoire\ (8\ bytes\ max)...\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00205}00205\ \ \ \ \ \doxymbox{\hyperlink{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}{init\_tag\_manager}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00206}00206\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00207}00207\ \ \ \ \ \textcolor{comment}{//\ On\ ajoute\ 4\ tags\ de\ 16\ bits\ (4\ *\ 2\ =\ 8\ octets\ complets)}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00208}00208\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tpreparation\ du\ GT\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00209}00209\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}ajout\ de\ valeurs\ 16\ bit\ (1/4)"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}T1"{}},\ 16),\ \doxymbox{\hyperlink{config__value_8h_af9a28b199e843773aefbb1e1bcf50559}{SUCCES\_TO\_SET}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00210}00210\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}ajout\ de\ valeurs\ 16\ bit\ (2/4)"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}T2"{}},\ 16),\ \doxymbox{\hyperlink{config__value_8h_af9a28b199e843773aefbb1e1bcf50559}{SUCCES\_TO\_SET}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00211}00211\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}ajout\ de\ valeurs\ 16\ bit\ (3/4)"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}T3"{}},\ 16),\ \doxymbox{\hyperlink{config__value_8h_af9a28b199e843773aefbb1e1bcf50559}{SUCCES\_TO\_SET}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00212}00212\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}ajout\ de\ valeurs\ 16\ bit\ (4/4)"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}T4"{}},\ 16),\ \doxymbox{\hyperlink{config__value_8h_af9a28b199e843773aefbb1e1bcf50559}{SUCCES\_TO\_SET}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00213}00213\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00214}00214\ \ \ \ \ \textcolor{comment}{//\ Le\ prochain\ tag\ doit\ etre\ refuse\ faute\ d'espace\ libre.}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00215}00215\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)ttest\ de\ Dépassement\ de\ l'espace\ mémoire\ (8\ octets\ max)\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00216}00216\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}avec\ 1\ bit"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}T5"{}},\ 1),\ \doxymbox{\hyperlink{config__value_8h_a6ac7074ca0f94196368735678d92c7b8}{CAN\_TG\_ERROR\_NOT\_ENOUNG\_SPACE}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00217}00217\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}avec\ 16\ bits"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}T6"{}},\ 16),\ \doxymbox{\hyperlink{config__value_8h_a6ac7074ca0f94196368735678d92c7b8}{CAN\_TG\_ERROR\_NOT\_ENOUNG\_SPACE}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00218}00218\ \ \ \ \ printf(\textcolor{stringliteral}{"{}OK\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00219}00219\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00220}00220\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00221}00221\ \ \ \ \ \textcolor{comment}{//\ TEST\ 3\ :\ Cas\ d'erreurs\ de\ set\_value\ et\ get\_value}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00222}00222\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00223}00223\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Test\ 3:\ Erreurs\ et\ depassements\ de\ valeurs...\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00224}00224\ \ \ \ \ \doxymbox{\hyperlink{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}{init\_tag\_manager}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00225}00225\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a129f017feb0712be1dcf7932e6035aa0}{init\_data\_container}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00226}00226\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tpreparation\ du\ GT\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00227}00227\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}prepa...\ "{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}BIT\_1"{}},\ 1),\ \doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00228}00228\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}prepa...\ "{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}BIT\_3"{}},\ 3),\ \doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00229}00229\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}prepa...\ "{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}BIT\_4"{}},\ 4),\ \doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00230}00230\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00231}00231\ \ \ \ \ \textcolor{comment}{//\ Tag\ inexistant\ (retour\ attendu:\ -\/3)}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00232}00232\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tTag\ inexistant\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00233}00233\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}test\ set"{}},\doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}FANTOME"{}},\ 5),\ -\/3);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00234}00234\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}test\ get"{}},\doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{stringliteral}{"{}FANTOME"{}},\ \&val),\ -\/3);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00235}00235\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00236}00236\ \ \ \ \ \textcolor{comment}{//\ Depassement\ de\ capacite:}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00237}00237\ \ \ \ \ \textcolor{comment}{//\ NOTE:\ l'implementation\ actuelle\ renvoie\ CAN\_TG\_ERROR\_VALUE\_TO\_BIG\ (-\/10),}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00238}00238\ \ \ \ \ \textcolor{comment}{//\ mais\ ces\ assertions\ historiques\ verifient\ encore\ -\/4.}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00239}00239\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tDépassement\ de\ capacité\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00240}00240\ \ \ \ \ \textcolor{comment}{//\ -\/\ Un\ tag\ de\ 1\ bit\ ne\ peut\ contenir\ que\ 0\ ou\ 1}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00241}00241\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}Un\ tag\ de\ 1\ bits[0\ ou\ 1]"{}},\doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}BIT\_1"{}},\ 2),\ -\/4);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00242}00242\ \ \ \ \ \textcolor{comment}{//\ -\/\ Un\ tag\ de\ 3\ bits\ ne\ peut\ contenir\ que\ de\ 0\ à\ 7}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00243}00243\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}Un\ tag\ de\ 3\ bits\ [0\ à\ 7]"{}},\doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}BIT\_3"{}},\ 8),\ -\/4);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00244}00244\ \ \ \ \ \textcolor{comment}{//\ -\/\ Un\ tag\ de\ 4\ bits\ ne\ peut\ contenir\ que\ de\ 0\ à\ 15}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00245}00245\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}Un\ tag\ de\ 4\ bits\ [0\ à\ 15]"{}},\ \doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}BIT\_4"{}},\ 16),\ -\/4);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00246}00246\ \ \ \ \ printf(\textcolor{stringliteral}{"{}OK\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00247}00247\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00248}00248\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00249}00249\ \ \ \ \ \textcolor{comment}{//\ TEST\ 4\ :\ Indépendance\ des\ écritures\ (Masquage\ binaire)}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00250}00250\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00251}00251\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Test\ 4:\ Indépendance\ des\ bits\ contigus...\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00252}00252\ \ \ \ \ \doxymbox{\hyperlink{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}{init\_tag\_manager}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00253}00253\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a129f017feb0712be1dcf7932e6035aa0}{init\_data\_container}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00254}00254\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00255}00255\ \ \ \ \ \textcolor{comment}{//\ On\ crée\ une\ configuration\ qui\ remplit\ exactement\ 1\ octet\ (1\ +\ 3\ +\ 4\ =\ 8\ bits)}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00256}00256\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tpreparation\ du\ GT\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00257}00257\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}preparation\ [set\_tag]\ (1/3)"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}T\_1"{}},\ 1),\ \doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00258}00258\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}preparation\ [set\_tag]\ (2/3)"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}T\_3"{}},\ 3),\ \doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00259}00259\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}preparation\ [set\_tag]\ (3/3)"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}T\_4"{}},\ 4),\ \doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00260}00260\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00261}00261\ \ \ \ \ \textcolor{comment}{//\ On\ assigne\ les\ valeurs\ maximales\ à\ chaque\ tag}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00262}00262\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tpreparation\ du\ GT\ (partie\ 2)\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00263}00263\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}preparation\ [set\_tag]\ (1)\ 1\ bits\ (1/3)"{}},\doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}T\_1"{}},\ 1),\ \doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00264}00264\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}preparation\ [set\_tag]\ (7)\ 3\ bits\ (2/3)"{}},\doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}T\_3"{}},\ 7),\ \doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00265}00265\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}preparation\ [set\_tag]\ (15)\ 4\ bits\ (3/3)"{}},\doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}T\_4"{}},\ 15),\ \doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00266}00266\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00267}00267\ \ \ \ \ \textcolor{comment}{//\ On\ vérifie\ qu'elles\ sont\ bien\ mémorisées}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00268}00268\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00269}00269\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{stringliteral}{"{}T\_1"{}},\ \&val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00270}00270\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}get\ value\ T\_1"{}},val,\ 1);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00271}00271\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{stringliteral}{"{}T\_3"{}},\ \&val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00272}00272\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}get\ value\ T\_3"{}},val,\ 7);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00273}00273\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{stringliteral}{"{}T\_4"{}},\ \&val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00274}00274\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}get\ value\ T\_4"{}},val,\ 15);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00275}00275\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00276}00276\ \ \ \ \ \textcolor{comment}{//\ On\ modifie\ T\_3\ sans\ toucher\ aux\ autres}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00277}00277\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tmodification\ de\ T\_3\ sans\ toucher\ aux\ autres\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00278}00278\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}"{}},\doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}T\_3"{}},\ 2),\ 1);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00279}00279\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00280}00280\ \ \ \ \ \textcolor{comment}{//\ On\ vérifie\ que\ T\_1\ et\ T\_4\ n'ont\ pas\ bougé}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00281}00281\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00282}00282\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{stringliteral}{"{}T\_1"{}},\ \&val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00283}00283\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}verif\ valeur\ [encien]"{}},val,\ 1);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00284}00284\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{stringliteral}{"{}T\_3"{}},\ \&val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00285}00285\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}verif\ valeur\ [nouvel]"{}},val,\ 2);\ \textcolor{comment}{//\ Nouvelle\ valeur}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00286}00286\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{stringliteral}{"{}T\_4"{}},\ \&val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00287}00287\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}verif\ valeur\ [encien]"{}},val,\ 15);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00288}00288\ \ \ \ \ printf(\textcolor{stringliteral}{"{}OK\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00289}00289\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00290}00290\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00291}00291\ \ \ \ \ \textcolor{comment}{//\ TEST\ 5\ :\ Variables\ de\ 8\ bits}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00292}00292\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00293}00293\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Test\ 5:\ Variables\ 8\ bits...\ "{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00294}00294\ \ \ \ \ \doxymbox{\hyperlink{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}{init\_tag\_manager}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00295}00295\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a129f017feb0712be1dcf7932e6035aa0}{init\_data\_container}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00296}00296\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00297}00297\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}prapa\ de\ la\ valeur"{}},\doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}V8"{}},\ 8),\ \doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00298}00298\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00299}00299\ \ \ \ \ \textcolor{comment}{//\ Test\ des\ bornes\ 0\ et\ 255}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00300}00300\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tTest\ des\ bornes\ 0\ et\ 255\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00301}00301\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}V8"{}},\ 0);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00302}00302\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{stringliteral}{"{}V8"{}},\ \&val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00303}00303\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}val\ =\ 0"{}},val,\ 0);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00304}00304\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}V8"{}},\ 255);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00305}00305\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{stringliteral}{"{}V8"{}},\ \&val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00306}00306\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}val\ =\ 255"{}},val,\ 255);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00307}00307\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tErreur\ dépassement\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00308}00308\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}val:\ [256]"{}},\doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}V8"{}},\ 256),\ -\/4);\ \textcolor{comment}{//\ Assertion\ historique,\ a\ realigner\ avec\ -\/10}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00309}00309\ \ \ \ \ printf(\textcolor{stringliteral}{"{}OK\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00310}00310\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00311}00311\ \ \ \ \ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00312}00312\ \ \ \ \ \textcolor{comment}{//\ TEST\ 6:\ Tout\ les\ test\ de\ 4\ bits}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00313}00313\ \ \ \ \ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00314}00314\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)ttest\ de\ tags\ à\ 4\ bits\ (tout\ les\ type\ possible)\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00315}00315\ \ \ \ \ \doxymbox{\hyperlink{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}{init\_tag\_manager}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00316}00316\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a129f017feb0712be1dcf7932e6035aa0}{init\_data\_container}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00317}00317\ \ \ \ \ printf(\textcolor{stringliteral}{"{}test\ d'inserssion\ des\ tags\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00318}00318\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}ajout\ 1\ tags\ à\ 4\ bits\ "{}},\ \doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}ma\_val1"{}},\ 4),\doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00319}00319\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}ajout\ 1\ tags\ après\ 4\ bits\ "{}},\ \doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\_tag}}(\textcolor{stringliteral}{"{}ma\_2"{}},\ 4),\doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00320}00320\ \ \ \ \ printf(\textcolor{stringliteral}{"{}le\ dernier\ cas\ n'ais\ pas\ encore\ testé!!!!\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00321}00321\ \ \ \ \ printf(\textcolor{stringliteral}{"{}test\ \ d'ajout\ de\ valeurs\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00322}00322\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}set\ val"{}},\doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}ma\_val1"{}},\ 3),1);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00323}00323\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}set\ val\ 2"{}},\doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{stringliteral}{"{}ma\_2"{}},\ 9),1);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00324}00324\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{stringliteral}{"{}ma\_val1"{}},\ \&val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00325}00325\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}get\ val\ 1"{}},val,3);;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00326}00326\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{stringliteral}{"{}ma\_2"{}},\ \&val);}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00327}00327\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{stringliteral}{"{}get\ val\ 2"{}},val,9);;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00328}00328\ \ \ \ \ \textcolor{comment}{//printf("{}===\ TOUS\ LES\ TESTS\ SONT\ PASSES\ AVEC\ SUCCES\ !\ ===\(\backslash\)n\(\backslash\)n"{});}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00329}00329\ \}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00330}00330\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00331}\doxymbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{00331}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00332}00332\ \{}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00333}00333\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00334}00334\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00335}00335\ \ \ \ \ \textcolor{comment}{//\ Il\ suffit\ d'appeler\ la\ fonction\ de\ test\ au\ début\ de\ votre\ main}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00336}00336\ \ \ \ \ \doxymbox{\hyperlink{main_8c_ae9bbb2f5bb69f73e92c761f83223285a}{run\_all\_tests}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00337}00337\ \ \ \ \ \doxymbox{\hyperlink{main_8c_a9c4bb6f6d00e76eae45e966a4c628178}{test\_print}}();}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00338}00338\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00339}00339\ }
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00340}00340\ \ \ \ \ \textcolor{comment}{//\ ...\ suite\ de\ votre\ code\ (simulation\ CAN,\ etc.)\ ...}}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00341}00341\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{main_8c_source_l00342}00342\ \}}
+
+\end{DoxyCode}

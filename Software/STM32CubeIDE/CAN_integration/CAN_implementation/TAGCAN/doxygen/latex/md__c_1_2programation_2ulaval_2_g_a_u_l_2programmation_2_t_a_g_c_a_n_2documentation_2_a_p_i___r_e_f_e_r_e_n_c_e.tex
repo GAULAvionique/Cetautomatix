@@ -1,0 +1,115 @@
+\chapter{API Reference (Etat actuel) }
+\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e}{}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e}\index{API Reference (Etat actuel)@{API Reference (Etat actuel)}}
+\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md0}%
+\Hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md0}%
+\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md1}{}\doxysection{\texorpdfstring{Vue d\textquotesingle{}ensemble}{Vue d\textquotesingle{}ensemble}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md1}
+TAGCAN gere un payload CAN de 8 octets ({\ttfamily \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}}) et permet:\+
+
+
+\begin{DoxyItemize}
+\item de declarer des tags ({\ttfamily \doxylink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\+\_\+tag}}) avec une taille en bits,
+\item d\textquotesingle{}ecrire une valeur dans {\ttfamily \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}} via un tag ({\ttfamily \doxylink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\+\_\+value}}),
+\item de relire une valeur via un tag ({\ttfamily \doxylink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\+\_\+value}}).
+\end{DoxyItemize}\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md2}{}\doxysection{\texorpdfstring{Modules}{Modules}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item {\ttfamily \doxylink{config__value_8h}{include/\+config\+\_\+value.\+h}} + {\ttfamily \doxylink{config__value_8c}{scripts/\+config\+\_\+value.\+c}}:\+ constantes et codes de retour.
+\item {\ttfamily \doxylink{gestion__tag_8h}{include/\+gestion\+\_\+tag.\+h}} + {\ttfamily \doxylink{tag__manager_8c}{scripts/\+sub\+\_\+scripts/\+tag\+\_\+manager.\+c}}:\+ creation/\+gestion des tags.
+\item {\ttfamily \doxylink{data__container_8h}{include/\+sub\+\_\+include/\+data\+\_\+container.\+h}} + {\ttfamily \doxylink{data__container_8c}{scripts/\+sub\+\_\+scripts/\+data\+\_\+container.\+c}}:\+ stockage et acces aux valeurs.
+\item {\ttfamily \doxylink{tag__manager_8h}{include/\+sub\+\_\+include/\+tag\+\_\+manager.\+h}}:\+ structure {\ttfamily \doxylink{struct_tag_def}{Tag\+Def}} et variables globales du gestionnaire.
+\item {\ttfamily \doxylink{print__val_8h}{include/\+sub\+\_\+include/\+print\+\_\+val.\+h}} + {\ttfamily \doxylink{print__val_8c}{scripts/\+sub\+\_\+scripts/\+print\+\_\+val.\+c}}:\+ affichage/\+debug.
+\end{DoxyItemize}\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md3}{}\doxysection{\texorpdfstring{Structures et etat global}{Structures et etat global}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md3}
+\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md4}{}\doxysubsection{\texorpdfstring{{\ttfamily Tag\+Def} ({\ttfamily include/\+sub\+\_\+include/\+tag\+\_\+manager.\+h})}{{\ttfamily Tag\+Def} ({\ttfamily include/\+sub\+\_\+include/\+tag\+\_\+manager.\+h})}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item {\ttfamily name\+[\doxylink{config__value_8h_ada71b9f258860d58a86ab220bfce6bf4}{MAX\+\_\+\+TAG\+\_\+\+NAME\+\_\+\+LEN}]\+}:\+ nom logique du tag.
+\item {\ttfamily n\+\_\+bits}:\+ taille du tag en bits.
+\item {\ttfamily byte\+\_\+idx\+\_\+a}, {\ttfamily byte\+\_\+idx\+\_\+b}:\+ index des octets utilises dans {\ttfamily \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}}.
+\item {\ttfamily bit\+\_\+pos\+\_\+a}, {\ttfamily bit\+\_\+pos\+\_\+b}:\+ position des bits dans les octets.
+\end{DoxyItemize}\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Variables globales}{Variables globales}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item {\ttfamily \doxylink{struct_tag_def}{Tag\+Def} \doxylink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\+\_\+tags}\+[\doxylink{config__value_8h_aa653c0eca99802a09fd9560f28a9b1c1}{MAX\+\_\+\+TAGS}]\+}:\+ table des tags.
+\item {\ttfamily uint8\+\_\+t \doxylink{tag__manager_8h_ab7cad863197c93abe397155a1946c0d0}{g\+\_\+tag\+\_\+count}}:\+ nombre de tags actifs.
+\item {\ttfamily uint8\+\_\+t \doxylink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\+\_\+bytes\+\_\+used}\+[\doxylink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\+\_\+\+BYTES}]\+}:\+ occupation des octets.
+\item {\ttfamily uint8\+\_\+t \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}\+[\doxylink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\+\_\+\+BYTES}]\+}:\+ buffer CAN (8 octets).
+\end{DoxyItemize}\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md6}{}\doxysection{\texorpdfstring{Fonctions principales}{Fonctions principales}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md6}
+\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md7}{}\doxysubsection{\texorpdfstring{Gestion des tags}{Gestion des tags}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md7}
+
+\begin{DoxyItemize}
+\item {\ttfamily void \doxylink{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}{init\+\_\+tag\+\_\+manager(void)}}
+\begin{DoxyItemize}
+\item Reinitialise {\ttfamily \doxylink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\+\_\+tags}}, {\ttfamily \doxylink{tag__manager_8h_ab7cad863197c93abe397155a1946c0d0}{g\+\_\+tag\+\_\+count}} et {\ttfamily \doxylink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\+\_\+bytes\+\_\+used}}.
+\end{DoxyItemize}
+\item {\ttfamily int \doxylink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\+\_\+tag(const char\texorpdfstring{$\ast$}{*} tag\+\_\+name, uint8\+\_\+t n\+\_\+bit)}}
+\begin{DoxyItemize}
+\item Declare un tag et lui alloue une zone dans {\ttfamily \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}}.
+\item Implementation observee:\+ accepte les tailles {\ttfamily 1..16} (pas seulement {\ttfamily 1, 3, 4, 8, 16}).
+\item Retourne un code {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947f}{CAN\+\_\+\+TG\+\_\+\+STATUE}}.
+\end{DoxyItemize}
+\item {\ttfamily const Tag\+Def\texorpdfstring{$\ast$}{*} \doxylink{tag__manager_8h_a5737e741608851f8e3822cf07261da44}{get\+\_\+tag\+\_\+def(const char\texorpdfstring{$\ast$}{*} tag\+\_\+name)}}
+\begin{DoxyItemize}
+\item Recherche un tag par nom.
+\item Retourne {\ttfamily NULL} si absent.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md8}{}\doxysubsection{\texorpdfstring{Valeurs (payload)}{Valeurs (payload)}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md8}
+
+\begin{DoxyItemize}
+\item {\ttfamily void \doxylink{data__container_8h_a129f017feb0712be1dcf7932e6035aa0}{init\+\_\+data\+\_\+container(void)}}
+\begin{DoxyItemize}
+\item Met {\ttfamily \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}} a zero.
+\end{DoxyItemize}
+\item {\ttfamily int \doxylink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\+\_\+value(const char\texorpdfstring{$\ast$}{*} tag\+\_\+name, uint32\+\_\+t value)}}
+\begin{DoxyItemize}
+\item Ecrit la valeur dans {\ttfamily \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}} selon la definition du tag.
+\item Debordement detecte via {\ttfamily value \texorpdfstring{$>$}{>}= (1ULL \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} tag-\/\texorpdfstring{$>$}{>}n\+\_\+bits)}.
+\end{DoxyItemize}
+\item {\ttfamily int \doxylink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\+\_\+value(const char\texorpdfstring{$\ast$}{*} tag\+\_\+name, uint32\+\_\+t\texorpdfstring{$\ast$}{*} out\+\_\+value)}}
+\begin{DoxyItemize}
+\item Lit la valeur d\textquotesingle{}un tag depuis {\ttfamily \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}}.
+\end{DoxyItemize}
+\item {\ttfamily uint8\+\_\+t \doxylink{data__container_8h_a66768c162c3a8352b7d5397e90206085}{prep\+\_\+mask(uint8\+\_\+t p\+\_\+bit, uint8\+\_\+t n\+\_\+bit)}}
+\begin{DoxyItemize}
+\item Fonction utilitaire de masque binaire.
+\end{DoxyItemize}
+\item {\ttfamily void \doxylink{data__container_8h_ae1649807202241b28239e8cb212a18b6}{can\+\_\+simulate\+\_\+send\+\_\+receive(uint8\+\_\+t\texorpdfstring{$\ast$}{*} tx\+\_\+buffer, uint8\+\_\+t\texorpdfstring{$\ast$}{*} rx\+\_\+buffer)}}
+\begin{DoxyItemize}
+\item Copie {\ttfamily tx\+\_\+buffer} vers {\ttfamily rx\+\_\+buffer} (simulation simple).
+\end{DoxyItemize}
+\item {\ttfamily void \doxylink{data__container_8h_a45840c759151338fe992664f4a21c4f7}{set\+\_\+val\+\_\+\+Tx\+Data(uint8\+\_\+t \texorpdfstring{$\ast$}{*}\+Tx\+Data\+Array)}}
+\begin{DoxyItemize}
+\item Copie un tableau externe vers {\ttfamily \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}}.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md9}{}\doxysection{\texorpdfstring{Debug /\+ affichage}{Debug /\+ affichage}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md9}
+
+\begin{DoxyItemize}
+\item {\ttfamily \doxylink{print__val_8h_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\+\_\+bin\+\_\+8}}, {\ttfamily \doxylink{print__val_8h_a7d217b9d9a6575858c03ca9854bb151b}{print\+\_\+all\+\_\+data\+\_\+bin}}, {\ttfamily \doxylink{print__val_8h_aab1b8ef8b5cbbf7a78a88248ae81155c}{print\+\_\+all\+\_\+with\+\_\+title}}.
+\item {\ttfamily \doxylink{print__val_8h_a2b276a5dd504a1eb4d6f216b8f9d7fdb}{print\+\_\+all\+\_\+tag\+\_\+set}}, {\ttfamily \doxylink{print__val_8h_a6904e40665dc664fc6611bfe2d913773}{print\+\_\+all\+\_\+data}}, {\ttfamily \doxylink{print__val_8h_a8ee4bb928c2cca54d191cf23edea60ec}{print\+\_\+repartition\+\_\+bit}}.
+\end{DoxyItemize}\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md10}{}\doxysection{\texorpdfstring{Codes de retour}{Codes de retour}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md10}
+\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md11}{}\doxysubsection{\texorpdfstring{Enum {\ttfamily CAN\+\_\+\+TG\+\_\+\+STATUE} ({\ttfamily include/\+config\+\_\+value.\+h})}{Enum {\ttfamily CAN\+\_\+\+TG\+\_\+\+STATUE} ({\ttfamily include/\+config\+\_\+value.\+h})}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md11}
+
+\begin{DoxyItemize}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\+\_\+\+TG\+\_\+\+SUCCESS} = 1}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa4add2030061ed8081fd69bbc7961b88e}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+NOT\+\_\+\+ENOUNG\+\_\+\+SPACE\+\_\+} = -\/2}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947faefecc0d5f9f8d279aeeac67967a54040}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+TAG\+\_\+\+NOT\+\_\+\+FOUND\+\_\+} = -\/3}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa0766008cbf1754ab42a2e4995b18e1d2}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+TAG\+\_\+\+NAME\+\_\+\+TO\+\_\+\+BIGS\+\_\+} = -\/4}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa2d5a4a6abf40a9b845d30b4927cc8321}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+TOO\+\_\+\+MAY\+\_\+\+TAGS\+\_\+} = -\/5}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa1f64facc77e1738f2ed16fae7f38140f}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+SIZE\+\_\+\+VALUE\+\_\+\+INVALIDE\+\_\+} = -\/6}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947fadb8a1b35ff867562e04d179242c150f2}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+NAME\+\_\+\+ALREADY\+\_\+\+USE\+\_\+} = -\/7}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947faf1069aa607410cd4bdeb9609f6b03a6b}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+SUBDIVISION\+\_\+\+FAIL\+\_\+} = -\/8}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947faa30bc0e8a501b29dbf6d3b5c3e4fe6f9}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+TAG\+\_\+\+NAME\+\_\+\+INVALIDE\+\_\+} = -\/9}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947fab1cfc87a8731dfcbc6e986a1b81115ac}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+VALUE\+\_\+\+TO\+\_\+\+BIG} = -\/10}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947fab194d19ed0940cb65b5c625b913aaa40}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+TRY\+\_\+\+TO\+\_\+\+FIND\+\_\+\+END\+\_\+\+CARACTER\+\_\+} = -\/21}
+\item {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa4ec6d89f60bf1ee862d7b94bed822768}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+INTERNAL\+\_\+\+CORUPTION\+\_\+} = -\/30}
+\end{DoxyItemize}\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md12}{}\doxysubsection{\texorpdfstring{Constantes globales ({\ttfamily scripts/\+config\+\_\+value.\+c})}{Constantes globales ({\ttfamily scripts/\+config\+\_\+value.\+c})}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md12}
+
+\begin{DoxyItemize}
+\item Les constantes {\ttfamily CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\texorpdfstring{$\ast$}{*}} existent aussi en variables globales.
+\item Attention:\+ {\ttfamily \doxylink{config__value_8h_ada864c858133fa1c52368562add7d64e}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+NULL\+\_\+\+POINTOR}} vaut {\ttfamily -\/20} (constante), alors que {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa8f8b6e84f2b232e0ed2995b7afbd0c44}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+NULL\+\_\+\+POINTOR\+\_\+}} vaut {\ttfamily -\/2} (enum).
+\end{DoxyItemize}\hypertarget{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md13}{}\doxysection{\texorpdfstring{Notes importantes de comportement}{Notes importantes de comportement}}\label{md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e_autotoc_md13}
+
+\begin{DoxyItemize}
+\item Validation longueur nom de tag:\+ implementation actuelle utilise {\ttfamily sizeof(tag\+\_\+name)} (taille pointeur), pas {\ttfamily strlen(tag\+\_\+name)}.
+\item Gestion debordement {\ttfamily \doxylink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\+\_\+value}}:\+ retourne {\ttfamily \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947fab1cfc87a8731dfcbc6e986a1b81115ac}{CAN\+\_\+\+TG\+\_\+\+ERROR\+\_\+\+VALUE\+\_\+\+TO\+\_\+\+BIG}} ({\ttfamily -\/10}).
+\item Les tests de {\ttfamily \doxylink{main_8c}{scripts/\+main.\+c}} attendent parfois {\ttfamily -\/4} pour des debordements de valeur, ce qui diverge du code courant. 
+\end{DoxyItemize}

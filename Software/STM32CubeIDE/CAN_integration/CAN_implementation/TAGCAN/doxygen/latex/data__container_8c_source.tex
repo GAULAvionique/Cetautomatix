@@ -1,0 +1,164 @@
+\doxysection{data\+\_\+container.\+c}
+\hypertarget{data__container_8c_source}{}\label{data__container_8c_source}\index{data\_container.c@{data\_container.c}}
+\doxymbox{\hyperlink{data__container_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ DATA\_CONTAINER\_H}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{data__container_8h}{../../include/sub\_include/data\_container.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00003}00003\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DATA\_CONTAINER\_H}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00004}00004\ \textcolor{preprocessor}{\#ifndef\ CONFIG\_VALUE\_H}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{config__value_8h}{../../include/config\_value.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00006}00006\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONFIG\_VALUE\_H}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00007}00007\ \textcolor{preprocessor}{\#ifndef\ PRINT\_VAL\_H}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{print__val_8h}{../../include/sub\_include/print\_val.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00009}00009\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PRINT\_VAL\_H}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00012}\doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{00012}}\ uint8\_t\ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[\doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\_BYTES}}];}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00014}\doxymbox{\hyperlink{data__container_8h_a129f017feb0712be1dcf7932e6035aa0}{00014}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{data__container_8c_a129f017feb0712be1dcf7932e6035aa0}{init\_data\_container}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00016}00016\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\_BYTES}};\ i++)}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00017}00017\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00018}00018\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[i]\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00019}00019\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00024}\doxymbox{\hyperlink{data__container_8h_a45840c759151338fe992664f4a21c4f7}{00024}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{data__container_8c_a45840c759151338fe992664f4a21c4f7}{set\_val\_TxData}}(uint8\_t\ *TxDataArray)\{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00025}00025\ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\_BYTES}};\ i++)\{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00026}00026\ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[i]\ =\ TxDataArray[i];}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00027}00027\ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00029}\doxymbox{\hyperlink{data__container_8h_a66768c162c3a8352b7d5397e90206085}{00029}}\ uint8\_t\ \doxymbox{\hyperlink{data__container_8c_a66768c162c3a8352b7d5397e90206085}{prep\_mask}}(uint8\_t\ p\_bit,\ uint8\_t\ n\_bit)}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00030}00030\ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00031}00031\ \textcolor{comment}{//\ Preparation\ du\ masque}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00032}00032\ \ \ \ \ uint8\_t\ mask\_val\ =\ 0b1;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00033}00033\ \ \ \ \ uint8\_t\ mask\_temp\ =\ 0b1;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00034}00034\ \ \ \ \ \textcolor{comment}{//\ Construit\ n\_bit\ bits\ a\ 1}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00035}00035\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ (n\_bit\ -\/\ 1);\ i++)}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00036}00036\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00037}00037\ \ \ \ \ \ \ \ \ mask\_val\ =\ mask\_val\ <<\ 1;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00038}00038\ \ \ \ \ \ \ \ \ mask\_val\ |=\ mask\_temp;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00039}00039\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00040}00040\ \ \ \ \ \textcolor{comment}{//\ Aligne\ le\ masque\ sur\ la\ position\ cible\ dans\ le\ byte}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00041}00041\ \ \ \ \ \textcolor{keywordflow}{return}\ mask\_val\ <<\ (8\ -\/\ p\_bit\ -\/\ n\_bit);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00042}00042\ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00044}\doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{00044}}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947f}{CAN\_TG\_STATUE}}\ \doxymbox{\hyperlink{data__container_8c_ae30fab9c73b624e37f064c836fefb7de}{set\_value}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tag\_name,\ uint32\_t\ value)}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00045}00045\ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00046}00046\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{struct_tag_def}{TagDef}}*\ tag\ =\ \doxymbox{\hyperlink{tag__manager_8h_a5737e741608851f8e3822cf07261da44}{get\_tag\_def}}(tag\_name);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00047}00047\ \ \ \ \ \textcolor{keywordflow}{if}\ (!tag)\ \textcolor{keywordflow}{return}\ -\/3;\ \textcolor{comment}{//\ Tag\ non\ trouve}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00049}00049\ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ n\_bits\ =\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_a894ffee63faf79f0877a12c871a18b3a}{n\_bits}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00050}00050\ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ bit\_pos\_a\ =\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_ab2ab707c2832eb3cd8776c3134b29b1d}{bit\_pos\_a}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00051}00051\ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ bit\_pos\_b\ =\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_a315b71fd9f91bd21c82164e006859ede}{bit\_pos\_b}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00052}00052\ \ \ \ \ \textcolor{keyword}{const}\ int8\_t\ byte\_idx\_a\ =\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_a985f815d0edbf8a411fbf325a30baec8}{byte\_idx\_a}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00053}00053\ \ \ \ \ \textcolor{keyword}{const}\ int8\_t\ byte\_idx\_b\ =\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_a1368f5414ba506dc1626d65a1083dc92}{byte\_idx\_b}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00055}00055\ \ \ \ \ \textcolor{comment}{//\ Verification\ du\ depassement\ de\ la\ valeur\ selon\ n\_bits}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00056}00056\ \ \ \ \ \textcolor{keywordflow}{if}\ (tag-\/>\doxymbox{\hyperlink{struct_tag_def_a894ffee63faf79f0877a12c871a18b3a}{n\_bits}}\ <\ 32\ \&\&\ value\ >=\ (1ULL\ <<\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_a894ffee63faf79f0877a12c871a18b3a}{n\_bits}}))}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00057}00057\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00058}00058\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}[ERREUR]\ Valeur\ ٪u\ trop\ grande\ pour\ le\ tag\ ٪s\ (٪u\ bits)\(\backslash\)n"{}},\ value,\ tag\_name,\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_a894ffee63faf79f0877a12c871a18b3a}{n\_bits}});}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fab1cfc87a8731dfcbc6e986a1b81115ac}{CAN\_TG\_ERROR\_VALUE\_TO\_BIG}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00060}00060\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00062}00062\ \ \ \ \ \textcolor{comment}{//\ Cas\ des\ valeurs\ sur\ plus\ de\ 8\ bits:\ repartition\ entre\ partie\ A\ et\ partie\ B.}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00063}00063\ \ \ \ \ \textcolor{keywordflow}{if}(n\_bits\ >\ 8)\{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00064}00064\ \ \ \ \ \ \ \ \ uint8\_t\ data\_b\ =\ (value\ \&\ 0xFF00)\ >>\ 8;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00065}00065\ \ \ \ \ \ \ \ \ uint8\_t\ data\_a\ =\ (value\ \&\ 0x00FF);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00066}00066\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[byte\_idx\_a]\ =\ data\_a;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00067}00067\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Cas\ 16\ bits:\ la\ partie\ B\ occupe\ tout\ le\ byte.}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00068}00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(n\_bits\ ==\ 16)\{\doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[tag-\/>\doxymbox{\hyperlink{struct_tag_def_a1368f5414ba506dc1626d65a1083dc92}{byte\_idx\_b}}]\ =\ data\_b;\}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00069}00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Cas\ 9..15\ bits:\ insertion\ partielle\ dans\ le\ byte\ B.}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Creation\ du\ masque\ binaire}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ mask\ =\ \doxymbox{\hyperlink{data__container_8c_a66768c162c3a8352b7d5397e90206085}{prep\_mask}}(bit\_pos\_b,\ n\_bits\ -\/\ 8);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Alignement\ de\ la\ deuxieme\ partie}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ data\_b\ =\ data\_b\ <<\ (8\ -\/\ bit\_pos\_b\ -\/\ n\_bits);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mise\ a\ jour\ selective\ des\ bits\ de\ la\ partie\ B.}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[byte\_idx\_b]\ \&=\ \string~mask;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[byte\_idx\_b]\ |=\ data\_b;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00079}00079\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00080}00080\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00081}00081\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(tag-\/>\doxymbox{\hyperlink{struct_tag_def_a894ffee63faf79f0877a12c871a18b3a}{n\_bits}}\ ==\ 8)}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00082}00082\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00083}00083\ \ \ \ \ \ \ \ \ uint8\_t\ data\_a\ =\ (value\ \&\ 0x00FF);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00084}00084\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[tag-\/>\doxymbox{\hyperlink{struct_tag_def_a985f815d0edbf8a411fbf325a30baec8}{byte\_idx\_a}}]\ =\ data\_a;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00085}00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00086}00086\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00087}00087\ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00088}00088\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Valeur\ <=\ 8\ bits\ (entre\ 1\ et\ 7\ bits\ inclusivement)}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00089}00089\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Creation\ du\ masque\ binaire\ aligne\ sur\ la\ zone\ cible}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00090}00090\ \ \ \ \ \ \ \ \ uint8\_t\ mask\ =\ \doxymbox{\hyperlink{data__container_8c_a66768c162c3a8352b7d5397e90206085}{prep\_mask}}(bit\_pos\_a,\ n\_bits);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00091}00091\ \ \ \ \ \ \ \ \ uint8\_t\ vrai\_val\ =\ value;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00092}00092\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Alignement\ de\ la\ valeur\ dans\ le\ byte}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00093}00093\ \ \ \ \ \ \ \ \ vrai\_val\ =\ vrai\_val\ <<\ (8\ -\/\ bit\_pos\_a\ -\/\ n\_bits);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00094}00094\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[byte\_idx\_a]\ \&=\ \string~mask;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00095}00095\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[byte\_idx\_a]\ |=\ vrai\_val;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00096}00096\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00097}00097\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00098}00098\ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00100}\doxymbox{\hyperlink{data__container_8c_a31a64ddfd601eb4d0beaadf21ddc5793}{00100}}\ uint16\_t\ \doxymbox{\hyperlink{data__container_8c_a31a64ddfd601eb4d0beaadf21ddc5793}{convert\_8\_to\_16bit}}(uint8\_t\ ba,\ uint8\_t\ bb)\{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00101}00101\ \ \ \ \ uint16\_t\ r;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00102}00102\ \ \ \ \ r\ =\ ba\ |\ (bb\ <<\ 8);\ \ \ \textcolor{comment}{//\ Recompose\ un\ entier\ 16\ bits\ depuis\ 2\ octets.}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00103}00103\ \ \ \ \ \textcolor{keywordflow}{return}\ r;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00104}00104\ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00106}\doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{00106}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{data__container_8c_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tag\_name,\ uint32\_t*\ out\_value)}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00107}00107\ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00108}00108\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{struct_tag_def}{TagDef}}*\ tag\ =\ \doxymbox{\hyperlink{tag__manager_8h_a5737e741608851f8e3822cf07261da44}{get\_tag\_def}}(tag\_name);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00109}00109\ \ \ \ \ \textcolor{keywordflow}{if}\ (!tag)\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947faefecc0d5f9f8d279aeeac67967a54040}{CAN\_TG\_ERROR\_TAG\_NOT\_FOUND\_}};\ \textcolor{comment}{//\ Tag\ non\ trouve}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00110}00110\ \ \ \ \ \textcolor{comment}{//\ Copie\ locale\ des\ metadonnees\ du\ tag\ pour\ simplifier\ les\ calculs.}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00111}00111\ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ n\_bits\ =\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_a894ffee63faf79f0877a12c871a18b3a}{n\_bits}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00112}00112\ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ bpa\ =\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_ab2ab707c2832eb3cd8776c3134b29b1d}{bit\_pos\_a}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00113}00113\ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ bpb\ =\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_a315b71fd9f91bd21c82164e006859ede}{bit\_pos\_b}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00114}00114\ \ \ \ \ \textcolor{keyword}{const}\ int8\_t\ byta\ =\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_a985f815d0edbf8a411fbf325a30baec8}{byte\_idx\_a}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00115}00115\ \ \ \ \ \textcolor{keyword}{const}\ int8\_t\ bytb\ =\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_a1368f5414ba506dc1626d65a1083dc92}{byte\_idx\_b}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00116}00116\ \ \ \ \ \textcolor{keywordflow}{if}(tag-\/>\doxymbox{\hyperlink{struct_tag_def_a1368f5414ba506dc1626d65a1083dc92}{byte\_idx\_b}}\ >\ -\/1)\{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Declaration\ conditionnelle\ conservee\ pour\ debug/historique.}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ int8\_t\ byte\_indx\_b\ =\ tag-\/>\doxymbox{\hyperlink{struct_tag_def_a1368f5414ba506dc1626d65a1083dc92}{byte\_idx\_b}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00119}00119\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00120}00120\ \ \ \ \ \textcolor{keywordflow}{if}\ (tag-\/>\doxymbox{\hyperlink{struct_tag_def_a894ffee63faf79f0877a12c871a18b3a}{n\_bits}}\ ==\ 16)\ \ \ \ \textcolor{comment}{//\ cas\ de\ 16\ bits\ exactement}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00121}00121\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00122}00122\ \ \ \ \ \ \ \ \ uint8\_t\ ba\ =\ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[byta];}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00123}00123\ \ \ \ \ \ \ \ \ uint8\_t\ bb\ =\ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[bytb];}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00124}00124\ \ \ \ \ \ \ \ \ *out\_value\ =\ ba\ |\ (bb\ <<\ 8);\ \ \ \textcolor{comment}{//\ Recomposition\ 16\ bits\ complete.}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00125}00125\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00126}00126\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}((n\_bits\ <\ 16)\ \&\&\ (n\_bits\ >\ 8))\{\textcolor{comment}{//\ cas\ d'entre\ 8\ et\ 16\ bits.}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00127}00127\ \ \ \ \ \ \ \ \ uint8\_t\ ba\ =\ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[byta];}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00128}00128\ \ \ \ \ \ \ \ \ uint8\_t\ bb;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00129}00129\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Creation\ d'un\ masque\ pour\ extraire\ la\ partie\ B.}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00130}00130\ \ \ \ \ \ \ \ \ uint8\_t\ mask\ =\ \doxymbox{\hyperlink{data__container_8c_a66768c162c3a8352b7d5397e90206085}{prep\_mask}}(bpb,\ n\_bits\ -\/\ 8);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00131}00131\ \ \ \ \ \ \ \ \ uint8\_t\ data\_temp\ =\ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[bytb]\ \&\ mask;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00132}00132\ \ \ \ \ \ \ \ \ bb\ =\ data\_temp\ >>\ (8\ -\/\ bpa\ -\/\ n\_bits);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00133}00133\ \ \ \ \ \ \ \ \ *out\_value\ =\ ba\ |\ (bb\ <<\ 8);\ \ \ \textcolor{comment}{//\ Recomposition\ avec\ partie\ B\ partielle.}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00135}00135\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00136}00136\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00137}00137\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00141}00141\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Creation\ du\ masque\ d'extraction\ (<=\ 8\ bits)}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00142}00142\ \ \ \ \ \ \ \ \ uint8\_t\ mask\ =\ \doxymbox{\hyperlink{data__container_8c_a66768c162c3a8352b7d5397e90206085}{prep\_mask}}(bpa,\ n\_bits);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00144}00144\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00145}00145\ \ \ \ \ \ \ \ \ \textcolor{comment}{//uint8\_t\ mask\ =\ ((1\ <<\ n\_bits)\ -\/\ 1)\ <<\ shift;}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00153}00153\ \ \ \ \ \ \ \ \ uint8\_t\ data\_temp\ =\ \doxymbox{\hyperlink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[byta]\ \&\ mask;}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00154}00154\ \ \ \ \ \ \ \ \ *out\_value\ =\ data\_temp\ >>\ (8\ -\/\ bpa\ -\/\ n\_bits);}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00155}00155\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00156}00156\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00157}00157\ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00159}00159\ }
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00165}\doxymbox{\hyperlink{data__container_8h_ae1649807202241b28239e8cb212a18b6}{00165}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{data__container_8c_ae1649807202241b28239e8cb212a18b6}{can\_simulate\_send\_receive}}(uint8\_t*\ tx\_buffer,\ uint8\_t*\ rx\_buffer)}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00166}00166\ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00167}00167\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\_BYTES}};\ i++)}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00168}00168\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00169}00169\ \ \ \ \ \ \ \ \ rx\_buffer[i]\ =\ tx\_buffer[i];}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00170}00170\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{data__container_8c_source_l00171}00171\ \}}
+
+\end{DoxyCode}

@@ -19,32 +19,37 @@ print_val.c
 \fR#include <string\&.h>\fP
 .br
 
-.SS "Fonctions"
+.SS "Functions"
 
 .in +1c
 .ti -1c
 .RI "void \fBprint_all_tag_set\fP (void)"
 .br
+.RI "Affiche la liste complete des tags et leurs metadonnees\&. "
 .ti -1c
 .RI "void \fBprint_all_data\fP (void)"
 .br
+.RI "Affiche toutes les valeurs logiques des tags\&. "
 .ti -1c
 .RI "void \fBmodif_vt\fP (int8_t bia, int8_t bib, uint8_t bpa, uint8_t bpb, uint8_t nb, char *v1, char *v2, char *v3, char *v4, char *v5, char *v6, char *v7, char *v8)"
 .br
-.RI "print in the terminal the place where the module place the value in the bytes of the CAN frame\&. "
+.RI "Affiche la repartition des tags dans les bytes de la trame CAN\&. "
 .ti -1c
 .RI "void \fBprint_repartition_bit\fP (void)"
 .br
+.RI "Affiche une vue textuelle de l'occupation des bits de la trame\&. "
 .ti -1c
 .RI "void \fBprint_bin_8\fP (uint8_t val)"
 .br
-.RI "imprime dans le terminal la représentation 8 bits (binaire) de la valeur passé en argument "
+.RI "Prints the binary representation of an 8-bit unsigned integer\&. "
 .ti -1c
 .RI "void \fBprint_all_data_bin\fP (void)"
 .br
+.RI "Prints the binary representation of each byte in \fR\fBTxData\fP\fP\&. "
 .ti -1c
 .RI "void \fBprint_all_with_title\fP (const char *title)"
 .br
+.RI "Affiche TxData en binaire avec un titre\&. "
 .in -1c
 .SS "Variables"
 
@@ -53,38 +58,85 @@ print_val.c
 .RI "\fBtsfp\fP \fBgbc2\fP [9]"
 .br
 .in -1c
-.SH "Documentation des fonctions"
+.SH "Function Documentation"
 .PP 
 .SS "void modif_vt (int8_t bia, int8_t bib, uint8_t bpa, uint8_t bpb, uint8_t nb, char * v1, char * v2, char * v3, char * v4, char * v5, char * v6, char * v7, char * v8)"
 
 .PP
-print in the terminal the place where the module place the value in the bytes of the CAN frame\&. 
+Affiche la repartition des tags dans les bytes de la trame CAN\&. [INTERNE] Point d'extension pour la construction de vues de repartition\&. 
+.PP
+\fBWarning\fP
+.RS 4
+Fonction actuellement inachevee/conservee pour evolution future\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB66\fP of file \fBprint_val\&.c\fP\&.
 .SS "void print_all_data (void )"
 
+.PP
+Affiche toutes les valeurs logiques des tags\&. Affiche toutes les valeurs logiques relues via get_value\&.
+
+.PP
+Chaque valeur est relue via get_value puis imprimee\&. 
+.PP
+Definition at line \fB43\fP of file \fBprint_val\&.c\fP\&.
 .SS "void print_all_data_bin (void )"
-prints the binary representation of each byte in the \fR\fBTxData\fP\fP array\&. 
+
+.PP
+Prints the binary representation of each byte in \fR\fBTxData\fP\fP\&. Affiche tout le payload TxData en binaire\&.
+
+.PP
+Prints the binary representation of each byte in the \fR\fBTxData\fP\fP array\&. 
+.PP
+Definition at line \fB148\fP of file \fBprint_val\&.c\fP\&.
 .SS "void print_all_tag_set (void )"
 
+.PP
+Affiche la liste complete des tags et leurs metadonnees\&. Affiche la table des tags declares et leurs metadonnees\&. 
+.PP
+Definition at line \fB18\fP of file \fBprint_val\&.c\fP\&.
 .SS "void print_all_with_title (const char * title)"
 
+.PP
+Affiche TxData en binaire avec un titre\&. Affiche TxData en binaire avec un titre en prefixe\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fItitle\fP Libelle affiche avant les octets\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB162\fP of file \fBprint_val\&.c\fP\&.
 .SS "void print_bin_8 (uint8_t val)"
 
 .PP
-imprime dans le terminal la représentation 8 bits (binaire) de la valeur passé en argument @bref prints the binary representation of an 8-bit unsigned integer\&.
+Prints the binary representation of an 8-bit unsigned integer\&. Affiche la representation binaire (8 bits) d'une valeur\&.
 
 .PP
-\fBParamètres\fP
+\fBParameters\fP
 .RS 4
 \fIval\fP The \fRval\fP [from 0 to 255]\&. The function prints the binary representation of this value by iterating over each bit\&. 
 .RE
 .PP
 
+.PP
+Definition at line \fB134\fP of file \fBprint_val\&.c\fP\&.
 .SS "void print_repartition_bit (void )"
 
-.SH "Documentation des variables"
+.PP
+Affiche une vue textuelle de l'occupation des bits de la trame\&. Affiche la repartition des bits utilises dans la trame CAN\&. 
+.PP
+Definition at line \fB78\fP of file \fBprint_val\&.c\fP\&.
+.SH "Variable Documentation"
 .PP 
 .SS "\fBtsfp\fP gbc2[9]"
-
-.SH "Auteur"
+Espace global de rendu utilise par les fonctions d'impression de repartition\&. 
+.PP
+Definition at line \fB14\fP of file \fBprint_val\&.c\fP\&.
+.SH "Author"
 .PP 
-Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.
+Generated automatically by Doxygen for TAGCAN from the source code\&.

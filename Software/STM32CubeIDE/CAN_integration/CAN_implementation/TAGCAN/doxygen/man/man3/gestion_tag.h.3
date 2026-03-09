@@ -6,49 +6,68 @@ gestion_tag.h
 .SH SYNOPSIS
 .br
 .PP
-.SS "Fonctions"
+.SS "Functions"
 
 .in +1c
 .ti -1c
 .RI "void \fBinit_tag_manager\fP (void)"
 .br
-.RI "Initialise/réinitialise le gestionnaire de tags\&. "
+.RI "Initialise/reinitialise le gestionnaire de tags\&. "
 .ti -1c
 .RI "int \fBset_tag\fP (const char *tag_name, uint8_t n_bit)"
 .br
-.RI "crée un nouveau tag\&. "
+.RI "Cree un nouveau tag\&. "
 .in -1c
-.SH "Documentation des fonctions"
+.SH "Function Documentation"
 .PP 
 .SS "void init_tag_manager (void )"
 
 .PP
-Initialise/réinitialise le gestionnaire de tags\&. 
+Initialise/reinitialise le gestionnaire de tags\&. 
 .PP
 \fBNote\fP
 .RS 4
-après sont appel, l'ensemble des tags doivent être redéfinie avec l'aide de \fR\fBset_tag\fP\fP 
+Apres cet appel, l'ensemble des tags doit etre redefini via \fR\fBset_tag\fP\fP\&. 
 .RE
 .PP
 
-.SS "int set_tag (const char * tag_name, uint8_t n_bit)"
+.PP
+Definition at line \fB21\fP of file \fBtag_manager\&.c\fP\&.
+.SS "int set_tag (const char * tag_name, uint8_t siz)"
 
 .PP
-crée un nouveau tag\&. 
+Cree un nouveau tag\&. 
 .PP
-\fBParamètres\fP
+\fBParameters\fP
 .RS 4
-\fItag_name\fP le nom (id) qui serras relier à la valeurs 
+\fItag_name\fP Le nom (id) relie a la valeur\&. 
 .br
-\fIn_bit\fP la taille de la valeur\&. ne peux être que 1, 3, 4, 8 ou 16\&. Sinon, une erreur est générer\&. 
+\fIn_bit\fP La taille de la valeur (implementation actuelle: 1\&.\&.16 bits)\&. 
 .RE
 .PP
-\fBRenvoie\fP
+\fBReturns\fP
 .RS 4
-un code décrivant le succès de l'opération ou (dans le cas d'une valeurs négatif) le code d'erreur correspondent\&. 
+Un code de succes ou d'erreur\&.
+.RE
+.PP
+Cree un nouveau tag\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fItag_name\fP Nom logique du tag\&. 
+.br
+\fIsiz\fP Taille de la valeur en bits (implementation actuelle: 1\&.\&.16)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Code de succes ou code d'erreur \fBCAN_TG_STATUE\fP\&. 
 .RE
 .PP
 
-.SH "Auteur"
+.PP
+Definition at line \fB232\fP of file \fBtag_manager\&.c\fP\&.
+.SH "Author"
 .PP 
-Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.
+Generated automatically by Doxygen for TAGCAN from the source code\&.

@@ -21,42 +21,45 @@ tag_manager.c
 \fR#include <stdint\&.h>\fP
 .br
 
-.SS "Fonctions"
+.SS "Functions"
 
 .in +1c
 .ti -1c
 .RI "void \fBinit_tag_manager\fP (void)"
 .br
-.RI "Initialise/réinitialise le gestionnaire de tags\&. "
+.RI "Initialise/reinitialise le gestionnaire de tags\&. "
 .ti -1c
 .RI "int \fBget_first_tags_vide\fP (void)"
 .br
+.RI "[INTERNE] Retourne l'index du premier slot tag libre\&. "
 .ti -1c
 .RI "void \fBset_name_tag\fP (const int n_tag, const char *tag_name)"
 .br
-.RI "[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d'un nom et le place dans le tag # n_tag\&. "
+.RI "[INTERNE] Enregistre un nom de tag dans un slot\&. "
 .ti -1c
 .RI "void \fBgeneral_set_tag\fP (const int n_tag, const char *tag_name, uint8_t n_bits, int8_t byte_idx_a)"
 .br
+.RI "[INTERNE] Initialise les champs communs d'un tag\&. "
 .ti -1c
 .RI "void \fBset_new_tag_9_to_16\fP (const char *tag_name, const int8_t byte_idx_a, const int8_t byte_idx_b, uint8_t n_bits_total)"
 .br
+.RI "[INTERNE] Cree un tag avec repartition potentielle sur 2 bytes\&. "
 .ti -1c
 .RI "\fBCAN_TG_STATUE\fP \fBfind_byte_with_enoung_space\fP (uint8_t siz, int8_t *retur_var)"
 .br
-.RI "trouve le premier bytes qui contien suffissament d'espace libre pour contenir la taille demander\&. "
+.RI "Trouve le premier byte ayant assez de place libre\&. "
 .ti -1c
 .RI "\fBCAN_TG_STATUE\fP \fBfind_byte2_with_enoung_space\fP (uint8_t siz_total, int8_t posi_premier_bit, int8_t *retur_var)"
 .br
-.RI "même chose que la fonction précédente, mais en ignorant le bit déjà pris pour la première partie\&. "
+.RI "Variante de recherche en excluant le byte deja utilise par la partie A\&. "
 .ti -1c
 .RI "\fBCAN_TG_STATUE\fP \fBset_tag\fP (const char *tag_name, uint8_t siz)"
 .br
-.RI "crée un nouveau tag\&. "
+.RI "Declare un nouveau tag et reserve son espace dans TxData\&. "
 .ti -1c
 .RI "const \fBTagDef\fP * \fBget_tag_def\fP (const char *tag_name)"
 .br
-.RI "recherche le tag et retourne la référence de la structure du tags corespondent au nom\&. "
+.RI "Recherche un tag actif par son nom\&. "
 .in -1c
 .SS "Variables"
 
@@ -71,123 +74,188 @@ tag_manager.c
 .RI "uint8_t \fBg_bytes_used\fP [\fBN_BYTES\fP] = {0}"
 .br
 .in -1c
-.SH "Documentation des fonctions"
+.SH "Function Documentation"
 .PP 
 .SS "\fBCAN_TG_STATUE\fP find_byte2_with_enoung_space (uint8_t siz_total, int8_t posi_premier_bit, int8_t * retur_var)"
 
 .PP
-même chose que la fonction précédente, mais en ignorant le bit déjà pris pour la première partie\&. 
+Variante de recherche en excluant le byte deja utilise par la partie A\&. 
 .PP
-\fBParamètres\fP
+\fBParameters\fP
 .RS 4
-\fI\fP 
+\fIsiz_total\fP Taille totale (9\&.\&.16)\&. 
+.br
+\fIposi_premier_bit\fP Byte deja retenu pour la partie A\&. 
+.br
+\fIretur_var\fP Sortie: index du byte pour la partie B\&. 
 .RE
 .PP
-param 
-.PP
-\fBRenvoie\fP
+\fBReturns\fP
 .RS 4
-
+CAN_TG_SUCCESS ou CAN_TG_ERROR_NOT_ENOUNG_SPACE_\&. 
 .RE
 .PP
 
+.PP
+Definition at line \fB188\fP of file \fBtag_manager\&.c\fP\&.
 .SS "\fBCAN_TG_STATUE\fP find_byte_with_enoung_space (uint8_t siz, int8_t * retur_var)"
 
 .PP
-trouve le premier bytes qui contien suffissament d'espace libre pour contenir la taille demander\&. 
+Trouve le premier byte ayant assez de place libre\&. 
 .PP
-\fBParamètres\fP
+\fBParameters\fP
 .RS 4
-\fIsiz\fP la taille de la valeurs\&. 
+\fIsiz\fP Taille demandee (en bits)\&. 
+.br
+\fIretur_var\fP Sortie: index du byte selectionne\&. 
 .RE
 .PP
-\fBRenvoie\fP
+\fBReturns\fP
 .RS 4
+CAN_TG_SUCCESS ou CAN_TG_ERROR_NOT_ENOUNG_SPACE_\&. 
 .RE
 .PP
 
+.PP
+Definition at line \fB144\fP of file \fBtag_manager\&.c\fP\&.
 .SS "void general_set_tag (const int n_tag, const char * tag_name, uint8_t n_bits, int8_t byte_idx_a)"
 
+.PP
+[INTERNE] Initialise les champs communs d'un tag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIn_tag\fP Index du slot tag cible\&. 
+.br
+\fItag_name\fP Nom logique a enregistrer\&. 
+.br
+\fIn_bits\fP Taille de la valeur en bits\&. 
+.br
+\fIbyte_idx_a\fP Byte principal de stockage (partie A)\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB90\fP of file \fBtag_manager\&.c\fP\&.
 .SS "int get_first_tags_vide (void )"
 
+.PP
+[INTERNE] Retourne l'index du premier slot tag libre\&. Un slot est considere libre si son nom est NULL ou vide ('\\0')\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Index du slot libre, ou CAN_TG_ERROR_TOO_MAY_TAGS si aucun slot disponible\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB42\fP of file \fBtag_manager\&.c\fP\&.
 .SS "const \fBTagDef\fP * get_tag_def (const char * tag_name)"
 
 .PP
-recherche le tag et retourne la référence de la structure du tags corespondent au nom\&. 
+Recherche un tag actif par son nom\&. Recherche un tag et retourne sa definition\&.
+
 .PP
-\fBAvertissement\fP
+\fBParameters\fP
 .RS 4
-pas suposé être utilisé à l'externe\&. 
+\fItag_name\fP Nom du tag recherche\&. 
 .RE
 .PP
-\fBParamètres\fP
+\fBReturns\fP
 .RS 4
-\fItag_name\fP le nom du tag à chercher\&. 
-.RE
-.PP
-\fBRenvoie\fP
-.RS 4
-la référence de la structure du tags\&. 
+Pointeur sur \fBTagDef\fP si trouve, sinon NULL\&. 
 .RE
 .PP
 
+.PP
+Definition at line \fB288\fP of file \fBtag_manager\&.c\fP\&.
 .SS "void init_tag_manager (void )"
 
 .PP
-Initialise/réinitialise le gestionnaire de tags\&. 
+Initialise/reinitialise le gestionnaire de tags\&. 
 .PP
 \fBNote\fP
 .RS 4
-après sont appel, l'ensemble des tags doivent être redéfinie avec l'aide de \fR\fBset_tag\fP\fP 
+Apres cet appel, l'ensemble des tags doit etre redefini via \fR\fBset_tag\fP\fP\&. 
 .RE
 .PP
 
+.PP
+Definition at line \fB21\fP of file \fBtag_manager\&.c\fP\&.
 .SS "void set_name_tag (const int n_tag, const char * tag_name)"
 
 .PP
-[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d'un nom et le place dans le tag # n_tag\&. 
+[INTERNE] Enregistre un nom de tag dans un slot\&. 
 .PP
-\fBAvertissement\fP
+\fBWarning\fP
 .RS 4
-comme c'est une fonction interne, les donnée entrer sont suposé être sanétiser avant de passer dans cette dernière\&. 
+Les verifications d'entree sont censees etre faites en amont\&. 
 .RE
 .PP
-\fBParamètres\fP
+\fBParameters\fP
 .RS 4
-\fIn_tag\fP une valeur entre 0 et MAX_TAGS désignant l'id numérique du tags\&. 
+\fIn_tag\fP Index du slot (0\&.\&.MAX_TAGS-1)\&. 
 .br
-\fItag_name\fP le nom du tags qui serras utilisé pour référer à la valeur\&. 
+\fItag_name\fP Nom logique du tag\&. 
 .RE
 .PP
 
+.PP
+Definition at line \fB68\fP of file \fBtag_manager\&.c\fP\&.
 .SS "void set_new_tag_9_to_16 (const char * tag_name, const int8_t byte_idx_a, const int8_t byte_idx_b, uint8_t n_bits_total)"
 
-.SS "\fBCAN_TG_STATUE\fP set_tag (const char * tag_name, uint8_t n_bit)"
-
 .PP
-crée un nouveau tag\&. 
+[INTERNE] Cree un tag avec repartition potentielle sur 2 bytes\&. 
 .PP
-\fBParamètres\fP
+\fBParameters\fP
 .RS 4
-\fItag_name\fP le nom (id) qui serras relier à la valeurs 
+\fItag_name\fP Nom logique du tag\&. 
 .br
-\fIn_bit\fP la taille de la valeur\&. ne peux être que 1, 3, 4, 8 ou 16\&. Sinon, une erreur est générer\&. 
-.RE
-.PP
-\fBRenvoie\fP
-.RS 4
-un code décrivant le succès de l'opération ou (dans le cas d'une valeurs négatif) le code d'erreur correspondent\&. 
+\fIbyte_idx_a\fP Byte de la partie A\&. 
+.br
+\fIbyte_idx_b\fP Byte de la partie B\&. 
+.br
+\fIn_bits_total\fP Taille totale en bits\&. 
 .RE
 .PP
 
-.SH "Documentation des variables"
+.PP
+Definition at line \fB119\fP of file \fBtag_manager\&.c\fP\&.
+.SS "\fBCAN_TG_STATUE\fP set_tag (const char * tag_name, uint8_t siz)"
+
+.PP
+Declare un nouveau tag et reserve son espace dans TxData\&. Cree un nouveau tag\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fItag_name\fP Nom logique du tag\&. 
+.br
+\fIsiz\fP Taille de la valeur en bits (implementation actuelle: 1\&.\&.16)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Code de succes ou code d'erreur \fBCAN_TG_STATUE\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB232\fP of file \fBtag_manager\&.c\fP\&.
+.SH "Variable Documentation"
 .PP 
 .SS "uint8_t g_bytes_used[\fBN_BYTES\fP] = {0}"
-Allocation des bits dans chaque byte (0 à 7)\&. (il représente le nombre de bits actuellement assigner à une valeurs dans chacun des bytes) 
+Occupation courante en bits pour chaque byte du payload\&. 
+.PP
+Definition at line \fB19\fP of file \fBtag_manager\&.c\fP\&.
 .SS "uint8_t g_tag_count = 0"
-le nombre de tags actuel (à chaque création réussi d'un nouveau, celui-ci augmente de 1) max: MAX_TAGS 
+Nombre de tags actifs (max: MAX_TAGS)\&. 
+.PP
+Definition at line \fB18\fP of file \fBtag_manager\&.c\fP\&.
 .SS "\fBTagDef\fP g_tags[\fBMAX_TAGS\fP]"
-Gestionnaire global de tags\&. contient l'ensemble des tags (actif et inactif) du gestionnaire de tag 
-.SH "Auteur"
+Table des tags (actifs et inactifs)\&. 
+.PP
+Definition at line \fB17\fP of file \fBtag_manager\&.c\fP\&.
+.SH "Author"
 .PP 
-Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.
+Generated automatically by Doxygen for TAGCAN from the source code\&.

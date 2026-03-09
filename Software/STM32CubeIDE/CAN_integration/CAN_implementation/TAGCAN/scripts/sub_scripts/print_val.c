@@ -12,6 +12,9 @@
 #include <string.h>
 
 tsfp gbc2[9];
+
+/** \brief Affiche la liste complete des tags et leurs metadonnees.
+ */
 void print_all_tag_set(void){
     printf("-------------------------------------------------\n");
     printf("legende\n\tnb:\tn_bits\t (le nombre de bites attribuer ـ la valeurs)\n");
@@ -34,6 +37,9 @@ void print_all_tag_set(void){
     printf("---------------------------------------------------------------------\n");
 }
 
+/** \brief Affiche toutes les valeurs logiques des tags.
+ * \details Chaque valeur est relue via get_value puis imprimee.
+ */
 void print_all_data(void){
     printf("---------------------[view of all data]----------------------------\n");
     printf("format: tag[n.bits]:\tvaleur\n");
@@ -49,11 +55,14 @@ void print_all_data(void){
     printf("-------------------[END view of all data]---------------------------\n");
 }
 
-/** \brief print in the terminal the place where the module place the value in the bytes of the CAN frame.
+/** \brief Affiche la repartition des tags dans les bytes de la trame CAN.
  *
  */
 
 
+/** \brief [INTERNE] Point d'extension pour la construction de vues de repartition.
+ * \warning Fonction actuellement inachevee/conservee pour evolution future.
+ */
 void modif_vt(int8_t bia, int8_t bib, uint8_t bpa, uint8_t bpb, uint8_t nb,
                char* v1,char* v2,char* v3,char* v4,char* v5,char* v6,char* v7,char* v8 ){
                if(nb>8){
@@ -64,9 +73,11 @@ void modif_vt(int8_t bia, int8_t bib, uint8_t bpa, uint8_t bpb, uint8_t nb,
 
 
 
+/** \brief Affiche une vue textuelle de l'occupation des bits de la trame.
+ */
 void print_repartition_bit(void){
     int max_byte_toucher = 0;
-    // reset the struc
+    // Reinitialise la structure d'affichage
     for(int i = 0; i < 8 ; i++){
         for(int i2 = 0; i2 < 8 ; i2++){gbc2[i].bi[i2]=' ';}
     gbc2[i].bi[8] = '\0';
@@ -82,7 +93,7 @@ void print_repartition_bit(void){
         printf("٪s :\t",g_tags[i].name);
         printf("[٪c]\n", possible_id[i]);
         if(g_tags[i].n_bits > 8){
-            // 1) pour toute les valeurs prﻯsent dans le a, les 8 bites vont ﻳtre attribuer ـ celui-ci.
+            // Partie A: occupe 8 bits pleins.
             for(int i2=0; i2<8;i2++){
                 gbc2[g_tags[i].bit_pos_a].bi[i2] = possible_id[i];
             }
@@ -115,7 +126,7 @@ void print_repartition_bit(void){
 }
 
 /**
- * @bref prints the binary representation of an 8-bit unsigned integer.
+ * @brief Prints the binary representation of an 8-bit unsigned integer.
  *
  * @param val The `val` [from 0 to 255]. The function prints the binary
  * representation of this value by iterating over each bit.
@@ -129,7 +140,9 @@ void print_bin_8(uint8_t val)
 }
 
 /**
- * prints the binary representation of each byte in the `TxData`
+ * @brief Prints the binary representation of each byte in `TxData`.
+ *
+ * Prints the binary representation of each byte in the `TxData`
  * array.
  */
 void print_all_data_bin(void)
@@ -143,6 +156,9 @@ void print_all_data_bin(void)
     printf("\n");
 }
 
+/** \brief Affiche TxData en binaire avec un titre.
+ * \param title Libelle affiche avant les octets.
+ */
 void print_all_with_title(const char* title){
     printf("٪s\t",title);
     int i;

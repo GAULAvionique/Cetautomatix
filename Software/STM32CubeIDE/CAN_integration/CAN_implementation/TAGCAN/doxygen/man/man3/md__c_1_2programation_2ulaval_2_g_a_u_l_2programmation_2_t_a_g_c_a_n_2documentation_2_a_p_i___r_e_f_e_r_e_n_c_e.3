@@ -1,0 +1,173 @@
+.TH "md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e \- API Reference (Etat actuel) 
+.PP
+
+.SH "Vue d'ensemble"
+.PP
+TAGCAN gere un payload CAN de 8 octets (\fR\fBTxData\fP\fP) et permet:
+
+.PP
+.IP "\(bu" 2
+de declarer des tags (\fR\fBset_tag\fP\fP) avec une taille en bits,
+.IP "\(bu" 2
+d'ecrire une valeur dans \fR\fBTxData\fP\fP via un tag (\fR\fBset_value\fP\fP),
+.IP "\(bu" 2
+de relire une valeur via un tag (\fR\fBget_value\fP\fP)\&.
+.PP
+.SH "Modules"
+.PP
+.IP "\(bu" 2
+\fR\fBinclude/config_value\&.h\fP\fP + \fR\fBscripts/config_value\&.c\fP\fP: constantes et codes de retour\&.
+.IP "\(bu" 2
+\fR\fBinclude/gestion_tag\&.h\fP\fP + \fR\fBscripts/sub_scripts/tag_manager\&.c\fP\fP: creation/gestion des tags\&.
+.IP "\(bu" 2
+\fR\fBinclude/sub_include/data_container\&.h\fP\fP + \fR\fBscripts/sub_scripts/data_container\&.c\fP\fP: stockage et acces aux valeurs\&.
+.IP "\(bu" 2
+\fR\fBinclude/sub_include/tag_manager\&.h\fP\fP: structure \fR\fBTagDef\fP\fP et variables globales du gestionnaire\&.
+.IP "\(bu" 2
+\fR\fBinclude/sub_include/print_val\&.h\fP\fP + \fR\fBscripts/sub_scripts/print_val\&.c\fP\fP: affichage/debug\&.
+.PP
+.SH "Structures et etat global"
+.PP
+.SS "\fRTagDef\fP (\fRinclude/sub_include/tag_manager\&.h\fP)"
+.IP "\(bu" 2
+\fRname[\fBMAX_TAG_NAME_LEN\fP]\fP: nom logique du tag\&.
+.IP "\(bu" 2
+\fRn_bits\fP: taille du tag en bits\&.
+.IP "\(bu" 2
+\fRbyte_idx_a\fP, \fRbyte_idx_b\fP: index des octets utilises dans \fR\fBTxData\fP\fP\&.
+.IP "\(bu" 2
+\fRbit_pos_a\fP, \fRbit_pos_b\fP: position des bits dans les octets\&.
+.PP
+.SS "Variables globales"
+.IP "\(bu" 2
+\fR\fBTagDef\fP \fBg_tags\fP[\fBMAX_TAGS\fP]\fP: table des tags\&.
+.IP "\(bu" 2
+\fRuint8_t \fBg_tag_count\fP\fP: nombre de tags actifs\&.
+.IP "\(bu" 2
+\fRuint8_t \fBg_bytes_used\fP[\fBN_BYTES\fP]\fP: occupation des octets\&.
+.IP "\(bu" 2
+\fRuint8_t \fBTxData\fP[\fBN_BYTES\fP]\fP: buffer CAN (8 octets)\&.
+.PP
+.SH "Fonctions principales"
+.PP
+.SS "Gestion des tags"
+.IP "\(bu" 2
+\fRvoid \fBinit_tag_manager(void)\fP\fP
+.IP "  \(bu" 4
+Reinitialise \fR\fBg_tags\fP\fP, \fR\fBg_tag_count\fP\fP et \fR\fBg_bytes_used\fP\fP\&.
+.PP
+
+.IP "\(bu" 2
+\fRint \fBset_tag(const char* tag_name, uint8_t n_bit)\fP\fP
+.IP "  \(bu" 4
+Declare un tag et lui alloue une zone dans \fR\fBTxData\fP\fP\&.
+.IP "  \(bu" 4
+Implementation observee: accepte les tailles \fR1\&.\&.16\fP (pas seulement \fR1, 3, 4, 8, 16\fP)\&.
+.IP "  \(bu" 4
+Retourne un code \fR\fBCAN_TG_STATUE\fP\fP\&.
+.PP
+
+.IP "\(bu" 2
+\fRconst TagDef* \fBget_tag_def(const char* tag_name)\fP\fP
+.IP "  \(bu" 4
+Recherche un tag par nom\&.
+.IP "  \(bu" 4
+Retourne \fRNULL\fP si absent\&.
+.PP
+
+.PP
+.SS "Valeurs (payload)"
+.IP "\(bu" 2
+\fRvoid \fBinit_data_container(void)\fP\fP
+.IP "  \(bu" 4
+Met \fR\fBTxData\fP\fP a zero\&.
+.PP
+
+.IP "\(bu" 2
+\fRint \fBset_value(const char* tag_name, uint32_t value)\fP\fP
+.IP "  \(bu" 4
+Ecrit la valeur dans \fR\fBTxData\fP\fP selon la definition du tag\&.
+.IP "  \(bu" 4
+Debordement detecte via \fRvalue >= (1ULL << tag->n_bits)\fP\&.
+.PP
+
+.IP "\(bu" 2
+\fRint \fBget_value(const char* tag_name, uint32_t* out_value)\fP\fP
+.IP "  \(bu" 4
+Lit la valeur d'un tag depuis \fR\fBTxData\fP\fP\&.
+.PP
+
+.IP "\(bu" 2
+\fRuint8_t \fBprep_mask(uint8_t p_bit, uint8_t n_bit)\fP\fP
+.IP "  \(bu" 4
+Fonction utilitaire de masque binaire\&.
+.PP
+
+.IP "\(bu" 2
+\fRvoid \fBcan_simulate_send_receive(uint8_t* tx_buffer, uint8_t* rx_buffer)\fP\fP
+.IP "  \(bu" 4
+Copie \fRtx_buffer\fP vers \fRrx_buffer\fP (simulation simple)\&.
+.PP
+
+.IP "\(bu" 2
+\fRvoid \fBset_val_TxData(uint8_t *TxDataArray)\fP\fP
+.IP "  \(bu" 4
+Copie un tableau externe vers \fR\fBTxData\fP\fP\&.
+.PP
+
+.PP
+.SH "Debug / affichage"
+.PP
+.IP "\(bu" 2
+\fR\fBprint_bin_8\fP\fP, \fR\fBprint_all_data_bin\fP\fP, \fR\fBprint_all_with_title\fP\fP\&.
+.IP "\(bu" 2
+\fR\fBprint_all_tag_set\fP\fP, \fR\fBprint_all_data\fP\fP, \fR\fBprint_repartition_bit\fP\fP\&.
+.PP
+.SH "Codes de retour"
+.PP
+.SS "Enum \fRCAN_TG_STATUE\fP (\fRinclude/config_value\&.h\fP)"
+.IP "\(bu" 2
+\fR\fBCAN_TG_SUCCESS\fP = 1\fP
+.IP "\(bu" 2
+\fR\fBCAN_TG_ERROR_NOT_ENOUNG_SPACE_\fP = -2\fP
+.IP "\(bu" 2
+\fR\fBCAN_TG_ERROR_TAG_NOT_FOUND_\fP = -3\fP
+.IP "\(bu" 2
+\fR\fBCAN_TG_ERROR_TAG_NAME_TO_BIGS_\fP = -4\fP
+.IP "\(bu" 2
+\fR\fBCAN_TG_ERROR_TOO_MAY_TAGS_\fP = -5\fP
+.IP "\(bu" 2
+\fR\fBCAN_TG_ERROR_SIZE_VALUE_INVALIDE_\fP = -6\fP
+.IP "\(bu" 2
+\fR\fBCAN_TG_ERROR_NAME_ALREADY_USE_\fP = -7\fP
+.IP "\(bu" 2
+\fR\fBCAN_TG_ERROR_SUBDIVISION_FAIL_\fP = -8\fP
+.IP "\(bu" 2
+\fR\fBCAN_TG_ERROR_TAG_NAME_INVALIDE_\fP = -9\fP
+.IP "\(bu" 2
+\fR\fBCAN_TG_ERROR_VALUE_TO_BIG\fP = -10\fP
+.IP "\(bu" 2
+\fR\fBCAN_TG_ERROR_TRY_TO_FIND_END_CARACTER_\fP = -21\fP
+.IP "\(bu" 2
+\fR\fBCAN_TG_ERROR_INTERNAL_CORUPTION_\fP = -30\fP
+.PP
+.SS "Constantes globales (\fRscripts/config_value\&.c\fP)"
+.IP "\(bu" 2
+Les constantes \fRCAN_TG_ERROR_*\fP existent aussi en variables globales\&.
+.IP "\(bu" 2
+Attention: \fR\fBCAN_TG_ERROR_NULL_POINTOR\fP\fP vaut \fR-20\fP (constante), alors que \fR\fBCAN_TG_ERROR_NULL_POINTOR_\fP\fP vaut \fR-2\fP (enum)\&.
+.PP
+.SH "Notes importantes de comportement"
+.PP
+.IP "\(bu" 2
+Validation longueur nom de tag: implementation actuelle utilise \fRsizeof(tag_name)\fP (taille pointeur), pas \fRstrlen(tag_name)\fP\&.
+.IP "\(bu" 2
+Gestion debordement \fR\fBset_value\fP\fP: retourne \fR\fBCAN_TG_ERROR_VALUE_TO_BIG\fP\fP (\fR-10\fP)\&.
+.IP "\(bu" 2
+Les tests de \fR\fBscripts/main\&.c\fP\fP attendent parfois \fR-4\fP pour des debordements de valeur, ce qui diverge du code courant\&. 
+.PP
+

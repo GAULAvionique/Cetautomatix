@@ -6,6 +6,124 @@ main.c
 .SH SYNOPSIS
 .br
 .PP
-.SH "Auteur"
+\fR#include <stdio\&.h>\fP
+.br
+\fR#include <assert\&.h>\fP
+.br
+\fR#include <stdbool\&.h>\fP
+.br
+\fR#include '\&.\&./include/config_value\&.h'\fP
+.br
+\fR#include '\&.\&./include/sub_include/data_container\&.h'\fP
+.br
+\fR#include '\&.\&./include/gestion_tag\&.h'\fP
+.br
+\fR#include '\&.\&./include/sub_include/print_val\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTEST\fP (const char *name, const bool condition)"
+.br
+.RI "Affiche un resultat de test avec format uniforme\&. "
+.ti -1c
+.RI "void \fBTEST_EQ_INT\fP (const char *name, const int val_1, const int val_2)"
+.br
+.RI "Affiche un test d'egalite entre deux entiers\&. "
+.ti -1c
+.RI "void \fBtest_print\fP (void)"
+.br
+.RI "Execute un scenario de demonstration des fonctions d'impression\&. "
+.ti -1c
+.RI "void \fBsomme_other_test\fP (void)"
+.br
+.RI "Scenario de test manuel des operations de masque/shift\&. "
+.ti -1c
+.RI "void \fBrun_all_tests\fP (void)"
+.br
+.RI "Execute les tests unitaires du module\&. Les resultats sont affiches dans le terminal\&. "
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBpassed_tests\fP = 0"
+.br
+.ti -1c
+.RI "int \fBtotal_tests\fP = 0"
+.br
+.in -1c
+.SH "Function Documentation"
 .PP 
-Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.
+.SS "int main (void )"
+
+.PP
+Definition at line \fB331\fP of file \fBmain\&.c\fP\&.
+.SS "void run_all_tests (void )"
+
+.PP
+Execute les tests unitaires du module\&. Les resultats sont affiches dans le terminal\&. 
+.PP
+Definition at line \fB177\fP of file \fBmain\&.c\fP\&.
+.SS "void somme_other_test (void )"
+
+.PP
+Scenario de test manuel des operations de masque/shift\&. 
+.PP
+Definition at line \fB104\fP of file \fBmain\&.c\fP\&.
+.SS "void TEST (const char * name, const bool condition)"
+
+.PP
+Affiche un resultat de test avec format uniforme\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP Le nom du test (peut aussi servir de description courte)\&. 
+.br
+\fIcondition\fP Resultat du test (true si reussi, false sinon)\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB26\fP of file \fBmain\&.c\fP\&.
+.SS "void TEST_EQ_INT (const char * name, const int val_1, const int val_2)"
+
+.PP
+Affiche un test d'egalite entre deux entiers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP Meme usage que TEST\&. 
+.br
+\fIval_1\fP Premiere valeur a comparer\&. 
+.br
+\fIval_2\fP Deuxieme valeur a comparer\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB46\fP of file \fBmain\&.c\fP\&.
+.SS "void test_print (void )"
+
+.PP
+Execute un scenario de demonstration des fonctions d'impression\&. Initialise des tags/valeurs puis affiche metadonnees et repartition\&. 
+.PP
+Definition at line \fB72\fP of file \fBmain\&.c\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "int passed_tests = 0"
+le nombre total de test réussi 
+.PP
+Definition at line \fB17\fP of file \fBmain\&.c\fP\&.
+.SS "int total_tests = 0"
+le nombre total de test effectué 
+.PP
+Definition at line \fB18\fP of file \fBmain\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TAGCAN from the source code\&.

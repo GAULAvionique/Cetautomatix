@@ -1,25 +1,43 @@
 #ifndef CONFIG_VALUE_H
 #define CONFIG_VALUE_H
 
+/** Nombre maximal de tags geres simultanement. */
 #define MAX_TAGS 32
+/** Longueur maximale d'un nom de tag (incluant le '\0'). */
 #define MAX_TAG_NAME_LEN 16
+/** Taille du payload CAN en octets. */
 #define N_BYTES 8
+/** Nombre maximal de gestionnaires (reserve/extension). */
 #define MAX_N_GT 3
 
+/** Code d'erreur: corruption interne detectee. */
 extern const int CAN_TG_ERROR_INTERNAL_CORUPTION;
+/** Code d'erreur: nom de tag trop long. */
 extern const int CAN_TG_ERROR_TAG_NAME_TO_BIGS;
+/** Code d'erreur: nom de tag invalide. */
 extern const int CAN_TG_ERROR_TAG_NAME_INVALIDE;
+/** Code d'erreur: tag introuvable. */
 extern const int CAN_TG_ERROR_TAG_NOT_FOUND;
+/** Code d'erreur: espace memoire insuffisant. */
 extern const int CAN_TG_ERROR_NOT_ENOUNG_SPACE;
+/** Code d'erreur: pointeur NULL recu. */
 extern const int CAN_TG_ERROR_NULL_POINTOR;
+/** Code d'erreur: fin de chaine non trouvee. */
 extern const int CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER;
+/** Code d'erreur: taille de valeur invalide. */
 extern const int CAN_TG_ERROR_SIZE_VALUE_INVALIDE;
+/** Code d'erreur: echec de subdivision/allocation. */
 extern const int CAN_TG_ERROR_SUBDIVISION_FAIL;
+/** Code d'erreur: trop de tags declares. */
 extern const int CAN_TG_ERROR_TOO_MAY_TAGS;
+/** Code d'erreur: nom de tag deja utilise. */
 extern const int CAN_TG_ERROR_NAME_ALREADY_USE;
+/** Code de succes historique pour set_tag/set_value. */
 extern const int SUCCES_TO_SET;
+/** Code de succes generique historique. */
 extern const int SUCCES;
-// יטאג
+// Codes de retour utilises par l'API TAGCAN
+/** \brief Codes de retour du module TAGCAN. */
 typedef enum {
     CAN_TG_ERROR_NOT_ENOUNG_SPACE_ = -2,
     CAN_TG_SUCCESS = 1,
@@ -36,10 +54,11 @@ typedef enum {
     CAN_TG_ERROR_VALUE_TO_BIG = -10,
 } CAN_TG_STATUE;
 
+/** \brief Modes d'utilisation CAN (envoi/reception). */
 typedef enum {
-    RECEVE_ONLY,    /**< In this mode, the 'packet' cannot  be wrinten to from 'set_value', but the value (assuming it's the correct id) while be updated if the id match. */
-    SEND_ONLY,    /**< In this mode, the 'packet' linked with can only send data. In other words, if an other CAN perif send a 'paquet' with the same ID, it's while not modifie he value. */
-    SEND_AND_RECEVE,    /**< In this mode, you can modifie the value, send the value and receve an update form the CAN line. (In other word, it's the less free of contrainte, but also the most suceptible to have unwished change of value.) */
+    RECEVE_ONLY,    /**< Reception seule: les updates entrantes peuvent modifier la valeur; l'ecriture locale est bloquee. */
+    SEND_ONLY,    /**< Emission seule: la valeur locale est emise, les updates entrantes ne la modifient pas. */
+    SEND_AND_RECEVE,    /**< Emission + reception: ecriture locale et updates entrantes toutes deux autorisees. */
 } CAN_MODE;
 
 #endif // CONFIG_VALUE_H

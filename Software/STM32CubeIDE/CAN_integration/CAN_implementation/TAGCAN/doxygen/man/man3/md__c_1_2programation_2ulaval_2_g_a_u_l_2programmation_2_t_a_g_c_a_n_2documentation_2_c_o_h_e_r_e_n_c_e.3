@@ -1,0 +1,83 @@
+.TH "md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_h_e_r_e_n_c_e" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_h_e_r_e_n_c_e \- Verification de coherence 
+.PP
+
+.SH "Methode"
+.PP
+La coherence a ete verifiee sur 3 axes:
+
+.PP
+.IP "\(bu" 2
+Axe A: commentaires vs implementation (\fRinclude/\fP + \fRscripts/\fP)\&.
+.IP "\(bu" 2
+Axe B: implementation vs tests (\fR\fBscripts/main\&.c\fP\fP, \fRtests/\fP)\&.
+.IP "\(bu" 2
+Axe C: nouvelle documentation \fRdocumentation/\fP vs code actuel\&.
+.PP
+.SH "Resultats"
+.PP
+.SS "Axe A - Commentaires vs implementation"
+.IP "\(bu" 2
+Statut global: Partiellement coherent\&.
+.IP "\(bu" 2
+Coherent:
+.IP "  \(bu" 4
+\fR\fBinit_tag_manager\fP\fP et \fR\fBinit_data_container\fP\fP correspondent globalement a leur role\&.
+.PP
+
+.IP "\(bu" 2
+Non coherent:
+.IP "  \(bu" 4
+Regle de tailles \fR\fBset_tag\fP\fP: commentaire restreint, code permissif (\fR1\&.\&.16\fP)\&.
+.IP "  \(bu" 4
+Validation longueur nom: commentaire suggere une vraie limite, code utilise \fRsizeof(pointer)\fP\&.
+.IP "  \(bu" 4
+Plusieurs blocs Doxygen invalides ou incomplets\&.
+.PP
+
+.PP
+.SS "Axe B - Implementation vs tests"
+.IP "\(bu" 2
+Statut global: Non coherent sur des retours d'erreur\&.
+.IP "\(bu" 2
+Exemple cle:
+.IP "  \(bu" 4
+Tests attendent \fR-4\fP pour debordement de valeur (\fR\fBscripts/main\&.c\fP:234\fP, \fR\fBscripts/main\&.c\fP:236\fP, \fR\fBscripts/main\&.c\fP:238\fP, \fR\fBscripts/main\&.c\fP:301\fP)\&.
+.IP "  \(bu" 4
+Code renvoie \fR-10\fP (\fR\fBscripts/sub_scripts/data_container\&.c\fP:59\fP)\&.
+.PP
+
+.PP
+.SS "Axe C - Documentation creee vs code"
+.IP "\(bu" 2
+Statut global: Coherent avec le comportement observe\&.
+.IP "\(bu" 2
+Principe applique:
+.IP "  \(bu" 4
+la documentation decrit l'etat reel du code (meme quand il est defectueux),
+.IP "  \(bu" 4
+les anomalies sont marquees explicitement comme ecarts\&.
+.PP
+
+.PP
+.SH "Matrice rapide"
+.PP
+Point  Commentaire existant  Code actuel  Coherence  Tailles \fR\fBset_tag\fP\fP  1,3,4,8,16  1\&.\&.16  Non  Debordement \fR\fBset_value\fP\fP  ambigu  \fR-10\fP  Partiel  Nom tag trop long  controle annonce  controle non fiable (\fRsizeof\fP)  Non  Affichage debug  decrit un affichage valide  \fR%\fP remplace par \fR٪\fP + bug de boucle  Non  Init manager/container  intention claire  comportement coherent  Oui  
+.SH "Conclusion"
+.PP
+La documentation ajoutee dans \fRdocumentation/\fP est coherente avec le code actuel, mais le projet global n'est pas completement coherent entre commentaires historiques, implementation et tests\&.
+.SH "Priorites de remediation"
+.PP
+.IP "1." 4
+Normaliser les codes d'erreur (source unique + tests alignes)\&.
+.IP "2." 4
+Corriger \fR\fBset_tag\fP\fP (longueur nom et regle de tailles)\&.
+.IP "3." 4
+Corriger les erreurs de formatage dans \fR\fBprint_val\&.c\fP\fP\&.
+.IP "4." 4
+Nettoyer les commentaires Doxygen pour relancer une doc auto fiable\&. 
+.PP
+

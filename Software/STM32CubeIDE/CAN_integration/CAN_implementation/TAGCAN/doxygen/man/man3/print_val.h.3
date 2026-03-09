@@ -11,35 +11,41 @@ print_val.h
 \fR#include <stdint\&.h>\fP
 .br
 
-.SS "Structures de données"
+.SS "Data Structures"
 
 .in +1c
 .ti -1c
 .RI "struct \fBtsfp\fP"
 .br
+.RI "Buffer de rendu pour l'affichage de repartition bit-a-bit\&. "
 .in -1c
-.SS "Fonctions"
+.SS "Functions"
 
 .in +1c
 .ti -1c
 .RI "void \fBprint_bin_8\fP (uint8_t val)"
 .br
-.RI "imprime dans le terminal la représentation 8 bits (binaire) de la valeur passé en argument "
+.RI "Affiche la representation binaire (8 bits) d'une valeur\&. "
 .ti -1c
 .RI "void \fBprint_all_data_bin\fP (void)"
 .br
+.RI "Affiche tout le payload TxData en binaire\&. "
 .ti -1c
 .RI "void \fBprint_all_with_title\fP (const char *title)"
 .br
+.RI "Affiche TxData en binaire avec un titre en prefixe\&. "
 .ti -1c
 .RI "void \fBprint_all_tag_set\fP (void)"
 .br
+.RI "Affiche la table des tags declares et leurs metadonnees\&. "
 .ti -1c
 .RI "void \fBprint_all_data\fP (void)"
 .br
+.RI "Affiche toutes les valeurs logiques relues via get_value\&. "
 .ti -1c
 .RI "void \fBprint_repartition_bit\fP (void)"
 .br
+.RI "Affiche la repartition des bits utilises dans la trame CAN\&. "
 .in -1c
 .SS "Variables"
 
@@ -48,41 +54,89 @@ print_val.h
 .RI "\fBtsfp\fP \fBgbc2\fP [9]"
 .br
 .in -1c
-.SH "Documentation des fonctions"
+.SH "Function Documentation"
 .PP 
 .SS "void print_all_data (void )"
 
+.PP
+Affiche toutes les valeurs logiques relues via get_value\&. Affiche toutes les valeurs logiques relues via get_value\&.
+
+.PP
+Chaque valeur est relue via get_value puis imprimee\&. 
+.PP
+Definition at line \fB43\fP of file \fBprint_val\&.c\fP\&.
 .SS "void print_all_data_bin (void )"
-prints the binary representation of each byte in the \fR\fBTxData\fP\fP array\&. 
+
+.PP
+Affiche tout le payload TxData en binaire\&. Chaque octet est affiche sur 8 bits, dans l'ordre du buffer\&.
+
+.PP
+Affiche tout le payload TxData en binaire\&.
+
+.PP
+Prints the binary representation of each byte in the \fR\fBTxData\fP\fP array\&. 
+.PP
+Definition at line \fB148\fP of file \fBprint_val\&.c\fP\&.
 .SS "void print_all_tag_set (void )"
 
+.PP
+Affiche la table des tags declares et leurs metadonnees\&. Affiche la table des tags declares et leurs metadonnees\&. 
+.PP
+Definition at line \fB18\fP of file \fBprint_val\&.c\fP\&.
 .SS "void print_all_with_title (const char * title)"
 
+.PP
+Affiche TxData en binaire avec un titre en prefixe\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItitle\fP Texte affiche avant la ligne binaire\&.
+.RE
+.PP
+Affiche TxData en binaire avec un titre en prefixe\&.
+
+.PP
+\fBParameters\fP
+.RS 4
+\fItitle\fP Libelle affiche avant les octets\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB162\fP of file \fBprint_val\&.c\fP\&.
 .SS "void print_bin_8 (uint8_t val)"
 
 .PP
-imprime dans le terminal la représentation 8 bits (binaire) de la valeur passé en argument 
+Affiche la representation binaire (8 bits) d'une valeur\&. 
 .PP
-\fBParamètres\fP
+\fBParameters\fP
 .RS 4
-\fIval\fP la valeurs à voire au format mentionner précédament\&.
+\fIval\fP Valeur a afficher en binaire sur 8 bits\&.
 .RE
 .PP
-@bref prints the binary representation of an 8-bit unsigned integer\&.
+Affiche la representation binaire (8 bits) d'une valeur\&.
 
 .PP
-\fBParamètres\fP
+\fBParameters\fP
 .RS 4
 \fIval\fP The \fRval\fP [from 0 to 255]\&. The function prints the binary representation of this value by iterating over each bit\&. 
 .RE
 .PP
 
+.PP
+Definition at line \fB134\fP of file \fBprint_val\&.c\fP\&.
 .SS "void print_repartition_bit (void )"
 
-.SH "Documentation des variables"
+.PP
+Affiche la repartition des bits utilises dans la trame CAN\&. Affiche la repartition des bits utilises dans la trame CAN\&. 
+.PP
+Definition at line \fB78\fP of file \fBprint_val\&.c\fP\&.
+.SH "Variable Documentation"
 .PP 
 .SS "\fBtsfp\fP gbc2[9]\fR [extern]\fP"
-
-.SH "Auteur"
+Espace global de rendu utilise par les fonctions d'impression de repartition\&. 
+.PP
+Definition at line \fB14\fP of file \fBprint_val\&.c\fP\&.
+.SH "Author"
 .PP 
-Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.
+Generated automatically by Doxygen for TAGCAN from the source code\&.

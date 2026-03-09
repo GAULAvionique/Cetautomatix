@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['passed_5ftests_0',['passed_tests',['../scripts_2main_8c.html#a51c2b99b66f63ee9064347f9151e99ba',1,'main.c']]],
-  ['prep_5fmask_1',['prep_mask',['../data__container_8c.html#a66768c162c3a8352b7d5397e90206085',1,'prep_mask(uint8_t p_bit, uint8_t n_bit):&#160;data_container.c'],['../data__container_8h.html#a66768c162c3a8352b7d5397e90206085',1,'prep_mask(uint8_t p_bit, uint8_t n_bit):&#160;data_container.c']]],
-  ['print_5fall_5fdata_2',['print_all_data',['../print__val_8h.html#a6904e40665dc664fc6611bfe2d913773',1,'print_all_data(void):&#160;print_val.c'],['../print__val_8c.html#a6904e40665dc664fc6611bfe2d913773',1,'print_all_data(void):&#160;print_val.c']]],
-  ['print_5fall_5fdata_5fbin_3',['print_all_data_bin',['../print__val_8h.html#a7d217b9d9a6575858c03ca9854bb151b',1,'print_all_data_bin(void):&#160;print_val.c'],['../print__val_8c.html#a7d217b9d9a6575858c03ca9854bb151b',1,'print_all_data_bin(void):&#160;print_val.c']]],
-  ['print_5fall_5ftag_5fset_4',['print_all_tag_set',['../print__val_8h.html#a2b276a5dd504a1eb4d6f216b8f9d7fdb',1,'print_all_tag_set(void):&#160;print_val.c'],['../print__val_8c.html#a2b276a5dd504a1eb4d6f216b8f9d7fdb',1,'print_all_tag_set(void):&#160;print_val.c']]],
-  ['print_5fall_5fwith_5ftitle_5',['print_all_with_title',['../print__val_8h.html#aab1b8ef8b5cbbf7a78a88248ae81155c',1,'print_all_with_title(const char *title):&#160;print_val.c'],['../print__val_8c.html#aab1b8ef8b5cbbf7a78a88248ae81155c',1,'print_all_with_title(const char *title):&#160;print_val.c']]],
-  ['print_5fbin_5f8_6',['print_bin_8',['../print__val_8h.html#a9e9dc5564a1158a2c1381b3de0c6d20e',1,'print_bin_8(uint8_t val):&#160;print_val.c'],['../print__val_8c.html#a9e9dc5564a1158a2c1381b3de0c6d20e',1,'print_bin_8(uint8_t val):&#160;print_val.c']]],
-  ['print_5frepartition_5fbit_7',['print_repartition_bit',['../print__val_8h.html#a8ee4bb928c2cca54d191cf23edea60ec',1,'print_repartition_bit(void):&#160;print_val.c'],['../print__val_8c.html#a8ee4bb928c2cca54d191cf23edea60ec',1,'print_repartition_bit(void):&#160;print_val.c']]],
-  ['print_5fval_2ec_8',['print_val.c',['../print__val_8c.html',1,'']]],
-  ['print_5fval_2eh_9',['print_val.h',['../print__val_8h.html',1,'']]]
+  ['b_20implementation_20vs_20tests_0',['Axe B - Implementation vs tests',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_h_e_r_e_n_c_e.html#autotoc_md18',1,'']]],
+  ['bi_1',['bi',['../structtsfp.html#a2d723190f449137a272d5b64518761dd',1,'tsfp']]],
+  ['bit_5fpos_5fa_2',['bit_pos_a',['../struct_tag_def.html#ab2ab707c2832eb3cd8776c3134b29b1d',1,'TagDef']]],
+  ['bit_5fpos_5fb_3',['bit_pos_b',['../struct_tag_def.html#a315b71fd9f91bd21c82164e006859ede',1,'TagDef']]],
+  ['boucle_20avec_20point_20virgule_20parasite_4',['7) Boucle avec point-virgule parasite',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_m_m_e_n_t_a_i_r_e_s___a_u_d_i_t.html#autotoc_md32',1,'']]],
+  ['byte_5fidx_5fa_5',['byte_idx_a',['../struct_tag_def.html#a985f815d0edbf8a411fbf325a30baec8',1,'TagDef']]],
+  ['byte_5fidx_5fb_6',['byte_idx_b',['../struct_tag_def.html#a1368f5414ba506dc1626d65a1083dc92',1,'TagDef']]]
 ];

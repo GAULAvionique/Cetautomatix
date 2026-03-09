@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['parametres_20doxygen_20incomplets_20mal_20formes_0',['3) Parametres Doxygen incomplets/mal formes',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_m_m_e_n_t_a_i_r_e_s___a_u_d_i_t.html#autotoc_md28',1,'']]],
+  ['parasite_1',['7) Boucle avec point-virgule parasite',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_m_m_e_n_t_a_i_r_e_s___a_u_d_i_t.html#autotoc_md32',1,'']]],
+  ['partiellement_20invalide_2',['5) Documentation debug partiellement invalide',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_m_m_e_n_t_a_i_r_e_s___a_u_d_i_t.html#autotoc_md30',1,'']]],
+  ['passed_5ftests_3',['passed_tests',['../main_8c.html#a51c2b99b66f63ee9064347f9151e99ba',1,'passed_tests:&#160;main.c'],['../test__utils_8c.html#a51c2b99b66f63ee9064347f9151e99ba',1,'passed_tests:&#160;main.c'],['../test__utils_8h.html#a51c2b99b66f63ee9064347f9151e99ba',1,'passed_tests:&#160;main.c']]],
+  ['payload_4',['Valeurs (payload)',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e.html#autotoc_md8',1,'']]],
+  ['perimetre_5',['Perimetre',['../dir_138aff360eb965c43b94267b8d1ce09e.html#autotoc_md37',1,'']]],
+  ['point_20virgule_20parasite_6',['7) Boucle avec point-virgule parasite',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_m_m_e_n_t_a_i_r_e_s___a_u_d_i_t.html#autotoc_md32',1,'']]],
+  ['points_20verifies_20avec_20references_7',['Points verifies (avec references)',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_m_m_e_n_t_a_i_r_e_s___a_u_d_i_t.html#autotoc_md25',1,'']]],
+  ['prep_5fmask_8',['prep_mask',['../data__container_8h.html#a66768c162c3a8352b7d5397e90206085',1,'prep_mask(uint8_t p_bit, uint8_t n_bit):&#160;data_container.c'],['../data__container_8c.html#a66768c162c3a8352b7d5397e90206085',1,'prep_mask(uint8_t p_bit, uint8_t n_bit):&#160;data_container.c']]],
+  ['principales_9',['Fonctions principales',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_a_p_i___r_e_f_e_r_e_n_c_e.html#autotoc_md6',1,'']]],
+  ['print_5fall_5fdata_10',['print_all_data',['../print__val_8h.html#a6904e40665dc664fc6611bfe2d913773',1,'print_all_data(void):&#160;print_val.c'],['../print__val_8c.html#a6904e40665dc664fc6611bfe2d913773',1,'print_all_data(void):&#160;print_val.c']]],
+  ['print_5fall_5fdata_5fbin_11',['print_all_data_bin',['../print__val_8h.html#a7d217b9d9a6575858c03ca9854bb151b',1,'print_all_data_bin(void):&#160;print_val.c'],['../print__val_8c.html#a7d217b9d9a6575858c03ca9854bb151b',1,'print_all_data_bin(void):&#160;print_val.c']]],
+  ['print_5fall_5ftag_5fset_12',['print_all_tag_set',['../print__val_8h.html#a2b276a5dd504a1eb4d6f216b8f9d7fdb',1,'print_all_tag_set(void):&#160;print_val.c'],['../print__val_8c.html#a2b276a5dd504a1eb4d6f216b8f9d7fdb',1,'print_all_tag_set(void):&#160;print_val.c']]],
+  ['print_5fall_5fwith_5ftitle_13',['print_all_with_title',['../print__val_8h.html#aab1b8ef8b5cbbf7a78a88248ae81155c',1,'print_all_with_title(const char *title):&#160;print_val.c'],['../print__val_8c.html#aab1b8ef8b5cbbf7a78a88248ae81155c',1,'print_all_with_title(const char *title):&#160;print_val.c']]],
+  ['print_5fbin_5f8_14',['print_bin_8',['../print__val_8h.html#a9e9dc5564a1158a2c1381b3de0c6d20e',1,'print_bin_8(uint8_t val):&#160;print_val.c'],['../print__val_8c.html#a9e9dc5564a1158a2c1381b3de0c6d20e',1,'print_bin_8(uint8_t val):&#160;print_val.c']]],
+  ['print_5frepartition_5fbit_15',['print_repartition_bit',['../print__val_8h.html#a8ee4bb928c2cca54d191cf23edea60ec',1,'print_repartition_bit(void):&#160;print_val.c'],['../print__val_8c.html#a8ee4bb928c2cca54d191cf23edea60ec',1,'print_repartition_bit(void):&#160;print_val.c']]],
+  ['print_5fval_2ec_16',['print_val.c',['../print__val_8c.html',1,'']]],
+  ['print_5fval_2eh_17',['print_val.h',['../print__val_8h.html',1,'']]],
+  ['printf_18',['6) Probleme de specificateurs &lt;span class=&quot;tt&quot;&gt;printf&lt;/span&gt;',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_m_m_e_n_t_a_i_r_e_s___a_u_d_i_t.html#autotoc_md31',1,'']]],
+  ['prioritaires_20recommandees_19',['Actions prioritaires recommandees',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_m_m_e_n_t_a_i_r_e_s___a_u_d_i_t.html#autotoc_md34',1,'']]],
+  ['priorites_20de_20remediation_20',['Priorites de remediation',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_h_e_r_e_n_c_e.html#autotoc_md22',1,'']]],
+  ['probleme_20de_20specificateurs_20printf_21',['6) Probleme de specificateurs &lt;span class=&quot;tt&quot;&gt;printf&lt;/span&gt;',['../md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_m_m_e_n_t_a_i_r_e_s___a_u_d_i_t.html#autotoc_md31',1,'']]]
+];

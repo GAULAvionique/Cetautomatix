@@ -1,4 +1,4 @@
-\doxysection{Référence du fichier print\+\_\+val.\+c}
+\doxysection{print\+\_\+val.\+c File Reference}
 \hypertarget{print__val_8c}{}\label{print__val_8c}\index{print\_val.c@{print\_val.c}}
 {\ttfamily \+\#include "{}../\+../\+include/\+sub\+\_\+include/\+print\+\_\+val.\+h"{}}\newline
 {\ttfamily \+\#include "{}../\+../\+include/\+sub\+\_\+include/\+tag\+\_\+manager.\+h"{}}\newline
@@ -6,7 +6,7 @@
 {\ttfamily \+\#include $<$stdio.\+h$>$}\newline
 {\ttfamily \+\#include $<$stdint.\+h$>$}\newline
 {\ttfamily \+\#include $<$string.\+h$>$}\newline
-Graphe des dépendances par inclusion de print\+\_\+val.\+c:\+
+Include dependency graph for print\+\_\+val.\+c:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -14,23 +14,23 @@ Graphe des dépendances par inclusion de print\+\_\+val.\+c:\+
 \includegraphics[width=350pt]{print__val_8c__incl}
 \end{center}
 \end{figure}
-\doxysubsubsection*{Fonctions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \doxymbox{\hyperlink{print__val_8c_a2b276a5dd504a1eb4d6f216b8f9d7fdb}{print\+\_\+all\+\_\+tag\+\_\+set}} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Affiche la liste complete des tags et leurs metadonnees. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{print__val_8c_a6904e40665dc664fc6611bfe2d913773}{print\+\_\+all\+\_\+data}} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Affiche toutes les valeurs logiques des tags. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{print__val_8c_a2b2a875713382d6ba95a0a171e2e0783}{modif\+\_\+vt}} (int8\+\_\+t bia, int8\+\_\+t bib, uint8\+\_\+t bpa, uint8\+\_\+t bpb, uint8\+\_\+t nb, char \texorpdfstring{$\ast$}{*}v1, char \texorpdfstring{$\ast$}{*}v2, char \texorpdfstring{$\ast$}{*}v3, char \texorpdfstring{$\ast$}{*}v4, char \texorpdfstring{$\ast$}{*}v5, char \texorpdfstring{$\ast$}{*}v6, char \texorpdfstring{$\ast$}{*}v7, char \texorpdfstring{$\ast$}{*}v8)
-\begin{DoxyCompactList}\small\item\em print in the terminal the place where the module place the value in the bytes of the CAN frame. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Affiche la repartition des tags dans les bytes de la trame CAN. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{print__val_8c_a8ee4bb928c2cca54d191cf23edea60ec}{print\+\_\+repartition\+\_\+bit}} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Affiche une vue textuelle de l\textquotesingle{}occupation des bits de la trame. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{print__val_8c_a9e9dc5564a1158a2c1381b3de0c6d20e}{print\+\_\+bin\+\_\+8}} (uint8\+\_\+t val)
-\begin{DoxyCompactList}\small\item\em imprime dans le terminal la représentation 8 bits (binaire) de la valeur passé en argument \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Prints the binary representation of an 8-\/bit unsigned integer. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{print__val_8c_a7d217b9d9a6575858c03ca9854bb151b}{print\+\_\+all\+\_\+data\+\_\+bin}} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Prints the binary representation of each byte in {\ttfamily \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}}. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{print__val_8c_aab1b8ef8b5cbbf7a78a88248ae81155c}{print\+\_\+all\+\_\+with\+\_\+title}} (const char \texorpdfstring{$\ast$}{*}title)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Affiche Tx\+Data en binaire avec un titre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,7 +40,7 @@ void \doxymbox{\hyperlink{print__val_8c_aab1b8ef8b5cbbf7a78a88248ae81155c}{print
 
 \label{doc-func-members}
 \Hypertarget{print__val_8c_doc-func-members}
-\doxysubsection{Documentation des fonctions}
+\doxysubsection{Function Documentation}
 \Hypertarget{print__val_8c_a2b2a875713382d6ba95a0a171e2e0783}\index{print\_val.c@{print\_val.c}!modif\_vt@{modif\_vt}}
 \index{modif\_vt@{modif\_vt}!print\_val.c@{print\_val.c}}
 \doxysubsubsection{\texorpdfstring{modif\_vt()}{modif\_vt()}}
@@ -49,7 +49,14 @@ void modif\+\_\+vt (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{bia}{, }\item[{
 
 
 
-print in the terminal the place where the module place the value in the bytes of the CAN frame. 
+Affiche la repartition des tags dans les bytes de la trame CAN. 
+
+\+[INTERNE]\+ Point d\textquotesingle{}extension pour la construction de vues de repartition. \begin{DoxyWarning}{Warning}
+Fonction actuellement inachevee/\+conservee pour evolution future. 
+\end{DoxyWarning}
+
+
+Definition at line \doxymbox{\hyperlink{print__val_8c_source_l00066}{66}} of file \doxymbox{\hyperlink{print__val_8c_source}{print\+\_\+val.\+c}}.
 
 \Hypertarget{print__val_8c_a6904e40665dc664fc6611bfe2d913773}\index{print\_val.c@{print\_val.c}!print\_all\_data@{print\_all\_data}}
 \index{print\_all\_data@{print\_all\_data}!print\_val.c@{print\_val.c}}
@@ -57,7 +64,17 @@ print in the terminal the place where the module place the value in the bytes of
 {\footnotesize\ttfamily \label{print__val_8c_a6904e40665dc664fc6611bfe2d913773} 
 void print\+\_\+all\+\_\+data (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction :\+
+
+
+Affiche toutes les valeurs logiques des tags. 
+
+Affiche toutes les valeurs logiques relues via get\+\_\+value.
+
+Chaque valeur est relue via get\+\_\+value puis imprimee. 
+
+Definition at line \doxymbox{\hyperlink{print__val_8c_source_l00043}{43}} of file \doxymbox{\hyperlink{print__val_8c_source}{print\+\_\+val.\+c}}.
+
+Here is the call graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -65,7 +82,7 @@ Voici le graphe d\textquotesingle{}appel pour cette fonction :\+
 \includegraphics[width=350pt]{print__val_8c_a6904e40665dc664fc6611bfe2d913773_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction :\+
+Here is the caller graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -79,7 +96,17 @@ Voici le graphe des appelants de cette fonction :\+
 {\footnotesize\ttfamily \label{print__val_8c_a7d217b9d9a6575858c03ca9854bb151b} 
 void print\+\_\+all\+\_\+data\+\_\+bin (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
 
-prints the binary representation of each byte in the {\ttfamily \doxylink{data__container_8c_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}} array. Voici le graphe d\textquotesingle{}appel pour cette fonction :\+
+
+
+Prints the binary representation of each byte in {\ttfamily \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}}. 
+
+Affiche tout le payload Tx\+Data en binaire.
+
+Prints the binary representation of each byte in the {\ttfamily \doxylink{data__container_8h_a0b96d44a8da73070e470c7bf30523ca1}{Tx\+Data}} array. 
+
+Definition at line \doxymbox{\hyperlink{print__val_8c_source_l00148}{148}} of file \doxymbox{\hyperlink{print__val_8c_source}{print\+\_\+val.\+c}}.
+
+Here is the call graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -93,7 +120,15 @@ prints the binary representation of each byte in the {\ttfamily \doxylink{data__
 {\footnotesize\ttfamily \label{print__val_8c_a2b276a5dd504a1eb4d6f216b8f9d7fdb} 
 void print\+\_\+all\+\_\+tag\+\_\+set (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
 
-Voici le graphe des appelants de cette fonction :\+
+
+
+Affiche la liste complete des tags et leurs metadonnees. 
+
+Affiche la table des tags declares et leurs metadonnees. 
+
+Definition at line \doxymbox{\hyperlink{print__val_8c_source_l00018}{18}} of file \doxymbox{\hyperlink{print__val_8c_source}{print\+\_\+val.\+c}}.
+
+Here is the caller graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -107,7 +142,22 @@ Voici le graphe des appelants de cette fonction :\+
 {\footnotesize\ttfamily \label{print__val_8c_aab1b8ef8b5cbbf7a78a88248ae81155c} 
 void print\+\_\+all\+\_\+with\+\_\+title (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{title}{}\end{DoxyParamCaption})}
 
-Voici le graphe d\textquotesingle{}appel pour cette fonction :\+
+
+
+Affiche Tx\+Data en binaire avec un titre. 
+
+Affiche Tx\+Data en binaire avec un titre en prefixe.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Libelle affiche avant les octets. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{print__val_8c_source_l00162}{162}} of file \doxymbox{\hyperlink{print__val_8c_source}{print\+\_\+val.\+c}}.
+
+Here is the call graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -123,16 +173,20 @@ void print\+\_\+bin\+\_\+8 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{val}{}
 
 
 
-imprime dans le terminal la représentation 8 bits (binaire) de la valeur passé en argument 
+Prints the binary representation of an 8-\/bit unsigned integer. 
 
-@bref prints the binary representation of an 8-\/bit unsigned integer.
+Affiche la representation binaire (8 bits) d\textquotesingle{}une valeur.
 
 
-\begin{DoxyParams}{Paramètres}
+\begin{DoxyParams}{Parameters}
 {\em val} & The {\ttfamily val} \+[from 0 to 255]\+. The function prints the binary representation of this value by iterating over each bit. \\
 \hline
 \end{DoxyParams}
-Voici le graphe des appelants de cette fonction :\+
+
+
+Definition at line \doxymbox{\hyperlink{print__val_8c_source_l00134}{134}} of file \doxymbox{\hyperlink{print__val_8c_source}{print\+\_\+val.\+c}}.
+
+Here is the caller graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -146,7 +200,15 @@ Voici le graphe des appelants de cette fonction :\+
 {\footnotesize\ttfamily \label{print__val_8c_a8ee4bb928c2cca54d191cf23edea60ec} 
 void print\+\_\+repartition\+\_\+bit (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
 
-Voici le graphe des appelants de cette fonction :\+
+
+
+Affiche une vue textuelle de l\textquotesingle{}occupation des bits de la trame. 
+
+Affiche la repartition des bits utilises dans la trame CAN. 
+
+Definition at line \doxymbox{\hyperlink{print__val_8c_source_l00078}{78}} of file \doxymbox{\hyperlink{print__val_8c_source}{print\+\_\+val.\+c}}.
+
+Here is the caller graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -158,10 +220,14 @@ Voici le graphe des appelants de cette fonction :\+
 
 \label{doc-var-members}
 \Hypertarget{print__val_8c_doc-var-members}
-\doxysubsection{Documentation des variables}
+\doxysubsection{Variable Documentation}
 \Hypertarget{print__val_8c_a020a2713730c98f7c2ef2ee76d4fead7}\index{print\_val.c@{print\_val.c}!gbc2@{gbc2}}
 \index{gbc2@{gbc2}!print\_val.c@{print\_val.c}}
 \doxysubsubsection{\texorpdfstring{gbc2}{gbc2}}
 {\footnotesize\ttfamily \label{print__val_8c_a020a2713730c98f7c2ef2ee76d4fead7} 
 \doxymbox{\hyperlink{structtsfp}{tsfp}} gbc2\+[9]\+}
+
+Espace global de rendu utilise par les fonctions d\textquotesingle{}impression de repartition. 
+
+Definition at line \doxymbox{\hyperlink{print__val_8c_source_l00014}{14}} of file \doxymbox{\hyperlink{print__val_8c_source}{print\+\_\+val.\+c}}.
 

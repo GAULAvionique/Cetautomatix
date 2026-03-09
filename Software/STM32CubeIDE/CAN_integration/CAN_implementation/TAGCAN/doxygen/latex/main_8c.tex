@@ -1,2 +1,221 @@
-\doxysection{Référence du fichier main.\+c}
+\doxysection{main.\+c File Reference}
 \hypertarget{main_8c}{}\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \+\#include $<$stdio.\+h$>$}\newline
+{\ttfamily \+\#include $<$assert.\+h$>$}\newline
+{\ttfamily \+\#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \+\#include "{}../\+include/\+config\+\_\+value.\+h"{}}\newline
+{\ttfamily \+\#include "{}../\+include/\+sub\+\_\+include/\+data\+\_\+container.\+h"{}}\newline
+{\ttfamily \+\#include "{}../\+include/\+gestion\+\_\+tag.\+h"{}}\newline
+{\ttfamily \+\#include "{}../\+include/\+sub\+\_\+include/\+print\+\_\+val.\+h"{}}\newline
+Include dependency graph for main.\+c:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{main_8c_aa193df92133f441f2a0efd722c3962f9}{TEST}} (const char \texorpdfstring{$\ast$}{*}name, const bool condition)
+\begin{DoxyCompactList}\small\item\em Affiche un resultat de test avec format uniforme. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{main_8c_a67a63463b204713946cce11511fc9231}{TEST\+\_\+\+EQ\+\_\+\+INT}} (const char \texorpdfstring{$\ast$}{*}name, const int val\+\_\+1, const int val\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Affiche un test d\textquotesingle{}egalite entre deux entiers. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{main_8c_a9c4bb6f6d00e76eae45e966a4c628178}{test\+\_\+print}} (void)
+\begin{DoxyCompactList}\small\item\em Execute un scenario de demonstration des fonctions d\textquotesingle{}impression. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{main_8c_a4f26f5b24d899127d66338ba3bfd7f1b}{somme\+\_\+other\+\_\+test}} (void)
+\begin{DoxyCompactList}\small\item\em Scenario de test manuel des operations de masque/\+shift. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{main_8c_ae9bbb2f5bb69f73e92c761f83223285a}{run\+\_\+all\+\_\+tests}} (void)
+\begin{DoxyCompactList}\small\item\em Execute les tests unitaires du module. Les resultats sont affiches dans le terminal. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{main_8c_a51c2b99b66f63ee9064347f9151e99ba}{passed\+\_\+tests}} = 0
+\item 
+int \doxymbox{\hyperlink{main_8c_ab7324491948254cde8946b74d8bca3bc}{total\+\_\+tests}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{main_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8c_a840291bc02cba5474a4cb46a9b9566fe} 
+int main (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00331}{331}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8c_ae9bbb2f5bb69f73e92c761f83223285a}\index{main.c@{main.c}!run\_all\_tests@{run\_all\_tests}}
+\index{run\_all\_tests@{run\_all\_tests}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{run\_all\_tests()}{run\_all\_tests()}}
+{\footnotesize\ttfamily \label{main_8c_ae9bbb2f5bb69f73e92c761f83223285a} 
+void run\+\_\+all\+\_\+tests (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Execute les tests unitaires du module. Les resultats sont affiches dans le terminal. 
+
+
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00177}{177}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_ae9bbb2f5bb69f73e92c761f83223285a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{main_8c_ae9bbb2f5bb69f73e92c761f83223285a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8c_a4f26f5b24d899127d66338ba3bfd7f1b}\index{main.c@{main.c}!somme\_other\_test@{somme\_other\_test}}
+\index{somme\_other\_test@{somme\_other\_test}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{somme\_other\_test()}{somme\_other\_test()}}
+{\footnotesize\ttfamily \label{main_8c_a4f26f5b24d899127d66338ba3bfd7f1b} 
+void somme\+\_\+other\+\_\+test (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Scenario de test manuel des operations de masque/\+shift. 
+
+
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00104}{104}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{main_8c_a4f26f5b24d899127d66338ba3bfd7f1b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8c_aa193df92133f441f2a0efd722c3962f9}\index{main.c@{main.c}!TEST@{TEST}}
+\index{TEST@{TEST}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily \label{main_8c_aa193df92133f441f2a0efd722c3962f9} 
+void TEST (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const bool}]{condition}{}\end{DoxyParamCaption})}
+
+
+
+Affiche un resultat de test avec format uniforme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Le nom du test (peut aussi servir de description courte). \\
+\hline
+{\em condition} & Resultat du test (true si reussi, false sinon). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00026}{26}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{main_8c_a67a63463b204713946cce11511fc9231}\index{main.c@{main.c}!TEST\_EQ\_INT@{TEST\_EQ\_INT}}
+\index{TEST\_EQ\_INT@{TEST\_EQ\_INT}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_EQ\_INT()}{TEST\_EQ\_INT()}}
+{\footnotesize\ttfamily \label{main_8c_a67a63463b204713946cce11511fc9231} 
+void TEST\+\_\+\+EQ\+\_\+\+INT (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const int}]{val\+\_\+1}{, }\item[{const int}]{val\+\_\+2}{}\end{DoxyParamCaption})}
+
+
+
+Affiche un test d\textquotesingle{}egalite entre deux entiers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Meme usage que TEST. \\
+\hline
+{\em val\+\_\+1} & Premiere valeur a comparer. \\
+\hline
+{\em val\+\_\+2} & Deuxieme valeur a comparer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00046}{46}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{main_8c_a67a63463b204713946cce11511fc9231_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8c_a9c4bb6f6d00e76eae45e966a4c628178}\index{main.c@{main.c}!test\_print@{test\_print}}
+\index{test\_print@{test\_print}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{test\_print()}{test\_print()}}
+{\footnotesize\ttfamily \label{main_8c_a9c4bb6f6d00e76eae45e966a4c628178} 
+void test\+\_\+print (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Execute un scenario de demonstration des fonctions d\textquotesingle{}impression. 
+
+Initialise des tags/\+valeurs puis affiche metadonnees et repartition. 
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00072}{72}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a9c4bb6f6d00e76eae45e966a4c628178_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{main_8c_a9c4bb6f6d00e76eae45e966a4c628178_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-var-members}
+\Hypertarget{main_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8c_a51c2b99b66f63ee9064347f9151e99ba}\index{main.c@{main.c}!passed\_tests@{passed\_tests}}
+\index{passed\_tests@{passed\_tests}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{passed\_tests}{passed\_tests}}
+{\footnotesize\ttfamily \label{main_8c_a51c2b99b66f63ee9064347f9151e99ba} 
+int passed\+\_\+tests = 0}
+
+le nombre total de test réussi 
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00017}{17}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{main_8c_ab7324491948254cde8946b74d8bca3bc}\index{main.c@{main.c}!total\_tests@{total\_tests}}
+\index{total\_tests@{total\_tests}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{total\_tests}{total\_tests}}
+{\footnotesize\ttfamily \label{main_8c_ab7324491948254cde8946b74d8bca3bc} 
+int total\+\_\+tests = 0}
+
+le nombre total de test effectué 
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00018}{18}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+

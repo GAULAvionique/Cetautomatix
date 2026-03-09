@@ -1,24 +1,25 @@
-\doxysection{Référence du fichier gestion\+\_\+tag.\+h}
+\doxysection{gestion\+\_\+tag.\+h File Reference}
 \hypertarget{gestion__tag_8h}{}\label{gestion__tag_8h}\index{gestion\_tag.h@{gestion\_tag.h}}
-Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :\+\nopagebreak
+This graph shows which files directly or indirectly include this file:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=226pt]{gestion__tag_8h__dep__incl}
+\includegraphics[width=309pt]{gestion__tag_8h__dep__incl}
 \end{center}
 \end{figure}
-\doxysubsubsection*{Fonctions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \doxymbox{\hyperlink{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}{init\+\_\+tag\+\_\+manager}} (void)
-\begin{DoxyCompactList}\small\item\em Initialise/\+réinitialise le gestionnaire de tags. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Initialise/\+reinitialise le gestionnaire de tags. \end{DoxyCompactList}\item 
 int \doxymbox{\hyperlink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\+\_\+tag}} (const char \texorpdfstring{$\ast$}{*}tag\+\_\+name, uint8\+\_\+t n\+\_\+bit)
-\begin{DoxyCompactList}\small\item\em crée un nouveau tag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Cree un nouveau tag. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
 \Hypertarget{gestion__tag_8h_doc-func-members}
-\doxysubsection{Documentation des fonctions}
+\doxysubsection{Function Documentation}
 \Hypertarget{gestion__tag_8h_aab50a8f567be72e656120fd71f3fb435}\index{gestion\_tag.h@{gestion\_tag.h}!init\_tag\_manager@{init\_tag\_manager}}
 \index{init\_tag\_manager@{init\_tag\_manager}!gestion\_tag.h@{gestion\_tag.h}}
 \doxysubsubsection{\texorpdfstring{init\_tag\_manager()}{init\_tag\_manager()}}
@@ -27,12 +28,16 @@ void init\+\_\+tag\+\_\+manager (\begin{DoxyParamCaption}\item[{void}]{}{}\end{D
 
 
 
-Initialise/\+réinitialise le gestionnaire de tags. 
+Initialise/\+reinitialise le gestionnaire de tags. 
 
 \begin{DoxyNote}{Note}
-après sont appel, l\textquotesingle{}ensemble des tags doivent être redéfinie avec l\textquotesingle{}aide de {\ttfamily \doxylink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\+\_\+tag}} 
+Apres cet appel, l\textquotesingle{}ensemble des tags doit etre redefini via {\ttfamily \doxylink{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012}{set\+\_\+tag}}. 
 \end{DoxyNote}
-Voici le graphe des appelants de cette fonction :\+
+
+
+Definition at line \doxymbox{\hyperlink{tag__manager_8c_source_l00021}{21}} of file \doxymbox{\hyperlink{tag__manager_8c_source}{tag\+\_\+manager.\+c}}.
+
+Here is the caller graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -44,30 +49,47 @@ Voici le graphe des appelants de cette fonction :\+
 \index{set\_tag@{set\_tag}!gestion\_tag.h@{gestion\_tag.h}}
 \doxysubsubsection{\texorpdfstring{set\_tag()}{set\_tag()}}
 {\footnotesize\ttfamily \label{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012} 
-int set\+\_\+tag (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{tag\+\_\+name}{, }\item[{uint8\+\_\+t}]{n\+\_\+bit}{}\end{DoxyParamCaption})}
+int set\+\_\+tag (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{tag\+\_\+name}{, }\item[{uint8\+\_\+t}]{siz}{}\end{DoxyParamCaption})}
 
 
 
-crée un nouveau tag. 
+Cree un nouveau tag. 
 
 
-\begin{DoxyParams}{Paramètres}
-{\em tag\+\_\+name} & le nom (id) qui serras relier à la valeurs \\
+\begin{DoxyParams}{Parameters}
+{\em tag\+\_\+name} & Le nom (id) relie a la valeur. \\
 \hline
-{\em n\+\_\+bit} & la taille de la valeur. ne peux être que 1, 3, 4, 8 ou 16. Sinon, une erreur est générer. \\
+{\em n\+\_\+bit} & La taille de la valeur (implementation actuelle:\+ 1..16 bits). \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Renvoie}
-un code décrivant le succès de l\textquotesingle{}opération ou (dans le cas d\textquotesingle{}une valeurs négatif) le code d\textquotesingle{}erreur correspondent. 
+\begin{DoxyReturn}{Returns}
+Un code de succes ou d\textquotesingle{}erreur.
 \end{DoxyReturn}
-Voici le graphe d\textquotesingle{}appel pour cette fonction :\+\nopagebreak
+Cree un nouveau tag.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag\+\_\+name} & Nom logique du tag. \\
+\hline
+{\em siz} & Taille de la valeur en bits (implementation actuelle:\+ 1..16). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Code de succes ou code d\textquotesingle{}erreur \doxylink{config__value_8h_af59c8e96bb2966b590726fc2d285947f}{CAN\+\_\+\+TG\+\_\+\+STATUE}. 
+\end{DoxyReturn}
+
+
+Definition at line \doxymbox{\hyperlink{tag__manager_8c_source_l00232}{232}} of file \doxymbox{\hyperlink{tag__manager_8c_source}{tag\+\_\+manager.\+c}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{gestion__tag_8h_a7301f247665ed1c0504f27602b3cf012_cgraph}
 \end{center}
 \end{figure}
-Voici le graphe des appelants de cette fonction :\+
+Here is the caller graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}

@@ -1,0 +1,116 @@
+\doxysection{test\+\_\+utils.\+h File Reference}
+\hypertarget{test__utils_8h}{}\label{test__utils_8h}\index{test\_utils.h@{test\_utils.h}}
+{\ttfamily \+\#include $<$stdio.\+h$>$}\newline
+{\ttfamily \+\#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for test\+\_\+utils.\+h:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{test__utils_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{test__utils_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{test__utils_8h_aa193df92133f441f2a0efd722c3962f9}{TEST}} (const char \texorpdfstring{$\ast$}{*}name, const bool condition)
+\begin{DoxyCompactList}\small\item\em Affiche un resultat de test avec format uniforme. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{test__utils_8h_a67a63463b204713946cce11511fc9231}{TEST\+\_\+\+EQ\+\_\+\+INT}} (const char \texorpdfstring{$\ast$}{*}name, const int val\+\_\+1, const int val\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Affiche un test d\textquotesingle{}egalite entre deux entiers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{test__utils_8h_ab7324491948254cde8946b74d8bca3bc}{total\+\_\+tests}}
+\item 
+int \doxymbox{\hyperlink{test__utils_8h_a51c2b99b66f63ee9064347f9151e99ba}{passed\+\_\+tests}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{test__utils_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{test__utils_8h_aa193df92133f441f2a0efd722c3962f9}\index{test\_utils.h@{test\_utils.h}!TEST@{TEST}}
+\index{TEST@{TEST}!test\_utils.h@{test\_utils.h}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily \label{test__utils_8h_aa193df92133f441f2a0efd722c3962f9} 
+void TEST (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const bool}]{condition}{}\end{DoxyParamCaption})}
+
+
+
+Affiche un resultat de test avec format uniforme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Le nom du test (peut aussi servir de description courte). \\
+\hline
+{\em condition} & Resultat du test (true si reussi, false sinon). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00026}{26}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{test__utils_8h_a67a63463b204713946cce11511fc9231}\index{test\_utils.h@{test\_utils.h}!TEST\_EQ\_INT@{TEST\_EQ\_INT}}
+\index{TEST\_EQ\_INT@{TEST\_EQ\_INT}!test\_utils.h@{test\_utils.h}}
+\doxysubsubsection{\texorpdfstring{TEST\_EQ\_INT()}{TEST\_EQ\_INT()}}
+{\footnotesize\ttfamily \label{test__utils_8h_a67a63463b204713946cce11511fc9231} 
+void TEST\+\_\+\+EQ\+\_\+\+INT (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const int}]{val\+\_\+1}{, }\item[{const int}]{val\+\_\+2}{}\end{DoxyParamCaption})}
+
+
+
+Affiche un test d\textquotesingle{}egalite entre deux entiers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Meme usage que TEST. \\
+\hline
+{\em val\+\_\+1} & Premiere valeur a comparer. \\
+\hline
+{\em val\+\_\+2} & Deuxieme valeur a comparer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00046}{46}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{test__utils_8h_a67a63463b204713946cce11511fc9231_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-var-members}
+\Hypertarget{test__utils_8h_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{test__utils_8h_a51c2b99b66f63ee9064347f9151e99ba}\index{test\_utils.h@{test\_utils.h}!passed\_tests@{passed\_tests}}
+\index{passed\_tests@{passed\_tests}!test\_utils.h@{test\_utils.h}}
+\doxysubsubsection{\texorpdfstring{passed\_tests}{passed\_tests}}
+{\footnotesize\ttfamily \label{test__utils_8h_a51c2b99b66f63ee9064347f9151e99ba} 
+int passed\+\_\+tests\hspace{0.3cm}{\ttfamily [extern]}}
+
+le nombre total de test réussi 
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00017}{17}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+
+\Hypertarget{test__utils_8h_ab7324491948254cde8946b74d8bca3bc}\index{test\_utils.h@{test\_utils.h}!total\_tests@{total\_tests}}
+\index{total\_tests@{total\_tests}!test\_utils.h@{test\_utils.h}}
+\doxysubsubsection{\texorpdfstring{total\_tests}{total\_tests}}
+{\footnotesize\ttfamily \label{test__utils_8h_ab7324491948254cde8946b74d8bca3bc} 
+int total\+\_\+tests\hspace{0.3cm}{\ttfamily [extern]}}
+
+le nombre total de test effectué 
+
+Definition at line \doxymbox{\hyperlink{main_8c_source_l00018}{18}} of file \doxymbox{\hyperlink{main_8c_source}{main.\+c}}.
+

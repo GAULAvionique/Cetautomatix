@@ -1,0 +1,29 @@
+\doxysection{test\+\_\+utils.\+h}
+\hypertarget{test__utils_8h_source}{}\label{test__utils_8h_source}\index{test\_utils.h@{test\_utils.h}}
+\doxymbox{\hyperlink{test__utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ TEST\_UTILS\_H}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ TEST\_UTILS\_H}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00006}00006\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{main_8c_ab7324491948254cde8946b74d8bca3bc}{total\_tests}};}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00007}00007\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{main_8c_a51c2b99b66f63ee9064347f9151e99ba}{passed\_tests}};}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00009}00009\ \textcolor{comment}{//\#define\ TEST(name,\ condition)\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00010}00010\ \textcolor{comment}{//\ \ \ \ do\ \{\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00011}00011\ \textcolor{comment}{//\ \ \ \ \ \ \ \ total\_tests++;\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00012}00012\ \textcolor{comment}{//\ \ \ \ \ \ \ \ if\ (condition)\ \{\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00013}00013\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ printf("{}\(\backslash\)tsuccess\(\backslash\)t\%s\(\backslash\)n"{},\ name);\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00014}00014\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ passed\_tests++;\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00015}00015\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \}\ else\ \{\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00016}00016\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ printf("{}\(\backslash\)tfail\(\backslash\)t\%s\(\backslash\)n"{},\ name);\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00017}00017\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \}\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00018}00018\ \textcolor{comment}{//\ \ \ \ \}\ while(0)}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00019}00019\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00020}00020\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{test__utils_8h_aa193df92133f441f2a0efd722c3962f9}{TEST}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ condition);}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00021}00021\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{test__utils_8h_a67a63463b204713946cce11511fc9231}{TEST\_EQ\_INT}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ val\_1,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ val\_2);}
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{test__utils_8h_source_l00023}00023\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

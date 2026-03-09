@@ -1,0 +1,95 @@
+.TH "md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_m_m_e_n_t_a_i_r_e_s___a_u_d_i_t" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md__c_1_2programation_2ulaval_2_g_a_u_l_2programmation_2_t_a_g_c_a_n_2documentation_2_c_o_m_m_e_n_t_a_i_r_e_s___a_u_d_i_t \- Audit des commentaires 
+.PP
+
+.SH "Resume"
+.PP
+La base contient deja des commentaires utiles, mais la qualite est heterogene et plusieurs commentaires ne correspondent pas au comportement reel du code\&.
+.SH "Points verifies (avec references)"
+.PP
+.SS "1) Header duplique et commentaire duplique"
+.IP "\(bu" 2
+Fichier: \fR\fBinclude/gestion_tag\&.h\fP:1\fP, \fR\fBinclude/gestion_tag\&.h\fP:20\fP, \fR\fBinclude/gestion_tag\&.h\fP:22\fP, \fR\fBinclude/gestion_tag\&.h\fP:41\fP
+.IP "\(bu" 2
+Observation: le fichier contient deux blocs complets \fR#ifndef GESTION_TAG_H \&.\&.\&. #endif\fP\&.
+.IP "\(bu" 2
+Impact: maintenance difficile, confusion sur la version active du commentaire/API\&.
+.PP
+.SS "2) Contrainte de taille documentee vs code reel"
+.IP "\(bu" 2
+Fichier commentaire: \fR\fBinclude/gestion_tag\&.h\fP:15\fP et \fR\fBinclude/gestion_tag\&.h\fP:36\fP
+.IP "\(bu" 2
+Commentaire: indique que \fRn_bit\fP doit etre seulement \fR1, 3, 4, 8, 16\fP\&.
+.IP "\(bu" 2
+Code reel: \fR\fBscripts/sub_scripts/tag_manager\&.c\fP:234\fP accepte \fR1\&.\&.16\fP\&.
+.IP "\(bu" 2
+Impact: documentation utilisateur potentiellement fausse\&.
+.PP
+.SS "3) Parametres Doxygen incomplets/mal formes"
+.IP "\(bu" 2
+Fichier: \fR\fBinclude/sub_include/data_container\&.h\fP:30\fP, \fR\fBinclude/sub_include/data_container\&.h\fP:32\fP, \fR\fBinclude/sub_include/data_container\&.h\fP:33\fP
+.IP "\(bu" 2
+Observation: bloc \fR\fBget_value\fP\fP contient \fR\\param\fP incomplet\&.
+.IP "\(bu" 2
+Impact: generation de doc automatique degradee, comprehension reduite\&.
+.PP
+.SS "4) Commentaire de retour coherent en surface mais code divergent"
+.IP "\(bu" 2
+Fichier commentaire: \fR\fBinclude/sub_include/data_container\&.h\fP:25\fP
+.IP "\(bu" 2
+Code reel: \fR\fBscripts/sub_scripts/data_container\&.c\fP:59\fP
+.IP "\(bu" 2
+Observation: \fR\fBset_value\fP\fP retourne \fR\fBCAN_TG_ERROR_VALUE_TO_BIG\fP\fP (\fR-10\fP) pour debordement, tandis que les tests attendent \fR-4\fP\&.
+.IP "\(bu" 2
+Impact: incoherence entre contrat implicite et verification test\&.
+.PP
+.SS "5) Documentation debug partiellement invalide"
+.IP "\(bu" 2
+Fichier: \fR\fBscripts/sub_scripts/print_val\&.c\fP:118\fP
+.IP "\(bu" 2
+Observation: \fR@bref\fP au lieu de \fR@brief\fP\&.
+.IP "\(bu" 2
+Impact: Doxygen ignore/abime le commentaire\&.
+.PP
+.SS "6) Probleme de specificateurs \fRprintf\fP"
+.IP "\(bu" 2
+Fichier: \fR\fBscripts/sub_scripts/print_val\&.c\fP:26\fP, \fR\fBscripts/sub_scripts/print_val\&.c\fP:27\fP, \fR\fBscripts/sub_scripts/print_val\&.c\fP:127\fP, etc\&.
+.IP "\(bu" 2
+Observation: usage du caractere arabe \fR٪\fP au lieu de \fR%\fP\&.
+.IP "\(bu" 2
+Impact: affichage/formatage incorrect a l'execution\&.
+.PP
+.SS "7) Boucle avec point-virgule parasite"
+.IP "\(bu" 2
+Fichier: \fR\fBscripts/sub_scripts/print_val\&.c\fP:149\fP
+.IP "\(bu" 2
+Observation: \fRfor (\&.\&.\&.) ;\fP dans \fR\fBprint_all_with_title\fP\fP\&.
+.IP "\(bu" 2
+Impact: comportement non conforme au commentaire de la fonction\&.
+.PP
+.SH "Evaluation globale"
+.PP
+.IP "\(bu" 2
+Qualite commentaires API: moyenne\&.
+.IP "\(bu" 2
+Qualite commentaires implementation: faible a moyenne\&.
+.IP "\(bu" 2
+Fiabilite pour generation auto (Doxygen): faible dans l'etat actuel\&.
+.PP
+.SH "Actions prioritaires recommandees"
+.PP
+.IP "1." 4
+Corriger \fR\fBinclude/gestion_tag\&.h\fP\fP (supprimer duplication, garder un seul bloc propre)\&.
+.IP "2." 4
+Aligner commentaire de \fR\fBset_tag\fP\fP avec la regle reelle (ou inversement corriger le code)\&.
+.IP "3." 4
+Corriger les balises Doxygen (\fR@brief\fP, \fR\\param\fP)\&.
+.IP "4." 4
+Corriger \fRprintf\fP (\fR%\fP) et la boucle \fRfor\fP de \fR\fBprint_all_with_title\fP\fP\&.
+.IP "5." 4
+Aligner retours \fR\fBset_value\fP\fP et attentes des tests\&. 
+.PP
+

@@ -1,0 +1,58 @@
+.TH "test_utils.c" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+test_utils.c
+.SH SYNOPSIS
+.br
+.PP
+\fR#include 'test_utils\&.h'\fP
+.br
+\fR#include <stdbool\&.h>\fP
+.br
+\fR#include <stdio\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTEST_\fP (const char *name, const bool condition)"
+.br
+.ti -1c
+.RI "void \fBTEST_EQ_INT_\fP (const char *name, const int val_1, const int val_2)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBtotal_tests\fP"
+.br
+.ti -1c
+.RI "int \fBpassed_tests\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void TEST_ (const char * name, const bool condition)"
+
+.PP
+Definition at line \fB7\fP of file \fBtest_utils\&.c\fP\&.
+.SS "void TEST_EQ_INT_ (const char * name, const int val_1, const int val_2)"
+
+.PP
+Definition at line \fB11\fP of file \fBtest_utils\&.c\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "int passed_tests\fR [extern]\fP"
+le nombre total de test réussi 
+.PP
+Definition at line \fB17\fP of file \fBmain\&.c\fP\&.
+.SS "int total_tests\fR [extern]\fP"
+le nombre total de test effectué 
+.PP
+Definition at line \fB18\fP of file \fBmain\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TAGCAN from the source code\&.

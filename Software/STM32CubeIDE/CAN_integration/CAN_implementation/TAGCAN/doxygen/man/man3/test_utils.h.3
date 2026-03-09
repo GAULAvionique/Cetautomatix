@@ -1,0 +1,82 @@
+.TH "test_utils.h" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+test_utils.h
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <stdio\&.h>\fP
+.br
+\fR#include <stdbool\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTEST\fP (const char *name, const bool condition)"
+.br
+.RI "Affiche un resultat de test avec format uniforme\&. "
+.ti -1c
+.RI "void \fBTEST_EQ_INT\fP (const char *name, const int val_1, const int val_2)"
+.br
+.RI "Affiche un test d'egalite entre deux entiers\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBtotal_tests\fP"
+.br
+.ti -1c
+.RI "int \fBpassed_tests\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void TEST (const char * name, const bool condition)"
+
+.PP
+Affiche un resultat de test avec format uniforme\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP Le nom du test (peut aussi servir de description courte)\&. 
+.br
+\fIcondition\fP Resultat du test (true si reussi, false sinon)\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB26\fP of file \fBmain\&.c\fP\&.
+.SS "void TEST_EQ_INT (const char * name, const int val_1, const int val_2)"
+
+.PP
+Affiche un test d'egalite entre deux entiers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP Meme usage que TEST\&. 
+.br
+\fIval_1\fP Premiere valeur a comparer\&. 
+.br
+\fIval_2\fP Deuxieme valeur a comparer\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB46\fP of file \fBmain\&.c\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "int passed_tests\fR [extern]\fP"
+le nombre total de test réussi 
+.PP
+Definition at line \fB17\fP of file \fBmain\&.c\fP\&.
+.SS "int total_tests\fR [extern]\fP"
+le nombre total de test effectué 
+.PP
+Definition at line \fB18\fP of file \fBmain\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TAGCAN from the source code\&.

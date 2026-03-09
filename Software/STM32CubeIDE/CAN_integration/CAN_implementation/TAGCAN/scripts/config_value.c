@@ -1,7 +1,7 @@
 #ifndef CONFIG_VALUE_H
 #include "../include/config_value.h"
 #endif // CONFIG_VALUE_H
-//const int //CAN_TG_ERROR = ;
+// Definitions des constantes globales historiques de codes de retour.
 const int CAN_TG_ERROR_NOT_ENOUNG_SPACE = -2;
 const int CAN_TG_ERROR_TAG_NOT_FOUND = -3;
 const int CAN_TG_ERROR_TAG_NAME_TO_BIGS = -4;
