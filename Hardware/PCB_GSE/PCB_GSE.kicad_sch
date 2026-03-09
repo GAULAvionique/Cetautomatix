@@ -5906,129 +5906,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 69.85 142.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "06427c44-b559-40de-b128-89dd46d270bb")
-		(property "Reference" "R22"
-			(at 68.58 144.526 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100R"
-			(at 67.564 146.05 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 69.85 144.018 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW0805100RFKEA/1175523"
-			(at 69.85 142.24 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 69.85 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "541-100CCT-ND"
-			(at 69.85 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 69.85 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 69.85 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 69.85 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 69.85 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "CRCW0805100RFKEA"
-			(at 69.85 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d0c9f90a-7390-4c6f-b21d-d16dda2ee374")
-		)
-		(pin "2"
-			(uuid "81219dd8-9f3a-40b3-8abb-6dc19d7e595a")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
-					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 259.08 30.48 180)
 		(unit 1)
@@ -6785,6 +6662,128 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 69.85 142.24 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "29c4c0fe-4be5-4028-8fea-eb15c9460d25")
+		(property "Reference" "R22"
+			(at 70.358 144.272 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100R 1%"
+			(at 74.168 146.05 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 69.85 144.018 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RT0805FRE07100RL/1078898?s=N4IgTCBcDaIEoBUAMAOJBWAYnAokg7AIxJJwAyIAugL5A"
+			(at 69.85 142.24 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey_Part_Number" "RT0805FRE07100RL"
+			(at 69.85 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "YAG3360CT-ND"
+			(at 69.85 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 69.85 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 69.85 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 69.85 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 69.85 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fdc9a5a-108d-4d57-b91c-1b9616096dfa")
+		)
+		(pin "2"
+			(uuid "43a7bee9-c794-4904-9692-cce1aa6255c3")
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -9317,6 +9316,128 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 26.67 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1e54251-2071-430c-aa1c-60005e4f6f0d")
+		(property "Reference" "R21"
+			(at 27.178 135.89 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100R 1%"
+			(at 30.988 137.668 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 26.67 141.478 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RT0805FRE07100RL/1078898?s=N4IgTCBcDaIEoBUAMAOJBWAYnAokg7AIxJJwAyIAugL5A"
+			(at 26.67 139.7 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 26.67 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey_Part_Number" "RT0805FRE07100RL"
+			(at 26.67 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "YAG3360CT-ND"
+			(at 26.67 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 26.67 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 26.67 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 26.67 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 26.67 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cdce9df4-d930-4bb5-b046-4fc2d2c44df4")
+		)
+		(pin "2"
+			(uuid "dc51d9f0-41bf-4703-bb5f-f92a7daae9b2")
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 242.57 106.68 0)
 		(unit 1)
@@ -9377,129 +9498,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
 					(reference "#PWR0120")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 26.67 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d4b7ba00-455f-4d43-967f-9b0cbd8303a5")
-		(property "Reference" "R21"
-			(at 25.654 136.144 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100R"
-			(at 24.638 137.668 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 26.67 141.478 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW0805100RFKEA/1175523"
-			(at 26.67 139.7 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 26.67 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "541-100CCT-ND"
-			(at 26.67 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 26.67 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 26.67 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 26.67 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 26.67 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "CRCW0805100RFKEA"
-			(at 26.67 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7410a1f8-ee78-4b96-9b9b-470c99a3831d")
-		)
-		(pin "2"
-			(uuid "5b37f3f8-0200-4cff-92d3-a58efee4899d")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d"
-					(reference "R21")
 					(unit 1)
 				)
 			)

@@ -565,6 +565,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2086,7 +2226,7 @@
 	)
 	(rectangle
 		(start 13.97 88.9)
-		(end 165.1 157.48)
+		(end 165.1 156.21)
 		(stroke
 			(width 0)
 			(type dash)
@@ -2168,7 +2308,7 @@
 		)
 		(uuid "3a514088-721b-41c9-a31c-7fbdc864bc5e")
 	)
-	(text "Swagelok S Model - 3 wires 0 to 5V\nRload = 10k || (100k + 191k) = 9.68k\nPressure_An = 5±5% x 100k / (100k + 191k) <= 3.3V\n0V <= Pressure_An <= 3.2818V\n4073 ADC steps\nFcutoff = 1/2piRC = 1 / (2 * pi * (100k || 191k * 100n)) = 24.2 Hz\n*Manual calibration for zero (R potentiometer)\n*Manual calibration for span(range 0-5V) (S potentiometer)"
+	(text "Swagelok A Model - 2 wires 4-20mA\nRload = 100 || (1.5k + 191k) = 99.94808 <= 200\nPressure_An = Iin±5% x 99.94808 x (191k / (191k + 1.5k)) <= 3.3V\n0.37684V <= Pressure_An <= 2.08256V\n2117 ADC steps\nFcutoff = 1/2piRC = 1 / (2 * pi * (191k || (1.5k + 100) x 10u)) = 10.03 Hz\n*Manual calibration for zero (R potentiometer)\n*Manual calibration for span(range 4-20mA) (S potentiometer)"
 		(exclude_from_sim no)
 		(at 14.478 78.994 0)
 		(effects
@@ -2190,9 +2330,9 @@
 		)
 		(uuid "570bf53d-e889-408b-bab2-db8264c9d1c6")
 	)
-	(text "Shield\nPower\nSignal\nCOM"
+	(text "Shield\nPower\nSignal"
 		(exclude_from_sim no)
-		(at 20.066 52.324 0)
+		(at 20.066 51.054 0)
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -2223,7 +2363,7 @@
 		)
 		(uuid "9084a3cf-4f72-4be9-836f-8c4e48a00685")
 	)
-	(text "Grey\nBrown\nWhite\nGreen"
+	(text "Grey\nBrown\nGreen\nGND"
 		(exclude_from_sim no)
 		(at 35.052 52.324 0)
 		(effects
@@ -2260,6 +2400,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16bef7fd-7739-40dc-b142-f968a85b0779")
+	)
+	(junction
+		(at 81.28 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d6976d9-b8ea-416b-a23c-f791380b6213")
 	)
 	(junction
 		(at 34.29 115.57)
@@ -2332,12 +2478,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e6a4302e-4481-45b9-a8c5-cfbe2a5359f0")
-	)
-	(junction
-		(at 81.28 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eda81c47-51b9-4ab2-b900-b8cdaa26261f")
 	)
 	(no_connect
 		(at 113.03 118.11)
@@ -2473,7 +2613,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 53.34) (xy 53.34 53.34)
+			(xy 46.99 53.34) (xy 52.07 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2493,7 +2633,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 53.34) (xy 85.09 53.34)
+			(xy 67.31 53.34) (xy 81.28 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2583,7 +2723,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 62.23) (xy 81.28 60.96)
+			(xy 81.28 59.69) (xy 81.28 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2630,6 +2770,16 @@
 			(type default)
 		)
 		(uuid "64980305-4a0a-4fbe-9077-511cf4e09ba6")
+	)
+	(wire
+		(pts
+			(xy 81.28 53.34) (xy 85.09 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6650f933-5a39-4d0c-8ffe-ffa77f96c9c7")
 	)
 	(wire
 		(pts
@@ -2793,7 +2943,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 53.34) (xy 63.5 53.34)
+			(xy 59.69 53.34) (xy 63.5 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2913,6 +3063,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 53.34) (xy 81.28 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5db3507-b69d-4e92-ba53-6290f187bde3")
+	)
+	(wire
+		(pts
 			(xy 259.08 54.61) (xy 257.81 54.61)
 		)
 		(stroke
@@ -2980,16 +3140,6 @@
 			(type default)
 		)
 		(uuid "e80118f8-4696-4cf0-8a57-7a80d554125c")
-	)
-	(wire
-		(pts
-			(xy 67.31 53.34) (xy 81.28 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9df11d9-b2c4-4658-9fcb-fddb1a1c3033")
 	)
 	(wire
 		(pts
@@ -3350,6 +3500,130 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 55.88 53.34 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0b845696-bd9a-4c0c-91e9-696368f1e325")
+		(property "Reference" "R25"
+			(at 56.896 49.53 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 57.404 51.308 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 55.88 51.562 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-071K5L/727496"
+			(at 55.88 53.34 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-1.50KCRCT-ND"
+			(at 55.88 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 55.88 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 55.88 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 55.88 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 55.88 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-071K5L"
+			(at 55.88 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b28c16e-a3c7-4e4b-b45e-881bcd071624")
+		)
+		(pin "2"
+			(uuid "a794a243-8e61-429d-b718-6e4ff4798eb9")
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -3808,7 +4082,7 @@
 		(dnp no)
 		(uuid "2feaed83-41b3-40af-8e46-a7611f107636")
 		(property "Reference" "R30"
-			(at 60.96 57.1499 0)
+			(at 62.23 57.912 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -3817,7 +4091,7 @@
 			)
 		)
 		(property "Value" "191k 1%"
-			(at 60.96 59.6899 0)
+			(at 62.23 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4374,7 +4648,7 @@
 		(dnp no)
 		(uuid "483f300b-2fc7-445b-955a-22a2b377f08e")
 		(property "Reference" "R29"
-			(at 51.562 57.658 0)
+			(at 51.308 56.388 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4382,8 +4656,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
-			(at 51.308 59.436 0)
+		(property "Value" "100R 1%"
+			(at 55.118 58.166 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4400,7 +4674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RT0805FRE07100RL/1078898?s=N4IgTCBcDaIEoBUAMAOJBWAYnAokg7AIxJJwAyIAugL5A"
 			(at 46.99 58.42 0)
 			(effects
 				(font
@@ -4417,7 +4691,7 @@
 				)
 			)
 		)
-		(property "DigiKey_Part_Number" "541-10.0KCCT-ND"
+		(property "DigiKey_Part_Number" "RT0805FRE07100RL"
 			(at 46.99 58.42 0)
 			(effects
 				(font
@@ -4426,7 +4700,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW080510K0FKEA"
+		(property "Manufacturer_Part_Number" "YAG3360CT-ND"
 			(at 46.99 58.42 0)
 			(effects
 				(font
@@ -4548,130 +4822,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 57.15 53.34 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4ee6c7a7-6e0f-4873-a992-ae229c02f5e5")
-		(property "Reference" "R25"
-			(at 59.69 49.022 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100k 1%"
-			(at 59.69 50.8 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 57.15 55.118 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0805FR-07100KL/727544"
-			(at 57.15 53.34 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 57.15 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "311-100KCRCT-ND"
-			(at 57.15 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 57.15 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 57.15 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 57.15 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 57.15 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "RC0805FR-07100KL"
-			(at 57.15 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9c416564-91c4-40b6-8485-fe54d8847683")
-		)
-		(pin "2"
-			(uuid "77264a5d-fc9a-40aa-9ff3-ccae7a7e0d74")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
-					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -5630,6 +5780,129 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 81.28 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b4ca8dd3-4c17-4ba9-9594-48b0ed715f43")
+		(property "Reference" "C32"
+			(at 83.312 56.896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 83.312 58.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 81.28 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
+			(at 81.28 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 81.28 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1276-2891-1-ND"
+			(at 81.28 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 81.28 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 81.28 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 81.28 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 81.28 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21A106KAYNNNE"
+			(at 81.28 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bafb6782-8e99-4e41-853c-ef6844b1a1e4")
+		)
+		(pin "1"
+			(uuid "acf24722-6c88-46c5-beaa-ebabcd8febce")
+		)
+		(instances
+			(project "PCB_GSE"
+				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 34.29 138.43 0)
 		(unit 1)
@@ -6221,93 +6494,6 @@
 			(project "PCB_GSE"
 				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
 					(reference "#PWR0202")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 81.28 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "caac9135-e939-4978-9d76-4895cf83e0ba")
-		(property "Reference" "C32"
-			(at 83.82 56.388 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 83.82 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 82.2452 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C104K3RACTU/416044"
-			(at 81.28 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 81.28 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "399-C0603C104K3RACTUCT-ND"
-			(at 81.28 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "C0603C104K3RACTU"
-			(at 81.28 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d7986b74-7679-440e-aeca-6c8a11cff393")
-		)
-		(pin "2"
-			(uuid "0d1b88d5-f81f-431f-b736-f1a86b9c37cc")
-		)
-		(instances
-			(project "PCB_GSE"
-				(path "/a63f9ed4-21e4-42d0-8bfc-f96143f84d4d/03aa44f0-76dc-422b-9f36-66afc2e68b3b"
-					(reference "C32")
 					(unit 1)
 				)
 			)
