@@ -1,0 +1,51 @@
+\doxysection{config\+\_\+value.\+h}
+\hypertarget{config__value_8h_source}{}\label{config__value_8h_source}\index{config\_value.h@{config\_value.h}}
+\doxymbox{\hyperlink{config__value_8h}{Aller ֳ  la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONFIG\_VALUE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONFIG\_VALUE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ MAX\_TAGS\ 32}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ MAX\_TAG\_NAME\_LEN\ 16}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ N\_BYTES\ 8}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ MAX\_N\_GT\ 3}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_a7f995285b1ed198ba4c10528ef66b8fe}{CAN\_TG\_ERROR\_INTERNAL\_CORUPTION}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_af68b72a5b65a0168415d1363dc09a0a6}{CAN\_TG\_ERROR\_TAG\_NAME\_TO\_BIGS}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_a49d547279f99d23ff36998f3874d3c5a}{CAN\_TG\_ERROR\_TAG\_NAME\_INVALIDE}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_ab0c8b9c7e93d137cd8956e4c391a0f4c}{CAN\_TG\_ERROR\_TAG\_NOT\_FOUND}};}
+\DoxyCodeLine{00013\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_a6ac7074ca0f94196368735678d92c7b8}{CAN\_TG\_ERROR\_NOT\_ENOUNG\_SPACE}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_ada864c858133fa1c52368562add7d64e}{CAN\_TG\_ERROR\_NULL\_POINTOR}};}
+\DoxyCodeLine{00015\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_a3cf459060e0c412c5908438afc160d9f}{CAN\_TG\_ERROR\_TRY\_TO\_FIND\_END\_CARACTER}};}
+\DoxyCodeLine{00016\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_a73337c3ada0009e763ea5af164e25d70}{CAN\_TG\_ERROR\_SIZE\_VALUE\_INVALIDE}};}
+\DoxyCodeLine{00017\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_acb2aafd99394462e0f83f05673be52a9}{CAN\_TG\_ERROR\_SUBDIVISION\_FAIL}};}
+\DoxyCodeLine{00018\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_a1e77443066dccbc42ef0acdd0f597c07}{CAN\_TG\_ERROR\_TOO\_MAY\_TAGS}};}
+\DoxyCodeLine{00019\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_a18061c1ca5fc2e5ab20fa7bc8dbe81d6}{CAN\_TG\_ERROR\_NAME\_ALREADY\_USE}};}
+\DoxyCodeLine{00020\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_af9a28b199e843773aefbb1e1bcf50559}{SUCCES\_TO\_SET}};}
+\DoxyCodeLine{00021\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{config__value_8h_afb042b80a35ed7a692f9001589ddf8c6}{SUCCES}};}
+\DoxyCodeLine{00022\ \textcolor{comment}{//\ יטאג}}
+\DoxyCodeLine{00023\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa4add2030061ed8081fd69bbc7961b88e}{CAN\_TG\_ERROR\_NOT\_ENOUNG\_SPACE\_}}\ =\ -\/2,}
+\DoxyCodeLine{00025\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3}{CAN\_TG\_SUCCESS}}\ =\ 1,}
+\DoxyCodeLine{00026\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947faefecc0d5f9f8d279aeeac67967a54040}{CAN\_TG\_ERROR\_TAG\_NOT\_FOUND\_}}\ =\ -\/3,}
+\DoxyCodeLine{00027\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa0766008cbf1754ab42a2e4995b18e1d2}{CAN\_TG\_ERROR\_TAG\_NAME\_TO\_BIGS\_}}\ =\ -\/4,}
+\DoxyCodeLine{00028\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa2d5a4a6abf40a9b845d30b4927cc8321}{CAN\_TG\_ERROR\_TOO\_MAY\_TAGS\_}}\ =\ -\/5,}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa1f64facc77e1738f2ed16fae7f38140f}{CAN\_TG\_ERROR\_SIZE\_VALUE\_INVALIDE\_}}\ =\ -\/6,}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fadb8a1b35ff867562e04d179242c150f2}{CAN\_TG\_ERROR\_NAME\_ALREADY\_USE\_}}\ =\ -\/7,}
+\DoxyCodeLine{00031\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947faf1069aa607410cd4bdeb9609f6b03a6b}{CAN\_TG\_ERROR\_SUBDIVISION\_FAIL\_}}\ =\ -\/8,}
+\DoxyCodeLine{00032\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947faa30bc0e8a501b29dbf6d3b5c3e4fe6f9}{CAN\_TG\_ERROR\_TAG\_NAME\_INVALIDE\_}}=-\/9,}
+\DoxyCodeLine{00033\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa8f8b6e84f2b232e0ed2995b7afbd0c44}{CAN\_TG\_ERROR\_NULL\_POINTOR\_}}\ =\ -\/2,}
+\DoxyCodeLine{00034\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fab194d19ed0940cb65b5c625b913aaa40}{CAN\_TG\_ERROR\_TRY\_TO\_FIND\_END\_CARACTER\_}}\ =\ -\/21,}
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fa4ec6d89f60bf1ee862d7b94bed822768}{CAN\_TG\_ERROR\_INTERNAL\_CORUPTION\_}}\ =\ -\/30,}
+\DoxyCodeLine{00036\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947fab1cfc87a8731dfcbc6e986a1b81115ac}{CAN\_TG\_ERROR\_VALUE\_TO\_BIG}}\ =\ -\/10,}
+\DoxyCodeLine{00037\ \}\ \doxymbox{\hyperlink{config__value_8h_af59c8e96bb2966b590726fc2d285947f}{CAN\_TG\_STATUE}};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_ac0d6cdda2cf4abb51116b86bc99acf99a7d47d78204fba2e07bda4e65594ff332}{RECEVE\_ONLY}},\ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_ac0d6cdda2cf4abb51116b86bc99acf99ad5ec70c56183ea13f8a0c16a3708a23e}{SEND\_ONLY}},\ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \doxymbox{\hyperlink{config__value_8h_ac0d6cdda2cf4abb51116b86bc99acf99ac4e66207fce47c294e4aaab76000c9ce}{SEND\_AND\_RECEVE}},\ \ \ \ }
+\DoxyCodeLine{00043\ \}\ \doxymbox{\hyperlink{config__value_8h_ac0d6cdda2cf4abb51116b86bc99acf99}{CAN\_MODE}};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONFIG\_VALUE\_H}}
+
+\end{DoxyCode}

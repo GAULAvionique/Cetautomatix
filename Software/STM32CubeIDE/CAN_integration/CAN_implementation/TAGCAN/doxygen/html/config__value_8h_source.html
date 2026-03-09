@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TAGCAN:  Fichier source de config_value.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TAGCAN
+   </div>
+   <div id="projectbrief">An helpfull modul to send multiple data with one CAN frame.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- G√©n√©r√© par Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('config__value_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">config_value.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="config__value_8h.html">Aller √† la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CONFIG_VALUE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CONFIG_VALUE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="config__value_8h.html#aa653c0eca99802a09fd9560f28a9b1c1">    4</a></span><span class="preprocessor">#define MAX_TAGS 32</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="config__value_8h.html#ada71b9f258860d58a86ab220bfce6bf4">    5</a></span><span class="preprocessor">#define MAX_TAG_NAME_LEN 16</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="config__value_8h.html#a470399f7b67e59b1cd04ab17e03c96d1">    6</a></span><span class="preprocessor">#define N_BYTES 8</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="config__value_8h.html#a486663aa90115780beab9f9d39fa8973">    7</a></span><span class="preprocessor">#define MAX_N_GT 3</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#a7f995285b1ed198ba4c10528ef66b8fe">CAN_TG_ERROR_INTERNAL_CORUPTION</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#af68b72a5b65a0168415d1363dc09a0a6">CAN_TG_ERROR_TAG_NAME_TO_BIGS</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#a49d547279f99d23ff36998f3874d3c5a">CAN_TG_ERROR_TAG_NAME_INVALIDE</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#ab0c8b9c7e93d137cd8956e4c391a0f4c">CAN_TG_ERROR_TAG_NOT_FOUND</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#a6ac7074ca0f94196368735678d92c7b8">CAN_TG_ERROR_NOT_ENOUNG_SPACE</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#ada864c858133fa1c52368562add7d64e">CAN_TG_ERROR_NULL_POINTOR</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#a3cf459060e0c412c5908438afc160d9f">CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#a73337c3ada0009e763ea5af164e25d70">CAN_TG_ERROR_SIZE_VALUE_INVALIDE</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#acb2aafd99394462e0f83f05673be52a9">CAN_TG_ERROR_SUBDIVISION_FAIL</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#a1e77443066dccbc42ef0acdd0f597c07">CAN_TG_ERROR_TOO_MAY_TAGS</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#a18061c1ca5fc2e5ab20fa7bc8dbe81d6">CAN_TG_ERROR_NAME_ALREADY_USE</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#af9a28b199e843773aefbb1e1bcf50559">SUCCES_TO_SET</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="config__value_8h.html#afb042b80a35ed7a692f9001589ddf8c6">SUCCES</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// ÈË‡‚</span></div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947f">   23</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa4add2030061ed8081fd69bbc7961b88e">   24</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa4add2030061ed8081fd69bbc7961b88e">CAN_TG_ERROR_NOT_ENOUNG_SPACE_</a> = -2,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3">   25</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3">CAN_TG_SUCCESS</a> = 1,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947faefecc0d5f9f8d279aeeac67967a54040">   26</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947faefecc0d5f9f8d279aeeac67967a54040">CAN_TG_ERROR_TAG_NOT_FOUND_</a> = -3,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa0766008cbf1754ab42a2e4995b18e1d2">   27</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa0766008cbf1754ab42a2e4995b18e1d2">CAN_TG_ERROR_TAG_NAME_TO_BIGS_</a> = -4,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa2d5a4a6abf40a9b845d30b4927cc8321">   28</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa2d5a4a6abf40a9b845d30b4927cc8321">CAN_TG_ERROR_TOO_MAY_TAGS_</a> = -5,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa1f64facc77e1738f2ed16fae7f38140f">   29</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa1f64facc77e1738f2ed16fae7f38140f">CAN_TG_ERROR_SIZE_VALUE_INVALIDE_</a> = -6,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fadb8a1b35ff867562e04d179242c150f2">   30</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fadb8a1b35ff867562e04d179242c150f2">CAN_TG_ERROR_NAME_ALREADY_USE_</a> = -7,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947faf1069aa607410cd4bdeb9609f6b03a6b">   31</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947faf1069aa607410cd4bdeb9609f6b03a6b">CAN_TG_ERROR_SUBDIVISION_FAIL_</a> = -8,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947faa30bc0e8a501b29dbf6d3b5c3e4fe6f9">   32</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947faa30bc0e8a501b29dbf6d3b5c3e4fe6f9">CAN_TG_ERROR_TAG_NAME_INVALIDE_</a>=-9,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa8f8b6e84f2b232e0ed2995b7afbd0c44">   33</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa8f8b6e84f2b232e0ed2995b7afbd0c44">CAN_TG_ERROR_NULL_POINTOR_</a> = -2,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fab194d19ed0940cb65b5c625b913aaa40">   34</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fab194d19ed0940cb65b5c625b913aaa40">CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER_</a> = -21,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa4ec6d89f60bf1ee862d7b94bed822768">   35</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa4ec6d89f60bf1ee862d7b94bed822768">CAN_TG_ERROR_INTERNAL_CORUPTION_</a> = -30,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fab1cfc87a8731dfcbc6e986a1b81115ac">   36</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fab1cfc87a8731dfcbc6e986a1b81115ac">CAN_TG_ERROR_VALUE_TO_BIG</a> = -10,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>} <a class="code hl_enumeration" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947f">CAN_TG_STATUE</a>;</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99">   39</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99a7d47d78204fba2e07bda4e65594ff332">   40</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99a7d47d78204fba2e07bda4e65594ff332">RECEVE_ONLY</a>,    </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99ad5ec70c56183ea13f8a0c16a3708a23e">   41</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99ad5ec70c56183ea13f8a0c16a3708a23e">SEND_ONLY</a>,    </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99ac4e66207fce47c294e4aaab76000c9ce">   42</a></span>    <a class="code hl_enumvalue" href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99ac4e66207fce47c294e4aaab76000c9ce">SEND_AND_RECEVE</a>,    </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <a class="code hl_enumeration" href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99">CAN_MODE</a>;</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif </span><span class="comment">// CONFIG_VALUE_H</span></div>
+<div class="ttc" id="aconfig__value_8h_html_a18061c1ca5fc2e5ab20fa7bc8dbe81d6"><div class="ttname"><a href="config__value_8h.html#a18061c1ca5fc2e5ab20fa7bc8dbe81d6">CAN_TG_ERROR_NAME_ALREADY_USE</a></div><div class="ttdeci">const int CAN_TG_ERROR_NAME_ALREADY_USE</div><div class="ttdef"><b>Definition</b> config_value.c:9</div></div>
+<div class="ttc" id="aconfig__value_8h_html_a1e77443066dccbc42ef0acdd0f597c07"><div class="ttname"><a href="config__value_8h.html#a1e77443066dccbc42ef0acdd0f597c07">CAN_TG_ERROR_TOO_MAY_TAGS</a></div><div class="ttdeci">const int CAN_TG_ERROR_TOO_MAY_TAGS</div><div class="ttdef"><b>Definition</b> config_value.c:7</div></div>
+<div class="ttc" id="aconfig__value_8h_html_a3cf459060e0c412c5908438afc160d9f"><div class="ttname"><a href="config__value_8h.html#a3cf459060e0c412c5908438afc160d9f">CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER</a></div><div class="ttdeci">const int CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER</div><div class="ttdef"><b>Definition</b> config_value.c:13</div></div>
+<div class="ttc" id="aconfig__value_8h_html_a49d547279f99d23ff36998f3874d3c5a"><div class="ttname"><a href="config__value_8h.html#a49d547279f99d23ff36998f3874d3c5a">CAN_TG_ERROR_TAG_NAME_INVALIDE</a></div><div class="ttdeci">const int CAN_TG_ERROR_TAG_NAME_INVALIDE</div><div class="ttdef"><b>Definition</b> config_value.c:11</div></div>
+<div class="ttc" id="aconfig__value_8h_html_a6ac7074ca0f94196368735678d92c7b8"><div class="ttname"><a href="config__value_8h.html#a6ac7074ca0f94196368735678d92c7b8">CAN_TG_ERROR_NOT_ENOUNG_SPACE</a></div><div class="ttdeci">const int CAN_TG_ERROR_NOT_ENOUNG_SPACE</div><div class="ttdef"><b>Definition</b> config_value.c:4</div></div>
+<div class="ttc" id="aconfig__value_8h_html_a73337c3ada0009e763ea5af164e25d70"><div class="ttname"><a href="config__value_8h.html#a73337c3ada0009e763ea5af164e25d70">CAN_TG_ERROR_SIZE_VALUE_INVALIDE</a></div><div class="ttdeci">const int CAN_TG_ERROR_SIZE_VALUE_INVALIDE</div><div class="ttdef"><b>Definition</b> config_value.c:8</div></div>
+<div class="ttc" id="aconfig__value_8h_html_a7f995285b1ed198ba4c10528ef66b8fe"><div class="ttname"><a href="config__value_8h.html#a7f995285b1ed198ba4c10528ef66b8fe">CAN_TG_ERROR_INTERNAL_CORUPTION</a></div><div class="ttdeci">const int CAN_TG_ERROR_INTERNAL_CORUPTION</div><div class="ttdef"><b>Definition</b> config_value.c:14</div></div>
+<div class="ttc" id="aconfig__value_8h_html_ab0c8b9c7e93d137cd8956e4c391a0f4c"><div class="ttname"><a href="config__value_8h.html#ab0c8b9c7e93d137cd8956e4c391a0f4c">CAN_TG_ERROR_TAG_NOT_FOUND</a></div><div class="ttdeci">const int CAN_TG_ERROR_TAG_NOT_FOUND</div><div class="ttdef"><b>Definition</b> config_value.c:5</div></div>
+<div class="ttc" id="aconfig__value_8h_html_ac0d6cdda2cf4abb51116b86bc99acf99"><div class="ttname"><a href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99">CAN_MODE</a></div><div class="ttdeci">CAN_MODE</div><div class="ttdef"><b>Definition</b> config_value.h:39</div></div>
+<div class="ttc" id="aconfig__value_8h_html_ac0d6cdda2cf4abb51116b86bc99acf99a7d47d78204fba2e07bda4e65594ff332"><div class="ttname"><a href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99a7d47d78204fba2e07bda4e65594ff332">RECEVE_ONLY</a></div><div class="ttdeci">@ RECEVE_ONLY</div><div class="ttdef"><b>Definition</b> config_value.h:40</div></div>
+<div class="ttc" id="aconfig__value_8h_html_ac0d6cdda2cf4abb51116b86bc99acf99ac4e66207fce47c294e4aaab76000c9ce"><div class="ttname"><a href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99ac4e66207fce47c294e4aaab76000c9ce">SEND_AND_RECEVE</a></div><div class="ttdeci">@ SEND_AND_RECEVE</div><div class="ttdef"><b>Definition</b> config_value.h:42</div></div>
+<div class="ttc" id="aconfig__value_8h_html_ac0d6cdda2cf4abb51116b86bc99acf99ad5ec70c56183ea13f8a0c16a3708a23e"><div class="ttname"><a href="config__value_8h.html#ac0d6cdda2cf4abb51116b86bc99acf99ad5ec70c56183ea13f8a0c16a3708a23e">SEND_ONLY</a></div><div class="ttdeci">@ SEND_ONLY</div><div class="ttdef"><b>Definition</b> config_value.h:41</div></div>
+<div class="ttc" id="aconfig__value_8h_html_acb2aafd99394462e0f83f05673be52a9"><div class="ttname"><a href="config__value_8h.html#acb2aafd99394462e0f83f05673be52a9">CAN_TG_ERROR_SUBDIVISION_FAIL</a></div><div class="ttdeci">const int CAN_TG_ERROR_SUBDIVISION_FAIL</div><div class="ttdef"><b>Definition</b> config_value.c:10</div></div>
+<div class="ttc" id="aconfig__value_8h_html_ada864c858133fa1c52368562add7d64e"><div class="ttname"><a href="config__value_8h.html#ada864c858133fa1c52368562add7d64e">CAN_TG_ERROR_NULL_POINTOR</a></div><div class="ttdeci">const int CAN_TG_ERROR_NULL_POINTOR</div><div class="ttdef"><b>Definition</b> config_value.c:12</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947f"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947f">CAN_TG_STATUE</a></div><div class="ttdeci">CAN_TG_STATUE</div><div class="ttdef"><b>Definition</b> config_value.h:23</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947fa0766008cbf1754ab42a2e4995b18e1d2"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa0766008cbf1754ab42a2e4995b18e1d2">CAN_TG_ERROR_TAG_NAME_TO_BIGS_</a></div><div class="ttdeci">@ CAN_TG_ERROR_TAG_NAME_TO_BIGS_</div><div class="ttdef"><b>Definition</b> config_value.h:27</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3">CAN_TG_SUCCESS</a></div><div class="ttdeci">@ CAN_TG_SUCCESS</div><div class="ttdef"><b>Definition</b> config_value.h:25</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947fa1f64facc77e1738f2ed16fae7f38140f"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa1f64facc77e1738f2ed16fae7f38140f">CAN_TG_ERROR_SIZE_VALUE_INVALIDE_</a></div><div class="ttdeci">@ CAN_TG_ERROR_SIZE_VALUE_INVALIDE_</div><div class="ttdef"><b>Definition</b> config_value.h:29</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947fa2d5a4a6abf40a9b845d30b4927cc8321"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa2d5a4a6abf40a9b845d30b4927cc8321">CAN_TG_ERROR_TOO_MAY_TAGS_</a></div><div class="ttdeci">@ CAN_TG_ERROR_TOO_MAY_TAGS_</div><div class="ttdef"><b>Definition</b> config_value.h:28</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947fa4add2030061ed8081fd69bbc7961b88e"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa4add2030061ed8081fd69bbc7961b88e">CAN_TG_ERROR_NOT_ENOUNG_SPACE_</a></div><div class="ttdeci">@ CAN_TG_ERROR_NOT_ENOUNG_SPACE_</div><div class="ttdef"><b>Definition</b> config_value.h:24</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947fa4ec6d89f60bf1ee862d7b94bed822768"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa4ec6d89f60bf1ee862d7b94bed822768">CAN_TG_ERROR_INTERNAL_CORUPTION_</a></div><div class="ttdeci">@ CAN_TG_ERROR_INTERNAL_CORUPTION_</div><div class="ttdef"><b>Definition</b> config_value.h:35</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947fa8f8b6e84f2b232e0ed2995b7afbd0c44"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fa8f8b6e84f2b232e0ed2995b7afbd0c44">CAN_TG_ERROR_NULL_POINTOR_</a></div><div class="ttdeci">@ CAN_TG_ERROR_NULL_POINTOR_</div><div class="ttdef"><b>Definition</b> config_value.h:33</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947faa30bc0e8a501b29dbf6d3b5c3e4fe6f9"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947faa30bc0e8a501b29dbf6d3b5c3e4fe6f9">CAN_TG_ERROR_TAG_NAME_INVALIDE_</a></div><div class="ttdeci">@ CAN_TG_ERROR_TAG_NAME_INVALIDE_</div><div class="ttdef"><b>Definition</b> config_value.h:32</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947fab194d19ed0940cb65b5c625b913aaa40"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fab194d19ed0940cb65b5c625b913aaa40">CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER_</a></div><div class="ttdeci">@ CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER_</div><div class="ttdef"><b>Definition</b> config_value.h:34</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947fab1cfc87a8731dfcbc6e986a1b81115ac"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fab1cfc87a8731dfcbc6e986a1b81115ac">CAN_TG_ERROR_VALUE_TO_BIG</a></div><div class="ttdeci">@ CAN_TG_ERROR_VALUE_TO_BIG</div><div class="ttdef"><b>Definition</b> config_value.h:36</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947fadb8a1b35ff867562e04d179242c150f2"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947fadb8a1b35ff867562e04d179242c150f2">CAN_TG_ERROR_NAME_ALREADY_USE_</a></div><div class="ttdeci">@ CAN_TG_ERROR_NAME_ALREADY_USE_</div><div class="ttdef"><b>Definition</b> config_value.h:30</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947faefecc0d5f9f8d279aeeac67967a54040"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947faefecc0d5f9f8d279aeeac67967a54040">CAN_TG_ERROR_TAG_NOT_FOUND_</a></div><div class="ttdeci">@ CAN_TG_ERROR_TAG_NOT_FOUND_</div><div class="ttdef"><b>Definition</b> config_value.h:26</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af59c8e96bb2966b590726fc2d285947faf1069aa607410cd4bdeb9609f6b03a6b"><div class="ttname"><a href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947faf1069aa607410cd4bdeb9609f6b03a6b">CAN_TG_ERROR_SUBDIVISION_FAIL_</a></div><div class="ttdeci">@ CAN_TG_ERROR_SUBDIVISION_FAIL_</div><div class="ttdef"><b>Definition</b> config_value.h:31</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af68b72a5b65a0168415d1363dc09a0a6"><div class="ttname"><a href="config__value_8h.html#af68b72a5b65a0168415d1363dc09a0a6">CAN_TG_ERROR_TAG_NAME_TO_BIGS</a></div><div class="ttdeci">const int CAN_TG_ERROR_TAG_NAME_TO_BIGS</div><div class="ttdef"><b>Definition</b> config_value.c:6</div></div>
+<div class="ttc" id="aconfig__value_8h_html_af9a28b199e843773aefbb1e1bcf50559"><div class="ttname"><a href="config__value_8h.html#af9a28b199e843773aefbb1e1bcf50559">SUCCES_TO_SET</a></div><div class="ttdeci">const int SUCCES_TO_SET</div><div class="ttdef"><b>Definition</b> config_value.c:15</div></div>
+<div class="ttc" id="aconfig__value_8h_html_afb042b80a35ed7a692f9001589ddf8c6"><div class="ttname"><a href="config__value_8h.html#afb042b80a35ed7a692f9001589ddf8c6">SUCCES</a></div><div class="ttdeci">const int SUCCES</div><div class="ttdef"><b>Definition</b> config_value.c:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="config__value_8h.html">config_value.h</a></li>
+    <li class="footer">G√©n√©r√© par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

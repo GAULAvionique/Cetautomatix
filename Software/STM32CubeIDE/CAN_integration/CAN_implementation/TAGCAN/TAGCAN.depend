@@ -1,0 +1,107 @@
+# depslib dependency file v1.0
+1772998921 source:c:\programation\ulaval\gaul\programmation\tagcan\main.c
+
+1772395965 source:c:\programation\ulaval\gaul\programmation\tagcan\scripts\data_container.c
+	"../include/data_container.h"
+	"../include/config_value.h"
+	<stdio.h>
+
+1772227937 source:c:\programation\ulaval\gaul\programmation\tagcan\scripts\empty_tags_value.c
+	"../include/empty_tags_value.h"
+
+1772315663 c:\programation\ulaval\gaul\programmation\tagcan\include\empty_tags_value.h
+
+1772317016 source:c:\programation\ulaval\gaul\programmation\tagcan\scripts\tag_struct.c
+	<stdio.h>
+
+1773021422 source:c:\programation\ulaval\gaul\programmation\tagcan\scripts\config_value.c
+	"../include/config_value.h"
+
+1772999250 c:\programation\ulaval\gaul\programmation\tagcan\include\config_value.h
+
+1772342321 source:c:\programation\ulaval\gaul\programmation\tagcan\scripts\tag_manager.c
+	"../include/tag_manager.h"
+	"../include/config_value.h"
+	<stdio.h>
+	<string.h>
+	<stdint.h>
+
+1772317587 c:\programation\ulaval\gaul\programmation\tagcan\include\tag_manager.h
+	<stdint.h>
+	<stdbool.h>
+
+1773021592 source:c:\programation\ulaval\gaul\programmation\tagcan\scripts\main.c
+	<stdio.h>
+	<assert.h>
+	<stdbool.h>
+	"../include/config_value.h"
+	"../include/sub_include/data_container.h"
+	"../include/gestion_tag.h"
+	"../include/sub_include/print_val.h"
+
+1772395746 c:\programation\ulaval\gaul\programmation\tagcan\include\data_container.h
+	<stdint.h>
+	"tag_manager.h"
+
+1773024476 source:c:\programation\ulaval\gaul\programmation\tagcan\scripts\sub_scripts\data_container.c
+	"../../include/sub_include/data_container.h"
+	"../../include/config_value.h"
+	"../../include/sub_include/print_val.h"
+	<stdio.h>
+
+1773024432 c:\programation\ulaval\gaul\programmation\tagcan\include\sub_include\data_container.h
+	<stdint.h>
+	"tag_manager.h"
+
+1773021627 c:\programation\ulaval\gaul\programmation\tagcan\include\sub_include\tag_manager.h
+	"../config_value.h"
+	<stdint.h>
+	<stdbool.h>
+
+1773021527 source:c:\programation\ulaval\gaul\programmation\tagcan\scripts\sub_scripts\tag_manager.c
+	"../../include/sub_include/tag_manager.h"
+	"../../include/config_value.h"
+	"../../include/gestion_tag.h"
+	"../../include/sub_include/print_val.h"
+	<stdio.h>
+	<string.h>
+	<stdint.h>
+
+1772998922 source:c:\programation\ulaval\gaul\programmation\tagcan\scripts\main_func.c
+	"../include/sub_include/data_container.h"
+	"../include/sub_include/tag_manager.h"
+	"../include/config_value.h"
+
+1772998922 c:\programation\ulaval\gaul\programmation\tagcan\include\gestion_tag.h
+
+1772998922 c:\programation\ulaval\gaul\programmation\tagcan\include\sub_include\print_val.h
+	<stdio.h>
+	<stdint.h>
+
+1773021670 source:c:\programation\ulaval\gaul\programmation\tagcan\scripts\sub_scripts\print_val.c
+	"../../include/sub_include/print_val.h"
+	"../../include/sub_include/tag_manager.h"
+	"../../include/sub_include/data_container.h"
+	<stdio.h>
+	<stdint.h>
+	<string.h>
+
+1772558228 source:c:\programation\ulaval\gaul\programmation\tagcan\tests\test_file\test_safty_func.c
+
+1772558184 source:c:\programation\ulaval\gaul\programmation\tagcan\tests\test_file\test_send_receve.c
+
+1772558199 source:c:\programation\ulaval\gaul\programmation\tagcan\tests\test_file\test_set_tag.c
+
+1772558581 source:c:\programation\ulaval\gaul\programmation\tagcan\tests\test_utils.c
+	"test_utils.h"
+	<stdbool.h>
+	<stdio.h>
+
+1772238620 c:\programation\ulaval\gaul\programmation\tagcan\tests\test_utils.h
+	<stdio.h>
+	<stdbool.h>
+
+1773024476 source:c:\programation\ulaval\gaul\programmation\tagcan\scripts\can_utils.c
+
+1772998922 c:\programation\ulaval\gaul\programmation\tagcan\include\can_utils.h
+

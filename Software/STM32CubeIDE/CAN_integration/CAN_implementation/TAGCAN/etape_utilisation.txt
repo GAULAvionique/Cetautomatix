@@ -1,0 +1,5 @@
+1) définir et setup les éléments CAN (comme pour n'importe quel communication CAN')
+---
+2) importe les fichier 'data_container.h', 'tag_manager.h' et 'config_value.h'
+---
+3) définir la fonction CAN_Config

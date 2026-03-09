@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TAGCAN: Référence du fichier tag_manager.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TAGCAN
+   </div>
+   <div id="projectbrief">An helpfull modul to send multiple data with one CAN frame.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('tag__manager_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence du fichier tag_manager.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="tag__manager_8h_source.html">../../include/sub_include/tag_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="config__value_8h_source.html">../../include/config_value.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gestion__tag_8h_source.html">../../include/gestion_tag.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="print__val_8h_source.html">../../include/sub_include/print_val.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de tag_manager.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c__incl.png" border="0" usemap="#atag__manager_8c" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c" id="atag__manager_8c">
+<area shape="rect" title=" " alt="" coords="347,5,455,31"/>
+<area shape="rect" href="tag__manager_8h.html" title=" " alt="" coords="100,79,260,119"/>
+<area shape="poly" title=" " alt="" coords="370,33,247,77,245,72,368,28"/>
+<area shape="rect" href="config__value_8h.html" title=" " alt="" coords="5,167,120,192"/>
+<area shape="poly" title=" " alt="" coords="347,25,279,32,202,43,134,59,108,69,90,81,78,96,70,115,65,153,59,152,65,114,73,94,86,77,105,64,132,54,201,37,278,26,347,20"/>
+<area shape="rect" title=" " alt="" coords="265,167,330,192"/>
+<area shape="poly" title=" " alt="" coords="380,33,351,53,325,80,309,117,302,153,296,152,304,115,320,77,347,49,377,29"/>
+<area shape="rect" href="gestion__tag_8h.html" title=" " alt="" coords="335,79,468,119"/>
+<area shape="poly" title=" " alt="" coords="404,31,404,65,399,65,399,31"/>
+<area shape="rect" href="print__val_8h.html" title=" " alt="" coords="492,79,652,119"/>
+<area shape="poly" title=" " alt="" coords="427,28,519,70,517,75,425,33"/>
+<area shape="rect" title=" " alt="" coords="600,167,661,192"/>
+<area shape="poly" title=" " alt="" coords="456,21,514,28,577,39,631,55,652,65,666,77,674,97,672,118,663,139,652,157,647,154,658,136,667,117,669,98,662,80,649,70,629,60,576,44,514,33,456,26"/>
+<area shape="rect" title=" " alt="" coords="727,86,793,111"/>
+<area shape="poly" title=" " alt="" coords="456,25,573,45,709,76,719,79,717,84,707,81,572,50,455,30"/>
+<area shape="poly" title=" " alt="" coords="153,121,93,161,90,157,150,117"/>
+<area shape="poly" title=" " alt="" coords="210,117,270,157,267,161,207,121"/>
+<area shape="rect" title=" " alt="" coords="144,167,219,192"/>
+<area shape="poly" title=" " alt="" coords="183,119,184,153,178,153,178,119"/>
+<area shape="poly" title=" " alt="" coords="507,121,344,168,342,162,505,116"/>
+<area shape="poly" title=" " alt="" coords="588,117,616,154,611,157,584,120"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:aab50a8f567be72e656120fd71f3fb435" id="r_aab50a8f567be72e656120fd71f3fb435"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aab50a8f567be72e656120fd71f3fb435">init_tag_manager</a> (void)</td></tr>
+<tr class="memdesc:aab50a8f567be72e656120fd71f3fb435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise/réinitialise le gestionnaire de tags.  <br /></td></tr>
+<tr class="memitem:a7b7413adbae2eabbe7fcd13e9f91f151" id="r_a7b7413adbae2eabbe7fcd13e9f91f151"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7b7413adbae2eabbe7fcd13e9f91f151">get_first_tags_vide</a> (void)</td></tr>
+<tr class="memitem:a9963af2c23a14e289a3ff39769ea4eeb" id="r_a9963af2c23a14e289a3ff39769ea4eeb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9963af2c23a14e289a3ff39769ea4eeb">set_name_tag</a> (const int n_tag, const char *tag_name)</td></tr>
+<tr class="memdesc:a9963af2c23a14e289a3ff39769ea4eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d'un nom et le place dans le tag # n_tag.  <br /></td></tr>
+<tr class="memitem:ac5f7362c0af4f03bd98573151458442d" id="r_ac5f7362c0af4f03bd98573151458442d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac5f7362c0af4f03bd98573151458442d">general_set_tag</a> (const int n_tag, const char *tag_name, uint8_t n_bits, int8_t byte_idx_a)</td></tr>
+<tr class="memitem:a30325d29d4baf058d75e6f3c269341af" id="r_a30325d29d4baf058d75e6f3c269341af"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a30325d29d4baf058d75e6f3c269341af">set_new_tag_9_to_16</a> (const char *tag_name, const int8_t byte_idx_a, const int8_t byte_idx_b, uint8_t n_bits_total)</td></tr>
+<tr class="memitem:a5f1ce2cac9791e6b46be230dcce3f804" id="r_a5f1ce2cac9791e6b46be230dcce3f804"><td class="memItemLeft"><a class="el" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947f">CAN_TG_STATUE</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5f1ce2cac9791e6b46be230dcce3f804">find_byte_with_enoung_space</a> (uint8_t siz, int8_t *retur_var)</td></tr>
+<tr class="memdesc:a5f1ce2cac9791e6b46be230dcce3f804"><td class="mdescLeft">&#160;</td><td class="mdescRight">trouve le premier bytes qui contien suffissament d'espace libre pour contenir la taille demander.  <br /></td></tr>
+<tr class="memitem:ad5772dac2622697b5f563da0dbfaede3" id="r_ad5772dac2622697b5f563da0dbfaede3"><td class="memItemLeft"><a class="el" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947f">CAN_TG_STATUE</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad5772dac2622697b5f563da0dbfaede3">find_byte2_with_enoung_space</a> (uint8_t siz_total, int8_t posi_premier_bit, int8_t *retur_var)</td></tr>
+<tr class="memdesc:ad5772dac2622697b5f563da0dbfaede3"><td class="mdescLeft">&#160;</td><td class="mdescRight">même chose que la fonction précédente, mais en ignorant le bit déjà pris pour la première partie.  <br /></td></tr>
+<tr class="memitem:a7dd7e8cfc97d378d44e7c63bd9f49931" id="r_a7dd7e8cfc97d378d44e7c63bd9f49931"><td class="memItemLeft"><a class="el" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947f">CAN_TG_STATUE</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7dd7e8cfc97d378d44e7c63bd9f49931">set_tag</a> (const char *tag_name, uint8_t siz)</td></tr>
+<tr class="memdesc:a7dd7e8cfc97d378d44e7c63bd9f49931"><td class="mdescLeft">&#160;</td><td class="mdescRight">crée un nouveau tag.  <br /></td></tr>
+<tr class="memitem:a5737e741608851f8e3822cf07261da44" id="r_a5737e741608851f8e3822cf07261da44"><td class="memItemLeft">const <a class="el" href="struct_tag_def.html">TagDef</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a5737e741608851f8e3822cf07261da44">get_tag_def</a> (const char *tag_name)</td></tr>
+<tr class="memdesc:a5737e741608851f8e3822cf07261da44"><td class="mdescLeft">&#160;</td><td class="mdescRight">recherche le tag et retourne la référence de la structure du tags corespondent au nom.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ace5be789d004e0752b6b2dec9d845864" id="r_ace5be789d004e0752b6b2dec9d845864"><td class="memItemLeft"><a class="el" href="struct_tag_def.html">TagDef</a>&#160;</td><td class="memItemRight"><a class="el" href="#ace5be789d004e0752b6b2dec9d845864">g_tags</a> [<a class="el" href="config__value_8h.html#aa653c0eca99802a09fd9560f28a9b1c1">MAX_TAGS</a>]</td></tr>
+<tr class="memitem:ab7cad863197c93abe397155a1946c0d0" id="r_ab7cad863197c93abe397155a1946c0d0"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#ab7cad863197c93abe397155a1946c0d0">g_tag_count</a> = 0</td></tr>
+<tr class="memitem:af12845c0234390db7498ec51e94f7d58" id="r_af12845c0234390db7498ec51e94f7d58"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#af12845c0234390db7498ec51e94f7d58">g_bytes_used</a> [<a class="el" href="config__value_8h.html#a470399f7b67e59b1cd04ab17e03c96d1">N_BYTES</a>] = {0}</td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions</h2>
+<a id="ad5772dac2622697b5f563da0dbfaede3" name="ad5772dac2622697b5f563da0dbfaede3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5772dac2622697b5f563da0dbfaede3">&#9670;&#160;</a></span>find_byte2_with_enoung_space()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947f">CAN_TG_STATUE</a> find_byte2_with_enoung_space </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>siz_total</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t</td>          <td class="paramname"><span class="paramname"><em>posi_premier_bit</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t *</td>          <td class="paramname"><span class="paramname"><em>retur_var</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>même chose que la fonction précédente, mais en ignorant le bit déjà pris pour la première partie. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>param </p><dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_ad5772dac2622697b5f563da0dbfaede3_icgraph.png" border="0" usemap="#atag__manager_8c_ad5772dac2622697b5f563da0dbfaede3_icgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_ad5772dac2622697b5f563da0dbfaede3_icgraph" id="atag__manager_8c_ad5772dac2622697b5f563da0dbfaede3_icgraph">
+<area shape="rect" title="même chose que la fonction précédente, mais en ignorant le bit déjà pris pour la première partie." alt="" coords="361,23,521,63"/>
+<area shape="rect" href="tag__manager_8c.html#a7dd7e8cfc97d378d44e7c63bd9f49931" title="crée un nouveau tag." alt="" coords="248,31,313,56"/>
+<area shape="poly" title=" " alt="" coords="348,46,314,46,314,41,348,41"/>
+<area shape="rect" href="scripts_2main_8c.html#ae9bbb2f5bb69f73e92c761f83223285a" title="effectue les divers tests affin de vérifier que tout fonctionne bien. les résultat sont présenté dans..." alt="" coords="104,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="234,37,200,30,201,25,235,32"/>
+<area shape="rect" href="scripts_2main_8c.html#a9c4bb6f6d00e76eae45e966a4c628178" title=" " alt="" coords="114,55,190,80"/>
+<area shape="poly" title=" " alt="" coords="235,55,191,63,190,58,234,49"/>
+<area shape="rect" href="scripts_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" title=" " alt="" coords="91,33,57,41,56,36,90,28"/>
+<area shape="poly" title=" " alt="" coords="100,60,56,51,57,46,101,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5f1ce2cac9791e6b46be230dcce3f804" name="a5f1ce2cac9791e6b46be230dcce3f804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f1ce2cac9791e6b46be230dcce3f804">&#9670;&#160;</a></span>find_byte_with_enoung_space()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947f">CAN_TG_STATUE</a> find_byte_with_enoung_space </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>siz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t *</td>          <td class="paramname"><span class="paramname"><em>retur_var</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>trouve le premier bytes qui contien suffissament d'espace libre pour contenir la taille demander. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">siz</td><td>la taille de la valeurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_a5f1ce2cac9791e6b46be230dcce3f804_icgraph.png" border="0" usemap="#atag__manager_8c_a5f1ce2cac9791e6b46be230dcce3f804_icgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_a5f1ce2cac9791e6b46be230dcce3f804_icgraph" id="atag__manager_8c_a5f1ce2cac9791e6b46be230dcce3f804_icgraph">
+<area shape="rect" title="trouve le premier bytes qui contien suffissament d&#39;espace libre pour contenir la taille demander." alt="" coords="361,23,515,63"/>
+<area shape="rect" href="tag__manager_8c.html#a7dd7e8cfc97d378d44e7c63bd9f49931" title="crée un nouveau tag." alt="" coords="248,31,313,56"/>
+<area shape="poly" title=" " alt="" coords="348,46,313,46,313,41,348,41"/>
+<area shape="rect" href="scripts_2main_8c.html#ae9bbb2f5bb69f73e92c761f83223285a" title="effectue les divers tests affin de vérifier que tout fonctionne bien. les résultat sont présenté dans..." alt="" coords="104,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="234,37,200,30,201,25,235,32"/>
+<area shape="rect" href="scripts_2main_8c.html#a9c4bb6f6d00e76eae45e966a4c628178" title=" " alt="" coords="114,55,190,80"/>
+<area shape="poly" title=" " alt="" coords="235,55,191,63,190,58,234,49"/>
+<area shape="rect" href="scripts_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" title=" " alt="" coords="91,33,57,41,56,36,90,28"/>
+<area shape="poly" title=" " alt="" coords="100,60,56,51,57,46,101,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac5f7362c0af4f03bd98573151458442d" name="ac5f7362c0af4f03bd98573151458442d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5f7362c0af4f03bd98573151458442d">&#9670;&#160;</a></span>general_set_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void general_set_tag </td>
+          <td>(</td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>n_tag</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>tag_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>n_bits</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t</td>          <td class="paramname"><span class="paramname"><em>byte_idx_a</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_ac5f7362c0af4f03bd98573151458442d_cgraph.png" border="0" usemap="#atag__manager_8c_ac5f7362c0af4f03bd98573151458442d_cgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_ac5f7362c0af4f03bd98573151458442d_cgraph" id="atag__manager_8c_ac5f7362c0af4f03bd98573151458442d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,120,31"/>
+<area shape="rect" href="tag__manager_8c.html#a9963af2c23a14e289a3ff39769ea4eeb" title="[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d&#39;un nom et le place dans le tag #..." alt="" coords="168,5,272,31"/>
+<area shape="poly" title=" " alt="" coords="120,15,154,15,154,21,120,21"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_ac5f7362c0af4f03bd98573151458442d_icgraph.png" border="0" usemap="#atag__manager_8c_ac5f7362c0af4f03bd98573151458442d_icgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_ac5f7362c0af4f03bd98573151458442d_icgraph" id="atag__manager_8c_ac5f7362c0af4f03bd98573151458442d_icgraph">
+<area shape="rect" title=" " alt="" coords="557,31,672,56"/>
+<area shape="rect" href="tag__manager_8c.html#a30325d29d4baf058d75e6f3c269341af" title=" " alt="" coords="361,5,509,31"/>
+<area shape="poly" title=" " alt="" coords="543,36,510,31,510,26,544,31"/>
+<area shape="rect" href="tag__manager_8c.html#a7dd7e8cfc97d378d44e7c63bd9f49931" title="crée un nouveau tag." alt="" coords="248,31,313,56"/>
+<area shape="poly" title=" " alt="" coords="543,46,313,46,313,41,543,41"/>
+<area shape="poly" title=" " alt="" coords="348,35,314,41,313,35,347,30"/>
+<area shape="rect" href="scripts_2main_8c.html#ae9bbb2f5bb69f73e92c761f83223285a" title="effectue les divers tests affin de vérifier que tout fonctionne bien. les résultat sont présenté dans..." alt="" coords="104,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="234,37,200,30,201,25,235,32"/>
+<area shape="rect" href="scripts_2main_8c.html#a9c4bb6f6d00e76eae45e966a4c628178" title=" " alt="" coords="114,55,190,80"/>
+<area shape="poly" title=" " alt="" coords="235,55,191,63,190,58,234,49"/>
+<area shape="rect" href="scripts_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" title=" " alt="" coords="91,33,57,41,56,36,90,28"/>
+<area shape="poly" title=" " alt="" coords="100,60,56,51,57,46,101,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7b7413adbae2eabbe7fcd13e9f91f151" name="a7b7413adbae2eabbe7fcd13e9f91f151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b7413adbae2eabbe7fcd13e9f91f151">&#9670;&#160;</a></span>get_first_tags_vide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_first_tags_vide </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_a7b7413adbae2eabbe7fcd13e9f91f151_icgraph.png" border="0" usemap="#atag__manager_8c_a7b7413adbae2eabbe7fcd13e9f91f151_icgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_a7b7413adbae2eabbe7fcd13e9f91f151_icgraph" id="atag__manager_8c_a7b7413adbae2eabbe7fcd13e9f91f151_icgraph">
+<area shape="rect" title=" " alt="" coords="557,31,687,56"/>
+<area shape="rect" href="tag__manager_8c.html#a30325d29d4baf058d75e6f3c269341af" title=" " alt="" coords="361,5,509,31"/>
+<area shape="poly" title=" " alt="" coords="543,35,509,31,510,25,544,30"/>
+<area shape="rect" href="tag__manager_8c.html#a7dd7e8cfc97d378d44e7c63bd9f49931" title="crée un nouveau tag." alt="" coords="248,31,313,56"/>
+<area shape="poly" title=" " alt="" coords="543,46,314,46,314,41,543,41"/>
+<area shape="poly" title=" " alt="" coords="348,35,314,41,313,35,347,30"/>
+<area shape="rect" href="scripts_2main_8c.html#ae9bbb2f5bb69f73e92c761f83223285a" title="effectue les divers tests affin de vérifier que tout fonctionne bien. les résultat sont présenté dans..." alt="" coords="104,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="234,37,200,30,201,25,235,32"/>
+<area shape="rect" href="scripts_2main_8c.html#a9c4bb6f6d00e76eae45e966a4c628178" title=" " alt="" coords="114,55,190,80"/>
+<area shape="poly" title=" " alt="" coords="235,55,191,63,190,58,234,49"/>
+<area shape="rect" href="scripts_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" title=" " alt="" coords="91,33,57,41,56,36,90,28"/>
+<area shape="poly" title=" " alt="" coords="100,60,56,51,57,46,101,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5737e741608851f8e3822cf07261da44" name="a5737e741608851f8e3822cf07261da44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5737e741608851f8e3822cf07261da44">&#9670;&#160;</a></span>get_tag_def()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_tag_def.html">TagDef</a> * get_tag_def </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>tag_name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recherche le tag et retourne la référence de la structure du tags corespondent au nom. </p>
+<dl class="section warning"><dt>Avertissement</dt><dd>pas suposé être utilisé à l'externe. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag_name</td><td>le nom du tag à chercher. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la référence de la structure du tags. </dd></dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_a5737e741608851f8e3822cf07261da44_icgraph.png" border="0" usemap="#atag__manager_8c_a5737e741608851f8e3822cf07261da44_icgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_a5737e741608851f8e3822cf07261da44_icgraph" id="atag__manager_8c_a5737e741608851f8e3822cf07261da44_icgraph">
+<area shape="rect" title="recherche le tag et retourne la référence de la structure du tags corespondent au nom." alt="" coords="499,83,588,108"/>
+<area shape="rect" href="data__container_8c.html#a66cbaaa79a2ba3c2c7912514c1dc805f" title="obtien la valeur désigner par le tag." alt="" coords="375,33,451,59"/>
+<area shape="poly" title=" " alt="" coords="496,80,446,61,448,56,497,75"/>
+<area shape="rect" href="tag__manager_8c.html#a7dd7e8cfc97d378d44e7c63bd9f49931" title="crée un nouveau tag." alt="" coords="380,83,445,108"/>
+<area shape="poly" title=" " alt="" coords="485,98,446,98,446,93,485,93"/>
+<area shape="rect" href="data__container_8c.html#ae30fab9c73b624e37f064c836fefb7de" title="change la valeur relier au tag." alt="" coords="375,132,451,157"/>
+<area shape="poly" title=" " alt="" coords="497,115,448,134,446,129,496,110"/>
+<area shape="rect" href="print__val_8c.html#a6904e40665dc664fc6611bfe2d913773" title=" " alt="" coords="228,5,327,31"/>
+<area shape="poly" title=" " alt="" coords="361,38,326,31,327,26,362,33"/>
+<area shape="rect" href="scripts_2main_8c.html#ae9bbb2f5bb69f73e92c761f83223285a" title="effectue les divers tests affin de vérifier que tout fonctionne bien. les résultat sont présenté dans..." alt="" coords="229,107,325,132"/>
+<area shape="poly" title=" " alt="" coords="377,68,303,109,301,104,375,63"/>
+<area shape="rect" href="scripts_2main_8c.html#a9c4bb6f6d00e76eae45e966a4c628178" title=" " alt="" coords="104,56,180,81"/>
+<area shape="poly" title=" " alt="" coords="231,38,178,58,176,53,229,33"/>
+<area shape="rect" href="scripts_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,81,56,107"/>
+<area shape="poly" title=" " alt="" coords="91,83,57,91,56,86,90,78"/>
+<area shape="poly" title=" " alt="" coords="215,116,56,99,57,94,215,110"/>
+<area shape="poly" title=" " alt="" coords="366,93,180,75,180,70,366,88"/>
+<area shape="poly" title=" " alt="" coords="367,106,326,113,325,108,366,101"/>
+<area shape="poly" title=" " alt="" coords="361,157,296,160,261,156,227,147,203,134,181,117,151,83,154,80,185,113,206,130,229,142,262,151,297,155,361,151"/>
+<area shape="poly" title=" " alt="" coords="361,138,325,131,326,126,362,132"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aab50a8f567be72e656120fd71f3fb435" name="aab50a8f567be72e656120fd71f3fb435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab50a8f567be72e656120fd71f3fb435">&#9670;&#160;</a></span>init_tag_manager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_tag_manager </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise/réinitialise le gestionnaire de tags. </p>
+<dl class="section note"><dt>Note</dt><dd>après sont appel, l'ensemble des tags doivent être redéfinie avec l'aide de <span class="tt"><a class="el" href="gestion__tag_8h.html#a7301f247665ed1c0504f27602b3cf012" title="crée un nouveau tag.">set_tag</a></span> </dd></dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_aab50a8f567be72e656120fd71f3fb435_icgraph.png" border="0" usemap="#atag__manager_8c_aab50a8f567be72e656120fd71f3fb435_icgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_aab50a8f567be72e656120fd71f3fb435_icgraph" id="atag__manager_8c_aab50a8f567be72e656120fd71f3fb435_icgraph">
+<area shape="rect" title="Initialise/réinitialise le gestionnaire de tags." alt="" coords="283,55,404,80"/>
+<area shape="rect" href="scripts_2main_8c.html#ae9bbb2f5bb69f73e92c761f83223285a" title="effectue les divers tests affin de vérifier que tout fonctionne bien. les résultat sont présenté dans..." alt="" coords="121,5,217,31"/>
+<area shape="poly" title=" " alt="" coords="284,53,214,33,216,28,286,48"/>
+<area shape="rect" href="scripts_2main_8c.html#a4f26f5b24d899127d66338ba3bfd7f1b" title=" " alt="" coords="104,55,235,80"/>
+<area shape="poly" title=" " alt="" coords="269,70,235,70,235,65,269,65"/>
+<area shape="rect" href="scripts_2main_8c.html#a9c4bb6f6d00e76eae45e966a4c628178" title=" " alt="" coords="131,104,207,129"/>
+<area shape="poly" title=" " alt="" coords="286,86,208,109,207,103,284,81"/>
+<area shape="rect" href="scripts_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,55,56,80"/>
+<area shape="poly" title=" " alt="" coords="121,38,57,61,55,56,119,33"/>
+<area shape="poly" title=" " alt="" coords="119,102,55,79,57,74,121,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9963af2c23a14e289a3ff39769ea4eeb" name="a9963af2c23a14e289a3ff39769ea4eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9963af2c23a14e289a3ff39769ea4eeb">&#9670;&#160;</a></span>set_name_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_name_tag </td>
+          <td>(</td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>n_tag</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>tag_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d'un nom et le place dans le tag # n_tag. </p>
+<dl class="section warning"><dt>Avertissement</dt><dd>comme c'est une fonction interne, les donnée entrer sont suposé être sanétiser avant de passer dans cette dernière. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n_tag</td><td>une valeur entre 0 et MAX_TAGS désignant l'id numérique du tags. </td></tr>
+    <tr><td class="paramname">tag_name</td><td>le nom du tags qui serras utilisé pour référer à la valeur. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_a9963af2c23a14e289a3ff39769ea4eeb_icgraph.png" border="0" usemap="#atag__manager_8c_a9963af2c23a14e289a3ff39769ea4eeb_icgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_a9963af2c23a14e289a3ff39769ea4eeb_icgraph" id="atag__manager_8c_a9963af2c23a14e289a3ff39769ea4eeb_icgraph">
+<area shape="rect" title="[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d&#39;un nom et le place dans le tag #..." alt="" coords="720,31,824,56"/>
+<area shape="rect" href="tag__manager_8c.html#ac5f7362c0af4f03bd98573151458442d" title=" " alt="" coords="557,31,672,56"/>
+<area shape="poly" title=" " alt="" coords="706,46,672,46,672,41,706,41"/>
+<area shape="rect" href="tag__manager_8c.html#a30325d29d4baf058d75e6f3c269341af" title=" " alt="" coords="361,5,509,31"/>
+<area shape="poly" title=" " alt="" coords="543,36,510,31,510,26,544,31"/>
+<area shape="rect" href="tag__manager_8c.html#a7dd7e8cfc97d378d44e7c63bd9f49931" title="crée un nouveau tag." alt="" coords="248,31,313,56"/>
+<area shape="poly" title=" " alt="" coords="543,46,313,46,313,41,543,41"/>
+<area shape="poly" title=" " alt="" coords="348,35,314,41,313,35,347,30"/>
+<area shape="rect" href="scripts_2main_8c.html#ae9bbb2f5bb69f73e92c761f83223285a" title="effectue les divers tests affin de vérifier que tout fonctionne bien. les résultat sont présenté dans..." alt="" coords="104,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="234,37,200,30,201,25,235,32"/>
+<area shape="rect" href="scripts_2main_8c.html#a9c4bb6f6d00e76eae45e966a4c628178" title=" " alt="" coords="114,55,190,80"/>
+<area shape="poly" title=" " alt="" coords="235,55,191,63,190,58,234,49"/>
+<area shape="rect" href="scripts_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" title=" " alt="" coords="91,33,57,41,56,36,90,28"/>
+<area shape="poly" title=" " alt="" coords="100,60,56,51,57,46,101,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a30325d29d4baf058d75e6f3c269341af" name="a30325d29d4baf058d75e6f3c269341af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30325d29d4baf058d75e6f3c269341af">&#9670;&#160;</a></span>set_new_tag_9_to_16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_new_tag_9_to_16 </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>tag_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int8_t</td>          <td class="paramname"><span class="paramname"><em>byte_idx_a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int8_t</td>          <td class="paramname"><span class="paramname"><em>byte_idx_b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>n_bits_total</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_a30325d29d4baf058d75e6f3c269341af_cgraph.png" border="0" usemap="#atag__manager_8c_a30325d29d4baf058d75e6f3c269341af_cgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_a30325d29d4baf058d75e6f3c269341af_cgraph" id="atag__manager_8c_a30325d29d4baf058d75e6f3c269341af_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,153,56"/>
+<area shape="rect" href="tag__manager_8c.html#ac5f7362c0af4f03bd98573151458442d" title=" " alt="" coords="209,5,323,31"/>
+<area shape="poly" title=" " alt="" coords="153,31,195,25,195,30,154,36"/>
+<area shape="rect" href="tag__manager_8c.html#a7b7413adbae2eabbe7fcd13e9f91f151" title=" " alt="" coords="201,55,331,80"/>
+<area shape="poly" title=" " alt="" coords="154,50,188,55,187,60,153,55"/>
+<area shape="rect" href="tag__manager_8c.html#a9963af2c23a14e289a3ff39769ea4eeb" title="[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d&#39;un nom et le place dans le tag #..." alt="" coords="379,5,483,31"/>
+<area shape="poly" title=" " alt="" coords="324,15,365,15,365,21,324,21"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_a30325d29d4baf058d75e6f3c269341af_icgraph.png" border="0" usemap="#atag__manager_8c_a30325d29d4baf058d75e6f3c269341af_icgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_a30325d29d4baf058d75e6f3c269341af_icgraph" id="atag__manager_8c_a30325d29d4baf058d75e6f3c269341af_icgraph">
+<area shape="rect" title=" " alt="" coords="361,31,509,56"/>
+<area shape="rect" href="tag__manager_8c.html#a7dd7e8cfc97d378d44e7c63bd9f49931" title="crée un nouveau tag." alt="" coords="248,31,313,56"/>
+<area shape="poly" title=" " alt="" coords="348,46,313,46,313,41,348,41"/>
+<area shape="rect" href="scripts_2main_8c.html#ae9bbb2f5bb69f73e92c761f83223285a" title="effectue les divers tests affin de vérifier que tout fonctionne bien. les résultat sont présenté dans..." alt="" coords="104,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="234,37,200,30,201,25,235,32"/>
+<area shape="rect" href="scripts_2main_8c.html#a9c4bb6f6d00e76eae45e966a4c628178" title=" " alt="" coords="114,55,190,80"/>
+<area shape="poly" title=" " alt="" coords="235,55,191,63,190,58,234,49"/>
+<area shape="rect" href="scripts_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" title=" " alt="" coords="91,33,57,41,56,36,90,28"/>
+<area shape="poly" title=" " alt="" coords="100,60,56,51,57,46,101,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7dd7e8cfc97d378d44e7c63bd9f49931" name="a7dd7e8cfc97d378d44e7c63bd9f49931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd7e8cfc97d378d44e7c63bd9f49931">&#9670;&#160;</a></span>set_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="config__value_8h.html#af59c8e96bb2966b590726fc2d285947f">CAN_TG_STATUE</a> set_tag </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>tag_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>n_bit</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>crée un nouveau tag. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag_name</td><td>le nom (id) qui serras relier à la valeurs </td></tr>
+    <tr><td class="paramname">n_bit</td><td>la taille de la valeur. ne peux être que 1, 3, 4, 8 ou 16. Sinon, une erreur est générer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un code décrivant le succès de l'opération ou (dans le cas d'une valeurs négatif) le code d'erreur correspondent. </dd></dl>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_a7dd7e8cfc97d378d44e7c63bd9f49931_cgraph.png" border="0" usemap="#atag__manager_8c_a7dd7e8cfc97d378d44e7c63bd9f49931_cgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_a7dd7e8cfc97d378d44e7c63bd9f49931_cgraph" id="atag__manager_8c_a7dd7e8cfc97d378d44e7c63bd9f49931_cgraph">
+<area shape="rect" title="crée un nouveau tag." alt="" coords="5,159,71,185"/>
+<area shape="rect" href="tag__manager_8c.html#ad5772dac2622697b5f563da0dbfaede3" title="même chose que la fonction précédente, mais en ignorant le bit déjà pris pour la première partie." alt="" coords="119,5,279,45"/>
+<area shape="poly" title=" " alt="" coords="43,158,70,109,92,80,117,55,124,50,127,55,120,59,96,84,75,112,47,160"/>
+<area shape="rect" href="tag__manager_8c.html#a5f1ce2cac9791e6b46be230dcce3f804" title="trouve le premier bytes qui contien suffissament d&#39;espace libre pour contenir la taille demander." alt="" coords="122,69,275,109"/>
+<area shape="poly" title=" " alt="" coords="60,157,117,126,142,113,145,118,120,130,63,162"/>
+<area shape="rect" href="tag__manager_8c.html#ac5f7362c0af4f03bd98573151458442d" title=" " alt="" coords="334,159,449,185"/>
+<area shape="poly" title=" " alt="" coords="71,169,320,169,320,175,71,175"/>
+<area shape="rect" href="tag__manager_8c.html#a7b7413adbae2eabbe7fcd13e9f91f151" title=" " alt="" coords="327,234,456,259"/>
+<area shape="poly" title=" " alt="" coords="47,184,74,228,94,252,120,270,148,280,178,286,239,286,297,276,346,261,347,267,299,281,240,291,177,291,147,285,117,274,91,256,69,232,43,186"/>
+<area shape="rect" href="tag__manager_8c.html#a5737e741608851f8e3822cf07261da44" title="recherche le tag et retourne la référence de la structure du tags corespondent au nom." alt="" coords="154,234,243,259"/>
+<area shape="poly" title=" " alt="" coords="58,182,120,219,142,228,140,233,117,224,56,187"/>
+<area shape="rect" href="tag__manager_8c.html#a30325d29d4baf058d75e6f3c269341af" title=" " alt="" coords="125,185,273,210"/>
+<area shape="poly" title=" " alt="" coords="71,174,112,181,111,186,71,180"/>
+<area shape="rect" href="tag__manager_8c.html#a9963af2c23a14e289a3ff39769ea4eeb" title="[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d&#39;un nom et le place dans le tag #..." alt="" coords="504,159,608,185"/>
+<area shape="poly" title=" " alt="" coords="449,169,491,169,491,175,449,175"/>
+<area shape="poly" title=" " alt="" coords="273,185,320,179,321,184,273,190"/>
+<area shape="poly" title=" " alt="" coords="250,207,328,228,327,233,248,213"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="tag__manager_8c_a7dd7e8cfc97d378d44e7c63bd9f49931_icgraph.png" border="0" usemap="#atag__manager_8c_a7dd7e8cfc97d378d44e7c63bd9f49931_icgraph" loading="lazy" alt=""/></div>
+<map name="atag__manager_8c_a7dd7e8cfc97d378d44e7c63bd9f49931_icgraph" id="atag__manager_8c_a7dd7e8cfc97d378d44e7c63bd9f49931_icgraph">
+<area shape="rect" title="crée un nouveau tag." alt="" coords="248,31,313,56"/>
+<area shape="rect" href="scripts_2main_8c.html#ae9bbb2f5bb69f73e92c761f83223285a" title="effectue les divers tests affin de vérifier que tout fonctionne bien. les résultat sont présenté dans..." alt="" coords="104,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="234,37,200,30,201,25,235,32"/>
+<area shape="rect" href="scripts_2main_8c.html#a9c4bb6f6d00e76eae45e966a4c628178" title=" " alt="" coords="114,55,190,80"/>
+<area shape="poly" title=" " alt="" coords="235,55,191,63,190,58,234,49"/>
+<area shape="rect" href="scripts_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" title=" " alt="" coords="91,33,57,41,56,36,90,28"/>
+<area shape="poly" title=" " alt="" coords="100,60,56,51,57,46,101,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentation des variables</h2>
+<a id="af12845c0234390db7498ec51e94f7d58" name="af12845c0234390db7498ec51e94f7d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af12845c0234390db7498ec51e94f7d58">&#9670;&#160;</a></span>g_bytes_used</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t g_bytes_used[<a class="el" href="config__value_8h.html#a470399f7b67e59b1cd04ab17e03c96d1">N_BYTES</a>] = {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Allocation des bits dans chaque byte (0 à 7). (il représente le nombre de bits actuellement assigner à une valeurs dans chacun des bytes) </p>
+
+</div>
+</div>
+<a id="ab7cad863197c93abe397155a1946c0d0" name="ab7cad863197c93abe397155a1946c0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7cad863197c93abe397155a1946c0d0">&#9670;&#160;</a></span>g_tag_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t g_tag_count = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>le nombre de tags actuel (à chaque création réussi d'un nouveau, celui-ci augmente de 1) max: MAX_TAGS </p>
+
+</div>
+</div>
+<a id="ace5be789d004e0752b6b2dec9d845864" name="ace5be789d004e0752b6b2dec9d845864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5be789d004e0752b6b2dec9d845864">&#9670;&#160;</a></span>g_tags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tag_def.html">TagDef</a> g_tags[<a class="el" href="config__value_8h.html#aa653c0eca99802a09fd9560f28a9b1c1">MAX_TAGS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gestionnaire global de tags. contient l'ensemble des tags (actif et inactif) du gestionnaire de tag </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_53e6fa9553ac22a5646d2a2b2d7b97a1.html">scripts</a></li><li class="navelem"><a href="dir_827f2df7bcbb1a07cedeed9802c2c0e4.html">sub_scripts</a></li><li class="navelem"><a href="tag__manager_8c.html">tag_manager.c</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

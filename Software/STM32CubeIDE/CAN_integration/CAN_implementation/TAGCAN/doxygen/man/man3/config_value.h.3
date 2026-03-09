@@ -1,0 +1,165 @@
+.TH "config_value.h" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+config_value.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMAX_TAGS\fP   32"
+.br
+.ti -1c
+.RI "#define \fBMAX_TAG_NAME_LEN\fP   16"
+.br
+.ti -1c
+.RI "#define \fBN_BYTES\fP   8"
+.br
+.ti -1c
+.RI "#define \fBMAX_N_GT\fP   3"
+.br
+.in -1c
+.SS "Énumérations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBCAN_TG_STATUE\fP { \fBCAN_TG_ERROR_NOT_ENOUNG_SPACE_\fP = -2, \fBCAN_TG_SUCCESS\fP = 1, \fBCAN_TG_ERROR_TAG_NOT_FOUND_\fP = -3, \fBCAN_TG_ERROR_TAG_NAME_TO_BIGS_\fP = -4, \fBCAN_TG_ERROR_TOO_MAY_TAGS_\fP = -5, \fBCAN_TG_ERROR_SIZE_VALUE_INVALIDE_\fP = -6, \fBCAN_TG_ERROR_NAME_ALREADY_USE_\fP = -7, \fBCAN_TG_ERROR_SUBDIVISION_FAIL_\fP = -8, \fBCAN_TG_ERROR_TAG_NAME_INVALIDE_\fP =-9, \fBCAN_TG_ERROR_NULL_POINTOR_\fP = -2, \fBCAN_TG_ERROR_TRY_TO_FIND_END_CARACTER_\fP = -21, \fBCAN_TG_ERROR_INTERNAL_CORUPTION_\fP = -30, \fBCAN_TG_ERROR_VALUE_TO_BIG\fP = -10 }"
+.br
+.ti -1c
+.RI "enum \fBCAN_MODE\fP { \fBRECEVE_ONLY\fP, \fBSEND_ONLY\fP, \fBSEND_AND_RECEVE\fP }"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const int \fBCAN_TG_ERROR_INTERNAL_CORUPTION\fP"
+.br
+.ti -1c
+.RI "const int \fBCAN_TG_ERROR_TAG_NAME_TO_BIGS\fP"
+.br
+.ti -1c
+.RI "const int \fBCAN_TG_ERROR_TAG_NAME_INVALIDE\fP"
+.br
+.ti -1c
+.RI "const int \fBCAN_TG_ERROR_TAG_NOT_FOUND\fP"
+.br
+.ti -1c
+.RI "const int \fBCAN_TG_ERROR_NOT_ENOUNG_SPACE\fP"
+.br
+.ti -1c
+.RI "const int \fBCAN_TG_ERROR_NULL_POINTOR\fP"
+.br
+.ti -1c
+.RI "const int \fBCAN_TG_ERROR_TRY_TO_FIND_END_CARACTER\fP"
+.br
+.ti -1c
+.RI "const int \fBCAN_TG_ERROR_SIZE_VALUE_INVALIDE\fP"
+.br
+.ti -1c
+.RI "const int \fBCAN_TG_ERROR_SUBDIVISION_FAIL\fP"
+.br
+.ti -1c
+.RI "const int \fBCAN_TG_ERROR_TOO_MAY_TAGS\fP"
+.br
+.ti -1c
+.RI "const int \fBCAN_TG_ERROR_NAME_ALREADY_USE\fP"
+.br
+.ti -1c
+.RI "const int \fBSUCCES_TO_SET\fP"
+.br
+.ti -1c
+.RI "const int \fBSUCCES\fP"
+.br
+.in -1c
+.SH "Documentation des macros"
+.PP 
+.SS "#define MAX_N_GT   3"
+
+.SS "#define MAX_TAG_NAME_LEN   16"
+
+.SS "#define MAX_TAGS   32"
+
+.SS "#define N_BYTES   8"
+
+.SH "Documentation du type de l'énumération"
+.PP 
+.SS "enum \fBCAN_MODE\fP"
+
+.PP
+\fBValeurs énumérées\fP
+.in +1c
+.TP
+\f(BIRECEVE_ONLY \fP
+In this mode, the 'packet' cannot be wrinten to from 'set_value', but the value (assuming it's the correct id) while be updated if the id match\&. 
+.TP
+\f(BISEND_ONLY \fP
+In this mode, the 'packet' linked with can only send data\&. In other words, if an other CAN perif send a 'paquet' with the same ID, it's while not modifie he value\&. 
+.TP
+\f(BISEND_AND_RECEVE \fP
+In this mode, you can modifie the value, send the value and receve an update form the CAN line\&. (In other word, it's the less free of contrainte, but also the most suceptible to have unwished change of value\&.) 
+.SS "enum \fBCAN_TG_STATUE\fP"
+
+.PP
+\fBValeurs énumérées\fP
+.in +1c
+.TP
+\f(BICAN_TG_ERROR_NOT_ENOUNG_SPACE_ \fP
+.TP
+\f(BICAN_TG_SUCCESS \fP
+.TP
+\f(BICAN_TG_ERROR_TAG_NOT_FOUND_ \fP
+.TP
+\f(BICAN_TG_ERROR_TAG_NAME_TO_BIGS_ \fP
+.TP
+\f(BICAN_TG_ERROR_TOO_MAY_TAGS_ \fP
+.TP
+\f(BICAN_TG_ERROR_SIZE_VALUE_INVALIDE_ \fP
+.TP
+\f(BICAN_TG_ERROR_NAME_ALREADY_USE_ \fP
+.TP
+\f(BICAN_TG_ERROR_SUBDIVISION_FAIL_ \fP
+.TP
+\f(BICAN_TG_ERROR_TAG_NAME_INVALIDE_ \fP
+.TP
+\f(BICAN_TG_ERROR_NULL_POINTOR_ \fP
+.TP
+\f(BICAN_TG_ERROR_TRY_TO_FIND_END_CARACTER_ \fP
+.TP
+\f(BICAN_TG_ERROR_INTERNAL_CORUPTION_ \fP
+.TP
+\f(BICAN_TG_ERROR_VALUE_TO_BIG \fP
+.SH "Documentation des variables"
+.PP 
+.SS "const int CAN_TG_ERROR_INTERNAL_CORUPTION\fR [extern]\fP"
+
+.SS "const int CAN_TG_ERROR_NAME_ALREADY_USE\fR [extern]\fP"
+
+.SS "const int CAN_TG_ERROR_NOT_ENOUNG_SPACE\fR [extern]\fP"
+
+.SS "const int CAN_TG_ERROR_NULL_POINTOR\fR [extern]\fP"
+
+.SS "const int CAN_TG_ERROR_SIZE_VALUE_INVALIDE\fR [extern]\fP"
+
+.SS "const int CAN_TG_ERROR_SUBDIVISION_FAIL\fR [extern]\fP"
+
+.SS "const int CAN_TG_ERROR_TAG_NAME_INVALIDE\fR [extern]\fP"
+
+.SS "const int CAN_TG_ERROR_TAG_NAME_TO_BIGS\fR [extern]\fP"
+
+.SS "const int CAN_TG_ERROR_TAG_NOT_FOUND\fR [extern]\fP"
+
+.SS "const int CAN_TG_ERROR_TOO_MAY_TAGS\fR [extern]\fP"
+
+.SS "const int CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER\fR [extern]\fP"
+
+.SS "const int SUCCES\fR [extern]\fP"
+
+.SS "const int SUCCES_TO_SET\fR [extern]\fP"
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.

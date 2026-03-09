@@ -1,0 +1,594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TAGCAN: Référence du fichier config_value.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TAGCAN
+   </div>
+   <div id="projectbrief">An helpfull modul to send multiple data with one CAN frame.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('config__value_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Référence du fichier config_value.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="config__value_8h__dep__incl.png" border="0" usemap="#aconfig__value_8hdep" loading="lazy" alt=""/></div>
+<map name="aconfig__value_8hdep" id="aconfig__value_8hdep">
+<area shape="rect" title=" " alt="" coords="171,5,273,31"/>
+<area shape="rect" href="config__value_8c.html" title=" " alt="" coords="5,79,108,104"/>
+<area shape="poly" title=" " alt="" coords="184,38,85,81,83,76,182,34"/>
+<area shape="rect" href="data__container_8c.html" title=" " alt="" coords="23,225,141,251"/>
+<area shape="poly" title=" " alt="" coords="209,44,92,226,87,223,205,41"/>
+<area shape="rect" href="scripts_2main_8c.html" title=" " alt="" coords="166,225,227,251"/>
+<area shape="poly" title=" " alt="" coords="222,45,201,225,195,225,216,45"/>
+<area shape="rect" href="main__func_8c.html" title=" " alt="" coords="252,225,344,251"/>
+<area shape="poly" title=" " alt="" coords="233,43,296,224,291,226,228,45"/>
+<area shape="rect" href="tag__manager_8c.html" title=" " alt="" coords="581,152,689,177"/>
+<area shape="poly" title=" " alt="" coords="287,24,389,43,446,57,500,76,536,93,570,113,622,150,619,154,568,118,534,98,498,81,444,62,388,48,286,29"/>
+<area shape="rect" href="tag__manager_8h.html" title=" " alt="" coords="379,79,487,104"/>
+<area shape="poly" title=" " alt="" coords="269,32,399,76,398,81,268,37"/>
+<area shape="poly" title=" " alt="" coords="385,112,353,129,325,154,315,171,308,191,301,225,296,224,302,189,310,169,321,150,350,125,382,107"/>
+<area shape="poly" title=" " alt="" coords="479,106,603,149,602,154,477,111"/>
+<area shape="rect" href="_t_a_g_c_a_n__fonction_8h.html" title=" " alt="" coords="369,225,507,251"/>
+<area shape="poly" title=" " alt="" coords="451,114,469,151,470,173,465,194,449,227,444,224,460,192,465,172,463,153,447,116"/>
+<area shape="rect" href="data__container_8h.html" title=" " alt="" coords="336,152,455,177"/>
+<area shape="poly" title=" " alt="" coords="423,117,404,153,399,151,418,115"/>
+<area shape="rect" href="print__val_8c.html" title=" " alt="" coords="531,225,611,251"/>
+<area shape="poly" title=" " alt="" coords="455,112,562,223,558,227,452,116"/>
+<area shape="poly" title=" " alt="" coords="332,183,133,228,132,223,331,178"/>
+<area shape="poly" title=" " alt="" coords="351,185,229,228,227,223,349,179"/>
+<area shape="poly" title=" " alt="" coords="370,188,315,227,312,223,367,183"/>
+<area shape="poly" title=" " alt="" coords="412,188,433,224,429,227,407,191"/>
+<area shape="poly" title=" " alt="" coords="437,180,544,223,542,228,435,185"/>
+</map>
+</div>
+</div>
+<p><a href="config__value_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aa653c0eca99802a09fd9560f28a9b1c1" id="r_aa653c0eca99802a09fd9560f28a9b1c1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa653c0eca99802a09fd9560f28a9b1c1">MAX_TAGS</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memitem:ada71b9f258860d58a86ab220bfce6bf4" id="r_ada71b9f258860d58a86ab220bfce6bf4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ada71b9f258860d58a86ab220bfce6bf4">MAX_TAG_NAME_LEN</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memitem:a470399f7b67e59b1cd04ab17e03c96d1" id="r_a470399f7b67e59b1cd04ab17e03c96d1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a470399f7b67e59b1cd04ab17e03c96d1">N_BYTES</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:a486663aa90115780beab9f9d39fa8973" id="r_a486663aa90115780beab9f9d39fa8973"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a486663aa90115780beab9f9d39fa8973">MAX_N_GT</a>&#160;&#160;&#160;3</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:af59c8e96bb2966b590726fc2d285947f" id="r_af59c8e96bb2966b590726fc2d285947f"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#af59c8e96bb2966b590726fc2d285947f">CAN_TG_STATUE</a> { <br />
+&#160;&#160;<a class="el" href="#af59c8e96bb2966b590726fc2d285947fa4add2030061ed8081fd69bbc7961b88e">CAN_TG_ERROR_NOT_ENOUNG_SPACE_</a> = -2
+, <a class="el" href="#af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3">CAN_TG_SUCCESS</a> = 1
+, <a class="el" href="#af59c8e96bb2966b590726fc2d285947faefecc0d5f9f8d279aeeac67967a54040">CAN_TG_ERROR_TAG_NOT_FOUND_</a> = -3
+, <a class="el" href="#af59c8e96bb2966b590726fc2d285947fa0766008cbf1754ab42a2e4995b18e1d2">CAN_TG_ERROR_TAG_NAME_TO_BIGS_</a> = -4
+, <br />
+&#160;&#160;<a class="el" href="#af59c8e96bb2966b590726fc2d285947fa2d5a4a6abf40a9b845d30b4927cc8321">CAN_TG_ERROR_TOO_MAY_TAGS_</a> = -5
+, <a class="el" href="#af59c8e96bb2966b590726fc2d285947fa1f64facc77e1738f2ed16fae7f38140f">CAN_TG_ERROR_SIZE_VALUE_INVALIDE_</a> = -6
+, <a class="el" href="#af59c8e96bb2966b590726fc2d285947fadb8a1b35ff867562e04d179242c150f2">CAN_TG_ERROR_NAME_ALREADY_USE_</a> = -7
+, <a class="el" href="#af59c8e96bb2966b590726fc2d285947faf1069aa607410cd4bdeb9609f6b03a6b">CAN_TG_ERROR_SUBDIVISION_FAIL_</a> = -8
+, <br />
+&#160;&#160;<a class="el" href="#af59c8e96bb2966b590726fc2d285947faa30bc0e8a501b29dbf6d3b5c3e4fe6f9">CAN_TG_ERROR_TAG_NAME_INVALIDE_</a> =-9
+, <a class="el" href="#af59c8e96bb2966b590726fc2d285947fa8f8b6e84f2b232e0ed2995b7afbd0c44">CAN_TG_ERROR_NULL_POINTOR_</a> = -2
+, <a class="el" href="#af59c8e96bb2966b590726fc2d285947fab194d19ed0940cb65b5c625b913aaa40">CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER_</a> = -21
+, <a class="el" href="#af59c8e96bb2966b590726fc2d285947fa4ec6d89f60bf1ee862d7b94bed822768">CAN_TG_ERROR_INTERNAL_CORUPTION_</a> = -30
+, <br />
+&#160;&#160;<a class="el" href="#af59c8e96bb2966b590726fc2d285947fab1cfc87a8731dfcbc6e986a1b81115ac">CAN_TG_ERROR_VALUE_TO_BIG</a> = -10
+<br />
+ }</td></tr>
+<tr class="memitem:ac0d6cdda2cf4abb51116b86bc99acf99" id="r_ac0d6cdda2cf4abb51116b86bc99acf99"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ac0d6cdda2cf4abb51116b86bc99acf99">CAN_MODE</a> { <a class="el" href="#ac0d6cdda2cf4abb51116b86bc99acf99a7d47d78204fba2e07bda4e65594ff332">RECEVE_ONLY</a>
+, <a class="el" href="#ac0d6cdda2cf4abb51116b86bc99acf99ad5ec70c56183ea13f8a0c16a3708a23e">SEND_ONLY</a>
+, <a class="el" href="#ac0d6cdda2cf4abb51116b86bc99acf99ac4e66207fce47c294e4aaab76000c9ce">SEND_AND_RECEVE</a>
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a7f995285b1ed198ba4c10528ef66b8fe" id="r_a7f995285b1ed198ba4c10528ef66b8fe"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#a7f995285b1ed198ba4c10528ef66b8fe">CAN_TG_ERROR_INTERNAL_CORUPTION</a></td></tr>
+<tr class="memitem:af68b72a5b65a0168415d1363dc09a0a6" id="r_af68b72a5b65a0168415d1363dc09a0a6"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#af68b72a5b65a0168415d1363dc09a0a6">CAN_TG_ERROR_TAG_NAME_TO_BIGS</a></td></tr>
+<tr class="memitem:a49d547279f99d23ff36998f3874d3c5a" id="r_a49d547279f99d23ff36998f3874d3c5a"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#a49d547279f99d23ff36998f3874d3c5a">CAN_TG_ERROR_TAG_NAME_INVALIDE</a></td></tr>
+<tr class="memitem:ab0c8b9c7e93d137cd8956e4c391a0f4c" id="r_ab0c8b9c7e93d137cd8956e4c391a0f4c"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#ab0c8b9c7e93d137cd8956e4c391a0f4c">CAN_TG_ERROR_TAG_NOT_FOUND</a></td></tr>
+<tr class="memitem:a6ac7074ca0f94196368735678d92c7b8" id="r_a6ac7074ca0f94196368735678d92c7b8"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#a6ac7074ca0f94196368735678d92c7b8">CAN_TG_ERROR_NOT_ENOUNG_SPACE</a></td></tr>
+<tr class="memitem:ada864c858133fa1c52368562add7d64e" id="r_ada864c858133fa1c52368562add7d64e"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#ada864c858133fa1c52368562add7d64e">CAN_TG_ERROR_NULL_POINTOR</a></td></tr>
+<tr class="memitem:a3cf459060e0c412c5908438afc160d9f" id="r_a3cf459060e0c412c5908438afc160d9f"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#a3cf459060e0c412c5908438afc160d9f">CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER</a></td></tr>
+<tr class="memitem:a73337c3ada0009e763ea5af164e25d70" id="r_a73337c3ada0009e763ea5af164e25d70"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#a73337c3ada0009e763ea5af164e25d70">CAN_TG_ERROR_SIZE_VALUE_INVALIDE</a></td></tr>
+<tr class="memitem:acb2aafd99394462e0f83f05673be52a9" id="r_acb2aafd99394462e0f83f05673be52a9"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#acb2aafd99394462e0f83f05673be52a9">CAN_TG_ERROR_SUBDIVISION_FAIL</a></td></tr>
+<tr class="memitem:a1e77443066dccbc42ef0acdd0f597c07" id="r_a1e77443066dccbc42ef0acdd0f597c07"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#a1e77443066dccbc42ef0acdd0f597c07">CAN_TG_ERROR_TOO_MAY_TAGS</a></td></tr>
+<tr class="memitem:a18061c1ca5fc2e5ab20fa7bc8dbe81d6" id="r_a18061c1ca5fc2e5ab20fa7bc8dbe81d6"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#a18061c1ca5fc2e5ab20fa7bc8dbe81d6">CAN_TG_ERROR_NAME_ALREADY_USE</a></td></tr>
+<tr class="memitem:af9a28b199e843773aefbb1e1bcf50559" id="r_af9a28b199e843773aefbb1e1bcf50559"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#af9a28b199e843773aefbb1e1bcf50559">SUCCES_TO_SET</a></td></tr>
+<tr class="memitem:afb042b80a35ed7a692f9001589ddf8c6" id="r_afb042b80a35ed7a692f9001589ddf8c6"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#afb042b80a35ed7a692f9001589ddf8c6">SUCCES</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Documentation des macros</h2>
+<a id="a486663aa90115780beab9f9d39fa8973" name="a486663aa90115780beab9f9d39fa8973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486663aa90115780beab9f9d39fa8973">&#9670;&#160;</a></span>MAX_N_GT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_N_GT&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada71b9f258860d58a86ab220bfce6bf4" name="ada71b9f258860d58a86ab220bfce6bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada71b9f258860d58a86ab220bfce6bf4">&#9670;&#160;</a></span>MAX_TAG_NAME_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TAG_NAME_LEN&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa653c0eca99802a09fd9560f28a9b1c1" name="aa653c0eca99802a09fd9560f28a9b1c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa653c0eca99802a09fd9560f28a9b1c1">&#9670;&#160;</a></span>MAX_TAGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TAGS&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a470399f7b67e59b1cd04ab17e03c96d1" name="a470399f7b67e59b1cd04ab17e03c96d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a470399f7b67e59b1cd04ab17e03c96d1">&#9670;&#160;</a></span>N_BYTES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define N_BYTES&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Documentation du type de l'énumération</h2>
+<a id="ac0d6cdda2cf4abb51116b86bc99acf99" name="ac0d6cdda2cf4abb51116b86bc99acf99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d6cdda2cf4abb51116b86bc99acf99">&#9670;&#160;</a></span>CAN_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ac0d6cdda2cf4abb51116b86bc99acf99">CAN_MODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ac0d6cdda2cf4abb51116b86bc99acf99a7d47d78204fba2e07bda4e65594ff332" name="ac0d6cdda2cf4abb51116b86bc99acf99a7d47d78204fba2e07bda4e65594ff332"></a>RECEVE_ONLY&#160;</td><td class="fielddoc"><p>In this mode, the 'packet' cannot be wrinten to from 'set_value', but the value (assuming it's the correct id) while be updated if the id match. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac0d6cdda2cf4abb51116b86bc99acf99ad5ec70c56183ea13f8a0c16a3708a23e" name="ac0d6cdda2cf4abb51116b86bc99acf99ad5ec70c56183ea13f8a0c16a3708a23e"></a>SEND_ONLY&#160;</td><td class="fielddoc"><p>In this mode, the 'packet' linked with can only send data. In other words, if an other CAN perif send a 'paquet' with the same ID, it's while not modifie he value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac0d6cdda2cf4abb51116b86bc99acf99ac4e66207fce47c294e4aaab76000c9ce" name="ac0d6cdda2cf4abb51116b86bc99acf99ac4e66207fce47c294e4aaab76000c9ce"></a>SEND_AND_RECEVE&#160;</td><td class="fielddoc"><p>In this mode, you can modifie the value, send the value and receve an update form the CAN line. (In other word, it's the less free of contrainte, but also the most suceptible to have unwished change of value.) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af59c8e96bb2966b590726fc2d285947f" name="af59c8e96bb2966b590726fc2d285947f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59c8e96bb2966b590726fc2d285947f">&#9670;&#160;</a></span>CAN_TG_STATUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#af59c8e96bb2966b590726fc2d285947f">CAN_TG_STATUE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947fa4add2030061ed8081fd69bbc7961b88e" name="af59c8e96bb2966b590726fc2d285947fa4add2030061ed8081fd69bbc7961b88e"></a>CAN_TG_ERROR_NOT_ENOUNG_SPACE_&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3" name="af59c8e96bb2966b590726fc2d285947fa08e8f2b1a9c883eec6fdc9f76bad06e3"></a>CAN_TG_SUCCESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947faefecc0d5f9f8d279aeeac67967a54040" name="af59c8e96bb2966b590726fc2d285947faefecc0d5f9f8d279aeeac67967a54040"></a>CAN_TG_ERROR_TAG_NOT_FOUND_&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947fa0766008cbf1754ab42a2e4995b18e1d2" name="af59c8e96bb2966b590726fc2d285947fa0766008cbf1754ab42a2e4995b18e1d2"></a>CAN_TG_ERROR_TAG_NAME_TO_BIGS_&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947fa2d5a4a6abf40a9b845d30b4927cc8321" name="af59c8e96bb2966b590726fc2d285947fa2d5a4a6abf40a9b845d30b4927cc8321"></a>CAN_TG_ERROR_TOO_MAY_TAGS_&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947fa1f64facc77e1738f2ed16fae7f38140f" name="af59c8e96bb2966b590726fc2d285947fa1f64facc77e1738f2ed16fae7f38140f"></a>CAN_TG_ERROR_SIZE_VALUE_INVALIDE_&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947fadb8a1b35ff867562e04d179242c150f2" name="af59c8e96bb2966b590726fc2d285947fadb8a1b35ff867562e04d179242c150f2"></a>CAN_TG_ERROR_NAME_ALREADY_USE_&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947faf1069aa607410cd4bdeb9609f6b03a6b" name="af59c8e96bb2966b590726fc2d285947faf1069aa607410cd4bdeb9609f6b03a6b"></a>CAN_TG_ERROR_SUBDIVISION_FAIL_&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947faa30bc0e8a501b29dbf6d3b5c3e4fe6f9" name="af59c8e96bb2966b590726fc2d285947faa30bc0e8a501b29dbf6d3b5c3e4fe6f9"></a>CAN_TG_ERROR_TAG_NAME_INVALIDE_&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947fa8f8b6e84f2b232e0ed2995b7afbd0c44" name="af59c8e96bb2966b590726fc2d285947fa8f8b6e84f2b232e0ed2995b7afbd0c44"></a>CAN_TG_ERROR_NULL_POINTOR_&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947fab194d19ed0940cb65b5c625b913aaa40" name="af59c8e96bb2966b590726fc2d285947fab194d19ed0940cb65b5c625b913aaa40"></a>CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER_&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947fa4ec6d89f60bf1ee862d7b94bed822768" name="af59c8e96bb2966b590726fc2d285947fa4ec6d89f60bf1ee862d7b94bed822768"></a>CAN_TG_ERROR_INTERNAL_CORUPTION_&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af59c8e96bb2966b590726fc2d285947fab1cfc87a8731dfcbc6e986a1b81115ac" name="af59c8e96bb2966b590726fc2d285947fab1cfc87a8731dfcbc6e986a1b81115ac"></a>CAN_TG_ERROR_VALUE_TO_BIG&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentation des variables</h2>
+<a id="a7f995285b1ed198ba4c10528ef66b8fe" name="a7f995285b1ed198ba4c10528ef66b8fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f995285b1ed198ba4c10528ef66b8fe">&#9670;&#160;</a></span>CAN_TG_ERROR_INTERNAL_CORUPTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CAN_TG_ERROR_INTERNAL_CORUPTION</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18061c1ca5fc2e5ab20fa7bc8dbe81d6" name="a18061c1ca5fc2e5ab20fa7bc8dbe81d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18061c1ca5fc2e5ab20fa7bc8dbe81d6">&#9670;&#160;</a></span>CAN_TG_ERROR_NAME_ALREADY_USE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CAN_TG_ERROR_NAME_ALREADY_USE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ac7074ca0f94196368735678d92c7b8" name="a6ac7074ca0f94196368735678d92c7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac7074ca0f94196368735678d92c7b8">&#9670;&#160;</a></span>CAN_TG_ERROR_NOT_ENOUNG_SPACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CAN_TG_ERROR_NOT_ENOUNG_SPACE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada864c858133fa1c52368562add7d64e" name="ada864c858133fa1c52368562add7d64e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada864c858133fa1c52368562add7d64e">&#9670;&#160;</a></span>CAN_TG_ERROR_NULL_POINTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CAN_TG_ERROR_NULL_POINTOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73337c3ada0009e763ea5af164e25d70" name="a73337c3ada0009e763ea5af164e25d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73337c3ada0009e763ea5af164e25d70">&#9670;&#160;</a></span>CAN_TG_ERROR_SIZE_VALUE_INVALIDE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CAN_TG_ERROR_SIZE_VALUE_INVALIDE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb2aafd99394462e0f83f05673be52a9" name="acb2aafd99394462e0f83f05673be52a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb2aafd99394462e0f83f05673be52a9">&#9670;&#160;</a></span>CAN_TG_ERROR_SUBDIVISION_FAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CAN_TG_ERROR_SUBDIVISION_FAIL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49d547279f99d23ff36998f3874d3c5a" name="a49d547279f99d23ff36998f3874d3c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d547279f99d23ff36998f3874d3c5a">&#9670;&#160;</a></span>CAN_TG_ERROR_TAG_NAME_INVALIDE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CAN_TG_ERROR_TAG_NAME_INVALIDE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af68b72a5b65a0168415d1363dc09a0a6" name="af68b72a5b65a0168415d1363dc09a0a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af68b72a5b65a0168415d1363dc09a0a6">&#9670;&#160;</a></span>CAN_TG_ERROR_TAG_NAME_TO_BIGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CAN_TG_ERROR_TAG_NAME_TO_BIGS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0c8b9c7e93d137cd8956e4c391a0f4c" name="ab0c8b9c7e93d137cd8956e4c391a0f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c8b9c7e93d137cd8956e4c391a0f4c">&#9670;&#160;</a></span>CAN_TG_ERROR_TAG_NOT_FOUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CAN_TG_ERROR_TAG_NOT_FOUND</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e77443066dccbc42ef0acdd0f597c07" name="a1e77443066dccbc42ef0acdd0f597c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e77443066dccbc42ef0acdd0f597c07">&#9670;&#160;</a></span>CAN_TG_ERROR_TOO_MAY_TAGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CAN_TG_ERROR_TOO_MAY_TAGS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cf459060e0c412c5908438afc160d9f" name="a3cf459060e0c412c5908438afc160d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf459060e0c412c5908438afc160d9f">&#9670;&#160;</a></span>CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CAN_TG_ERROR_TRY_TO_FIND_END_CARACTER</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb042b80a35ed7a692f9001589ddf8c6" name="afb042b80a35ed7a692f9001589ddf8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb042b80a35ed7a692f9001589ddf8c6">&#9670;&#160;</a></span>SUCCES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SUCCES</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9a28b199e843773aefbb1e1bcf50559" name="af9a28b199e843773aefbb1e1bcf50559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a28b199e843773aefbb1e1bcf50559">&#9670;&#160;</a></span>SUCCES_TO_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SUCCES_TO_SET</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="config__value_8h.html">config_value.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

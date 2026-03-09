@@ -1,0 +1,17 @@
+.TH "" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include sub_include data_container\&.h print_val\&.h tag_manager\&.h 
+.PP
+config_value\&.h gestion_tag\&.h TAGCAN_fonction\&.h 
+.PP
+scripts sub_scripts data_container\&.c print_val\&.c tag_manager\&.c 
+.PP
+config_value\&.c main\&.c main_func\&.c 
+.PP
+sub_include data_container\&.h print_val\&.h tag_manager\&.h 
+.PP
+sub_scripts data_container\&.c print_val\&.c tag_manager\&.c 
+.PP
+

@@ -1,0 +1,7 @@
+
+/archive
+/.venv
+/.vscode
+/output
+/obj
+**/.vs

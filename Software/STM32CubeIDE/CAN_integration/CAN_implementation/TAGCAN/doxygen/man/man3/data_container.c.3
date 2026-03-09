@@ -1,0 +1,128 @@
+.TH "data_container.c" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+data_container.c
+.SH SYNOPSIS
+.br
+.PP
+\fR#include '\&.\&./\&.\&./include/sub_include/data_container\&.h'\fP
+.br
+\fR#include '\&.\&./\&.\&./include/config_value\&.h'\fP
+.br
+\fR#include '\&.\&./\&.\&./include/sub_include/print_val\&.h'\fP
+.br
+\fR#include <stdio\&.h>\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_data_container\fP (void)"
+.br
+.RI "clean le TxData affin d'être certain de ne pas avoir de donnée poubelle dedans\&. Si réexécuté, supprime toute les donné à l'interieurs\&. "
+.ti -1c
+.RI "uint8_t \fBprep_mask\fP (uint8_t p_bit, uint8_t n_bit)"
+.br
+.RI "[FONCTION INTERNE] prépare le mask utiliser pour set/get la valeur\&. (uniquement utiliser pour les valeurs de moins de 8 bits) "
+.ti -1c
+.RI "\fBCAN_TG_STATUE\fP \fBset_value\fP (const char *tag_name, uint32_t value)"
+.br
+.RI "change la valeur relier au tag\&. "
+.ti -1c
+.RI "uint16_t \fBconvert_8_to_16bit\fP (uint8_t ba, uint8_t bb)"
+.br
+.ti -1c
+.RI "int \fBget_value\fP (const char *tag_name, uint32_t *out_value)"
+.br
+.RI "obtien la valeur désigner par le tag\&. "
+.ti -1c
+.RI "void \fBcan_simulate_send_receive\fP (uint8_t *tx_buffer, uint8_t *rx_buffer)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "uint8_t \fBTxData\fP [\fBN_BYTES\fP]"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "void can_simulate_send_receive (uint8_t * tx_buffer, uint8_t * rx_buffer)"
+
+.SS "uint16_t convert_8_to_16bit (uint8_t ba, uint8_t bb)"
+
+.SS "int get_value (const char * tag_name, uint32_t * out_value)"
+
+.PP
+obtien la valeur désigner par le tag\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+param la référence de la valeurs où il faut placer la valeurs extraite\&. (comme 'return' est utiliser pour le code d'exécution 
+.PP
+\fBRenvoie\fP
+.RS 4
+renvoie 1 si réussi, sinon, renvoie le code d'erreur (dans des nombres négatif\&.) 
+.RE
+.PP
+
+.SS "void init_data_container (void )"
+
+.PP
+clean le TxData affin d'être certain de ne pas avoir de donnée poubelle dedans\&. Si réexécuté, supprime toute les donné à l'interieurs\&. 
+.SS "uint8_t prep_mask (uint8_t p_bit, uint8_t n_bit)"
+
+.PP
+[FONCTION INTERNE] prépare le mask utiliser pour set/get la valeur\&. (uniquement utiliser pour les valeurs de moins de 8 bits) 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIp_bit\fP la position du premier bit de la valeur (de gauche à droite) 
+.br
+\fIn_bit\fP le nombre de bits de la valeurs\&. 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+Un masque binaire pour conserver uniquement la valeurs d'intéress ou retirer uniqment la valeurs d'intéres\&. 
+.RE
+.PP
+
+.SS "\fBCAN_TG_STATUE\fP set_value (const char * tag_name, uint32_t value)"
+
+.PP
+change la valeur relier au tag\&. 
+.PP
+\fBAvertissement\fP
+.RS 4
+ne dois pas dépasser la taille désigner lors de l'initialisation du tag\&.
+.RE
+.PP
+Change la valeur présent dans TxData à l'endroit spécifier automatiquement par le gestionnaire de tag lors de l'initialisation du tag en question\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fItag_name\fP le tag relier à la valeurs\&. 
+.br
+\fIvalue\fP la nouvelle valeurs\&. 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+le code désigant le succès ou le code d'erreur de l'opération\&. 
+.RE
+.PP
+
+.SH "Documentation des variables"
+.PP 
+.SS "uint8_t TxData[\fBN_BYTES\fP]"
+Représente le buffer de données (le payload CAN de 8 octets) 
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.

@@ -56,7 +56,7 @@ void CAN_init_TAGCAN(void){
 	init_tag_manager();
 }
 
-void CAN_setup_DF(const int32_t std_id){
+void CAN_setup_DF(int32_t std_id){
 	std_id &= 0x7FFU;
 	TxHeader.IDE = CAN_ID_STD;		// Standard ID (11 bits)
 	TxHeader.StdId = std_id;			// id

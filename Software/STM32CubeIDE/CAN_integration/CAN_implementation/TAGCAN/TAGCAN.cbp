@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TAGCAN" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option show_notes="0">
+			<notes>
+				<![CDATA[test]]>
+			</notes>
+		</Option>
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TAGCAN(1)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TAGCAN" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<UnitsGlob directory="include" wildcard="" recursive="1" id="299603298" addToProject="1">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</UnitsGlob>
+		<UnitsGlob directory="scripts" wildcard="" recursive="1" id="530276766" addToProject="1">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</UnitsGlob>
+		<Unit filename="etape_utilisation.txt" />
+		<Unit filename="include/TAGCAN_fonction.h">
+			<Option glob="299603298" />
+		</Unit>
+		<Unit filename="include/config_value.h">
+			<Option glob="299603298" />
+		</Unit>
+		<Unit filename="include/gestion_tag.h">
+			<Option glob="299603298" />
+		</Unit>
+		<Unit filename="include/sub_include/data_container.h">
+			<Option glob="299603298" />
+		</Unit>
+		<Unit filename="include/sub_include/print_val.h">
+			<Option glob="299603298" />
+		</Unit>
+		<Unit filename="include/sub_include/tag_manager.h">
+			<Option glob="299603298" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="scripts/config_value.c">
+			<Option compilerVar="CC" />
+			<Option glob="530276766" />
+		</Unit>
+		<Unit filename="scripts/main.c">
+			<Option compilerVar="CC" />
+			<Option glob="530276766" />
+		</Unit>
+		<Unit filename="scripts/main_func.c">
+			<Option compilerVar="CC" />
+			<Option glob="530276766" />
+		</Unit>
+		<Unit filename="scripts/sub_scripts/data_container.c">
+			<Option compilerVar="CC" />
+			<Option glob="530276766" />
+		</Unit>
+		<Unit filename="scripts/sub_scripts/print_val.c">
+			<Option compilerVar="CC" />
+			<Option glob="530276766" />
+		</Unit>
+		<Unit filename="scripts/sub_scripts/tag_manager.c">
+			<Option compilerVar="CC" />
+			<Option glob="530276766" />
+		</Unit>
+		<Unit filename="version.h" />
+		<Extensions>
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" use_define="0" update_manifest="0" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<wxsmith version="1">
+				<resources>
+					<wxDialog wxs="wxsmith/NewDialog.wxs" src="NewDialog.cpp" hdr="NewDialog.h" fwddecl="0" i18n="1" name="NewDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

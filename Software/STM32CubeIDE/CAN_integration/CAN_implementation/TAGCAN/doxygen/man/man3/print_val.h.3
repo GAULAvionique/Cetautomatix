@@ -1,0 +1,88 @@
+.TH "print_val.h" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+print_val.h
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <stdio\&.h>\fP
+.br
+\fR#include <stdint\&.h>\fP
+.br
+
+.SS "Structures de données"
+
+.in +1c
+.ti -1c
+.RI "struct \fBtsfp\fP"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBprint_bin_8\fP (uint8_t val)"
+.br
+.RI "imprime dans le terminal la représentation 8 bits (binaire) de la valeur passé en argument "
+.ti -1c
+.RI "void \fBprint_all_data_bin\fP (void)"
+.br
+.ti -1c
+.RI "void \fBprint_all_with_title\fP (const char *title)"
+.br
+.ti -1c
+.RI "void \fBprint_all_tag_set\fP (void)"
+.br
+.ti -1c
+.RI "void \fBprint_all_data\fP (void)"
+.br
+.ti -1c
+.RI "void \fBprint_repartition_bit\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBtsfp\fP \fBgbc2\fP [9]"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "void print_all_data (void )"
+
+.SS "void print_all_data_bin (void )"
+prints the binary representation of each byte in the \fR\fBTxData\fP\fP array\&. 
+.SS "void print_all_tag_set (void )"
+
+.SS "void print_all_with_title (const char * title)"
+
+.SS "void print_bin_8 (uint8_t val)"
+
+.PP
+imprime dans le terminal la représentation 8 bits (binaire) de la valeur passé en argument 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIval\fP la valeurs à voire au format mentionner précédament\&.
+.RE
+.PP
+@bref prints the binary representation of an 8-bit unsigned integer\&.
+
+.PP
+\fBParamètres\fP
+.RS 4
+\fIval\fP The \fRval\fP [from 0 to 255]\&. The function prints the binary representation of this value by iterating over each bit\&. 
+.RE
+.PP
+
+.SS "void print_repartition_bit (void )"
+
+.SH "Documentation des variables"
+.PP 
+.SS "\fBtsfp\fP gbc2[9]\fR [extern]\fP"
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.

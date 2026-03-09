@@ -1,0 +1,19 @@
+<map id="set_tag" name="set_tag">
+<area shape="rect" id="Node000001" title="crée un nouveau tag." alt="" coords="5,159,71,185"/>
+<area shape="rect" id="Node000002" href="$tag__manager_8c.html#ad5772dac2622697b5f563da0dbfaede3" title="même chose que la fonction précédente, mais en ignorant le bit déjà pris pour la première partie." alt="" coords="119,5,279,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="43,158,70,109,92,80,117,55,124,50,127,55,120,59,96,84,75,112,47,160"/>
+<area shape="rect" id="Node000003" href="$tag__manager_8c.html#a5f1ce2cac9791e6b46be230dcce3f804" title="trouve le premier bytes qui contien suffissament d&#39;espace libre pour contenir la taille demander." alt="" coords="122,69,275,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,157,117,126,142,113,145,118,120,130,63,162"/>
+<area shape="rect" id="Node000004" href="$tag__manager_8c.html#ac5f7362c0af4f03bd98573151458442d" title=" " alt="" coords="334,159,449,185"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="71,169,320,169,320,175,71,175"/>
+<area shape="rect" id="Node000006" href="$tag__manager_8c.html#a7b7413adbae2eabbe7fcd13e9f91f151" title=" " alt="" coords="327,234,456,259"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="47,184,74,228,94,252,120,270,148,280,178,286,239,286,297,276,346,261,347,267,299,281,240,291,177,291,147,285,117,274,91,256,69,232,43,186"/>
+<area shape="rect" id="Node000007" href="$tag__manager_8c.html#a5737e741608851f8e3822cf07261da44" title="recherche le tag et retourne la référence de la structure du tags corespondent au nom." alt="" coords="154,234,243,259"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="58,182,120,219,142,228,140,233,117,224,56,187"/>
+<area shape="rect" id="Node000008" href="$tag__manager_8c.html#a30325d29d4baf058d75e6f3c269341af" title=" " alt="" coords="125,185,273,210"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="71,174,112,181,111,186,71,180"/>
+<area shape="rect" id="Node000005" href="$tag__manager_8c.html#a9963af2c23a14e289a3ff39769ea4eeb" title="[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d&#39;un nom et le place dans le tag #..." alt="" coords="504,159,608,185"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="449,169,491,169,491,175,449,175"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="273,185,320,179,321,184,273,190"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="250,207,328,228,327,233,248,213"/>
+</map>

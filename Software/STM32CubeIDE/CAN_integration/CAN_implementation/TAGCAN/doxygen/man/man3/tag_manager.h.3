@@ -1,0 +1,78 @@
+.TH "tag_manager.h" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tag_manager.h
+.SH SYNOPSIS
+.br
+.PP
+\fR#include '\&.\&./config_value\&.h'\fP
+.br
+\fR#include <stdint\&.h>\fP
+.br
+\fR#include <stdbool\&.h>\fP
+.br
+
+.SS "Structures de données"
+
+.in +1c
+.ti -1c
+.RI "struct \fBTagDef\fP"
+.br
+.RI "structure représentent un tag\&. "
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "const \fBTagDef\fP * \fBget_tag_def\fP (const char *tag_name)"
+.br
+.RI "recherche le tag et retourne la référence de la structure du tags corespondent au nom\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBTagDef\fP \fBg_tags\fP [\fBMAX_TAGS\fP]"
+.br
+.ti -1c
+.RI "uint8_t \fBg_tag_count\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBg_bytes_used\fP [\fBN_BYTES\fP]"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "const \fBTagDef\fP * get_tag_def (const char * tag_name)"
+
+.PP
+recherche le tag et retourne la référence de la structure du tags corespondent au nom\&. 
+.PP
+\fBAvertissement\fP
+.RS 4
+pas suposé être utilisé à l'externe\&. 
+.RE
+.PP
+\fBParamètres\fP
+.RS 4
+\fItag_name\fP le nom du tag à chercher\&. 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+la référence de la structure du tags\&. 
+.RE
+.PP
+
+.SH "Documentation des variables"
+.PP 
+.SS "uint8_t g_bytes_used[\fBN_BYTES\fP]\fR [extern]\fP"
+Allocation des bits dans chaque byte (0 à 7)\&. (il représente le nombre de bits actuellement assigner à une valeurs dans chacun des bytes) 
+.SS "uint8_t g_tag_count\fR [extern]\fP"
+le nombre de tags actuel (à chaque création réussi d'un nouveau, celui-ci augmente de 1) max: MAX_TAGS 
+.SS "\fBTagDef\fP g_tags[\fBMAX_TAGS\fP]\fR [extern]\fP"
+Gestionnaire global de tags\&. contient l'ensemble des tags (actif et inactif) du gestionnaire de tag 
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.

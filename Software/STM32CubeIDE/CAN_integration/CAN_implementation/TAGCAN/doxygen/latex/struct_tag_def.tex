@@ -1,0 +1,75 @@
+\doxysection{Référence de la structure Tag\+Def}
+\hypertarget{struct_tag_def}{}\label{struct_tag_def}\index{TagDef@{TagDef}}
+
+
+structure représentent un tag.  
+
+
+
+
+{\ttfamily \+\#include $<$tag\+\_\+manager.\+h$>$}
+
+\doxysubsubsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+char \doxymbox{\hyperlink{struct_tag_def_a5365d3ceaa5fb559687e0d26268ca709}{name}} \+[\doxymbox{\hyperlink{config__value_8h_ada71b9f258860d58a86ab220bfce6bf4}{MAX\+\_\+\+TAG\+\_\+\+NAME\+\_\+\+LEN}}]\+
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{struct_tag_def_a894ffee63faf79f0877a12c871a18b3a}{n\+\_\+bits}}
+\item 
+int8\+\_\+t \doxymbox{\hyperlink{struct_tag_def_a985f815d0edbf8a411fbf325a30baec8}{byte\+\_\+idx\+\_\+a}}
+\item 
+int8\+\_\+t \doxymbox{\hyperlink{struct_tag_def_a1368f5414ba506dc1626d65a1083dc92}{byte\+\_\+idx\+\_\+b}}
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{struct_tag_def_ab2ab707c2832eb3cd8776c3134b29b1d}{bit\+\_\+pos\+\_\+a}}
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{struct_tag_def_a315b71fd9f91bd21c82164e006859ede}{bit\+\_\+pos\+\_\+b}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+structure représentent un tag. 
+
+\label{doc-variable-members}
+\Hypertarget{struct_tag_def_doc-variable-members}
+\doxysubsection{Documentation des champs}
+\Hypertarget{struct_tag_def_ab2ab707c2832eb3cd8776c3134b29b1d}\index{TagDef@{TagDef}!bit\_pos\_a@{bit\_pos\_a}}
+\index{bit\_pos\_a@{bit\_pos\_a}!TagDef@{TagDef}}
+\doxysubsubsection{\texorpdfstring{bit\_pos\_a}{bit\_pos\_a}}
+{\footnotesize\ttfamily \label{struct_tag_def_ab2ab707c2832eb3cd8776c3134b29b1d} 
+uint8\+\_\+t bit\+\_\+pos\+\_\+a}
+
+Position du premier bit (de gauche à droite). exemple x0000000 serras 0 et 0x000000 seras 1 \Hypertarget{struct_tag_def_a315b71fd9f91bd21c82164e006859ede}\index{TagDef@{TagDef}!bit\_pos\_b@{bit\_pos\_b}}
+\index{bit\_pos\_b@{bit\_pos\_b}!TagDef@{TagDef}}
+\doxysubsubsection{\texorpdfstring{bit\_pos\_b}{bit\_pos\_b}}
+{\footnotesize\ttfamily \label{struct_tag_def_a315b71fd9f91bd21c82164e006859ede} 
+uint8\+\_\+t bit\+\_\+pos\+\_\+b}
+
+Position du premier bit (de la deuxième partie en cas d\textquotesingle{}une valeurs entre 9 et 16 bits. 0 sinon) (de gauche à droite). exemple x0000000 serras 0 et 0x000000 seras 1 \Hypertarget{struct_tag_def_a985f815d0edbf8a411fbf325a30baec8}\index{TagDef@{TagDef}!byte\_idx\_a@{byte\_idx\_a}}
+\index{byte\_idx\_a@{byte\_idx\_a}!TagDef@{TagDef}}
+\doxysubsubsection{\texorpdfstring{byte\_idx\_a}{byte\_idx\_a}}
+{\footnotesize\ttfamily \label{struct_tag_def_a985f815d0edbf8a411fbf325a30baec8} 
+int8\+\_\+t byte\+\_\+idx\+\_\+a}
+
+Index du byte (0 à 7), -\/1 si non utilisé \Hypertarget{struct_tag_def_a1368f5414ba506dc1626d65a1083dc92}\index{TagDef@{TagDef}!byte\_idx\_b@{byte\_idx\_b}}
+\index{byte\_idx\_b@{byte\_idx\_b}!TagDef@{TagDef}}
+\doxysubsubsection{\texorpdfstring{byte\_idx\_b}{byte\_idx\_b}}
+{\footnotesize\ttfamily \label{struct_tag_def_a1368f5414ba506dc1626d65a1083dc92} 
+int8\+\_\+t byte\+\_\+idx\+\_\+b}
+
+Deuxième index pour les variables 16 bits, sinon -\/1 \Hypertarget{struct_tag_def_a894ffee63faf79f0877a12c871a18b3a}\index{TagDef@{TagDef}!n\_bits@{n\_bits}}
+\index{n\_bits@{n\_bits}!TagDef@{TagDef}}
+\doxysubsubsection{\texorpdfstring{n\_bits}{n\_bits}}
+{\footnotesize\ttfamily \label{struct_tag_def_a894ffee63faf79f0877a12c871a18b3a} 
+uint8\+\_\+t n\+\_\+bits}
+
+Taille de la valeur (peux être 1, 3, 4, 8, ou 16. si 0, le tag n\textquotesingle{}ais juste pas encore utilisé) \Hypertarget{struct_tag_def_a5365d3ceaa5fb559687e0d26268ca709}\index{TagDef@{TagDef}!name@{name}}
+\index{name@{name}!TagDef@{TagDef}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{struct_tag_def_a5365d3ceaa5fb559687e0d26268ca709} 
+char name\+[\doxymbox{\hyperlink{config__value_8h_ada71b9f258860d58a86ab220bfce6bf4}{MAX\+\_\+\+TAG\+\_\+\+NAME\+\_\+\+LEN}}]\+}
+
+Nom du tag (il dois être unique et être d\textquotesingle{}une longueur inférieur à la longueur maximal spécifier par MAX\+\_\+\+TAG\+\_\+\+NAME\+\_\+\+LEN) 
+
+La documentation de cette structure a été générée à partir du fichier suivant :\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{tag__manager_8h}{tag\+\_\+manager.\+h}}\end{DoxyCompactItemize}

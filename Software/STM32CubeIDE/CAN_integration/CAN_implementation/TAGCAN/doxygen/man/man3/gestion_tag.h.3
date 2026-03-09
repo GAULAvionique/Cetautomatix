@@ -1,0 +1,54 @@
+.TH "gestion_tag.h" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gestion_tag.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_tag_manager\fP (void)"
+.br
+.RI "Initialise/réinitialise le gestionnaire de tags\&. "
+.ti -1c
+.RI "int \fBset_tag\fP (const char *tag_name, uint8_t n_bit)"
+.br
+.RI "crée un nouveau tag\&. "
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "void init_tag_manager (void )"
+
+.PP
+Initialise/réinitialise le gestionnaire de tags\&. 
+.PP
+\fBNote\fP
+.RS 4
+après sont appel, l'ensemble des tags doivent être redéfinie avec l'aide de \fR\fBset_tag\fP\fP 
+.RE
+.PP
+
+.SS "int set_tag (const char * tag_name, uint8_t n_bit)"
+
+.PP
+crée un nouveau tag\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fItag_name\fP le nom (id) qui serras relier à la valeurs 
+.br
+\fIn_bit\fP la taille de la valeur\&. ne peux être que 1, 3, 4, 8 ou 16\&. Sinon, une erreur est générer\&. 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+un code décrivant le succès de l'opération ou (dans le cas d'une valeurs négatif) le code d'erreur correspondent\&. 
+.RE
+.PP
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.

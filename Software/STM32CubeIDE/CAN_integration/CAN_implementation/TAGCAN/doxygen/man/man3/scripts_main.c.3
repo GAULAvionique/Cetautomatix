@@ -1,0 +1,107 @@
+.TH "main.c" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.c
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <stdio\&.h>\fP
+.br
+\fR#include <assert\&.h>\fP
+.br
+\fR#include <stdbool\&.h>\fP
+.br
+\fR#include '\&.\&./include/config_value\&.h'\fP
+.br
+\fR#include '\&.\&./include/sub_include/data_container\&.h'\fP
+.br
+\fR#include '\&.\&./include/gestion_tag\&.h'\fP
+.br
+\fR#include '\&.\&./include/sub_include/print_val\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTEST\fP (const char *name, const bool condition)"
+.br
+.RI "permet l'impression des testes de manière identique pour chacun\&. "
+.ti -1c
+.RI "void \fBTEST_EQ_INT\fP (const char *name, const int val_1, const int val_2)"
+.br
+.RI "permet l'impression des testes d'égalité entre 2 int de manière plus stendardisé\&. "
+.ti -1c
+.RI "void \fBtest_print\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsomme_other_test\fP (void)"
+.br
+.ti -1c
+.RI "void \fBrun_all_tests\fP (void)"
+.br
+.RI "effectue les divers tests affin de vérifier que tout fonctionne bien\&. les résultat sont présenté dans le terminal\&. "
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBpassed_tests\fP = 0"
+.br
+.ti -1c
+.RI "int \fBtotal_tests\fP = 0"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "int main (void )"
+
+.SS "void run_all_tests (void )"
+
+.PP
+effectue les divers tests affin de vérifier que tout fonctionne bien\&. les résultat sont présenté dans le terminal\&. 
+.SS "void somme_other_test (void )"
+
+.SS "void TEST (const char * name, const bool condition)"
+
+.PP
+permet l'impression des testes de manière identique pour chacun\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIname\fP le nom du test (peux aussi être sa description court\&.) 
+.br
+\fIcondition:Le\fP resultat du test (vrai si réussi, faux sinon) 
+.RE
+.PP
+
+.SS "void TEST_EQ_INT (const char * name, const int val_1, const int val_2)"
+
+.PP
+permet l'impression des testes d'égalité entre 2 int de manière plus stendardisé\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIname\fP même chose que TEST 
+.br
+\fIval_1\fP la première valeurs à comparer\&. 
+.br
+\fIval_2\fP la deuxième valeurs à comparer\&. 
+.RE
+.PP
+
+.SS "void test_print (void )"
+
+.SH "Documentation des variables"
+.PP 
+.SS "int passed_tests = 0"
+le nombre total de test réussi 
+.SS "int total_tests = 0"
+le nombre total de test effectué 
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.

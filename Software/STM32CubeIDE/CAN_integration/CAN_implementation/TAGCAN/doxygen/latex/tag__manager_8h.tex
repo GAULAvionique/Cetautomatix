@@ -1,0 +1,96 @@
+\doxysection{Référence du fichier tag\+\_\+manager.\+h}
+\hypertarget{tag__manager_8h}{}\label{tag__manager_8h}\index{tag\_manager.h@{tag\_manager.h}}
+{\ttfamily \+\#include "{}../\+config\+\_\+value.\+h"{}}\newline
+{\ttfamily \+\#include $<$stdint.\+h$>$}\newline
+{\ttfamily \+\#include $<$stdbool.\+h$>$}\newline
+Graphe des dépendances par inclusion de tag\+\_\+manager.\+h:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{tag__manager_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tag__manager_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_tag_def}{Tag\+Def}}
+\begin{DoxyCompactList}\small\item\em structure représentent un tag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+const \doxymbox{\hyperlink{struct_tag_def}{Tag\+Def}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{tag__manager_8h_a5737e741608851f8e3822cf07261da44}{get\+\_\+tag\+\_\+def}} (const char \texorpdfstring{$\ast$}{*}tag\+\_\+name)
+\begin{DoxyCompactList}\small\item\em recherche le tag et retourne la référence de la structure du tags corespondent au nom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{struct_tag_def}{Tag\+Def}} \doxymbox{\hyperlink{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}{g\+\_\+tags}} \+[\doxymbox{\hyperlink{config__value_8h_aa653c0eca99802a09fd9560f28a9b1c1}{MAX\+\_\+\+TAGS}}]\+
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{tag__manager_8h_ab7cad863197c93abe397155a1946c0d0}{g\+\_\+tag\+\_\+count}}
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}{g\+\_\+bytes\+\_\+used}} \+[\doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\+\_\+\+BYTES}}]\+
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{tag__manager_8h_doc-func-members}
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{tag__manager_8h_a5737e741608851f8e3822cf07261da44}\index{tag\_manager.h@{tag\_manager.h}!get\_tag\_def@{get\_tag\_def}}
+\index{get\_tag\_def@{get\_tag\_def}!tag\_manager.h@{tag\_manager.h}}
+\doxysubsubsection{\texorpdfstring{get\_tag\_def()}{get\_tag\_def()}}
+{\footnotesize\ttfamily \label{tag__manager_8h_a5737e741608851f8e3822cf07261da44} 
+const \doxymbox{\hyperlink{struct_tag_def}{Tag\+Def}} \texorpdfstring{$\ast$}{*} get\+\_\+tag\+\_\+def (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{tag\+\_\+name}{}\end{DoxyParamCaption})}
+
+
+
+recherche le tag et retourne la référence de la structure du tags corespondent au nom. 
+
+\begin{DoxyWarning}{Avertissement}
+pas suposé être utilisé à l\textquotesingle{}externe. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Paramètres}
+{\em tag\+\_\+name} & le nom du tag à chercher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+la référence de la structure du tags. 
+\end{DoxyReturn}
+Voici le graphe des appelants de cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tag__manager_8h_a5737e741608851f8e3822cf07261da44_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-var-members}
+\Hypertarget{tag__manager_8h_doc-var-members}
+\doxysubsection{Documentation des variables}
+\Hypertarget{tag__manager_8h_af12845c0234390db7498ec51e94f7d58}\index{tag\_manager.h@{tag\_manager.h}!g\_bytes\_used@{g\_bytes\_used}}
+\index{g\_bytes\_used@{g\_bytes\_used}!tag\_manager.h@{tag\_manager.h}}
+\doxysubsubsection{\texorpdfstring{g\_bytes\_used}{g\_bytes\_used}}
+{\footnotesize\ttfamily \label{tag__manager_8h_af12845c0234390db7498ec51e94f7d58} 
+uint8\+\_\+t g\+\_\+bytes\+\_\+used\+[\doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\+\_\+\+BYTES}}]\+\hspace{0.3cm}{\ttfamily [extern]}}
+
+Allocation des bits dans chaque byte (0 à 7). (il représente le nombre de bits actuellement assigner à une valeurs dans chacun des bytes) \Hypertarget{tag__manager_8h_ab7cad863197c93abe397155a1946c0d0}\index{tag\_manager.h@{tag\_manager.h}!g\_tag\_count@{g\_tag\_count}}
+\index{g\_tag\_count@{g\_tag\_count}!tag\_manager.h@{tag\_manager.h}}
+\doxysubsubsection{\texorpdfstring{g\_tag\_count}{g\_tag\_count}}
+{\footnotesize\ttfamily \label{tag__manager_8h_ab7cad863197c93abe397155a1946c0d0} 
+uint8\+\_\+t g\+\_\+tag\+\_\+count\hspace{0.3cm}{\ttfamily [extern]}}
+
+le nombre de tags actuel (à chaque création réussi d\textquotesingle{}un nouveau, celui-\/ci augmente de 1) max:\+ MAX\+\_\+\+TAGS \Hypertarget{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864}\index{tag\_manager.h@{tag\_manager.h}!g\_tags@{g\_tags}}
+\index{g\_tags@{g\_tags}!tag\_manager.h@{tag\_manager.h}}
+\doxysubsubsection{\texorpdfstring{g\_tags}{g\_tags}}
+{\footnotesize\ttfamily \label{tag__manager_8h_ace5be789d004e0752b6b2dec9d845864} 
+\doxymbox{\hyperlink{struct_tag_def}{Tag\+Def}} g\+\_\+tags\+[\doxymbox{\hyperlink{config__value_8h_aa653c0eca99802a09fd9560f28a9b1c1}{MAX\+\_\+\+TAGS}}]\+\hspace{0.3cm}{\ttfamily [extern]}}
+
+Gestionnaire global de tags. contient l\textquotesingle{}ensemble des tags (actif et inactif) du gestionnaire de tag 

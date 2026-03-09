@@ -1,0 +1,193 @@
+.TH "tag_manager.c" 3 "TAGCAN" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tag_manager.c
+.SH SYNOPSIS
+.br
+.PP
+\fR#include '\&.\&./\&.\&./include/sub_include/tag_manager\&.h'\fP
+.br
+\fR#include '\&.\&./\&.\&./include/config_value\&.h'\fP
+.br
+\fR#include '\&.\&./\&.\&./include/gestion_tag\&.h'\fP
+.br
+\fR#include '\&.\&./\&.\&./include/sub_include/print_val\&.h'\fP
+.br
+\fR#include <stdio\&.h>\fP
+.br
+\fR#include <string\&.h>\fP
+.br
+\fR#include <stdint\&.h>\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_tag_manager\fP (void)"
+.br
+.RI "Initialise/réinitialise le gestionnaire de tags\&. "
+.ti -1c
+.RI "int \fBget_first_tags_vide\fP (void)"
+.br
+.ti -1c
+.RI "void \fBset_name_tag\fP (const int n_tag, const char *tag_name)"
+.br
+.RI "[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d'un nom et le place dans le tag # n_tag\&. "
+.ti -1c
+.RI "void \fBgeneral_set_tag\fP (const int n_tag, const char *tag_name, uint8_t n_bits, int8_t byte_idx_a)"
+.br
+.ti -1c
+.RI "void \fBset_new_tag_9_to_16\fP (const char *tag_name, const int8_t byte_idx_a, const int8_t byte_idx_b, uint8_t n_bits_total)"
+.br
+.ti -1c
+.RI "\fBCAN_TG_STATUE\fP \fBfind_byte_with_enoung_space\fP (uint8_t siz, int8_t *retur_var)"
+.br
+.RI "trouve le premier bytes qui contien suffissament d'espace libre pour contenir la taille demander\&. "
+.ti -1c
+.RI "\fBCAN_TG_STATUE\fP \fBfind_byte2_with_enoung_space\fP (uint8_t siz_total, int8_t posi_premier_bit, int8_t *retur_var)"
+.br
+.RI "même chose que la fonction précédente, mais en ignorant le bit déjà pris pour la première partie\&. "
+.ti -1c
+.RI "\fBCAN_TG_STATUE\fP \fBset_tag\fP (const char *tag_name, uint8_t siz)"
+.br
+.RI "crée un nouveau tag\&. "
+.ti -1c
+.RI "const \fBTagDef\fP * \fBget_tag_def\fP (const char *tag_name)"
+.br
+.RI "recherche le tag et retourne la référence de la structure du tags corespondent au nom\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBTagDef\fP \fBg_tags\fP [\fBMAX_TAGS\fP]"
+.br
+.ti -1c
+.RI "uint8_t \fBg_tag_count\fP = 0"
+.br
+.ti -1c
+.RI "uint8_t \fBg_bytes_used\fP [\fBN_BYTES\fP] = {0}"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "\fBCAN_TG_STATUE\fP find_byte2_with_enoung_space (uint8_t siz_total, int8_t posi_premier_bit, int8_t * retur_var)"
+
+.PP
+même chose que la fonction précédente, mais en ignorant le bit déjà pris pour la première partie\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fI\fP 
+.RE
+.PP
+param 
+.PP
+\fBRenvoie\fP
+.RS 4
+
+.RE
+.PP
+
+.SS "\fBCAN_TG_STATUE\fP find_byte_with_enoung_space (uint8_t siz, int8_t * retur_var)"
+
+.PP
+trouve le premier bytes qui contien suffissament d'espace libre pour contenir la taille demander\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIsiz\fP la taille de la valeurs\&. 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+.RE
+.PP
+
+.SS "void general_set_tag (const int n_tag, const char * tag_name, uint8_t n_bits, int8_t byte_idx_a)"
+
+.SS "int get_first_tags_vide (void )"
+
+.SS "const \fBTagDef\fP * get_tag_def (const char * tag_name)"
+
+.PP
+recherche le tag et retourne la référence de la structure du tags corespondent au nom\&. 
+.PP
+\fBAvertissement\fP
+.RS 4
+pas suposé être utilisé à l'externe\&. 
+.RE
+.PP
+\fBParamètres\fP
+.RS 4
+\fItag_name\fP le nom du tag à chercher\&. 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+la référence de la structure du tags\&. 
+.RE
+.PP
+
+.SS "void init_tag_manager (void )"
+
+.PP
+Initialise/réinitialise le gestionnaire de tags\&. 
+.PP
+\fBNote\fP
+.RS 4
+après sont appel, l'ensemble des tags doivent être redéfinie avec l'aide de \fR\fBset_tag\fP\fP 
+.RE
+.PP
+
+.SS "void set_name_tag (const int n_tag, const char * tag_name)"
+
+.PP
+[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d'un nom et le place dans le tag # n_tag\&. 
+.PP
+\fBAvertissement\fP
+.RS 4
+comme c'est une fonction interne, les donnée entrer sont suposé être sanétiser avant de passer dans cette dernière\&. 
+.RE
+.PP
+\fBParamètres\fP
+.RS 4
+\fIn_tag\fP une valeur entre 0 et MAX_TAGS désignant l'id numérique du tags\&. 
+.br
+\fItag_name\fP le nom du tags qui serras utilisé pour référer à la valeur\&. 
+.RE
+.PP
+
+.SS "void set_new_tag_9_to_16 (const char * tag_name, const int8_t byte_idx_a, const int8_t byte_idx_b, uint8_t n_bits_total)"
+
+.SS "\fBCAN_TG_STATUE\fP set_tag (const char * tag_name, uint8_t n_bit)"
+
+.PP
+crée un nouveau tag\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fItag_name\fP le nom (id) qui serras relier à la valeurs 
+.br
+\fIn_bit\fP la taille de la valeur\&. ne peux être que 1, 3, 4, 8 ou 16\&. Sinon, une erreur est générer\&. 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+un code décrivant le succès de l'opération ou (dans le cas d'une valeurs négatif) le code d'erreur correspondent\&. 
+.RE
+.PP
+
+.SH "Documentation des variables"
+.PP 
+.SS "uint8_t g_bytes_used[\fBN_BYTES\fP] = {0}"
+Allocation des bits dans chaque byte (0 à 7)\&. (il représente le nombre de bits actuellement assigner à une valeurs dans chacun des bytes) 
+.SS "uint8_t g_tag_count = 0"
+le nombre de tags actuel (à chaque création réussi d'un nouveau, celui-ci augmente de 1) max: MAX_TAGS 
+.SS "\fBTagDef\fP g_tags[\fBMAX_TAGS\fP]"
+Gestionnaire global de tags\&. contient l'ensemble des tags (actif et inactif) du gestionnaire de tag 
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour TAGCAN à partir du code source\&.

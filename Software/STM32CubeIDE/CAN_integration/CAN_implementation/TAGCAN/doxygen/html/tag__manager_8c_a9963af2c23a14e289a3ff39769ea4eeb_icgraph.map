@@ -1,0 +1,17 @@
+<map id="set_name_tag" name="set_name_tag">
+<area shape="rect" id="Node000001" title="[FONCTION INTERNE] Fais les manipulation nécécaire à la définition d&#39;un nom et le place dans le tag #..." alt="" coords="720,31,824,56"/>
+<area shape="rect" id="Node000002" href="$tag__manager_8c.html#ac5f7362c0af4f03bd98573151458442d" title=" " alt="" coords="557,31,672,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="706,46,672,46,672,41,706,41"/>
+<area shape="rect" id="Node000003" href="$tag__manager_8c.html#a30325d29d4baf058d75e6f3c269341af" title=" " alt="" coords="361,5,509,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="543,36,510,31,510,26,544,31"/>
+<area shape="rect" id="Node000004" href="$tag__manager_8c.html#a7dd7e8cfc97d378d44e7c63bd9f49931" title="crée un nouveau tag." alt="" coords="248,31,313,56"/>
+<area shape="poly" id="edge8_Node000002_Node000004" title=" " alt="" coords="543,46,313,46,313,41,543,41"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="348,35,314,41,313,35,347,30"/>
+<area shape="rect" id="Node000005" href="$scripts_2main_8c.html#ae9bbb2f5bb69f73e92c761f83223285a" title="effectue les divers tests affin de vérifier que tout fonctionne bien. les résultat sont présenté dans..." alt="" coords="104,5,200,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="234,37,200,30,201,25,235,32"/>
+<area shape="rect" id="Node000007" href="$scripts_2main_8c.html#a9c4bb6f6d00e76eae45e966a4c628178" title=" " alt="" coords="114,55,190,80"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="235,55,191,63,190,58,234,49"/>
+<area shape="rect" id="Node000006" href="$scripts_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,56,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="91,33,57,41,56,36,90,28"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="100,60,56,51,57,46,101,55"/>
+</map>

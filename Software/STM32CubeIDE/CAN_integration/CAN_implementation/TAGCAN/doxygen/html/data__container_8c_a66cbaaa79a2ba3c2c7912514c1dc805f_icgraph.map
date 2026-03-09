@@ -1,0 +1,12 @@
+<map id="get_value" name="get_value">
+<area shape="rect" id="Node000001" title="obtien la valeur désigner par le tag." alt="" coords="395,31,471,56"/>
+<area shape="rect" id="Node000002" href="$print__val_8c.html#a6904e40665dc664fc6611bfe2d913773" title=" " alt="" coords="248,5,347,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="381,36,346,30,347,25,382,31"/>
+<area shape="rect" id="Node000005" href="$scripts_2main_8c.html#ae9bbb2f5bb69f73e92c761f83223285a" title="effectue les divers tests affin de vérifier que tout fonctionne bien. les résultat sont présenté dans..." alt="" coords="104,56,200,81"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="381,51,200,67,200,62,380,45"/>
+<area shape="rect" id="Node000003" href="$scripts_2main_8c.html#a9c4bb6f6d00e76eae45e966a4c628178" title=" " alt="" coords="114,7,190,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="234,21,190,22,190,16,234,16"/>
+<area shape="rect" id="Node000004" href="$scripts_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,32,56,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="101,33,57,42,56,37,100,27"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="90,59,56,52,57,47,91,54"/>
+</map>

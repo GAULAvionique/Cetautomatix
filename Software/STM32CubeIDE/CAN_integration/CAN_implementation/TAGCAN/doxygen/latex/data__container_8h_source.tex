@@ -1,0 +1,34 @@
+\doxysection{data\+\_\+container.\+h}
+\hypertarget{data__container_8h_source}{}\label{data__container_8h_source}\index{data\_container.h@{data\_container.h}}
+\doxymbox{\hyperlink{data__container_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DATA\_CONTAINER\_H}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{tag__manager_8h}{tag\_manager.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ DATA\_CONTAINER\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Représente\ le\ buffer\ de\ données\ (le\ payload\ CAN\ de\ 8\ octets)}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{extern}\ uint8\_t\ \doxymbox{\hyperlink{data__container_8c_a0b96d44a8da73070e470c7bf30523ca1}{TxData}}[\doxymbox{\hyperlink{config__value_8h_a470399f7b67e59b1cd04ab17e03c96d1}{N\_BYTES}}];\ \ \ \ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{data__container_8h_a129f017feb0712be1dcf7932e6035aa0}{init\_data\_container}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ Fonctions\ principales\ (getters\ /\ setters)}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{data__container_8h_aa84538f1ab0c319056787e9674157405}{set\_value}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tag\_name,\ uint32\_t\ value);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{data__container_8h_a66cbaaa79a2ba3c2c7912514c1dc805f}{get\_value}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tag\_name,\ uint32\_t*\ out\_value);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00048\ uint8\_t\ \doxymbox{\hyperlink{data__container_8h_a66768c162c3a8352b7d5397e90206085}{prep\_mask}}(uint8\_t\ p\_bit,\ uint8\_t\ n\_bit);}
+\DoxyCodeLine{00049\ \textcolor{comment}{//\ Simulation\ de\ transmission\ (remplace\ send/receve\ python)}}
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{data__container_8h_ae1649807202241b28239e8cb212a18b6}{can\_simulate\_send\_receive}}(uint8\_t*\ tx\_buffer,\ uint8\_t*\ rx\_buffer);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{comment}{//int\ CAN\_RECEVE}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DATA\_CONTAINER\_H}}
+
+\end{DoxyCode}
