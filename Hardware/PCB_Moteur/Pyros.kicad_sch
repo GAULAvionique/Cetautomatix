@@ -1320,7 +1320,7 @@
 			(symbol "SI5442DU-T1-GE3_1_0_1"
 				(polyline
 					(pts
-						(xy 0 7.62) (xy 15.24 7.62)
+						(xy 0 7.62) (xy 12.7 7.62)
 					)
 					(stroke
 						(width 0.127)
@@ -1769,26 +1769,6 @@
 						)
 					)
 					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "SI5442DU-T1-GE3_1_1_1"
-				(pin unspecified line
-					(at 15.24 10.16 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2105,7 +2085,7 @@
 			(symbol "SI5442DU-T1-GE3_0_1"
 				(polyline
 					(pts
-						(xy 0 7.62) (xy 15.24 7.62)
+						(xy 0 7.62) (xy 12.7 7.62)
 					)
 					(stroke
 						(width 0.127)
@@ -2554,26 +2534,6 @@
 						)
 					)
 					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "SI5442DU-T1-GE3_1_1"
-				(pin unspecified line
-					(at 15.24 10.16 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4065,12 +4025,6 @@
 		(uuid "4a443274-e74b-46e4-9d94-42151bff20e9")
 	)
 	(junction
-		(at 120.65 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4c427c67-03fe-46b9-aec4-03b5fedeff24")
-	)
-	(junction
 		(at 266.7 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4111,12 +4065,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "85b8b7d6-6ea0-45d2-9084-2427dcd8ce0c")
-	)
-	(junction
-		(at 52.07 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8cea29f3-fae2-4f0b-bff1-e65f9a9c4f85")
 	)
 	(junction
 		(at 128.27 114.3)
@@ -4315,16 +4263,6 @@
 			(type default)
 		)
 		(uuid "095817cc-af0a-4121-a731-6678685c5760")
-	)
-	(wire
-		(pts
-			(xy 120.65 105.41) (xy 123.19 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09657a94-d115-4851-b967-1712a30740a1")
 	)
 	(wire
 		(pts
@@ -4715,16 +4653,6 @@
 			(type default)
 		)
 		(uuid "4f45eb5d-b1a7-4907-95ce-eecfbe77a5fd")
-	)
-	(wire
-		(pts
-			(xy 52.07 105.41) (xy 54.61 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fd24a38-c751-4bba-a2d2-b3dc4c733ab8")
 	)
 	(wire
 		(pts
@@ -7610,9 +7538,6 @@
 		(pin "2"
 			(uuid "7a345051-645d-4b36-9289-04c5e3f2385c")
 		)
-		(pin "10"
-			(uuid "8a07cdcb-08d6-43c4-8a27-fb237b61f00c")
-		)
 		(instances
 			(project "PCB_moteur"
 				(path "/b0d87684-7b1c-41d8-8358-755aa327573e/1c3f73a9-ace7-4654-9081-04f4c5cd0c08"
@@ -8760,9 +8685,6 @@
 		)
 		(pin "6"
 			(uuid "fb71c926-0ee3-4354-97a6-cc54ef0beea7")
-		)
-		(pin "10"
-			(uuid "e66e2cf6-f303-48c6-90cb-3a0d410b37c3")
 		)
 		(instances
 			(project "PCB_moteur"
