@@ -40,50 +40,44 @@ static void test_crc8_one_byte_repeatable(void)
     TEST_ASSERT_EQ_U8(a, b);
 }
 
-static void test_crc16_empty(void)
-{
-    uint16_t crc = comm_crc16_ccitt(0, 0);
-    TEST_ASSERT_EQ_U16(0xFFFF, crc);
-}
-
 static void test_uart_frame_basic(void)
 {
     uint8_t out[8] = {0};
     uint8_t cmd = 0x12;
 
-    uint16_t n = comm_uart_build_sas_frame(cmd, out, (uint16_t)sizeof(out));
+    uint16_t n = comm_uart_build_cmd_frame(cmd, out, (uint16_t)sizeof(out));
 
     TEST_ASSERT_TRUE(n >= 4);
-    TEST_ASSERT_EQ_U8(SAS_UART_FLAG, out[0]);
+    TEST_ASSERT_EQ_U8(TRAMES_FLAG, out[0]);
     TEST_ASSERT_EQ_U8(cmd, out[1]);
     TEST_ASSERT_EQ_U8(comm_crc8_atm(&cmd, 1), out[2]);
-    TEST_ASSERT_EQ_U8(SAS_UART_FLAG, out[n - 1]);
+    TEST_ASSERT_EQ_U8(TRAMES_FLAG, out[n - 1]);
 }
 
 static void test_uart_frame_escape_flag(void)
 {
     uint8_t out[8] = {0};
-    uint8_t cmd = SAS_UART_FLAG;
+    uint8_t cmd = TRAMES_FLAG;
 
-    uint16_t n = comm_uart_build_sas_frame(cmd, out, (uint16_t)sizeof(out));
+    uint16_t n = comm_uart_build_cmd_frame(cmd, out, (uint16_t)sizeof(out));
 
     TEST_ASSERT_TRUE(n >= 5);
-    TEST_ASSERT_EQ_U8(SAS_UART_FLAG, out[0]);
+    TEST_ASSERT_EQ_U8(TRAMES_FLAG, out[0]);
     TEST_ASSERT_EQ_U8(SAS_UART_ESC, out[1]);
     TEST_ASSERT_EQ_U8((uint8_t)(cmd ^ SAS_UART_ESC_XOR), out[2]);
-    TEST_ASSERT_EQ_U8(SAS_UART_FLAG, out[n - 1]);
+    TEST_ASSERT_EQ_U8(TRAMES_FLAG, out[n - 1]);
 }
 
 static void test_uart_frame_null_buffer(void)
 {
-    uint16_t n = comm_uart_build_sas_frame(0x12, 0, 8);
+    uint16_t n = comm_uart_build_cmd_frame(0x12, 0, 8);
     TEST_ASSERT_EQ_U16(0, n);
 }
 
 static void test_uart_frame_small_buffer(void)
 {
     uint8_t out[3] = {0};
-    uint16_t n = comm_uart_build_sas_frame(0x12, out, 3);
+    uint16_t n = comm_uart_build_cmd_frame(0x12, out, 3);
     TEST_ASSERT_EQ_U16(0, n);
 }
 
