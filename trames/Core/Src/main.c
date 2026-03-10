@@ -40,7 +40,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define TEST_TIMEOUT_MS 100
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -126,6 +126,9 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
+    bool g_hb = false;
+    run_end_to_end_test_once(&hcan1, &huart4, &g_hb, TEST_TIMEOUT_MS);
+    HAL_Delay(1500);
   }
 #endif
   /* USER CODE END 3 */

@@ -23,11 +23,27 @@ int comm_tx_can_send_moteur_cmd(CAN_HandleTypeDef* hcan, uint8_t cmd_byte);
 /* --------------------------------------------------------------------------
  * Envoi commande SAS -> GSE (UART vers modem RF)
  * -------------------------------------------------------------------------- */
-
-
-int comm_tx_rf_send_sas_cmd(UART_HandleTypeDef* huart,
+int comm_tx_rf_send_gse_cmd(UART_HandleTypeDef* huart,
                             uint32_t timeout,
                             uint8_t cmd_byte);
+
+/* --------------------------------------------------------------------------
+ * Commande compacte GSE -> MOTEUR
+ * -------------------------------------------------------------------------- */
+int comm_tx_can_send_moteur_cmd(CAN_HandleTypeDef* hcan, uint8_t cmd_byte);
+
+/* --------------------------------------------------------------------------
+ * Envoi STATUS MOTEUR -> GSE via CAN
+ * -------------------------------------------------------------------------- */
+int comm_status_tx_can_send_gse_cmd(CAN_HandleTypeDef* hcan,
+                                    const motor_status_t* st);
+
+/* --------------------------------------------------------------------------
+ * Envoi STATUS GSE -> SAS (UART via modem RF)
+ * -------------------------------------------------------------------------- */
+int comm_status_tx_rf_send_sas_cmd(UART_HandleTypeDef* huart,
+                                   uint32_t timeout,
+                                   const motor_status_t* st);
 
 int comm_hal_can_get_free_level(CAN_HandleTypeDef* hcan);
 

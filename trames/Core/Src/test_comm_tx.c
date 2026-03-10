@@ -77,7 +77,7 @@ static void test_can_send_cmd_ok(void)
     int ret = comm_tx_can_send_moteur_cmd(&hcan, 0xA5);
 
     TEST_ASSERT_EQ_U32(0, ret);
-    TEST_ASSERT_EQ_U32((CAN_ID_CMD_MOTEUR & 0x7FFu), captured_can_header.StdId);
+    TEST_ASSERT_EQ_U32((CAN_ID_CMD_MOTOR & 0x7FFu), captured_can_header.StdId);
     TEST_ASSERT_EQ_U32(1, captured_can_header.DLC);
     TEST_ASSERT_EQ_U8(0xA5, captured_can_data[0]);
 }
@@ -116,12 +116,12 @@ static void test_uart_send_cmd_ok(void)
     UART_HandleTypeDef huart;
     uint8_t cmd = 0x12;
 
-    int ret = comm_tx_rf_send_sas_cmd(&huart, 50, cmd);
+    int ret = comm_tx_rf_send_gse_cmd(&huart, 50, cmd);
 
     TEST_ASSERT_EQ_U32(0, ret);
     TEST_ASSERT_TRUE(captured_uart_len >= 4);
-    TEST_ASSERT_EQ_U8(SAS_UART_FLAG, captured_uart_data[0]);
-    TEST_ASSERT_EQ_U8(SAS_UART_FLAG, captured_uart_data[captured_uart_len - 1]);
+    TEST_ASSERT_EQ_U8(TRAMES_FLAG, captured_uart_data[0]);
+    TEST_ASSERT_EQ_U8(TRAMES_FLAG, captured_uart_data[captured_uart_len - 1]);
     TEST_ASSERT_EQ_U32(50, captured_uart_timeout);
 }
 
