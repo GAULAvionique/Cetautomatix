@@ -1,14 +1,45 @@
 #pragma once
 
-
-#include <stdint.h>
 #include "stm32f1xx_hal.h"
-#include "utils.h"
+#include <stdint.h>
+#include <stdbool.h>
+#include "GAUL_Drivers/frame_defs.h"
+#include "GAUL_Drivers/rfd900x.h"
 
 
-status_t COMM_Init(CAN_HandleTypeDef *dev, CAN_FilterTypeDef *filter);
+typedef struct {
+	CAN_HandleTypeDef		*hcan;
+	CAN_TxHeaderTypeDef		*header_tx;
+	uint32_t 				*mailbox_tx;
+	rfd900x_t				*rfd_dev;
+	bool					isVID;
+	uint8_t					seq;			// Exit sequence
+	uint8_t					last_sas_seq;	// Last sequence received by SAS
+	uint8_t					last_motor_seq;	// Last sequence received by MOTOR
+} comm_gse_t;
 
-status_t COMM_CAN_TXD(CAN_HandleTypeDef *dev, uint8_t *data, size_t len);
-status_t COMM_CAN_RXD(CAN_HandleTypeDef *dev, uint8_t *data, size_t len);
-//status_t COMM_RFD_TX(CAN_HandleTypeDef *dev, uint8_t *data, size_t len);
-//status_t COMM_RFD_RX(CAN_HandleTypeDef *dev, uint8_t *data, size_t len);
+
+/*----------------------------
+ Init COMM GSE
+----------------------------*/
+int8_t COMM_Init(comm_gse_t *dev);
+
+/*----------------------------
+ Receive GSE <- SAS
+----------------------------*/
+int8_t COMM_ReceiveGSEFromSAS(comm_gse_t *dev, cmd_t *cmd, uint32_t timeout);
+
+/*----------------------------
+ Transmit GSE -> MOTOR
+----------------------------*/
+int8_t COMM_TransmitGSEToMotor(comm_gse_t *dev, const cmd_t *cmd);
+
+/*----------------------------
+ Transmit GSE -> SAS
+----------------------------*/
+int8_t COMM_TransmitGSEToSAS(comm_gse_t *dev, const gse_state_frame_t *status, uint32_t timeout);
+
+/*----------------------------
+ Getter SEQ
+----------------------------*/
+uint8_t COMM_GetSEQ(comm_gse_t *dev);

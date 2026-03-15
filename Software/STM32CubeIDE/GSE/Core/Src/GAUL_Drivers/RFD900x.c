@@ -1,21 +1,27 @@
-#include "GAUL_Drivers/RFD900x.h"
+#include <GAUL_Drivers/rfd900x.h>
 
 
-status_t RFD900x_Init(RFD900x_t *dev) {
-	if(dev == NULL) return STATUS_FAIL;
-	if(dev->UARTx == NULL) return STATUS_FAIL;
+int8_t RFD900x_Init(rfd900x_t *dev) {
+	if(dev == NULL) return -1;
+	if(dev->UARTx == NULL) return -1;
 
-	return STATUS_OK;
+	return 0;
 }
 
-status_t RFD900x_Send(RFD900x_t *dev) {
+int8_t RFD900x_Send(rfd900x_t *dev, const uint8_t *package, size_t len, uint32_t timeout) {
+	if(!dev || package == NULL || len <= 0 || timeout <= 0) return -1;
 
-	return STATUS_OK;
+	if(HAL_UART_Transmit(dev->UARTx, package, len, timeout) != HAL_OK) return -1;
+
+	return 0;
 }
 
-status_t RFD900x_Receive(RFD900x_t *dev) {
+int8_t RFD900x_Receive(rfd900x_t *dev, uint8_t *package, size_t len, uint32_t timeout) {
+	if(!dev || package == NULL || len <= 0 || timeout <= 0) return -1;
 
-	return STATUS_OK;
+	if(HAL_UART_Receive(dev->UARTx, package, len, timeout) != HAL_OK) return -1;
+
+	return 0;
 }
 
 
