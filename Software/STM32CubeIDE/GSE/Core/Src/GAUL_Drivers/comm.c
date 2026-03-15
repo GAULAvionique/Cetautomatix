@@ -1,5 +1,6 @@
 #include "GAUL_Drivers/comm.h"
 
+
 /*=============================================================================
  LOW LEVEL
 =============================================================================*/
@@ -8,11 +9,10 @@
  CRC8
 ----------------------------*/
 static bool COMM_CheckCRC8(const uint8_t *data, size_t len, uint8_t expected_crc) {
-	const uint8_t* p = (const uint8_t*)data; // maybe not needed
     uint8_t crc = 0x00;
 
     for(uint16_t i = 0; i < len; i++) {
-        crc ^= p[i];
+        crc ^= data[i];
         for(uint8_t j = 0; j < 8; j++) {
             if(crc & 0x80) {
                 crc = (crc << 1) ^ 0x07;
@@ -37,16 +37,6 @@ static inline uint8_t COMM_NextSEQ(comm_gse_t *dev) {
 
 static uint8_t COMM_CheckSEQ(uint8_t prev_seq, uint8_t now_seq) {
 	return ((prev_seq + 1) & 0x07) == now_seq;
-}
-
-/*----------------------------
- CAN TX Header (package priority)
-----------------------------*/
-static void COMM_SetTXHeader(comm_gse_t *dev, const uint32_t id, const uint32_t dlc) {
-	dev->header_tx->StdId = (id & 0x7FFu);
-	dev->header_tx->IDE = CAN_ID_STD;
-	dev->header_tx->RTR = CAN_RTR_DATA;
-	dev->header_tx->DLC = dlc;
 }
 
 // TODO: add safe vid check
@@ -75,13 +65,13 @@ static bool COMM_CheckVID(comm_gse_t *dev, const uint8_t vid) {
  Init COMM GSE
 ----------------------------*/
 int8_t COMM_Init(comm_gse_t *dev) {
-	if(!dev || !dev->hcan || !dev->header_tx || !dev->mailbox_tx || !dev->rfd_dev) return -1;
+	if(!dev || !dev->can_dev || !dev->rfd_dev) return -1;
 
 	dev->isVID 			= false;
 	dev->seq 			= 0;
 	dev->last_sas_seq 	= 0;
 	dev->last_motor_seq = 0;
-	// maybe init rfd900x here or in main
+	// maybe init rfd900x/can here or in main
 
 	return 0;
 }
@@ -89,12 +79,17 @@ int8_t COMM_Init(comm_gse_t *dev) {
 /*----------------------------
  Receive GSE <- SAS
 ----------------------------*/
-int8_t COMM_ReceiveGSEFromSAS(comm_gse_t *dev, cmd_t *cmd, uint32_t timeout) {
-	if(!dev || timeout <= 0) return -1;
+int8_t COMM_ReceiveGSEFromSAS(comm_gse_t *dev, cmd_t *cmd) {
+	if(!dev) return -1;
 
-	// TODO: change to passive interrupt
+	// check if data ready in ring_buffer
+	if(!dev->rfd_dev->uart->data_ready) return 0;
+	// check if complete frame is in ring_buffer
+	if(RFD900x_Available(dev->rfd_dev) < FRAME_SAS_GSE_SIZE) return 0;
+	dev->rfd_dev->uart->data_ready = false;
+
 	uint8_t commands[FRAME_SAS_GSE_SIZE];
-	if(RFD900x_Receive(dev->rfd_dev, commands, FRAME_SAS_GSE_SIZE, timeout) != 0) return -1;
+	if(RFD900x_ReadFrame(dev->rfd_dev, commands, FRAME_SAS_GSE_SIZE) == false) return -1;
 
 	if(Frame_UnpackGSEFromSASPayload(cmd, commands) != true) return -1;
 
@@ -126,13 +121,9 @@ int8_t COMM_TransmitGSEToMotor(comm_gse_t *dev, const cmd_t *cmd) {
 	if(!dev) return -1;
 
     if(cmd->bits.estop) {
-    	COMM_SetTXHeader(dev, CAN_ID_ESTOP, FRAME_GSE_MOTOR_SIZE);
+    	CAN_FIFO_SetTXHeader(dev->can_dev, CAN_ID_ESTOP, FRAME_GSE_MOTOR_SIZE);
     } else {
-    	COMM_SetTXHeader(dev, CAN_ID_CMD_MOTOR, FRAME_GSE_MOTOR_SIZE);
-    }
-
-    if(dev->hcan->State != HAL_CAN_STATE_READY) {
-        return -2;
+    	CAN_FIFO_SetTXHeader(dev->can_dev, CAN_ID_CMD_MOTOR, FRAME_GSE_MOTOR_SIZE);
     }
 
     /*
@@ -143,7 +134,7 @@ int8_t COMM_TransmitGSEToMotor(comm_gse_t *dev, const cmd_t *cmd) {
     uint8_t commands[FRAME_GSE_MOTOR_SIZE] = {0};
     if(Frame_PackGSEToMotorPayload(cmd, commands) != 0) return -1;
 
-    if(HAL_CAN_AddTxMessage(dev->hcan, dev->header_tx, commands, dev->mailbox_tx) != HAL_OK) return -1;
+    if(CAN_FIFO_Send(dev->can_dev, commands) != HAL_OK) return -1;
 
     return 0;
 }
@@ -207,6 +198,7 @@ uint8_t COMM_GetSEQ(comm_gse_t *dev) {
 /* ------------------------------------------------------------- */
 /* WAIT CAN RX */
 /* ------------------------------------------------------------- */
+/*
 bool wait_can_rx(CAN_HandleTypeDef *hcan,
                         CAN_RxHeaderTypeDef *rxh,
                         uint8_t *data,
@@ -222,6 +214,7 @@ bool wait_can_rx(CAN_HandleTypeDef *hcan,
 
     return HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, rxh, data) == HAL_OK;
 }
+*/
 
 /* ------------------------------------------------------------- */
 /* UART UNSTUFF */

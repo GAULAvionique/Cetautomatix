@@ -16,15 +16,15 @@
 /* =========================
  * Protocol Configuration
  * ========================= */
-#define FRAME_UART_FLAG		((uint8_t)'$')  // 0x24 : début / fin de trame
-#define FRAME_UART_ESC     	((uint8_t)'\\') // 0x5C : caractère d’échappement
+#define FRAME_UART_FLAG		((uint8_t)'$')  					// 0x24 : début / fin de trame
+#define FRAME_UART_ESC     	((uint8_t)'\\') 					// 0x5C : caractère d’échappement
 #define FRAME_UART_ESC_XOR	((uint8_t)0x20)
 
-#define FRAME_SAS_GSE_SIZE		5   		// bytes
-#define FRAME_GSE_MOTOR_SIZE	2   		// bytes
-#define FRAME_MOTOR_GSE_SIZE    8			// bytes
-#define FRAME_GSE_SAS_DATA_SIZE	13			// bytes
-#define FRAME_GSE_SAS_SIZE      17  		// bytes
+#define FRAME_SAS_GSE_SIZE		5   							// bytes
+#define FRAME_GSE_MOTOR_SIZE	2   							// bytes
+#define FRAME_MOTOR_GSE_SIZE    9								// bytes
+#define FRAME_GSE_SAS_DATA_SIZE	15								// bytes
+#define FRAME_GSE_SAS_SIZE      (FRAME_GSE_SAS_DATA_SIZE + 4) 	// bytes (included crc16 + start/end bit = 19 bytes)
 
 /*=============================================================================
  COMPACT COMMAND BYTE
@@ -68,8 +68,9 @@ typedef struct {
 	uint8_t 	n2o_dump_valve;      	/* E6 : 1 bits */
 	uint8_t 	n2o_igniter_valve;   	/* E7 : 1 bits */
 	uint8_t 	n2o_main_valve;      	/* E8 : 1 bits */
+	uint8_t		logs;					/* E9 : 8 bits */
 	uint16_t 	timestamp_ms;       	/* 16 bits */
-} motor_state_frame_t;					/* expected payload : 64 bits */
+} motor_state_frame_t;					/* expected payload : 72 bits */
 
 /*=============================================================================
  GSE STATE FRAME
@@ -82,8 +83,9 @@ typedef struct {
 	uint8_t		motor_data[8];			/* 64 bits */
 	uint8_t 	command_states;      	/* E1 : 4 bits */
 	uint16_t 	propellant_loadcell;	/* E2 : 12 bits */
+	uint8_t		logs;					/* E3 : 8 bits */
 	uint16_t 	timestamp_ms;       	/* 16 bits */
-} gse_state_frame_t;					/* expected payload : 136 bits (start/end bit included) */
+} gse_state_frame_t;					/* expected payload : 144 bits (start/end bit included) */
 
 /*=============================================================================
  CAN IDENTIFIERS (11-bit)
@@ -149,6 +151,7 @@ gse_state_frame_t Frame_SetGSEToSASPayload(
 		uint8_t motor_data[FRAME_MOTOR_GSE_SIZE],
 		uint8_t command_states,
 		uint16_t propellant_loadcell,
+		uint8_t logs,
 		uint16_t timestamp_ms
 );
 

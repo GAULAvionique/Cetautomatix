@@ -9,12 +9,11 @@
 /*----------------------------
  CRC16
 ----------------------------*/
-static uint16_t COMM_GenerateCRC16(uint8_t *data, size_t len) {
-	const uint8_t* p = (const uint8_t*)data; // maybe not needed
+static uint16_t COMM_GenerateCRC16(const uint8_t *data, size_t len) {
     uint16_t crc = 0xFFFF;
 
     for (uint16_t i = 0; i < len; i++) {
-        crc ^= (uint16_t)p[i];
+        crc ^= (uint16_t)data[i];
         for (uint8_t j = 0; j < 8; j++) {
             if (crc & 0x0001) {
                 crc = (crc >> 1) ^ 0xA001;
@@ -108,8 +107,9 @@ uint8_t Frame_PackGSEToMotorPayload(const cmd_t *status, uint8_t out[FRAME_GSE_M
  * [3] n2o_pressure (LSB)
  * [4] thrust_loadcell (MSB - 8)
  * [5] thrust_loadcell (LSB - 4) + command_states
- * [6] timestamp_ms (MSB)
- * [7] timestamp_ms (LSB)
+ * [6] logs
+ * [7] timestamp_ms (MSB)
+ * [8] timestamp_ms (LSB)
 */
 bool Frame_UnpackGSEFromMotorPayload(motor_state_frame_t *status, const uint8_t in[FRAME_MOTOR_GSE_SIZE]) {
 	if(!status || !in) return false;
@@ -124,7 +124,8 @@ bool Frame_UnpackGSEFromMotorPayload(motor_state_frame_t *status, const uint8_t 
 	status->n2o_pressure 		= (uint16_t)(in[2] << 8) | in[3];
 	status->n2o_pressure 		= (uint16_t)(in[4] << 8) | (in[5] && 0xF0u);
 	status->command_states 		= in[5] & 0x0F;
-	status->timestamp_ms 		= (uint16_t)(in[6] << 8) | in[7];
+	status->logs				= in[6];
+	status->timestamp_ms 		= (uint16_t)(in[7] << 8) | in[8];
 
 	return true;
 }
@@ -132,7 +133,7 @@ bool Frame_UnpackGSEFromMotorPayload(motor_state_frame_t *status, const uint8_t 
 /*----------------------------
  Transmit GSE -> SAS
 ----------------------------*/
-gse_state_frame_t Frame_SetGSEToSASPayload(uint8_t seq, bool hb, uint8_t motor_data[FRAME_MOTOR_GSE_SIZE], uint8_t command_states, uint16_t propellant_loadcell, uint16_t timestamp_ms) {
+gse_state_frame_t Frame_SetGSEToSASPayload(uint8_t seq, bool hb, uint8_t motor_data[FRAME_MOTOR_GSE_SIZE], uint8_t command_states, uint16_t propellant_loadcell, uint8_t logs, uint16_t timestamp_ms) {
 	gse_state_frame_t status;
 
 	status.vid					= (uint8_t)PROTO_VER;
@@ -141,22 +142,24 @@ gse_state_frame_t Frame_SetGSEToSASPayload(uint8_t seq, bool hb, uint8_t motor_d
 	memcpy(status.motor_data, motor_data, FRAME_MOTOR_GSE_SIZE);
 	status.command_states   	= (uint8_t)(command_states & 0x0Fu);
 	status.propellant_loadcell 	= (uint16_t)(propellant_loadcell & 0xFFFu);
+	status.logs					= logs;
 	status.timestamp_ms     	= timestamp_ms;
 
 	return status;
 }
 
 /*
- * [0] $
- * [1] vid + seq + hb
- * [2-9] motor_data (MSE to LSB)
- * [10] propellant_loadcell (MSB - 8)
- * [11] propellant_loadcell (LSB - 4) + command_states
- * [12] timestamp_ms (MSB)
- * [13] timestamp_ms (LSB)
- * [14] CRC16 (MSB)
- * [15] CRC17 (LSB)
- * [16] $
+ * [0] 	$
+ * [1] 	vid + seq + hb
+ * [2-10] motor_data (MSE to LSB)
+ * [11] propellant_loadcell (MSB - 8)
+ * [12] propellant_loadcell (LSB - 4) + command_states
+ * [13] logs
+ * [14] timestamp_ms (MSB)
+ * [15] timestamp_ms (LSB)
+ * [16] crc16 (MSB)
+ * [17] crc16 (LSB)
+ * [18] $
 */
 uint8_t Frame_PackGSEToSASPayload(const gse_state_frame_t *status, uint8_t out[FRAME_GSE_SAS_SIZE]) {
 	if(!status || !out) return -1;
@@ -167,21 +170,22 @@ uint8_t Frame_PackGSEToSASPayload(const gse_state_frame_t *status, uint8_t out[F
 	for(int i = 1; i <= FRAME_MOTOR_GSE_SIZE; i++) {
 		data[i] = status->motor_data[i];
 	}
-	data[9]  = (uint8_t)(status->propellant_loadcell & 0x0FF0u);
-	data[10] = (uint8_t)((status->propellant_loadcell & 0x000Fu) << 4) | status->command_states;
-	data[11] = (uint8_t)(status->timestamp_ms & 0xFF00u);
-	data[12] = (uint8_t)(status->timestamp_ms & 0x00FFu);
+	data[10]  = (uint8_t)(status->propellant_loadcell & 0x0FF0u);
+	data[11] = (uint8_t)((status->propellant_loadcell & 0x000Fu) << 4) | status->command_states;
+	data[12] = (uint8_t)(status->logs);
+	data[13] = (uint8_t)(status->timestamp_ms & 0xFF00u);
+	data[14] = (uint8_t)(status->timestamp_ms & 0x00FFu);
 	// Generate CRC16 on data only
-	uint16_t crc16 = COMM_GenerateCRC16(data, FRAME_GSE_SAS_DATA_SIZE);
+	uint16_t crc16 = COMM_GenerateCRC16((const uint8_t *)data, FRAME_GSE_SAS_DATA_SIZE);
 
 	// Pack full payload
 	out[0] = FRAME_UART_FLAG;
 	for(int d = 0; d < FRAME_GSE_SAS_DATA_SIZE; d++) {
 		out[d + 1] = data[d];
 	}
-	out[14] = (uint8_t)(crc16 & 0xFF00u);
-	out[15] = (uint8_t)(crc16 & 0x00FFu);
-	out[16] = FRAME_UART_FLAG;
+	out[FRAME_GSE_SAS_DATA_SIZE - 3] = (uint8_t)(crc16 & 0xFF00u);
+	out[FRAME_GSE_SAS_DATA_SIZE - 2] = (uint8_t)(crc16 & 0x00FFu);
+	out[FRAME_GSE_SAS_DATA_SIZE - 1] = FRAME_UART_FLAG;
 
 	return 0;
 }
