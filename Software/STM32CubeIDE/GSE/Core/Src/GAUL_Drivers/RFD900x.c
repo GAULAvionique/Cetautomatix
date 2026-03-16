@@ -25,7 +25,7 @@ int8_t RFD900x_Send(rfd900x_t *dev, const uint8_t *package, size_t len, uint32_t
 	return 0;
 }
 
-int16_t RFD900x_Receive(rfd900x_t *dev, uint8_t *package, size_t len) {
+static int16_t RFD900x_Receive(rfd900x_t *dev, uint8_t *package, size_t len) {
     if(!dev || !package || len == 0) return -1;
 
     return RingBuffer_Read(dev->uart->rx_rb, package, len);

@@ -2,17 +2,24 @@
 
 #include "stm32f1xx_hal.h"
 #include <stdbool.h>
+#include "ring_buffer.h"
 
 
-#define CAN_ID_NORMAL 0x120
+#define CAN_RX_BUFFER_SIZE	112		// 14 bytes (id + dlc + data[8] + data[1]) * queue of 8
+#define CAN_ID_NORMAL	 	0x120
+
+typedef struct {
+    uint32_t id;
+    uint8_t  dlc;
+    uint8_t  data[8];
+} can_frame_t;
 
 typedef struct {
 	CAN_HandleTypeDef 	*hcan;
 	CAN_TxHeaderTypeDef tx_header;
+	ring_buffer_t 		rx_rb;
+	can_frame_t 		rx_buffer_storage[CAN_RX_BUFFER_SIZE];
 } can_t;
-
-// callback
-typedef void (*CAN_RxCallback)(uint32_t StdId, uint8_t *data, uint8_t len);
 
 
 /*----------------------------
@@ -20,13 +27,10 @@ typedef void (*CAN_RxCallback)(uint32_t StdId, uint8_t *data, uint8_t len);
 ----------------------------*/
 int8_t CAN_FIFO_Init(can_t *dev, CAN_HandleTypeDef *hcan);
 
-int8_t CAN_FIFO_Send(can_t *dev, const uint8_t *data);
+int8_t CAN_FIFO_Send(can_t *dev, const uint8_t *package);
 void CAN_FIFO_SetTXHeader(can_t *dev, uint32_t id, uint8_t len);
-
-/*----------------------------
- Callback
-----------------------------*/
-void CAN_FIFO_SetRxCallback(can_t *dev, CAN_RxCallback callback);
+bool CAN_FIFO_ReadFrame(can_t *dev, can_frame_t *frame);
+uint16_t CAN_FIFO_Available(can_t *dev);
 
 /*----------------------------
  Interrupted Reception

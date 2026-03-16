@@ -139,8 +139,6 @@ int8_t COMM_TransmitGSEToMotor(comm_gse_t *dev, const cmd_t *cmd) {
     return 0;
 }
 
-// TODO: add receive behavior here
-
 // TODO: move to motor project
 /*----------------------------
  Transmit GSE <- MOTOR
@@ -161,6 +159,43 @@ int8_t COMM_ReceiveGSEFromMotor(comm_gse_t *dev, const motor_state_frame_t *stat
 	return (HAL_CAN_AddTxMessage(dev->hcan, dev->header_tx, commands, dev->mailbox_tx) == HAL_OK) ? 0 : -1;
 }
 */
+
+/*----------------------------
+ Receive GSE <- MOTOR
+----------------------------*/
+int8_t COMM_ReceiveGSEFromMotor(comm_gse_t *dev, motor_state_frame_t *status) {
+    if(!dev) return -1;
+
+    static uint8_t rx_buffer[FRAME_MOTOR_GSE_SIZE];
+    static uint8_t rx_index = 0;
+
+    while(CAN_FIFO_Available(dev->can_dev) > 0) {
+	   can_frame_t frame;
+
+	   if(!CAN_FIFO_ReadFrame(dev->can_dev, &frame)) break;
+
+	   for(uint8_t i = 0; i < frame.dlc; i++) {
+		   if(rx_index < FRAME_MOTOR_GSE_SIZE) {
+			   rx_buffer[rx_index++] = frame.data[i];
+		   }
+	   }
+
+	   if(rx_index == FRAME_MOTOR_GSE_SIZE) {
+		   if(Frame_UnpackGSEFromMotorPayload(status, rx_buffer) != true) return -1;
+
+		   /*
+		   if(!COMM_CheckSEQ(dev->last_motor_seq, status->seq)) return -1;
+		   dev->last_motor_seq = status->seq;
+		   */
+
+		   rx_index = 0;
+
+		   return 0;
+	   }
+   }
+
+    return 0;
+}
 
 /*----------------------------
  Transmit GSE -> SAS
