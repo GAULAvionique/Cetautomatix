@@ -11,7 +11,7 @@ int8_t UART_DMA_Init(uart_dma_t *dev) {
 }
 
 void UART_DMA_Start(uart_dma_t *dev) {
-    HAL_UART_Receive_DMA(dev->huart, dev->dma_buffer, dev->dma_size);
+    if(HAL_UART_Receive_DMA(dev->huart, dev->dma_buffer, dev->dma_size)) return -1;
 
     __HAL_UART_ENABLE_IT(dev->huart, UART_IT_IDLE);
 }

@@ -23,6 +23,6 @@ int8_t RFD900x_Init(rfd900x_t *dev, UART_HandleTypeDef *huart);
 /*----------------------------
  On-time Functions
 ----------------------------*/
-int8_t RFD900x_Send(rfd900x_t *dev, const uint8_t *package, size_t len, uint32_t timeout);
+int8_t RFD900x_Send(rfd900x_t *dev, const uint8_t *package, size_t len);
 bool RFD900x_ReadFrame(rfd900x_t *dev, uint8_t *package, uint16_t frame_size);
 uint16_t RFD900x_Available(rfd900x_t *dev);

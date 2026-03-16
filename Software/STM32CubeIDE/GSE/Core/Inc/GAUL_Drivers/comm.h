@@ -3,6 +3,7 @@
 #include "stm32f1xx_hal.h"
 #include <stdint.h>
 #include <stdbool.h>
+#include <string.h>
 #include "GAUL_Drivers/frame_defs.h"
 #include "GAUL_Drivers/rfd900x.h"
 #include "GAUL_Drivers/can_fifo.h"
@@ -36,4 +37,4 @@ int8_t COMM_TransmitGSEToMotor(comm_gse_t *dev, const cmd_t *cmd);
 /*----------------------------
  Transmit GSE -> SAS
 ----------------------------*/
-int8_t COMM_TransmitGSEToSAS(comm_gse_t *dev, const gse_state_frame_t *status, uint32_t timeout);
+int8_t COMM_TransmitGSEToSAS(comm_gse_t *dev, const gse_state_frame_t *status);

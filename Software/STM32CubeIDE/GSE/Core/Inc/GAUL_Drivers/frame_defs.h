@@ -92,7 +92,6 @@ typedef struct {
 =============================================================================*/
 enum {
   CAN_ID_ESTOP        = 0x100,
-  CAN_ID_HEARTBEAT    = 0x110,
   CAN_ID_STATUS_MIN   = 0x120,
 
   CAN_ID_CMD_MOTOR    = 0x200,   // DLC=1, data[0] = cmd_byte_t.byte

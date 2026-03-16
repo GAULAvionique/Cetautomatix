@@ -167,43 +167,29 @@ int8_t COMM_ReceiveGSEFromMotor(comm_gse_t *dev, motor_state_frame_t *status) {
     if(!dev) return -1;
 
     static uint8_t rx_buffer[FRAME_MOTOR_GSE_SIZE];
-    static uint8_t rx_index = 0;
+    can_frame_t frame;
 
     while(CAN_FIFO_Available(dev->can_dev) > 0) {
-	   can_frame_t frame;
+        if(!CAN_FIFO_ReadFrame(dev->can_dev, &frame)) break;
 
-	   if(!CAN_FIFO_ReadFrame(dev->can_dev, &frame)) break;
+        if(frame.id == CAN_ID_DATA_SEG) {
+            memcpy(&rx_buffer[0], frame.data, 8);
+        } else if(frame.id == CAN_ID_DATA_SEG + 1) {
+            rx_buffer[8] = frame.data[0];
 
-	   for(uint8_t i = 0; i < frame.dlc; i++) {
-		   if(rx_index < FRAME_MOTOR_GSE_SIZE) {
-			   rx_buffer[rx_index++] = frame.data[i];
-		   }
-	   }
-
-	   if(rx_index == FRAME_MOTOR_GSE_SIZE) {
-		   if(Frame_UnpackGSEFromMotorPayload(status, rx_buffer) != true) return -1;
-
-		   /*
-		   if(!COMM_CheckSEQ(dev->last_motor_seq, status->seq)) return -1;
-		   dev->last_motor_seq = status->seq;
-		   */
-
-		   rx_index = 0;
-
-		   return 0;
-	   }
-   }
-
-    return 0;
+            if(Frame_UnpackGSEFromMotorPayload(status, rx_buffer) == true) return 0;
+        }
+    }
+    return -1;
 }
 
 /*----------------------------
  Transmit GSE -> SAS
 ----------------------------*/
-int8_t COMM_TransmitGSEToSAS(comm_gse_t *dev, const gse_state_frame_t *status, uint32_t timeout) {
-	if(!dev || timeout <= 0) return -1;
+int8_t COMM_TransmitGSEToSAS(comm_gse_t *dev, const gse_state_frame_t *status) {
+	if(!dev) return -1;
 
-    uint8_t frame[FRAME_GSE_SAS_SIZE] = {0};
+	static uint8_t frame[FRAME_GSE_SAS_SIZE] = {0};
     if(Frame_PackGSEToSASPayload(status, frame) != 0) return -1;
 
     if(!COMM_CheckSEQ(dev->last_motor_seq, status->seq)) {
@@ -213,7 +199,7 @@ int8_t COMM_TransmitGSEToSAS(comm_gse_t *dev, const gse_state_frame_t *status, u
 	dev->last_motor_seq = status->seq;
 	dev->seq = dev->last_motor_seq;
 
-    if(RFD900x_Send(dev->rfd_dev, frame, FRAME_GSE_SAS_SIZE, timeout) != 0) return -1;
+    if(RFD900x_Send(dev->rfd_dev, frame, FRAME_GSE_SAS_SIZE) != 0) return -1;
 
     return 0;
 }

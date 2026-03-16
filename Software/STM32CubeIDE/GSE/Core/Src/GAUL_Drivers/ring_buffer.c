@@ -21,33 +21,43 @@ uint16_t RingBuffer_Available(ring_buffer_t *dev) {
 }
 
 uint16_t RingBuffer_Write(ring_buffer_t *dev, const void *data, uint16_t len) {
-    uint16_t i;
+    if (len == 0) return 0;
+
+    uint16_t available = dev->size - RingBuffer_Available(dev) - 1;
+    if (len > available) len = available;
+
     const uint8_t *p_data = (const uint8_t *)data;
+    uint16_t bytes_to_end = dev->size - dev->head;
 
-    for(i = 0; i < len; i++) {
-        uint16_t next = (dev->head + 1) % dev->size;
-        if(next == dev->tail) break;
-
-        void *dest = (uint8_t *)dev->buffer + (dev->head * dev->item_size);
-        memcpy(dest, p_data + (i * dev->item_size), dev->item_size);
-
-        dev->head = next;
+    if (len <= bytes_to_end) {
+        memcpy((uint8_t*)dev->buffer + (dev->head * dev->item_size), p_data, len * dev->item_size);
+        dev->head = (dev->head + len) % dev->size;
+    } else {
+        memcpy((uint8_t*)dev->buffer + (dev->head * dev->item_size), p_data, bytes_to_end * dev->item_size);
+        memcpy((uint8_t*)dev->buffer, p_data + (bytes_to_end * dev->item_size), (len - bytes_to_end) * dev->item_size);
+        dev->head = len - bytes_to_end;
     }
 
-    return i;
+    return len;
 }
 
 uint16_t RingBuffer_Read(ring_buffer_t *dev, void *data, uint16_t len) {
-    uint16_t i;
+    if (len == 0) return 0;
 
-    for(i = 0; i < len; i++) {
-        if(dev->tail == dev->head) break;
+    uint16_t available = RingBuffer_Available(dev);
+    if (len > available) len = available;
 
-        void *src = (uint8_t *)dev->buffer + (dev->tail * dev->item_size);
-        memcpy(data + (i * dev->item_size), src, dev->item_size);
+    uint8_t *p_data = (uint8_t *)data;
+    uint16_t bytes_to_end = dev->size - dev->tail;
 
-        dev->tail = (dev->tail + 1) % dev->size;
+    if (len <= bytes_to_end) {
+        memcpy(p_data, (uint8_t*)dev->buffer + (dev->tail * dev->item_size), len * dev->item_size);
+        dev->tail = (dev->tail + len) % dev->size;
+    } else {
+        memcpy(p_data, (uint8_t*)dev->buffer + (dev->tail * dev->item_size), bytes_to_end * dev->item_size);
+        memcpy(p_data + (bytes_to_end * dev->item_size), (uint8_t*)dev->buffer, (len - bytes_to_end) * dev->item_size);
+        dev->tail = len - bytes_to_end;
     }
 
-    return i;
+    return len;
 }

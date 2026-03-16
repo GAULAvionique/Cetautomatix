@@ -122,8 +122,8 @@ bool Frame_UnpackGSEFromMotorPayload(motor_state_frame_t *status, const uint8_t 
 	status->n2o_igniter_valve 	= in[1] & 0x02u;
 	status->n2o_main_valve 		= in[1] & 0x01u;
 	status->n2o_pressure 		= (uint16_t)(in[2] << 8) | in[3];
-	status->n2o_pressure 		= (uint16_t)(in[4] << 8) | (in[5] && 0xF0u);
-	status->command_states 		= in[5] & 0x0F;
+	status->thrust_loadcell 	= (uint16_t)(in[4] << 8) | (in[5] & 0xF0u);
+	status->command_states 		= in[5] & 0x0Fu;
 	status->logs				= in[6];
 	status->timestamp_ms 		= (uint16_t)(in[7] << 8) | in[8];
 

@@ -9,7 +9,7 @@ int8_t CAN_FIFO_Init(can_t *dev, CAN_HandleTypeDef *hcan) {
 
     dev->hcan = hcan;
 
-    RingBuffer_Init(&dev->rx_rb, dev->rx_buffer_storage, CAN_RX_BUFFER_SIZE, sizeof(can_frame_t));
+    if(RingBuffer_Init(&dev->rx_rb, dev->rx_buffer_storage, CAN_RX_BUFFER_SIZE, sizeof(can_frame_t)) != 0) return -1;
 
     if(HAL_CAN_Start(dev->hcan) != HAL_OK) return -1;
 
@@ -74,10 +74,10 @@ void CAN_FIFO_RX0_IRQHandler_Callback(can_t *dev) {
     can_frame_t frame;
 
     while(HAL_CAN_GetRxMessage(dev->hcan, CAN_RX_FIFO0, &rx_header, frame.data) == HAL_OK) {
-		frame.id  = rx_header.StdId;
-		frame.dlc = rx_header.DLC;
-		RingBuffer_Write(&dev->rx_rb, &frame, 1);
-	}
+        frame.id  = rx_header.StdId;
+        frame.dlc = rx_header.DLC;
+        RingBuffer_Write(&dev->rx_rb, &frame, 1);
+    }
 }
 
 /*----------------------------
