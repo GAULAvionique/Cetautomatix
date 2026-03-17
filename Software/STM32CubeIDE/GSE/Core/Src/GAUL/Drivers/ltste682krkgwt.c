@@ -6,7 +6,7 @@
  */
 
 
-#include "GAUL_Drivers/ltste682krkgwt.h"
+#include "GAUL/Drivers/ltste682krkgwt.h"
 
 
 void CriticalLED_SetColor(GPIO_TypeDef *port, uint16_t r_pin, uint16_t g_pin, criticalLed_color_t color) {

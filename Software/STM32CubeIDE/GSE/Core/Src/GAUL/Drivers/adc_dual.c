@@ -1,4 +1,4 @@
-#include "GAUL_Drivers/adc_dual.h"
+#include "GAUL/Drivers/adc_dual.h"
 
 
 #define ADC_VAL_TO_VOLTS(adc_val) 	(((float)(adc_val)) * (3.3f / 4095.0f))

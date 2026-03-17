@@ -1,9 +1,9 @@
 #pragma once
 
+#include <GAUL/Low_Level/ring_buffer.h>
 #include "stm32f1xx_hal.h"
 #include <stdbool.h>
 #include <stdint.h>
-#include "Low_Level/ring_buffer.h"
 
 
 #define ADC_DUAL_RING_SIZE 				20 // 20 cycles (2s at 10Hz)

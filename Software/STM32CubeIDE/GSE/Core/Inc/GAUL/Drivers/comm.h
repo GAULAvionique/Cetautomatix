@@ -1,12 +1,12 @@
 #pragma once
 
+#include <GAUL/Drivers/can_fifo.h>
+#include <GAUL/Drivers/rfd900x.h>
+#include <GAUL/Low_Level/frame_defs.h>
 #include "stm32f1xx_hal.h"
 #include <stdint.h>
 #include <stdbool.h>
 #include <string.h>
-#include "GAUL_Drivers/Low_Level/frame_defs.h"
-#include "GAUL_Drivers/rfd900x.h"
-#include "GAUL_Drivers/can_fifo.h"
 
 
 typedef struct {

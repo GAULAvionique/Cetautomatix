@@ -1,8 +1,8 @@
 #pragma once
 
+#include <GAUL/Low_Level/ring_buffer.h>
 #include "stm32f1xx_hal.h"
 #include <stdbool.h>
-#include "Low_Level/ring_buffer.h"
 
 
 #define CAN_RX_BUFFER_SIZE	112		// 14 bytes (id + dlc + data[8] + data[1]) * queue of 8

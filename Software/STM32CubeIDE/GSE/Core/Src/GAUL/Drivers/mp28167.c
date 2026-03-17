@@ -1,4 +1,4 @@
-#include "GAUL_Drivers/mp28167.h"
+#include "GAUL/Drivers/mp28167.h"
 
 
 static int8_t MP28167_ReadReg(mp28167_t *dev, uint8_t reg, uint8_t *data) {

@@ -18,12 +18,12 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
+#include <GAUL/Drivers/can_fifo.h>
+#include <GAUL/Drivers/rfd900x.h>
 #include "main.h"
 #include "stm32f1xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "GAUL_Drivers/rfd900x.h"
-#include "GAUL_Drivers/can_fifo.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

@@ -1,4 +1,4 @@
-#include "GAUL_Drivers/Low_Level/uart_dma.h"
+#include <GAUL/Low_Level/uart_dma.h>
 
 
 int8_t UART_DMA_Init(uart_dma_t *dev) {

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Low_Level/uart_dma.h"
-#include "Low_Level/ring_buffer.h"
+#include <GAUL/Low_Level/ring_buffer.h>
+#include <GAUL/Low_Level/uart_dma.h>
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>

@@ -1,4 +1,4 @@
-#include <GAUL_Drivers/rfd900x.h>
+#include <GAUL/Drivers/rfd900x.h>
 
 
 int8_t RFD900x_Init(rfd900x_t *dev, UART_HandleTypeDef *huart) {

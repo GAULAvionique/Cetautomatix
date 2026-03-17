@@ -1,7 +1,7 @@
 #pragma once
 
+#include <GAUL/Low_Level/ring_buffer.h>
 #include "stm32f1xx_hal.h"
-#include "ring_buffer.h"
 #include <stdbool.h>
 
 
