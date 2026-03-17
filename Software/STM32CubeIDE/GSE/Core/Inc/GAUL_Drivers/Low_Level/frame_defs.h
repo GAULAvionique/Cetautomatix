@@ -43,7 +43,7 @@ typedef struct {
 	uint8_t c4    	: 1; // Motor Start
 	uint8_t c5	  	: 1; // Optionnal command
 	uint8_t c6	  	: 1; // Optionnal command
-	uint8_t c7	  	: 1; // Optionnal command
+	uint8_t c7	  	: 1; // Pression/LCell sensor tare
 	uint8_t crc8  	: 8; // CRC8
 } cmd_bits_t;			 /* expected payload : 40 bits (start/end bit included) */
 
