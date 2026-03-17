@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <string.h>
-#include "GAUL_Drivers/frame_defs.h"
+#include "GAUL_Drivers/Low_Level/frame_defs.h"
 #include "GAUL_Drivers/rfd900x.h"
 #include "GAUL_Drivers/can_fifo.h"
 

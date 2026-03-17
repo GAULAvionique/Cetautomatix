@@ -93,7 +93,7 @@ bool MP28167_IsPowerGood(mp28167_t *dev) {
 
     // Only if issue (maybe not needed)
     uint8_t status_reg = 0;
-    if (MP28167_ReadReg(dev, MP28167_REG_STATUS, &status_reg) == 0) {
+    if(MP28167_ReadReg(dev, MP28167_REG_STATUS, &status_reg) == 0) {
         return (status_reg & (1 << 7)) != 0;
     }
 

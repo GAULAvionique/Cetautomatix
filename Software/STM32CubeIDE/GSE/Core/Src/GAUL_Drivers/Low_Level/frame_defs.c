@@ -1,4 +1,4 @@
-#include "GAUL_Drivers/frame_defs.h"
+#include "GAUL_Drivers/Low_Level/frame_defs.h"
 #include <string.h>
 
 
@@ -149,17 +149,17 @@ gse_state_frame_t Frame_SetGSEToSASPayload(uint8_t seq, bool hb, uint8_t motor_d
 }
 
 /*
- * [0] 	$
- * [1] 	vid + seq + hb
+ * [0] 	  $
+ * [1] 	  vid + seq + hb
  * [2-10] motor_data (MSE to LSB)
- * [11] propellant_loadcell (MSB - 8)
- * [12] propellant_loadcell (LSB - 4) + command_states
- * [13] logs
- * [14] timestamp_ms (MSB)
- * [15] timestamp_ms (LSB)
- * [16] crc16 (MSB)
- * [17] crc16 (LSB)
- * [18] $
+ * [11]   propellant_loadcell (MSB - 8)
+ * [12]   propellant_loadcell (LSB - 4) + command_states
+ * [13]   logs
+ * [14]   timestamp_ms (MSB)
+ * [15]   timestamp_ms (LSB)
+ * [16]   crc16 (MSB)
+ * [17]   crc16 (LSB)
+ * [18]   $
 */
 uint8_t Frame_PackGSEToSASPayload(const gse_state_frame_t *status, uint8_t out[FRAME_GSE_SAS_SIZE]) {
 	if(!status || !out) return -1;
@@ -170,7 +170,7 @@ uint8_t Frame_PackGSEToSASPayload(const gse_state_frame_t *status, uint8_t out[F
 	for(int i = 1; i <= FRAME_MOTOR_GSE_SIZE; i++) {
 		data[i] = status->motor_data[i];
 	}
-	data[10]  = (uint8_t)(status->propellant_loadcell & 0x0FF0u);
+	data[10] = (uint8_t)(status->propellant_loadcell & 0x0FF0u);
 	data[11] = (uint8_t)((status->propellant_loadcell & 0x000Fu) << 4) | status->command_states;
 	data[12] = (uint8_t)(status->logs);
 	data[13] = (uint8_t)(status->timestamp_ms & 0xFF00u);
