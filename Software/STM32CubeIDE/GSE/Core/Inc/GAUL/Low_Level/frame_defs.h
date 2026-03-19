@@ -22,9 +22,9 @@
 
 #define FRAME_SAS_GSE_SIZE		5   							// bytes
 #define FRAME_GSE_MOTOR_SIZE	2   							// bytes
-#define FRAME_MOTOR_GSE_SIZE    9								// bytes
-#define FRAME_GSE_SAS_DATA_SIZE	15								// bytes
-#define FRAME_GSE_SAS_SIZE      (FRAME_GSE_SAS_DATA_SIZE + 4) 	// bytes (included crc16 + start/end bit = 19 bytes)
+#define FRAME_MOTOR_GSE_SIZE    10								// bytes
+#define FRAME_GSE_SAS_DATA_SIZE	19								// bytes
+#define FRAME_GSE_SAS_SIZE      (FRAME_GSE_SAS_DATA_SIZE + 4) 	// bytes (included crc16 + start/end bit = 23 bytes)
 
 /*=============================================================================
  COMPACT COMMAND BYTE
@@ -62,15 +62,16 @@ typedef struct {
 	uint8_t		seq;                	/* 3 bits */
 	uint8_t   	spark_plug_detector; 	/* E1 : 2 bit */
 	uint8_t 	battery_percent;     	/* E2 : 7 bits */
-	uint8_t 	command_states;      	/* E3 : 4 bits */
-	uint16_t 	n2o_pressure;			/* E4 : 16 bits */
+	uint8_t 	command_states;      	/* E3 : 8 bits */
+	uint16_t 	n2o_pressure;			/* E4 : 12 bits */
 	uint16_t 	thrust_loadcell;		/* E5 : 12 bits */
 	uint8_t 	n2o_dump_valve;      	/* E6 : 1 bits */
 	uint8_t 	n2o_igniter_valve;   	/* E7 : 1 bits */
 	uint8_t 	n2o_main_valve;      	/* E8 : 1 bits */
-	uint8_t		logs;					/* E9 : 8 bits */
+	uint16_t	temperature;			/* E9 : 12 bits */
+	uint8_t		logs;					/* E10 : 8 bits */
 	uint16_t 	timestamp_ms;       	/* 16 bits */
-} motor_state_frame_t;					/* expected payload : 72 bits */
+} motor_state_frame_t;					/* expected payload : 80 bits */
 
 /*=============================================================================
  GSE STATE FRAME
@@ -80,12 +81,14 @@ typedef struct {
 	uint8_t		vid;					/* 4 bits */
 	uint8_t   	hb;                  	/* 1 bit */
 	uint8_t 	seq;                	/* 3 bits */
-	uint8_t		motor_data[8];			/* 64 bits */
+	uint8_t		motor_data[10];			/* 80 bits */
 	uint8_t 	command_states;      	/* E1 : 4 bits */
-	uint16_t 	propellant_loadcell;	/* E2 : 12 bits */
-	uint8_t		logs;					/* E3 : 8 bits */
+	uint16_t	n2o_pressure;			/* E2 : 12 bits */
+	uint16_t 	propellant_loadcell;	/* E3 : 12 bits */
+	uint16_t	temperature;			/* E4 : 12 bits */
+	uint8_t		logs;					/* E5 : 8 bits */
 	uint16_t 	timestamp_ms;       	/* 16 bits */
-} gse_state_frame_t;					/* expected payload : 144 bits (start/end bit included) */
+} gse_state_frame_t;					/* expected payload : 184 bits (start/end bit + crc16 included) */
 
 /*=============================================================================
  CAN IDENTIFIERS (11-bit)
@@ -149,7 +152,9 @@ gse_state_frame_t Frame_SetGSEToSASPayload(
 		bool estop,
 		uint8_t motor_data[FRAME_MOTOR_GSE_SIZE],
 		uint8_t command_states,
+		uint16_t n2o_pressure,
 		uint16_t propellant_loadcell,
+		uint16_t temperature,
 		uint8_t logs,
 		uint16_t timestamp_ms
 );
