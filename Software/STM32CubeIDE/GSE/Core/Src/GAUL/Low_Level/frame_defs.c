@@ -103,14 +103,14 @@ uint8_t Frame_PackGSEToMotorPayload(const cmd_t *status, uint8_t out[FRAME_GSE_M
 /*
  * [0] hb + battery_percent
  * [1] seq + spark_plug_detector + n2o_dump_valve + n2o_igniter_valve + n2o_main_valve
- * [2] n2o_pressure (MSB - 8)
- * [3] n2o_pressure (LSB - 4) + thrust_loadcell (MSB - 4)
- * [4] thrust_loadcell (LSB - 8)
- * [5] temperature (MSB - 8)
- * [6] temperature (LSB - 4) + command_states
+ * [2] n2o_pressure (12 - 5)
+ * [3] n2o_pressure (4 - 1) + thrust_loadcell (12 - 9)
+ * [4] thrust_loadcell (8 - 1)
+ * [5] temperature (12 - 5)
+ * [6] temperature (4 - 1) + command_states
  * [7] logs
- * [8] timestamp_ms (MSB)
- * [9] timestamp_ms (LSB)
+ * [8] timestamp_ms (16 - 9)
+ * [9] timestamp_ms (8 - 1)
 */
 bool Frame_UnpackGSEFromMotorPayload(motor_state_frame_t *status, const uint8_t in[FRAME_MOTOR_GSE_SIZE]) {
 	if(!status || !in) return false;
@@ -156,16 +156,16 @@ gse_state_frame_t Frame_SetGSEToSASPayload(uint8_t seq, bool hb, uint8_t motor_d
  * [0] 	  $
  * [1] 	  vid + seq + hb
  * [2-11] motor_data (MSE to LSB)
- * [12]   n2o_pressure (MSB - 8)
- * [13]   n2o_pressure (LSB - 4) + propellant_loadcell (MSB - 4)
- * [14]   propellant_loadcell (LSB - 8)
- * [15]   temperature (MSB - 8)
- * [16]   temperature (LSB - 4) + command_states
+ * [12]   n2o_pressure (12 - 5)
+ * [13]   n2o_pressure (LSB - 4) + propellant_loadcell (12 - 9)
+ * [14]   propellant_loadcell (8 - 1)
+ * [15]   temperature (12 - 5)
+ * [16]   temperature (4 - 1) + command_states
  * [17]   logs
- * [18]   timestamp_ms (MSB)
- * [19]   timestamp_ms (LSB)
- * [20]   crc16 (MSB)
- * [21]   crc16 (LSB)
+ * [18]   timestamp_ms (16 - 9)
+ * [19]   timestamp_ms (8 - 1)
+ * [20]   crc16 (16 - 9)
+ * [21]   crc16 (8 - 1)
  * [22]   $
 */
 uint8_t Frame_PackGSEToSASPayload(const gse_state_frame_t *status, uint8_t out[FRAME_GSE_SAS_SIZE]) {
