@@ -1,7 +1,8 @@
 #include "GAUL/Drivers/adc_dual.h"
 
-
-#define ADC_VAL_TO_VOLTS(adc_val) 	(((float)(adc_val)) * (3.3f / 4095.0f))
+#define ADC_MAX						4095.0f
+#define ADC_VREF					3.3f
+#define ADC_VAL_TO_VOLTS(adc_val) 	(((float)(adc_val)) * (ADC_VREF / ADC_MAX))
 
 static ring_buffer_t adc_ring;
 static adc_dual_t ring_storage[ADC_DUAL_RING_SIZE];
@@ -14,6 +15,15 @@ int8_t ADC_DUAL_Init(adc_dual_t *dev, ADC_HandleTypeDef* hadc1, ADC_HandleTypeDe
 	dev->hadc1 = hadc1;
 	dev->hadc2 = hadc2;
 	dev->htim_trigger = htim_trigger;
+
+	dev->load_cell = 0.0f;
+	dev->pression = 0.0f;
+	dev->temperature = 0.0f;
+	dev->vin = 0.0f;
+	dev->v12 = 0.0f;
+	dev->v5 = 0.0f;
+	dev->v3 = 0.0f;
+
 	dev->load_cell_offset = 0.0f;
 	dev->pression_offset = 0.0f;
 

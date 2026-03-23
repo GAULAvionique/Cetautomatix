@@ -19,6 +19,7 @@
 #define LCELL_GSE_MAX_KG                1000.0f // Max gse capacity (kg)
 #define LCELL_MOTOR_MAX_KG              100.0f  // Max motor capacity (kg)
 #define LCELL_MAX_VDIFF             	0.011f  // Max diff voltage (11mV = 5V * 2.2mV/V) (mV)
+
 #define PRESSION_MAX_PSI            	1500.0f // Max capacity (psi)
 
 typedef struct {
@@ -31,9 +32,6 @@ typedef struct {
 	ADC_HandleTypeDef	*hadc2;
 	TIM_HandleTypeDef	*htim_trigger;
 
-	float               load_cell_offset;
-	float				pression_offset;
-
 	float				load_cell;
 	float				pression;
 	float				temperature;
@@ -41,6 +39,9 @@ typedef struct {
 	float				v12;
 	float 				v5;
 	float 				v3;
+
+	float               load_cell_offset;
+	float				pression_offset;
 } adc_dual_t;
 
 
